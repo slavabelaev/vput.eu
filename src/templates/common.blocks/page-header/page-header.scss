@@ -1,0 +1,33 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.icon.page-header__favorites-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.page-header__logo {
+  width: 120px;
+  height: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-image: url(#{$rootDir}/templates/common.blocks/page-header/page-header__VPUT-logo_theme_orange.svg);
+}
+.page-header__cabinet-menu-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  margin-right: .5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(#{$rootDir}/templates/common.blocks/page-header/page-header__icon_type_cabinet-user.svg);
+}
+.page-header__dropdown-menu {
+  margin-bottom: 12px;
+}

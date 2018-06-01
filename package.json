@@ -1,0 +1,42 @@
+{
+  "name": "vput.eu",
+  "version": "1.0.0",
+  "description": "Mockup for vput.eu",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gulp serve",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belaevslava/vput.eu.git"
+  },
+  "keywords": [
+    "apartament",
+    "rent",
+    "bulgaria"
+  ],
+  "author": "belaevslava@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belaevslava/vput.eu/issues"
+  },
+  "homepage": "https://github.com/belaevslava/vput.eu#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-ejs": "^3.1.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-typescript": "^4.0.2",
+    "gulp-watch": "^5.0.0",
+    "typescript": "^2.8.3"
+  }
+}

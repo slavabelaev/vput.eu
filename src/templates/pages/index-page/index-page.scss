@@ -1,0 +1,38 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.index-page__header {
+  text-align: center;
+}
+.index-page__title {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.index-page__description {
+  font-size: 30px;
+  font-weight: 500;
+}
+.index-page__section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.index-page__page-header {
+}
+.index-page__rentals-search {
+  min-height: 768px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(https://vput.ru/images/index/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: $white;
+}
+
+.index-page__offers-search-form {
+  padding: 1rem;
+  background-color: rgba(255,255,255,.3);
+  border-radius: $card-border-radius;
+  max-width: 1024px;
+  margin: auto;
+}

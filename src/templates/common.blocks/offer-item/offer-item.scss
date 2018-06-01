@@ -1,0 +1,130 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.offer-item {
+  position: relative;
+}
+.offer-item__image {
+  display: block;
+  height: 200px;
+  border-radius: .1825rem;
+  background-size: cover;
+  transition: .24s;
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+.offer-item__add-to-favorites {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 12px;
+  left: 12px;
+  opacity: .7;
+  transition: .36s;
+  z-index: 1;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.offer-item__description {
+  position: relative;
+  padding: .75rem 0;
+}
+.offer-item__details,
+.offer-item__special-details {
+  list-style: none;
+  padding: 0;
+}
+.offer-item__details {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 50px;
+  margin-bottom: 0;
+  color: $text-muted;
+  font-size: .875rem;
+}
+.offer-item__detail {
+  .icon:not(.icon__reliable-host) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.offer-item__special-details {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  height: 24px;
+  top: -36px;
+  left: 1rem;
+  right: 1rem;
+}
+.offer-item__country {
+  flex: 1 20%;
+}
+.offer-item__city {
+  flex: 1 60%;
+}
+.offer-item__country,
+.offer-item__city {
+  margin-bottom: .25rem;
+}
+
+.offer-item__country,
+.offer-item__numbers-of-rooms,
+.offer-item__type {
+  position: relative;
+  &:after {
+    content: "|";
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+}
+
+.offer-item__link {
+  color: $dark;
+  transition: .24s;
+  &:hover {
+    color: $secondary;
+    text-decoration: none;
+  }
+}
+.offer-item__title {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: initial;
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-bottom: .5rem;
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 3rem;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    box-shadow: #fff -3rem 0 1.5rem -0.75rem inset;
+  }
+}
+.offer-item__price {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  line-height: 1;
+  background-color: #fff;
+  color: $secondary;
+  box-shadow: #fff -15px 0 10px -5px;
+  font-size: 2rem;
+}
+.offer-item__reliable-host {
+  position: absolute;
+  right: 0;
+  margin-right: 0;
+}

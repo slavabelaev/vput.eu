@@ -1,0 +1,12 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.how-it-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 460px;
+  background-color: $dark;
+  color: $white;
+  border-radius: $card-border-radius;
+}

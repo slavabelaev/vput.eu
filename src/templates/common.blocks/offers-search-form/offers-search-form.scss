@@ -1,0 +1,31 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.offers-search-form {
+  position: relative;
+
+  .form-control[readonly] {
+    background-color: #fff;
+  }
+
+  .input-group,
+  .custom-select,
+  .custom-control {
+    &:hover,
+    *:hover {
+      cursor: pointer;
+    }
+  }
+
+  .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+#offers-search-form__cities-dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 1.5rem;
+  z-index: 99;
+}

@@ -1,0 +1,40 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.cities-tabs__nav {
+  column-count: 6;
+  .nav-link {
+    display: block;
+    padding: 0;
+    color: $dark;
+    transition: .36s;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .cities-tabs__nav {
+    column-count: 2;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .cities-tabs__nav {
+    column-count: 3;
+  }
+}
+@include media-breakpoint-up(md) {
+  .cities-tabs__nav {
+    column-count: 4;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .cities-tabs__nav {
+    column-count: 5;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .cities-tabs__nav {
+    column-count: 6;
+  }
+}

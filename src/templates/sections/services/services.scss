@@ -1,0 +1,14 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.services {
+  text-align: center;
+}
+.services__table-td {
+  padding: $table-cell-padding-sm;
+}
+
+.services__list-of-other-services {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}

@@ -1,0 +1,37 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon__security { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__security.svg); }
+.icon__cafe { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__cafe.svg); }
+.icon__massage { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__massage.svg); }
+.icon__parking-place { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__parking-place.svg); }
+.icon__access-to-the-sea { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__access-to-the-sea.svg); }
+.icon__pool { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pool.svg); }
+.icon__bicycles-for-rent { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bicycles-for-rent.svg); }
+.icon__SPA { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__SPA.svg); }
+
+.icon__animals { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__animals.svg); }
+.icon__conditioner { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__conditioner.svg); }
+.icon__guest { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__guest.svg); }
+.icon__heart { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__heart.svg); }
+.icon__heart_style_light { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__heart_style_light.svg); }
+.icon__reliable-host { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__reliable-host.svg); }
+.icon__tv { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__tv.svg); }
+
+.icon__bathroom { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bathroom.svg); }
+.icon__bed { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bed.svg); }
+.icon__door { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__door.svg); }
+.icon__home { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__home.svg); }
+.icon__hotel { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__hotel.svg); }
+.icon__opened-door { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__opened-door.svg); }
+.icon__skyscraper { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__skyscraper.svg); }
+
+.icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }

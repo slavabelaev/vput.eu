@@ -39,16 +39,16 @@
     &:not(:first-child) { @include border-left-radius(0); }
   }
 
-  // Custom file inputs have more complex-page markup, thus requiring different
+  // Custom file inputs have more complex markup, thus requiring different
   // border-radius overrides.
   > .custom-file {
     display: flex;
     align-items: center;
 
     &:not(:last-child) .custom-file-label,
-    &:not(:last-child) .custom-file-label::before { @include border-right-radius(0); }
+    &:not(:last-child) .custom-file-label::after { @include border-right-radius(0); }
     &:not(:first-child) .custom-file-label,
-    &:not(:first-child) .custom-file-label::before { @include border-left-radius(0); }
+    &:not(:first-child) .custom-file-label::after { @include border-left-radius(0); }
   }
 }
 

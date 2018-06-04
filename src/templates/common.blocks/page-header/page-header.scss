@@ -1,27 +1,37 @@
 @import "../../library.blocks/bootstrap/bootstrap-common";
 
-.icon.page-header__favorites-link {
+.page-header {
+  border-bottom: 1px solid $border-color;
+  .navbar-dark {
+    .page-header__logo {
+      background-image: url(#{$rootDir}/templates/common.blocks/page-header/page-header__VPUT-logo_style_dark.svg);
+    }
+    .page-header__to-rent-button {
+      @include button-outline-variant($light);
+    }
+  }
+}
+.page-header__favorites-link.icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: $white;
   text-decoration: none;
   padding-bottom: 4px;
 }
-
 .page-header__logo {
   width: 120px;
   height: 50px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  background-image: url(#{$rootDir}/templates/common.blocks/page-header/page-header__VPUT-logo_theme_orange.svg);
+  background-image: url(#{$rootDir}/templates/common.blocks/page-header/page-header__VPUT-logo_style_light.svg);
 }
 .page-header__cabinet-menu-icon {
   display: inline-block;
   vertical-align: middle;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-right: .5rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,4 +40,11 @@
 }
 .page-header__dropdown-menu {
   margin-bottom: 12px;
+}
+.page-header__dropdown-item-exit {
+  border-bottom: 3px solid $primary;
+  border-radius: 0 0 $border-radius $border-radius;
+  text-align: center;
+  font-size: $font-size-lg;
+  color: $primary;
 }

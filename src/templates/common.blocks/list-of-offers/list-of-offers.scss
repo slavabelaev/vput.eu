@@ -3,4 +3,8 @@
 .list-of-offers {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
+  &>.col {
+    max-width: 310px;
+  }
 }

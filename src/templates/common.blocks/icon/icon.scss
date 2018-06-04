@@ -9,6 +9,14 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.icon_size_24 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.icon_size_18 {
+  width: 1.125rem;
+  height: 1.125rem;
+}
 .icon__security { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__security.svg); }
 .icon__cafe { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__cafe.svg); }
 .icon__massage { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__massage.svg); }
@@ -33,5 +41,9 @@
 .icon__hotel { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__hotel.svg); }
 .icon__opened-door { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__opened-door.svg); }
 .icon__skyscraper { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__skyscraper.svg); }
+
+.icon__arrow-left { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__arrow-left.svg); }
+.icon__prev { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__prev.svg); }
+.icon__next { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__next.svg); }
 
 .icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }

@@ -1,6 +1,7 @@
 <!-- Page header -->
-<header class="page-header border-bottom">
-    <nav class="navbar navbar-expand-md navbar-light container">
+<% var $style = $style ? $style : 'light'; %>
+<header class="page-header">
+    <nav class="navbar navbar-expand-md navbar-<%= $style %> container">
         <a class="page-header__logo mr-md-4" href="/"></a>
         <button class="navbar-toggler"
                 type="button"
@@ -18,16 +19,26 @@
                     <a class="nav-link" href="/contacts/">Контакты</a>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto align-items-center">
                 <li class="nav-item col-6 col-md-auto mr-md-2">
                     <a class="page-header__favorites-link  icon icon__heart" href="/favorites/">99</a>
                 </li>
-                <li class="page-header__language-nav-item nav-item mr-md-4">
-                    <select class="form-control page-header__language-select">
-                        <option value="ru">Рус</option>
-                        <option value="en">Анг</option>
-                        <option value="ua">Укр</option>
-                    </select>
+                <li class="page-header__language-nav-item nav-item dropdown mb-2 mb-md-0">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="cabinetMenuDropdown"
+                       role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        Язык
+                    </a>
+                    <div class="dropdown-menu"
+                         aria-labelledby="cabinetMenuDropdown">
+                        <a class="dropdown-item" href="?lang=ru">Русский</a>
+                        <a class="dropdown-item" href="?lang=en">Английский</a>
+                        <a class="dropdown-item" href="?lang=ua">Украинский</a>
+                    </div>
                 </li>
                 <li class="nav-item col-6 col-md-auto">
                     <a class="nav-link" href="#"
@@ -53,14 +64,14 @@
                     <div class="page-header__dropdown-menu dropdown-menu" aria-labelledby="cabinetMenuDropdown">
                         <a class="dropdown-item" href="/cabinet/realties/">Мои объявления</a>
                         <a class="dropdown-item" href="/cabinet/bookings/">Бронирования</a>
-                        <a class="dropdown-item" href="/cabinet/trips/">Мои поездки</a>
+                        <a class="dropdown-item" href="/cabinet/trips/">Мои поездки <span class="badge badge-primary">5</span></a>
                         <a class="dropdown-item" href="/cabinet/profile/">Профиль</a>
                         <a class="dropdown-item" href="/cabinet/balance/">Трансферы</a>
                         <a class="dropdown-item" href="/cabinet/balance/">Баланс</a>
                         <a class="dropdown-item" href="/cabinet/partnership/">Партнерская программа</a>
                         <a class="dropdown-item" href="/cabinet/reviews/">Отзывы</a>
                         <a class="dropdown-item" href="/cabinet/referralBookings/">Бронирования рефералов</a>
-                        <a class="dropdown-item text-primary text-center" href="/authorization/logout/">Выйти</a>
+                        <a class="dropdown-item page-header__dropdown-item-exit" href="/authorization/logout/">Выйти</a>
                     </div>
                 </li>
             </ul>

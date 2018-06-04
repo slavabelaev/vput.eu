@@ -9,7 +9,7 @@
 // usability and accessibility should be taken into account with any change.
 //
 // Example usage: change the default blue border and shadow to white for better
-// contrast against a _dark gray background.
+// contrast against a dark gray background.
 @mixin form-control-focus() {
   &:focus {
     color: $input-focus-color;
@@ -45,7 +45,7 @@
     margin-top: .1rem;
     font-size: .875rem;
     line-height: 1;
-    color: #fff;
+    color: $white;
     background-color: rgba($color, .8);
     border-radius: .2rem;
   }

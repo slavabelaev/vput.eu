@@ -1,65 +1,58 @@
 <%- include('../../common.blocks/meta-header/meta-header.tpl'); %>
 <div class="index-page__page-header">
-<%- include('../../common.blocks/page-header/page-header.tpl'); %>
+<%- include('../../common.blocks/page-header/page-header.tpl', { $style: "dark" }); %>
 </div>
 
 <!-- Index Page -->
 <main class="index-page">
-    <section id="rentals-search" class="index-page__section index-page__rentals-search">
+    <div class="index-page__section index-page__who-we-are">
         <div class="container">
-            <header class="index-page__header mb-4">
-                <h1 class="index-page__title mb-0">ПОРТАЛ №1 В БОЛГАРИИ</h1>
-                <p class="index-page__description lead">по безопасной аренде частного жилья</p>
-            </header>
-            <div class="index-page__offers-search-form">
-                <%- include('../../common.blocks/offers-search-form/offers-search-form.tpl'); %>
-            </div>
+        <%- include('../../sections/who-we-are/who-we-are.tpl'); %>
         </div>
-    </section>
+    </div>
 
-    <section id="the-best-apartaments-of-the-week" class="index-page__section">
+    <div class="index-page__section index-page__best-offers-of-the-week">
         <div class="container">
-            <h2 class="text-center">ЛУЧШИЕ АПАРТАМЕНТЫ НЕДЕЛИ</h2>
-            <%- include('../../common.blocks/list-of-offers/list-of-offers.tpl'); %>
+            <%- include('../../sections/best-offers-of-the-week/best-offers-of-the-week.tpl'); %>
         </div>
-    </section>
+    </div>
 
-    <section id="most-popular-cities" class="index-page__section bg-light">
+    <div class="index-page__section index-page__most-popular-cities bg-light">
         <div class="container">
-            <header class="text-center">
-                <h2>САМЫЕ ПОПУЛЯРНЫЕ ГОРОДА</h2>
-                <div class="lead">Туристы часто выбирают эти направления</div>
-            </header>
-            <%- include('../../common.blocks/list-of-most-popular-cities/list-of-most-popular-cities.tpl'); %>
+            <%- include('../../sections/most-popular-cities/most-popular-cities.tpl'); %>
         </div>
-    </section>
+    </div>
 
-    <div class="index-page__section">
+    <div class="index-page__section index-page__services">
         <div class="container">
             <%- include('../../sections/services/services.tpl'); %>
         </div>
     </div>
 
-    <div class="index-page__section bg-light">
+    <div class="index-page__section index-page__about bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <%- include('../../sections/how-it-works/how-it-works.tpl'); %>
+                <div class="col-md-6 mb-3">
+                    <div class="index-page__how-it-works">
+                        <%- include('../../sections/how-it-works/how-it-works.tpl'); %>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <%- include('../../sections/latest-reviews/latest-reviews.tpl'); %>
+                <div class="col-md-6 mb-3">
+                    <div class="index-page__latest-reviews">
+                        <%- include('../../sections/latest-reviews/latest-reviews.tpl'); %>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="index-page__section">
+    <div class="index-page__section index-page__latest-offers">
         <div class="container">
-            <%- include('../../sections/latest-rentals/latest-rentals.tpl'); %>
+            <%- include('../../sections/latest-offers/latest-offers.tpl'); %>
         </div>
     </div>
 
-    <div class="index-page__section">
+    <div class="index-page__section index-page__guarantees">
         <div class="container">
             <%- include('../../sections/guarantees/guarantees.tpl'); %>
         </div>

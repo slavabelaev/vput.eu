@@ -5,8 +5,23 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 460px;
+  min-height: 440px;
   background-color: $dark;
   color: $white;
   border-radius: $card-border-radius;
+  background-image: url(#{$rootDir}/templates/sections/how-it-works/how-it-works__preview.png);
+  background-size: cover;
+  background-position: center;
+}
+.how-it-works__icon-play {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(#{$rootDir}/templates/sections/how-it-works/how-it-works__icon-play.svg);
+  background-size: cover;
+  background-position: center;
+  transition: $transition-base;
+  &:hover {
+    transform: scale(1.125);
+  }
 }

@@ -1,26 +1,25 @@
 @import "../../library.blocks/bootstrap/bootstrap-common";
 
-.list-of-most-popular-cities {
+.most-popular-cities__list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin-bottom: 0;
 }
-.list-of-most-popular-cities__item {
+.most-popular-cities__list-item {
   display: flex;
   align-items: stretch;
   justify-content: center;
   text-align: center;
-  min-height: 350px;
+  min-height: 360px;
   background-color: $dark;
-  border-radius: $card-border-radius;
+  border-radius: $border-radius;
+  color: $white;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0;
 }
-.list-of-most-popular-cities__caption {
+.most-popular-cities__list-caption {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-.list-of-most-popular-cities__title {
-  font-size: 1.5rem;
-  font-weight: normal;
-  color: $white;
 }

@@ -1,23 +1,40 @@
 <!-- Offer item -->
 <figure class="offer-item">
     <a href="#" class="offer-item__add-to-favorites icon icon__heart_style_light"></a>
-    <a href="#" class="offer-item__image" style="background-image: url(https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG);"></a>
+    <div class="offer-item__image-slider" offer-item__image-slider>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+    </div>
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title"><a href="#" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
             <li class="offer-item__detail offer-item__type">Квартира</li>
-            <li class="offer-item__detail offer-item__numbers-of-rooms">Комнат: 1</li>
-            <li class="offer-item__detail offer-item__numbers-of-guests">Гостей: 7</li>
+            <li class="offer-item__detail offer-item__numbers-of-rooms">
+                <span class="offer-item__numbers-of-rooms-label">Комнат:</span>
+                <span class="offer-item__numbers-of-rooms-value">1</span>
+            </li>
+            <li class="offer-item__detail offer-item__numbers-of-guests">
+                <span class="offer-item__numbers-of-guests-label">Гостей:</span>
+                <span class="offer-item__numbers-of-guests-value">7</span>
+            </li>
             <li class="offer-item__detail offer-item__price">
-                <small class="offer-item__currency">€</small>71
+                <small class="offer-item__currency">€</small>
+                <span class="offer-item__price-number">71</span>
+            </li>
+            <li class="offer-item__detail offer-item__price-per-day">
+                <span class="offer-item__currency">€</span>
+                <span class="offer-item__price-number">16</span>
+                <i class="icon icon__guest icon_size_18 ml-1"></i>
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__conditioner"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals icon_size_24"></span></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv icon_size_24"></span></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__conditioner icon_size_24"></span></li>
             <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host"></span></li>
         </ul>
     </figcaption>

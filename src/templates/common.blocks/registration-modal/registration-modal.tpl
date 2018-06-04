@@ -1,9 +1,9 @@
 <!-- Registration modal -->
 <div class="registration-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
             <div class="modal-header justify-content-center">
-                <h3 class="modal-title">Регистрация</h3>
+                <h2 class="modal-title">Регистрация</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body pt-0">

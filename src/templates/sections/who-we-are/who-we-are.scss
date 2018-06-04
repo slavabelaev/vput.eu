@@ -1,0 +1,22 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.who-we-are__title {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.who-we-are__description {
+  font-size: 30px;
+  font-weight: 500;
+}
+.who-we-are__offers-search-form {
+  padding: 1rem;
+  padding-bottom: 0;
+  background-color: rgba(255,255,255,.3);
+  border-radius: $card-border-radius;
+}
+.who-we-are__offers-search-form,
+.who-we-are__popular-cities {
+  max-width: 1024px;
+  margin: auto;
+}

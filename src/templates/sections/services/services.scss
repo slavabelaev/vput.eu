@@ -3,12 +3,68 @@
 .services {
   text-align: center;
 }
-.services__table-td {
-  padding: $table-cell-padding-sm;
+.services__table {
+  font-size: 1.125rem;
+  color: $dark;
 }
-
-.services__list-of-other-services {
+.services__table-td {
+  padding: $table-cell-padding $table-cell-padding $table-cell-padding 0;
+}
+.services__other-services-list {
   list-style: none;
   padding: 0;
   margin-bottom: 0;
+}
+.services__figure-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $dark;
+}
+.services__title-link {
+  color: $dark;
+  @include hover-focus {
+    color: $dark;
+  }
+}
+.services__price {
+  color: $secondary;
+  font-size: 1.75rem;
+}
+.services__link {
+  font-size: 1.125rem;
+}
+.services__img {
+  width: 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.services__other-services-item {
+  margin-bottom: 0;
+}
+
+@include media-breakpoint-up(xl) {
+  .services__transfer,
+  .services__other-services-list-item {
+    position: relative;
+    &:not(:last-child):after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-right: 1px solid $border-color;
+      height: 60%
+    }
+  }
+
+  .services__transfer {
+    &:not(:last-child):after {
+      bottom: 0;
+      top: initial;
+      height: 80%;
+    }
+  }
 }

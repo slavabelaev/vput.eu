@@ -22,10 +22,19 @@
   }
 }
 
-#offers-search-form__cities-dropdown {
+.offers-search-form__fieldset {
+  padding-top: $form-group-margin-bottom;
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+}
+.offers-search-form__other-filters-legend {
+  margin-bottom: $form-group-margin-bottom;
+}
+
+.offers-search-form__cities-dropdown {
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 1.5rem;
   z-index: 99;
 }

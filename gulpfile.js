@@ -7,6 +7,7 @@ const typescript  = require('gulp-typescript');
 const imagemin    = require('gulp-imagemin');
 
 const concat      = require('gulp-concat');
+const autoprefixer = require('gulp-autoprefixer');
 const rename      = require('gulp-rename');
 const newer       = require('gulp-newer');
 const plumber     = require('gulp-plumber');
@@ -75,6 +76,7 @@ gulp.task('build:styles', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
         .pipe(concat(config.styles.bundleFileName))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.bundles))

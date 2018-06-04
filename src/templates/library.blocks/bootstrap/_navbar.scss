@@ -162,11 +162,6 @@
             position: absolute;
           }
 
-          .dropdown-menu-right {
-            right: 0;
-            left: auto; // Reset the default from `.dropdown-menu`
-          }
-
           .nav-link {
             padding-right: $navbar-nav-link-padding-x;
             padding-left: $navbar-nav-link-padding-x;
@@ -189,13 +184,6 @@
         .navbar-toggler {
           display: none;
         }
-
-        .dropup {
-          .dropdown-menu {
-            top: auto;
-            bottom: 100%;
-          }
-        }
       }
     }
   }
@@ -204,9 +192,9 @@
 
 // Navbar themes
 //
-// Styles for switching between navbars with _light or _dark background.
+// Styles for switching between navbars with light or dark background.
 
-// Dark links against a _light background
+// Dark links against a light background
 .navbar-light {
   .navbar-brand {
     color: $navbar-light-active-color;
@@ -258,7 +246,7 @@
   }
 }
 
-// White links against a _dark background
+// White links against a dark background
 .navbar-dark {
   .navbar-brand {
     color: $navbar-dark-active-color;

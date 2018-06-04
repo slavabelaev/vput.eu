@@ -1,0 +1,30 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.search-page {
+  position: fixed;
+  top: 66px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.search-page__search-container {
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.search-page__map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.search-page__list-of-offers {
+  .list-of-offers > .col {
+    max-width: 292px;
+  }
+}

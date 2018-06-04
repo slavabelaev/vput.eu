@@ -2,8 +2,38 @@
 <section class="how-it-works">
     <div class="how-it-works__container">
         <h2 class="how-it-works__title">Как это работает?</h2>
-        <a href="#" class="icon icon__play"></a>
+        <a href="#"
+           class="how-it-works__icon-play my-4"
+           data-toggle="modal"
+           data-target=".how-it-works__modal"></a>
         <div class="how-it-works__description lead">ПОСМОТРЕТЬ ВИДЕО</div>
+    </div>
+
+    <div class="how-it-works__modal modal fade"
+         tabindex="-1"
+         role="dialog"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="youtube_player"
+                            data-src="https://www.youtube.com/embed/LLydhsmwSUs"
+                            allowfullscreen=""
+                            frameborder="0"
+                            width="100%"
+                            src="https://www.youtube.com/embed/LLydhsmwSUs"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- /Section: How it works -->

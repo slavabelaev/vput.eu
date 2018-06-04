@@ -30,7 +30,6 @@
 //
 
 .nav-tabs {
-  font-size: 1.125rem;
   border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
 
   .nav-item {
@@ -39,7 +38,7 @@
 
   .nav-link {
     border: $nav-tabs-border-width solid transparent;
-    border-radius: $nav-tabs-border-radius;
+    @include border-top-radius($nav-tabs-border-radius);
 
     @include hover-focus {
       border-color: $nav-tabs-link-hover-border-color;
@@ -110,8 +109,6 @@
 // Hide tabbable panes to start, show them when `.active`
 
 .tab-content {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
   > .tab-pane {
     display: none;
   }

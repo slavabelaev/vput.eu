@@ -2,12 +2,53 @@
 
 .offer-item {
   position: relative;
+  margin-bottom: 0;
+}
+.offer-item__image-slider {
+  display: block;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: .1825rem;
+  background-color: $dark;
+  &:hover {
+    .slick-prev,
+    .slick-next {
+      opacity: 1;
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    opacity: 0;
+    transition: $transition-base;
+    z-index: 99;
+    width: initial;
+    height: initial;
+    &:before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-size: cover;
+    }
+  }
+  .slick-prev {
+    left: .5rem;
+    &:before {
+      background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__prev.svg);
+    }
+  }
+  .slick-next {
+    right: .5rem;
+    &:before {
+      background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__next.svg);
+    }
+  }
 }
 .offer-item__image {
-  display: block;
   height: 200px;
-  border-radius: .1825rem;
   background-size: cover;
+  background-position: center;
   transition: .24s;
   &:hover {
     filter: brightness(1.1);
@@ -26,7 +67,6 @@
     opacity: 1;
   }
 }
-
 .offer-item__description {
   position: relative;
   padding: .75rem 0;
@@ -45,11 +85,10 @@
   color: $text-muted;
   font-size: .875rem;
 }
-.offer-item__detail {
-  .icon:not(.icon__reliable-host) {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+.offer-item__price-number-icon.icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-left: .5rem;
 }
 .offer-item__special-details {
   list-style: none;
@@ -104,24 +143,34 @@
     content: "";
     display: inline-block;
     position: absolute;
-    width: 3rem;
+    width: 2.4rem;
     right: 0;
     bottom: 0;
+    background: #fff;
     top: 0;
-    box-shadow: #fff -3rem 0 1.5rem -0.75rem inset;
+    box-shadow: #fff 0 0 24px 24px;
   }
 }
+
+.offer-item__price-per-day,
 .offer-item__price {
   display: flex;
   align-items: flex-start;
   position: absolute;
   right: 0;
-  bottom: 0;
   line-height: 1;
   background-color: #fff;
-  color: $secondary;
   box-shadow: #fff -15px 0 10px -5px;
-  font-size: 2rem;
+}
+.offer-item__price {
+  top: -1rem;
+  color: $secondary;
+  font-size: 2.25rem;
+}
+.offer-item__price-per-day {
+  bottom: 0;
+  color: $text-muted;
+  font-size: 1.125rem;
 }
 .offer-item__reliable-host {
   position: absolute;

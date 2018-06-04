@@ -1,5 +1,9 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
+body, html {
+  font-family: "Exo 2", sans-serif;
+}
+
 .mh-100vh {
   min-height: 600px;
   min-height: 100vh;

@@ -60,9 +60,14 @@ const config = {
 gulp.task('build:templates', function () {
     return gulp.src(config.templates.buildFiles)
         .pipe(plumber())
-        .pipe(ejs())
+        .pipe(ejs({
+            bundlePath: {
+                styles: paths.bundles.replace(paths.dest, '') + '/' + config.styles.bundleFileName,
+                scripts: paths.bundles.replace(paths.dest, '') + '/' + config.scripts.bundleFileName,
+            }
+        }))
         .pipe(rename(function(path) {
-            path.basename  = path.basename.replace('-page', '');
+            path.basename = path.basename.replace('-page', '');
             path.extname = '.html';
             path.dirname = '';
         }))

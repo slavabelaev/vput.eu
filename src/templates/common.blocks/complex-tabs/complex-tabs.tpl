@@ -68,37 +68,37 @@
                         <ul class="complex-tabs__list-of-characteristics row">
                             <li class="col-sm-6">
                                 <figure class="figure d-flex">
-                                    <span class="icon icon__security"></span>
+                                    <i class="icon icon__security mr-3"></i>
                                     <figcaption class="figure-caption">Охрана</figcaption>
                                 </figure>
                             </li>
                             <li class="col-sm-6">
                                 <figure class="figure d-flex">
-                                    <span class="icon icon__cafe"></span>
+                                    <i class="icon icon__cafe mr-3"></i>
                                     <figcaption class="figure-caption">Кафе</figcaption>
                                 </figure>
                             </li>
                             <li class="col-sm-6">
                                 <figure class="figure d-flex">
-                                    <span class="icon icon__parking-place"></span>
+                                    <i class="icon icon__parking-place mr-3"></i>
                                     <figcaption class="figure-caption">Парковка <small class="text-muted">(20 мест)</small></figcaption>
                                 </figure>
                             </li>
                             <li class="col-sm-6">
                                 <figure class="figure d-flex">
-                                    <span class="icon icon__bicycles-for-rent"></span>
+                                    <i class="icon icon__bicycles-for-rent mr-3"></i>
                                     <figcaption class="figure-caption">Прокат велосипедов</figcaption>
                                 </figure>
                             </li>
                             <li class="col-sm-6">
                                 <figure class="figure d-flex">
-                                    <span class="icon icon__access-to-the-sea"></span>
+                                    <i class="icon icon__access-to-the-sea mr-3"></i>
                                     <figcaption class="figure-caption">Доступ к морю <small class="text-muted">(20 метров)</small></figcaption>
                                 </figure>
                             </li>
                             <li class="col-sm-6">
                                 <figure class="figure d-flex">
-                                    <span class="icon icon__massage"></span>
+                                    <i class="icon icon__massage mr-3"></i>
                                     <figcaption class="figure-caption">Массаж</figcaption>
                                 </figure>
                             </li>
@@ -110,7 +110,7 @@
                             </li>
                             <li class="col-sm-6">
                                 <figure class="figure d-flex">
-                                    <span class="icon icon__SPA"></span>
+                                    <i class="icon icon__SPA mr-3"></i>
                                     <figcaption class="figure-caption">СПА</figcaption>
                                 </figure>
                             </li>

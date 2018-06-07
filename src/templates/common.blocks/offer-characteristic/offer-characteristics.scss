@@ -1,0 +1,20 @@
+@import "../../library.blocks/bootstrap/bootstrap-common";
+
+.offer-characteristic {
+  display: flex;
+  margin-bottom: .875rem;
+}
+.offer-characteristic__label {
+  margin-bottom: 0;
+  margin-right: .5rem;
+}
+.offer-characteristic__value {
+  color: $text-muted;
+}
+.offer-characteristic__caption {
+  display: flex;
+  align-items: center;
+}
+.offer-characteristic__icon {
+  margin-right: 1rem;
+}

@@ -22,20 +22,20 @@
                 <span class="offer-item__numbers-of-guests-value">7</span>
             </li>
             <li class="offer-item__detail offer-item__price">
-                <small class="offer-item__currency">€</small>
-                <span class="offer-item__price-number">71</span>
+                <span class="offer-item__price-currency">€</span>
+                <span class="offer-item__price-value">71</span>
             </li>
             <li class="offer-item__detail offer-item__price-per-day">
-                <span class="offer-item__currency">€</span>
-                <span class="offer-item__price-number">16</span>
+                <span class="offer-item__price-per-day-currency">€</span>
+                <span class="offer-item__price-per-day-value">16</span>
                 <i class="icon icon__guest icon_size_18 ml-1"></i>
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals icon_size_24"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv icon_size_24"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__conditioner icon_size_24"></span></li>
-            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__air-conditioner"></span></li>
+            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host icon_size_32"></span></li>
         </ul>
     </figcaption>
 </figure>

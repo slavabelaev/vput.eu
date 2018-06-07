@@ -3,7 +3,7 @@
 
 <!-- Complex Page -->
 <main class="complex-page">
-    <div class="pt-4 pb-4 border-bottom">
+    <div class="pt-4 pb-2 border-bottom">
         <div class="container">
             <%- include('../../common.blocks/offers-search-form/offers-search-form.tpl'); %>
         </div>

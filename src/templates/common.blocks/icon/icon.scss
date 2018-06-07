@@ -3,15 +3,15 @@
 .icon {
   display: inline-block;
   vertical-align: middle;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.icon_size_24 {
-  width: 1.5rem;
-  height: 1.5rem;
+.icon_size_32 {
+  width: 2rem;
+  height: 2rem;
 }
 .icon_size_18 {
   width: 1.125rem;
@@ -46,4 +46,17 @@
 .icon__prev { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__prev.svg); }
 .icon__next { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__next.svg); }
 
+.icon__information { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__information.svg); }
+.icon__air-conditioner { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__air-conditioner.svg); }
+.icon__building { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__building.svg); }
+.icon__cleaning { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__cleaning.svg); }
+.icon__parking { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__parking.svg); }
+.icon__smoking { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__smoking.svg); }
+.icon__towel { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__towel.svg); }
+.icon__wifi { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__wifi.svg); }
+.icon__window { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__window.svg); }
+.icon__stairs { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__stairs.svg); }
+.icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }
+.icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }
+.icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }
 .icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }

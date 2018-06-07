@@ -1,4 +1,4 @@
-@import "../../library.blocks/bootstrap/bootstrap-common";
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
 
 .offers-search-form {
   position: relative;
@@ -33,8 +33,11 @@
 }
 
 .offers-search-form__cities-dropdown {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 99;
+  &,
+  &.collapsing {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
 }

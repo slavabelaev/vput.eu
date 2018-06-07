@@ -1,1 +1,8 @@
-@import "../../library.blocks/bootstrap/bootstrap-common";
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.list-of-main-characteristics {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  text-align: center;
+}

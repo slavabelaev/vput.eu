@@ -1,4 +1,4 @@
-@import "../../library.blocks/bootstrap/bootstrap-common";
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
 
 .icon {
   display: inline-block;
@@ -17,6 +17,11 @@
   width: 1.125rem;
   height: 1.125rem;
 }
+
+.icon_style_light {
+  filter: brightness(0) invert(1);
+}
+
 .icon__security { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__security.svg); }
 .icon__cafe { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__cafe.svg); }
 .icon__massage { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__massage.svg); }

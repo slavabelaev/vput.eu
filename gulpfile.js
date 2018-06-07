@@ -36,12 +36,11 @@ const config = {
         bundleFileName: 'bundle.min.css',
         watchFiles: paths.src + '/**/*.scss',
         buildFiles: [
-            paths.src + '/**/*.scss',
             'node_modules/slick-carousel/slick/slick.scss',
             'node_modules/slick-carousel/slick/slick-theme.scss',
-
             'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
             'node_modules/nouislider/distribute/nouislider.min.css',
+            paths.src + '/**/*.scss',
         ]
     },
     scripts: {
@@ -133,40 +132,15 @@ gulp.task('scripts:buildJS', function() {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(concat(bundleJSFileName))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.bundles))
-        .pipe(browserSync.reload({ stream: true }));
-});
-gulp.task('scripts:concatBundles', function() {
-    const bundleTSFilePath = paths.bundles + '/ts.' + config.scripts.bundleFileName,
-          bundleJSFilePath = paths.bundles + '/js.' + config.scripts.bundleFileName;
-
-    return gulp.src([
-        bundleJSFilePath,
-        bundleTSFilePath
-    ])
-        .pipe(newer(bundleJSFilePath))
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(concat(config.scripts.bundleFileName))
         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.bundles))
         .pipe(browserSync.reload({ stream: true }));
 });
-gulp.task('scripts:removeBundles', function() {
-    const bundleTSFilePath = paths.bundles + '/ts.' + config.scripts.bundleFileName,
-          bundleTSMapFilePath = bundleTSFilePath + '.map',
-          bundleJSFilePath = paths.bundles + '/js.' + config.scripts.bundleFileName,
-          bundleJSMapFilePath = bundleJSFilePath + '.map';
 
-    del(bundleTSFilePath);
-    del(bundleTSMapFilePath);
-    del(bundleJSFilePath);
-    del(bundleJSMapFilePath);
+gulp.task('scripts:build', function() {
+    gulpSequence(['scripts:buildTS', 'scripts:buildJS']);
 });
-
-gulp.task('scripts:build', gulpSequence(['scripts:buildTS', 'scripts:buildJS'], 'scripts:concatBundles', 'scripts:removeBundles'));
 
 gulp.task('images:build', function() {
     return gulp.src(config.images.buildFiles)
@@ -205,10 +179,11 @@ gulp.task('watch', function() {
     watch(config.styles.watchFiles, function() {
         gulp.start('styles:build');
     });
-
-    var watchScriptFiles = config.scripts.watchFiles.ts.concat(config.scripts.watchFiles.js);
-    watch(watchScriptFiles, function() {
-        gulp.start('scripts:build');
+    watch(config.scripts.watchFiles.ts, function() {
+        gulp.start('scripts:buildTS');
+    });
+    watch(config.scripts.watchFiles.js, function() {
+        gulp.start('scripts:buildJS');
     });
     watch(config.images.watchFiles, function() {
         gulp.start('images:build');

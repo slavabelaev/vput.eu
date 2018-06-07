@@ -1,4 +1,4 @@
-@import "../../library.blocks/bootstrap/bootstrap-common";
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
 
 .offer-item {
   position: relative;
@@ -46,7 +46,9 @@
   }
 }
 .offer-item__image {
-  height: 200px;
+  &.slick-slide {
+    height: 200px;
+  }
   background-size: cover;
   background-position: center;
   transition: .24s;
@@ -60,10 +62,13 @@
   height: 32px;
   top: 12px;
   left: 12px;
-  opacity: .7;
-  transition: .36s;
+  opacity: .5;
+  transition: $transition-base;
   z-index: 1;
   &:hover {
+    opacity: .6;
+  }
+  &.active {
     opacity: 1;
   }
 }

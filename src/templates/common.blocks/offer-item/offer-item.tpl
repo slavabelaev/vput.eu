@@ -1,6 +1,6 @@
 <!-- Offer item -->
 <figure class="offer-item">
-    <a href="#" class="offer-item__add-to-favorites icon icon__heart_style_light"></a>
+    <a class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
     <div class="offer-item__image-slider" offer-item__image-slider>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>

@@ -33,7 +33,9 @@ jQuery(document).ready(function($) {
     }
 
     initOfferItemImageSlider();
-    offerItemAddToFavorites.on('click', function() {
+    offerItemAddToFavorites.on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
         $(this).toggleClass('active');
     });
 });

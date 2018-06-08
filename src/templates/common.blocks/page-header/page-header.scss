@@ -10,6 +10,11 @@
       @include button-outline-variant($light);
     }
   }
+
+  .dropdown-menu {
+    margin-top: 12px;
+    border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
+  }
 }
 .page-header__favorites-link.icon {
   display: inline-flex;

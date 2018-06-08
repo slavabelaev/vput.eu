@@ -34,14 +34,26 @@ const config = {
     },
     styles: {
         bundleFileName: 'bundle.min.css',
-        watchFiles: paths.src + '/**/*.scss',
-        buildFiles: [
-            'node_modules/slick-carousel/slick/slick.scss',
-            'node_modules/slick-carousel/slick/slick-theme.scss',
-            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
-            'node_modules/nouislider/distribute/nouislider.min.css',
-            paths.src + '/**/*.scss',
-        ]
+        watchFiles: {
+            scss: [
+                paths.src + '/**/*.scss'
+            ],
+            css: []
+        },
+        buildFiles: {
+            scss: [
+                paths.src + '/**/library.blocks/**/*.scss',
+                paths.src + '/**/common.blocks/**/*.scss',
+                paths.src + '/**/sections/**/*.scss',
+                paths.src + '/**/pages/**/*.scss',
+            ],
+            css: [
+                'node_modules/slick-carousel/slick/slick.min.css',
+                'node_modules/slick-carousel/slick/slick-theme.min.css',
+                'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
+                'node_modules/nouislider/distribute/nouislider.min.css',
+            ]
+        }
     },
     scripts: {
         bundleFileName: 'bundle.min.js',
@@ -93,20 +105,36 @@ gulp.task('templates:build', function () {
         .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('styles:build', function () {
-    var bundleStylesPath = paths.bundles + '/' + config.styles.bundleFileName;
+gulp.task('styles:buildSCSS', function () {
+    const bundleSCSSPath = paths.bundles + '/' + config.styles.bundleFileName,
+          bundleSCSSFileName = 'scss.' + config.styles.bundleFileName;
 
-    return gulp.src(config.styles.buildFiles)
-        .pipe(newer(bundleStylesPath))
+    return gulp.src(config.styles.buildFiles.scss)
+        .pipe(newer(bundleSCSSPath))
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(concat(config.styles.bundleFileName))
+        .pipe(concat(bundleSCSSFileName))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.bundles))
         .pipe(browserSync.reload({ stream: true }));
 });
+gulp.task('styles:buildCSS', function () {
+    const bundleCSSPath = paths.bundles + '/' + config.styles.bundleFileName,
+          bundleCSSFileName = 'css.' + config.styles.bundleFileName;
+
+    return gulp.src(config.styles.buildFiles.css)
+        .pipe(newer(bundleCSSPath))
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(autoprefixer())
+        .pipe(concat(bundleCSSFileName))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(paths.bundles))
+        .pipe(browserSync.reload({ stream: true }));
+});
+gulp.task('styles:build', ['styles:buildSCSS', 'styles:buildCSS']);
 
 gulp.task('scripts:buildTS', function() {
     const bundleTSFilePath = paths.bundles + '/ts.' + config.scripts.bundleFileName,
@@ -137,10 +165,7 @@ gulp.task('scripts:buildJS', function() {
         .pipe(gulp.dest(paths.bundles))
         .pipe(browserSync.reload({ stream: true }));
 });
-
-gulp.task('scripts:build', function() {
-    gulpSequence(['scripts:buildTS', 'scripts:buildJS']);
-});
+gulp.task('scripts:build', ['scripts:buildTS', 'scripts:buildJS']);
 
 gulp.task('images:build', function() {
     return gulp.src(config.images.buildFiles)
@@ -176,8 +201,11 @@ gulp.task('watch', function() {
     watch(config.templates.watchFiles, function() {
         gulp.start('templates:build');
     });
-    watch(config.styles.watchFiles, function() {
-        gulp.start('styles:build');
+    watch(config.styles.watchFiles.scss, function() {
+        gulp.start('styles:buildSCSS');
+    });
+    watch(config.styles.watchFiles.css, function() {
+        gulp.start('styles:buildCSS');
     });
     watch(config.scripts.watchFiles.ts, function() {
         gulp.start('scripts:buildTS');

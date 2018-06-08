@@ -1,0 +1,28 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.offer-price-calculator {
+  background-color: $light;
+  padding: $card-spacer-x;
+}
+.offer-price-calculator__price {
+  display: flex;
+  align-items: flex-start;
+}
+.offer-price-calculator__price-label {
+   margin-right: .5rem;
+}
+.offer-price-calculator__price-value {
+  font-size: 2rem;
+}
+.offer-price-calculator__description {
+  color: $primary;
+}
+.offer-price-calculator__table {
+  &.table {
+    background-color: $white;
+    border-radius: $border-radius;
+  }
+  tr:first-child td {
+    border-top-width: 0;
+  }
+}

@@ -18,7 +18,9 @@ jQuery(document).ready(function ($) {
         offerItemImageFirstImage.css({ backgroundImage: 'url(' + offerItemImageFirstImageSource + ')' });
     }
     initOfferItemImageSlider();
-    offerItemAddToFavorites.on('click', function () {
+    offerItemAddToFavorites.on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
         $(this).toggleClass('active');
     });
 });

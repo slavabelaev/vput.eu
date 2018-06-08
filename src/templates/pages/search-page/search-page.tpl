@@ -10,7 +10,7 @@
                     <%- include('../../common.blocks/offers-search-form/offers-search-form.tpl'); %>
                 </div>
                 <div class="search-page__list-of-offers py-4">
-                    <%- include('../../common.blocks/list-of-offers/list-of-offers.tpl'); %>
+                    <%- include('../../common.blocks/list-of-search-offers/list-of-search-offers.tpl'); %>
                 </div>
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">

@@ -1,0 +1,12 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.list-of-main-characteristics__title {
+  font-size: 1.25rem;
+}
+.list-of-main-characteristics__icon {
+  margin-bottom: 1rem;
+}
+.list-of-main-characteristics__value {
+  font-size: 2rem;
+  color: $text-muted;
+}

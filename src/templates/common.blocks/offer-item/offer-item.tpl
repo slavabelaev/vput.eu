@@ -1,6 +1,6 @@
 <!-- Offer item -->
 <figure class="offer-item">
-    <a href="#" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
     <div class="offer-item__image-slider" offer-item__image-slider>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
@@ -8,7 +8,7 @@
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="#" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -32,10 +32,10 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__air-conditioner"></span></li>
-            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host icon_size_32"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__animals"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
         </ul>
     </figcaption>
 </figure>

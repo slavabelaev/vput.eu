@@ -21,7 +21,7 @@
             </ul>
             <ul class="navbar-nav ml-auto align-items-center">
                 <li class="nav-item col-6 col-md-auto mr-md-2">
-                    <a class="page-header__favorites-link  icon icon__heart" href="/favorites/">99</a>
+                    <a class="page-header__favorites-link  icon icon__heart icon_size_32" href="/favorites/">99</a>
                 </li>
                 <li class="page-header__language-nav-item nav-item dropdown mb-2 mb-md-0">
                     <a class="nav-link dropdown-toggle"
@@ -58,7 +58,7 @@
                        data-toggle="dropdown"
                        aria-haspopup="true"
                        aria-expanded="false">
-                        <span class="page-header__cabinet-menu-icon"></span>
+                        <i class="page-header__cabinet-menu-icon icon icon__cabinet-user mr-2"></i>
                         Кабинет
                     </a>
                     <div class="page-header__dropdown-menu dropdown-menu" aria-labelledby="cabinetMenuDropdown">

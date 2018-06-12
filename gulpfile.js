@@ -48,8 +48,8 @@ const config = {
                 paths.src + '/**/pages/**/*.scss',
             ],
             css: [
-                'node_modules/slick-carousel/slick/slick.min.css',
-                'node_modules/slick-carousel/slick/slick-theme.min.css',
+                'node_modules/slick-carousel/slick/slick.css',
+                'node_modules/slick-carousel/slick/slick-theme.css',
                 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
                 'node_modules/nouislider/distribute/nouislider.min.css',
             ]

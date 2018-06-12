@@ -1,0 +1,61 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.offer-share {
+  border: $border-color 1px solid;
+  border-radius: $border-radius;
+  padding: $card-spacer-x;
+  text-align: center;
+}
+.offer-share__add-to-favorites {
+  display: inline-block;
+  text-transform: uppercase;
+  color: $dark;
+  @include hover-focus {
+    color: $dark;
+  }
+
+  .offer-share__add-to-favorites-label-minus { display: none; }
+  &.active {
+    .offer-share__add-to-favorites-label-plus { display: none; }
+    .offer-share__add-to-favorites-label-minus { display: inline-block; }
+  }
+}
+.offer-share__title {
+  font-size: 1rem;
+  color: $text-muted;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 0;
+    z-index: -1;
+    border-bottom: $border-color 1px solid;
+  }
+}
+.offer-share__title-text {
+  z-index: 1;
+  background-color: $white;
+  padding-right: $card-spacer-x;
+  padding-left: $card-spacer-x;
+}
+.offer-share__social-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.offer-share__social-link {
+  transition: $transition-base;
+  opacity: 1;
+  &:hover {
+    opacity: .8;
+  }
+}

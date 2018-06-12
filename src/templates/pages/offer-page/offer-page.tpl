@@ -23,7 +23,11 @@
                 </header>
 
                 <div class="offer-page__list-of-main-characteristics pt-4 border-bottom">
-                    <%- include('../../common.blocks/list-of-main-characteristics/list-of-main-characteristics.tpl'); %>
+                    <%- include('../../sections/offer-main-characteristics/offer-main-characteristics.tpl'); %>
+                </div>
+
+                <div class="offer-page__offer-bedrooms py-4 border-bottom">
+                    <%- include('../../sections/offer-bedrooms/offer-bedrooms.tpl'); %>
                 </div>
 
                 <div class="offer-page__offer-facilities py-4 border-bottom">
@@ -51,16 +55,23 @@
                 </div>
             </article>
             <aside class="offer-page__aside col">
-                <div class="progress mb-4">
-                    <div class="progress-bar"
-                         role="progressbar"
-                         style="width: 50%"
-                         aria-valuenow="50"
-                         aria-valuemin="0"
-                         aria-valuemax="100"></div>
+                <div class="offer-page__offer-employed-by mb-3">
+                    <%- include('../../common.blocks/offer-employed-by/offer-employed-by.tpl'); %>
                 </div>
-                <div class="offer-page__offer-price-calculator">
+                <div class="offer-page__offer-price-calculator mb-3">
                     <%- include('../../common.blocks/offer-price-calculator/offer-price-calculator.tpl'); %>
+                </div>
+                <div class="offer-page__offer-insterested-in mb-3">
+                    <%- include('../../common.blocks/offer-interested-in/offer-interested-in.tpl'); %>
+                </div>
+                <div class="offer-page__offer-owner mb-3">
+                    <%- include('../../common.blocks/offer-owner/offer-owner.tpl'); %>
+                </div>
+                <div class="offer-page__offer-share mb-3">
+                    <%- include('../../common.blocks/offer-share/offer-share.tpl'); %>
+                </div>
+                <div class="offer-page__how-it-works">
+                    <%- include('../../sections/how-it-works/how-it-works.tpl'); %>
                 </div>
             </aside>
         </div>

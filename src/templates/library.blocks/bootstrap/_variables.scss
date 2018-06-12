@@ -10,7 +10,7 @@
 
 // stylelint-disable
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: #f3f5f5 !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -707,15 +707,16 @@ $card-columns-margin:               $card-spacer-y !default;
 
 // Tooltips
 
-$tooltip-font-size:                 $font-size-sm !default;
-$tooltip-max-width:                 200px !default;
-$tooltip-color:                     $white !default;
-$tooltip-bg:                        $black !default;
+$tooltip-font-size:                 $font-size-base !default;
+$tooltip-max-width:                 320px !default;
+$tooltip-color:                     $dark !default;
+$tooltip-bg:                        $white !default;
 $tooltip-border-radius:             $border-radius !default;
-$tooltip-opacity:                   .9 !default;
-$tooltip-padding-y:                 .25rem !default;
-$tooltip-padding-x:                 .5rem !default;
+$tooltip-opacity:                   1 !default;
+$tooltip-padding-y:                 .5rem !default;
+$tooltip-padding-x:                 1rem !default;
 $tooltip-margin:                    0 !default;
+$tooltip-box-shadow:                0 0 20px -5px $gray-600 !default;
 
 $tooltip-arrow-width:               .8rem !default;
 $tooltip-arrow-height:              .4rem !default;
@@ -814,7 +815,7 @@ $alert-color-level:                 6 !default;
 
 $progress-height:                   1rem !default;
 $progress-font-size:                ($font-size-base * .75) !default;
-$progress-bg:                       $gray-200 !default;
+$progress-bg:                       $gray-300 !default;
 $progress-border-radius:            $border-radius !default;
 $progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1) !default;
 $progress-bar-color:                $white !default;

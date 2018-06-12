@@ -10,6 +10,14 @@
   color: $text-muted;
 }
 
-.offer-page__aside {
-  max-width: 375px;
+.offer-page__how-it-works {
+  .how-it-works {
+    height: 260px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .offer-page__aside {
+    max-width: 375px;
+  }
 }

@@ -6,7 +6,8 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="//fonts.googleapis.com/css?family=Exo+2:700,300italic,600,500italic,700italic,300,400,800,600italic,500,800italic,400italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/assets/bundles/bundle.min.css">
+    <link rel="stylesheet" href="/assets/bundles/scss.bundle.min.css">
+    <link rel="stylesheet" href="/assets/bundles/css.bundle.min.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             </ul>
             <ul class="navbar-nav ml-auto align-items-center">
                 <li class="nav-item col-6 col-md-auto mr-md-2">
-                    <a class="page-header__favorites-link  icon icon__heart" href="/favorites/">99</a>
+                    <a class="page-header__favorites-link  icon icon__heart icon_size_32" href="/favorites/">99</a>
                 </li>
                 <li class="page-header__language-nav-item nav-item dropdown mb-2 mb-md-0">
                     <a class="nav-link dropdown-toggle"
@@ -70,7 +71,7 @@
                        data-toggle="dropdown"
                        aria-haspopup="true"
                        aria-expanded="false">
-                        <span class="page-header__cabinet-menu-icon"></span>
+                        <i class="page-header__cabinet-menu-icon icon icon__cabinet-user mr-2"></i>
                         Кабинет
                     </a>
                     <div class="page-header__dropdown-menu dropdown-menu" aria-labelledby="cabinetMenuDropdown">
@@ -244,7 +245,7 @@
 <ul class="list-of-main-characteristics row">
     <li class="list-of-main-characteristics__list-item col-6 col-md">
         <figure class="list-of-main-characteristics__item">
-            <i class="list-of-main-characteristics__icon icon icon__home icon_size_32"></i>
+            <i class="list-of-main-characteristics__icon icon icon__guest icon_style_dark icon_size_32"></i>
             <figcaption class="list-of-main-characteristics__caption">
                 <h3 class="list-of-main-characteristics__title">Вмещает гостей</h3>
                 <div class="list-of-main-characteristics__value">3</div>
@@ -253,7 +254,7 @@
     </li>
     <li class="list-of-main-characteristics__list-item col-6 col-md">
         <figure class="list-of-main-characteristics__item">
-            <i class="list-of-main-characteristics__icon icon icon__home icon_size_32"></i>
+            <i class="list-of-main-characteristics__icon icon icon__door icon_style_dark icon_size_32"></i>
             <figcaption class="list-of-main-characteristics__caption">
                 <h3 class="list-of-main-characteristics__title">Кол-во комнат</h3>
                 <div class="list-of-main-characteristics__value">1</div>
@@ -262,7 +263,7 @@
     </li>
     <li class="list-of-main-characteristics__list-item col-6 col-md">
         <figure class="list-of-main-characteristics__item">
-            <i class="list-of-main-characteristics__icon icon icon__bathroom icon_size_32"></i>
+            <i class="list-of-main-characteristics__icon icon icon__bathroom icon_style_dark icon_size_32"></i>
             <figcaption class="list-of-main-characteristics__caption">
                 <h3 class="list-of-main-characteristics__title">Ванные</h3>
                 <div class="list-of-main-characteristics__value">1</div>
@@ -271,7 +272,7 @@
     </li>
     <li class="list-of-main-characteristics__list-item col-6 col-md">
         <figure class="list-of-main-characteristics__item">
-            <i class="list-of-main-characteristics__icon icon icon__home icon_size_32"></i>
+            <i class="list-of-main-characteristics__icon icon icon__air-conditioner icon_style_dark icon_size_32"></i>
             <figcaption class="list-of-main-characteristics__caption">
                 <h3 class="list-of-main-characteristics__title">Кондиционер</h3>
                 <div class="list-of-main-characteristics__value">Есть</div>
@@ -282,21 +283,85 @@
 <!-- /Block: List of main characteristics -->
                 </div>
 
+                <div class="offer-page__offer-bedrooms py-4 border-bottom">
+                    <!-- Section: Offer bedrooms -->
+<section class="offer-bedrooms">
+    <h2 class="offer-bedrooms__title mb-4">СПАЛЬНЫЕ МЕСТА:</h2>
+    <ul class="list-of-offer-characteristics row">
+        <li class="list-of-offer-characteristics__item col-md-6">
+            <figure class="offer-characteristic">
+                <i class="offer-characteristic__icon icon icon__sofa"></i>
+                <figcaption class="offer-characteristic__caption">
+                    <label class="offer-characteristic__label">Диван раскладной:</label>
+                    <div class="offer-characteristic__value">1</div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="list-of-offer-characteristics__item col-md-6">
+            <figure class="offer-characteristic">
+                <i class="offer-characteristic__icon icon icon__single-bed"></i>
+                <figcaption class="offer-characteristic__caption">
+                    <label class="offer-characteristic__label">Односпальная кровать:</label>
+                    <div class="offer-characteristic__value">1</div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="list-of-offer-characteristics__item col-md-6">
+            <figure class="offer-characteristic">
+                <i class="offer-characteristic__icon icon icon__bed"></i>
+                <figcaption class="offer-characteristic__caption">
+                    <label class="offer-characteristic__label">Двуспальная сплошная:</label>
+                    <div class="offer-characteristic__value">1</div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="list-of-offer-characteristics__item col-md-6">
+            <figure class="offer-characteristic">
+                <i class="offer-characteristic__icon icon icon__bed"></i>
+                <figcaption class="offer-characteristic__caption">
+                    <label class="offer-characteristic__label">Двуспальная раздвижная:</label>
+                    <div class="offer-characteristic__value">1</div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="list-of-offer-characteristics__item col-md-6">
+            <figure class="offer-characteristic">
+                <i class="offer-characteristic__icon icon icon__crib"></i>
+                <figcaption class="offer-characteristic__caption">
+                    <label class="offer-characteristic__label">Детские кровати:</label>
+                    <div class="offer-characteristic__value">1</div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="list-of-offer-characteristics__item col-md-6">
+            <figure class="offer-characteristic">
+                <i class="offer-characteristic__icon icon icon__lounge"></i>
+                <figcaption class="offer-characteristic__caption">
+                    <label class="offer-characteristic__label">Кресло раскладное:</label>
+                    <div class="offer-characteristic__value">1</div>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+</section>
+<!-- /Section: Offer bedrooms -->
+                </div>
+
                 <div class="offer-page__offer-facilities py-4 border-bottom">
                     <!-- Section: Offer characteristics -->
 <section class="offer-characteristics">
     <h2 class="offer-characteristic__title mb-4">ХАРАКТЕРИСТИКИ:</h2>
     <ul class="list-of-offer-characteristics row">
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__building"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Тип жилья:</label>
                     <div class="offer-characteristic__value">Квартира</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__stairs"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -308,7 +373,7 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__cleaning"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -317,16 +382,16 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__towel"></i>
+                <i class="offer-characteristic__icon icon icon__hanger"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Смена белья:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__parking"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -335,7 +400,7 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__wifi"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -344,16 +409,16 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__balcony"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Балкон:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__window"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -362,45 +427,45 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__broom"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Заказать уборку:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__add-guest"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Доплата за каждого последующего гостя:</label>
                     <div class="offer-characteristic__value">€0</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__hot-towel"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Заказать смену белья:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__bucket"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Доплата за финальную уборку:</label>
                     <div class="offer-characteristic__value">Не требуется</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__safe-money"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Невозвратный депозит:</label>
                     <div class="offer-characteristic__value">15%</div>
@@ -412,9 +477,9 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__deposit"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Предоплата:</label>
                     <div class="offer-characteristic__value">50%</div>
@@ -436,70 +501,70 @@
 <section class="offer-rules-of-residence">
     <h2 class="offer-rules-of-residence__title mb-4">ПРАВИЛА ДОМА:</h2>
     <ul class="list-of-offer-characteristics row">
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__children"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">С детьми:</label>
                     <div class="offer-characteristic__value">Разрешено</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__clock"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Время заезда:</label>
                     <div class="offer-characteristic__value">14:00</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__smoke"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Курить:</label>
                     <div class="offer-characteristic__value">Запрещено</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__time-out"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Время выезда:</label>
                     <div class="offer-characteristic__value">12:00</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__pets"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Питомцы:</label>
                     <div class="offer-characteristic__value">Запрещено</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__lease-term"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Мин. срок аренды:</label>
                     <div class="offer-characteristic__value">3 сутки</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__disabled"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Для инвалидов:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__home"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -568,38 +633,56 @@
 <section class="offer-places-nearby">
     <h2 class="offer-places-nearby__title mb-4">ПОБЛИЗОСТИ:</h2>
     <ul class="list-of-offer-characteristics row">
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__beach"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Пляж:</label>
                     <div class="offer-characteristic__value">100 м</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__bus"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Автобусная остановка:</label>
                     <div class="offer-characteristic__value">100 м</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__cutlery"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Ресторан:</label>
                     <div class="offer-characteristic__value">100 м</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__cutlery"></i>
+                <figcaption class="offer-characteristic__caption">
+                    <label class="offer-characteristic__label">Центр города:</label>
+                    <div class="offer-characteristic__value">100 м</div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="list-of-offer-characteristics__item col-md-6">
+            <figure class="offer-characteristic">
+                <i class="offer-characteristic__icon icon icon__airplane"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Аэропорт:</label>
+                    <div class="offer-characteristic__value">40 км</div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="list-of-offer-characteristics__item col-md-6">
+            <figure class="offer-characteristic">
+                <i class="offer-characteristic__icon icon icon__airplane"></i>
+                <figcaption class="offer-characteristic__caption">
+                    <label class="offer-characteristic__label">Подъемник:</label>
                     <div class="offer-characteristic__value">40 км</div>
                 </figcaption>
             </figure>
@@ -643,15 +726,20 @@
                 </div>
             </article>
             <aside class="offer-page__aside col">
-                <div class="progress mb-4">
-                    <div class="progress-bar"
-                         role="progressbar"
-                         style="width: 50%"
-                         aria-valuenow="50"
-                         aria-valuemin="0"
-                         aria-valuemax="100"></div>
+                <div class="offer-page__offer-employed-by mb-3">
+                    <!-- Block: Offer employed by -->
+<div class="offer-employed-by progress">
+    <div class="progress-bar"
+         role="progressbar"
+         style="width: 50%"
+         aria-valuenow="50"
+         aria-valuemin="0"
+         aria-valuemax="100"></div>
+    <div class="offer-employed-by__message">Занято на&nbsp;<span class="offer-employed-by__percent">30</span>%</div>
+</div>
+<!-- /Block: Offer employed by -->
                 </div>
-                <div class="offer-page__offer-price-calculator">
+                <div class="offer-page__offer-price-calculator mb-3">
                     <!-- Block: Offer price calculator -->
 <form action="#" class="offer-price-calculator">
     <div class="row mb-3">
@@ -679,14 +767,13 @@
                    id="offer-price-calculator__control_name_check-out">
         </div>
         <div class="form-group col-12">
-            <label for="offer-price-calculator__control_name_guests">Гостей</label>
             <select name="guests"
                     class="custom-select mr-sm-2"
                     id="offer-price-calculator__control_name_guests">
-                <option selected>1</option>
-                <option value="1">2</option>
-                <option value="2">3</option>
-                <option value="3">4</option>
+                <option selected>1 гость</option>
+                <option value="1">2 гостя</option>
+                <option value="2">3 гостя</option>
+                <option value="3">4 гостя</option>
             </select>
         </div>
     </div>
@@ -694,17 +781,152 @@
         <tbody>
         <tr>
             <td>€25 x 5 ночей</td>
-            <td>€123</td>
+            <td class="text-right"><strong class="offer-price-calculator__amount">€123</strong></td>
         </tr>
         <tr>
             <td>К оплате:</td>
-            <td>€123</td>
+            <td class="text-right"><strong class="offer-price-calculator__to-pay">€123</strong></td>
         </tr>
         </tbody>
     </table>
-    <a href="#" class="btn btn-lg btn-secondary w-100">Написать хозяину</a>
+    <a href="#" class="btn btn-lg btn-secondary w-100 mb-3">Написать хозяину</a>
+    <div class="offer-price-calculator__alert alert alert-danger">Бронирование невозможно</div>
+    <figure class="offer-price-calculator__informer">
+        <i class="icon icon__lamp icon_size_32 mr-3"></i>
+        <figcaption class="offer-price-calculator__informer-description"><strong class="offer-price-calculator__informer-number-of-persons">2 человека</strong> планирует остановиться здесь в выбранный период</figcaption>
+    </figure>
 </form>
 <!-- /Block: Offer price calculator -->
+                </div>
+                <div class="offer-page__offer-insterested-in mb-3">
+                    <!-- Block: Offer interested in -->
+<div class="offer-interested-in">
+    <figure class="offer-interested-in__how-much">
+        <div class="offer-interested-in__how-much-number">13</div>
+        <figcaption class="offer-interested-in__how-much-description">человек интересовались этим объектом</figcaption>
+    </figure>
+    <figure class="offer-interested-in__time">
+        <i class="offer-interested-in__time-icon icon icon__clock icon_size_32"></i>
+        <figcaption class="offer-interested-in__description">данные подсчитаны за прошлые сутки.</figcaption>
+    </figure>
+</div>
+<!-- /Block: Offer interested in -->
+                </div>
+                <div class="offer-page__offer-owner mb-3">
+                    <!-- Block: Offer owner -->
+<div class="offer-owner">
+    <figure class="offer-owner__about">
+        <div class="offer-owner__photo icon__cabinet-user" style="_background-image: url(url-to-user-avatar);">
+            <i class="offer-owner__reliable-host icon icon__reliable-host icon_size_32"></i>
+        </div>
+        <figcaption class="offer-owner__info">
+            <h4 class="offer-owner__info-title">Языки владельца:</h4>
+            <ul class="offer-owner__languages-list">
+                <li class="offer-owner__languages-list-item">english</li>
+                <li class="offer-owner__languages-list-item">russian</li>
+                <li class="offer-owner__languages-list-item">ukrainian</li>
+            </ul>
+            <a href="#"
+               class="offer-owner__contacts-link"
+               data-toggle="collapse"
+               data-target=".offer-owner__message-collapse">Мои контакты</a>
+            <div class="offer-owner__name">Алекс</div>
+        </figcaption>
+    </figure>
+    <div class="offer-owner__message-collapse collapse">
+        <div class="offer-owner__message mt-3">
+            <p>Я буду рад обсудить с вами любые вопросы внутри сервиса.</p>
+            <p>Мои прямые контакты вы получите после заключения сделки.</p>
+            <a href="/user_agreement/" target="_blank" class="offer-owner__message-link">Почему так?</a>
+        </div>
+    </div>
+</div>
+<!-- /Block: Offer owner -->
+                </div>
+                <div class="offer-page__offer-share mb-3">
+                    <!-- Block: Offer share -->
+<div class="offer-share">
+    <a href="#"
+       class="offer-share__add-to-favorites mb-3 btn"
+       data-toggle="button"
+       aria-pressed="false"
+       autocomplete="off">
+        <i class="icon icon__heart icon_size_18 mr-2"></i>
+        <span class="offer-share__add-to-favorites-label-plus">Добавить в избранное</span>
+        <span class="offer-share__add-to-favorites-label-minus">Убрать из избранного</span>
+    </a>
+    <section class="offer-share__socials-share">
+        <h3 class="offer-share__title mb-3"><span class="offer-share__title-text">Поделиться</span></h3>
+        <ul class="offer-share__social-list">
+            <li class="offer-share__social-list-item">
+                <a href="http://www.facebook.com/sharer.php?m2w&u="
+                   target="_blank"
+                   title="Поделиться в Facebook"
+                   class="offer-share__social-link icon icon__social-facebook icon_size_32"></a>
+            </li>
+            <li class="offer-share__social-list-item">
+                <a href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st._surl=&title="
+                   target="_blank"
+                   title="Добавить в Одноклассники"
+                   class="offer-share__social-link icon icon__social-ok icon_size_32"></a>
+            </li>
+            <li class="offer-share__social-list-item">
+                <a href="http://vk.com/share.php?url=&title=&description="
+                   target="_blank"
+                   title="Поделиться в ВК"
+                   class="offer-share__social-link icon icon__social-vk icon_size_32"></a>
+            </li>
+            <li class="offer-share__social-list-item">
+                <a href="https://twitter.com/intent/tweet?text=&url="
+                   target="_blank"
+                   title="Добавить в Twitter"
+                   class="offer-share__social-link icon icon__social-twitter icon_size_32"></a>
+            </li>
+        </ul>
+    </section>
+</div>
+<!-- /Block: Offer share -->
+                </div>
+                <div class="offer-page__how-it-works">
+                    <!-- Section: How it works -->
+<section class="how-it-works">
+    <div class="how-it-works__container">
+        <h2 class="how-it-works__title">Как это работает?</h2>
+        <a href="#"
+           class="how-it-works__icon-play my-4"
+           data-toggle="modal"
+           data-target=".how-it-works__modal"></a>
+        <div class="how-it-works__description lead">ПОСМОТРЕТЬ ВИДЕО</div>
+    </div>
+
+    <div class="how-it-works__modal modal fade"
+         tabindex="-1"
+         role="dialog"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="youtube_player"
+                            data-src="https://www.youtube.com/embed/LLydhsmwSUs"
+                            allowfullscreen=""
+                            frameborder="0"
+                            width="100%"
+                            src="https://www.youtube.com/embed/LLydhsmwSUs"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Section: How it works -->
                 </div>
             </aside>
         </div>
@@ -728,7 +950,7 @@
     <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
-    <a href="#" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
     <div class="offer-item__image-slider" offer-item__image-slider>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
@@ -736,7 +958,7 @@
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="#" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -760,10 +982,10 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__air-conditioner"></span></li>
-            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host icon_size_32"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__animals"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
         </ul>
     </figcaption>
 </figure>
@@ -773,7 +995,7 @@
     <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
-    <a href="#" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
     <div class="offer-item__image-slider" offer-item__image-slider>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
@@ -781,7 +1003,7 @@
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="#" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -805,10 +1027,10 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__air-conditioner"></span></li>
-            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host icon_size_32"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__animals"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
         </ul>
     </figcaption>
 </figure>
@@ -818,7 +1040,7 @@
     <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
-    <a href="#" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
     <div class="offer-item__image-slider" offer-item__image-slider>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
@@ -826,7 +1048,7 @@
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="#" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -850,10 +1072,10 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__air-conditioner"></span></li>
-            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host icon_size_32"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__animals"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
         </ul>
     </figcaption>
 </figure>
@@ -863,7 +1085,7 @@
     <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
-    <a href="#" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
     <div class="offer-item__image-slider" offer-item__image-slider>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
@@ -871,7 +1093,7 @@
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="#" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -895,10 +1117,10 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__air-conditioner"></span></li>
-            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host icon_size_32"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__animals"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
         </ul>
     </figcaption>
 </figure>
@@ -908,7 +1130,7 @@
     <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
-    <a href="#" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
     <div class="offer-item__image-slider" offer-item__image-slider>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
@@ -916,7 +1138,7 @@
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="#" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -940,10 +1162,10 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__air-conditioner"></span></li>
-            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host icon_size_32"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__animals"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
         </ul>
     </figcaption>
 </figure>
@@ -953,7 +1175,7 @@
     <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
-    <a href="#" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
     <div class="offer-item__image-slider" offer-item__image-slider>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
@@ -961,7 +1183,7 @@
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="#" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -985,10 +1207,10 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__air-conditioner"></span></li>
-            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host icon_size_32"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__animals"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
         </ul>
     </figcaption>
 </figure>
@@ -998,7 +1220,7 @@
     <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
-    <a href="#" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
     <div class="offer-item__image-slider" offer-item__image-slider>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
@@ -1006,7 +1228,7 @@
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="#" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1030,10 +1252,10 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__air-conditioner"></span></li>
-            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host icon_size_32"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__animals"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
         </ul>
     </figcaption>
 </figure>
@@ -1043,7 +1265,7 @@
     <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
-    <a href="#" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
     <div class="offer-item__image-slider" offer-item__image-slider>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
@@ -1051,7 +1273,7 @@
         <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="#" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1075,10 +1297,10 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><span class="icon icon__animals"></span></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><span class="icon icon__tv"></span></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><span class="icon icon__air-conditioner"></span></li>
-            <li class="offer-item__detail offer-item__reliable-host"><span class="icon icon__reliable-host icon_size_32"></span></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__animals"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
         </ul>
     </figcaption>
 </figure>

@@ -32,17 +32,6 @@
   background-position: left;
   background-image: url(#{$rootDir}/templates/common.blocks/page-header/page-header__VPUT-logo_style_light.svg);
 }
-.page-header__cabinet-menu-icon {
-  display: inline-block;
-  vertical-align: middle;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: .5rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(#{$rootDir}/templates/common.blocks/page-header/page-header__icon_type_cabinet-user.svg);
-}
 .page-header__dropdown-menu {
   margin-bottom: 12px;
 }

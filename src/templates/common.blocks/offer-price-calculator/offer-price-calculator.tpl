@@ -25,14 +25,13 @@
                    id="offer-price-calculator__control_name_check-out">
         </div>
         <div class="form-group col-12">
-            <label for="offer-price-calculator__control_name_guests">Гостей</label>
             <select name="guests"
                     class="custom-select mr-sm-2"
                     id="offer-price-calculator__control_name_guests">
-                <option selected>1</option>
-                <option value="1">2</option>
-                <option value="2">3</option>
-                <option value="3">4</option>
+                <option selected>1 гость</option>
+                <option value="1">2 гостя</option>
+                <option value="2">3 гостя</option>
+                <option value="3">4 гостя</option>
             </select>
         </div>
     </div>
@@ -40,14 +39,19 @@
         <tbody>
         <tr>
             <td>€25 x 5 ночей</td>
-            <td>€123</td>
+            <td class="text-right"><strong class="offer-price-calculator__amount">€123</strong></td>
         </tr>
         <tr>
             <td>К оплате:</td>
-            <td>€123</td>
+            <td class="text-right"><strong class="offer-price-calculator__to-pay">€123</strong></td>
         </tr>
         </tbody>
     </table>
-    <a href="#" class="btn btn-lg btn-secondary w-100">Написать хозяину</a>
+    <a href="#" class="btn btn-lg btn-secondary w-100 mb-3">Написать хозяину</a>
+    <div class="offer-price-calculator__alert alert alert-danger">Бронирование невозможно</div>
+    <figure class="offer-price-calculator__informer">
+        <i class="icon icon__lamp icon_size_32 mr-3"></i>
+        <figcaption class="offer-price-calculator__informer-description"><strong class="offer-price-calculator__informer-number-of-persons">2 человека</strong> планирует остановиться здесь в выбранный период</figcaption>
+    </figure>
 </form>
 <!-- /Block: Offer price calculator -->

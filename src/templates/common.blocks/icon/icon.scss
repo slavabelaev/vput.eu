@@ -5,6 +5,8 @@
   vertical-align: middle;
   width: 1.5rem;
   height: 1.5rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,12 +14,19 @@
 .icon_size_32 {
   width: 2rem;
   height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
 }
 .icon_size_18 {
   width: 1.125rem;
   height: 1.125rem;
+  min-width: 1.125rem;
+  min-height: 1.125rem;
 }
 
+.icon_style_dark {
+  filter: brightness(0);
+}
 .icon_style_light {
   filter: brightness(0) invert(1);
 }
@@ -61,7 +70,40 @@
 .icon__wifi { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__wifi.svg); }
 .icon__window { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__window.svg); }
 .icon__stairs { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__stairs.svg); }
-.icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }
-.icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }
-.icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }
+.icon__lamp { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__lamp.svg); }
+
+.icon__social-facebook { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__social-facebook.svg); }
+.icon__social-ok { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__social-ok.svg); }
+.icon__social-vk { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__social-vk.svg); }
+.icon__social-twitter { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__social-twitter.svg); }
+
+.icon__clock { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__clock.svg); }
+.icon__cabinet-user { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__cabinet-user.svg); }
+
+.icon__sofa { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__sofa.svg); }
+.icon__single-bed { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__single-bed.svg); }
+.icon__bed { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bed.svg); }
+.icon__lounge { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__lounge.svg); }
+.icon__duster { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__duster.svg); }
+.icon__bucket { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bucket.svg); }
+.icon__building { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__building.svg); }
+.icon__balcony { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__balcony.svg); }
+.icon__add-guest { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__add-guest.svg); }
+.icon__deposit { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__deposit.svg); }
+.icon__safe-money { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__safe-money.svg); }
+.icon__beach { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__beach.svg); }
+.icon__bus { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bus.svg); }
+.icon__airplane { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__airplane.svg); }
+.icon__time-out { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__time-out.svg); }
+.icon__hanger { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__hanger.svg); }
+.icon__cutlery { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__cutlery.svg); }
+.icon__broom { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__broom.svg); }
+.icon__children { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__children.svg); }
+.icon__smoke { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__smoke.svg); }
+.icon__lease-term { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__lease-term.svg); }
+.icon__disabled { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__disabled.svg); }
+.icon__pets { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pets.svg); }
+.icon__hot-towel { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__hot-towel.svg); }
+.icon__clock { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__clock.svg); }
+.icon__crib { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__crib.svg); }
 .icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }

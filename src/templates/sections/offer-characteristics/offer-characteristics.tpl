@@ -2,16 +2,16 @@
 <section class="offer-characteristics">
     <h2 class="offer-characteristic__title mb-4">ХАРАКТЕРИСТИКИ:</h2>
     <ul class="list-of-offer-characteristics row">
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__building"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Тип жилья:</label>
                     <div class="offer-characteristic__value">Квартира</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__stairs"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -23,7 +23,7 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__cleaning"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -32,16 +32,16 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__towel"></i>
+                <i class="offer-characteristic__icon icon icon__hanger"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Смена белья:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__parking"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -50,7 +50,7 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__wifi"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -59,16 +59,16 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__balcony"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Балкон:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__window"></i>
                 <figcaption class="offer-characteristic__caption">
@@ -77,45 +77,45 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__broom"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Заказать уборку:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__add-guest"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Доплата за каждого последующего гостя:</label>
                     <div class="offer-characteristic__value">€0</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__hot-towel"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Заказать смену белья:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__bucket"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Доплата за финальную уборку:</label>
                     <div class="offer-characteristic__value">Не требуется</div>
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__safe-money"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Невозвратный депозит:</label>
                     <div class="offer-characteristic__value">15%</div>
@@ -127,9 +127,9 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="list-of-offer-characteristic__item col-md-6">
+        <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__deposit"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Предоплата:</label>
                     <div class="offer-characteristic__value">50%</div>

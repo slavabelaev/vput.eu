@@ -13,7 +13,7 @@
         </li>
         <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__clock"></i>
+                <i class="offer-characteristic__icon icon icon__time-in"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Время заезда:</label>
                     <div class="offer-characteristic__value">14:00</div>
@@ -49,7 +49,7 @@
         </li>
         <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__lease-term"></i>
+                <i class="offer-characteristic__icon icon icon__calendar"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Мин. срок аренды:</label>
                     <div class="offer-characteristic__value">3 сутки</div>
@@ -67,7 +67,7 @@
         </li>
         <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__home"></i>
+                <i class="offer-characteristic__icon icon icon__safe-transaction"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Гарантийный депозит:</label>
                     <div class="offer-characteristic__value">Не требуется</div>

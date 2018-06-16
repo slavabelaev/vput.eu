@@ -27,6 +27,9 @@
 .icon_style_dark {
   filter: brightness(0);
 }
+.icon_style_gray {
+  filter: brightness(0) invert(.5);
+}
 .icon_style_light {
   filter: brightness(0) invert(1);
 }
@@ -34,10 +37,9 @@
 .icon__security { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__security.svg); }
 .icon__cafe { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__cafe.svg); }
 .icon__massage { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__massage.svg); }
-.icon__parking-place { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__parking-place.svg); }
-.icon__access-to-the-sea { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__access-to-the-sea.svg); }
+.icon__sea { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__sea.svg); }
 .icon__pool { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pool.svg); }
-.icon__bicycles-for-rent { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bicycles-for-rent.svg); }
+.icon__bike { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bike.svg); }
 .icon__SPA { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__SPA.svg); }
 
 .icon__animals { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__animals.svg); }
@@ -48,13 +50,13 @@
 .icon__reliable-host { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__reliable-host.svg); }
 .icon__tv { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__tv.svg); }
 
+.icon__home { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__home.svg); }
 .icon__bathroom { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bathroom.svg); }
 .icon__bed { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bed.svg); }
 .icon__door { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__door.svg); }
-.icon__home { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__home.svg); }
 .icon__hotel { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__hotel.svg); }
 .icon__opened-door { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__opened-door.svg); }
-.icon__skyscraper { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__skyscraper.svg); }
+.icon__room { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__room.svg); }
 
 .icon__arrow-left { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__arrow-left.svg); }
 .icon__prev { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__prev.svg); }
@@ -85,17 +87,15 @@
 .icon__bed { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bed.svg); }
 .icon__lounge { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__lounge.svg); }
 .icon__duster { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__duster.svg); }
-.icon__bucket { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bucket.svg); }
 .icon__building { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__building.svg); }
 .icon__balcony { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__balcony.svg); }
 .icon__add-guest { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__add-guest.svg); }
 .icon__deposit { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__deposit.svg); }
-.icon__safe-money { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__safe-money.svg); }
 .icon__beach { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__beach.svg); }
 .icon__bus { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bus.svg); }
 .icon__airplane { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__airplane.svg); }
+.icon__time-in { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__time-in.svg); }
 .icon__time-out { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__time-out.svg); }
-.icon__hanger { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__hanger.svg); }
 .icon__cutlery { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__cutlery.svg); }
 .icon__broom { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__broom.svg); }
 .icon__children { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__children.svg); }
@@ -104,6 +104,16 @@
 .icon__disabled { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__disabled.svg); }
 .icon__pets { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pets.svg); }
 .icon__hot-towel { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__hot-towel.svg); }
-.icon__clock { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__clock.svg); }
 .icon__crib { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__crib.svg); }
+.icon__beds { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__beds.svg); }
+.icon__pin { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pin.svg); }
+.icon__credit-card { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__credit-card.svg); }
+.icon__safe-box { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__safe-box.svg); }
+.icon__shield { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__shield.svg); }
+.icon__lift { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__lift.svg); }
+.icon__calendar { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__calendar.svg); }
+.icon__safe-transaction { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__safe-transaction.svg); }
+.icon__safe-deposit { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__safe-deposit.svg); }
+.icon__final-cleaning { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__final-cleaning.svg); }
+.icon__coffee { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__coffee.svg); }
 .icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }

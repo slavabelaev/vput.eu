@@ -31,7 +31,7 @@
         </li>
         <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__cutlery"></i>
+                <i class="offer-characteristic__icon icon icon__pin"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Центр города:</label>
                     <div class="offer-characteristic__value">100 м</div>
@@ -49,7 +49,7 @@
         </li>
         <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__airplane"></i>
+                <i class="offer-characteristic__icon icon icon__lift"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Подъемник:</label>
                     <div class="offer-characteristic__value">40 км</div>

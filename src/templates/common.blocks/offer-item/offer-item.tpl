@@ -32,8 +32,8 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__animals"></i></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv"></i></li>
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__pets icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv icon_style_light"></i></li>
             <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
             <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
         </ul>

@@ -21,7 +21,7 @@
             </ul>
             <ul class="navbar-nav ml-auto align-items-center">
                 <li class="nav-item col-6 col-md-auto mr-md-2">
-                    <a class="page-header__favorites-link  icon icon__heart icon_size_32" href="/favorites/">99</a>
+                    <a class="page-header__favorites-link  icon icon__heart icon_size_32" href="/favorites.html">99</a>
                 </li>
                 <li class="page-header__language-nav-item nav-item dropdown mb-2 mb-md-0">
                     <a class="nav-link dropdown-toggle"

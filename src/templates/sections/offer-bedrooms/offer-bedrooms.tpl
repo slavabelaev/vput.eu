@@ -31,7 +31,7 @@
         </li>
         <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__bed"></i>
+                <i class="offer-characteristic__icon icon icon__beds"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Двуспальная раздвижная:</label>
                     <div class="offer-characteristic__value">1</div>

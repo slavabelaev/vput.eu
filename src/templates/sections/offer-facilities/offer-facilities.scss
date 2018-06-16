@@ -29,5 +29,6 @@
     background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__tick.svg);
     background-size: cover;
     background-position: center;
+    filter: brightness(0) invert(.5);
   }
 }

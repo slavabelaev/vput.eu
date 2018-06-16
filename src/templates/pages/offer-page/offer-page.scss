@@ -1,15 +1,14 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
-.list-of-main-characteristics {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0;
-  text-align: center;
+.offer-page__article {
+  h2 {
+    font-size: $h4-font-size;
+    font-weight: 600;
+  }
 }
 .offer-page__place {
   color: $text-muted;
 }
-
 .offer-page__how-it-works {
   .how-it-works {
     height: 260px;

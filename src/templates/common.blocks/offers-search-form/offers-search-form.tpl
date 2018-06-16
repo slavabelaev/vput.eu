@@ -1,5 +1,5 @@
 <!-- Offers Search Form -->
-<form action="https://vput.ru/search/" class="offers-search-form">
+<form action="search.html" _action="https://vput.ru/search/" class="offers-search-form">
     <div class="form-row">
         <div class="form-group col-lg-6 col-xl-4">
             <input type="hidden" name="filters[cityId]">
@@ -81,7 +81,7 @@
                     <!-- Input Group -->
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <div class="input-group-text"><span class="icon icon__skyscraper"></span></div>
+                            <div class="input-group-text"><span class="icon icon__building"></span></div>
                         </div>
                         <label for="offers-search-form__apartament" class="form-control">Apartment</label>
                         <div class="input-group-append">
@@ -96,7 +96,7 @@
                     <!-- Input Group -->
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <div class="input-group-text"><span class="icon icon__door"></span></div>
+                            <div class="input-group-text"><span class="icon icon__room"></span></div>
                         </div>
                         <label for="offers-search-form__room" class="form-control">Room</label>
                         <div class="input-group-append">
@@ -128,7 +128,7 @@
                 <div class="form-group col-sm-3">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <div class="input-group-text"><span class="icon icon__opened-door"></span></div>
+                            <div class="input-group-text"><span class="icon icon__door"></span></div>
                         </div>
                         <select class="custom-select" name="filters[rooms]">
                             <option>Rooms</option>

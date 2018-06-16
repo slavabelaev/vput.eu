@@ -6352,14 +6352,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .cities-tabs__nav {
   -webkit-column-count: 6;
           column-count: 6; }
@@ -6394,6 +6386,14 @@ a.text-dark:hover, a.text-dark:focus {
   .cities-tabs__nav {
     -webkit-column-count: 6;
             column-count: 6; } }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6504,6 +6504,17 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.list-of-complexes {
+  list-style: none;
+  padding: 0; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -6531,6 +6542,10 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-filter: brightness(0);
           filter: brightness(0); }
 
+.icon_style_gray {
+  -webkit-filter: brightness(0) invert(0.5);
+          filter: brightness(0) invert(0.5); }
+
 .icon_style_light {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1); }
@@ -6544,17 +6559,14 @@ a.text-dark:hover, a.text-dark:focus {
 .icon__massage {
   background-image: url(../../templates/common.blocks/icon/icon__massage.svg); }
 
-.icon__parking-place {
-  background-image: url(../../templates/common.blocks/icon/icon__parking-place.svg); }
-
-.icon__access-to-the-sea {
-  background-image: url(../../templates/common.blocks/icon/icon__access-to-the-sea.svg); }
+.icon__sea {
+  background-image: url(../../templates/common.blocks/icon/icon__sea.svg); }
 
 .icon__pool {
   background-image: url(../../templates/common.blocks/icon/icon__pool.svg); }
 
-.icon__bicycles-for-rent {
-  background-image: url(../../templates/common.blocks/icon/icon__bicycles-for-rent.svg); }
+.icon__bike {
+  background-image: url(../../templates/common.blocks/icon/icon__bike.svg); }
 
 .icon__SPA {
   background-image: url(../../templates/common.blocks/icon/icon__SPA.svg); }
@@ -6580,6 +6592,9 @@ a.text-dark:hover, a.text-dark:focus {
 .icon__tv {
   background-image: url(../../templates/common.blocks/icon/icon__tv.svg); }
 
+.icon__home {
+  background-image: url(../../templates/common.blocks/icon/icon__home.svg); }
+
 .icon__bathroom {
   background-image: url(../../templates/common.blocks/icon/icon__bathroom.svg); }
 
@@ -6589,17 +6604,14 @@ a.text-dark:hover, a.text-dark:focus {
 .icon__door {
   background-image: url(../../templates/common.blocks/icon/icon__door.svg); }
 
-.icon__home {
-  background-image: url(../../templates/common.blocks/icon/icon__home.svg); }
-
 .icon__hotel {
   background-image: url(../../templates/common.blocks/icon/icon__hotel.svg); }
 
 .icon__opened-door {
   background-image: url(../../templates/common.blocks/icon/icon__opened-door.svg); }
 
-.icon__skyscraper {
-  background-image: url(../../templates/common.blocks/icon/icon__skyscraper.svg); }
+.icon__room {
+  background-image: url(../../templates/common.blocks/icon/icon__room.svg); }
 
 .icon__arrow-left {
   background-image: url(../../templates/common.blocks/icon/icon__arrow-left.svg); }
@@ -6676,9 +6688,6 @@ a.text-dark:hover, a.text-dark:focus {
 .icon__duster {
   background-image: url(../../templates/common.blocks/icon/icon__duster.svg); }
 
-.icon__bucket {
-  background-image: url(../../templates/common.blocks/icon/icon__bucket.svg); }
-
 .icon__building {
   background-image: url(../../templates/common.blocks/icon/icon__building.svg); }
 
@@ -6691,9 +6700,6 @@ a.text-dark:hover, a.text-dark:focus {
 .icon__deposit {
   background-image: url(../../templates/common.blocks/icon/icon__deposit.svg); }
 
-.icon__safe-money {
-  background-image: url(../../templates/common.blocks/icon/icon__safe-money.svg); }
-
 .icon__beach {
   background-image: url(../../templates/common.blocks/icon/icon__beach.svg); }
 
@@ -6703,11 +6709,11 @@ a.text-dark:hover, a.text-dark:focus {
 .icon__airplane {
   background-image: url(../../templates/common.blocks/icon/icon__airplane.svg); }
 
+.icon__time-in {
+  background-image: url(../../templates/common.blocks/icon/icon__time-in.svg); }
+
 .icon__time-out {
   background-image: url(../../templates/common.blocks/icon/icon__time-out.svg); }
-
-.icon__hanger {
-  background-image: url(../../templates/common.blocks/icon/icon__hanger.svg); }
 
 .icon__cutlery {
   background-image: url(../../templates/common.blocks/icon/icon__cutlery.svg); }
@@ -6733,25 +6739,44 @@ a.text-dark:hover, a.text-dark:focus {
 .icon__hot-towel {
   background-image: url(../../templates/common.blocks/icon/icon__hot-towel.svg); }
 
-.icon__clock {
-  background-image: url(../../templates/common.blocks/icon/icon__clock.svg); }
-
 .icon__crib {
   background-image: url(../../templates/common.blocks/icon/icon__crib.svg); }
 
+.icon__beds {
+  background-image: url(../../templates/common.blocks/icon/icon__beds.svg); }
+
+.icon__pin {
+  background-image: url(../../templates/common.blocks/icon/icon__pin.svg); }
+
+.icon__credit-card {
+  background-image: url(../../templates/common.blocks/icon/icon__credit-card.svg); }
+
+.icon__safe-box {
+  background-image: url(../../templates/common.blocks/icon/icon__safe-box.svg); }
+
+.icon__shield {
+  background-image: url(../../templates/common.blocks/icon/icon__shield.svg); }
+
+.icon__lift {
+  background-image: url(../../templates/common.blocks/icon/icon__lift.svg); }
+
+.icon__calendar {
+  background-image: url(../../templates/common.blocks/icon/icon__calendar.svg); }
+
+.icon__safe-transaction {
+  background-image: url(../../templates/common.blocks/icon/icon__safe-transaction.svg); }
+
+.icon__safe-deposit {
+  background-image: url(../../templates/common.blocks/icon/icon__safe-deposit.svg); }
+
+.icon__final-cleaning {
+  background-image: url(../../templates/common.blocks/icon/icon__final-cleaning.svg); }
+
+.icon__coffee {
+  background-image: url(../../templates/common.blocks/icon/icon__coffee.svg); }
+
 .icon__ {
   background-image: url(../../templates/common.blocks/icon/icon__.svg); }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.list-of-complexes {
-  list-style: none;
-  padding: 0; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7633,6 +7658,14 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .offer-facilities__list {
   list-style: none;
   padding-left: 0;
@@ -7662,7 +7695,9 @@ a.text-dark:hover, a.text-dark:focus {
     width: 16px;
     background-image: url(../../templates/common.blocks/icon/icon__tick.svg);
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    -webkit-filter: brightness(0) invert(0.5);
+            filter: brightness(0) invert(0.5); }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7679,21 +7714,19 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.offer-main-characteristics__list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  text-align: center; }
 
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.list-of-main-characteristics__title {
+.offer-main-characteristics__title {
   font-size: 1.25rem; }
 
-.list-of-main-characteristics__icon {
+.offer-main-characteristics__icon {
   margin-bottom: 1rem; }
 
-.list-of-main-characteristics__value {
+.offer-main-characteristics__value {
   font-size: 2rem;
   color: #978e8e; }
 
@@ -7884,11 +7917,9 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.list-of-main-characteristics {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0;
-  text-align: center; }
+.offer-page__article h2 {
+  font-size: 1.5rem;
+  font-weight: 600; }
 
 .offer-page__place {
   color: #978e8e; }

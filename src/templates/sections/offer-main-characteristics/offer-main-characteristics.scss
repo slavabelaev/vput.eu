@@ -1,12 +1,18 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
-.list-of-main-characteristics__title {
+.offer-main-characteristics__list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.offer-main-characteristics__title {
   font-size: 1.25rem;
 }
-.list-of-main-characteristics__icon {
+.offer-main-characteristics__icon {
   margin-bottom: 1rem;
 }
-.list-of-main-characteristics__value {
+.offer-main-characteristics__value {
   font-size: 2rem;
   color: $text-muted;
 }

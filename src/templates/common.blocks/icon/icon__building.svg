@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="#707070"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+	 viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
 <g>
-	<g>
-		<path d="M503.6,79.707c-5.272-3.752-12.032-4.724-18.146-2.605L276,149.651V96c0-11.046-8.954-20-20-20h-98V20
-			c0-11.046-8.954-20-20-20s-20,8.954-20,20v56H20C8.954,76,0,84.954,0,96v396c0,11.046,8.954,20,20,20c103.016,0,376.178,0,472,0
-			c11.046,0,20-8.954,20-20V96C512,89.53,508.87,83.459,503.6,79.707z M118,256v216H40V116h196v120h-98
-			C126.954,236,118,244.954,118,256z M276,472h-40v-65.999h40V472z M354,472h-38v-85.999c0-11.046-8.954-20-20-20h-80
-			c-11.046,0-20,8.954-20,20V472h-38V276h196V472z M472,472h-78V256c0-11.046-8.954-20-20-20h-98v-44.018l196-67.889V472z"/>
-	</g>
+	<rect x="100" y="165" width="30" height="30"/>
+	<rect x="150" y="165" width="30" height="30"/>
+	<rect x="100" y="215" width="30" height="30"/>
+	<rect x="150" y="215" width="30" height="30"/>
+	<rect x="200" y="165" width="30" height="30"/>
+	<rect x="200" y="215" width="30" height="30"/>
+	<rect x="100" y="55" width="30" height="30"/>
+	<rect x="150" y="55" width="30" height="30"/>
+	<rect x="200" y="55" width="30" height="30"/>
+	<path d="M285,15c0-8.284-6.716-15-15-15H60c-8.284,0-15,6.716-15,15v110v190c0,8.284,6.716,15,15,15h210c8.284,0,15-6.716,15-15
+		V125.017c0-0.003,0-0.005,0-0.008s0-0.005,0-0.008V15z M75,30h180v80H75V30z M255,300h-75v-15.001c0-8.284-6.716-15-15-15
+		s-15,6.716-15,15V300H75V140.001l180,0.015V300z"/>
 </g>
 </svg>

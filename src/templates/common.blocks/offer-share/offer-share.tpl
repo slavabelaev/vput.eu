@@ -5,7 +5,7 @@
        data-toggle="button"
        aria-pressed="false"
        autocomplete="off">
-        <i class="icon icon__heart icon_size_18 mr-2"></i>
+        <i class="icon icon__heart icon_size_16 mr-2"></i>
         <span class="offer-share__add-to-favorites-label-plus">Добавить в избранное</span>
         <span class="offer-share__add-to-favorites-label-minus">Убрать из избранного</span>
     </a>

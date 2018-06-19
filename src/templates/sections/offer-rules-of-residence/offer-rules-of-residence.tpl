@@ -52,7 +52,7 @@
                 <i class="offer-characteristic__icon icon icon__calendar"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Мин. срок аренды:</label>
-                    <div class="offer-characteristic__value">3 сутки</div>
+                    <div class="offer-characteristic__value text-secondary">3 сутки</div>
                 </figcaption>
             </figure>
         </li>
@@ -70,7 +70,7 @@
                 <i class="offer-characteristic__icon icon icon__safe-transaction"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Гарантийный депозит:</label>
-                    <div class="offer-characteristic__value">Не требуется</div>
+                    <div class="offer-characteristic__value text-secondary">Не требуется</div>
                 </figcaption>
             </figure>
         </li>

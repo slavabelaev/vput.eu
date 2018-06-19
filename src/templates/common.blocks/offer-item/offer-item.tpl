@@ -28,7 +28,7 @@
             <li class="offer-item__detail offer-item__price-per-day">
                 <span class="offer-item__price-per-day-currency">€</span>
                 <span class="offer-item__price-per-day-value">16</span>
-                <i class="icon icon__guest icon_size_18 ml-1"></i>
+                <i class="icon icon__guest icon_size_16 ml-1"></i>
             </li>
         </ul>
         <ul class="offer-item__special-details">

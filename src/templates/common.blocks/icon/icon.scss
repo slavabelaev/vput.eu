@@ -17,15 +17,15 @@
   min-width: 2rem;
   min-height: 2rem;
 }
-.icon_size_18 {
-  width: 1.125rem;
-  height: 1.125rem;
-  min-width: 1.125rem;
-  min-height: 1.125rem;
+.icon_size_16 {
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
 }
 
 .icon_style_dark {
-  filter: brightness(0);
+  filter: brightness(0) invert(.2);
 }
 .icon_style_gray {
   filter: brightness(0) invert(.5);
@@ -116,4 +116,5 @@
 .icon__safe-deposit { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__safe-deposit.svg); }
 .icon__final-cleaning { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__final-cleaning.svg); }
 .icon__coffee { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__coffee.svg); }
+.icon__bucket { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bucket.svg); }
 .icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }

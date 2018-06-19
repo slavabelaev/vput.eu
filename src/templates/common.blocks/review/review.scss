@@ -1,0 +1,37 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.review {
+  display: flex;
+  margin-bottom: 0;
+}
+.review__user {
+  text-align: center;
+  padding-right: 24px;
+  margin-bottom: 0;
+}
+.review__user-image {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: .75rem;
+  background-color: $dark;
+  background-size: cover;
+  background-position: center;
+}
+.review__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.review__created-at {
+  flex: auto;
+  color: $text-muted;
+}
+.review__created-at,
+.review__review-rating {
+  margin-bottom: 1rem;
+}
+.review__message {
+  flex: 100%;
+  color: $text-muted;
+}

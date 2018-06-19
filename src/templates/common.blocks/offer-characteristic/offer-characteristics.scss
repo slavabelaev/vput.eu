@@ -10,10 +10,7 @@
 }
 .offer-characteristic__value {
   color: $text-muted;
-}
-.offer-characteristic__caption {
-  display: flex;
-  align-items: center;
+  display: inline;
 }
 .offer-characteristic__icon {
   margin-right: 1rem;

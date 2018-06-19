@@ -25,7 +25,7 @@
         </li>
         <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__broom"></i>
+                <i class="offer-characteristic__icon icon icon__cleaning"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Уборка:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
@@ -79,7 +79,7 @@
         </li>
         <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">
-                <i class="offer-characteristic__icon icon icon__cleaning"></i>
+                <i class="offer-characteristic__icon icon icon__bucket"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Заказать уборку:</label>
                     <div class="offer-characteristic__value">Уточнить</div>
@@ -91,7 +91,7 @@
                 <i class="offer-characteristic__icon icon icon__add-guest"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Доплата за каждого последующего гостя:</label>
-                    <div class="offer-characteristic__value">€0</div>
+                    <div class="offer-characteristic__value text-secondary">€0</div>
                 </figcaption>
             </figure>
         </li>
@@ -109,7 +109,7 @@
                 <i class="offer-characteristic__icon icon icon__final-cleaning"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Доплата за финальную уборку:</label>
-                    <div class="offer-characteristic__value">Не требуется</div>
+                    <div class="offer-characteristic__value text-secondary">Не требуется</div>
                 </figcaption>
             </figure>
         </li>
@@ -118,7 +118,7 @@
                 <i class="offer-characteristic__icon icon icon__safe-box"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Невозвратный депозит:</label>
-                    <div class="offer-characteristic__value">15%</div>
+                    <div class="offer-characteristic__value text-secondary">15%</div>
                     <i class="icon icon__information ml-2"
                        data-toggle="tooltip"
                        data-placement="right"
@@ -132,7 +132,7 @@
                 <i class="offer-characteristic__icon icon icon__credit-card"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Предоплата:</label>
-                    <div class="offer-characteristic__value">50%</div>
+                    <div class="offer-characteristic__value text-secondary">50%</div>
                     <i class="icon icon__information ml-2"
                        data-toggle="tooltip"
                        data-placement="right"

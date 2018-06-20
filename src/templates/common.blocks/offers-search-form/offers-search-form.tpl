@@ -41,9 +41,10 @@
                data-target=".offers-search-form__other-filters">More filters</a>
         </div>
         <div class="offers-search-form__id-col form-group col">
-            <div class="form-group col-sm-2 mb-2">
-                <input type="number" name="filters[id]" class="form-control form-control-lg">
-            </div>
+            <input type="number"
+                   name="filters[id]"
+                   class="form-control form-control-lg"
+                   placeholder="Id">
         </div>
         <div class="offers-search-form__search-col form-group col">
             <button type="submit"

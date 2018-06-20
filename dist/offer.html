@@ -16,6 +16,7 @@
 <header class="page-header">
     <nav class="navbar navbar-expand-md navbar-light container">
         <a class="page-header__logo mr-md-4" href="/"></a>
+        <a class="page-header__favorites-link icon icon__heart icon_size_32 ml-auto mr-3" href="/favorites.html">99</a>
         <button class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
@@ -32,11 +33,8 @@
                     <a class="nav-link" href="/contacts/">Контакты</a>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto align-items-center">
-                <li class="nav-item col-6 col-md-auto mr-md-2">
-                    <a class="page-header__favorites-link  icon icon__heart icon_size_32" href="/favorites.html">99</a>
-                </li>
-                <li class="page-header__language-nav-item nav-item dropdown mb-2 mb-md-0">
+            <ul class="navbar-nav ml-auto">
+                <li class="page-header__language-nav-item nav-item dropdown">
                     <a class="nav-link dropdown-toggle"
                        href="#"
                        id="cabinetMenuDropdown"
@@ -53,17 +51,17 @@
                         <a class="dropdown-item" href="?lang=ua">Украинский</a>
                     </div>
                 </li>
-                <li class="nav-item col-6 col-md-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="#"
                        data-toggle="modal"
                        data-target=".authorization-modal">Вход</a>
                 </li>
-                <li class="nav-item col-6 col-md-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="#"
                        data-toggle="modal"
                        data-target=".registration-modal">Регистрация</a>
                 </li>
-                <li class="page-header__cabinet-menu-dropdown nav-item dropdown mb-2 mb-md-0">
+                <li class="page-header__cabinet-menu-dropdown nav-item dropdown">
                     <a class="nav-link dropdown-toggle"
                        href="#"
                        id="cabinetMenuDropdown"
@@ -71,7 +69,7 @@
                        data-toggle="dropdown"
                        aria-haspopup="true"
                        aria-expanded="false">
-                        <i class="page-header__cabinet-menu-icon icon icon__cabinet-user mr-2"></i>
+                        <i class="page-header__cabinet-menu-icon icon icon__cabinet-user"></i>
                         Кабинет
                     </a>
                     <div class="page-header__dropdown-menu dropdown-menu" aria-labelledby="cabinetMenuDropdown">
@@ -88,8 +86,8 @@
                     </div>
                 </li>
             </ul>
-            <div class="ml-md-4 col-xl-2 col-lg-3 col-md-4">
-                <a class="page-header__to-rent-button btn btn-outline-secondary btn-lg" href="/add/">Сдать в аренду</a>
+            <div class="ml-lg-4">
+                <a class="page-header__to-rent-button btn btn-outline-secondary btn-lg w-100" href="/add/">Сдать в аренду</a>
             </div>
         </div>
     </nav>
@@ -391,7 +389,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg">
+            <div class="col-xl mb-4">
                 <article class="offer-page__article">
                     <header class="offer-page__header pb-3 border-bottom">
                         <h1 class="offer-page__title">Студия - Форт Нокс Гранд Резорт</h1>
@@ -510,29 +508,34 @@
                     <div class="offer-page__offer-reviews py-4 border-bottom">
                         <!-- Section: Offer reviews -->
 <section class="offer-reviews">
-    <h2 class="offer-reviews__title mb-4">1 Отзыв</h2>
+    <h2 class="offer-reviews__title mb-4">
+        <span class="offer-reviews__title-text mr-3">1 Отзыв</span>
+        <div class="offer-reviews__total-rating">
+            <figure class="review-rating" data-rating="3"></figure>
+        </div>
+    </h2>
     <div class="offer-reviews__list-of-offer-ratings mb-4">
         <!-- Block: List of offer ratings -->
 <ul class="list-of-offer-ratings row">
-    <li class="list-of-offer-ratings__item col-md-6 mb-1">
+    <li class="list-of-offer-ratings__item col-md-6">
         <label class="list-of-offer-ratings__label">Чистота:</label>
         <div class="list-of-offer-ratings__rating">
             <figure class="review-rating" data-rating="3"></figure>
         </div>
     </li>
-    <li class="list-of-offer-ratings__item col-md-6 mb-1">
+    <li class="list-of-offer-ratings__item col-md-6">
         <label class="list-of-offer-ratings__label">Соответствие описанию:</label>
         <div class="list-of-offer-ratings__rating">
             <figure class="review-rating" data-rating="3"></figure>
         </div>
     </li>
-    <li class="list-of-offer-ratings__item col-md-6 mb-1">
+    <li class="list-of-offer-ratings__item col-md-6">
         <label class="list-of-offer-ratings__label">Общение:</label>
         <div class="list-of-offer-ratings__rating">
             <figure class="review-rating" data-rating="3"></figure>
         </div>
     </li>
-    <li class="list-of-offer-ratings__item col-md-6 mb-1">
+    <li class="list-of-offer-ratings__item col-md-6">
         <label class="list-of-offer-ratings__label">Расположение:</label>
         <div class="list-of-offer-ratings__rating">
             <figure class="review-rating" data-rating="3"></figure>
@@ -598,11 +601,8 @@
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__stairs"></i>
                 <figcaption class="offer-characteristic__caption">
-                    <label class="offer-characteristic__label">Этаж:</label>
-                    <div class="offer-characteristic__value">1</div>
-                    <span class="delimiter mx-2">/</span>
-                    <label class="offer-characteristic__label">Всего этажей:</label>
-                    <div class="offer-characteristic__value">4</div>
+                    <label class="offer-characteristic__label">Этаж / Всего этажей:</label>
+                    <div class="offer-characteristic__value">1 / 4</div>
                 </figcaption>
             </figure>
         </li>
@@ -701,12 +701,13 @@
                 <i class="offer-characteristic__icon icon icon__safe-box"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Невозвратный депозит:</label>
-                    <div class="offer-characteristic__value text-secondary">15%</div>
-                    <i class="icon icon__information ml-2"
-                       data-toggle="tooltip"
-                       data-placement="right"
-                       data-html="true"
-                       title="<strong>Невозвратный депозит</strong> - сумма, которая не возвращается Гостю в случае одностороннего отказа от бронирования с его стороны."></i>
+                    <div class="offer-characteristic__value text-secondary">15%
+                        <i class="icon icon__information ml-2"
+                           data-toggle="tooltip"
+                           data-placement="right"
+                           data-html="true"
+                           title="<strong>Невозвратный депозит</strong> - сумма, которая не возвращается Гостю в случае одностороннего отказа от бронирования с его стороны."></i>
+                    </div>
                 </figcaption>
             </figure>
         </li>
@@ -715,12 +716,13 @@
                 <i class="offer-characteristic__icon icon icon__credit-card"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Предоплата:</label>
-                    <div class="offer-characteristic__value text-secondary">50%</div>
-                    <i class="icon icon__information ml-2"
-                       data-toggle="tooltip"
-                       data-placement="right"
-                       data-html="true"
-                       title="<strong>Предоплата</strong> – сумма первой оплаты, которую необходимо совершить непосредственно на сайте. Обычно она равняется сумме «невозвратного депозита». В случае, если у Владельца нет возможности принять деньги наличными на месте, он может указать 100% предоплаты, чтобы после заселения Гостя получить все деньги от компании V.P.U.T. Это никак не влияет на сумму «невозвратного депозита»."></i>
+                    <div class="offer-characteristic__value text-secondary">50%
+                        <i class="icon icon__information ml-2"
+                           data-toggle="tooltip"
+                           data-placement="right"
+                           data-html="true"
+                           title="<strong>Предоплата</strong> – сумма первой оплаты, которую необходимо совершить непосредственно на сайте. Обычно она равняется сумме «невозвратного депозита». В случае, если у Владельца нет возможности принять деньги наличными на месте, он может указать 100% предоплаты, чтобы после заселения Гостя получить все деньги от компании V.P.U.T. Это никак не влияет на сумму «невозвратного депозита»."></i>
+                    </div>
                 </figcaption>
             </figure>
         </li>
@@ -959,7 +961,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-lg-auto">
+            <div class="col-xl-auto">
                 <aside class="offer-page__aside">
                     <div class="offer-page__offer-employed-by mb-3">
                         <!-- Block: Offer employed by -->

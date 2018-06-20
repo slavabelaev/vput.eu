@@ -142,3 +142,11 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+@media screen and (max-device-width: 320px) {
+  .btn {
+    max-width: 290px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

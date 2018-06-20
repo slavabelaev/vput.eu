@@ -4,7 +4,6 @@
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
-  columns: 2;
 }
 .offer-facilities__list-item {
   margin-bottom: .75rem;
@@ -30,5 +29,11 @@
     background-size: cover;
     background-position: center;
     filter: brightness(0) invert(.5);
+  }
+}
+
+@media screen and (min-device-width: 360px) {
+  .offer-facilities__list {
+    columns: 2;
   }
 }

@@ -33,12 +33,6 @@
     left: 24px;
     background-image: url(#{$rootDir}/templates/common.blocks/image-slider/image-slider__arrow-left.svg);
   }
-
-  &:hover {
-    .image-slider__nav {
-      transform: translateY(0);
-    }
-  }
 }
 
 .image-slider__nav,
@@ -65,4 +59,19 @@
 }
 .image-slider__slide-link {
   display: block;
+}
+
+@include media-breakpoint-up(md) {
+  .image-slider:hover {
+    .image-slider__nav {
+      transform: translateY(0);
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .image-slider {
+    margin-left: -($grid-gutter-width / 2);
+    margin-right: -($grid-gutter-width / 2);
+    border-radius: 0;
+  }
 }

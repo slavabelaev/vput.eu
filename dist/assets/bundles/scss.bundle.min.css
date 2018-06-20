@@ -314,7 +314,7 @@ h1, h2, h3, h4, h5, h6,
   color: inherit; }
 
 h1, .h1 {
-  font-size: 2.5rem; }
+  font-size: 2.25rem; }
 
 h2, .h2 {
   font-size: 2rem; }
@@ -398,6 +398,20 @@ mark,
   color: #978e8e; }
   .blockquote-footer::before {
     content: "\2014 \00A0"; }
+
+@media (max-width: 767.98px) {
+  h1, .h1 {
+    font-size: 1.6875rem; }
+  h2, .h2 {
+    font-size: 1.5rem; }
+  h3, .h3 {
+    font-size: 1.3125rem; }
+  h4, .h4 {
+    font-size: 1.125rem; }
+  h5, .h5 {
+    font-size: 0.9375rem; }
+  h6, .h6 {
+    font-size: 0.75rem; } }
 
 .img-fluid {
   max-width: 100%;
@@ -2074,6 +2088,12 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
+@media screen and (max-device-width: 320px) {
+  .btn {
+    max-width: 290px;
+    overflow: hidden;
+    text-overflow: ellipsis; } }
+
 .fade {
   transition: opacity 0.15s linear; }
   @media screen and (prefers-reduced-motion: reduce) {
@@ -2239,8 +2259,9 @@ input[type="button"].btn-block {
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
-  border: 0;
-  border-bottom: 1px solid #dee2e6; }
+  border: 0; }
+  .dropdown-item:not(:last-child) {
+    border-bottom: 1px solid #dee2e6; }
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
@@ -6804,9 +6825,6 @@ a.text-dark:hover, a.text-dark:focus {
   .image-slider .slick-prev {
     left: 24px;
     background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-left.svg); }
-  .image-slider:hover .image-slider__nav {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
 
 .image-slider__nav,
 .image-slider__images-list {
@@ -6831,6 +6849,17 @@ a.text-dark:hover, a.text-dark:focus {
 
 .image-slider__slide-link {
   display: block; }
+
+@media (min-width: 768px) {
+  .image-slider:hover .image-slider__nav {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@media (max-width: 991.98px) {
+  .image-slider {
+    margin-left: -12px;
+    margin-right: -12px;
+    border-radius: 0; } }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6869,11 +6898,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .list-of-offer-ratings__item {
   display: flex;
-  flex-wrap: wrap; }
+  align-items: center;
+  margin-bottom: 1rem; }
 
 .list-of-offer-ratings__label {
   flex: auto;
-  color: #978e8e; }
+  color: #978e8e;
+  margin-bottom: 0;
+  margin-right: 1rem; }
 
 .list-of-offer-ratings__rating {
   margin-left: auto; }
@@ -6930,7 +6962,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .offer-characteristic__label {
   margin-bottom: 0;
-  margin-right: .5rem; }
+  margin-right: .5rem;
+  display: inline; }
 
 .offer-characteristic__value {
   color: #978e8e;
@@ -7533,7 +7566,6 @@ a.text-dark:hover, a.text-dark:focus {
       .show > .page-header .navbar-dark .page-header__to-rent-button.dropdown-toggle:focus {
         box-shadow: 0 0 0 0.2rem rgba(243, 245, 245, 0.5); }
   .page-header .dropdown-menu {
-    margin-top: 12px;
     border-radius: 0 0 0.1875rem 0.1875rem; }
 
 .page-header__favorites-link.icon {
@@ -7552,15 +7584,15 @@ a.text-dark:hover, a.text-dark:focus {
   background-position: left;
   background-image: url(../../templates/common.blocks/page-header/page-header__VPUT-logo_style_light.svg); }
 
-.page-header__dropdown-menu {
-  margin-bottom: 12px; }
-
 .page-header__dropdown-item-exit {
   border-bottom: 3px solid #1fa1af;
   border-radius: 0 0 0.1875rem 0.1875rem;
   text-align: center;
   font-size: 1.125rem;
   color: #1fa1af; }
+
+.page-header__cabinet-menu-icon {
+  margin-right: .5rem; }
 
 
 /*!
@@ -7604,13 +7636,11 @@ a.text-dark:hover, a.text-dark:focus {
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 .review {
-  display: flex;
   margin-bottom: 0; }
 
 .review__user {
   text-align: center;
-  padding-right: 24px;
-  margin-bottom: 0; }
+  margin-bottom: 1rem; }
 
 .review__user-image {
   width: 90px;
@@ -7628,7 +7658,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .review__created-at {
   flex: auto;
-  color: #978e8e; }
+  color: #978e8e;
+  margin-right: 1rem; }
 
 .review__created-at,
 .review__review-rating {
@@ -7638,6 +7669,13 @@ a.text-dark:hover, a.text-dark:focus {
   flex: 100%;
   color: #978e8e; }
 
+@media (min-width: 576px) {
+  .review {
+    display: flex; }
+  .review__user {
+    margin-bottom: 0;
+    padding-right: 24px; } }
+
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7646,9 +7684,10 @@ a.text-dark:hover, a.text-dark:focus {
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 .review-rating {
-  width: 120px;
+  width: 132px;
   height: 24px;
   background-repeat: repeat-x;
+  background-size: auto 100%;
   margin-bottom: 0; }
 
 .review-rating:before {
@@ -7659,21 +7698,22 @@ a.text-dark:hover, a.text-dark:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../../templates/common.blocks/review-rating/review-rating_style_filling.svg); }
+  background-image: url(../../templates/common.blocks/review-rating/review-rating_style_filling.svg);
+  background-size: auto 100%; }
 
 .review-rating {
   position: relative;
   background-image: url(../../templates/common.blocks/review-rating/review-rating.svg); }
   .review-rating[data-rating="5"]:before {
-    width: 120px; }
+    width: 132px; }
   .review-rating[data-rating="4"]:before {
-    width: 96px; }
+    width: 108px; }
   .review-rating[data-rating="3"]:before {
-    width: 72px; }
+    width: 81px; }
   .review-rating[data-rating="2"]:before {
-    width: 48px; }
+    width: 54px; }
   .review-rating[data-rating="1"]:before {
-    width: 24px; }
+    width: 27px; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7848,9 +7888,7 @@ a.text-dark:hover, a.text-dark:focus {
 .offer-facilities__list {
   list-style: none;
   padding-left: 0;
-  margin-bottom: 0;
-  -webkit-columns: 2;
-          columns: 2; }
+  margin-bottom: 0; }
 
 .offer-facilities__list-item {
   margin-bottom: .75rem;
@@ -7877,6 +7915,11 @@ a.text-dark:hover, a.text-dark:focus {
     background-position: center;
     -webkit-filter: brightness(0) invert(0.5);
             filter: brightness(0) invert(0.5); }
+
+@media screen and (min-device-width: 360px) {
+  .offer-facilities__list {
+    -webkit-columns: 2;
+            columns: 2; } }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7906,7 +7949,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 1rem; }
 
 .offer-main-characteristics__value {
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: #978e8e; }
 
 /*!
@@ -7933,7 +7976,24 @@ a.text-dark:hover, a.text-dark:focus {
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 .offer-reviews__title {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: flex;
+  align-items: center; }
+
+.offer-reviews__total-rating {
+  display: inline-block; }
+
+@media (max-width: 767.98px) {
+  .offer-reviews__total-rating {
+    margin-left: auto; } }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8026,14 +8086,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .who-we-are__title {
   font-size: 50px;
   font-weight: 700;
@@ -8116,9 +8168,25 @@ a.text-dark:hover, a.text-dark:focus {
 .offer-page__how-it-works .how-it-works {
   height: 260px; }
 
-@media (min-width: 992px) {
+.offer-page__aside {
+  max-width: 375px; }
+
+@media (max-width: 1299.98px) {
   .offer-page__aside {
-    max-width: 375px; } }
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0.75rem;
+    background-color: #f3f5f5;
+    overflow-y: auto;
+    z-index: 99; } }
+
+@media (max-width: 767.98px) {
+  .offer-page .breadcrumb {
+    display: none; }
+  .offer-page__article h2 {
+    font-size: 1.3125rem; } }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)

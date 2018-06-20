@@ -1,13 +1,11 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
 .review {
-  display: flex;
   margin-bottom: 0;
 }
 .review__user {
   text-align: center;
-  padding-right: 24px;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 .review__user-image {
   width: 90px;
@@ -26,6 +24,7 @@
 .review__created-at {
   flex: auto;
   color: $text-muted;
+  margin-right: 1rem;
 }
 .review__created-at,
 .review__review-rating {
@@ -34,4 +33,14 @@
 .review__message {
   flex: 100%;
   color: $text-muted;
+}
+
+@include media-breakpoint-up(sm) {
+  .review {
+    display: flex;
+  }
+  .review__user {
+    margin-bottom: 0;
+    padding-right: 24px;
+  }
 }

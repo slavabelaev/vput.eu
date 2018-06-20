@@ -15,11 +15,8 @@
             <figure class="offer-characteristic">
                 <i class="offer-characteristic__icon icon icon__stairs"></i>
                 <figcaption class="offer-characteristic__caption">
-                    <label class="offer-characteristic__label">Этаж:</label>
-                    <div class="offer-characteristic__value">1</div>
-                    <span class="delimiter mx-2">/</span>
-                    <label class="offer-characteristic__label">Всего этажей:</label>
-                    <div class="offer-characteristic__value">4</div>
+                    <label class="offer-characteristic__label">Этаж / Всего этажей:</label>
+                    <div class="offer-characteristic__value">1 / 4</div>
                 </figcaption>
             </figure>
         </li>
@@ -118,12 +115,13 @@
                 <i class="offer-characteristic__icon icon icon__safe-box"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Невозвратный депозит:</label>
-                    <div class="offer-characteristic__value text-secondary">15%</div>
-                    <i class="icon icon__information ml-2"
-                       data-toggle="tooltip"
-                       data-placement="right"
-                       data-html="true"
-                       title="<strong>Невозвратный депозит</strong> - сумма, которая не возвращается Гостю в случае одностороннего отказа от бронирования с его стороны."></i>
+                    <div class="offer-characteristic__value text-secondary">15%
+                        <i class="icon icon__information ml-2"
+                           data-toggle="tooltip"
+                           data-placement="right"
+                           data-html="true"
+                           title="<strong>Невозвратный депозит</strong> - сумма, которая не возвращается Гостю в случае одностороннего отказа от бронирования с его стороны."></i>
+                    </div>
                 </figcaption>
             </figure>
         </li>
@@ -132,12 +130,13 @@
                 <i class="offer-characteristic__icon icon icon__credit-card"></i>
                 <figcaption class="offer-characteristic__caption">
                     <label class="offer-characteristic__label">Предоплата:</label>
-                    <div class="offer-characteristic__value text-secondary">50%</div>
-                    <i class="icon icon__information ml-2"
-                       data-toggle="tooltip"
-                       data-placement="right"
-                       data-html="true"
-                       title="<strong>Предоплата</strong> – сумма первой оплаты, которую необходимо совершить непосредственно на сайте. Обычно она равняется сумме «невозвратного депозита». В случае, если у Владельца нет возможности принять деньги наличными на месте, он может указать 100% предоплаты, чтобы после заселения Гостя получить все деньги от компании V.P.U.T. Это никак не влияет на сумму «невозвратного депозита»."></i>
+                    <div class="offer-characteristic__value text-secondary">50%
+                        <i class="icon icon__information ml-2"
+                           data-toggle="tooltip"
+                           data-placement="right"
+                           data-html="true"
+                           title="<strong>Предоплата</strong> – сумма первой оплаты, которую необходимо совершить непосредственно на сайте. Обычно она равняется сумме «невозвратного депозита». В случае, если у Владельца нет возможности принять деньги наличными на месте, он может указать 100% предоплаты, чтобы после заселения Гостя получить все деньги от компании V.P.U.T. Это никак не влияет на сумму «невозвратного депозита»."></i>
+                    </div>
                 </figcaption>
             </figure>
         </li>

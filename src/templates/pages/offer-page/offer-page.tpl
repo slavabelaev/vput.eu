@@ -21,7 +21,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg">
+            <div class="col-xl mb-4">
                 <article class="offer-page__article">
                     <header class="offer-page__header pb-3 border-bottom">
                         <h1 class="offer-page__title">Студия - Форт Нокс Гранд Резорт</h1>
@@ -65,7 +65,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-lg-auto">
+            <div class="col-xl-auto">
                 <aside class="offer-page__aside">
                     <div class="offer-page__offer-employed-by mb-3">
                         <%- include('../../common.blocks/offer-employed-by/offer-employed-by.tpl'); %>

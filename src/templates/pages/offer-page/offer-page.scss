@@ -14,9 +14,33 @@
     height: 260px;
   }
 }
+.offer-page__aside {
+  max-width: 375px;
+}
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-down(lg) {
   .offer-page__aside {
-    max-width: 375px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: $card-spacer-y;
+    background-color: $light;
+    overflow-y: auto;
+    z-index: 99;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .offer-page {
+    .breadcrumb {
+      display: none;
+    }
+  }
+
+  .offer-page__article {
+    h2 {
+      font-size: $h4-font-size * .875;
+    }
   }
 }

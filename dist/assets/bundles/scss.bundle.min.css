@@ -2754,24 +2754,24 @@ input[type="button"].btn-block {
     color: #978e8e; }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6; }
+  border-bottom: 1px solid transparent; }
   .nav-tabs .nav-item {
     margin-bottom: -1px; }
   .nav-tabs .nav-link {
     border: 1px solid transparent;
-    border-top-left-radius: 0.1875rem;
-    border-top-right-radius: 0.1875rem; }
+    border-radius: 0.1875rem;
+    font-size: 1.125rem; }
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-      border-color: #e9ecef #e9ecef #dee2e6; }
+      border-color: transparent; }
     .nav-tabs .nav-link.disabled {
       color: #978e8e;
       background-color: transparent;
       border-color: transparent; }
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    color: #495057;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff; }
+    color: #1fa1af;
+    background-color: #f3f5f5;
+    border-color: transparent; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -6352,6 +6352,14 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .cities-tabs__nav {
   -webkit-column-count: 6;
           column-count: 6; }
@@ -6386,14 +6394,6 @@ a.text-dark:hover, a.text-dark:focus {
   .cities-tabs__nav {
     -webkit-column-count: 6;
             column-count: 6; } }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6496,79 +6496,6 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
   margin-bottom: 0;
   font-size: 1.125rem; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.image-slider {
-  position: relative;
-  border-radius: 0.1875rem;
-  background-color: #333333;
-  overflow: hidden; }
-  .image-slider .slick-arrow {
-    z-index: 1;
-    width: 3rem;
-    height: 3rem;
-    background-size: 100%;
-    opacity: .8;
-    transition: all 0.2s ease-in-out; }
-    .image-slider .slick-arrow:before {
-      display: none; }
-    .image-slider .slick-arrow:focus, .image-slider .slick-arrow:hover {
-      background-size: 100%;
-      opacity: 1; }
-  .image-slider .slick-next:focus,
-  .image-slider .slick-next:hover,
-  .image-slider .slick-next {
-    right: 24px;
-    background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-right.svg); }
-  .image-slider .slick-prev:focus,
-  .image-slider .slick-prev:hover,
-  .image-slider .slick-prev {
-    left: 24px;
-    background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-left.svg); }
-  .image-slider:hover .image-slider__nav {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-
-.image-slider__nav,
-.image-slider__images-list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0; }
-
-.image-slider__nav {
-  -webkit-transform: translateY(120px);
-          transform: translateY(120px);
-  transition: all 0.2s ease-in-out;
-  z-index: 1; }
-  .image-slider__nav.slick-slider {
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    right: 12px; }
-
-.image-slider__thumbnail {
-  border-radius: 0.1875rem;
-  background-color: #f3f5f5; }
-
-.image-slider__slide-link {
-  display: block; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.list-of-complexes {
-  list-style: none;
-  padding: 0; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6842,6 +6769,79 @@ a.text-dark:hover, a.text-dark:focus {
 
 .icon__ {
   background-image: url(../../templates/common.blocks/icon/icon__.svg); }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.image-slider {
+  position: relative;
+  border-radius: 0.1875rem;
+  background-color: #333333;
+  overflow: hidden; }
+  .image-slider .slick-arrow {
+    z-index: 1;
+    width: 3rem;
+    height: 3rem;
+    background-size: 100%;
+    opacity: .8;
+    transition: all 0.2s ease-in-out; }
+    .image-slider .slick-arrow:before {
+      display: none; }
+    .image-slider .slick-arrow:focus, .image-slider .slick-arrow:hover {
+      background-size: 100%;
+      opacity: 1; }
+  .image-slider .slick-next:focus,
+  .image-slider .slick-next:hover,
+  .image-slider .slick-next {
+    right: 24px;
+    background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-right.svg); }
+  .image-slider .slick-prev:focus,
+  .image-slider .slick-prev:hover,
+  .image-slider .slick-prev {
+    left: 24px;
+    background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-left.svg); }
+  .image-slider:hover .image-slider__nav {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+.image-slider__nav,
+.image-slider__images-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+.image-slider__nav {
+  -webkit-transform: translateY(120px);
+          transform: translateY(120px);
+  transition: all 0.2s ease-in-out;
+  z-index: 1; }
+  .image-slider__nav.slick-slider {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px; }
+
+.image-slider__thumbnail {
+  border-radius: 0.1875rem;
+  background-color: #f3f5f5; }
+
+.image-slider__slide-link {
+  display: block; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.list-of-complexes {
+  list-style: none;
+  padding: 0; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)

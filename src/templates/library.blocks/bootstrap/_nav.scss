@@ -38,7 +38,8 @@
 
   .nav-link {
     border: $nav-tabs-border-width solid transparent;
-    @include border-top-radius($nav-tabs-border-radius);
+    border-radius: $nav-tabs-border-radius;
+    font-size: $nav-tabs-font-size;
 
     @include hover-focus {
       border-color: $nav-tabs-link-hover-border-color;

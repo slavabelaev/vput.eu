@@ -12,6 +12,32 @@ jQuery(document).ready(function ($) {
         asNavFor: '.image-slider [is-slider]',
         dots: false,
         arrows: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 7
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     });
 });

@@ -47,7 +47,8 @@
         </tr>
         </tbody>
     </table>
-    <a href="#" class="btn btn-lg btn-secondary w-100 mb-3">Написать хозяину</a>
+    <a href="#" class="btn btn-secondary btn-lg w-100 mb-3">Написать хозяину</a>
+    <a href="#" class="btn btn-outline-primary btn-lg w-100 mb-3">Оплатить бронирование</a>
     <div class="offer-price-calculator__alert alert alert-danger">Бронирование невозможно</div>
     <figure class="offer-price-calculator__informer">
         <i class="icon icon__lamp icon_size_32 mr-3"></i>

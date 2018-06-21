@@ -5,7 +5,7 @@
             <a data-fancybox="image-slider"
                href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
                class="image-slider__slide-link">
-                <img src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
+                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
                      alt=""
                      class="image-slider__image w-100">
             </a>
@@ -14,7 +14,7 @@
             <a data-fancybox="image-slider"
                href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
                class="image-slider__slide-link">
-                <img src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
+                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
                      alt=""
                      class="image-slider__image w-100">
             </a>
@@ -23,7 +23,7 @@
             <a data-fancybox="image-slider"
                href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
                class="image-slider__slide-link">
-                <img src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
+                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
                      alt=""
                      class="image-slider__image w-100">
             </a>
@@ -32,7 +32,7 @@
             <a data-fancybox="image-slider"
                href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
                class="image-slider__slide-link">
-                <img src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
+                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
                      alt=""
                      class="image-slider__image w-100">
             </a>
@@ -41,7 +41,7 @@
             <a data-fancybox="image-slider"
                href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
                class="image-slider__slide-link">
-                <img src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
+                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
                      alt=""
                      class="image-slider__image w-100">
             </a>
@@ -50,7 +50,7 @@
             <a data-fancybox="image-slider"
                href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
                class="image-slider__slide-link">
-                <img src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
+                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
                      alt=""
                      class="image-slider__image w-100">
             </a>
@@ -59,7 +59,7 @@
             <a data-fancybox="image-slider"
                href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
                class="image-slider__slide-link">
-                <img src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
+                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
                      alt=""
                      class="image-slider__image w-100">
             </a>
@@ -68,7 +68,7 @@
             <a data-fancybox="image-slider"
                href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
                class="image-slider__slide-link">
-                <img src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
+                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
                      alt=""
                      class="image-slider__image w-100">
             </a>
@@ -77,7 +77,7 @@
             <a data-fancybox="image-slider"
                href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
                class="image-slider__slide-link">
-                <img src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
+                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
                      alt=""
                      class="image-slider__image w-100">
             </a>
@@ -86,7 +86,7 @@
             <a data-fancybox="image-slider"
                href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
                class="image-slider__slide-link">
-                <img src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
+                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
                      alt=""
                      class="image-slider__image w-100">
             </a>
@@ -94,57 +94,57 @@
     </ul>
     <ul class="image-slider__nav" is-slider-nav>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>
         <li class="image-slider__nav-item">
-            <img src="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
+            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
                  alt=""
                  class="image-slider__thumbnail">
         </li>

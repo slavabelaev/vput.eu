@@ -1866,7 +1866,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary {
   color: #1fa1af;
-  background-color: transparent;
+  background-color: #fff;
   background-image: none;
   border-color: #1fa1af; }
   .btn-outline-primary:hover {
@@ -1889,7 +1889,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-secondary {
   color: #f76649;
-  background-color: transparent;
+  background-color: #fff;
   background-image: none;
   border-color: #f76649; }
   .btn-outline-secondary:hover {
@@ -1912,7 +1912,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-success {
   color: #28a745;
-  background-color: transparent;
+  background-color: #fff;
   background-image: none;
   border-color: #28a745; }
   .btn-outline-success:hover {
@@ -1935,7 +1935,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-info {
   color: #1fa1af;
-  background-color: transparent;
+  background-color: #fff;
   background-image: none;
   border-color: #1fa1af; }
   .btn-outline-info:hover {
@@ -1958,7 +1958,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-warning {
   color: #ffc107;
-  background-color: transparent;
+  background-color: #fff;
   background-image: none;
   border-color: #ffc107; }
   .btn-outline-warning:hover {
@@ -1981,7 +1981,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-danger {
   color: #af1f1f;
-  background-color: transparent;
+  background-color: #fff;
   background-image: none;
   border-color: #af1f1f; }
   .btn-outline-danger:hover {
@@ -2004,7 +2004,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-light {
   color: #f3f5f5;
-  background-color: transparent;
+  background-color: #fff;
   background-image: none;
   border-color: #f3f5f5; }
   .btn-outline-light:hover {
@@ -2027,7 +2027,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-dark {
   color: #333333;
-  background-color: transparent;
+  background-color: #fff;
   background-image: none;
   border-color: #333333; }
   .btn-outline-dark:hover {
@@ -6788,6 +6788,9 @@ a.text-dark:hover, a.text-dark:focus {
 .icon__bucket {
   background-image: url(../../templates/common.blocks/icon/icon__bucket.svg); }
 
+.icon__close {
+  background-image: url(../../templates/common.blocks/icon/icon__close.svg); }
+
 .icon__ {
   background-image: url(../../templates/common.blocks/icon/icon__.svg); }
 
@@ -7285,54 +7288,8 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.offer-price-calculator {
-  background-color: #f3f5f5;
-  padding: 1.25rem;
-  border-radius: 0.1875rem; }
-
-.offer-price-calculator__price {
-  display: flex;
-  align-items: flex-start; }
-
-.offer-price-calculator__price-label {
-  margin-right: .5rem; }
-
-.offer-price-calculator__price-value {
-  font-size: 2rem; }
-
-.offer-price-calculator__description {
-  color: #1fa1af; }
-
-.offer-price-calculator__table {
-  color: #978e8e; }
-  .offer-price-calculator__table.table {
-    background-color: #fff;
-    border-radius: 0.1875rem; }
-  .offer-price-calculator__table tr:first-child td {
-    border-top-width: 0; }
-
-.offer-price-calculator__amount {
-  color: #333333; }
-
-.offer-price-calculator__to-pay {
-  color: #f76649; }
-
-.offer-price-calculator__alert {
-  text-align: center; }
-
-.offer-price-calculator__informer {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .offer-share {
+  background-color: #fff;
   border: #dee2e6 1px solid;
   border-radius: 0.1875rem;
   padding: 1.25rem;
@@ -7387,6 +7344,53 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 1; }
   .offer-share__social-link:hover {
     opacity: .8; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.offer-price-calculator {
+  background-color: #f3f5f5;
+  padding: 1.25rem;
+  border-radius: 0.1875rem; }
+
+.offer-price-calculator__price {
+  display: flex;
+  align-items: flex-start; }
+
+.offer-price-calculator__price-label {
+  margin-right: .5rem; }
+
+.offer-price-calculator__price-value {
+  font-size: 2rem; }
+
+.offer-price-calculator__description {
+  color: #1fa1af; }
+
+.offer-price-calculator__table {
+  color: #978e8e; }
+  .offer-price-calculator__table.table {
+    background-color: #fff;
+    border-radius: 0.1875rem; }
+  .offer-price-calculator__table tr:first-child td {
+    border-top-width: 0; }
+
+.offer-price-calculator__amount {
+  color: #333333; }
+
+.offer-price-calculator__to-pay {
+  color: #f76649; }
+
+.offer-price-calculator__alert {
+  text-align: center; }
+
+.offer-price-calculator__informer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7545,7 +7549,7 @@ a.text-dark:hover, a.text-dark:focus {
     background-image: url(../../templates/common.blocks/page-header/page-header__VPUT-logo_style_dark.svg); }
   .page-header .navbar-dark .page-header__to-rent-button {
     color: #f3f5f5;
-    background-color: transparent;
+    background-color: #fff;
     background-image: none;
     border-color: #f3f5f5; }
     .page-header .navbar-dark .page-header__to-rent-button:hover {
@@ -8010,14 +8014,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .services {
   text-align: center; }
 
@@ -8078,6 +8074,14 @@ a.text-dark:hover, a.text-dark:focus {
     bottom: 0;
     top: initial;
     height: 80%; } }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8171,16 +8175,45 @@ a.text-dark:hover, a.text-dark:focus {
 .offer-page__aside {
   max-width: 375px; }
 
+.offer-page__aside-toggle {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-left: auto;
+  transition: all 0.2s ease-in-out; }
+  .offer-page__aside-toggle.active .offer-page__aside-toggle-caption-hide {
+    display: inline-block; }
+  .offer-page__aside-toggle.active .offer-page__aside-toggle-caption-show {
+    display: none; }
+  .offer-page__aside-toggle.active + .offer-page__aside {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+
+.offer-page__aside-toggle-caption-hide {
+  display: none; }
+
 @media (max-width: 1299.98px) {
+  .offer-page__aside-toggle {
+    display: inline-block; }
   .offer-page__aside {
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
-    padding: 0.75rem;
-    background-color: #f3f5f5;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border-left: #dee2e6 1px solid;
     overflow-y: auto;
-    z-index: 99; } }
+    z-index: 99;
+    -webkit-transform: translateX(375px);
+            transform: translateX(375px);
+    transition: all 0.2s ease-in-out;
+    -webkit-overflow-scrolling: touch; } }
 
 @media (max-width: 767.98px) {
   .offer-page .breadcrumb {

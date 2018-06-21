@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        lazyLoad: 'ondemand',
         asNavFor: '.image-slider [is-slider-nav]'
     });
     $('.image-slider [is-slider-nav]').slick({

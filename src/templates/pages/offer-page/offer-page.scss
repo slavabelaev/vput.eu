@@ -18,16 +18,46 @@
   max-width: 375px;
 }
 
+.offer-page__aside-toggle {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-left: auto;
+  transition: $transition-base;
+  &.active {
+    .offer-page__aside-toggle-caption-hide { display: inline-block; }
+    .offer-page__aside-toggle-caption-show { display: none; }
+  }
+  &.active + .offer-page__aside {
+    transform: translateX(0);
+  }
+}
+.offer-page__aside-toggle-caption-hide {
+  display: none;
+}
+
 @include media-breakpoint-down(lg) {
+  .offer-page__aside-toggle {
+    display: inline-block;
+  }
   .offer-page__aside {
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
-    padding: $card-spacer-y;
-    background-color: $light;
+    padding: $card-spacer-y $card-spacer-x;
+    background-color: $white;
+    border-left: $border-color 1px solid;
     overflow-y: auto;
     z-index: 99;
+    transform: translateX(375px);
+    transition: $transition-base;
+    -webkit-overflow-scrolling: touch;
   }
 }
 

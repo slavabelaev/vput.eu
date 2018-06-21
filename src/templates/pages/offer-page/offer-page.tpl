@@ -66,6 +66,12 @@
                 </article>
             </div>
             <div class="col-xl-auto">
+                <a href="#"
+                   class="btn btn-primary offer-page__aside-toggle"
+                   data-toggle="button">
+                    <span class="offer-page__aside-toggle-caption-show">Забронировать</span>
+                    <span class="offer-page__aside-toggle-caption-hide"><i class="icon icon__close icon_size_16 icon_style_light"></i></span>
+                </a>
                 <aside class="offer-page__aside">
                     <div class="offer-page__offer-employed-by mb-3">
                         <%- include('../../common.blocks/offer-employed-by/offer-employed-by.tpl'); %>

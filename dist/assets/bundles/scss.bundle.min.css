@@ -7288,6 +7288,53 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.offer-price-calculator {
+  background-color: #f3f5f5;
+  padding: 1.25rem;
+  border-radius: 0.1875rem; }
+
+.offer-price-calculator__price {
+  display: flex;
+  align-items: flex-start; }
+
+.offer-price-calculator__price-label {
+  margin-right: .5rem; }
+
+.offer-price-calculator__price-value {
+  font-size: 2rem; }
+
+.offer-price-calculator__description {
+  color: #1fa1af; }
+
+.offer-price-calculator__table {
+  color: #978e8e; }
+  .offer-price-calculator__table.table {
+    background-color: #fff;
+    border-radius: 0.1875rem; }
+  .offer-price-calculator__table tr:first-child td {
+    border-top-width: 0; }
+
+.offer-price-calculator__amount {
+  color: #333333; }
+
+.offer-price-calculator__to-pay {
+  color: #f76649; }
+
+.offer-price-calculator__alert {
+  text-align: center; }
+
+.offer-price-calculator__informer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .offer-share {
   background-color: #fff;
   border: #dee2e6 1px solid;
@@ -7344,53 +7391,6 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 1; }
   .offer-share__social-link:hover {
     opacity: .8; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.offer-price-calculator {
-  background-color: #f3f5f5;
-  padding: 1.25rem;
-  border-radius: 0.1875rem; }
-
-.offer-price-calculator__price {
-  display: flex;
-  align-items: flex-start; }
-
-.offer-price-calculator__price-label {
-  margin-right: .5rem; }
-
-.offer-price-calculator__price-value {
-  font-size: 2rem; }
-
-.offer-price-calculator__description {
-  color: #1fa1af; }
-
-.offer-price-calculator__table {
-  color: #978e8e; }
-  .offer-price-calculator__table.table {
-    background-color: #fff;
-    border-radius: 0.1875rem; }
-  .offer-price-calculator__table tr:first-child td {
-    border-top-width: 0; }
-
-.offer-price-calculator__amount {
-  color: #333333; }
-
-.offer-price-calculator__to-pay {
-  color: #f76649; }
-
-.offer-price-calculator__alert {
-  text-align: center; }
-
-.offer-price-calculator__informer {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8125,14 +8125,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .index-page__who-we-are {
   min-height: 768px;
   min-height: 100vh;
@@ -8154,6 +8146,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .index-page__who-we-are {
   margin-top: -66px; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8205,7 +8205,7 @@ a.text-dark:hover, a.text-dark:focus {
     top: 0;
     bottom: 0;
     right: 0;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem;
     background-color: #fff;
     border-left: #dee2e6 1px solid;
     overflow-y: auto;
@@ -8220,6 +8220,13 @@ a.text-dark:hover, a.text-dark:focus {
     display: none; }
   .offer-page__article h2 {
     font-size: 1.3125rem; } }
+
+@media (max-width: 575.98px) {
+  .offer-page .offer-price-calculator {
+    padding: 0;
+    background-color: initial; }
+  .offer-page .offer-price-calculator__table {
+    background-color: #f3f5f5; } }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)

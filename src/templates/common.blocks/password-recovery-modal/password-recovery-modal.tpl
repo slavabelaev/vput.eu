@@ -4,10 +4,13 @@
         <div class="modal-content">
             <div class="modal-header justify-content-center">
                 <h2 class="modal-title">Забыли пароль?</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <a href="#"
+                   data-dismiss="modal"
+                   class="close"
+                   aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
             </div>
-            <div class="modal-body pt-0">
-                <p>Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</p>
+            <div class="modal-body">
+                <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
                 <!-- Recovery form -->
                 <form method="post" action="/recovery/ajaxPasswordRecovery/" class="authorization-form">
                     <div class="form-group">

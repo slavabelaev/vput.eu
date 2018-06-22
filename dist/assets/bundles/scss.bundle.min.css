@@ -2498,7 +2498,7 @@ input[type="button"].btn-block {
   position: relative;
   display: block;
   min-height: 1.5rem;
-  padding-left: 1.5rem; }
+  padding-left: 2rem; }
 
 .custom-control-inline {
   display: inline-flex;
@@ -2525,25 +2525,26 @@ input[type="button"].btn-block {
   margin-bottom: 0; }
   .custom-control-label::before {
     position: absolute;
-    top: 0.25rem;
+    top: 0.125rem;
     left: 0;
     display: block;
-    width: 1rem;
-    height: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
     pointer-events: none;
     content: "";
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    background-color: #dee2e6; }
+    background-color: #fff;
+    border: 1px solid #495057; }
   .custom-control-label::after {
     position: absolute;
-    top: 0.25rem;
+    top: 0.125rem;
     left: 0;
     display: block;
-    width: 1rem;
-    height: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
     content: "";
     background-repeat: no-repeat;
     background-position: center center;
@@ -3825,7 +3826,7 @@ button.close {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 0 solid rgba(0, 0, 0, 0.2);
   border-radius: 0.1875rem;
   outline: 0; }
 
@@ -3840,23 +3841,30 @@ button.close {
   .modal-backdrop.fade {
     opacity: 0; }
   .modal-backdrop.show {
-    opacity: 0.5; }
+    opacity: 0.7; }
 
 .modal-header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem;
-  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0;
+  border-bottom: 0 solid #e9ecef;
   border-top-left-radius: 0.1875rem;
   border-top-right-radius: 0.1875rem; }
   .modal-header .close {
     padding: 1rem;
-    margin: -1rem -1rem -1rem auto; }
+    margin: -1rem -1rem -1rem auto;
+    position: absolute;
+    right: -40px;
+    top: 0; }
 
 .modal-title {
   margin-bottom: 0;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600; }
 
 .modal-body {
   position: relative;
@@ -3868,7 +3876,7 @@ button.close {
   align-items: center;
   justify-content: flex-end;
   padding: 1rem;
-  border-top: 1px solid #e9ecef; }
+  border-top: 0 solid #e9ecef; }
   .modal-footer > :not(:first-child) {
     margin-left: .25rem; }
   .modal-footer > :not(:last-child) {
@@ -6365,6 +6373,29 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.authorization-modal .modal-footer {
+  justify-content: center;
+  margin-bottom: -75px;
+  font-size: 1.125rem; }
+
+.authorization-modal__legend {
+  text-align: center; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .cities-tabs__nav {
   -webkit-column-count: 6;
           column-count: 6; }
@@ -6399,22 +6430,6 @@ a.text-dark:hover, a.text-dark:focus {
   .cities-tabs__nav {
     -webkit-column-count: 6;
             column-count: 6; } }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6920,22 +6935,12 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.list-of-search-offers {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .list-of-offers {
   list-style: none;
   padding: 0;
   margin-bottom: 0; }
+  .list-of-offers > .col {
+    min-width: 270px; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6982,6 +6987,30 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.offer-employed-by {
+  position: relative;
+  height: 2rem; }
+
+.offer-employed-by__message {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #fff; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .offer-interested-in {
   position: relative;
   overflow: hidden;
@@ -7018,30 +7047,6 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   transition: all .5s ease; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.offer-employed-by {
-  position: relative;
-  height: 2rem; }
-
-.offer-employed-by__message {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  color: #fff; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7413,20 +7418,39 @@ a.text-dark:hover, a.text-dark:focus {
   .offers-search-form .icon {
     width: 1.25rem;
     height: 1.25rem; }
+  .offers-search-form .form-group {
+    min-width: 135px; }
+  .offers-search-form .offers-search-form__search-by-complexes-col,
+  .offers-search-form .offers-search-form__cityId-col {
+    min-width: 270px; }
 
 .offers-search-form__fieldset {
-  padding-top: 1rem; }
+  padding-top: 0.5rem; }
+  .offers-search-form__fieldset .col {
+    min-width: 200px; }
   .offers-search-form__fieldset:not(:last-child) {
     border-bottom: 1px solid #dee2e6; }
 
 .offers-search-form__other-filters-legend {
-  margin-bottom: 1rem; }
+  min-width: 180px; }
 
 .offers-search-form__cities-dropdown, .offers-search-form__cities-dropdown.collapsing {
   position: absolute;
   left: 0;
   right: 0;
   z-index: 99; }
+
+.offers-search-form__is_short .col {
+  flex: 1 15%; }
+
+.offers-search-form__is_short .offers-search-form__cityId-col {
+  flex: 1 40%; }
+
+.offers-search-form__is_short .offers-search-form__show-booked,
+.offers-search-form__is_short .offers-search-form__id-col,
+.offers-search-form__is_short .offers-search-form__other-filters-col,
+.offers-search-form__is_short .offers-search-form__search-by-complexes-col {
+  display: none; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7631,6 +7655,13 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.registration-modal .modal-footer {
+  justify-content: center;
+  margin-bottom: -75px;
+  font-size: 1.125rem; }
+
+.registration-modal__legend {
+  text-align: center; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7730,7 +7761,8 @@ a.text-dark:hover, a.text-dark:focus {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 0; }
 
 .social-authorization__item:not(:last-child) {
   margin-right: 2rem; }
@@ -7762,21 +7794,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.guarantees {
-  text-align: center; }
-
-.guarantees__list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7825,6 +7842,21 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.guarantees {
+  text-align: center; }
+
+.guarantees__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7865,6 +7897,14 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7932,14 +7972,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .offer-main-characteristics__list {
   list-style: none;
   padding: 0;
@@ -7990,6 +8022,14 @@ a.text-dark:hover, a.text-dark:focus {
 @media (max-width: 767.98px) {
   .offer-reviews__total-rating {
     margin-left: auto; } }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8125,14 +8165,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .index-page__who-we-are {
   min-height: 768px;
   min-height: 100vh;
@@ -8235,29 +8267,45 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.search-page {
-  position: fixed;
-  top: 66px;
-  left: 0;
-  right: 0;
-  bottom: 0; }
+.search-page__offers-search-form .form-group {
+  flex: 1 20%; }
 
-.search-page__search-container {
-  overflow-y: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0; }
+.search-page__offers-search-form .offers-search-form__search-by-complexes-col,
+.search-page__offers-search-form .offers-search-form__cityId-col {
+  flex: 1 40%; }
 
-.search-page__map-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  margin: 0; }
+.offers-search-form__show-booked {
+  margin-bottom: .5rem; }
 
-.search-page__list-of-offers .list-of-offers > .col {
-  max-width: 292px; }
+@media (min-width: 1300px) {
+  .offers-search-form__search-by-complexes-button {
+    max-width: 250px; } }
+
+@media (min-width: 992px) {
+  .search-page {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .search-page__search-container {
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; }
+  .search-page__map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0; }
+  .search-page__offers-search-form .offers-search-form__show-booked {
+    position: absolute;
+    bottom: -20px;
+    background-color: #fff;
+    padding-right: 1rem;
+    margin-bottom: 0; } }
 
 /*# sourceMappingURL=scss.bundle.min.css.map */

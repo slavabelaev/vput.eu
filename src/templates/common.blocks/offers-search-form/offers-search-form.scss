@@ -20,16 +20,27 @@
     width: 1.25rem;
     height: 1.25rem;
   }
+
+  .form-group {
+    min-width: 135px;
+  }
+  .offers-search-form__search-by-complexes-col,
+  .offers-search-form__cityId-col {
+    min-width: 270px;
+  }
 }
 
 .offers-search-form__fieldset {
-  padding-top: $form-group-margin-bottom;
+  padding-top: ($form-group-margin-bottom / 2);
+  .col {
+    min-width: 200px;
+  }
   &:not(:last-child) {
     border-bottom: 1px solid $border-color;
   }
 }
 .offers-search-form__other-filters-legend {
-  margin-bottom: $form-group-margin-bottom;
+  min-width: 180px;
 }
 
 .offers-search-form__cities-dropdown {
@@ -39,5 +50,20 @@
     left: 0;
     right: 0;
     z-index: 99;
+  }
+}
+
+.offers-search-form__is_short {
+  .col {
+    flex: 1 15%;
+  }
+  .offers-search-form__cityId-col {
+    flex: 1 40%;
+  }
+  .offers-search-form__show-booked,
+  .offers-search-form__id-col,
+  .offers-search-form__other-filters-col,
+  .offers-search-form__search-by-complexes-col {
+    display: none;
   }
 }

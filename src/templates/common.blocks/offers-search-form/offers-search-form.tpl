@@ -30,13 +30,11 @@
         </div>
         <div class="offers-search-form__search-by-complexes-col form-group col">
             <a href="#"
-               class="btn btn-outline-primary btn-lg w-100"
-               data-toggle="collapse"
-               data-target=".offers-search-form__other-filters">Искать по комплексам</a>
+               class="offers-search-form__search-by-complexes-button btn btn-outline-primary btn-lg w-100">Search by complexes</a>
         </div>
         <div class="offers-search-form__other-filters-col form-group col">
             <a href="#"
-               class="btn btn-outline-primary btn-lg w-100"
+               class="offers-search-form__search-by-complexes-button btn btn-outline-primary btn-lg w-100"
                data-toggle="collapse"
                data-target=".offers-search-form__other-filters">More filters</a>
         </div>
@@ -44,12 +42,21 @@
             <input type="number"
                    name="filters[id]"
                    class="form-control form-control-lg"
-                   placeholder="Id">
+                   placeholder="ID">
         </div>
         <div class="offers-search-form__search-col form-group col">
             <button type="submit"
-                    class="btn btn-secondary btn-lg w-100">Search</button>
+                    class="offers-search-form__search-button btn btn-secondary btn-lg w-100">Search</button>
         </div>
+    </div>
+
+    <div class="offers-search-form__show-booked custom-control custom-checkbox">
+        <input type="checkbox"
+               class="offers-search-form__show-booked-control custom-control-input"
+               id="offers-search-form__show-booked-control"
+               name="filters[showBooked]">
+        <label class="custom-control-label"
+               for="offers-search-form__show-booked-control">Не показывать забронированные</label>
     </div>
 
 
@@ -59,24 +66,22 @@
 
     <!-- Other filters -->
     <div class="offers-search-form__other-filters collapse">
+        <legend class="offers-search-form__other-filters-legend">Price per day</legend>
         <div class="form-row mt-3">
-            <div class="col-3">
-                <legend class="offers-search-form__other-filters-legend">Price per day</legend>
-            </div>
-            <div class="form-group col-3 d-none">
+            <div class="form-group col d-none">
                 <input type="number" name="filters[prices][minPrice]" class="form-control" placeholder="Min. price">
             </div>
-            <div class="form-group col-3 d-none">
+            <div class="form-group col d-none">
                 <input type="number" name="filters[prices][maxPrice]" class="form-control" placeholder="Max. price">
             </div>
-            <div class="form-group col-9">
+            <div class="form-group col">
                 <div class="offers-search-form__slider mt-3"></div>
             </div>
         </div>
 
-        <fieldset class="offers-search-form__fieldset">
+        <div class="offers-search-form__fieldset">
             <div class="form-row">
-                <div class="form-group col-sm-3">
+                <div class="form-group col">
                     <!-- Input Group -->
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -91,7 +96,7 @@
                     </div>
                     <!-- /Input Group -->
                 </div>
-                <div class="form-group col-sm-3">
+                <div class="form-group col">
                     <!-- Input Group -->
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -106,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group col-sm-3">
+                <div class="form-group col">
                     <!-- Input Group -->
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -120,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group col-sm-3">
+                <div class="form-group col">
                     <!-- Input Group -->
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -135,11 +140,11 @@
                     </div>
                 </div>
             </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="offers-search-form__fieldset">
+        <div class="offers-search-form__fieldset">
             <div class="form-row">
-                <div class="form-group col-sm-3">
+                <div class="form-group col">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <div class="input-group-text"><span class="icon icon__door"></span></div>
@@ -149,7 +154,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group col-sm-3">
+                <div class="form-group col">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <div class="input-group-text"><span class="icon icon__bathroom"></span></div>
@@ -159,7 +164,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group col-sm-3">
+                <div class="form-group col">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <div class="input-group-text"><span class="icon icon__bed"></span></div>
@@ -169,36 +174,35 @@
                         </select>
                     </div>
                 </div>
+                <div class="form-group col"></div>
             </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="offers-search-form__fieldset">
+        <div class="offers-search-form__fieldset">
+            <legend class="offers-search-form__other-filters-legend">Amenities</legend>
             <div class="form-row">
-                <div class="col-3">
-                    <legend class="offers-search-form__other-filters-legend">Amenities</legend>
-                </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][266]" class="custom-control-input"
                                id="offers-search-form__parking">
                         <label class="custom-control-label" for="offers-search-form__parking">Parking</label>
                     </div>
                 </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][254]" class="custom-control-input"
                                id="offers-search-form__pool">
                         <label class="custom-control-label" for="offers-search-form__pool">Pool</label>
                     </div>
                 </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][259]" class="custom-control-input"
                                id="offers-search-form__spa">
                         <label class="custom-control-label" for="offers-search-form__spa">Spa</label>
                     </div>
                 </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][245]" class="custom-control-input"
                                id="offers-search-form__lift">
@@ -206,14 +210,12 @@
                     </div>
                 </div>
             </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="offers-search-form__fieldset">
+        <div class="offers-search-form__fieldset">
+            <legend class="offers-search-form__other-filters-legend">Appliances</legend>
             <div class="form-row">
-                <div class="col-3">
-                    <legend class="offers-search-form__other-filters-legend">Appliances</legend>
-                </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][243]" class="custom-control-input"
                                id="offers-search-form__air-conditioning">
@@ -221,21 +223,21 @@
                                for="offers-search-form__air-conditioning">Air-conditioning</label>
                     </div>
                 </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][271]" class="custom-control-input"
                                id="offers-search-form__cooker">
                         <label class="custom-control-label" for="offers-search-form__cooker">Cooker</label>
                     </div>
                 </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][270]" class="custom-control-input"
                                id="offers-search-form__refrigerator">
                         <label class="custom-control-label" for="offers-search-form__refrigerator">Refrigerator</label>
                     </div>
                 </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][287]" class="custom-control-input"
                                id="offers-search-form__tv">
@@ -243,47 +245,35 @@
                     </div>
                 </div>
             </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="offers-search-form__fieldset">
+        <div class="offers-search-form__fieldset">
+            <legend class="offers-search-form__other-filters-legend">House rules</legend>
             <div class="form-row">
-                <div class="col-3">
-                    <legend class="offers-search-form__other-filters-legend">House rules</legend>
-                </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][247]" class="custom-control-input"
                                id="offers-search-form__smoking">
                         <label class="custom-control-label" for="offers-search-form__smoking">Smoking</label>
                     </div>
                 </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][80]" class="custom-control-input"
                                id="offers-search-form__children">
                         <label class="custom-control-label" for="offers-search-form__children">Children</label>
                     </div>
                 </div>
-                <div class="form-group col-sm-2">
+                <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][240]" class="custom-control-input"
                                id="offers-search-form__pets">
                         <label class="custom-control-label" for="offers-search-form__pets">Pets</label>
                     </div>
                 </div>
+                <div class="form-group col"></div>
             </div>
-        </fieldset>
-
-        <fieldset class="offers-search-form__fieldset">
-            <div class="form-row">
-                <div class="col-3">
-                    <legend class="offers-search-form__other-filters-legend mb-2">ID search</legend>
-                </div>
-                <div class="form-group col-sm-2 mb-2">
-                    <input type="number" name="filters[id]" class="form-control">
-                </div>
-            </div>
-        </fieldset>
+        </div>
     </div>
     <!-- /Other filters -->
 </form>

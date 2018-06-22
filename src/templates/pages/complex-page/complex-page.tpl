@@ -5,7 +5,9 @@
 <main class="complex-page">
     <div class="pt-4 pb-2 border-bottom">
         <div class="container">
-            <%- include('../../common.blocks/offers-search-form/offers-search-form.tpl'); %>
+            <div class="complex-page__offers-search-form offers-search-form__is_short">
+                <%- include('../../common.blocks/offers-search-form/offers-search-form.tpl'); %>
+            </div>
         </div>
     </div>
     <div class="container pt-4 pb-4">

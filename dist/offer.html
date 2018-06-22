@@ -100,10 +100,13 @@
         <div class="modal-content">
             <div class="modal-header justify-content-center">
                 <h2 class="modal-title">Забыли пароль?</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <a href="#"
+                   data-dismiss="modal"
+                   class="close"
+                   aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
             </div>
-            <div class="modal-body pt-0">
-                <p>Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</p>
+            <div class="modal-body">
+                <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
                 <!-- Recovery form -->
                 <form method="post" action="/recovery/ajaxPasswordRecovery/" class="authorization-form">
                     <div class="form-group">
@@ -125,44 +128,51 @@
 <div class="authorization-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
-            <div class="modal-header justify-content-center">
+            <div class="modal-header">
                 <h2 class="modal-title">Вход</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <a href="#"
+                   data-dismiss="modal"
+                   class="close"
+                   aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
             </div>
-            <div class="modal-body pt-0">
+            <div class="modal-body">
                 <!-- Authorization form -->
                 <form class="authorization-form">
-                    <h4 class="text-center">через</h4>
-                    <!-- Social authorization -->
-                    <ul class="social-authorization">
-                        <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_facebook"></a></li>
-                        <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_vk"></a></li>
-                        <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_ok"></a></li>
-                    </ul>
-                    <!-- /Social authorization -->
-                    <h4 class="text-center">или</h4>
-                    <div class="form-group">
-                        <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
-                    </div>
-                    <div class="form-group mb-2">
-                        <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
-                    </div>
-                    <div class="row align-items-center mb-2">
-                        <div class="col-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" name="cookie" class="custom-control-input" id="rememberMe" required>
-                                <label class="custom-control-label" for="rememberMe">Запомнить меня</label>
+                    <fieldset class="authorization-modal__fieldset">
+                        <legend class="authorization-modal__legend">через</legend>
+                        <!-- Social authorization -->
+                        <ul class="social-authorization">
+                            <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_facebook"></a></li>
+                            <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_vk"></a></li>
+                            <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_ok"></a></li>
+                        </ul>
+                        <!-- /Social authorization -->
+                    </fieldset>
+                    <fieldset class="authorization-modal__fieldset">
+                        <legend class="authorization-modal__legend mb-4">или</legend>
+                        <div class="form-group">
+                            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+                        </div>
+                        <div class="row align-items-center mb-2">
+                            <div class="col-6">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" name="cookie" class="custom-control-input" id="rememberMe" required>
+                                    <label class="custom-control-label" for="rememberMe">Запомнить меня</label>
+                                </div>
+                            </div>
+                            <div class="col-6 text-right">
+                                <a href="#" class="nav-link" data-toggle="modal" data-target=".password-recovery-modal" data-dismiss="modal">Забыл пароль</a>
                             </div>
                         </div>
-                        <div class="col-6 text-right">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target=".password-recovery-modal" data-dismiss="modal">Забыл пароль</a>
-                        </div>
-                    </div>
+                    </fieldset>
                     <button type="submit" class="btn btn-primary btn-lg w-100">Войти</button>
                 </form>
                 <!-- Authorization form -->
             </div>
-            <div class="modal-footer justify-content-center pt-0">
+            <div class="modal-footer">
                 <a href="#" class="nav-link"
                    data-toggle="modal"
                    data-dismiss="modal"
@@ -176,37 +186,44 @@
 <div class="registration-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
-            <div class="modal-header justify-content-center">
+            <div class="modal-header">
                 <h2 class="modal-title">Регистрация</h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <a href="#"
+                   data-dismiss="modal"
+                   class="close"
+                   aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
             </div>
-            <div class="modal-body pt-0">
+            <div class="modal-body">
                 <!-- Registration form -->
                 <form class="registration-form">
-                    <h4 class="text-center">через</h4>
-                    <!-- Social authorization -->
-                    <ul class="social-authorization">
-                        <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_facebook"></a></li>
-                        <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_vk"></a></li>
-                        <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_ok"></a></li>
-                    </ul>
-                    <!-- /Social authorization -->
-                    <h4 class="text-center">или</h4>
-                    <div class="form-group">
-                        <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
-                    </div>
-                    <div class="form-group mb-2">
-                        <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
-                    </div>
-                    <div class="custom-control custom-checkbox mb-2">
-                        <input type="checkbox" checked name="newsSubscribed" class="custom-control-input" id="newsSubscribed" required>
-                        <label class="custom-control-label" for="newsSubscribed">Подписаться на спец. предложения</label>
-                    </div>
+                    <fieldset class="registration-modal__fieldset">
+                        <legend class="registration-modal__legend">через</legend>
+                        <!-- Social authorization -->
+                        <ul class="social-authorization">
+                            <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_facebook"></a></li>
+                            <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_vk"></a></li>
+                            <li class="social-authorization__item"><a href="#" class="social-authorization__icon social-authorization__icon_type_ok"></a></li>
+                        </ul>
+                        <!-- /Social authorization -->
+                    </fieldset>
+                    <fieldset class="registration-modal__fieldset">
+                        <legend class="registration-modal__legend mb-4">или</legend>
+                        <div class="form-group">
+                            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+                        </div>
+                        <div class="custom-control custom-checkbox mb-2">
+                            <input type="checkbox" checked name="newsSubscribed" class="custom-control-input" id="newsSubscribed" required>
+                            <label class="custom-control-label" for="newsSubscribed">Подписаться на спец. предложения</label>
+                        </div>
+                    </fieldset>
                     <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
                 </form>
                 <!-- Registration form -->
             </div>
-            <div class="modal-footer justify-content-center pt-0">
+            <div class="modal-footer">
                 <a href="#" class="nav-link"
                    data-toggle="modal"
                    data-dismiss="modal"
@@ -1182,7 +1199,7 @@
         <!-- List of offers -->
 <ul class="list-of-offers row">
     
-    <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+    <li class="col mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
     <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
@@ -1227,7 +1244,7 @@
 <!-- Offer item -->
     </li>
     
-    <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+    <li class="col mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
     <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
@@ -1272,7 +1289,7 @@
 <!-- Offer item -->
     </li>
     
-    <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+    <li class="col mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
     <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
@@ -1317,7 +1334,7 @@
 <!-- Offer item -->
     </li>
     
-    <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+    <li class="col mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
     <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
@@ -1362,7 +1379,7 @@
 <!-- Offer item -->
     </li>
     
-    <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+    <li class="col mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
     <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
@@ -1407,7 +1424,7 @@
 <!-- Offer item -->
     </li>
     
-    <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+    <li class="col mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
     <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
@@ -1452,7 +1469,7 @@
 <!-- Offer item -->
     </li>
     
-    <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+    <li class="col mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
     <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
@@ -1497,7 +1514,7 @@
 <!-- Offer item -->
     </li>
     
-    <li class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+    <li class="col mb-3">
         <!-- Offer item -->
 <figure class="offer-item">
     <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>

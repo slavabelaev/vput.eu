@@ -451,13 +451,14 @@ $input-group-addon-color:               $input-color !default;
 $input-group-addon-bg:                  $gray-200 !default;
 $input-group-addon-border-color:        $input-border-color !default;
 
-$custom-control-gutter:                 1.5rem !default;
+$custom-control-gutter:                 2rem !default;
 $custom-control-spacer-x:               1rem !default;
 
-$custom-control-indicator-size:         1rem !default;
-$custom-control-indicator-bg:           $gray-300 !default;
+$custom-control-indicator-size:         1.25rem !default;
+$custom-control-indicator-bg:           $white !default;
 $custom-control-indicator-bg-size:      50% 50% !default;
 $custom-control-indicator-box-shadow:   inset 0 .25rem .25rem rgba($black, .1) !default;
+$custom-control-indicator-border-color: $gray-700 !default;
 
 $custom-control-indicator-disabled-bg:          $gray-200 !default;
 $custom-control-label-disabled-color:           $gray-600 !default;
@@ -773,16 +774,17 @@ $modal-dialog-margin:               .5rem !default;
 $modal-dialog-margin-y-sm-up:       1.75rem !default;
 
 $modal-title-line-height:           $line-height-base !default;
+$modal-title-font-size:             $h4-font-size !default;
 
 $modal-content-bg:                  $white !default;
 $modal-content-border-color:        rgba($black, .2) !default;
-$modal-content-border-width:        $border-width !default;
+$modal-content-border-width:        0 !default;
 $modal-content-border-radius:       $border-radius-lg !default;
 $modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
 $modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
 
 $modal-backdrop-bg:                 $black !default;
-$modal-backdrop-opacity:            .5 !default;
+$modal-backdrop-opacity:            .7 !default;
 $modal-header-border-color:         $gray-200 !default;
 $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-header-border-width:         $modal-content-border-width !default;

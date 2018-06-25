@@ -66,21 +66,25 @@
 
     <!-- Other filters -->
     <div class="offers-search-form__other-filters collapse">
-        <legend class="offers-search-form__other-filters-legend">Price per day</legend>
-        <div class="form-row mt-3">
-            <div class="form-group col d-none">
-                <input type="number" name="filters[prices][minPrice]" class="form-control" placeholder="Min. price">
-            </div>
-            <div class="form-group col d-none">
-                <input type="number" name="filters[prices][maxPrice]" class="form-control" placeholder="Max. price">
-            </div>
-            <div class="form-group col">
-                <div class="offers-search-form__slider mt-3"></div>
+        <div class="offers-search-form__fieldset mt-4">
+            <legend class="offers-search-form__legend">Price per day</legend>
+            <div class="offers-search-form__options-list form-row">
+                <div class="form-group col d-none">
+                    <input type="number" name="filters[prices][minPrice]" class="form-control" placeholder="Min. price">
+                </div>
+                <div class="form-group col d-none">
+                    <input type="number" name="filters[prices][maxPrice]" class="form-control" placeholder="Max. price">
+                </div>
+                <div class="form-group col">
+                    <div class="offers-search-form__slider"
+                         data-min="0"
+                         data-max="768"></div>
+                </div>
             </div>
         </div>
 
         <div class="offers-search-form__fieldset">
-            <div class="form-row">
+            <div class="offers-search-form__options-list form-row">
                 <div class="form-group col">
                     <!-- Input Group -->
                     <div class="input-group">
@@ -143,7 +147,7 @@
         </div>
 
         <div class="offers-search-form__fieldset">
-            <div class="form-row">
+            <div class="offers-search-form__options-list form-row">
                 <div class="form-group col">
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -179,8 +183,8 @@
         </div>
 
         <div class="offers-search-form__fieldset">
-            <legend class="offers-search-form__other-filters-legend">Amenities</legend>
-            <div class="form-row">
+            <legend class="offers-search-form__legend">Amenities</legend>
+            <div class="offers-search-form__options-list form-row">
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][266]" class="custom-control-input"
@@ -213,8 +217,8 @@
         </div>
 
         <div class="offers-search-form__fieldset">
-            <legend class="offers-search-form__other-filters-legend">Appliances</legend>
-            <div class="form-row">
+            <legend class="offers-search-form__legend">Appliances</legend>
+            <div class="offers-search-form__options-list form-row">
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][243]" class="custom-control-input"
@@ -248,8 +252,8 @@
         </div>
 
         <div class="offers-search-form__fieldset">
-            <legend class="offers-search-form__other-filters-legend">House rules</legend>
-            <div class="form-row">
+            <legend class="offers-search-form__legend">House rules</legend>
+            <div class="offers-search-form__options-list form-row">
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][247]" class="custom-control-input"

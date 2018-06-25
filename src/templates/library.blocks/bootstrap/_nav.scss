@@ -40,9 +40,12 @@
     border: $nav-tabs-border-width solid transparent;
     border-radius: $nav-tabs-border-radius;
     font-size: $nav-tabs-font-size;
+    color: $dark;
+    transition: $transition-base;
 
     @include hover-focus {
       border-color: $nav-tabs-link-hover-border-color;
+      color: $primary;
     }
 
     &.disabled {

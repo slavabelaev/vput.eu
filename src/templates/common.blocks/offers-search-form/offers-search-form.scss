@@ -16,6 +16,10 @@
     }
   }
 
+  .custom-control-label {
+    display: block;
+  }
+
   .icon {
     width: 1.25rem;
     height: 1.25rem;
@@ -23,15 +27,56 @@
 
   .form-group {
     min-width: 135px;
+    margin-top: ($form-group-margin-bottom / 2);
+    margin-bottom: ($form-group-margin-bottom / 2);
   }
   .offers-search-form__search-by-complexes-col,
   .offers-search-form__cityId-col {
     min-width: 270px;
   }
 }
+.offers-search-form__slider {
+  margin: auto;
+  min-width: 240px;
+  max-width: 90%;
+  max-width: calc(100% - 50px);
+
+  .noUi-connect {
+    background-color: $primary;
+  }
+  .noUi-tooltip {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+  }
+  &.noUi-target {
+    box-shadow: none;
+    border-radius: 24px;
+    border-width: 0;
+    background-color: $gray-200;
+  }
+  &.noUi-horizontal {
+    height: 12px;
+    .noUi-handle {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border-width: 0;
+      top: -9px;
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
 
 .offers-search-form__fieldset {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: ($form-group-margin-bottom / 2);
+  padding-bottom: ($form-group-margin-bottom / 2);
   .col {
     min-width: 200px;
   }
@@ -39,8 +84,19 @@
     border-bottom: 1px solid $border-color;
   }
 }
-.offers-search-form__other-filters-legend {
-  min-width: 180px;
+.offers-search-form__legend {
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 180px;
+  color: $dark;
+  flex: 1 200px;
+  margin-top: ($form-group-margin-bottom / 2);
+  margin-bottom: ($form-group-margin-bottom / 2);
+}
+
+.offers-search-form__options-list {
+  flex: 1 auto;
+  align-items: center;
 }
 
 .offers-search-form__cities-dropdown {

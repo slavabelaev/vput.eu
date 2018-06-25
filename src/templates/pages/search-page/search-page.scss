@@ -36,6 +36,9 @@
     left: 0;
   }
   .search-page__map-container {
+    position: relative;
+  }
+  .search-page__map {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -46,7 +49,7 @@
   .search-page__offers-search-form {
     .offers-search-form__show-booked {
       position: absolute;
-      bottom: -20px;
+      bottom: -36px;
       background-color: $white;
       padding-right: $custom-control-spacer-x;
       margin-bottom: 0;

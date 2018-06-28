@@ -48,6 +48,15 @@
   .modal.show & {
     transform: translate(0, 0);
   }
+
+  .close {
+    padding: $modal-header-padding;
+    // auto on the left force icon to the right even when there is no .modal-title
+    margin: (-$modal-header-padding) (-$modal-header-padding) (-$modal-header-padding) auto;
+    position: absolute;
+    right: -40px;
+    top: 0;
+  }
 }
 
 .modal-dialog-centered {
@@ -98,15 +107,6 @@
   padding-bottom: 0;
   border-bottom: $modal-header-border-width solid $modal-header-border-color;
   @include border-top-radius($modal-content-border-radius);
-
-  .close {
-    padding: $modal-header-padding;
-    // auto on the left force icon to the right even when there is no .modal-title
-    margin: (-$modal-header-padding) (-$modal-header-padding) (-$modal-header-padding) auto;
-    position: absolute;
-    right: -40px;
-    top: 0;
-  }
 }
 
 // Title text within header

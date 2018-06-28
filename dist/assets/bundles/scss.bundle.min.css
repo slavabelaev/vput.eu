@@ -3815,6 +3815,12 @@ button.close {
   .modal.show .modal-dialog {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
+  .modal-dialog .close {
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto;
+    position: absolute;
+    right: -40px;
+    top: 0; }
 
 .modal-dialog-centered {
   display: flex;
@@ -3855,12 +3861,6 @@ button.close {
   border-bottom: 0 solid #e9ecef;
   border-top-left-radius: 0.1875rem;
   border-top-right-radius: 0.1875rem; }
-  .modal-header .close {
-    padding: 1rem;
-    margin: -1rem -1rem -1rem auto;
-    position: absolute;
-    right: -40px;
-    top: 0; }
 
 .modal-title {
   margin-bottom: 0;
@@ -6384,6 +6384,13 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.authorization-modal .modal-footer {
+  justify-content: center;
+  margin-bottom: -75px;
+  font-size: 1.125rem; }
+
+.authorization-modal__legend {
+  text-align: center; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6392,12 +6399,7 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.authorization-modal .modal-footer {
-  justify-content: center;
-  margin-bottom: -75px;
-  font-size: 1.125rem; }
-
-.authorization-modal__legend {
+.authorization-form__title {
   text-align: center; }
 
 /*!
@@ -6646,6 +6648,12 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+
+.icon_size_48 {
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem; }
 
 .icon_size_32 {
   width: 2rem;
@@ -6901,6 +6909,24 @@ a.text-dark:hover, a.text-dark:focus {
 
 .icon__close {
   background-image: url(../../templates/common.blocks/icon/icon__close.svg); }
+
+.icon__breakfast {
+  background-image: url(../../templates/common.blocks/icon/icon__breakfast.svg); }
+
+.icon__atm {
+  background-image: url(../../templates/common.blocks/icon/icon__atm.svg); }
+
+.icon__elevator {
+  background-image: url(../../templates/common.blocks/icon/icon__elevator.svg); }
+
+.icon__ok {
+  background-image: url(../../templates/common.blocks/icon/icon__ok.svg); }
+
+.icon__vk {
+  background-image: url(../../templates/common.blocks/icon/icon__vk.svg); }
+
+.icon__facebook {
+  background-image: url(../../templates/common.blocks/icon/icon__facebook.svg); }
 
 .icon__ {
   background-image: url(../../templates/common.blocks/icon/icon__.svg); }
@@ -7726,6 +7752,16 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.registration-form__title {
+  text-align: center; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .registration-modal .modal-footer {
   justify-content: center;
   margin-bottom: -75px;
@@ -7881,6 +7917,59 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.authorization-or-registration__card {
+  position: relative;
+  color: #fff; }
+
+.authorization-or-registration__card-body {
+  padding: 1.25rem;
+  background-color: #adb5bd;
+  border-radius: 0.1875rem; }
+
+.authorization-or-registration__card-front {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #adb5bd;
+  z-index: 1;
+  background-position: center;
+  background-size: 120px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
+  .authorization-or-registration__card-front:hover, .authorization-or-registration__card-front:focus {
+    background-color: #bbc2c8; }
+
+.authorization-or-registration__card-front-auth {
+  background-image: url(../../templates/sections/authorization-or-registration/authorization-or-registration__auth.svg); }
+
+.authorization-or-registration__card-front-register {
+  background-image: url(../../templates/sections/authorization-or-registration/authorization-or-registration__register.svg); }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.guarantees {
+  text-align: center; }
+
+.guarantees__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .how-it-works {
   display: flex;
   align-items: center;
@@ -7905,39 +7994,6 @@ a.text-dark:hover, a.text-dark:focus {
   .how-it-works__icon-play:hover {
     -webkit-transform: scale(1.125);
             transform: scale(1.125); }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.guarantees {
-  text-align: center; }
-
-.guarantees__list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.latest-reviews__title {
-  text-align: center; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7976,6 +8032,24 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.latest-reviews__title {
+  text-align: center; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8035,6 +8109,14 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .offer-main-characteristics__list {
   list-style: none;
   padding: 0;
@@ -8074,22 +8156,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .offer-reviews__title {
   text-transform: uppercase;
   display: flex;
@@ -8101,6 +8167,14 @@ a.text-dark:hover, a.text-dark:focus {
 @media (max-width: 767.98px) {
   .offer-reviews__total-rating {
     margin-left: auto; } }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8185,6 +8259,14 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .who-we-are__title {
   font-size: 50px;
   font-weight: 700;
@@ -8215,6 +8297,64 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.add-page__header {
+  background-color: #333333;
+  color: #fff; }
+
+.accordion {
+  list-style: none;
+  padding-left: 0; }
+
+.accordion__item-card-header {
+  font-size: 1.25rem;
+  cursor: pointer;
+  background-color: #dee2e6;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.1875rem;
+  margin-bottom: 0; }
+
+.accordion__item {
+  margin-bottom: 12px; }
+
+.accordion__item-content {
+  padding: 0.75rem; }
+
+.renting-form__form-group-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  align-items: center; }
+
+.renting-form__form-group-list-item {
+  min-width: 235px; }
+
+.renting-form__size-select {
+  max-width: 70px; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.authorization-page {
+  background-color: #333333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center; }
+
+.authorization-page__container {
+  max-width: 850px;
+  margin: auto; }
+
+.authorization-page__logo {
+  display: block;
+  width: 100px;
+  height: 42px;
+  margin: auto;
+  background-image: url(../../templates/common.blocks/page-header/page-header__VPUT-logo_style_dark.svg);
+  background-size: cover; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)

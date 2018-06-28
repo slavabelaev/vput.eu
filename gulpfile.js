@@ -52,6 +52,7 @@ const config = {
                 'node_modules/slick-carousel/slick/slick-theme.css',
                 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
                 'node_modules/nouislider/distribute/nouislider.min.css',
+                'node_modules/filepond/dist/filepond.min.css',
             ]
         }
     },
@@ -69,11 +70,18 @@ const config = {
             ],
             js: [
                 'node_modules/jquery/dist/jquery.min.js',
+                // Bootstrap 4
                 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+                // Image Gallery
                 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+                // Price Slider
                 'node_modules/nouislider/distribute/nouislider.min.js',
                 'node_modules/wnumb/wNumb.js',
+                // Slick Slider
                 'node_modules/slick-carousel/slick/slick.min.js',
+                // Drag and drop Uploader
+                'node_modules/filepond/dist/filepond.js',
+                // Sticky menu
                 'node_modules/sticky-kit/dist/sticky-kit.min.js',
             ]
         }

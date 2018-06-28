@@ -1,0 +1,123 @@
+<!-- Authorization page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="//fonts.googleapis.com/css?family=Exo+2:700,300italic,600,500italic,700italic,300,400,800,600italic,500,800italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/bundles/scss.bundle.min.css">
+    <link rel="stylesheet" href="/assets/bundles/css.bundle.min.css">
+</head>
+
+<body>
+
+<main class="authorization-page">
+    <div class="container">
+        <a class="authorization-page__logo my-4" href="/"></a>
+        <h1 class="text-center text-white mb-5">ВЫ НЕ ЗАРЕГИСТРИРОВАНЫ ИЛИ НЕ АВТОРИЗОВАНЫ</h1>
+        <div class="authorization-page__container">
+        <!-- Section: Authorization or registration -->
+<section class="authorization-or-registration">
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <section class="authorization-or-registration__card">
+                <div class="authorization-or-registration__card-front authorization-or-registration__card-front-auth authorization-or-registration__card-body">
+                    <h2 class="card-title text-center">У меня есть аккаунт</h2>
+                </div>
+                <div class="authorization-or-registration__card-back authorization-or-registration__card-back-auth authorization-or-registration__card-body">
+                    <div class="authorization-or-registration__authorization-form">
+                        <!-- Block: Authorization form -->
+<form class="authorization-form">
+    <h2 class="authorization-form__title">Вход</h2>
+    <fieldset class="authorization-modal__fieldset">
+        <legend class="authorization-modal__legend">через</legend>
+        <!-- Social authorization -->
+        <ul class="social-authorization">
+            <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__vk icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__ok icon_size_48"></a></li>
+        </ul>
+        <!-- /Social authorization -->
+    </fieldset>
+    <fieldset class="authorization-modal__fieldset">
+        <legend class="authorization-modal__legend mb-4">или</legend>
+        <div class="form-group">
+            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+        </div>
+        <div class="form-group mb-2">
+            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+        </div>
+        <div class="row align-items-center mb-2">
+            <div class="col-6">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="cookie" class="custom-control-input" id="rememberMe" required>
+                    <label class="custom-control-label" for="rememberMe">Запомнить меня</label>
+                </div>
+            </div>
+            <div class="col-6 text-right">
+                <a href="#" class="nav-link" data-toggle="modal" data-target=".password-recovery-modal" data-dismiss="modal">Забыл пароль</a>
+            </div>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary btn-lg w-100">Войти</button>
+</form>
+<!-- /Block: Authorization form -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6 mb-4">
+            <section class="authorization-or-registration__card">
+                <div class="authorization-or-registration__card-front authorization-or-registration__card-front-register authorization-or-registration__card-body d-none">
+                    <h2 class="card-title text-center">Я тут новенький</h2>
+                </div>
+                <div class="authorization-or-registration__card-back authorization-or-registration__card-back-register authorization-or-registration__card-body">
+                    <div class="authorization-or-registration__registration-form">
+                        <!-- Registration form -->
+<form class="registration-form">
+    <h2 class="registration-form__title">Регистрация</h2>
+    <fieldset class="registration-modal__fieldset">
+        <legend class="registration-modal__legend">через</legend>
+        <!-- Social authorization -->
+        <ul class="social-authorization">
+            <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__vk icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__ok icon_size_48"></a></li>
+        </ul>
+        <!-- /Social authorization -->
+    </fieldset>
+    <fieldset class="registration-modal__fieldset">
+        <legend class="registration-modal__legend mb-4">или</legend>
+        <div class="form-group">
+            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+        </div>
+        <div class="form-group mb-3">
+            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" checked name="newsSubscribed" class="custom-control-input" id="newsSubscribed" required>
+            <label class="custom-control-label" for="newsSubscribed">Подписаться на спец. предложения</label>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
+</form>
+<!-- Registration form -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<!-- /Section: Authorization or registration -->
+        </div>
+    </div>
+</main>
+
+<!-- Bundle Scripts -->
+<script src="/assets/bundles/js.bundle.min.js"></script>
+<script src="/assets/bundles/ts.bundle.min.js"></script>
+</body>
+</html>
+<!-- /Authorization page -->

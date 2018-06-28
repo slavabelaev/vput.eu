@@ -11,6 +11,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.icon_size_48 {
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
+}
 .icon_size_32 {
   width: 2rem;
   height: 2rem;
@@ -118,4 +124,10 @@
 .icon__coffee { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__coffee.svg); }
 .icon__bucket { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bucket.svg); }
 .icon__close { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__close.svg); }
+.icon__breakfast { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__breakfast.svg); }
+.icon__atm { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__atm.svg); }
+.icon__elevator { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__elevator.svg); }
+.icon__ok { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__ok.svg); }
+.icon__vk { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__vk.svg); }
+.icon__facebook { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__facebook.svg); }
 .icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }

@@ -6384,12 +6384,7 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.authorization-modal .modal-footer {
-  justify-content: center;
-  margin-bottom: -75px;
-  font-size: 1.125rem; }
-
-.authorization-modal__legend {
+.authorization-form__title {
   text-align: center; }
 
 /*!
@@ -6399,7 +6394,12 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.authorization-form__title {
+.authorization-modal .modal-footer {
+  justify-content: center;
+  margin-bottom: -75px;
+  font-size: 1.125rem; }
+
+.authorization-modal__legend {
   text-align: center; }
 
 /*!
@@ -6560,76 +6560,6 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
   margin-bottom: 0;
   font-size: 1.125rem; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.image-slider {
-  position: relative;
-  border-radius: 0.1875rem;
-  background-color: #333333;
-  overflow: hidden; }
-  .image-slider .slick-arrow {
-    z-index: 1;
-    width: 3rem;
-    height: 3rem;
-    background-size: 100%;
-    opacity: .8;
-    transition: all 0.2s ease-in-out; }
-    .image-slider .slick-arrow:before {
-      display: none; }
-    .image-slider .slick-arrow:focus, .image-slider .slick-arrow:hover {
-      background-size: 100%;
-      opacity: 1; }
-  .image-slider .slick-next:focus,
-  .image-slider .slick-next:hover,
-  .image-slider .slick-next {
-    right: 24px;
-    background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-right.svg); }
-  .image-slider .slick-prev:focus,
-  .image-slider .slick-prev:hover,
-  .image-slider .slick-prev {
-    left: 24px;
-    background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-left.svg); }
-
-.image-slider__nav,
-.image-slider__images-list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0; }
-
-.image-slider__nav {
-  -webkit-transform: translateY(120px);
-          transform: translateY(120px);
-  transition: all 0.2s ease-in-out;
-  z-index: 1; }
-  .image-slider__nav.slick-slider {
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    right: 12px; }
-
-.image-slider__thumbnail {
-  border-radius: 0.1875rem;
-  background-color: #f3f5f5; }
-
-.image-slider__slide-link {
-  display: block; }
-
-@media (min-width: 768px) {
-  .image-slider:hover .image-slider__nav {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-
-@media (max-width: 991.98px) {
-  .image-slider {
-    margin-left: -12px;
-    margin-right: -12px;
-    border-radius: 0; } }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6930,6 +6860,76 @@ a.text-dark:hover, a.text-dark:focus {
 
 .icon__ {
   background-image: url(../../templates/common.blocks/icon/icon__.svg); }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.image-slider {
+  position: relative;
+  border-radius: 0.1875rem;
+  background-color: #333333;
+  overflow: hidden; }
+  .image-slider .slick-arrow {
+    z-index: 1;
+    width: 3rem;
+    height: 3rem;
+    background-size: 100%;
+    opacity: .8;
+    transition: all 0.2s ease-in-out; }
+    .image-slider .slick-arrow:before {
+      display: none; }
+    .image-slider .slick-arrow:focus, .image-slider .slick-arrow:hover {
+      background-size: 100%;
+      opacity: 1; }
+  .image-slider .slick-next:focus,
+  .image-slider .slick-next:hover,
+  .image-slider .slick-next {
+    right: 24px;
+    background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-right.svg); }
+  .image-slider .slick-prev:focus,
+  .image-slider .slick-prev:hover,
+  .image-slider .slick-prev {
+    left: 24px;
+    background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-left.svg); }
+
+.image-slider__nav,
+.image-slider__images-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+.image-slider__nav {
+  -webkit-transform: translateY(120px);
+          transform: translateY(120px);
+  transition: all 0.2s ease-in-out;
+  z-index: 1; }
+  .image-slider__nav.slick-slider {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px; }
+
+.image-slider__thumbnail {
+  border-radius: 0.1875rem;
+  background-color: #f3f5f5; }
+
+.image-slider__slide-link {
+  display: block; }
+
+@media (min-width: 768px) {
+  .image-slider:hover .image-slider__nav {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@media (max-width: 991.98px) {
+  .image-slider {
+    margin-left: -12px;
+    margin-right: -12px;
+    border-radius: 0; } }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7909,14 +7909,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .authorization-or-registration__card {
   position: relative;
   color: #fff; }
@@ -7947,6 +7939,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .authorization-or-registration__card-front-register {
   background-image: url(../../templates/sections/authorization-or-registration/authorization-or-registration__register.svg); }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8010,6 +8010,16 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.latest-reviews__title {
+  text-align: center; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .most-popular-cities__list {
   list-style: none;
   padding-left: 0;
@@ -8032,16 +8042,6 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.latest-reviews__title {
-  text-align: center; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8191,6 +8191,43 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.renting-form__accordion {
+  list-style: none;
+  padding-left: 0; }
+
+.renting-form__accordion-section-title {
+  font-size: 1.25rem;
+  cursor: pointer;
+  background-color: #dee2e6;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.1875rem;
+  margin-bottom: 0; }
+
+.renting-form__accordion-item {
+  margin-bottom: 12px; }
+
+.renting-form__accordion-item-content {
+  padding: 1.25rem 0.75rem; }
+
+.renting-form__form-group-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  align-items: center; }
+
+.renting-form__form-group-list-item {
+  min-width: 235px; }
+
+.renting-form__size-select {
+  max-width: 70px; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .services {
   text-align: center; }
 
@@ -8300,36 +8337,6 @@ a.text-dark:hover, a.text-dark:focus {
 .add-page__header {
   background-color: #333333;
   color: #fff; }
-
-.accordion {
-  list-style: none;
-  padding-left: 0; }
-
-.accordion__item-card-header {
-  font-size: 1.25rem;
-  cursor: pointer;
-  background-color: #dee2e6;
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.1875rem;
-  margin-bottom: 0; }
-
-.accordion__item {
-  margin-bottom: 12px; }
-
-.accordion__item-content {
-  padding: 0.75rem; }
-
-.renting-form__form-group-list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  align-items: center; }
-
-.renting-form__form-group-list-item {
-  min-width: 235px; }
-
-.renting-form__size-select {
-  max-width: 70px; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)

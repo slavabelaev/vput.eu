@@ -4,36 +4,3 @@
   background-color: $dark;
   color: $white;
 }
-
-.accordion {
-  list-style: none;
-  padding-left: 0;
-}
-.accordion__item-card-header {
-  font-size: 1.25rem;
-  cursor: pointer;
-  background-color: $gray-300;
-  padding: $card-spacer-y $card-spacer-x;
-  border-radius: $border-radius;
-  margin-bottom: 0;
-}
-.accordion__item {
-  margin-bottom: $card-group-margin;
-}
-.accordion__item-content {
-  padding: $card-spacer-y;
-}
-
-
-.renting-form__form-group-list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  align-items: center;
-}
-.renting-form__form-group-list-item {
-  min-width: 235px;
-}
-.renting-form__size-select {
-  max-width: 70px;
-}

@@ -1,16 +1,16 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
-.authorization-or-registration__card {
+.authorization__card {
   position: relative;
   color: $white;
 }
-.authorization-or-registration__card-body {
+.authorization__card-body {
   padding: $card-spacer-x;
   background-color: $gray-500;
   border-radius: $card-border-radius;
 }
 
-.authorization-or-registration__card-front {
+.authorization__card-front {
   position: absolute;
   left: 0;
   right: 0;
@@ -28,9 +28,12 @@
     background-color: lighten($gray-500, 5%);
   }
 }
-.authorization-or-registration__card-front-auth {
-  background-image: url(#{$rootDir}/templates/sections/authorization-or-registration/authorization-or-registration__auth.svg);
+.authorization__title {
+  text-align: center;
 }
-.authorization-or-registration__card-front-register {
-  background-image: url(#{$rootDir}/templates/sections/authorization-or-registration/authorization-or-registration__register.svg);
+.authorization__card-front-auth {
+  background-image: url(#{$rootDir}/templates/sections/authorization/authorization__auth.svg);
+}
+.authorization__card-front-register {
+  background-image: url(#{$rootDir}/templates/sections/authorization/authorization__register.svg);
 }

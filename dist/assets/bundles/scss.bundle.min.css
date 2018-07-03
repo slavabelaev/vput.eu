@@ -6366,6 +6366,124 @@ a.text-dark:hover, a.text-dark:focus {
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 
+@charset "UTF-8";
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.2) 0 0 5px);
+          filter: drop-shadow(rgba(0, 0, 0, 0.2) 0 0 5px);
+  z-index: 1;
+  opacity: .8;
+  transition: all 0.2s ease-in-out; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    color: transparent;
+    opacity: 1; }
+
+.slick-prev {
+  left: -3rem;
+  background-image: url(../../templates/library.blocks/slick-carousel/slick-carousel__arrow-left.svg); }
+
+.slick-next {
+  right: -3rem;
+  background-image: url(../../templates/library.blocks/slick-carousel/slick-carousel__arrow-right.svg); }
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
+
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6376,6 +6494,11 @@ a.text-dark:hover, a.text-dark:focus {
 .mh-100vh {
   min-height: 600px;
   min-height: 100vh; }
+
+ul.row {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6555,11 +6678,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.complex-tabs__list-of-characteristics {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 1.125rem; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6873,28 +6991,10 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 0.1875rem;
   background-color: #333333;
   overflow: hidden; }
-  .image-slider .slick-arrow {
-    z-index: 1;
-    width: 3rem;
-    height: 3rem;
-    background-size: 100%;
-    opacity: .8;
-    transition: all 0.2s ease-in-out; }
-    .image-slider .slick-arrow:before {
-      display: none; }
-    .image-slider .slick-arrow:focus, .image-slider .slick-arrow:hover {
-      background-size: 100%;
-      opacity: 1; }
-  .image-slider .slick-next:focus,
-  .image-slider .slick-next:hover,
   .image-slider .slick-next {
-    right: 24px;
-    background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-right.svg); }
-  .image-slider .slick-prev:focus,
-  .image-slider .slick-prev:hover,
+    right: 24px; }
   .image-slider .slick-prev {
-    left: 24px;
-    background-image: url(../../templates/common.blocks/image-slider/image-slider__arrow-left.svg); }
+    left: 24px; }
 
 .image-slider__nav,
 .image-slider__images-list {
@@ -6991,8 +7091,6 @@ a.text-dark:hover, a.text-dark:focus {
   list-style: none;
   padding: 0;
   margin-bottom: 0; }
-  .list-of-offers > .col {
-    min-width: 270px; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7124,25 +7222,11 @@ a.text-dark:hover, a.text-dark:focus {
   .offer-item__image-slider .slick-prev,
   .offer-item__image-slider .slick-next {
     opacity: 0;
-    transition: all 0.2s ease-in-out;
-    z-index: 99;
-    width: initial;
-    height: initial; }
-    .offer-item__image-slider .slick-prev:before,
-    .offer-item__image-slider .slick-next:before {
-      content: "";
-      display: block;
-      width: 32px;
-      height: 32px;
-      background-size: cover; }
+    z-index: 99; }
   .offer-item__image-slider .slick-prev {
     left: .5rem; }
-    .offer-item__image-slider .slick-prev:before {
-      background-image: url(../../templates/common.blocks/icon/icon__prev.svg); }
   .offer-item__image-slider .slick-next {
     right: .5rem; }
-    .offer-item__image-slider .slick-next:before {
-      background-image: url(../../templates/common.blocks/icon/icon__next.svg); }
 
 .offer-item__image {
   background-size: cover;
@@ -7161,9 +7245,10 @@ a.text-dark:hover, a.text-dark:focus {
   top: 12px;
   left: 12px;
   opacity: .5;
-  transition: all 0.2s ease-in-out;
   z-index: 2;
-  cursor: pointer; }
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
   .offer-item__add-to-favorites:hover {
     opacity: .6; }
   .offer-item__add-to-favorites.active {
@@ -7864,6 +7949,28 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.reviews-slider {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 3rem;
+  padding-right: 3rem; }
+  .reviews-slider > .slick-next {
+    right: -.5rem; }
+  .reviews-slider > .slick-prev {
+    left: -.5rem; }
+  .reviews-slider .offer-item__details {
+    display: none; }
+  .reviews-slider .offer-item__image.slick-slide,
+  .reviews-slider .offer-item__image-slider {
+    height: 240px; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .social-authorization {
   list-style: none;
   padding: 0;
@@ -7902,6 +8009,7 @@ a.text-dark:hover, a.text-dark:focus {
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 
+
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7909,16 +8017,24 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.authorization-or-registration__card {
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.authorization__card {
   position: relative;
   color: #fff; }
 
-.authorization-or-registration__card-body {
+.authorization__card-body {
   padding: 1.25rem;
   background-color: #adb5bd;
   border-radius: 0.1875rem; }
 
-.authorization-or-registration__card-front {
+.authorization__card-front {
   position: absolute;
   left: 0;
   right: 0;
@@ -7931,37 +8047,20 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   cursor: pointer;
   transition: all 0.2s ease-in-out; }
-  .authorization-or-registration__card-front:hover, .authorization-or-registration__card-front:focus {
+  .authorization__card-front:hover, .authorization__card-front:focus {
     background-color: #bbc2c8; }
 
-.authorization-or-registration__card-front-auth {
-  background-image: url(../../templates/sections/authorization-or-registration/authorization-or-registration__auth.svg); }
-
-.authorization-or-registration__card-front-register {
-  background-image: url(../../templates/sections/authorization-or-registration/authorization-or-registration__register.svg); }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.guarantees {
+.authorization__title {
   text-align: center; }
 
-.guarantees__list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0; }
+.authorization__card-front-auth {
+  background-image: url(../../templates/sections/authorization/authorization__auth.svg); }
+
+.authorization__card-front-register {
+  background-image: url(../../templates/sections/authorization/authorization__register.svg); }
+
+
+
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8002,6 +8101,21 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.guarantees {
+  text-align: center; }
+
+.guarantees__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8011,7 +8125,8 @@ a.text-dark:hover, a.text-dark:focus {
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 .latest-reviews__title {
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8042,6 +8157,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8184,6 +8300,7 @@ a.text-dark:hover, a.text-dark:focus {
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 
+
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -8305,7 +8422,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 .who-we-are__title {
-  font-size: 50px;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -8327,6 +8443,10 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: -1rem;
   margin-right: -1rem; }
 
+@media (min-width: 992px) {
+  .who-we-are__title {
+    font-size: 50px; } }
+
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -8334,9 +8454,6 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.add-page__header {
-  background-color: #333333;
-  color: #fff; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8370,6 +8487,9 @@ a.text-dark:hover, a.text-dark:focus {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.add-page__header {
+  background-color: #333333;
+  color: #fff; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8394,7 +8514,8 @@ a.text-dark:hover, a.text-dark:focus {
   background-image: url(https://vput.ru/images/index/bg.jpg);
   background-size: cover;
   background-position: center;
-  color: #fff; }
+  color: #fff;
+  background-color: #333333; }
   .index-page__who-we-are .offers-search-form__other-filters-btn-container {
     display: none; }
 

@@ -1,0 +1,21 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.reviews-slider {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  &>.slick-next {
+    right: -.5rem;
+  }
+  &>.slick-prev {
+    left: -.5rem;
+  }
+  .offer-item__details {
+    display: none;
+  }
+  .offer-item__image.slick-slide,
+  .offer-item__image-slider {
+    height: 240px;
+  }
+}

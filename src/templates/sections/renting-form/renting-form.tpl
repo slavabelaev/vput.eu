@@ -2174,7 +2174,7 @@
                                         </div>
                                     </li>
                                     <li class="renting-form__form-group-list-item col">
-                                        <div class="form-group">
+                                        <div class="form-group mb-0">
                                             <div class="input-group">
                                                         <textarea name="data[calendar][note]"
                                                                   rows="2"

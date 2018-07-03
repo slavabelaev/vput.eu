@@ -5,33 +5,11 @@
   border-radius: $border-radius;
   background-color: $dark;
   overflow: hidden;
-  .slick-arrow {
-    z-index: 1;
-    width: 3rem;
-    height: 3rem;
-    background-size: 100%;
-    opacity: .8;
-    transition: $transition-base;
-    &:before {
-      display: none;
-    }
-    &:focus,
-    &:hover {
-      background-size: 100%;
-      opacity: 1;
-    }
-  }
-  .slick-next:focus,
-  .slick-next:hover,
   .slick-next {
     right: 24px;
-    background-image: url(#{$rootDir}/templates/common.blocks/image-slider/image-slider__arrow-right.svg);
   }
-  .slick-prev:focus,
-  .slick-prev:hover,
   .slick-prev {
     left: 24px;
-    background-image: url(#{$rootDir}/templates/common.blocks/image-slider/image-slider__arrow-left.svg);
   }
 }
 

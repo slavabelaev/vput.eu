@@ -10,9 +10,17 @@
                     <%- include('../../common.blocks/offers-search-form/offers-search-form.tpl'); %>
                 </div>
                 <div class="search-page__list-of-offers py-4">
-                    <%- include('../../common.blocks/list-of-offers/list-of-offers.tpl'); %>
+                    <!-- List of offers -->
+                    <ul class="list-of-offers row">
+                        <% for(var i = 0; i < 8; i++) { %>
+                        <li class="col-sm-6 col-lg-4 mb-3">
+                            <%- include('../../common.blocks/offer-item/offer-item.tpl'); %>
+                        </li>
+                        <% } %>
+                    </ul>
+                    <!-- /List of offers -->
                 </div>
-                <nav aria-label="Page navigation example">
+                <nav aria-label="Pagination">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>

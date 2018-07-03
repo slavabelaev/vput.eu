@@ -1,7 +1,6 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
 .who-we-are__title {
-  font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -24,5 +23,11 @@
   .offers-search-form__cities-dropdown {
     margin-left: -1rem;
     margin-right: -1rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .who-we-are__title {
+    font-size: 50px;
   }
 }

@@ -20,29 +20,13 @@
   .slick-prev,
   .slick-next {
     opacity: 0;
-    transition: $transition-base;
     z-index: 99;
-    width: initial;
-    height: initial;
-    &:before {
-      content: "";
-      display: block;
-      width: 32px;
-      height: 32px;
-      background-size: cover;
-    }
   }
   .slick-prev {
     left: .5rem;
-    &:before {
-      background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__prev.svg);
-    }
   }
   .slick-next {
     right: .5rem;
-    &:before {
-      background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__next.svg);
-    }
   }
 }
 .offer-item__image {
@@ -63,9 +47,10 @@
   top: 12px;
   left: 12px;
   opacity: .5;
-  transition: $transition-base;
   z-index: 2;
+  outline: none;
   cursor: pointer;
+  transition: $transition-base;
   &:hover {
     opacity: .6;
   }

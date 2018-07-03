@@ -49,7 +49,6 @@ const config = {
             ],
             css: [
                 'node_modules/slick-carousel/slick/slick.css',
-                'node_modules/slick-carousel/slick/slick-theme.css',
                 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
                 'node_modules/nouislider/distribute/nouislider.min.css',
                 'node_modules/filepond/dist/filepond.min.css',

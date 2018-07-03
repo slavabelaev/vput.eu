@@ -4,3 +4,18 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@include media-breakpoint-up(md) {
+  .latest-reviews {
+    .reviews-slider {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      &>.slick-next {
+        right: -.5rem;
+      }
+      &>.slick-prev {
+        left: -.5rem;
+      }
+    }
+  }
+}

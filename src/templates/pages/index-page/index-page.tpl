@@ -32,12 +32,12 @@
     <div class="index-page__section index-page__about bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mb-3">
+                <div class="col-lg-5 col-xl-6 mb-3">
                     <div class="index-page__how-it-works">
                         <%- include('../../sections/how-it-works/how-it-works.tpl'); %>
                     </div>
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="col-lg-7 col-xl-6 mb-3">
                     <div class="index-page__latest-reviews">
                         <%- include('../../sections/latest-reviews/latest-reviews.tpl'); %>
                     </div>

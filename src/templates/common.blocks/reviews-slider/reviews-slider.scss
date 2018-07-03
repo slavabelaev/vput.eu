@@ -3,14 +3,7 @@
 .reviews-slider {
   list-style: none;
   margin-bottom: 0;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  &>.slick-next {
-    right: -.5rem;
-  }
-  &>.slick-prev {
-    left: -.5rem;
-  }
+  padding-left: 0;
   .offer-item__details {
     display: none;
   }

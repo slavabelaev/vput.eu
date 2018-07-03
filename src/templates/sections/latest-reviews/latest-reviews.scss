@@ -1,5 +1,10 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
+.latest-reviews {
+  .offer-item__title:before {
+    display: none;
+  }
+}
 .latest-reviews__title {
   text-align: center;
   text-transform: uppercase;
@@ -7,14 +12,16 @@
 
 @include media-breakpoint-up(md) {
   .latest-reviews {
-    .reviews-slider {
+    .slick-slide {
       padding-left: 3rem;
       padding-right: 3rem;
+    }
+    .reviews-slider {
       &>.slick-next {
-        right: -.5rem;
+        right: -1rem;
       }
       &>.slick-prev {
-        left: -.5rem;
+        left: -1rem;
       }
     }
   }

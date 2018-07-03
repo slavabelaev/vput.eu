@@ -40,9 +40,12 @@
 }
 
 @include media-breakpoint-up(md) {
-  .image-slider:hover {
-    .image-slider__nav {
-      transform: translateY(0);
+  .image-slider {
+    &:focus,
+    &:hover {
+      .image-slider__nav {
+        transform: translateY(0);
+      }
     }
   }
 }

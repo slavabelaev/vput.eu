@@ -100,8 +100,8 @@ gulp.task('templates:build', function () {
         .pipe(plumber())
         .pipe(ejs({
             bundlePath: {
-                styles: paths.bundles.replace(paths.dest, '') + '/' + config.styles.bundleFileName,
-                scripts: paths.bundles.replace(paths.dest, '') + '/' + config.scripts.bundleFileName,
+                styles: paths.bundles.replace(paths.dest + '/', '') + '/' + config.styles.bundleFileName,
+                scripts: paths.bundles.replace(paths.dest + '/', '') + '/' + config.scripts.bundleFileName,
             }
         }))
         .pipe(rename(function(path) {

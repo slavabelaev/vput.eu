@@ -1,11 +1,11 @@
-<!-- Section: Most popular cities -->
+<!-- Section: most-popular-cities -->
 <section class="most-popular-cities">
     <header class="most-popular-cities__header mb-4 text-center">
         <h2 class="most-popular-cities__title mb-0">САМЫЕ ПОПУЛЯРНЫЕ ГОРОДА</h2>
         <div class="most-popular-cities__description lead">Туристы часто выбирают эти направления</div>
     </header>
     <ul class="most-popular-cities__list row">
-        <li class="col-md-4 col-xl-6 mb-3">
+        <li class="col-lg-4 col-xl-6 mb-3">
             <figure class="most-popular-cities__list-item"
                     style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Sunny-Beach.jpg);">
                 <figcaption class="most-popular-cities__list-caption">
@@ -14,7 +14,7 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="col-md-4 col-xl-3 mb-3">
+        <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
             <figure class="most-popular-cities__list-item"
                     style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Saint-Vlas.jpg);">
                 <figcaption class="most-popular-cities__list-caption">
@@ -23,7 +23,7 @@
                 </figcaption>
             </figure>
         </li>
-        <li class="col-md-4 col-xl-3 mb-3">
+        <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
             <figure class="most-popular-cities__list-item"
                     style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Neseber.jpg);">
                 <figcaption class="most-popular-cities__list-caption">
@@ -34,4 +34,4 @@
         </li>
     </ul>
 </section>
-<!-- /Section: Most popular cities -->
+<!-- /Section: most-popular-cities -->

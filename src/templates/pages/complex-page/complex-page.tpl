@@ -10,23 +10,20 @@
             </div>
         </div>
     </div>
-    <div class="container pt-4 pb-4">
-        <section>
-            <header class="d-flex align-items-end">
-                <h1>Sunny View North,
-                    <small class="h3 text-capitalize text-muted font-weight-normal">Святой Влас, Болгария</small>
+    <div class="container py-4">
+        <section class="complex-page__section">
+            <header class="complex-page__header">
+                <h1 class="complex-page__title">Sunny View North,
+                    <a href="#" class="complex-page__city">Святой Влас, Болгария</a>
                 </h1>
             </header>
             <div class="complex-page__complex-tabs">
                 <%- include('../../common.blocks/complex-tabs/complex-tabs.tpl'); %>
             </div>
         </section>
-        <section>
-            <h2>Ближайшие комплексы</h2>
-            <div class="complex-page__list-of-complexes">
-                <%- include('../../common.blocks/list-of-complexes/list-of-complexes.tpl'); %>
-            </div>
-        </section>
+        <div class="complex-page__nearest-complexes">
+            <%- include('../../sections/nearest-complexes/nearest-complexes.tpl'); %>
+        </div>
     </div>
 </main>
 <!-- /Complex Page -->

@@ -61,6 +61,11 @@
 
 
     <div class="offers-search-form__cities-dropdown collapse">
+        <a href="#"
+           data-toggle="collapse"
+           data-target=".offers-search-form__cities-dropdown"
+           class="offers-search-form__cities-dropdown-close close"
+           aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
         <%- include('../cities-tabs/cities-tabs.tpl'); %>
     </div>
 

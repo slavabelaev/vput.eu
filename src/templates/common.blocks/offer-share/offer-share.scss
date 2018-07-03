@@ -22,22 +22,14 @@
   }
 }
 .offer-share__title {
+  position: relative;
+  display: block;
   font-size: 1rem;
   color: $text-muted;
-  position: relative;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 0;
-    z-index: -1;
-    border-bottom: $border-color 1px solid;
-  }
+  margin-top: -12px;
+}
+.offer-share__socials-share {
+  border-top: $border-color 1px solid;
 }
 .offer-share__title-text {
   z-index: 1;

@@ -1,7 +1,34 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
 .cities-tabs {
-  [data-letter] {
+  border-radius: $card-border-radius;
+  border: $card-border-width solid $card-border-color;
+  background-color: $card-bg;
+}
+.cities-tabs__header {
+  padding: $card-spacer-y $card-spacer-x;
+  border-color: $border-color;
+}
+.cities-tabs__content {
+  padding: $card-spacer-x;
+}
+.cities-tabs__nav {
+  column-count: 5;
+  column-gap: 0;
+}
+
+.cities-tabs__link {
+  display: block;
+  position: relative;
+  padding: 0;
+  padding-left: 2rem;
+  color: $dark;
+  transition: .36s;
+  &:hover {
+    text-decoration: none;
+    color: $primary;
+  }
+  &[data-letter] {
     margin-top: .5rem;
     &:before {
       content: attr(data-letter);
@@ -16,20 +43,6 @@
     }
   }
 }
-.cities-tabs__nav {
-  column-count: 5;
-  .nav-link {
-    display: block;
-    position: relative;
-    padding: 0;
-    padding-left: 2rem;
-    color: $dark;
-    transition: .36s;
-    &:hover {
-      color: $primary;
-    }
-  }
-}
 
 @include media-breakpoint-up(xs) {
   .cities-tabs__nav {
@@ -38,12 +51,12 @@
 }
 @include media-breakpoint-up(sm) {
   .cities-tabs__nav {
-    column-count: 2;
+    column-count: 1;
   }
 }
 @include media-breakpoint-up(md) {
   .cities-tabs__nav {
-    column-count: 3;
+    column-count: 2;
   }
 }
 @include media-breakpoint-up(lg) {

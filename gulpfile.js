@@ -105,7 +105,7 @@ gulp.task('templates:build', function () {
             }
         }))
         .pipe(rename(function(path) {
-            path.basename  = path.basename.replace('-page', '');
+            path.basename  = path.basename.replace('page-', '');
             path.extname = '.html';
             path.dirname = '';
         }))

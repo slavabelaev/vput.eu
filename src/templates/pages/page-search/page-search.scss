@@ -1,0 +1,58 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.page-search__offers-search-form {
+  .form-group {
+    flex: 1 20%;
+  }
+  .offers-search-form__search-by-complexes-col,
+  .offers-search-form__cityId-col {
+    flex: 1 40%;
+  }
+}
+
+.offers-search-form__show-booked {
+  margin-bottom: .5rem;
+}
+
+@include media-breakpoint-up(xl) {
+  .offers-search-form__search-by-complexes-button {
+    max-width: 250px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .page-search {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .page-search__search-container {
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .page-search__map-container {
+    position: relative;
+  }
+  .page-search__map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .page-search__offers-search-form {
+    .offers-search-form__show-booked {
+      position: absolute;
+      bottom: -36px;
+      background-color: $white;
+      padding-right: $custom-control-spacer-x;
+      margin-bottom: 0;
+    }
+  }
+}

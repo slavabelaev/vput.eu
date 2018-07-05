@@ -1,7 +1,6 @@
 <!-- Page header -->
-<% var $style = $style ? $style : 'light'; %>
 <header class="page-header">
-    <nav class="navbar navbar-expand-md navbar-<%= $style %> container">
+    <nav class="navbar navbar-expand-md navbar-light container">
         <a class="page-header__logo mr-md-4" href="/"></a>
         <a class="page-header__favorites-link icon icon__heart icon_size_32 ml-auto mr-3" href="/favorites.html">99</a>
         <button class="navbar-toggler"

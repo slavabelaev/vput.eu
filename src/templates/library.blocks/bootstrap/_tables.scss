@@ -186,3 +186,21 @@
     }
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .table-adaptive {
+    thead {
+      display: none;
+    }
+    &, tbody, tr, th, td {
+      display: block;
+      width: 100%;
+    }
+
+    &:not(.table-adaptive_without_margin) {
+      tr {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

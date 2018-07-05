@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100" height="100"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<circle style="fill:#8CC63E;" cx="256" cy="256" r="256"/>
+<path style="fill:#FFFFFF;" d="M256,464.528c-114.976,0-208.528-93.552-208.528-208.528S141.024,47.472,256,47.472
+	S464.528,141.008,464.528,256C464.528,370.976,370.976,464.528,256,464.528z"/>
+<polygon style="fill:#E24B4B;" points="272.752,272.752 387.472,256 272.752,239.248 256,124.528 239.248,239.248 124.528,256 
+	239.248,272.752 256,387.472 "/>
+<polygon style="fill:#BBC7D1;" points="256,276.816 337.696,337.696 276.816,256 337.696,174.304 256,235.184 174.304,174.304 
+	235.184,256 174.304,337.696 "/>
+<circle style="fill:#3E4347;" cx="256" cy="256" r="39.104"/>
+<circle style="fill:#5A5F63;" cx="256" cy="256" r="18.864"/>
+<g>
+	<circle style="fill:#BBC7D1;" cx="256" cy="88.544" r="19.248"/>
+	<circle style="fill:#BBC7D1;" cx="256" cy="423.456" r="19.248"/>
+	<circle style="fill:#BBC7D1;" cx="423.456" cy="256" r="19.248"/>
+	<circle style="fill:#BBC7D1;" cx="88.544" cy="256" r="19.248"/>
+</g>
+</svg>

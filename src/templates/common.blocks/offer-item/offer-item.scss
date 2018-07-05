@@ -92,10 +92,13 @@
   right: 1rem;
 }
 .offer-item__country {
-  flex: 1 20%;
+  flex: 1;
 }
 .offer-item__city {
   flex: 1 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .offer-item__country,
 .offer-item__city {
@@ -163,7 +166,7 @@
 }
 .offer-item__price-per-day {
   bottom: 0;
-  color: $text-muted;
+  color: $gray-700;
   font-size: 1.125rem;
 }
 .offer-item__reliable-host {

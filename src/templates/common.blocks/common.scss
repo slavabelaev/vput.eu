@@ -5,8 +5,12 @@
   min-height: 100vh;
 }
 
-ul.row {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
+ul {
+  &.d-inline-flex,
+  &.d-flex,
+  &.row {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
 }

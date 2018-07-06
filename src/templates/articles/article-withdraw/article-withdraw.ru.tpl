@@ -1,3 +1,7 @@
+<!-- Article: article-withdraw -->
+<link rel="stylesheet" href="assets/articles/article-withdraw.css">
+<link rel="stylesheet" href="assets/articles/article-withdraw.js">
+
 <article class="article-withdraw">
     <header class="page-article__article-header" style="background-image: url(templates/articles/article-withdraw/article-withdraw__header-bg.png)">
         <div class="container">
@@ -12,7 +16,7 @@
                     <h2 class="text-center text-uppercase mb-4">В любой стране</h2>
                     <div class="table-responsive">
                         <table class="mr-4 mb-0 table table-bordered table-adaptive w-100">
-                            <thead>
+                            <thead class="bg-light">
                             <tr>
                                 <th width="43%">Система</th>
                                 <th width="12%" class="text-center">Валюта</th>
@@ -56,7 +60,7 @@
                     </h2>
                     <div class="table-responsive">
                         <table class="mr-4 mb-0 table table-bordered table-adaptive w-100">
-                            <thead>
+                            <thead class="bg-light">
                             <tr>
                                 <th width="43%">Система</th>
                                 <th width="12%" class="text-center">Валюта</th>
@@ -127,7 +131,7 @@
                     </h2>
                     <div class="table-responsive">
                         <table class="mr-4 mb-0 table table-bordered table-adaptive w-100">
-                            <thead>
+                            <thead class="bg-light">
                             <tr>
                                 <th width="43%">Система</th>
                                 <th width="12%" class="text-center">Валюта</th>
@@ -217,7 +221,7 @@
                     </h2>
                     <div class="table-responsive">
                         <table class="mr-4 mb-0 table table-bordered table-adaptive w-100">
-                            <thead>
+                            <thead class="bg-light">
                             <tr>
                                 <th width="43%">Система</th>
                                 <th width="12%" class="text-center">Валюта</th>
@@ -268,3 +272,4 @@
         </div>
     </div>
 </article>
+<!-- /Article: article-withdraw -->

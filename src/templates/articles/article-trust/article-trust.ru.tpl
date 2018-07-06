@@ -1,5 +1,8 @@
 <!-- Article: article-trust -->
-<article class="article-about">
+<link rel="stylesheet" href="assets/articles/article-trust.css">
+<link rel="stylesheet" href="assets/articles/article-trust.js">
+
+<article class="article-trust">
     <header class="page-article__article-header"
             style="background-image: url(templates/articles/article-trust/article-trust__header-bg.jpg)">
         <div class="container">

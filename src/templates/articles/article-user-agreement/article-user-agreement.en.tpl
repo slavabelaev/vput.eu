@@ -1,5 +1,7 @@
 <!-- Article: article-user-agreement -->
-<style>.page-article__page-header { background-color: #707070; }</style>
+<link rel="stylesheet" href="assets/articles/article-user-agreement.css">
+<link rel="stylesheet" href="assets/articles/article-user-agreement.js">
+
 <article class="article-user-agreement container py-5">
     <div class="row">
         <div class="col-xl-2"></div>

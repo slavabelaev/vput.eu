@@ -1,6 +1,8 @@
-<!-- Article: article-user-agreement -->
-<style>.page-article__page-header { background-color: #707070; }</style>
-<article class="article-user-agreement container py-5">
+<!-- Article: article-user-cancelation-rules -->
+<link rel="stylesheet" href="assets/articles/article-booking-cancelation-rules.css">
+<link rel="stylesheet" href="assets/articles/article-booking-cancelation-rules.js">
+
+<article class="article-user-cancelation-rules container py-5">
     <div class="row">
         <div class="col-xl-2"></div>
         <div class="col-xl-8">
@@ -37,4 +39,4 @@
         </div>
     </div>
 </article>
-<!-- /Article: article-user-agreement -->
+<!-- /Article: article-user-cancelation-rules -->

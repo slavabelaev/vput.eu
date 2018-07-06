@@ -1,0 +1,1 @@
+{"version":3,"sources":["templates/articles/article-booking-cancelation-rules/article-booking-cancelation-rules.scss"],"names":[],"mappings":"AAEA,0B,CAA6B,wB","file":"article-booking-cancelation-rules.css","sourcesContent":["@import \"../../library.blocks/bootstrap/bootstrap-reboot\";\r\n\r\n.page-article__page-header { background-color: #707070; }"]}

@@ -11,6 +11,7 @@ const uglify        = require('gulp-uglify');
 const autoprefixer  = require('gulp-autoprefixer');
 const rename        = require('gulp-rename');
 const newer         = require('gulp-newer');
+const csso          = require('gulp-csso');
 const plumber       = require('gulp-plumber');
 const sourcemaps    = require('gulp-sourcemaps');
 
@@ -22,7 +23,8 @@ const del           = require('del');
 const paths = {
     src: './src',
     dest: './dist',
-    bundles: './dist/assets/bundles'
+    bundles: './dist/assets/bundles',
+    articles: './dist/assets/articles'
 };
 
 const config = {
@@ -36,7 +38,10 @@ const config = {
         bundleFileName: 'bundle.min.css',
         watchFiles: {
             scss: [
-                paths.src + '/**/*.scss'
+                paths.src + '/**/library.blocks/**/*.scss',
+                paths.src + '/**/common.blocks/**/*.scss',
+                paths.src + '/**/sections/**/*.scss',
+                paths.src + '/**/pages/**/*.scss',
             ],
             css: []
         },
@@ -53,7 +58,10 @@ const config = {
                 'node_modules/nouislider/distribute/nouislider.min.css',
                 'node_modules/filepond/dist/filepond.min.css',
             ]
-        }
+        },
+        articles: [
+            paths.src + '/**/articles/**/*.scss'
+        ]
     },
     scripts: {
         bundleFileName: 'bundle.min.js',
@@ -83,7 +91,10 @@ const config = {
                 // Sticky menu
                 'node_modules/sticky-kit/dist/sticky-kit.min.js',
             ]
-        }
+        },
+        articles: [
+            paths.src + '/**/articles/**/*.ts'
+        ]
     },
     images: {
         watchFiles: paths.src + '/**/*.{svg,jpg,jpeg,png,gif}',
@@ -101,8 +112,8 @@ gulp.task('templates:build', function () {
         .pipe(ejs({
             bundlePath: {
                 styles: paths.bundles.replace(paths.dest + '/', '') + '/' + config.styles.bundleFileName,
-                scripts: paths.bundles.replace(paths.dest + '/', '') + '/' + config.scripts.bundleFileName,
-            }
+                scripts: paths.bundles.replace(paths.dest + '/', '') + '/' + config.scripts.bundleFileName
+            },
         }))
         .pipe(rename(function(path) {
             path.basename  = path.basename.replace('page-', '');
@@ -110,6 +121,21 @@ gulp.task('templates:build', function () {
             path.dirname = '';
         }))
         .pipe(gulp.dest(paths.dest))
+        .pipe(browserSync.reload({ stream: true }));
+});
+
+gulp.task('styles:buildArticlesSCSS', function () {
+    return gulp.src(config.styles.articles)
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
+        .pipe(csso())
+        .pipe(sourcemaps.write('.'))
+        .pipe(rename(function(path) {
+            path.dirname = '';
+        }))
+        .pipe(gulp.dest(paths.articles))
         .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -124,6 +150,7 @@ gulp.task('styles:buildSCSS', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(concat(bundleSCSSFileName))
+        .pipe(csso())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.bundles))
         .pipe(browserSync.reload({ stream: true }));
@@ -138,11 +165,25 @@ gulp.task('styles:buildCSS', function () {
         .pipe(sourcemaps.init())
         .pipe(autoprefixer())
         .pipe(concat(bundleCSSFileName))
+        .pipe(csso())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.bundles))
         .pipe(browserSync.reload({ stream: true }));
 });
-gulp.task('styles:build', ['styles:buildSCSS', 'styles:buildCSS']);
+gulp.task('styles:build', ['styles:buildSCSS', 'styles:buildCSS', 'styles:buildArticlesSCSS']);
+
+gulp.task('scripts:buildArticlesTS', function() {
+    return gulp.src(config.scripts.articles)
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(typescript())
+        .pipe(sourcemaps.write('.'))
+        .pipe(rename(function(path) {
+            path.dirname = '';
+        }))
+        .pipe(gulp.dest(paths.articles))
+        .pipe(browserSync.reload({ stream: true }))
+});
 
 gulp.task('scripts:buildTS', function() {
     const bundleTSFilePath = paths.bundles + '/ts.' + config.scripts.bundleFileName,
@@ -159,6 +200,7 @@ gulp.task('scripts:buildTS', function() {
         .pipe(gulp.dest(paths.bundles))
         .pipe(browserSync.reload({ stream: true }))
 });
+
 gulp.task('scripts:buildJS', function() {
     const bundleJSFilePath = paths.bundles + '/js.' + config.scripts.bundleFileName,
           bundleJSFileName = 'js.' + config.scripts.bundleFileName;
@@ -173,7 +215,7 @@ gulp.task('scripts:buildJS', function() {
         .pipe(gulp.dest(paths.bundles))
         .pipe(browserSync.reload({ stream: true }));
 });
-gulp.task('scripts:build', ['scripts:buildTS', 'scripts:buildJS']);
+gulp.task('scripts:build', ['scripts:buildTS', 'scripts:buildJS', 'scripts:buildArticlesTS']);
 
 gulp.task('images:build', function() {
     return gulp.src(config.images.buildFiles)
@@ -200,20 +242,28 @@ gulp.task('clean', function() {
 gulp.task('build', [
     'templates:build',
     'styles:build',
+    'styles:buildArticlesSCSS',
     'scripts:build',
+    'scripts:buildArticlesTS',
     'images:build',
-    'fonts:build'
+    'fonts:build',
 ]);
 
 gulp.task('watch', function() {
     watch(config.templates.watchFiles, function() {
         gulp.start('templates:build');
     });
+    watch(config.styles.articles, function() {
+        gulp.start('styles:buildArticlesSCSS');
+    });
     watch(config.styles.watchFiles.scss, function() {
         gulp.start('styles:buildSCSS');
     });
     watch(config.styles.watchFiles.css, function() {
         gulp.start('styles:buildCSS');
+    });
+    watch(config.scripts.articles, function() {
+        gulp.start('scripts:buildArticlesTS');
     });
     watch(config.scripts.watchFiles.ts, function() {
         gulp.start('scripts:buildTS');

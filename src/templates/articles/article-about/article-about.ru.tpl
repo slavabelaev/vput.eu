@@ -1,4 +1,7 @@
-<!-- Article: about -->
+<!-- Article: article-about -->
+<link rel="stylesheet" href="assets/articles/article-about.css">
+<link rel="stylesheet" href="assets/articles/article-about.js">
+
 <article class="article-about">
     <header class="page-article__article-header"
             style="background-image: url(templates/articles/article-about/article-about__header-bg.jpg)">

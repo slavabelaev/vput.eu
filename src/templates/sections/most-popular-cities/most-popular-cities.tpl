@@ -5,28 +5,31 @@
         <div class="most-popular-cities__description lead">Туристы часто выбирают эти направления</div>
     </header>
     <ul class="most-popular-cities__list row">
-        <li class="col-lg-4 col-xl-6 mb-3">
-            <figure class="most-popular-cities__list-item"
-                    style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Sunny-Beach.jpg);">
-                <figcaption class="most-popular-cities__list-caption">
+        <li class="most-popular-cities__list-item col-lg-4 col-xl-6 mb-3">
+            <figure class="most-popular-cities__figure">
+                <div class="most-popular-cities__image"
+                     style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Sunny-Beach.jpg);"></div>
+                <figcaption class="most-popular-cities__caption">
                     <h3 class="most-popular-cities__list-title">Солнечный берег</h3>
                     <a href="#" class="most-popular-cities__list-btn btn btn-primary btn-lg">Посмотреть</a>
                 </figcaption>
             </figure>
         </li>
-        <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
-            <figure class="most-popular-cities__list-item"
-                    style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Saint-Vlas.jpg);">
-                <figcaption class="most-popular-cities__list-caption">
+        <li class="most-popular-cities__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
+            <figure class="most-popular-cities__figure">
+                <div class="most-popular-cities__image"
+                     style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Saint-Vlas.jpg);"></div>
+                <figcaption class="most-popular-cities__caption">
                     <h3 class="most-popular-cities__list-title">Святой Влас</h3>
                     <a href="#" class="most-popular-cities__list-btn btn btn-primary btn-lg">Посмотреть</a>
                 </figcaption>
             </figure>
         </li>
-        <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
-            <figure class="most-popular-cities__list-item"
-                    style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Neseber.jpg);">
-                <figcaption class="most-popular-cities__list-caption">
+        <li class="most-popular-cities__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
+            <figure class="most-popular-cities__figure">
+                <div class="most-popular-cities__image"
+                     style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Neseber.jpg);"></div>
+                <figcaption class="most-popular-cities__caption">
                     <h3 class="most-popular-cities__list-title">Несебр</h3>
                     <a href="#" class="most-popular-cities__list-btn btn btn-primary btn-lg">Посмотреть</a>
                 </figcaption>

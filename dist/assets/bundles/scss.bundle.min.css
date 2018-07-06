@@ -6538,6 +6538,31 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.authorization-form__title {
+  text-align: center; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.authorization-modal .modal-footer {
+  justify-content: center;
+  margin-bottom: -75px;
+  font-size: 1.125rem; }
+
+.authorization-modal__legend {
+  text-align: center; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .cities-tabs {
   border-radius: 0.1875rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -6602,31 +6627,6 @@ ul.d-inline-flex, ul.d-flex, ul.row {
   .cities-tabs__nav {
     -webkit-column-count: 5;
             column-count: 5; } }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.authorization-form__title {
-  text-align: center; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.authorization-modal .modal-footer {
-  justify-content: center;
-  margin-bottom: -75px;
-  font-size: 1.125rem; }
-
-.authorization-modal__legend {
-  text-align: center; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6724,31 +6724,20 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .complex-tabs__section {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem; }
 
 .complex-tabs__about-the-complex h2 {
   display: none; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.list-of-complexes {
-  list-style: none;
-  padding: 0; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -6801,18 +6790,6 @@ ul.d-inline-flex, ul.d-flex, ul.row {
     margin-left: -12px;
     margin-right: -12px;
     border-radius: 0; } }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.list-of-offer-characteristics {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7121,6 +7098,29 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.list-of-complexes {
+  list-style: none;
+  padding: 0; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.list-of-offer-characteristics {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .list-of-offer-ratings {
   list-style: none;
   padding-left: 0;
@@ -7147,13 +7147,10 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.list-of-reviews {
+.list-of-offers {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   margin-bottom: 0; }
-
-.list-of-reviews__item:not(:last-child) {
-  margin-bottom: 1.5rem; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7162,10 +7159,13 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.list-of-offers {
+.list-of-reviews {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin-bottom: 0; }
+
+.list-of-reviews__item:not(:last-child) {
+  margin-bottom: 1.5rem; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7213,214 +7213,6 @@ ul.d-inline-flex, ul.d-flex, ul.row {
   justify-content: center;
   font-size: 1rem;
   color: #fff; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.offer-interested-in {
-  position: relative;
-  overflow: hidden;
-  border: #f76649 1px solid;
-  border-radius: 0.1875rem; }
-  .offer-interested-in:hover .offer-interested-in__time {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-
-.offer-interested-in__time,
-.offer-interested-in__how-much {
-  padding: 0.75rem 1.25rem;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  margin-bottom: 0;
-  color: #333333; }
-
-.offer-interested-in__how-much-number {
-  color: #f76649;
-  font-size: 2.5rem;
-  line-height: 1; }
-
-.offer-interested-in__how-much-number,
-.offer-interested-in__time-icon {
-  margin-right: 1rem; }
-
-.offer-interested-in__time {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  transition: all .5s ease; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.offer-share {
-  background-color: #fff;
-  border: #dee2e6 1px solid;
-  border-radius: 0.1875rem;
-  padding: 1.25rem;
-  text-align: center; }
-
-.offer-share__add-to-favorites {
-  display: inline-block;
-  text-transform: uppercase;
-  color: #333333; }
-  .offer-share__add-to-favorites:hover, .offer-share__add-to-favorites:focus {
-    color: #333333; }
-  .offer-share__add-to-favorites .offer-share__add-to-favorites-label-minus {
-    display: none; }
-  .offer-share__add-to-favorites.active .offer-share__add-to-favorites-label-plus {
-    display: none; }
-  .offer-share__add-to-favorites.active .offer-share__add-to-favorites-label-minus {
-    display: inline-block; }
-
-.offer-share__title {
-  position: relative;
-  display: block;
-  font-size: 1rem;
-  color: #978e8e;
-  margin-top: -12px; }
-
-.offer-share__socials-share {
-  border-top: #dee2e6 1px solid; }
-
-.offer-share__title-text {
-  z-index: 1;
-  background-color: #fff;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem; }
-
-.offer-share__social-list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
-
-.offer-share__social-link {
-  transition: all 0.2s ease-in-out;
-  opacity: 1; }
-  .offer-share__social-link:hover {
-    opacity: .8; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.offer-price-calculator {
-  background-color: #f3f5f5;
-  padding: 1.25rem;
-  border-radius: 0.1875rem; }
-
-.offer-price-calculator__price {
-  display: flex;
-  align-items: flex-start; }
-
-.offer-price-calculator__price-label {
-  margin-right: .5rem; }
-
-.offer-price-calculator__price-value {
-  font-size: 2rem; }
-
-.offer-price-calculator__description {
-  color: #1fa1af; }
-
-.offer-price-calculator__table {
-  color: #978e8e; }
-  .offer-price-calculator__table.table {
-    background-color: #fff;
-    border-radius: 0.1875rem; }
-  .offer-price-calculator__table tr:first-child td {
-    border-top-width: 0; }
-
-.offer-price-calculator__amount {
-  color: #333333; }
-
-.offer-price-calculator__to-pay {
-  color: #f76649; }
-
-.offer-price-calculator__alert {
-  text-align: center; }
-
-.offer-price-calculator__informer {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.offer-owner {
-  padding: 1.25rem;
-  background-color: #f3f5f5;
-  border-radius: 0.1875rem; }
-
-.offer-owner__message {
-  font-size: .875rem;
-  padding: 1.25rem;
-  background-color: #fff; }
-
-.offer-owner__message-link {
-  display: block;
-  font-size: 1rem;
-  text-align: center; }
-
-.offer-owner__about {
-  display: flex;
-  margin-bottom: 0; }
-
-.offer-owner__photo {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #333333; }
-
-.offer-owner__reliable-host {
-  position: absolute;
-  bottom: 0;
-  right: .5rem; }
-
-.offer-owner__info {
-  padding-left: 1.25rem; }
-
-.offer-owner__info-title {
-  font-size: 1rem; }
-
-.offer-owner__languages-list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 1rem;
-  color: #978e8e;
-  font-size: .875rem; }
-
-.offer-owner__languages-list-item {
-  display: inline; }
-  .offer-owner__languages-list-item:not(:last-child):after {
-    content: ", "; }
-
-.offer-owner__photo {
-  background-size: cover;
-  background-position: center; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -7597,6 +7389,214 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.offer-interested-in {
+  position: relative;
+  overflow: hidden;
+  border: #f76649 1px solid;
+  border-radius: 0.1875rem; }
+  .offer-interested-in:hover .offer-interested-in__time {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+
+.offer-interested-in__time,
+.offer-interested-in__how-much {
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 0;
+  color: #333333; }
+
+.offer-interested-in__how-much-number {
+  color: #f76649;
+  font-size: 2.5rem;
+  line-height: 1; }
+
+.offer-interested-in__how-much-number,
+.offer-interested-in__time-icon {
+  margin-right: 1rem; }
+
+.offer-interested-in__time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  transition: all .5s ease; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.offer-owner {
+  padding: 1.25rem;
+  background-color: #f3f5f5;
+  border-radius: 0.1875rem; }
+
+.offer-owner__message {
+  font-size: .875rem;
+  padding: 1.25rem;
+  background-color: #fff; }
+
+.offer-owner__message-link {
+  display: block;
+  font-size: 1rem;
+  text-align: center; }
+
+.offer-owner__about {
+  display: flex;
+  margin-bottom: 0; }
+
+.offer-owner__photo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #333333; }
+
+.offer-owner__reliable-host {
+  position: absolute;
+  bottom: 0;
+  right: .5rem; }
+
+.offer-owner__info {
+  padding-left: 1.25rem; }
+
+.offer-owner__info-title {
+  font-size: 1rem; }
+
+.offer-owner__languages-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+  color: #978e8e;
+  font-size: .875rem; }
+
+.offer-owner__languages-list-item {
+  display: inline; }
+  .offer-owner__languages-list-item:not(:last-child):after {
+    content: ", "; }
+
+.offer-owner__photo {
+  background-size: cover;
+  background-position: center; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.offer-price-calculator {
+  background-color: #f3f5f5;
+  padding: 1.25rem;
+  border-radius: 0.1875rem; }
+
+.offer-price-calculator__price {
+  display: flex;
+  align-items: flex-start; }
+
+.offer-price-calculator__price-label {
+  margin-right: .5rem; }
+
+.offer-price-calculator__price-value {
+  font-size: 2rem; }
+
+.offer-price-calculator__description {
+  color: #1fa1af; }
+
+.offer-price-calculator__table {
+  color: #978e8e; }
+  .offer-price-calculator__table.table {
+    background-color: #fff;
+    border-radius: 0.1875rem; }
+  .offer-price-calculator__table tr:first-child td {
+    border-top-width: 0; }
+
+.offer-price-calculator__amount {
+  color: #333333; }
+
+.offer-price-calculator__to-pay {
+  color: #f76649; }
+
+.offer-price-calculator__alert {
+  text-align: center; }
+
+.offer-price-calculator__informer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.offer-share {
+  background-color: #fff;
+  border: #dee2e6 1px solid;
+  border-radius: 0.1875rem;
+  padding: 1.25rem;
+  text-align: center; }
+
+.offer-share__add-to-favorites {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #333333; }
+  .offer-share__add-to-favorites:hover, .offer-share__add-to-favorites:focus {
+    color: #333333; }
+  .offer-share__add-to-favorites .offer-share__add-to-favorites-label-minus {
+    display: none; }
+  .offer-share__add-to-favorites.active .offer-share__add-to-favorites-label-plus {
+    display: none; }
+  .offer-share__add-to-favorites.active .offer-share__add-to-favorites-label-minus {
+    display: inline-block; }
+
+.offer-share__title {
+  position: relative;
+  display: block;
+  font-size: 1rem;
+  color: #978e8e;
+  margin-top: -12px; }
+
+.offer-share__socials-share {
+  border-top: #dee2e6 1px solid; }
+
+.offer-share__title-text {
+  z-index: 1;
+  background-color: #fff;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem; }
+
+.offer-share__social-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.offer-share__social-link {
+  transition: all 0.2s ease-in-out;
+  opacity: 1; }
+  .offer-share__social-link:hover {
+    opacity: .8; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .offers-search-form {
   position: relative; }
   .offers-search-form .form-control[readonly] {
@@ -7708,6 +7708,120 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.page-footer {
+  background-color: #707070;
+  color: #fff;
+  padding-bottom: 3rem; }
+
+.page-footer__link {
+  color: #fff;
+  opacity: .8; }
+  .page-footer__link:hover, .page-footer__link:focus {
+    opacity: 1;
+    color: #fff;
+    text-decoration: none; }
+
+.page-footer__title {
+  font-size: 1.125rem;
+  margin-bottom: .875rem;
+  text-transform: initial;
+  font-weight: initial; }
+
+.page-footer__delimiter {
+  opacity: .36; }
+
+.page-footer__subscribe {
+  color: #707070;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 3rem; }
+  .page-footer__subscribe .container {
+    align-items: center;
+    justify-content: space-between; }
+
+.page-footer__social-nav,
+.page-footer__list-of-navs {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.page-footer__list-of-navs {
+  margin-bottom: 2rem; }
+
+.page-footer__info {
+  text-align: center; }
+
+.page-footer__delimiter {
+  max-width: 70px;
+  border-color: #fff; }
+
+.page-footer__logo {
+  margin-bottom: .5rem; }
+
+.page-footer__social-list {
+  display: flex;
+  max-width: 240px;
+  list-style: none;
+  padding-left: 0; }
+
+.page-footer__social-item {
+  flex: 1; }
+
+.page-footer__copyright {
+  opacity: .7;
+  font-size: .875rem; }
+
+.page-footer__developer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .7;
+  font-size: .875rem; }
+  .page-footer__developer:hover {
+    opacity: initial; }
+
+.page-footer__social-icon,
+.page-footer__logo,
+.page-footer__developed-by {
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.page-footer__logo {
+  width: 92px;
+  height: 38px;
+  background-image: url(../../templates/common.blocks/page-footer/page-footer__VPUT-logo.svg); }
+
+.page-footer__developed-by {
+  width: 85px;
+  height: 20px;
+  margin-left: 6px;
+  background-image: url(../../templates/common.blocks/page-footer/page-footer__developed-by.svg); }
+
+.page-footer__social-icon {
+  width: 32px;
+  height: 32px; }
+
+.page-footer__social-icon_type_instagram {
+  background-image: url(../../templates/common.blocks/page-footer/page-footer__social-icon_type_instagram.svg); }
+
+.page-footer__social-icon_type_facebook {
+  background-image: url(../../templates/common.blocks/page-footer/page-footer__social-icon_type_facebook.svg); }
+
+.page-footer__social-icon_type_vk {
+  background-image: url(../../templates/common.blocks/page-footer/page-footer__social-icon_type_vk.svg); }
+
+.page-footer__social-icon_type_ok {
+  background-image: url(../../templates/common.blocks/page-footer/page-footer__social-icon_type_ok.svg); }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .page-header {
   border-bottom: 1px solid #dee2e6; }
   .page-header .dropdown-menu {
@@ -7764,114 +7878,6 @@ ul.d-inline-flex, ul.d-flex, ul.row {
 
 .page-header__cabinet-menu-icon {
   margin-right: .5rem; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.page-footer {
-  background-color: #707070;
-  color: #fff;
-  padding-bottom: 3rem; }
-  .page-footer a {
-    color: #fff;
-    opacity: .8;
-    text-decoration: none; }
-    .page-footer a:hover {
-      opacity: 1; }
-
-.page-footer__title {
-  font-size: 1.125rem;
-  margin-bottom: .875rem;
-  text-transform: initial;
-  font-weight: initial; }
-
-.page-footer__delimiter {
-  opacity: .36; }
-
-.page-footer__subscribe {
-  color: #707070;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 3rem; }
-  .page-footer__subscribe .container {
-    align-items: center;
-    justify-content: space-between; }
-
-.page-footer__social-nav,
-.page-footer__list-of-navs {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
-.page-footer__list-of-navs {
-  margin-bottom: 2rem; }
-
-.page-footer__info {
-  text-align: center; }
-  .page-footer__info hr {
-    max-width: 70px;
-    border-color: #fff; }
-
-.page-footer__logo {
-  margin-bottom: .5rem; }
-
-.page-footer__social-nav {
-  display: flex;
-  max-width: 240px; }
-  .page-footer__social-nav li {
-    flex: 1; }
-
-.page-footer__copyright {
-  opacity: .7;
-  font-size: .875rem; }
-
-.page-footer__developer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: .7;
-  font-size: .875rem; }
-  .page-footer__developer:hover {
-    opacity: initial; }
-
-.page-footer__social-icon,
-.page-footer__logo,
-.page-footer__developed-by {
-  display: inline-block;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-
-.page-footer__logo {
-  width: 92px;
-  height: 38px;
-  background-image: url(../../templates/common.blocks/page-footer/page-footer__VPUT-logo.svg); }
-
-.page-footer__developed-by {
-  width: 85px;
-  height: 20px;
-  margin-left: 6px;
-  background-image: url(../../templates/common.blocks/page-footer/page-footer__developed-by.svg); }
-
-.page-footer__social-icon {
-  width: 32px;
-  height: 32px; }
-
-.page-footer__social-icon_type_instagram {
-  background-image: url(../../templates/common.blocks/page-footer/page-footer__social-icon_type_instagram.svg); }
-
-.page-footer__social-icon_type_facebook {
-  background-image: url(../../templates/common.blocks/page-footer/page-footer__social-icon_type_facebook.svg); }
-
-.page-footer__social-icon_type_vk {
-  background-image: url(../../templates/common.blocks/page-footer/page-footer__social-icon_type_vk.svg); }
-
-.page-footer__social-icon_type_ok {
-  background-image: url(../../templates/common.blocks/page-footer/page-footer__social-icon_type_ok.svg); }
 
 
 /*!
@@ -7931,45 +7937,6 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.review-rating {
-  width: 132px;
-  height: 24px;
-  background-repeat: repeat-x;
-  background-size: auto 100%;
-  margin-bottom: 0; }
-
-.review-rating:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: url(../../templates/common.blocks/review-rating/review-rating_style_filling.svg);
-  background-size: auto 100%; }
-
-.review-rating {
-  position: relative;
-  background-image: url(../../templates/common.blocks/review-rating/review-rating.svg); }
-  .review-rating[data-rating="5"]:before {
-    width: 132px; }
-  .review-rating[data-rating="4"]:before {
-    width: 108px; }
-  .review-rating[data-rating="3"]:before {
-    width: 81px; }
-  .review-rating[data-rating="2"]:before {
-    width: 54px; }
-  .review-rating[data-rating="1"]:before {
-    width: 27px; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .review {
   margin-bottom: 0; }
 
@@ -8018,6 +7985,54 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.review-rating {
+  width: 132px;
+  height: 24px;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  margin-bottom: 0; }
+
+.review-rating:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../../templates/common.blocks/review-rating/review-rating_style_filling.svg);
+  background-size: auto 100%; }
+
+.review-rating {
+  position: relative;
+  background-image: url(../../templates/common.blocks/review-rating/review-rating.svg); }
+  .review-rating[data-rating="5"]:before {
+    width: 132px; }
+  .review-rating[data-rating="4"]:before {
+    width: 108px; }
+  .review-rating[data-rating="3"]:before {
+    width: 81px; }
+  .review-rating[data-rating="2"]:before {
+    width: 54px; }
+  .review-rating[data-rating="1"]:before {
+    width: 27px; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.reviews-slider {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0; }
+  .reviews-slider .offer-item__details {
+    display: none; }
+  .reviews-slider .offer-item__image.slick-slide,
+  .reviews-slider .offer-item__image-slider {
+    height: 240px; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8063,15 +8078,6 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.reviews-slider {
-  list-style: none;
-  margin-bottom: 0;
-  padding-left: 0; }
-  .reviews-slider .offer-item__details {
-    display: none; }
-  .reviews-slider .offer-item__image.slick-slide,
-  .reviews-slider .offer-item__image-slider {
-    height: 240px; }
 
 
 
@@ -8241,7 +8247,8 @@ ul.d-inline-flex, ul.d-flex, ul.row {
   padding-left: 0;
   margin-bottom: 0; }
 
-.most-popular-cities__list-item {
+.most-popular-cities__figure {
+  position: relative;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -8250,14 +8257,29 @@ ul.d-inline-flex, ul.d-flex, ul.row {
   background-color: #333333;
   border-radius: 0.1875rem;
   color: #fff;
+  margin-bottom: 0; }
+  .most-popular-cities__figure:hover .most-popular-cities__image {
+    -webkit-filter: brightness(0.6);
+            filter: brightness(0.6); }
+
+.most-popular-cities__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   background-size: cover;
   background-position: center;
-  margin-bottom: 0; }
+  border-radius: 0.1875rem;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  transition: all 0.2s ease-in-out; }
 
-.most-popular-cities__list-caption {
+.most-popular-cities__caption {
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  z-index: 1; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
@@ -8493,7 +8515,8 @@ ul.d-inline-flex, ul.d-flex, ul.row {
   width: 50%;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position-y: center; }
+  background-position-y: center;
+  margin-bottom: 0; }
 
 .services__other-services-item {
   margin-bottom: 0; }
@@ -8566,17 +8589,6 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-.page-add__header {
-  background-color: #333333;
-  color: #fff; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
 .page-article__article-header {
   text-align: center;
   background-color: #333333;
@@ -8603,6 +8615,28 @@ ul.d-inline-flex, ul.d-flex, ul.row {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.page-add__header {
+  background-color: #333333;
+  color: #fff; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+.page-complex__city {
+  font-size: 20px;
+  color: #978e8e; }
+
+/*!
+ * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
 .page-authorization {
   background-color: #333333;
   min-height: 100vh;
@@ -8620,17 +8654,6 @@ ul.d-inline-flex, ul.d-flex, ul.row {
   margin: auto;
   background-image: url(../../templates/common.blocks/page-header/page-header__VPUT-logo_style_dark.svg);
   background-size: cover; }
-
-/*!
- * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-.page-complex__city {
-  font-size: 20px;
-  color: #978e8e; }
 
 /*!
  * Bootstrap Reboot v4.1.0 (https://getbootstrap.com/)

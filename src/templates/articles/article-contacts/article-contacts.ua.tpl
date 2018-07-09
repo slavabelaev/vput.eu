@@ -45,6 +45,14 @@
                             <a href="viber://add?number=+359877888921" class="lead text-white">+359 877 888 921</a></figcaption>
                     </figure>
                 </li>
+                <li class="col-lg-4 col-sm-6">
+                    <figure class="d-flex">
+                        <img src="templates/articles/article-contacts/article-contacts__WhatsApp.svg" alt="WhatsApp" class="mr-4">
+                        <figcaption>
+                            <h3>WhatsApp:</h3>
+                            <a href="https://wa.me/359877888921" class="lead text-white">+359 877 888 921</a></figcaption>
+                    </figure>
+                </li>
             </ul>
         </section>
     </header>

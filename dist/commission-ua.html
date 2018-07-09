@@ -1,13 +1,559 @@
-<%- include('../../../common.blocks/meta-header/meta-header.tpl'); %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="//fonts.googleapis.com/css?family=Exo+2:700,300italic,600,500italic,700italic,300,400,800,600italic,500,800italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/bundles/scss.bundle.min.css">
+    <link rel="stylesheet" href="assets/bundles/css.bundle.min.css">
+</head>
+
+<body>
 <div class="page-article__page-header navbar-dark">
-    <%- include('../../../common.blocks/page-header/page-header.tpl'); %>
+    <!-- Page header -->
+<header class="page-header">
+    <nav class="navbar navbar-expand-md navbar-light container">
+        <a class="page-header__logo mr-md-4" href="/"></a>
+        <a class="page-header__favorites-link icon icon__heart icon_size_32 ml-auto mr-3" href="/favorites.html">99</a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts/">Контакты</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="page-header__language-nav-item nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="cabinetMenuDropdown"
+                       role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        Язык
+                    </a>
+                    <div class="dropdown-menu"
+                         aria-labelledby="cabinetMenuDropdown">
+                        <a class="dropdown-item" href="?lang=ru">Русский</a>
+                        <a class="dropdown-item" href="?lang=en">Английский</a>
+                        <a class="dropdown-item" href="?lang=ua">Украинский</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                       data-toggle="modal"
+                       data-target=".authorization-modal">Вход</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                       data-toggle="modal"
+                       data-target=".registration-modal">Регистрация</a>
+                </li>
+                <li class="page-header__cabinet-menu-dropdown nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="cabinetMenuDropdown"
+                       role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        <i class="page-header__cabinet-menu-icon icon icon__cabinet-user"></i>
+                        Кабинет
+                    </a>
+                    <div class="page-header__dropdown-menu dropdown-menu" aria-labelledby="cabinetMenuDropdown">
+                        <a class="dropdown-item" href="/cabinet/realties/">Мои объявления</a>
+                        <a class="dropdown-item" href="/cabinet/bookings/">Бронирования</a>
+                        <a class="dropdown-item" href="/cabinet/trips/">Мои поездки <span class="badge badge-primary">5</span></a>
+                        <a class="dropdown-item" href="/cabinet/profile/">Профиль</a>
+                        <a class="dropdown-item" href="/cabinet/balance/">Трансферы</a>
+                        <a class="dropdown-item" href="/cabinet/balance/">Баланс</a>
+                        <a class="dropdown-item" href="/cabinet/partnership/">Партнерская программа</a>
+                        <a class="dropdown-item" href="/cabinet/reviews/">Отзывы</a>
+                        <a class="dropdown-item" href="/cabinet/referralBookings/">Бронирования рефералов</a>
+                        <a class="dropdown-item page-header__dropdown-item-exit" href="/authorization/logout/">Выйти</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="ml-lg-4">
+                <a class="page-header__to-rent-button btn btn-outline-secondary btn-lg w-100" href="add.html">Сдать в аренду</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- /Page header -->
+
+<!-- Recovery modal -->
+<div class="password-recovery-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h2 class="modal-title">Забыли пароль?</h2>
+                <a href="#"
+                   data-dismiss="modal"
+                   class="close"
+                   aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+            </div>
+            <div class="modal-body">
+                <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
+                <!-- Recovery form -->
+                <form method="post" action="/recovery/ajaxPasswordRecovery/" class="authorization-form">
+                    <div class="form-group">
+                        <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Отправить</button>
+                </form>
+                <!-- Recovery form -->
+            </div>
+            <div class="modal-footer justify-content-center pt-0">
+                <a href="#" class="nav-link" data-toggle="modal" data-target=".registration-modal" data-dismiss="modal">Регистрация</a>
+                <a href="#" class="nav-link" data-toggle="modal" data-target=".authorization-modal" data-dismiss="modal">Вход</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Recovery modal -->
+<!-- Authorization modal -->
+<div class="authorization-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <a href="#"
+           data-dismiss="modal"
+           class="close"
+           aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- Block: Authorization form -->
+<form class="authorization-form">
+    <h2 class="authorization-form__title">Вход</h2>
+    <fieldset class="authorization-modal__fieldset">
+        <legend class="authorization-modal__legend">через</legend>
+        <!-- Social authorization -->
+        <ul class="social-authorization">
+            <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__vk icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__ok icon_size_48"></a></li>
+        </ul>
+        <!-- /Social authorization -->
+    </fieldset>
+    <fieldset class="authorization-modal__fieldset">
+        <legend class="authorization-modal__legend mb-4">или</legend>
+        <div class="form-group">
+            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+        </div>
+        <div class="form-group mb-2">
+            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+        </div>
+        <div class="row align-items-center mb-2">
+            <div class="col-6">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="cookie" class="custom-control-input" id="rememberMe" required>
+                    <label class="custom-control-label" for="rememberMe">Запомнить меня</label>
+                </div>
+            </div>
+            <div class="col-6 text-right">
+                <a href="#" class="nav-link" data-toggle="modal" data-target=".password-recovery-modal" data-dismiss="modal">Забыл пароль</a>
+            </div>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary btn-lg w-100">Войти</button>
+</form>
+<!-- /Block: Authorization form -->
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="nav-link"
+                   data-toggle="modal"
+                   data-dismiss="modal"
+                   data-target=".registration-modal">Регистрация</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Authorization modal -->
+<!-- Registration modal -->
+<div class="registration-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <a href="#"
+           data-dismiss="modal"
+           class="close"
+           aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- Registration form -->
+<form class="registration-form">
+    <h2 class="registration-form__title">Регистрация</h2>
+    <fieldset class="registration-modal__fieldset">
+        <legend class="registration-modal__legend">через</legend>
+        <!-- Social authorization -->
+        <ul class="social-authorization">
+            <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__vk icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__ok icon_size_48"></a></li>
+        </ul>
+        <!-- /Social authorization -->
+    </fieldset>
+    <fieldset class="registration-modal__fieldset">
+        <legend class="registration-modal__legend mb-4">или</legend>
+        <div class="form-group">
+            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+        </div>
+        <div class="form-group mb-3">
+            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" checked name="newsSubscribed" class="custom-control-input" id="newsSubscribed" required>
+            <label class="custom-control-label" for="newsSubscribed">Подписаться на спец. предложения</label>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
+</form>
+<!-- Registration form -->
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="nav-link"
+                   data-toggle="modal"
+                   data-dismiss="modal"
+                   data-target=".authorization-modal">Войти</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Registration modal -->
 </div>
 
 <!-- Page: page-article -->
 <main class="page-article">
-    <%- include('../../../articles/article-commission/article-commission.ua.tpl'); %>
+    <link rel="stylesheet" href="assets/articles/article-commission.css">
+<article class="article-commission">
+    <header class="page-article__article-header" style="background-image: url(templates/articles/article-commission/article-commission__header-bg.png)">
+        <div class="container">
+            <h1>ЗА ЩО МИ БЕРЕМО КОМІСІЮ</h1>
+            <p class="lead">Чи справедливо виплачувати комісію з оренди? З чого складається підсумкова сума комісії?<br>
+                Куди і навіщо ми витрачаємо отримані кошти?</p>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 text-center">ЯК МИ РОЗПОРЯДЖАЄМОСЯ КОМІСІЄЮ</h2>
+            <img src="templates/articles/article-commission/article-commission__timing-of-the-commodities-chart_lang_ua.svg"
+                 alt=""
+                 class="mw-100 mb-4">
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <header class="mb-4">
+                <h2 class="mb-4 text-center">ГРОШОВІ ТРАНЗАКЦІЇ</h2>
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <p class="lead">Ми звільняємо Вас від клопотів, пов'язаних з отриманням передплати від гостей. З іншого боку, ми намагаємося зробити процес оплати резервацій швидким і зручним для клієнтів сервісу. Найбільшу гнучкість в цьому питанні надають банківські карти систем VISA і MasterCard. Однак простота для клієнтів означає складну роботу трьохзв'язкових сервісів, що забезпечують таку функціональність.</p>
+                    </div>
+                </div>
+            </header>
+            <div class="row">
+                <section class="col-lg-6">
+                    <header class="text-center mb-4">
+                        <img src="templates/articles/article-commission/article-commission__сommission-of-the-bank.svg"
+                             alt=""
+                             class="">
+                        <h3>Комісія банку</h3>
+                    </header>
+                    <p>Банк-еквайєр, що надає послуги віртуального POS-терміналу, стягує комісію в розмірі 3% від повної суми транзакції.</p>
+                </section>
+                <section class="col-lg-6">
+                    <header class="text-center mb-4">
+                        <img src="templates/articles/article-commission/article-commission__bank-transactions.svg"
+                             alt=""
+                             class="">
+                        <h3>Банківські перекази</h3>
+                    </header>
+                    <p>При здійсненні виплат зарезервованих коштів власникам об'єктів ми витрачаємо 3% від комісії на банківські перекази.</p>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <header class="text-center mb-4">
+                <h2 class="mb-4">ОБСЛУГОВУВАННЯ КЛІЄНТІВ</h2>
+            </header>
+            <div class="row">
+                <section class="col-lg-6">
+                    <header class="text-center mb-4">
+                        <img src="templates/articles/article-commission/article-commission__sales-department.svg"
+                             alt=""
+                             class="">
+                        <h3>Комерційний відділ</h3>
+                    </header>
+                    <p>Наші менеджери цілодобово стежать за всім, що відбувається на нашому сервісі. У разі затримок із відповідями або виникаючими проблемами вони зв'язуються з клієнтами і власниками об'єктів по телефону і намагаються якнайшвидше вирішити будь-які питання. Такий індивідуальний підхід відрізняє нас від великих світових сервісів.</p>
+                </section>
+                <section class="col-lg-6">
+                    <header class="text-center mb-4">
+                        <img src="templates/articles/article-commission/article-commission__development-department.svg"
+                             alt=""
+                             class="">
+                        <h3>Технічний відділ</h3>
+                    </header>
+                    <p>Наші технічні фахівці роблять проект максимально зрозумілим, гнучким і повнофункціональним. Однак кожен день ми стикаємося з неординарними ситуаціями та індивідуальними потребами наших клієнтів. Такі проблеми наші програмісти вирішують в ручному режимі.</p>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <header class="mb-4">
+                <h2 class="mb-4 text-center">РОЗВИТОК І ПІДТРИМКА ПРОЕКТУ</h2>
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <p class="lead">Щомісяця ми витрачаємо кошти на підтримку і розвиток нашого проекту. Часто ця робота непомітна для наших клієнтів. Як говорить сучасне прислів'я: «Якщо ти зробив все добре, то може здатися, що ти зовсім нічого не зробив». Насправді безперебійна робота сервісу - це щоденна важка праця нашої команди.</p>
+                    </div>
+                </div>
+            </header>
+            <ul class="row text-center">
+                <li class="col-lg-4 col-sm-6 mb-4">
+                    <figure class="figure">
+                        <img src="templates/articles/article-commission/article-commission__server.svg"
+                             alt=""
+                             class="figure-img">
+                        <figcaption class="figure-caption">
+                            <h3 class="text-dark">Оренда серверів</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="col-lg-4 col-sm-6 mb-4">
+                    <figure class="figure">
+                        <img src="templates/articles/article-commission/article-commission__development.svg"
+                             alt=""
+                             class="figure-img">
+                        <figcaption class="figure-caption">
+                            <h3 class="text-dark">Розробка програмного <br>забезпечення</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="col-lg-4 col-sm-6 mb-4">
+                    <figure class="figure">
+                        <img src="templates/articles/article-commission/article-commission__sms.svg"
+                             alt=""
+                             class="figure-img">
+                        <figcaption class="figure-caption">
+                            <h3 class="text-dark">СМС-повідомлення</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="col-lg-4 col-sm-6 mb-4">
+                    <figure class="figure">
+                        <img src="templates/articles/article-commission/article-commission__backup.svg"
+                             alt=""
+                             class="figure-img">
+                        <figcaption class="figure-caption">
+                            <h3 class="text-dark">Щоденні бекапи</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="col-lg-4 col-sm-6 mb-4">
+                    <figure class="figure">
+                        <img src="templates/articles/article-commission/article-commission__test.svg"
+                             alt=""
+                             class="figure-img">
+                        <figcaption class="figure-caption">
+                            <h3 class="text-dark">Тестування</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="col-lg-4 col-sm-6 mb-4">
+                    <figure class="figure">
+                        <img src="templates/articles/article-commission/article-commission__analytics.svg"
+                             alt=""
+                             class="figure-img">
+                        <figcaption class="figure-caption">
+                            <h3 class="text-dark">Аналітика та аналіз</h3>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">ОБСЛУГОВУВАННЯ КЛІЄНТІВ</h2>
+            <ul class="row">
+                <li class="col-lg-6">
+                    <section>
+                        <header class="text-center mb-4">
+                            <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                    <img src="templates/articles/article-commission/article-commission__Yandex.svg"
+                                         alt="Yandex"
+                                         class="mr-sm-5 mb-4">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img src="templates/articles/article-commission/article-commission__Google.svg"
+                                         alt="Google"
+                                         class="mr-sm-5 mb-4">
+                                </li>
+                            </ul>
+                            <h3>Просування в пошукових системах</h3>
+                        </header>
+                        <p>Наш проект займає перші місця в пошукових системах Яндекс і Google. Це дозволяє щодня отримувати нових клієнтів, а також забезпечує наших власників постійним потоком бронювань. Ми щодня працюємо для того, щоб і надалі розвивати і адаптувати свій портал під пошукові системи.</p>
+                    </section>
+                </li>
+                <li class="col-lg-6">
+                    <section>
+                        <header class="text-center mb-4">
+                            <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                    <img src="templates/articles/article-commission/article-commission__vk.svg"
+                                         alt="VK"
+                                         class="mr-sm-5 mb-4">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img src="templates/articles/article-commission/article-commission__facebook.svg"
+                                         alt="facebook"
+                                         class="mr-sm-5 mb-4">
+                                </li>
+                            </ul>
+                            <h3>Реклама в соціальних мережах</h3>
+                        </header>
+                        <p>Найпрогресивнішим видом реклами на сьогоднішній день стає реклама в соціальних мережах. Саме там люди сьогодні планують своє дозвілля і шукають нові ідеї для літнього відпочинку. Група наших фахівців працює над тим, щоб знаходити і консультувати там ваших майбутніх гостей!</p>
+                    </section>
+                </li>
+                <li class="col-lg-6">
+                    <section>
+                        <header class="text-center mb-4">
+                            <img src="templates/articles/article-commission/article-commission__ADS.svg"
+                                 alt=""
+                                 class="">
+                            <h3>Регіональна реклама</h3>
+                        </header>
+                        <p>Ми вкладаємо великі кошти в рекламу нашого проекту в багатьох областях СНД, аналізуючи потреби і умови кожного регіону. Завдяки такому гнучкому індивідуальному підходу ми стимулюємо велику кількість бронювань і акцентуємо увагу на тих пропозиціях, які цікаві конкретній аудиторії.</p>
+                    </section>
+                </li>
+                <li class="col-lg-6">
+                    <section>
+                        <header class="text-center mb-4">
+                            <img src="templates/articles/article-commission/article-commission__Bulgaria.svg"
+                                 alt=""
+                                 class="">
+                            <h3>Розвиток інтересу до болгарського напрямку</h3>
+                        </header>
+                        <p>Наші дослідження показали, що величезна кількість людей мають неправильне уявлення про курорти Болгарії. Багатьом вони запам'яталися такими, якими були в далекому радянському минулому. Сьогодні Болгарія - це сучасні європейські курорти за найдемократичнішими цінами в Європі. Ми проводимо кампанії для залучення людей до цього напрямку. Ми віримо, що така робота підвищить кількість туристів, а, отже, і кількість ваших замовлень.</p>
+                    </section>
+                </li>
+            </ul>
+        </div>
+    </section>
+</article>
 </main>
 <!-- /Page: page-article -->
 
-<%- include('../../../common.blocks/page-footer/page-footer.tpl'); %>
-<%- include('../../../common.blocks/meta-footer/meta-footer.tpl'); %>
+<!-- Page footer -->
+<footer class="page-footer">
+    <div class="page-footer__subscribe bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col mb-2 mb-md-0">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
+                <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
+                    <!-- Subscribe form -->
+<form action="/realties/subscribeClient/" data-post="&page=/" class="subscribe-form form-row w-100">
+    <div class="form-group col-7 mb-0">
+        <label for="subscribtionEmail" class="sr-only">Password</label>
+        <input type="email" class="form-control" id="subscribtionEmail" required placeholder="Ваш e-mail">
+    </div>
+    <div class="col-5">
+        <button type="submit" class="btn btn-primary w-100">Подписаться</button>
+    </div>
+</form>
+<!-- Subscribe form -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="page-footer__list-of-navs row">
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">О нас</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="/about" class="page-footer__link">Компания</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/trust" class="page-footer__link">Безопасность</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">Правила сайта</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="/user_agreement/" class="page-footer__link">Общие условия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/booking_cancelation_rules/" class="page-footer__link">Отмена бронирования</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/withdraw/" class="page-footer__link">Вывод денег</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">Связаться</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="page-footer__link">Контакты</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">Следите за нами</h3>
+                <ul class="page-footer__social-list">
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="http://ok.ru/group/53570038661351/"
+                           class="page-footer__social-icon page-footer__social-icon_type_ok"></a>
+                    </li>
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="https://vk.com/vput_eu"
+                           class="page-footer__social-icon page-footer__social-icon_type_vk"></a>
+                    </li>
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="https://www.facebook.com/groups/vput.eu/"
+                           class="page-footer__social-icon page-footer__social-icon_type_facebook"></a>
+                    </li>
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="https://www.instagram.com/v.p.u.t.bulgaria/"
+                           class="page-footer__social-icon page-footer__social-icon_type_instagram"></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="page-footer__info">
+            <figure class="page-footer__logo"></figure>
+            <div class="page-footer__copyright">Copyright © 2013 - 2018</div>
+            <hr class="page-footer__delimiter">
+            <div class="page-footer__developer">Developed by
+                <a target="_blank"
+                   href="https://webdelo.org/"
+                   class="page-footer__developed-by"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /Page footer -->
+<!-- Bundle Scripts -->
+<script src="assets/bundles/js.bundle.min.js"></script>
+<script src="assets/bundles/ts.bundle.min.js"></script>
+</body>
+</html>

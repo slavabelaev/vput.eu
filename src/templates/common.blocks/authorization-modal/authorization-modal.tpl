@@ -1,6 +1,10 @@
 <!-- Authorization modal -->
-<div class="authorization-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
+<div class="authorization-modal modal fade"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm"
+         role="document">
         <a href="#"
            data-dismiss="modal"
            class="close"
@@ -10,7 +14,7 @@
                 <%- include('../../common.blocks/authorization-form/authorization-form.tpl'); %>
             </div>
             <div class="modal-footer">
-                <a href="#" class="nav-link"
+                <a href="#" class="authorization-modal__register-link"
                    data-toggle="modal"
                    data-dismiss="modal"
                    data-target=".registration-modal">Регистрация</a>

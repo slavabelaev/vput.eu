@@ -1,0 +1,20 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.article-transfer__transfer-table {
+  font-size: 1.125rem;
+}
+
+@include media-breakpoint-down(sm) {
+  .article-transfer__transfer-table {
+    tbody>tr>td {
+      text-align: center;
+      &:before {
+        display: block;
+        font-weight: bold;
+      }
+      &:nth-child(1):before { content: "Город"; }
+      &:nth-child(2):before { content: "Легковой автомобиль"; }
+      &:nth-child(3):before { content: "Минивэн"; }
+    }
+  }
+}

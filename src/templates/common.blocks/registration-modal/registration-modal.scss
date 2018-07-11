@@ -3,10 +3,19 @@
 .registration-modal {
   .modal-footer {
     justify-content: center;
-    margin-bottom: -75px;
+    margin-bottom: -60px;
     font-size: 1.125rem;
   }
 }
 .registration-modal__legend {
   text-align: center;
+}
+
+.registration-modal__authorization-link {
+  color: rgba($white, .8);
+  transition: $transition-base;
+  @include hover-focus-active() {
+    color: $white;
+    text-decoration: none;
+  }
 }

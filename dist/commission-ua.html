@@ -125,8 +125,12 @@
 </div>
 <!-- /Recovery modal -->
 <!-- Authorization modal -->
-<div class="authorization-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
+<div class="authorization-modal modal fade"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm"
+         role="document">
         <a href="#"
            data-dismiss="modal"
            class="close"
@@ -155,13 +159,13 @@
             <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
         </div>
         <div class="row align-items-center mb-2">
-            <div class="col-6">
+            <div class="col-auto">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" name="cookie" class="custom-control-input" id="rememberMe" required>
                     <label class="custom-control-label" for="rememberMe">Запомнить меня</label>
                 </div>
             </div>
-            <div class="col-6 text-right">
+            <div class="col text-right">
                 <a href="#" class="nav-link" data-toggle="modal" data-target=".password-recovery-modal" data-dismiss="modal">Забыл пароль</a>
             </div>
         </div>
@@ -171,7 +175,7 @@
 <!-- /Block: Authorization form -->
             </div>
             <div class="modal-footer">
-                <a href="#" class="nav-link"
+                <a href="#" class="authorization-modal__register-link"
                    data-toggle="modal"
                    data-dismiss="modal"
                    data-target=".registration-modal">Регистрация</a>
@@ -181,8 +185,12 @@
 </div>
 <!-- /Authorization modal -->
 <!-- Registration modal -->
-<div class="registration-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
+<div class="registration-modal modal fade"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm"
+         role="document">
         <a href="#"
            data-dismiss="modal"
            class="close"
@@ -220,7 +228,7 @@
 <!-- Registration form -->
             </div>
             <div class="modal-footer">
-                <a href="#" class="nav-link"
+                <a href="#" class="registration-modal__authorization-link"
                    data-toggle="modal"
                    data-dismiss="modal"
                    data-target=".authorization-modal">Войти</a>

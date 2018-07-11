@@ -53,7 +53,7 @@
         <ul class="services__other-services-list row">
             <li class="services__other-services-list-item col-md-4 mb-3">
                 <figure class="services__other-services-item">
-                    <img src="templates/sections/services/services__settling-and-eviction.svg" alt="" class="figure-img mb-3">
+                    <img src="templates/sections/services/services__guests-escort.svg" alt="" class="figure-img mb-3">
                     <figcaption class="figure-caption">
                         <a href="#" class="services__title-link mb-2"><h3 class="services__figure-title">Заселение и выселение</h3></a>
                         <div class="services__figure-description">Встречаем гостей и проверяем сохранность имущества</div>
@@ -62,7 +62,7 @@
             </li>
             <li class="services__other-services-list-item col-md-4 mb-3">
                 <figure class="services__other-services-item">
-                    <img src="templates/sections/services/services__cleaning-service.svg" alt="" class="figure-img mb-3">
+                    <img src="templates/sections/services/services__cleaning-services.svg" alt="" class="figure-img mb-3">
                     <figcaption class="figure-caption">
                         <a href="#" class="services__title-link mb-2"><h3 class="services__figure-title">Клининговые услуги</h3></a>
                         <div class="services__figure-description">Сделаем уборку и сменим постельное белье по вашему поручению</div>
@@ -71,7 +71,7 @@
             </li>
             <li class="services__other-services-list-item col-md-4 mb-3">
                 <figure class="services__other-services-item">
-                    <img src="templates/sections/services/services__object-management.svg" alt="" class="figure-img mb-3">
+                    <img src="templates/sections/services/services__property-management.svg" alt="" class="figure-img mb-3">
                     <figcaption class="figure-caption">
                         <a href="#" class="services__title-link mb-2"><h3 class="services__figure-title">Управление жильем</h3></a>
                         <div class="services__figure-description">Общаемся с туристами, сопровождаем при заселении, убираем и меняем постельное бельё</div>

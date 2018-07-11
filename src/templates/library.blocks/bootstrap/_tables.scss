@@ -200,6 +200,14 @@
     &:not(.table-adaptive_without_margin) {
       tr {
         margin-bottom: 1rem;
+        td:first-child {
+          border-top-left-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+        }
+        td:last-child {
+          border-bottom-left-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+        }
       }
     }
   }

@@ -84,6 +84,8 @@
   .show > .nav-link {
     color: $nav-pills-link-active-color;
     background-color: $nav-pills-link-active-bg;
+    border-bottom: 3px solid $nav-pills-link-active-color;
+    font-weight: bold;
   }
 }
 

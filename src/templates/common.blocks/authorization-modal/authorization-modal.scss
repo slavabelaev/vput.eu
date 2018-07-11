@@ -3,10 +3,18 @@
 .authorization-modal {
   .modal-footer {
     justify-content: center;
-    margin-bottom: -75px;
+    margin-bottom: -60px;
     font-size: 1.125rem;
   }
 }
 .authorization-modal__legend {
   text-align: center;
+}
+.authorization-modal__register-link {
+  color: rgba($white, .8);
+  transition: $transition-base;
+  @include hover-focus-active() {
+    color: $white;
+    text-decoration: none;
+  }
 }

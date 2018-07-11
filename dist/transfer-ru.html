@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="//fonts.googleapis.com/css?family=Exo+2:700,300italic,600,500italic,700italic,300,400,800,600italic,500,800italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/bundles/scss.bundle.min.css">
+    <link rel="stylesheet" href="assets/bundles/css.bundle.min.css">
+</head>
+
+<body>
+<div class="page-article__page-header navbar-dark">
+    <!-- Page header -->
+<header class="page-header">
+    <nav class="navbar navbar-expand-md navbar-light container">
+        <a class="page-header__logo mr-md-4" href="/"></a>
+        <a class="page-header__favorites-link icon icon__heart icon_size_32 ml-auto mr-3" href="/favorites.html">99</a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts/">Контакты</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="page-header__language-nav-item nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="cabinetMenuDropdown"
+                       role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        Язык
+                    </a>
+                    <div class="dropdown-menu"
+                         aria-labelledby="cabinetMenuDropdown">
+                        <a class="dropdown-item" href="?lang=ru">Русский</a>
+                        <a class="dropdown-item" href="?lang=en">Английский</a>
+                        <a class="dropdown-item" href="?lang=ua">Украинский</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                       data-toggle="modal"
+                       data-target=".authorization-modal">Вход</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                       data-toggle="modal"
+                       data-target=".registration-modal">Регистрация</a>
+                </li>
+                <li class="page-header__cabinet-menu-dropdown nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="cabinetMenuDropdown"
+                       role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        <i class="page-header__cabinet-menu-icon icon icon__cabinet-user"></i>
+                        Кабинет
+                    </a>
+                    <div class="page-header__dropdown-menu dropdown-menu" aria-labelledby="cabinetMenuDropdown">
+                        <a class="dropdown-item" href="/cabinet/realties/">Мои объявления</a>
+                        <a class="dropdown-item" href="/cabinet/bookings/">Бронирования</a>
+                        <a class="dropdown-item" href="/cabinet/trips/">Мои поездки <span class="badge badge-primary">5</span></a>
+                        <a class="dropdown-item" href="/cabinet/profile/">Профиль</a>
+                        <a class="dropdown-item" href="/cabinet/balance/">Трансферы</a>
+                        <a class="dropdown-item" href="/cabinet/balance/">Баланс</a>
+                        <a class="dropdown-item" href="/cabinet/partnership/">Партнерская программа</a>
+                        <a class="dropdown-item" href="/cabinet/reviews/">Отзывы</a>
+                        <a class="dropdown-item" href="/cabinet/referralBookings/">Бронирования рефералов</a>
+                        <a class="dropdown-item page-header__dropdown-item-exit" href="/authorization/logout/">Выйти</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="ml-lg-4">
+                <a class="page-header__to-rent-button btn btn-outline-secondary btn-lg w-100" href="add.html">Сдать в аренду</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- /Page header -->
+
+<!-- Recovery modal -->
+<div class="password-recovery-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h2 class="modal-title">Забыли пароль?</h2>
+                <a href="#"
+                   data-dismiss="modal"
+                   class="close"
+                   aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+            </div>
+            <div class="modal-body">
+                <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
+                <!-- Recovery form -->
+                <form method="post" action="/recovery/ajaxPasswordRecovery/" class="authorization-form">
+                    <div class="form-group">
+                        <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Отправить</button>
+                </form>
+                <!-- Recovery form -->
+            </div>
+            <div class="modal-footer justify-content-center pt-0">
+                <a href="#" class="nav-link" data-toggle="modal" data-target=".registration-modal" data-dismiss="modal">Регистрация</a>
+                <a href="#" class="nav-link" data-toggle="modal" data-target=".authorization-modal" data-dismiss="modal">Вход</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Recovery modal -->
+<!-- Authorization modal -->
+<div class="authorization-modal modal fade"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm"
+         role="document">
+        <a href="#"
+           data-dismiss="modal"
+           class="close"
+           aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- Block: Authorization form -->
+<form class="authorization-form">
+    <h2 class="authorization-form__title">Вход</h2>
+    <fieldset class="authorization-modal__fieldset">
+        <legend class="authorization-modal__legend">через</legend>
+        <!-- Social authorization -->
+        <ul class="social-authorization">
+            <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__vk icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__ok icon_size_48"></a></li>
+        </ul>
+        <!-- /Social authorization -->
+    </fieldset>
+    <fieldset class="authorization-modal__fieldset">
+        <legend class="authorization-modal__legend mb-4">или</legend>
+        <div class="form-group">
+            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+        </div>
+        <div class="form-group mb-2">
+            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+        </div>
+        <div class="row align-items-center mb-2">
+            <div class="col-auto">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="cookie" class="custom-control-input" id="rememberMe" required>
+                    <label class="custom-control-label" for="rememberMe">Запомнить меня</label>
+                </div>
+            </div>
+            <div class="col text-right">
+                <a href="#" class="nav-link" data-toggle="modal" data-target=".password-recovery-modal" data-dismiss="modal">Забыл пароль</a>
+            </div>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary btn-lg w-100">Войти</button>
+</form>
+<!-- /Block: Authorization form -->
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="authorization-modal__register-link"
+                   data-toggle="modal"
+                   data-dismiss="modal"
+                   data-target=".registration-modal">Регистрация</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Authorization modal -->
+<!-- Registration modal -->
+<div class="registration-modal modal fade"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm"
+         role="document">
+        <a href="#"
+           data-dismiss="modal"
+           class="close"
+           aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- Registration form -->
+<form class="registration-form">
+    <h2 class="registration-form__title">Регистрация</h2>
+    <fieldset class="registration-modal__fieldset">
+        <legend class="registration-modal__legend">через</legend>
+        <!-- Social authorization -->
+        <ul class="social-authorization">
+            <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__vk icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__ok icon_size_48"></a></li>
+        </ul>
+        <!-- /Social authorization -->
+    </fieldset>
+    <fieldset class="registration-modal__fieldset">
+        <legend class="registration-modal__legend mb-4">или</legend>
+        <div class="form-group">
+            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+        </div>
+        <div class="form-group mb-3">
+            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" checked name="newsSubscribed" class="custom-control-input" id="newsSubscribed" required>
+            <label class="custom-control-label" for="newsSubscribed">Подписаться на спец. предложения</label>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
+</form>
+<!-- Registration form -->
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="registration-modal__authorization-link"
+                   data-toggle="modal"
+                   data-dismiss="modal"
+                   data-target=".authorization-modal">Войти</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Registration modal -->
+</div>
+
+<!-- Page: page-article -->
+<main class="page-article">
+    <link rel="stylesheet" href="assets/articles/article-transfer.css">
+<article class="article-transfer">
+    <header class="page-article__article-header"
+            style="background-image: url(templates/articles/article-transfer/article-transfer__header-bg.jpg);">
+        <div class="container">
+            <h1>ТРАНСФЕРЫ</h1>
+            <p class="lead">Мы вовремя встретим вас в аэропорту и отвезём до места заселения на легковом автомобиле или
+                минивэне. <br class="d-none d-lg-block">В конце отдыха заблаговременно доставим в аэропорт.</p>
+        </div>
+    </header>
+    <div class="bg-light d-none d-sm-block">
+        <div class="container mw-1024px">
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-item nav-link" href="/cleaning/">Клининговые услуги</a>
+                <a class="nav-item nav-link" href="/escort/">Заселение и выселение гостей</a>
+                <a class="nav-item nav-link active" href="#">Трансфер</a>
+                <a class="nav-item nav-link" href="/rentacar/">Аренда авто</a>
+                <a class="nav-item nav-link" href="/management/">Управление объектами</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container mw-1024px pt-5">
+        <ul class="nav nav-tabs justify-content-center"
+            role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active"
+                   data-toggle="tab"
+                   href="#Burgas"
+                   role="tab"
+                   aria-controls="Burgas"
+                   aria-selected="true">Аэропорт Бургаса</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   data-toggle="tab"
+                   href="#Varna"
+                   role="tab"
+                   aria-controls="Varna"
+                   aria-selected="false">Аэропорт Варны</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   data-toggle="tab"
+                   href="#Istanbul"
+                   role="tab"
+                   aria-controls="Istanbul"
+                   aria-selected="false">Аэропорт Стамбула</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   data-toggle="tab"
+                   href="#Sofia"
+                   role="tab"
+                   aria-controls="Sofia"
+                   aria-selected="false">Аэропорт Софии</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <section class="tab-pane fade show active"
+                     id="Burgas"
+                     role="tabpanel"
+                     aria-labelledby="Burgas-tab">
+                <header class="text-center py-4">
+                    <h2>Аэропорт Бургас</h2>
+                    <p class="lead">Цена трансфера в одну сторону</p>
+                </header>
+                <div class="table-responsive">
+                    <table class="article-transfer__transfer-table table table-striped table-bordered table-adaptive">
+                        <thead>
+                        <tr>
+                            <th>Город</th>
+                            <th width="240">Легковой автомобиль</th>
+                            <th width="240">Минивэн</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Ахелой</td>
+                            <td><b class="text-secondary">39 лв / €20</b></td>
+                            <td><b class="text-secondary">70 лв / €35</b></td>
+                        </tr>
+                        <tr>
+                            <td>Равда</td>
+                            <td><b class="text-secondary">50 лв / €25</b></td>
+                            <td><b class="text-secondary">90 лв / €45</b></td>
+                        </tr>
+                        <tr>
+                            <td>Несебр</td>
+                            <td><b class="text-secondary">50 лв / €25</b></td>
+                            <td><b class="text-secondary">90 лв / €45</b></td>
+                        </tr>
+                        <tr>
+                            <td>Солнечный берег</td>
+                            <td><b class="text-secondary">50 лв / €25</b></td>
+                            <td><b class="text-secondary">90 лв / €45</b></td>
+                        </tr>
+                        <tr>
+                            <td>Кошарица</td>
+                            <td><b class="text-secondary">54 лв / €27</b></td>
+                            <td><b class="text-secondary">94 лв / €47</b></td>
+                        </tr>
+                        <tr>
+                            <td>Святой Влас</td>
+                            <td><b class="text-secondary">60 лв / €30</b></td>
+                            <td><b class="text-secondary">100 лв / €50</b></td>
+                        </tr>
+                        <tr>
+                            <td>Елените</td>
+                            <td><b class="text-secondary">60 лв / €30</b></td>
+                            <td><b class="text-secondary">110 лв / €55</b></td>
+                        </tr>
+                        <tr>
+                            <td>Обзор</td>
+                            <td><b class="text-secondary">100 лв / €50</b></td>
+                            <td><b class="text-secondary">160 лв / €80</b></td>
+                        </tr>
+                        <tr>
+                            <td>Бяла</td>
+                            <td><b class="text-secondary">100 лв / €50</b></td>
+                            <td><b class="text-secondary">160 лв / €80</b></td>
+                        </tr>
+                        <tr>
+                            <td>Варна</td>
+                            <td><b class="text-secondary">130 лв / €65</b></td>
+                            <td><b class="text-secondary">200 лв / €100</b></td>
+                        </tr>
+                        <tr>
+                            <td>Святые Константин и Елена</td>
+                            <td><b class="text-secondary">150 лв / €75</b></td>
+                            <td><b class="text-secondary">220 лв / €110</b></td>
+                        </tr>
+                        <tr>
+                            <td>Золотые Пески</td>
+                            <td><b class="text-secondary">160 лв / €80</b></td>
+                            <td><b class="text-secondary">230 лв / €115</b></td>
+                        </tr>
+                        <tr>
+                            <td>Кранево</td>
+                            <td><b class="text-secondary">170 лв / €85</b></td>
+                            <td><b class="text-secondary">250 лв / €125</b></td>
+                        </tr>
+                        <tr>
+                            <td>Албена</td>
+                            <td><b class="text-secondary">180 лв / €90</b></td>
+                            <td><b class="text-secondary">260 лв / €130</b></td>
+                        </tr>
+                        <tr>
+                            <td>Балчик</td>
+                            <td><b class="text-secondary">200 лв / €100</b></td>
+                            <td><b class="text-secondary">270 лв / €135</b></td>
+                        </tr>
+                        <tr>
+                            <td>Каварна</td>
+                            <td><b class="text-secondary">220 лв / €110</b></td>
+                            <td><b class="text-secondary">280 лв / €140</b></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="tab-pane fade"
+                     id="Varna"
+                     role="tabpanel"
+                     aria-labelledby="profile-tab">
+                <header class="text-center py-4">
+                    <h2>Аэропорт Варна</h2>
+                    <p class="lead">Цена трансфера в одну сторону</p>
+                </header>
+                <div class="table-responsive">
+                    <table class="article-transfer__transfer-table table table-striped table-bordered table-adaptive">
+                        <thead>
+                        <tr>
+                            <th>Город</th>
+                            <th width="240">Легковой автомобиль</th>
+                            <th width="240">Минивэн</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Солнечный берег</td>
+                            <td><b class="text-secondary">110 лв / €55</b></td>
+                            <td><b class="text-secondary">170 лв / €85</b></td>
+                        </tr>
+                        <tr>
+                            <td>Святой Влас</td>
+                            <td><b class="text-secondary">120 лв / €60</b></td>
+                            <td><b class="text-secondary">180 лв / €90</b></td>
+                        </tr>
+                        <tr>
+                            <td>Кошарица</td>
+                            <td><b class="text-secondary">120 лв / €60</b></td>
+                            <td><b class="text-secondary">180 лв / €90</b></td>
+                        </tr>
+                        <tr>
+                            <td>Елените</td>
+                            <td><b class="text-secondary">130 лв / €65</b></td>
+                            <td><b class="text-secondary">190 лв / €95</b></td>
+                        </tr>
+                        <tr>
+                            <td>Несебр</td>
+                            <td><b class="text-secondary">120 лв / €60</b></td>
+                            <td><b class="text-secondary">180 лв / €90</b></td>
+                        </tr>
+                        <tr>
+                            <td>Равда</td>
+                            <td><b class="text-secondary">120 лв / €60</b></td>
+                            <td><b class="text-secondary">180 лв / €90</b></td>
+                        </tr>
+                        <tr>
+                            <td>Ахелой</td>
+                            <td><b class="text-secondary">130 лв / €65</b></td>
+                            <td><b class="text-secondary">190 лв / €95</b></td>
+                        </tr>
+                        <tr>
+                            <td>Бургас</td>
+                            <td><b class="text-secondary">150 лв / €75</b></td>
+                            <td><b class="text-secondary">220 лв / €110</b></td>
+                        </tr>
+                        <tr>
+                            <td>Черноморец</td>
+                            <td><b class="text-secondary">170 лв / €85</b></td>
+                            <td><b class="text-secondary">260 лв / €130</b></td>
+                        </tr>
+                        <tr>
+                            <td>Созопол</td>
+                            <td><b class="text-secondary">170 лв / €85</b></td>
+                            <td><b class="text-secondary">260 лв / €130</b></td>
+                        </tr>
+                        <tr>
+                            <td>Дюны</td>
+                            <td><b class="text-secondary">180 лв / €90</b></td>
+                            <td><b class="text-secondary">270 лв /€135</b></td>
+                        </tr>
+                        <tr>
+                            <td>Приморско</td>
+                            <td><b class="text-secondary">190 лв / €95</b></td>
+                            <td><b class="text-secondary">280 лв / €140</b></td>
+                        </tr>
+                        <tr>
+                            <td>Китен</td>
+                            <td><b class="text-secondary">190 лв / €95</b></td>
+                            <td><b class="text-secondary">280 лв / €140</b></td>
+                        </tr>
+                        <tr>
+                            <td>Лозенец</td>
+                            <td><b class="text-secondary">190 лв / €95</b></td>
+                            <td><b class="text-secondary">280 лв / €140</b></td>
+                        </tr>
+                        <tr>
+                            <td>Царево</td>
+                            <td><b class="text-secondary">200 лв / €100</b></td>
+                            <td><b class="text-secondary">300 лв / €150</b></td>
+                        </tr>
+                        <tr>
+                            <td>Ахтопол</td>
+                            <td><b class="text-secondary">220 лв / €110</b></td>
+                            <td><b class="text-secondary">330 лв / €165</b></td>
+                        </tr>
+                        <tr>
+                            <td>Синеморец</td>
+                            <td><b class="text-secondary">230 лв / €115</b></td>
+                            <td><b class="text-secondary">340 лв / €170</b></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="tab-pane fade"
+                     id="Istanbul"
+                     role="tabpanel"
+                     aria-labelledby="Istanbul-tab">
+                <header class="text-center py-4">
+                    <h2>Аэропорт Стамбул имени Ататюрка</h2>
+                    <p class="lead">Цена трансфера в одну сторону</p>
+                </header>
+                <div class="table-responsive">
+                    <table class="article-transfer__transfer-table table table-striped table-bordered table-adaptive">
+                        <thead>
+                        <tr>
+                            <th>Город</th>
+                            <th width="240">Легковой автомобиль</th>
+                            <th width="240">Минивэн</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Царево</td>
+                            <td><b class="text-secondary">420 лв / €210</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Лозенец</td>
+                            <td><b class="text-secondary">440 лв / €220</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Приморско</td>
+                            <td><b class="text-secondary">450 лв / €225</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Бургас</td>
+                            <td><b class="text-secondary">460 лв / €230</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Несебр</td>
+                            <td><b class="text-secondary">480 лв / €240</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Солнечный берег</td>
+                            <td><b class="text-secondary">480 лв / €240</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Святой Влас</td>
+                            <td><b class="text-secondary">500 лв / €250</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Елените</td>
+                            <td><b class="text-secondary">500 лв / €250</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Бяла</td>
+                            <td><b class="text-secondary">520 лв / €260</b></td>
+                            <td><b class="text-secondary">640 лв / €320</b></td>
+                        </tr>
+                        <tr>
+                            <td>Золотые Пески</td>
+                            <td><b class="text-secondary">560 лв / €280</b></td>
+                            <td><b class="text-secondary">800 лв / €400</b></td>
+                        </tr>
+                        <tr>
+                            <td>Варна</td>
+                            <td><b class="text-secondary">540 лв / €270</b></td>
+                            <td><b class="text-secondary">800 лв / €400</b></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="tab-pane fade"
+                     id="Sofia"
+                     role="tabpanel"
+                     aria-labelledby="Sofia-tab">
+                <header class="text-center py-4">
+                    <h2>Аэропорт София</h2>
+                    <p class="lead">Цена трансфера в одну сторону</p>
+                </header>
+                <div class="table-responsive">
+                    <table class="article-transfer__transfer-table table table-striped table-bordered table-adaptive">
+                        <thead>
+                        <tr>
+                            <th>Город</th>
+                            <th width="240">Легковой автомобиль</th>
+                            <th width="240">Минивэн</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Солнечный берег</td>
+                            <td><b class="text-secondary">400 лв / €200</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Святой Влас</td>
+                            <td><b class="text-secondary">400 лв / €200</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Несебр</td>
+                            <td><b class="text-secondary">400 лв / €200</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        <tr>
+                            <td>Бургас</td>
+                            <td><b class="text-secondary">400 лв / €200</b></td>
+                            <td><b class="text-secondary">600 лв / €300</b></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</article>
+    <div class="container py-5">
+        <!-- Section: our-services -->
+<section class="our-services">
+    <h2 class="mb-4 text-center">Другие услуги</h2>
+    <nav class="our-services__nav row">
+        <a class="our-services__nav-item our-services_image_cleaning col-lg-3 col-sm-6"
+           href="/cleaning/">Клининговые услуги</a>
+        <a class="our-services__nav-item our-services_image_escort col-lg-3 col-sm-6"
+           href="/escort/">Заселение и выселение гостей</a>
+        <a class="our-services__nav-item our-services_image_transfer col-lg-3 col-sm-6"
+           href="/transfer/">Трансфер</a>
+        <a class="our-services__nav-item our-services_image_car-rental col-lg-3 col-sm-6"
+           href="/rentacar/">Аренда авто</a>
+        <a class="our-services__nav-item our-services_image_management col-lg-3 col-sm-6"
+           href="/management/">Управление объектами</a>
+    </nav>
+</section>
+<!-- /Section: our-services -->
+    </div>
+</main>
+<!-- /Page: page-article -->
+
+<!-- Page footer -->
+<footer class="page-footer">
+    <div class="page-footer__subscribe bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col mb-2 mb-md-0">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
+                <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
+                    <!-- Subscribe form -->
+<form action="/realties/subscribeClient/" data-post="&page=/" class="subscribe-form form-row w-100">
+    <div class="form-group col-7 mb-0">
+        <label for="subscribtionEmail" class="sr-only">Password</label>
+        <input type="email" class="form-control" id="subscribtionEmail" required placeholder="Ваш e-mail">
+    </div>
+    <div class="col-5">
+        <button type="submit" class="btn btn-primary w-100">Подписаться</button>
+    </div>
+</form>
+<!-- Subscribe form -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="page-footer__list-of-navs row">
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">О нас</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="/about" class="page-footer__link">Компания</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/trust" class="page-footer__link">Безопасность</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">Правила сайта</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="/user_agreement/" class="page-footer__link">Общие условия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/booking_cancelation_rules/" class="page-footer__link">Отмена бронирования</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/withdraw/" class="page-footer__link">Вывод денег</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">Связаться</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="page-footer__link">Контакты</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">Следите за нами</h3>
+                <ul class="page-footer__social-list">
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="http://ok.ru/group/53570038661351/"
+                           class="page-footer__social-icon page-footer__social-icon_type_ok"></a>
+                    </li>
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="https://vk.com/vput_eu"
+                           class="page-footer__social-icon page-footer__social-icon_type_vk"></a>
+                    </li>
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="https://www.facebook.com/groups/vput.eu/"
+                           class="page-footer__social-icon page-footer__social-icon_type_facebook"></a>
+                    </li>
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="https://www.instagram.com/v.p.u.t.bulgaria/"
+                           class="page-footer__social-icon page-footer__social-icon_type_instagram"></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="page-footer__info">
+            <figure class="page-footer__logo"></figure>
+            <div class="page-footer__copyright">Copyright © 2013 - 2018</div>
+            <hr class="page-footer__delimiter">
+            <div class="page-footer__developer">Developed by
+                <a target="_blank"
+                   href="https://webdelo.org/"
+                   class="page-footer__developed-by"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /Page footer -->
+<!-- Bundle Scripts -->
+<script src="assets/bundles/js.bundle.min.js"></script>
+<script src="assets/bundles/ts.bundle.min.js"></script>
+</body>
+</html>

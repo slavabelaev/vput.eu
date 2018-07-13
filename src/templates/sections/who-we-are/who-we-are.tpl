@@ -4,8 +4,8 @@
         <h1 class="who-we-are__title mb-0">ПОРТАЛ №1 В БОЛГАРИИ</h1>
         <div class="who-we-are__description">по безопасной аренде частного жилья</div>
     </header>
-    <div class="who-we-are__offers-search-form offers-search-form__is_short">
-        <%- include('../../common.blocks/offers-search-form/offers-search-form.tpl'); %>
+    <div class="who-we-are__form-search-offers form-search-offers__is_short">
+        <%- include('../../forms/form-search-offers/form-search-offers.tpl'); %>
     </div>
     <div class="who-we-are__popular-cities p-3">
         <%- include('../../common.blocks/popular-cities/popular-cities.tpl'); %>

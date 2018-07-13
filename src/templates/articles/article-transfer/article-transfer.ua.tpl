@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="assets/articles/article-transfer.css">
-<article class="article-transfer">
+<article class="article-transfer article-cleaning_lang_ua">
     <header class="page-article__article-header"
             style="background-image: url(templates/articles/article-transfer/article-transfer__header-bg.jpg);">
         <div class="container">
             <h1>ТРАНСФЕРИ</h1>
             <p class="lead">Мы вовремя встретим вас в аэропорту и отвезём до места заселения на легковом автомобиле или
-                минивэне. <br class="d-none d-lg-block">В конце отдыха заблаговременно доставим в аэропорт.</p>
+                Мінівене. <br class="d-none d-lg-block">В конце отдыха заблаговременно доставим в аэропорт.</p>
         </div>
     </header>
     <div class="bg-light d-none d-sm-block">
@@ -68,9 +68,9 @@
                     <table class="article-transfer__transfer-table article-transfer__transfer-table table table-striped table-bordered table-adaptive">
                         <thead>
                         <tr>
-                            <th>Город</th>
-                            <th width="240">Легковой автомобиль</th>
-                            <th width="240">Минивэн</th>
+                            <th>Місто</th>
+                            <th width="240">Легковий автомобіль</th>
+                            <th width="240">Мінівен</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -170,9 +170,9 @@
                     <table class="article-transfer__transfer-table article-transfer__transfer-table table table-striped table-bordered table-adaptive">
                         <thead>
                         <tr>
-                            <th>Город</th>
-                            <th width="240">Легковой автомобиль</th>
-                            <th width="240">Минивэн</th>
+                            <th>Місто</th>
+                            <th width="240">Легковий автомобіль</th>
+                            <th width="240">Мінівен</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -277,9 +277,9 @@
                     <table class="article-transfer__transfer-table article-transfer__transfer-table table table-striped table-bordered table-adaptive">
                         <thead>
                         <tr>
-                            <th>Город</th>
-                            <th width="240">Легковой автомобиль</th>
-                            <th width="240">Минивэн</th>
+                            <th>Місто</th>
+                            <th width="240">Легковий автомобіль</th>
+                            <th width="240">Мінівен</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -354,9 +354,9 @@
                     <table class="article-transfer__transfer-table article-transfer__transfer-table table table-striped table-bordered table-adaptive">
                         <thead>
                         <tr>
-                            <th>Город</th>
-                            <th width="240">Легковой автомобиль</th>
-                            <th width="240">Минивэн</th>
+                            <th>Місто</th>
+                            <th width="240">Легковий автомобіль</th>
+                            <th width="240">Мінівен</th>
                         </tr>
                         </thead>
                         <tbody>

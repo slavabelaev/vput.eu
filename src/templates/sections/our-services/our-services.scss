@@ -1,10 +1,5 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
-.our-services__nav {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
 .our-services__nav-item {
   position: relative;
   display: flex;
@@ -12,9 +7,7 @@
   justify-content: center;
   text-align: center;
   background-color: $dark;
-  flex: 1;
   min-height: 120px;
-  min-width: 220px;
   padding: $card-spacer-x;
   color: rgba($white, .8);
   text-decoration: none;
@@ -44,7 +37,7 @@
   background-image: url(#{$rootDir}/templates/sections/our-services/our-services__management.jpg);
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(xl) {
   .our-services__nav-item {
     background-size: 100% auto;
     min-height: 200px;

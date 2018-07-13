@@ -106,14 +106,23 @@
             </div>
             <div class="modal-body">
                 <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
-                <!-- Recovery form -->
-                <form method="post" action="/recovery/ajaxPasswordRecovery/" class="authorization-form">
-                    <div class="form-group">
-                        <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg w-100">Отправить</button>
-                </form>
-                <!-- Recovery form -->
+                <div class="password-recovery-modal__form-recovery">
+                    <!-- Form: form-recovery -->
+<form method="post"
+      action="/recovery/ajaxPasswordRecovery/"
+      class="form-recovery">
+    <div class="form-group">
+        <input type="email"
+               name="login"
+               class="form-control form-control-lg"
+               required
+               placeholder="Адрес эл. почты">
+    </div>
+    <button type="submit"
+            class="btn btn-primary btn-lg w-100">Отправить</button>
+</form>
+<!-- /Form: form-recovery -->
+                </div>
             </div>
             <div class="modal-footer justify-content-center pt-0">
                 <a href="#" class="nav-link" data-toggle="modal" data-target=".registration-modal" data-dismiss="modal">Регистрация</a>
@@ -137,8 +146,8 @@
         <div class="modal-content">
             <div class="modal-body">
                 <!-- Block: Authorization form -->
-<form class="authorization-form">
-    <h2 class="authorization-form__title">Вход</h2>
+<form class="form-authorization">
+    <h2 class="form-authorization__title">Вход</h2>
     <fieldset class="authorization-modal__fieldset">
         <legend class="authorization-modal__legend">через</legend>
         <!-- Social authorization -->
@@ -196,9 +205,9 @@
            aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
         <div class="modal-content">
             <div class="modal-body">
-                <!-- Registration form -->
-<form class="registration-form">
-    <h2 class="registration-form__title">Регистрация</h2>
+                <!-- Form: form-registration-->
+<form class="form-registration">
+    <h2 class="form-registration__title">Регистрация</h2>
     <fieldset class="registration-modal__fieldset">
         <legend class="registration-modal__legend">через</legend>
         <!-- Social authorization -->
@@ -224,7 +233,7 @@
     </fieldset>
     <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
 </form>
-<!-- Registration form -->
+<!-- Form: form-registration -->
             </div>
             <div class="modal-footer">
                 <a href="#" class="registration-modal__authorization-link"
@@ -241,74 +250,74 @@
 <main class="page-complex">
     <div class="pt-4 pb-2 border-bottom">
         <div class="container">
-            <div class="page-complex__offers-search-form offers-search-form__is_short">
+            <div class="page-complex__form-search-offers form-search-offers__is_short">
                 <!-- Offers Search Form -->
 <form action="search.html"
       _action="https://vput.ru/search/"
-      class="offers-search-form">
+      class="form-search-offers">
     <div class="form-row">
-        <div class="offers-search-form__cityId-col form-group col">
+        <div class="form-search-offers__cityId-col form-group col">
             <input type="hidden" name="filters[cityId]">
-            <input class="offers-search-form__cities-tabs-toggle custom-select custom-select-lg"
+            <input class="form-search-offers__cities-tabs-toggle custom-select custom-select-lg"
                    readonly
                    placeholder="What is your destination?"
                    data-toggle="collapse"
-                   data-target=".offers-search-form__cities-dropdown">
+                   data-target=".form-search-offers__cities-dropdown">
         </div>
-        <div class="offers-search-form__startDate-col form-group col">
+        <div class="form-search-offers__startDate-col form-group col">
             <input name="filters[startDate]"
                    class="custom-select custom-select-lg"
                    placeholder="Check-in">
         </div>
-        <div class="offers-search-form__endDate-col form-group col">
+        <div class="form-search-offers__endDate-col form-group col">
             <input name="filters[endDate]"
                    class="custom-select custom-select-lg"
                    placeholder="Check-out">
         </div>
-        <div class="offers-search-form__guests-col form-group col">
+        <div class="form-search-offers__guests-col form-group col">
             <select name="filters[guests]"
                     id="guests"
                     class="custom-select custom-select-lg">
                 <option value="1">1 guest</option>
             </select>
         </div>
-        <div class="offers-search-form__search-by-complexes-col form-group col">
+        <div class="form-search-offers__search-by-complexes-col form-group col">
             <a href="#"
-               class="offers-search-form__search-by-complexes-button btn btn-outline-primary btn-lg w-100">Search by complexes</a>
+               class="form-search-offers__search-by-complexes-button btn btn-outline-primary btn-lg w-100">Search by complexes</a>
         </div>
-        <div class="offers-search-form__other-filters-col form-group col">
+        <div class="form-search-offers__other-filters-col form-group col">
             <a href="#"
-               class="offers-search-form__search-by-complexes-button btn btn-outline-primary btn-lg w-100"
+               class="form-search-offers__search-by-complexes-button btn btn-outline-primary btn-lg w-100"
                data-toggle="collapse"
-               data-target=".offers-search-form__other-filters">More filters</a>
+               data-target=".form-search-offers__other-filters">More filters</a>
         </div>
-        <div class="offers-search-form__id-col form-group col">
+        <div class="form-search-offers__id-col form-group col">
             <input type="number"
                    name="filters[id]"
                    class="form-control form-control-lg"
                    placeholder="ID">
         </div>
-        <div class="offers-search-form__search-col form-group col">
+        <div class="form-search-offers__search-col form-group col">
             <button type="submit"
-                    class="offers-search-form__search-button btn btn-secondary btn-lg w-100">Search</button>
+                    class="form-search-offers__search-button btn btn-secondary btn-lg w-100">Search</button>
         </div>
     </div>
 
-    <div class="offers-search-form__show-booked custom-control custom-checkbox">
+    <div class="form-search-offers__show-booked custom-control custom-checkbox">
         <input type="checkbox"
-               class="offers-search-form__show-booked-control custom-control-input"
-               id="offers-search-form__show-booked-control"
+               class="form-search-offers__show-booked-control custom-control-input"
+               id="form-search-offers__show-booked-control"
                name="filters[showBooked]">
         <label class="custom-control-label"
-               for="offers-search-form__show-booked-control">Не показывать забронированные</label>
+               for="form-search-offers__show-booked-control">Не показывать забронированные</label>
     </div>
 
 
-    <div class="offers-search-form__cities-dropdown collapse">
+    <div class="form-search-offers__cities-dropdown collapse">
         <a href="#"
            data-toggle="collapse"
-           data-target=".offers-search-form__cities-dropdown"
-           class="offers-search-form__cities-dropdown-close close"
+           data-target=".form-search-offers__cities-dropdown"
+           class="form-search-offers__cities-dropdown-close close"
            aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
         <!-- Cities Tabs -->
 <div class="cities-tabs">
@@ -389,10 +398,10 @@
     </div>
 
     <!-- Other filters -->
-    <div class="offers-search-form__other-filters collapse">
-        <div class="offers-search-form__fieldset mt-4">
-            <legend class="offers-search-form__legend">Price per day</legend>
-            <div class="offers-search-form__options-list form-row">
+    <div class="form-search-offers__other-filters collapse">
+        <div class="form-search-offers__fieldset mt-4">
+            <legend class="form-search-offers__legend">Price per day</legend>
+            <div class="form-search-offers__options-list form-row">
                 <div class="form-group col d-none">
                     <input type="number" name="filters[prices][minPrice]" class="form-control" placeholder="Min. price">
                 </div>
@@ -400,25 +409,25 @@
                     <input type="number" name="filters[prices][maxPrice]" class="form-control" placeholder="Max. price">
                 </div>
                 <div class="form-group col">
-                    <div class="offers-search-form__slider"
+                    <div class="form-search-offers__slider"
                          data-min="0"
                          data-max="768"></div>
                 </div>
             </div>
         </div>
 
-        <div class="offers-search-form__fieldset">
-            <div class="offers-search-form__options-list form-row">
+        <div class="form-search-offers__fieldset">
+            <div class="form-search-offers__options-list form-row">
                 <div class="form-group col">
                     <!-- Input Group -->
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <div class="input-group-text"><span class="icon icon__home"></span></div>
                         </div>
-                        <label for="offers-search-form__home" class="form-control">Home</label>
+                        <label for="form-search-offers__home" class="form-control">Home</label>
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <input type="checkbox" name="filters[realtyTypes][2]" id="offers-search-form__home">
+                                <input type="checkbox" name="filters[realtyTypes][2]" id="form-search-offers__home">
                             </div>
                         </div>
                     </div>
@@ -430,11 +439,11 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><span class="icon icon__building"></span></div>
                         </div>
-                        <label for="offers-search-form__apartament" class="form-control">Apartment</label>
+                        <label for="form-search-offers__apartament" class="form-control">Apartment</label>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <input type="checkbox" name="filters[realtyTypes][1]"
-                                       id="offers-search-form__apartament">
+                                       id="form-search-offers__apartament">
                             </div>
                         </div>
                     </div>
@@ -445,10 +454,10 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><span class="icon icon__room"></span></div>
                         </div>
-                        <label for="offers-search-form__room" class="form-control">Room</label>
+                        <label for="form-search-offers__room" class="form-control">Room</label>
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <input type="checkbox" name="filters[realtyTypes][28]" id="offers-search-form__room">
+                                <input type="checkbox" name="filters[realtyTypes][28]" id="form-search-offers__room">
                             </div>
                         </div>
                     </div>
@@ -459,10 +468,10 @@
                         <div class="input-group-prepend">
                             <div class="input-group-text"><span class="icon icon__hotel"></span></div>
                         </div>
-                        <label for="offers-search-form__hotel" class="form-control">Hotel</label>
+                        <label for="form-search-offers__hotel" class="form-control">Hotel</label>
                         <div class="input-group-append">
                             <div class="input-group-text">
-                                <input type="checkbox" name="filters[realtyTypes][31]" id="offers-search-form__hotel">
+                                <input type="checkbox" name="filters[realtyTypes][31]" id="form-search-offers__hotel">
                             </div>
                         </div>
                     </div>
@@ -470,8 +479,8 @@
             </div>
         </div>
 
-        <div class="offers-search-form__fieldset">
-            <div class="offers-search-form__options-list form-row">
+        <div class="form-search-offers__fieldset">
+            <div class="form-search-offers__options-list form-row">
                 <div class="form-group col">
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -506,97 +515,97 @@
             </div>
         </div>
 
-        <div class="offers-search-form__fieldset">
-            <legend class="offers-search-form__legend">Amenities</legend>
-            <div class="offers-search-form__options-list form-row">
+        <div class="form-search-offers__fieldset">
+            <legend class="form-search-offers__legend">Amenities</legend>
+            <div class="form-search-offers__options-list form-row">
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][266]" class="custom-control-input"
-                               id="offers-search-form__parking">
-                        <label class="custom-control-label" for="offers-search-form__parking">Parking</label>
+                               id="form-search-offers__parking">
+                        <label class="custom-control-label" for="form-search-offers__parking">Parking</label>
                     </div>
                 </div>
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][254]" class="custom-control-input"
-                               id="offers-search-form__pool">
-                        <label class="custom-control-label" for="offers-search-form__pool">Pool</label>
+                               id="form-search-offers__pool">
+                        <label class="custom-control-label" for="form-search-offers__pool">Pool</label>
                     </div>
                 </div>
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][259]" class="custom-control-input"
-                               id="offers-search-form__spa">
-                        <label class="custom-control-label" for="offers-search-form__spa">Spa</label>
+                               id="form-search-offers__spa">
+                        <label class="custom-control-label" for="form-search-offers__spa">Spa</label>
                     </div>
                 </div>
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][245]" class="custom-control-input"
-                               id="offers-search-form__lift">
-                        <label class="custom-control-label" for="offers-search-form__lift">Lift</label>
+                               id="form-search-offers__lift">
+                        <label class="custom-control-label" for="form-search-offers__lift">Lift</label>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="offers-search-form__fieldset">
-            <legend class="offers-search-form__legend">Appliances</legend>
-            <div class="offers-search-form__options-list form-row">
+        <div class="form-search-offers__fieldset">
+            <legend class="form-search-offers__legend">Appliances</legend>
+            <div class="form-search-offers__options-list form-row">
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][243]" class="custom-control-input"
-                               id="offers-search-form__air-conditioning">
+                               id="form-search-offers__air-conditioning">
                         <label class="custom-control-label"
-                               for="offers-search-form__air-conditioning">Air-conditioning</label>
+                               for="form-search-offers__air-conditioning">Air-conditioning</label>
                     </div>
                 </div>
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][271]" class="custom-control-input"
-                               id="offers-search-form__cooker">
-                        <label class="custom-control-label" for="offers-search-form__cooker">Cooker</label>
+                               id="form-search-offers__cooker">
+                        <label class="custom-control-label" for="form-search-offers__cooker">Cooker</label>
                     </div>
                 </div>
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][270]" class="custom-control-input"
-                               id="offers-search-form__refrigerator">
-                        <label class="custom-control-label" for="offers-search-form__refrigerator">Refrigerator</label>
+                               id="form-search-offers__refrigerator">
+                        <label class="custom-control-label" for="form-search-offers__refrigerator">Refrigerator</label>
                     </div>
                 </div>
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][287]" class="custom-control-input"
-                               id="offers-search-form__tv">
-                        <label class="custom-control-label" for="offers-search-form__tv">TV</label>
+                               id="form-search-offers__tv">
+                        <label class="custom-control-label" for="form-search-offers__tv">TV</label>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="offers-search-form__fieldset">
-            <legend class="offers-search-form__legend">House rules</legend>
-            <div class="offers-search-form__options-list form-row">
+        <div class="form-search-offers__fieldset">
+            <legend class="form-search-offers__legend">House rules</legend>
+            <div class="form-search-offers__options-list form-row">
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][247]" class="custom-control-input"
-                               id="offers-search-form__smoking">
-                        <label class="custom-control-label" for="offers-search-form__smoking">Smoking</label>
+                               id="form-search-offers__smoking">
+                        <label class="custom-control-label" for="form-search-offers__smoking">Smoking</label>
                     </div>
                 </div>
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][80]" class="custom-control-input"
-                               id="offers-search-form__children">
-                        <label class="custom-control-label" for="offers-search-form__children">Children</label>
+                               id="form-search-offers__children">
+                        <label class="custom-control-label" for="form-search-offers__children">Children</label>
                     </div>
                 </div>
                 <div class="form-group col">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" name="filters[parameters][240]" class="custom-control-input"
-                               id="offers-search-form__pets">
-                        <label class="custom-control-label" for="offers-search-form__pets">Pets</label>
+                               id="form-search-offers__pets">
+                        <label class="custom-control-label" for="form-search-offers__pets">Pets</label>
                     </div>
                 </div>
                 <div class="form-group col"></div>
@@ -653,36 +662,37 @@
         <div class="col-lg-5 col-xl-6">
             <!-- Section: photos-of-the-complex -->
 <section class="photos-of-the-complex">
-    <h2 class="photos-of-the-complex__title">Фото комплекса <small class="text-muted">(10 фото)</small></h2>
-    <div id="carouselExampleControls" class="carousel slide mb-4" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/02..jpg.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/02..jpg.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://vput.ru/cache/images/realties/1260x710_focus_watermark/02..jpg.jpg" alt="Third slide">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+    <h2 class="photos-of-the-complex__title mb-4">Фото комплекса <small class="text-muted">(10 фото)</small></h2>
+
+    <ul class="photos-of-the-complex__slider" is-slick-carousel>
+        <li class="photos-of-the-complex__slider-item">
+            <a href="content/images/complexes/complex-example/complex-example__image-1.jpg"
+               class="photos-of-the-complex__slider-link"
+               data-fancybox="photos-of-the-complex"
+               style="background-image: url(content/images/complexes/complex-example/complex-example__image-1.jpg"></a>
+        </li>
+        <li class="photos-of-the-complex__slider-item">
+            <a href="content/images/complexes/complex-example/complex-example__image-2.jpg"
+               class="photos-of-the-complex__slider-link"
+               data-fancybox="photos-of-the-complex"
+               style="background-image: url(content/images/complexes/complex-example/complex-example__image-2.jpg)">
+            </a>
+        </li>
+        <li class="photos-of-the-complex__slider-item">
+            <a href="content/images/complexes/complex-example/complex-example__image-3.jpg"
+               class="photos-of-the-complex__slider-link"
+               data-fancybox="photos-of-the-complex"
+               style="background-image: url(content/images/complexes/complex-example/complex-example__image-3.jpg)"></a>
+        </li>
+    </ul>
 </section>
 <!-- /Section: photos-of-the-complex -->
         </div>
         <div class="col-lg-7 col-xl-6">
-            <div class="about-the-complex__complex-description mb-4">
+            <div class="about-the-complex__complex-description mb-4 mb-lg-0">
                 <!-- Section: description-of-the-complex -->
 <section class="description-of-the-complex">
-    <h2 class="description-of-the-complex__title">Описание</h2>
+    <h2 class="description-of-the-complex__title mb-4">Описание</h2>
     <article class="description-of-the-complex__content">
         <p>Студия в собственности в северной части курорта Солнечный берег. Рядом Disco Orange, пляж, кафе, рестораны, остановка автобуса. Площадь студии 30 кв.м. (больше двух человек проблематично поместить). Есть вся мебель, техника, посуда. Бассейн. Пляж в 500-600 м.</p>
     </article>
@@ -692,54 +702,54 @@
             <div class="about-the-complex__characteristics-of-the-complex">
                 <!-- Section: characteristics-of-the-complex -->
 <section class="characteristics-of-the-complex">
-    <h2 class="characteristics-of-the-complex__title">Характеристики</h2>
+    <h2 class="characteristics-of-the-complex__title mb-4">Характеристики</h2>
     <ul class="characteristics-of-the-complex__list row">
         <li class="characteristics-of-the-complex__list-item col-sm-6">
             <figure class="figure d-flex">
                 <i class="icon icon__security mr-3"></i>
-                <figcaption class="figure-caption">Охрана</figcaption>
+                <figcaption class="characteristics-of-the-complex__caption">Охрана</figcaption>
             </figure>
         </li>
         <li class="characteristics-of-the-complex__list-item col-sm-6">
             <figure class="figure d-flex">
                 <i class="icon icon__coffee mr-3"></i>
-                <figcaption class="figure-caption">Кафе</figcaption>
+                <figcaption class="characteristics-of-the-complex__caption">Кафе</figcaption>
             </figure>
         </li>
         <li class="characteristics-of-the-complex__list-item col-sm-6">
             <figure class="figure d-flex">
                 <i class="icon icon__parking mr-3"></i>
-                <figcaption class="figure-caption">Парковка <small class="text-muted">(20 мест)</small></figcaption>
+                <figcaption class="characteristics-of-the-complex__caption">Парковка <small class="text-muted">(20 мест)</small></figcaption>
             </figure>
         </li>
         <li class="characteristics-of-the-complex__list-item col-sm-6">
             <figure class="figure d-flex">
                 <i class="icon icon__bike mr-3"></i>
-                <figcaption class="figure-caption">Прокат велосипедов</figcaption>
+                <figcaption class="characteristics-of-the-complex__caption">Прокат велосипедов</figcaption>
             </figure>
         </li>
         <li class="characteristics-of-the-complex__list-item col-sm-6">
             <figure class="figure d-flex">
                 <i class="icon icon__sea mr-3"></i>
-                <figcaption class="figure-caption">Доступ к морю <small class="text-muted">(20 метров)</small></figcaption>
+                <figcaption class="characteristics-of-the-complex__caption">Доступ к морю <small class="text-muted">(20 метров)</small></figcaption>
             </figure>
         </li>
         <li class="characteristics-of-the-complex__list-item col-sm-6">
             <figure class="figure d-flex">
                 <i class="icon icon__massage mr-3"></i>
-                <figcaption class="figure-caption">Массаж</figcaption>
+                <figcaption class="characteristics-of-the-complex__caption">Массаж</figcaption>
             </figure>
         </li>
         <li class="characteristics-of-the-complex__list-item col-sm-6">
             <figure class="figure d-flex">
                 <span class="icon icon__pool mr-3"></span>
-                <figcaption class="figure-caption">Бассейн <small class="text-muted">(3 штуки)</small></figcaption>
+                <figcaption class="characteristics-of-the-complex__caption">Бассейн <small class="text-muted">(3 штуки)</small></figcaption>
             </figure>
         </li>
         <li class="characteristics-of-the-complex__list-item col-sm-6">
             <figure class="figure d-flex">
                 <i class="icon icon__SPA mr-3"></i>
-                <figcaption class="figure-caption">СПА</figcaption>
+                <figcaption class="characteristics-of-the-complex__caption">СПА</figcaption>
             </figure>
         </li>
     </ul>
@@ -1337,8 +1347,10 @@
             <div class="row align-items-center">
                 <div class="col mb-2 mb-md-0">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
                 <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
-                    <!-- Subscribe form -->
-<form action="/realties/subscribeClient/" data-post="&page=/" class="subscribe-form form-row w-100">
+                    <!-- Form: form-subscribe -->
+<form action="/realties/subscribeClient/" 
+      data-post="&page=/" 
+      class="form-subscribe form-row w-100">
     <div class="form-group col-7 mb-0">
         <label for="subscribtionEmail" class="sr-only">Password</label>
         <input type="email" class="form-control" id="subscribtionEmail" required placeholder="Ваш e-mail">
@@ -1347,7 +1359,7 @@
         <button type="submit" class="btn btn-primary w-100">Подписаться</button>
     </div>
 </form>
-<!-- Subscribe form -->
+<!-- /Form: form-subscribe -->
                 </div>
             </div>
         </div>

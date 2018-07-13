@@ -1,0 +1,11 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+@include media-breakpoint-up(md) {
+  .article-car-rental__car-card {
+    .card-header {
+      overflow-x: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

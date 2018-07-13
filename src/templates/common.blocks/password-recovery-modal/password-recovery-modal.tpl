@@ -11,14 +11,9 @@
             </div>
             <div class="modal-body">
                 <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
-                <!-- Recovery form -->
-                <form method="post" action="/recovery/ajaxPasswordRecovery/" class="authorization-form">
-                    <div class="form-group">
-                        <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg w-100">Отправить</button>
-                </form>
-                <!-- Recovery form -->
+                <div class="password-recovery-modal__form-recovery">
+                    <%- include('../../forms/form-recovery/form-recovery.tpl'); %>
+                </div>
             </div>
             <div class="modal-footer justify-content-center pt-0">
                 <a href="#" class="nav-link" data-toggle="modal" data-target=".registration-modal" data-dismiss="modal">Регистрация</a>

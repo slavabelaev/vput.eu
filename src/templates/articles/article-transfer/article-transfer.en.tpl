@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="assets/articles/article-transfer.css">
-<article class="article-transfer">
+<article class="article-transfer article-cleaning_lang_en">
     <header class="page-article__article-header"
             style="background-image: url(templates/articles/article-transfer/article-transfer__header-bg.jpg);">
         <div class="container">

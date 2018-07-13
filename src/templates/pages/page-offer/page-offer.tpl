@@ -16,13 +16,13 @@
         </nav>
         <!-- /Block: breadcrumb -->
 
-        <div class="page-offer__image-slider mb-4">
-            <%- include('../../common.blocks/image-slider/image-slider.tpl'); %>
+        <div class="page-offer__image-slider">
+            <%- include('../../common.blocks/offer-image-slider/offer-image-slider.tpl'); %>
         </div>
 
         <div class="row">
-            <div class="col-xl mb-4">
-                <article class="page-offer__article">
+            <div class="col-xl">
+                <article class="page-offer__article py-4">
                     <header class="page-offer__header pb-3 border-bottom">
                         <h1 class="page-offer__title">Студия - Форт Нокс Гранд Резорт</h1>
                         <div class="page-offer__place">Болгария, Святой Влас, <a href="#" class="page-offer__complex">Комплекс Венера-палас</a></div>
@@ -72,12 +72,12 @@
                     <span class="page-offer__aside-toggle-caption-show">Забронировать</span>
                     <span class="page-offer__aside-toggle-caption-hide"><i class="icon icon__close icon_size_16 icon_style_light"></i></span>
                 </a>
-                <aside class="page-offer__aside">
+                <aside class="page-offer__aside py-4">
                     <div class="page-offer__offer-employed-by mb-3">
                         <%- include('../../common.blocks/offer-employed-by/offer-employed-by.tpl'); %>
                     </div>
-                    <div class="page-offer__offer-price-calculator mb-3">
-                        <%- include('../../common.blocks/offer-price-calculator/offer-price-calculator.tpl'); %>
+                    <div class="page-offer__form-booking mb-3">
+                        <%- include('../../forms/form-booking/form-booking.tpl'); %>
                     </div>
                     <div class="page-offer__offer-insterested-in mb-3">
                         <%- include('../../common.blocks/offer-interested-in/offer-interested-in.tpl'); %>
@@ -97,6 +97,16 @@
     </div>
     <div class="page-offer__offer-location-map pt-4">
         <%- include('../../sections/offer-location/offer-location.tpl'); %>
+    </div>
+    <div class="page-offer__complex bg-light pt-5 pb-3">
+        <div class="container">
+            <div class="page-offer__about-the-complex mb-4">
+                <%- include('../../sections/about-the-complex/about-the-complex.tpl'); %>
+            </div>
+            <div class="page-offer__complex-offers">
+                <%- include('../../sections/complex-offers/complex-offers.tpl'); %>
+            </div>
+        </div>
     </div>
     <div class="page-offer__similar-offers container py-5">
         <%- include('../../sections/similar-offers/similar-offers.tpl'); %>

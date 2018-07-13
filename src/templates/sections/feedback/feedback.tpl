@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <%- include('../../common.blocks/feedback-form/feedback-form.tpl'); %>
+                <%- include('../../forms/form-feedback/form-feedback.tpl'); %>
             </div>
         </div>
     </div>

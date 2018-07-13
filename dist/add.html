@@ -106,14 +106,23 @@
             </div>
             <div class="modal-body">
                 <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
-                <!-- Recovery form -->
-                <form method="post" action="/recovery/ajaxPasswordRecovery/" class="authorization-form">
-                    <div class="form-group">
-                        <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg w-100">Отправить</button>
-                </form>
-                <!-- Recovery form -->
+                <div class="password-recovery-modal__form-recovery">
+                    <!-- Form: form-recovery -->
+<form method="post"
+      action="/recovery/ajaxPasswordRecovery/"
+      class="form-recovery">
+    <div class="form-group">
+        <input type="email"
+               name="login"
+               class="form-control form-control-lg"
+               required
+               placeholder="Адрес эл. почты">
+    </div>
+    <button type="submit"
+            class="btn btn-primary btn-lg w-100">Отправить</button>
+</form>
+<!-- /Form: form-recovery -->
+                </div>
             </div>
             <div class="modal-footer justify-content-center pt-0">
                 <a href="#" class="nav-link" data-toggle="modal" data-target=".registration-modal" data-dismiss="modal">Регистрация</a>
@@ -137,8 +146,8 @@
         <div class="modal-content">
             <div class="modal-body">
                 <!-- Block: Authorization form -->
-<form class="authorization-form">
-    <h2 class="authorization-form__title">Вход</h2>
+<form class="form-authorization">
+    <h2 class="form-authorization__title">Вход</h2>
     <fieldset class="authorization-modal__fieldset">
         <legend class="authorization-modal__legend">через</legend>
         <!-- Social authorization -->
@@ -196,9 +205,9 @@
            aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
         <div class="modal-content">
             <div class="modal-body">
-                <!-- Registration form -->
-<form class="registration-form">
-    <h2 class="registration-form__title">Регистрация</h2>
+                <!-- Form: form-registration-->
+<form class="form-registration">
+    <h2 class="form-registration__title">Регистрация</h2>
     <fieldset class="registration-modal__fieldset">
         <legend class="registration-modal__legend">через</legend>
         <!-- Social authorization -->
@@ -224,7 +233,7 @@
     </fieldset>
     <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
 </form>
-<!-- Registration form -->
+<!-- Form: form-registration -->
             </div>
             <div class="modal-footer">
                 <a href="#" class="registration-modal__authorization-link"
@@ -250,51 +259,51 @@
         <div class="row">
     <div class="col-lg-7">
 
-        <ol class="renting-form__accordion">
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+        <ol class="form-renting__accordion">
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-basic-information"
+                        data-target=".form-renting__accordion-basic-information"
                         aria-expanded="false">1. Основная информация</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-basic-information collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-basic-information collapse"
                          data-parent=".accordion">
-                        <form action="#" class="renting-form__accordion-item-content">
+                        <form action="#" class="form-renting__accordion-item-content">
 
-                            <fieldset class="renting-form__fieldset">
-                                <ul class="renting-form__form-group-list row">
-                                    <li class="renting-form__form-group-list-item col">
+                            <fieldset class="form-renting__fieldset">
+                                <ul class="form-renting__form-group-list row">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Тип жилья</label>
+                                            <label class="form-renting__form-group-label">Тип жилья</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
                                                         <span class="icon icon__home"></span>
                                                     </div>
                                                 </div>
-                                                <label for="renting-form__type-of-accommodation__house"
+                                                <label for="form-renting__type-of-accommodation__house"
                                                        class="form-control">Дом</label>
                                                 <div class="input-group-append">
                                                     <div class="input-group-text">
                                                         <input type="radio"
                                                                value="2"
                                                                name="data[basic_information][type_of_accommodation]"
-                                                               id="renting-form__type-of-accommodation__house">
+                                                               id="form-renting__type-of-accommodation__house">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label d-none d-sm-block">&nbsp;</label>
+                                            <label class="form-renting__form-group-label d-none d-sm-block">&nbsp;</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
                                                         <span class="icon icon__building"></span>
                                                     </div>
                                                 </div>
-                                                <label for="renting-form__type-of-accommodation__apartament"
+                                                <label for="form-renting__type-of-accommodation__apartament"
                                                        class="form-control">Квартира</label>
                                                 <div class="input-group-append">
                                                     <div class="input-group-text">
@@ -302,15 +311,15 @@
                                                                checked
                                                                value="1"
                                                                name="data[basic_information][type_of_accommodation]"
-                                                               id="renting-form__type-of-accommodation__apartament">
+                                                               id="form-renting__type-of-accommodation__apartament">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label d-none d-sm-block">&nbsp;</label>
+                                            <label class="form-renting__form-group-label d-none d-sm-block">&nbsp;</label>
                                             <div class="input-group">
                                                 <select class="custom-select"
                                                         name="data[basic_information][type_of_accommodation]">
@@ -341,9 +350,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Кол-во комнат</label>
+                                            <label class="form-renting__form-group-label">Кол-во комнат</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -366,9 +375,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Вмещает гостей</label>
+                                            <label class="form-renting__form-group-label">Вмещает гостей</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -392,9 +401,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Мин. срок
+                                            <label class="form-renting__form-group-label">Мин. срок
                                                 аренды</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
@@ -461,25 +470,25 @@
                     </div>
                 </section>
             </li>
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-prices"
+                        data-target=".form-renting__accordion-prices"
                         aria-expanded="false">2. Цены</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-prices collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-prices collapse"
                          data-parent=".accordion">
-                        <form action="#" class="renting-form__accordion-item-content">
+                        <form action="#" class="form-renting__accordion-item-content">
                             <figure class="alert alert-warning" role="alert">
                                 Цена включает <strong>9-12%</strong> за услуги V.P.U.T.
                                 <a href="/commission/" target="_blank">Почему мы берем комиссию?</a>
                             </figure>
 
-                            <fieldset class="renting-form__fieldset">
-                                <ul class="renting-form__form-group-list row">
-                                    <li class="renting-form__form-group-list-item col">
+                            <fieldset class="form-renting__fieldset">
+                                <ul class="form-renting__form-group-list row">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Цена за ночь</label>
+                                            <label class="form-renting__form-group-label">Цена за ночь</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">€</div>
@@ -495,9 +504,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Вы получите</label>
+                                            <label class="form-renting__form-group-label">Вы получите</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">€</div>
@@ -513,37 +522,37 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
                                             <label class="d-none d-sm-block">&nbsp;</label>
                                             <div class="input-group">
                                                 <button type="submit"
                                                         class="btn btn-success w-100 collapsed"
                                                         data-toggle="collapse"
-                                                        data-target=".renting-form__prices-additional-collapse">Сохранить</button>
+                                                        data-target=".form-renting__prices-additional-collapse">Сохранить</button>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </fieldset>
 
-                            <div class="renting-form__prices-additional-collapse collapse">
+                            <div class="form-renting__prices-additional-collapse collapse">
                                 <figure class="alert alert-info" role="alert">
                                     <div class="mb-3">Основная цена указывается для всего года. Но также можете
                                         указать индивидуальную цену для любого периода.</div>
                                     <a href="#"
                                        class="btn btn-sm btn-outline-primary collapsed"
-                                       data-target=".renting-form__additional-prices"
+                                       data-target=".form-renting__additional-prices"
                                        data-toggle="collapse"
                                        role="button"
                                        aria-expanded="false">Добавить дополнительные цены!</a>
                                 </figure>
 
-                                <fieldset class="renting-form__additional-prices collapse">
-                                    <legend class="renting-form__legend">Дополнительные цены</legend>
+                                <fieldset class="form-renting__additional-prices collapse">
+                                    <legend class="form-renting__legend">Дополнительные цены</legend>
                                     <div class="row">
                                         <div class="form-group col">
-                                            <label class="renting-form__form-group-label">Начало периода</label>
+                                            <label class="form-renting__form-group-label">Начало периода</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -557,7 +566,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col">
-                                            <label class="renting-form__form-group-label">Конец периода</label>
+                                            <label class="form-renting__form-group-label">Конец периода</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -574,7 +583,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group col">
-                                            <label class="renting-form__form-group-label">Цена за ночь</label>
+                                            <label class="form-renting__form-group-label">Цена за ночь</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">€</div>
@@ -588,7 +597,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col">
-                                            <label class="renting-form__form-group-label">Вы получите</label>
+                                            <label class="form-renting__form-group-label">Вы получите</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">€</div>
@@ -613,11 +622,11 @@
                                     </div>
                                 </fieldset>
 
-                                <fieldset class="renting-form__fieldset">
-                                    <legend class="renting-form__legend">Скидки</legend>
+                                <fieldset class="form-renting__fieldset">
+                                    <legend class="form-renting__legend">Скидки</legend>
                                     <div class="row">
                                         <div class="form-group col">
-                                            <label class="renting-form__form-group-label">Понедельная
+                                            <label class="form-renting__form-group-label">Понедельная
                                                 <i class="icon icon__information ml-2"
                                                    data-toggle="tooltip"
                                                    data-placement="right"
@@ -665,7 +674,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col">
-                                            <label class="renting-form__form-group-label">Помесячная
+                                            <label class="form-renting__form-group-label">Помесячная
                                                 <i class="icon icon__information ml-2"
                                                    data-toggle="tooltip"
                                                    data-placement="right"
@@ -717,11 +726,11 @@
                                 </fieldset>
 
 
-                                <fieldset class="renting-form__fieldset">
-                                    <legend class="renting-form__legend">Дополнительные опции</legend>
+                                <fieldset class="form-renting__fieldset">
+                                    <legend class="form-renting__legend">Дополнительные опции</legend>
                                     <div class="row">
                                         <div class="form-group col">
-                                            <label class="renting-form__form-group-label">Плата за финальную уборку</label>
+                                            <label class="form-renting__form-group-label">Плата за финальную уборку</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">€</div>
@@ -735,7 +744,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col">
-                                            <label class="renting-form__form-group-label">Предоплата
+                                            <label class="form-renting__form-group-label">Предоплата
                                                 <i class="icon icon__information ml-2"
                                                    data-toggle="tooltip"
                                                    data-placement="right"
@@ -762,7 +771,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col">
-                                            <label class="renting-form__form-group-label">Невозвратный депозит
+                                            <label class="form-renting__form-group-label">Невозвратный депозит
                                                 <i class="icon icon__information ml-2"
                                                    data-toggle="tooltip"
                                                    data-placement="right"
@@ -801,21 +810,21 @@
                     </div>
                 </section>
             </li>
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-item_number_3"
+                        data-target=".form-renting__accordion-item_number_3"
                         aria-expanded="false"
                         aria-controls="collapseThree">3. Спальные места</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-item_number_3 collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_3 collapse"
                          aria-labelledby="headingThree"
                          data-parent=".accordion">
-                        <form action="#" class="renting-form__accordion-item-content">
-                            <ul class="renting-form__form-group-list row">
-                                <li class="renting-form__form-group-list-item col">
+                        <form action="#" class="form-renting__accordion-item-content">
+                            <ul class="form-renting__form-group-list row">
+                                <li class="form-renting__form-group-list-item col">
                                     <div class="form-group">
-                                        <label class="renting-form__form-group-label">Двуспальная
+                                        <label class="form-renting__form-group-label">Двуспальная
                                             раздвижная</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
@@ -838,9 +847,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="renting-form__form-group-list-item col">
+                                <li class="form-renting__form-group-list-item col">
                                     <div class="form-group">
-                                        <label class="renting-form__form-group-label">Кресло раскладное</label>
+                                        <label class="form-renting__form-group-label">Кресло раскладное</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text">
@@ -862,9 +871,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="renting-form__form-group-list-item col">
+                                <li class="form-renting__form-group-list-item col">
                                     <div class="form-group">
-                                        <label class="renting-form__form-group-label">Двуспальная
+                                        <label class="form-renting__form-group-label">Двуспальная
                                             сплошная</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
@@ -887,9 +896,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="renting-form__form-group-list-item col">
+                                <li class="form-renting__form-group-list-item col">
                                     <div class="form-group">
-                                        <label class="renting-form__form-group-label">Детская кроватка</label>
+                                        <label class="form-renting__form-group-label">Детская кроватка</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text">
@@ -911,9 +920,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="renting-form__form-group-list-item col">
+                                <li class="form-renting__form-group-list-item col">
                                     <div class="form-group">
-                                        <label class="renting-form__form-group-label">Диван раскладной</label>
+                                        <label class="form-renting__form-group-label">Диван раскладной</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text">
@@ -935,9 +944,9 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="renting-form__form-group-list-item col">
+                                <li class="form-renting__form-group-list-item col">
                                     <div class="form-group">
-                                        <label class="renting-form__form-group-label">Односпальная
+                                        <label class="form-renting__form-group-label">Односпальная
                                             кровать</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
@@ -969,23 +978,23 @@
                     </div>
                 </section>
             </li>
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-item_number_4"
+                        data-target=".form-renting__accordion-item_number_4"
                         aria-expanded="false"
                         aria-controls="collapseThree">4. Информация о жилье</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-item_number_4 collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_4 collapse"
                          aria-labelledby="headingThree"
                          data-parent=".accordion">
-                        <form action="#" class="renting-form__accordion-item-content">
-                            <fieldset class="renting-form__fieldset">
-                                <legend class="renting-form__legend">Правила заселения и выселения</legend>
-                                <ul class="renting-form__form-group-list row">
-                                    <li class="renting-form__form-group-list-item col">
+                        <form action="#" class="form-renting__accordion-item-content">
+                            <fieldset class="form-renting__fieldset">
+                                <legend class="form-renting__legend">Правила заселения и выселения</legend>
+                                <ul class="form-renting__form-group-list row">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Заселение</label>
+                                            <label class="form-renting__form-group-label">Заселение</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -1022,9 +1031,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Выселение</label>
+                                            <label class="form-renting__form-group-label">Выселение</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -1061,60 +1070,60 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">&nbsp;</label>
+                                            <label class="form-renting__form-group-label">&nbsp;</label>
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[information_about_accommodation][anytime]"
                                                        class="custom-control-input"
-                                                       id="renting-form__information-about-accommodation__anytime">
+                                                       id="form-renting__information-about-accommodation__anytime">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__information-about-accommodation__anytime">В любое время</label>
+                                                       for="form-renting__information-about-accommodation__anytime">В любое время</label>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </fieldset>
 
-                            <fieldset class="renting-form__fieldset">
-                                <legend class="renting-form__legend">Доплата за дополнительного гостя</legend>
-                                <ul class="renting-form__form-group-list row">
-                                    <li class="renting-form__form-group-list-item col">
+                            <fieldset class="form-renting__fieldset">
+                                <legend class="form-renting__legend">Доплата за дополнительного гостя</legend>
+                                <ul class="form-renting__form-group-list row">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <label for="renting-form__supplement-for-extra-guest__you-can-not"
+                                                <label for="form-renting__supplement-for-extra-guest__you-can-not"
                                                        class="form-control">Нельзя</label>
                                                 <div class="input-group-append">
                                                     <div class="input-group-text">
                                                         <input type="radio"
                                                                value="false"
                                                                name="data[information_about_accommodation][rules_for_settling_and_eviction][supplement_for_extra_guest]"
-                                                               id="renting-form__supplement-for-extra-guest__you-can-not">
+                                                               id="form-renting__supplement-for-extra-guest__you-can-not">
                                                     </div>
                                                 </div>
                                             </div>
                                             <small class="form-text text-muted">Больше указанного запрещено</small>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <label for="renting-form__supplement-for-extra-guest__is-free"
+                                                <label for="form-renting__supplement-for-extra-guest__is-free"
                                                        class="form-control">Бесплатно</label>
                                                 <div class="input-group-append">
                                                     <div class="input-group-text">
                                                         <input type="radio"
                                                                value="0"
                                                                name="data[information_about_accommodation][rules_for_settling_and_eviction][supplement_for_extra_guest]"
-                                                               id="renting-form__supplement-for-extra-guest__is-free">
+                                                               id="form-renting__supplement-for-extra-guest__is-free">
                                                     </div>
                                                 </div>
                                             </div>
                                             <small class="form-text text-muted">Более указанного можно</small>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
@@ -1136,10 +1145,10 @@
                                 </ul>
                             </fieldset>
 
-                            <fieldset class="renting-form__fieldset">
-                                <legend class="renting-form__legend">Правила отмены бронирования</legend>
-                                <ul class="renting-form__form-group-list row">
-                                    <li class="renting-form__form-group-list-item col">
+                            <fieldset class="form-renting__fieldset">
+                                <legend class="form-renting__legend">Правила отмены бронирования</legend>
+                                <ul class="form-renting__form-group-list row">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <select name="data[information_about_accommodation][cancellation_policy]"
@@ -1151,8 +1160,8 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col"></li>
-                                    <li class="renting-form__form-group-list-item col"></li>
+                                    <li class="form-renting__form-group-list-item col"></li>
+                                    <li class="form-renting__form-group-list-item col"></li>
                                 </ul>
                             </fieldset>
 
@@ -1170,20 +1179,20 @@
                     </div>
                 </section>
             </li>
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-item_number_5"
+                        data-target=".form-renting__accordion-item_number_5"
                         aria-expanded="false">5. Правила дома</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-item_number_5 collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_5 collapse"
                          data-parent=".accordion">
-                        <form action="#" class="renting-form__accordion-item-content">
-                            <fieldset class="renting-form__fieldset">
-                                <ul class="renting-form__form-group-list row">
-                                    <li class="renting-form__form-group-list-item col">
+                        <form action="#" class="form-renting__accordion-item-content">
+                            <fieldset class="form-renting__fieldset">
+                                <ul class="form-renting__form-group-list row">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">С детьми</label>
+                                            <label class="form-renting__form-group-label">С детьми</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -1198,9 +1207,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Курить</label>
+                                            <label class="form-renting__form-group-label">Курить</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -1215,9 +1224,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Питомцы</label>
+                                            <label class="form-renting__form-group-label">Питомцы</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -1232,9 +1241,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Условия для инвалидов</label>
+                                            <label class="form-renting__form-group-label">Условия для инвалидов</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -1250,7 +1259,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-8">
+                                    <li class="form-renting__form-group-list-item col-md-8">
                                         <div class="form-group mt-2">
                                                     <textarea name="data[rules_of_the_house][other_rules]"
                                                               placeholder="Другие правила"
@@ -1267,18 +1276,18 @@
                     </div>
                 </section>
             </li>
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-item_number_6"
+                        data-target=".form-renting__accordion-item_number_6"
                         aria-expanded="false"
                         aria-controls="collapseThree">6. Описание</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-item_number_6 collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_6 collapse"
                          aria-labelledby="headingThree"
                          data-parent=".accordion">
-                        <form class="renting-form__accordion-item-content">
-                            <fieldset class="renting-form__fieldset">
+                        <form class="form-renting__accordion-item-content">
+                            <fieldset class="form-renting__fieldset">
                                 <div class="form-group">
                                     <div class="input-group">
                                         <input type="text"
@@ -1300,15 +1309,15 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset class="renting-form__fieldset">
-                                <legend class="renting-form__legend">Дополнительная информация</legend>
+                            <fieldset class="form-renting__fieldset">
+                                <legend class="form-renting__legend">Дополнительная информация</legend>
 
                                 <div class="row">
                                     <div class="col-5">
-                                        <ul class="renting-form__form-group-list row">
-                                            <li class="renting-form__form-group-list-item col">
+                                        <ul class="form-renting__form-group-list row">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Балкон</label>
+                                                    <label class="form-renting__form-group-label">Балкон</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1324,9 +1333,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Вид с окон</label>
+                                                    <label class="form-renting__form-group-label">Вид с окон</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1340,9 +1349,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Этажность</label>
+                                                    <label class="form-renting__form-group-label">Этажность</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1388,9 +1397,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Лифт</label>
+                                                    <label class="form-renting__form-group-label">Лифт</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1406,9 +1415,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Ванные комнаты</label>
+                                                    <label class="form-renting__form-group-label">Ванные комнаты</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1432,9 +1441,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Уборка</label>
+                                                    <label class="form-renting__form-group-label">Уборка</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1452,9 +1461,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Заказать уборку</label>
+                                                    <label class="form-renting__form-group-label">Заказать уборку</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1473,9 +1482,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Смена белья</label>
+                                                    <label class="form-renting__form-group-label">Смена белья</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1493,9 +1502,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Заказать смену белья</label>
+                                                    <label class="form-renting__form-group-label">Заказать смену белья</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1514,9 +1523,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Гарантийный депозит</label>
+                                                    <label class="form-renting__form-group-label">Гарантийный депозит</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1535,9 +1544,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Завтрак</label>
+                                                    <label class="form-renting__form-group-label">Завтрак</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1553,9 +1562,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Интернет</label>
+                                                    <label class="form-renting__form-group-label">Интернет</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1572,9 +1581,9 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Парковка</label>
+                                                    <label class="form-renting__form-group-label">Парковка</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1595,10 +1604,10 @@
                                     </div>
                                     <div class="col-2"></div>
                                     <div class="col-5">
-                                        <ul class="renting-form__form-group-list row">
-                                            <li class="renting-form__form-group-list-item col">
+                                        <ul class="form-renting__form-group-list row">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Автобусная остановка</label>
+                                                    <label class="form-renting__form-group-label">Автобусная остановка</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1611,16 +1620,16 @@
                                                                name="data[additional_information][distance_to][bus_stop][value]"
                                                                class="form-control">
                                                         <select name="data[additional_information][distance_to][bus_stop][unit]"
-                                                                class="renting-form__size-select custom-select">
+                                                                class="form-renting__size-select custom-select">
                                                             <option value="1">м</option>
                                                             <option value="2">км</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Ресторан</label>
+                                                    <label class="form-renting__form-group-label">Ресторан</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1633,16 +1642,16 @@
                                                                name="data[additional_information][distance_to][restaurant][value]"
                                                                class="form-control">
                                                         <select name="data[additional_information][distance_to][restaurant][unit]"
-                                                                class="renting-form__size-select custom-select">
+                                                                class="form-renting__size-select custom-select">
                                                             <option value="1">м</option>
                                                             <option value="2">км</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Пляж</label>
+                                                    <label class="form-renting__form-group-label">Пляж</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1655,16 +1664,16 @@
                                                                name="data[additional_information][distance_to][beach][value]"
                                                                class="form-control">
                                                         <select name="data[additional_information][distance_to][beach][unit]"
-                                                                class="renting-form__size-select custom-select">
+                                                                class="form-renting__size-select custom-select">
                                                             <option value="1">м</option>
                                                             <option value="2">км</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Подъемник</label>
+                                                    <label class="form-renting__form-group-label">Подъемник</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1677,16 +1686,16 @@
                                                                name="data[additional_information][distance_to][lift][value]"
                                                                class="form-control">
                                                         <select name="data[additional_information][distance_to][lift][unit]"
-                                                                class="renting-form__size-select custom-select">
+                                                                class="form-renting__size-select custom-select">
                                                             <option value="1">м</option>
                                                             <option value="2">км</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Аэропорт</label>
+                                                    <label class="form-renting__form-group-label">Аэропорт</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1699,16 +1708,16 @@
                                                                name="data[additional_information][distance_to][airport][value]"
                                                                class="form-control">
                                                         <select name="data[additional_information][distance_to][airport][unit]"
-                                                                class="renting-form__size-select custom-select">
+                                                                class="form-renting__size-select custom-select">
                                                             <option value="1">м</option>
                                                             <option value="2">км</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Банкомат</label>
+                                                    <label class="form-renting__form-group-label">Банкомат</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1721,16 +1730,16 @@
                                                                name="data[additional_information][distance_to][ATM][value]"
                                                                class="form-control">
                                                         <select name="data[additional_information][distance_to][ATM][unit]"
-                                                                class="renting-form__size-select custom-select">
+                                                                class="form-renting__size-select custom-select">
                                                             <option value="1">м</option>
                                                             <option value="2">км</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Центр города</label>
+                                                    <label class="form-renting__form-group-label">Центр города</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
@@ -1742,16 +1751,16 @@
                                                                name="data[additional_information][distance_to][city_center][value]"
                                                                class="form-control">
                                                         <select name="data[additional_information][distance_to][city_center][unit]"
-                                                                class="renting-form__size-select custom-select">
+                                                                class="form-renting__size-select custom-select">
                                                             <option value="1">м</option>
                                                             <option value="2">км</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="renting-form__form-group-list-item col">
+                                            <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
-                                                    <label class="renting-form__form-group-label">Индивидуальный ID</label>
+                                                    <label class="form-renting__form-group-label">Индивидуальный ID</label>
                                                     <div class="input-group">
                                                         <input type="number"
                                                                value="0"
@@ -1773,506 +1782,506 @@
                     </div>
                 </section>
             </li>
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-item_number_7"
+                        data-target=".form-renting__accordion-item_number_7"
                         aria-expanded="false">7. Удобства</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-item_number_7 collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_7 collapse"
                          data-parent=".accordion">
-                        <form action="#" class="renting-form__accordion-item-content">
-                            <fieldset class="renting-form__fieldset">
-                                <ul class="renting-form__form-group-list row">
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                        <form action="#" class="form-renting__accordion-item-content">
+                            <fieldset class="form-renting__fieldset">
+                                <ul class="form-renting__form-group-list row">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_parking]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-parking">
+                                                       id="form-renting__facilities__has-parking">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-parking">Парковка</label>
+                                                       for="form-renting__facilities__has-parking">Парковка</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_pool]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-pool">
+                                                       id="form-renting__facilities__has-pool">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-pool">Бассейн</label>
+                                                       for="form-renting__facilities__has-pool">Бассейн</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_SPA]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-spa">
+                                                       id="form-renting__facilities__has-spa">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-spa">СПА</label>
+                                                       for="form-renting__facilities__has-spa">СПА</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_recipe]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-recipe">
+                                                       id="form-renting__facilities__has-recipe">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-recipe">Рецепция</label>
+                                                       for="form-renting__facilities__has-recipe">Рецепция</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_swimming_pool]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-swimming-pool">
+                                                       id="form-renting__facilities__has-swimming-pool">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-swimming-pool">Внутренний бассейн</label>
+                                                       for="form-renting__facilities__has-swimming-pool">Внутренний бассейн</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_medical_office]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-medical-office">
+                                                       id="form-renting__facilities__has-medical-office">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-medical-office">Медицинский кабинет</label>
+                                                       for="form-renting__facilities__has-medical-office">Медицинский кабинет</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_shower_cabin]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-shower-cabin">
+                                                       id="form-renting__facilities__has-shower-cabin">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-shower-cabin">Душевая кабина</label>
+                                                       for="form-renting__facilities__has-shower-cabin">Душевая кабина</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_security]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-security">
+                                                       id="form-renting__facilities__has-security">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-security">Охрана</label>
+                                                       for="form-renting__facilities__has-security">Охрана</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_jacuzzi]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-jacuzzi">
+                                                       id="form-renting__facilities__has-jacuzzi">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-jacuzzi">Джакузи</label>
+                                                       for="form-renting__facilities__has-jacuzzi">Джакузи</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_barbershop]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-barbershop">
+                                                       id="form-renting__facilities__has-barbershop">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-barbershop">Парикмахерская</label>
+                                                       for="form-renting__facilities__has-barbershop">Парикмахерская</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_bath]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-bath">
+                                                       id="form-renting__facilities__has-bath">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-bath">Ванна</label>
+                                                       for="form-renting__facilities__has-bath">Ванна</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_playground]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-playground">
+                                                       id="form-renting__facilities__has-playground">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-playground">Детская площадка</label>
+                                                       for="form-renting__facilities__has-playground">Детская площадка</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_sauna]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-sauna">
+                                                       id="form-renting__facilities__has-sauna">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-sauna">Сауна</label>
+                                                       for="form-renting__facilities__has-sauna">Сауна</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_pool_bar]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-pool-bar">
+                                                       id="form-renting__facilities__has-pool-bar">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-pool-bar">Пул-бар</label>
+                                                       for="form-renting__facilities__has-pool-bar">Пул-бар</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_laundry]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-laundry">
+                                                       id="form-renting__facilities__has-laundry">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-laundry">Прачечная</label>
+                                                       for="form-renting__facilities__has-laundry">Прачечная</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_garden]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-garden">
+                                                       id="form-renting__facilities__has-garden">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-garden">Сад</label>
+                                                       for="form-renting__facilities__has-garden">Сад</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_fitness]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-fitness">
+                                                       id="form-renting__facilities__has-fitness">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-fitness">Фитнес</label>
+                                                       for="form-renting__facilities__has-fitness">Фитнес</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_lobby_bar]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-lobby-bar">
+                                                       id="form-renting__facilities__has-lobby-bar">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-lobby-bar">Лобби-бар</label>
+                                                       for="form-renting__facilities__has-lobby-bar">Лобби-бар</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_barbecue]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-barbecue">
+                                                       id="form-renting__facilities__has-barbecue">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-barbecue">Барбекю</label>
+                                                       for="form-renting__facilities__has-barbecue">Барбекю</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_restaurant]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-restaurant">
+                                                       id="form-renting__facilities__has-restaurant">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-restaurant">Ресторан</label>
+                                                       for="form-renting__facilities__has-restaurant">Ресторан</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_cable_TV]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-cable-tv">
+                                                       id="form-renting__facilities__has-cable-tv">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-cable-tv">Кабельное ТВ</label>
+                                                       for="form-renting__facilities__has-cable-tv">Кабельное ТВ</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_air_conditioner]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-air-conditioner">
+                                                       id="form-renting__facilities__has-air-conditioner">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-air-conditioner">Кондиционер</label>
+                                                       for="form-renting__facilities__has-air-conditioner">Кондиционер</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_gas_stove]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-gas-stove">
+                                                       id="form-renting__facilities__has-gas-stove">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-gas-stove">Плита</label>
+                                                       for="form-renting__facilities__has-gas-stove">Плита</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_refrigerator]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-refrigerator">
+                                                       id="form-renting__facilities__has-refrigerator">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-refrigerator">Холодильник</label>
+                                                       for="form-renting__facilities__has-refrigerator">Холодильник</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_TV]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-tv">
+                                                       id="form-renting__facilities__has-tv">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-tv">Телевизор</label>
+                                                       for="form-renting__facilities__has-tv">Телевизор</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_fireplace]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-fireplace">
+                                                       id="form-renting__facilities__has-fireplace">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-fireplace">Камин</label>
+                                                       for="form-renting__facilities__has-fireplace">Камин</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_microwave]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-microwave">
+                                                       id="form-renting__facilities__has-microwave">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-microwave">Микроволновая печь</label>
+                                                       for="form-renting__facilities__has-microwave">Микроволновая печь</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_washer]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-washer">
+                                                       id="form-renting__facilities__has-washer">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-washer">Стиральная машина</label>
+                                                       for="form-renting__facilities__has-washer">Стиральная машина</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_safe]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-safe">
+                                                       id="form-renting__facilities__has-safe">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-safe">Сейф</label>
+                                                       for="form-renting__facilities__has-safe">Сейф</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_kettle]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-kettle">
+                                                       id="form-renting__facilities__has-kettle">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-kettle">Чайник</label>
+                                                       for="form-renting__facilities__has-kettle">Чайник</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_dryer]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-dryer">
+                                                       id="form-renting__facilities__has-dryer">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-dryer">Сушилка</label>
+                                                       for="form-renting__facilities__has-dryer">Сушилка</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_game_console]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-game-console">
+                                                       id="form-renting__facilities__has-game-console">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-game-console">Игровая приставка</label>
+                                                       for="form-renting__facilities__has-game-console">Игровая приставка</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_juicer]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-juicer">
+                                                       id="form-renting__facilities__has-juicer">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-juicer">Соковыжималка</label>
+                                                       for="form-renting__facilities__has-juicer">Соковыжималка</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_dishwasher]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-dishwasher">
+                                                       id="form-renting__facilities__has-dishwasher">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-dishwasher">Посудомоечная машина</label>
+                                                       for="form-renting__facilities__has-dishwasher">Посудомоечная машина</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_iron]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-iron">
+                                                       id="form-renting__facilities__has-iron">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-iron">Утюг</label>
+                                                       for="form-renting__facilities__has-iron">Утюг</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_toaster]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-toaster">
+                                                       id="form-renting__facilities__has-toaster">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-toaster">Тостер</label>
+                                                       for="form-renting__facilities__has-toaster">Тостер</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_oven]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-oven">
+                                                       id="form-renting__facilities__has-oven">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-oven">Духовка</label>
+                                                       for="form-renting__facilities__has-oven">Духовка</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_ironing_board]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-ironing-board">
+                                                       id="form-renting__facilities__has-ironing-board">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-ironing-board">Гладильная доска</label>
+                                                       for="form-renting__facilities__has-ironing-board">Гладильная доска</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_blender]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-blender">
+                                                       id="form-renting__facilities__has-blender">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-blender">Блендер</label>
+                                                       for="form-renting__facilities__has-blender">Блендер</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_coffee_maker]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-coffee-maker">
+                                                       id="form-renting__facilities__has-coffee-maker">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-coffee-maker">Кофеварка</label>
+                                                       for="form-renting__facilities__has-coffee-maker">Кофеварка</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-6">
+                                    <li class="form-renting__form-group-list-item col-md-6">
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
                                                 <input type="checkbox"
                                                        name="data[facilities][has_hairdryer]"
                                                        class="custom-control-input"
-                                                       id="renting-form__facilities__has-hairdryer">
+                                                       id="form-renting__facilities__has-hairdryer">
                                                 <label class="custom-control-label"
-                                                       for="renting-form__facilities__has-hairdryer">Фен</label>
+                                                       for="form-renting__facilities__has-hairdryer">Фен</label>
                                             </div>
                                         </div>
                                     </li>
@@ -2286,22 +2295,22 @@
                     </div>
                 </section>
             </li>
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-item_number_8"
+                        data-target=".form-renting__accordion-item_number_8"
                         aria-expanded="false"
                         aria-controls="collapseThree">8. Адрес</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-item_number_8 collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_8 collapse"
                          aria-labelledby="headingThree"
                          data-parent=".accordion">
-                        <form action="#" class="renting-form__accordion-item-content">
-                            <fieldset class="renting-form__fieldset">
-                                <ul class="renting-form__form-group-list row">
-                                    <li class="renting-form__form-group-list-item col-md-4">
+                        <form action="#" class="form-renting__accordion-item-content">
+                            <fieldset class="form-renting__fieldset">
+                                <ul class="form-renting__form-group-list row">
+                                    <li class="form-renting__form-group-list-item col-md-4">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Город</label>
+                                            <label class="form-renting__form-group-label">Город</label>
                                             <div class="input-group">
                                                 <input type="text"
                                                        name="data[address][city]"
@@ -2311,9 +2320,9 @@
                                             <small class="form-text text-muted">&nbsp;</small>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-4">
+                                    <li class="form-renting__form-group-list-item col-md-4">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Улица</label>
+                                            <label class="form-renting__form-group-label">Улица</label>
                                             <div class="input-group">
                                                 <input type="text"
                                                        name="data[address][street]"
@@ -2323,9 +2332,9 @@
                                             <small class="form-text text-muted">или название комплекса</small>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col-md-3">
+                                    <li class="form-renting__form-group-list-item col-md-3">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Номер дома</label>
+                                            <label class="form-renting__form-group-label">Номер дома</label>
                                             <div class="input-group">
                                                 <input type="text"
                                                        name="data[address][house_number]"
@@ -2349,16 +2358,16 @@
                     </div>
                 </section>
             </li>
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-item_number_9"
+                        data-target=".form-renting__accordion-item_number_9"
                         aria-expanded="false">9. Фотографии</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-item_number_9 collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_9 collapse"
                          data-parent=".accordion">
-                        <div class="renting-form__accordion-item-content">
-                            <fieldset class="renting-form__fieldset">
+                        <div class="form-renting__accordion-item-content">
+                            <fieldset class="form-renting__fieldset">
                                 <input type="file"
                                        class="filepond"
                                        name="data[photos]"
@@ -2370,23 +2379,23 @@
                     </div>
                 </section>
             </li>
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-item_number_10"
+                        data-target=".form-renting__accordion-item_number_10"
                         aria-expanded="false"
                         aria-controls="collapseThree">10. Календарь</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-item_number_10 collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_10 collapse"
                          aria-labelledby="headingThree"
                          data-parent=".accordion">
-                        <div class="renting-form__accordion-item-content">
-                            <fieldset class="renting-form__fieldset">
-                                <legend class="renting-form__legend">Когда ваше жилье будет свободно?</legend>
-                                <ul class="renting-form__form-group-list row">
-                                    <li class="renting-form__form-group-list-item col">
+                        <div class="form-renting__accordion-item-content">
+                            <fieldset class="form-renting__fieldset">
+                                <legend class="form-renting__legend">Когда ваше жилье будет свободно?</legend>
+                                <ul class="form-renting__form-group-list row">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Начало периoда</label>
+                                            <label class="form-renting__form-group-label">Начало периoда</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -2399,9 +2408,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
-                                            <label class="renting-form__form-group-label">Конец периoда</label>
+                                            <label class="form-renting__form-group-label">Конец периoда</label>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text">
@@ -2414,7 +2423,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group">
                                             <label>&nbsp;</label>
                                             <div class="input-group">
@@ -2422,7 +2431,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="renting-form__form-group-list-item col">
+                                    <li class="form-renting__form-group-list-item col">
                                         <div class="form-group mb-0">
                                             <div class="input-group">
                                                         <textarea name="data[calendar][note]"
@@ -2438,25 +2447,25 @@
                     </div>
                 </section>
             </li>
-            <li class="renting-form__accordion-item">
-                <section class="renting-form__accordion-section">
-                    <h3 class="renting-form__accordion-section-title collapsed"
+            <li class="form-renting__accordion-item">
+                <section class="form-renting__accordion-section">
+                    <h3 class="form-renting__accordion-section-title collapsed"
                         data-toggle="collapse"
-                        data-target=".renting-form__accordion-item_number_11"
+                        data-target=".form-renting__accordion-item_number_11"
                         aria-expanded="false"
                         aria-controls="collapseThree">11. Информация о себе</h3>
-                    <div class="renting-form__accordion-item-collapse renting-form__accordion-item_number_11 collapse"
+                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_11 collapse"
                          aria-labelledby="headingThree"
                          data-parent=".accordion">
-                        <div class="renting-form__accordion-item-content">
+                        <div class="form-renting__accordion-item-content">
                             <figure class="alert alert-warning">
                                 <div class="lead">ВЫ ДОЛЖНЫ ЗАПОЛНИТЬ ВАШ ПРОФИЛЬ ДЛЯ АКТИВАЦИИ ОБЪЕКТА</div>
                                 <div>Подтвержденные данные профиля вызывают доверие у ваших гостей!</div>
                             </figure>
 
-                            <fieldset class="renting-form__fieldset">
+                            <fieldset class="form-renting__fieldset">
                                 <header class="mb-3">
-                                    <legend class="renting-form__legend">
+                                    <legend class="form-renting__legend">
                                         <div class="d-flex align-items-center">ЗАПОЛНИТЕ ОДНИМ КЛИКОМ <span
                                                     class="text-secondary ml-auto">1 секунда</span></div>
                                     </legend>
@@ -2481,21 +2490,21 @@
 
                             <hr>
 
-                            <fieldset class="renting-form__fieldset">
-                                <legend class="renting-form__legend">
+                            <fieldset class="form-renting__fieldset">
+                                <legend class="form-renting__legend">
                                     <div class="d-flex align-items-center">
                                         ИЛИ <a href="#"
                                                data-toggle="collapse"
-                                               data-target=".renting-form__profile-collapse"
+                                               data-target=".form-renting__profile-collapse"
                                                class="btn btn-outline-primary btn-sm ml-3">ЗАПОЛНИТЕ ВРУЧНУЮ</a>
                                         <span class="text-secondary ml-auto">1 минута</span>
                                     </div>
                                 </legend>
-                                <div class="renting-form__profile-collapse collapse">
-                                    <ul class="renting-form__form-group-list row">
-                                        <li class="renting-form__form-group-list-item col-md-6">
+                                <div class="form-renting__profile-collapse collapse">
+                                    <ul class="form-renting__form-group-list row">
+                                        <li class="form-renting__form-group-list-item col-md-6">
                                             <div class="form-group">
-                                                <label class="renting-form__form-group-label">Имя <b class="text-danger">*</b></label>
+                                                <label class="form-renting__form-group-label">Имя <b class="text-danger">*</b></label>
                                                 <div class="input-group">
                                                     <input type="text"
                                                            placeholder="Иван"
@@ -2503,9 +2512,9 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="renting-form__form-group-list-item col-md-6">
+                                        <li class="form-renting__form-group-list-item col-md-6">
                                             <div class="form-group">
-                                                <label class="renting-form__form-group-label">Фамилия <b class="text-danger">*</b></label>
+                                                <label class="form-renting__form-group-label">Фамилия <b class="text-danger">*</b></label>
                                                 <div class="input-group">
                                                     <input type="text"
                                                            placeholder="Иванов"
@@ -2513,9 +2522,9 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="renting-form__form-group-list-item col-md-6">
+                                        <li class="form-renting__form-group-list-item col-md-6">
                                             <div class="form-group">
-                                                <label class="renting-form__form-group-label">Номер телефона *</label>
+                                                <label class="form-renting__form-group-label">Номер телефона *</label>
                                                 <div class="input-group">
                                                     <div class="input-group-prepend">
                                                         <div class="input-group-text">
@@ -2527,9 +2536,9 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="renting-form__form-group-list-item col-md-6">
+                                        <li class="form-renting__form-group-list-item col-md-6">
                                             <div class="form-group">
-                                                <label class="renting-form__form-group-label">Дата рождения</label>
+                                                <label class="form-renting__form-group-label">Дата рождения</label>
                                                 <div class="input-group">
                                                     <div class="input-group-prepend">
                                                         <div class="input-group-text">
@@ -2541,9 +2550,9 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="renting-form__form-group-list-item col-md-12">
+                                        <li class="form-renting__form-group-list-item col-md-12">
                                             <div class="form-group">
-                                                <label class="renting-form__form-group-label">Фотография профиля</label>
+                                                <label class="form-renting__form-group-label">Фотография профиля</label>
                                                 <input type="file"
                                                        class="filepond"
                                                        name="filepond"
@@ -2562,7 +2571,7 @@
         </ol>
 
         <div class="text-center">
-            <div class="renting-form__text-of-agreement mb-4">Размещая объявление на нашем сайте, вы соглашаетесь с <a href="/booking_cancelation_rules/" target="_blank">правилами отмены бронирования</a>, а также подтверждаете, что принимаете условия <a href="/owner_agreement/" target="_blank">пользовательского соглашения с Арендодателем</a></div>
+            <div class="form-renting__text-of-agreement mb-4">Размещая объявление на нашем сайте, вы соглашаетесь с <a href="/booking_cancelation_rules/" target="_blank">правилами отмены бронирования</a>, а также подтверждаете, что принимаете условия <a href="/owner_agreement/" target="_blank">пользовательского соглашения с Арендодателем</a></div>
             <a href="#" class="btn btn-primary btn-lg">Разместить объявление</a>
         </div>
     </div>
@@ -2579,8 +2588,10 @@
             <div class="row align-items-center">
                 <div class="col mb-2 mb-md-0">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
                 <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
-                    <!-- Subscribe form -->
-<form action="/realties/subscribeClient/" data-post="&page=/" class="subscribe-form form-row w-100">
+                    <!-- Form: form-subscribe -->
+<form action="/realties/subscribeClient/" 
+      data-post="&page=/" 
+      class="form-subscribe form-row w-100">
     <div class="form-group col-7 mb-0">
         <label for="subscribtionEmail" class="sr-only">Password</label>
         <input type="email" class="form-control" id="subscribtionEmail" required placeholder="Ваш e-mail">
@@ -2589,7 +2600,7 @@
         <button type="submit" class="btn btn-primary w-100">Подписаться</button>
     </div>
 </form>
-<!-- Subscribe form -->
+<!-- /Form: form-subscribe -->
                 </div>
             </div>
         </div>

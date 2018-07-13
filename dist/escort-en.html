@@ -107,14 +107,23 @@
             </div>
             <div class="modal-body">
                 <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
-                <!-- Recovery form -->
-                <form method="post" action="/recovery/ajaxPasswordRecovery/" class="authorization-form">
-                    <div class="form-group">
-                        <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg w-100">Отправить</button>
-                </form>
-                <!-- Recovery form -->
+                <div class="password-recovery-modal__form-recovery">
+                    <!-- Form: form-recovery -->
+<form method="post"
+      action="/recovery/ajaxPasswordRecovery/"
+      class="form-recovery">
+    <div class="form-group">
+        <input type="email"
+               name="login"
+               class="form-control form-control-lg"
+               required
+               placeholder="Адрес эл. почты">
+    </div>
+    <button type="submit"
+            class="btn btn-primary btn-lg w-100">Отправить</button>
+</form>
+<!-- /Form: form-recovery -->
+                </div>
             </div>
             <div class="modal-footer justify-content-center pt-0">
                 <a href="#" class="nav-link" data-toggle="modal" data-target=".registration-modal" data-dismiss="modal">Регистрация</a>
@@ -138,8 +147,8 @@
         <div class="modal-content">
             <div class="modal-body">
                 <!-- Block: Authorization form -->
-<form class="authorization-form">
-    <h2 class="authorization-form__title">Вход</h2>
+<form class="form-authorization">
+    <h2 class="form-authorization__title">Вход</h2>
     <fieldset class="authorization-modal__fieldset">
         <legend class="authorization-modal__legend">через</legend>
         <!-- Social authorization -->
@@ -197,9 +206,9 @@
            aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
         <div class="modal-content">
             <div class="modal-body">
-                <!-- Registration form -->
-<form class="registration-form">
-    <h2 class="registration-form__title">Регистрация</h2>
+                <!-- Form: form-registration-->
+<form class="form-registration">
+    <h2 class="form-registration__title">Регистрация</h2>
     <fieldset class="registration-modal__fieldset">
         <legend class="registration-modal__legend">через</legend>
         <!-- Social authorization -->
@@ -225,7 +234,7 @@
     </fieldset>
     <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
 </form>
-<!-- Registration form -->
+<!-- Form: form-registration -->
             </div>
             <div class="modal-footer">
                 <a href="#" class="registration-modal__authorization-link"
@@ -256,8 +265,8 @@
         <div class="container mw-1024px">
             <nav class="nav nav-pills nav-fill">
                 <a class="nav-item nav-link" href="/cleaning/">Cleaning services</a>
-                <a class="nav-item nav-link" href="/escort/">Guests escort</a>
-                <a class="nav-item nav-link active" href="#">Transfer</a>
+                <a class="nav-item nav-link active" href="#">Guests escort</a>
+                <a class="nav-item nav-link" href="/transfer/">Transfer</a>
                 <a class="nav-item nav-link" href="/rentacar/">Car rental</a>
                 <a class="nav-item nav-link" href="/management/">Property management</a>
             </nav>
@@ -267,7 +276,7 @@
         <div class="row">
             <div class="col-md-6 mb-4">
                 <section class="card h-100">
-                    <h2 class="h3 card-header bg-light text-black-50"><i class="icon icon__time-in icon_size_32 mr-3"></i>Check-in for — <b
+                    <h2 class="lead card-header bg-light text-black-50"><i class="icon icon__time-in mr-3"></i>Check-in for — <b
                                 class="text-secondary">€15</b></h2>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex align-items-center d-flex"><i
@@ -282,7 +291,7 @@
             </div>
             <div class="col-md-6 mb-4">
                 <section class="card h-100">
-                    <h2 class="h3 card-header bg-light text-black-50"><i class="icon icon__time-out icon_size_32 mr-3"></i>Check-out for — <b
+                    <h2 class="lead card-header bg-light text-black-50"><i class="icon icon__time-out mr-3"></i>Check-out for — <b
                                 class="text-secondary">€15</b></h2>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex align-items-center"><i class="icon icon__check mr-3"></i>Inventorying valuables</li>
@@ -297,35 +306,35 @@
     <section class="container">
         <h2 class="mb-4 text-center">Pay Escort</h2>
         <ul class="row text-center mb-4">
-            <li class="col-lg-3 col-6">
+            <li class="col-lg-3 col-sm-6 ">
                 <figure class="figure">
                     <img src="templates/articles/article-escort/article-escort__card.svg" alt="" class="figure-img">
                     <figcaption class="figure-caption">
-                        <h3 class="h5 text-dark">By bank card</h3>
+                        <h3 class="lead text-dark">By bank card</h3>
                     </figcaption>
                 </figure>
             </li>
-            <li class="col-lg-3 col-6">
+            <li class="col-lg-3 col-sm-6 ">
                 <figure class="figure">
                     <img src="templates/articles/article-escort/article-escort__balance.svg" alt="" class="figure-img">
                     <figcaption class="figure-caption">
-                        <h3 class="h5 text-dark">From VPUT balance</h3>
+                        <h3 class="lead text-dark">From VPUT balance</h3>
                     </figcaption>
                 </figure>
             </li>
-            <li class="col-lg-3 col-6">
+            <li class="col-lg-3 col-sm-6 ">
                 <figure class="figure">
                     <img src="templates/articles/article-escort/article-escort__cash.svg" alt="" class="figure-img">
                     <figcaption class="figure-caption">
-                        <h3 class="h5 text-dark">in our office in <br class="d-none d-sm-block">Sunny Beach</h3>
+                        <h3 class="lead text-dark">in our office in <br class="d-none d-md-block">Sunny Beach</h3>
                     </figcaption>
                 </figure>
             </li>
-            <li class="col-lg-3 col-6">
+            <li class="col-lg-3 col-sm-6 ">
                 <figure class="figure">
                     <img src="templates/articles/article-escort/article-escort__bank.svg" alt="" class="figure-img">
                     <figcaption class="figure-caption">
-                        <h3 class="h5 text-dark">By bank transfer</h3>
+                        <h3 class="lead text-dark">By bank transfer</h3>
                     </figcaption>
                 </figure>
             </li>
@@ -342,15 +351,15 @@
 <section class="our-services">
     <h2 class="mb-4 text-center">Other services</h2>
     <nav class="our-services__nav row">
-        <a class="our-services__nav-item our-services_image_cleaning col-lg-3 col-sm-6"
+        <a class="our-services__nav-item our-services_image_cleaning col-lg col-sm-6"
            href="/cleaning/">Cleaning services</a>
-        <a class="our-services__nav-item our-services_image_escort col-lg-3 col-sm-6"
+        <a class="our-services__nav-item our-services_image_escort col-lg col-sm-6"
            href="/escort/">Guests escort</a>
-        <a class="our-services__nav-item our-services_image_transfer col-lg-3 col-sm-6"
+        <a class="our-services__nav-item our-services_image_transfer col-lg col-sm-6"
            href="/transfer/">Transfer</a>
-        <a class="our-services__nav-item our-services_image_car-rental col-lg-3 col-sm-6"
+        <a class="our-services__nav-item our-services_image_car-rental col-lg col-sm-6"
            href="/rentacar/">Car rental</a>
-        <a class="our-services__nav-item our-services_image_management col-lg-3 col-sm-6"
+        <a class="our-services__nav-item our-services_image_management col-lg col-sm-6"
            href="/management/">Property management</a>
     </nav>
 </section>
@@ -366,8 +375,10 @@
             <div class="row align-items-center">
                 <div class="col mb-2 mb-md-0">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
                 <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
-                    <!-- Subscribe form -->
-<form action="/realties/subscribeClient/" data-post="&page=/" class="subscribe-form form-row w-100">
+                    <!-- Form: form-subscribe -->
+<form action="/realties/subscribeClient/" 
+      data-post="&page=/" 
+      class="form-subscribe form-row w-100">
     <div class="form-group col-7 mb-0">
         <label for="subscribtionEmail" class="sr-only">Password</label>
         <input type="email" class="form-control" id="subscribtionEmail" required placeholder="Ваш e-mail">
@@ -376,7 +387,7 @@
         <button type="submit" class="btn btn-primary w-100">Подписаться</button>
     </div>
 </form>
-<!-- Subscribe form -->
+<!-- /Form: form-subscribe -->
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@
         </div>
     </header>
     <div class="container py-5">
-        <%- include('../../sections/renting-form/renting-form.tpl'); %>
+        <%- include('../../forms/form-renting/form-renting.tpl'); %>
     </div>
 </main>
 <!-- /Page: page-add -->

@@ -47,6 +47,10 @@
       @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
     }
   }
+
+  &.btn-filled:not(:disabled):not(.disabled):not(:hover):not(:focus):not(:active) {
+    background-color: $white;
+  }
 }
 
 // Future-proof disabling of clicks on `<a>` elements

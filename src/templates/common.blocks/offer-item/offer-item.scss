@@ -46,13 +46,13 @@
   height: 32px;
   top: 12px;
   left: 12px;
-  opacity: .5;
+  opacity: .36;
   z-index: 2;
   outline: none;
   cursor: pointer;
   transition: $transition-base;
   &:hover {
-    opacity: .6;
+    opacity: .72;
   }
   &.active {
     opacity: 1;

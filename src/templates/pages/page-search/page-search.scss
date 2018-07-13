@@ -1,21 +1,21 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
-.page-search__offers-search-form {
+.page-search__form-search-offers {
   .form-group {
     flex: 1 20%;
   }
-  .offers-search-form__search-by-complexes-col,
-  .offers-search-form__cityId-col {
+  .form-search-offers__search-by-complexes-col,
+  .form-search-offers__cityId-col {
     flex: 1 40%;
   }
 }
 
-.offers-search-form__show-booked {
+.form-search-offers__show-booked {
   margin-bottom: .5rem;
 }
 
 @include media-breakpoint-up(xl) {
-  .offers-search-form__search-by-complexes-button {
+  .form-search-offers__search-by-complexes-button {
     max-width: 250px;
   }
 }
@@ -46,8 +46,8 @@
     padding: 0;
     margin: 0;
   }
-  .page-search__offers-search-form {
-    .offers-search-form__show-booked {
+  .page-search__form-search-offers {
+    .form-search-offers__show-booked {
       position: absolute;
       bottom: -36px;
       background-color: $white;

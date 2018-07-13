@@ -8,19 +8,19 @@
   font-size: 30px;
   font-weight: 500;
 }
-.who-we-are__offers-search-form {
+.who-we-are__form-search-offers {
   padding: .5rem 1rem;
   background-color: rgba(255,255,255,.3);
   border-radius: $card-border-radius;
 }
-.who-we-are__offers-search-form,
+.who-we-are__form-search-offers,
 .who-we-are__popular-cities {
   max-width: 1024px;
   margin: auto;
 }
 
-.who-we-are__offers-search-form {
-  .offers-search-form__cities-dropdown {
+.who-we-are__form-search-offers {
+  .form-search-offers__cities-dropdown {
     margin-left: -1rem;
     margin-right: -1rem;
   }

@@ -41,6 +41,7 @@ const config = {
                 paths.src + '/**/library.blocks/**/*.scss',
                 paths.src + '/**/common.blocks/**/*.scss',
                 paths.src + '/**/sections/**/*.scss',
+                paths.src + '/**/forms/**/*.scss',
                 paths.src + '/**/pages/**/*.scss',
             ],
             css: []
@@ -50,6 +51,7 @@ const config = {
                 paths.src + '/**/library.blocks/**/*.scss',
                 paths.src + '/**/common.blocks/**/*.scss',
                 paths.src + '/**/sections/**/*.scss',
+                paths.src + '/**/forms/**/*.scss',
                 paths.src + '/**/pages/**/*.scss',
             ],
             css: [
@@ -67,13 +69,21 @@ const config = {
         bundleFileName: 'bundle.min.js',
         watchFiles: {
             ts: [
-                paths.src + '/**/*.ts'
+                paths.src + '/**/library.blocks/**/*.ts',
+                paths.src + '/**/common.blocks/**/*.ts',
+                paths.src + '/**/sections/**/*.ts',
+                paths.src + '/**/forms/**/*.ts',
+                paths.src + '/**/pages/**/*.ts',
             ],
             js: []
         },
         buildFiles: {
             ts: [
-                paths.src + '/**/*.ts'
+                paths.src + '/**/library.blocks/**/*.ts',
+                paths.src + '/**/common.blocks/**/*.ts',
+                paths.src + '/**/sections/**/*.ts',
+                paths.src + '/**/forms/**/*.ts',
+                paths.src + '/**/pages/**/*.ts',
             ],
             js: [
                 'node_modules/jquery/dist/jquery.min.js',

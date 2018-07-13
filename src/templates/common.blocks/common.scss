@@ -7,6 +7,13 @@
 .mw-1024px {
   max-width: 1024px;
 }
+.block-image {
+  min-height: 240px;
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
 
 ul {
   &.d-inline-flex,
@@ -16,4 +23,10 @@ ul {
     padding-left: 0;
     margin-bottom: 0;
   }
+}
+
+.h2-bold {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }

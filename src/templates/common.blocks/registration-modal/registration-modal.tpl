@@ -11,7 +11,7 @@
            aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
         <div class="modal-content">
             <div class="modal-body">
-                <%- include('../../common.blocks/registration-form/registration-form.tpl'); %>
+                <%- include('../../forms/form-registration/form-registration.tpl'); %>
             </div>
             <div class="modal-footer">
                 <a href="#" class="registration-modal__authorization-link"

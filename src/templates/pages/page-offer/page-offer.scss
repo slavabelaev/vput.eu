@@ -6,6 +6,13 @@
     font-weight: 600;
   }
 }
+
+.page-offer__complex h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .page-offer__place {
   color: $text-muted;
 }
@@ -76,11 +83,11 @@
 }
 @include media-breakpoint-down(xs) {
   .page-offer {
-    .offer-price-calculator {
+    .form-booking {
       padding: 0;
       background-color: initial;
     }
-    .offer-price-calculator__table {
+    .form-booking__table {
       background-color: $light;
     }
   }

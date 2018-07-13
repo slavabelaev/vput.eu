@@ -107,14 +107,23 @@
             </div>
             <div class="modal-body">
                 <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
-                <!-- Recovery form -->
-                <form method="post" action="/recovery/ajaxPasswordRecovery/" class="authorization-form">
-                    <div class="form-group">
-                        <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg w-100">Отправить</button>
-                </form>
-                <!-- Recovery form -->
+                <div class="password-recovery-modal__form-recovery">
+                    <!-- Form: form-recovery -->
+<form method="post"
+      action="/recovery/ajaxPasswordRecovery/"
+      class="form-recovery">
+    <div class="form-group">
+        <input type="email"
+               name="login"
+               class="form-control form-control-lg"
+               required
+               placeholder="Адрес эл. почты">
+    </div>
+    <button type="submit"
+            class="btn btn-primary btn-lg w-100">Отправить</button>
+</form>
+<!-- /Form: form-recovery -->
+                </div>
             </div>
             <div class="modal-footer justify-content-center pt-0">
                 <a href="#" class="nav-link" data-toggle="modal" data-target=".registration-modal" data-dismiss="modal">Регистрация</a>
@@ -138,8 +147,8 @@
         <div class="modal-content">
             <div class="modal-body">
                 <!-- Block: Authorization form -->
-<form class="authorization-form">
-    <h2 class="authorization-form__title">Вход</h2>
+<form class="form-authorization">
+    <h2 class="form-authorization__title">Вход</h2>
     <fieldset class="authorization-modal__fieldset">
         <legend class="authorization-modal__legend">через</legend>
         <!-- Social authorization -->
@@ -197,9 +206,9 @@
            aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
         <div class="modal-content">
             <div class="modal-body">
-                <!-- Registration form -->
-<form class="registration-form">
-    <h2 class="registration-form__title">Регистрация</h2>
+                <!-- Form: form-registration-->
+<form class="form-registration">
+    <h2 class="form-registration__title">Регистрация</h2>
     <fieldset class="registration-modal__fieldset">
         <legend class="registration-modal__legend">через</legend>
         <!-- Social authorization -->
@@ -225,7 +234,7 @@
     </fieldset>
     <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
 </form>
-<!-- Registration form -->
+<!-- Form: form-registration -->
             </div>
             <div class="modal-footer">
                 <a href="#" class="registration-modal__authorization-link"
@@ -291,8 +300,10 @@
             <div class="row align-items-center">
                 <div class="col mb-2 mb-md-0">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
                 <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
-                    <!-- Subscribe form -->
-<form action="/realties/subscribeClient/" data-post="&page=/" class="subscribe-form form-row w-100">
+                    <!-- Form: form-subscribe -->
+<form action="/realties/subscribeClient/" 
+      data-post="&page=/" 
+      class="form-subscribe form-row w-100">
     <div class="form-group col-7 mb-0">
         <label for="subscribtionEmail" class="sr-only">Password</label>
         <input type="email" class="form-control" id="subscribtionEmail" required placeholder="Ваш e-mail">
@@ -301,7 +312,7 @@
         <button type="submit" class="btn btn-primary w-100">Подписаться</button>
     </div>
 </form>
-<!-- Subscribe form -->
+<!-- /Form: form-subscribe -->
                 </div>
             </div>
         </div>

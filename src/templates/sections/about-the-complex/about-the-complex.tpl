@@ -5,7 +5,7 @@
             <%- include('../../sections/photos-of-the-complex/photos-of-the-complex.tpl'); %>
         </div>
         <div class="col-lg-7 col-xl-6">
-            <div class="about-the-complex__complex-description mb-4">
+            <div class="about-the-complex__complex-description mb-4 mb-lg-0">
                 <%- include('../../sections/description-of-the-complex/description-of-the-complex.tpl'); %>
             </div>
             <div class="about-the-complex__characteristics-of-the-complex">

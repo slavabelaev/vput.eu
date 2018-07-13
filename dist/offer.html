@@ -106,14 +106,23 @@
             </div>
             <div class="modal-body">
                 <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
-                <!-- Recovery form -->
-                <form method="post" action="/recovery/ajaxPasswordRecovery/" class="authorization-form">
-                    <div class="form-group">
-                        <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg w-100">Отправить</button>
-                </form>
-                <!-- Recovery form -->
+                <div class="password-recovery-modal__form-recovery">
+                    <!-- Form: form-recovery -->
+<form method="post"
+      action="/recovery/ajaxPasswordRecovery/"
+      class="form-recovery">
+    <div class="form-group">
+        <input type="email"
+               name="login"
+               class="form-control form-control-lg"
+               required
+               placeholder="Адрес эл. почты">
+    </div>
+    <button type="submit"
+            class="btn btn-primary btn-lg w-100">Отправить</button>
+</form>
+<!-- /Form: form-recovery -->
+                </div>
             </div>
             <div class="modal-footer justify-content-center pt-0">
                 <a href="#" class="nav-link" data-toggle="modal" data-target=".registration-modal" data-dismiss="modal">Регистрация</a>
@@ -137,8 +146,8 @@
         <div class="modal-content">
             <div class="modal-body">
                 <!-- Block: Authorization form -->
-<form class="authorization-form">
-    <h2 class="authorization-form__title">Вход</h2>
+<form class="form-authorization">
+    <h2 class="form-authorization__title">Вход</h2>
     <fieldset class="authorization-modal__fieldset">
         <legend class="authorization-modal__legend">через</legend>
         <!-- Social authorization -->
@@ -196,9 +205,9 @@
            aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
         <div class="modal-content">
             <div class="modal-body">
-                <!-- Registration form -->
-<form class="registration-form">
-    <h2 class="registration-form__title">Регистрация</h2>
+                <!-- Form: form-registration-->
+<form class="form-registration">
+    <h2 class="form-registration__title">Регистрация</h2>
     <fieldset class="registration-modal__fieldset">
         <legend class="registration-modal__legend">через</legend>
         <!-- Social authorization -->
@@ -224,7 +233,7 @@
     </fieldset>
     <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
 </form>
-<!-- Registration form -->
+<!-- Form: form-registration -->
             </div>
             <div class="modal-footer">
                 <a href="#" class="registration-modal__authorization-link"
@@ -252,156 +261,71 @@
         </nav>
         <!-- /Block: breadcrumb -->
 
-        <div class="page-offer__image-slider mb-4">
+        <div class="page-offer__image-slider">
             <!-- Image slider -->
-<div class="image-slider">
-    <ul class="image-slider__images-list" is-slider>
-        <li class="image-slider__slide">
-            <a data-fancybox="image-slider"
-               href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
-               class="image-slider__slide-link">
-                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
-                     alt=""
-                     class="image-slider__image w-100">
-            </a>
+<div class="offer-image-slider">
+    <ul class="offer-image-slider__images-list" is-slider>
+        <li class="offer-image-slider__slide">
+            <a data-fancybox="offer-image-slider"
+               href="content/images/offers/offer-example/offer-example__image-1.jpg"
+               class="offer-image-slider__slide-link"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-1.jpg)"></a>
         </li>
-        <li class="image-slider__slide">
-            <a data-fancybox="image-slider"
-               href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
-               class="image-slider__slide-link">
-                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
-                     alt=""
-                     class="image-slider__image w-100">
-            </a>
+        <li class="offer-image-slider__slide">
+            <a data-fancybox="offer-image-slider"
+               href="content/images/offers/offer-example/offer-example__image-2.jpg"
+               class="offer-image-slider__slide-link"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-2.jpg)"></a>
         </li>
-        <li class="image-slider__slide">
-            <a data-fancybox="image-slider"
-               href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
-               class="image-slider__slide-link">
-                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
-                     alt=""
-                     class="image-slider__image w-100">
-            </a>
+        <li class="offer-image-slider__slide">
+            <a data-fancybox="offer-image-slider"
+               href="content/images/offers/offer-example/offer-example__image-3.jpg"
+               class="offer-image-slider__slide-link"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-3.jpg)"></a>
         </li>
-        <li class="image-slider__slide">
-            <a data-fancybox="image-slider"
-               href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
-               class="image-slider__slide-link">
-                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
-                     alt=""
-                     class="image-slider__image w-100">
-            </a>
+        <li class="offer-image-slider__slide">
+            <a data-fancybox="offer-image-slider"
+               href="content/images/offers/offer-example/offer-example__image-4.jpg"
+               class="offer-image-slider__slide-link"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-4.jpg)"></a>
         </li>
-        <li class="image-slider__slide">
-            <a data-fancybox="image-slider"
-               href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
-               class="image-slider__slide-link">
-                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
-                     alt=""
-                     class="image-slider__image w-100">
-            </a>
+        <li class="offer-image-slider__slide">
+            <a data-fancybox="offer-image-slider"
+               href="content/images/offers/offer-example/offer-example__image-5.jpg"
+               class="offer-image-slider__slide-link"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-5.jpg)"></a>
         </li>
-        <li class="image-slider__slide">
-            <a data-fancybox="image-slider"
-               href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
-               class="image-slider__slide-link">
-                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
-                     alt=""
-                     class="image-slider__image w-100">
-            </a>
-        </li>
-        <li class="image-slider__slide">
-            <a data-fancybox="image-slider"
-               href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
-               class="image-slider__slide-link">
-                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
-                     alt=""
-                     class="image-slider__image w-100">
-            </a>
-        </li>
-        <li class="image-slider__slide">
-            <a data-fancybox="image-slider"
-               href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
-               class="image-slider__slide-link">
-                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
-                     alt=""
-                     class="image-slider__image w-100">
-            </a>
-        </li>
-        <li class="image-slider__slide">
-            <a data-fancybox="image-slider"
-               href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
-               class="image-slider__slide-link">
-                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
-                     alt=""
-                     class="image-slider__image w-100">
-            </a>
-        </li>
-        <li class="image-slider__slide">
-            <a data-fancybox="image-slider"
-               href="https://vput.ru/cache/images/realties/1300x800_focus_watermark/s89a5529.jpg.jpg"
-               class="image-slider__slide-link">
-                <img data-lazy="https://vput.ru/cache/images/realties/1260x710_focus_watermark/s89a5529.jpg.jpg"
-                     alt=""
-                     class="image-slider__image w-100">
-            </a>
+        <li class="offer-image-slider__slide">
+            <a data-fancybox="offer-image-slider"
+               href="content/images/offers/offer-example/offer-example__image-6.jpg"
+               class="offer-image-slider__slide-link"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-6.jpg)"></a>
         </li>
     </ul>
-    <ul class="image-slider__nav" is-slider-nav>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
+    <ul class="offer-image-slider__nav" is-slider-nav>
+        <li class="offer-image-slider__nav-item">
+            <figure class="offer-image-slider__thumbnail"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-1.jpg);"></figure>
         </li>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
+        <li class="offer-image-slider__nav-item">
+            <figure class="offer-image-slider__thumbnail"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-2.jpg);"></figure>
         </li>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
+        <li class="offer-image-slider__nav-item">
+            <figure class="offer-image-slider__thumbnail"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-3.jpg);"></figure>
         </li>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
+        <li class="offer-image-slider__nav-item">
+            <figure class="offer-image-slider__thumbnail"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-4.jpg);"></figure>
         </li>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
+        <li class="offer-image-slider__nav-item">
+            <figure class="offer-image-slider__thumbnail"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-5.jpg);"></figure>
         </li>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
-        </li>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
-        </li>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
-        </li>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
-        </li>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
-        </li>
-        <li class="image-slider__nav-item">
-            <img data-lazy="https://vput.ru/cache/images/realties/115x64_focus/s89a5556.jpg.jpg"
-                 alt=""
-                 class="image-slider__thumbnail">
+        <li class="offer-image-slider__nav-item">
+            <figure class="offer-image-slider__thumbnail"
+               style="background-image: url(content/images/offers/offer-example/offer-example__image-6.jpg);"></figure>
         </li>
     </ul>
 </div>
@@ -409,8 +333,8 @@
         </div>
 
         <div class="row">
-            <div class="col-xl mb-4">
-                <article class="page-offer__article">
+            <div class="col-xl">
+                <article class="page-offer__article py-4">
                     <header class="page-offer__header pb-3 border-bottom">
                         <h1 class="page-offer__title">Студия - Форт Нокс Гранд Резорт</h1>
                         <div class="page-offer__place">Болгария, Святой Влас, <a href="#" class="page-offer__complex">Комплекс Венера-палас</a></div>
@@ -988,7 +912,7 @@
                     <span class="page-offer__aside-toggle-caption-show">Забронировать</span>
                     <span class="page-offer__aside-toggle-caption-hide"><i class="icon icon__close icon_size_16 icon_style_light"></i></span>
                 </a>
-                <aside class="page-offer__aside">
+                <aside class="page-offer__aside py-4">
                     <div class="page-offer__offer-employed-by mb-3">
                         <!-- Block: Offer employed by -->
 <div class="offer-employed-by progress">
@@ -1002,37 +926,37 @@
 </div>
 <!-- /Block: Offer employed by -->
                     </div>
-                    <div class="page-offer__offer-price-calculator mb-3">
-                        <!-- Block: Offer price calculator -->
-<form action="#" class="offer-price-calculator">
+                    <div class="page-offer__form-booking mb-3">
+                        <!-- Form: form-booking -->
+<form action="#" class="form-booking">
     <div class="row mb-3">
-        <div class="offer-price-calculator__price col-6">
-            <label class="offer-price-calculator__price-label">От</label>
-            <span class="offer-price-calculator__price-value">€25</span>
+        <div class="form-booking__price col-6">
+            <label class="form-booking__price-label">От</label>
+            <span class="form-booking__price-value">€25</span>
         </div>
         <div class="col-6">
-            <span class="offer-price-calculator__description">Цена указана за квартиру целиком</span>
+            <span class="form-booking__description">Цена указана за квартиру целиком</span>
         </div>
     </div>
-    <div class="offer-price-calculator__form form-row">
+    <div class="form-booking__form form-row">
         <div class="form-group col-6">
-            <label for="offer-price-calculator__control_name_check-in">Заезд</label>
+            <label for="form-booking__control_name_check-in">Заезд</label>
             <input name=""
                    type="date"
                    class="form-control"
-                   id="offer-price-calculator__control_name_check-in">
+                   id="form-booking__control_name_check-in">
         </div>
         <div class="form-group col-6">
-            <label for="offer-price-calculator__control_name_check-out">Выезд</label>
+            <label for="form-booking__control_name_check-out">Выезд</label>
             <input name=""
                    type="date"
                    class="form-control"
-                   id="offer-price-calculator__control_name_check-out">
+                   id="form-booking__control_name_check-out">
         </div>
         <div class="form-group col-12">
             <select name="guests"
                     class="custom-select mr-sm-2"
-                    id="offer-price-calculator__control_name_guests">
+                    id="form-booking__control_name_guests">
                 <option selected>1 гость</option>
                 <option value="1">2 гостя</option>
                 <option value="2">3 гостя</option>
@@ -1040,27 +964,27 @@
             </select>
         </div>
     </div>
-    <table class="offer-price-calculator__table table">
+    <table class="form-booking__table table">
         <tbody>
         <tr>
             <td>€25 x 5 ночей</td>
-            <td class="text-right"><strong class="offer-price-calculator__amount">€123</strong></td>
+            <td class="text-right"><strong class="form-booking__amount">€123</strong></td>
         </tr>
         <tr>
             <td>К оплате:</td>
-            <td class="text-right"><strong class="offer-price-calculator__to-pay">€123</strong></td>
+            <td class="text-right"><strong class="form-booking__to-pay">€123</strong></td>
         </tr>
         </tbody>
     </table>
     <a href="#" class="btn btn-secondary btn-lg w-100 mb-3">Написать хозяину</a>
-    <a href="#" class="btn btn-outline-primary btn-lg w-100 mb-3">Оплатить бронирование</a>
-    <div class="offer-price-calculator__alert alert alert-danger">Бронирование невозможно</div>
-    <figure class="offer-price-calculator__informer">
+    <a href="#" class="btn btn-outline-primary btn-filled btn-lg w-100 mb-3">Оплатить бронирование</a>
+    <div class="form-booking__alert alert alert-danger">Бронирование невозможно</div>
+    <figure class="form-booking__informer">
         <i class="icon icon__lamp icon_size_32 mr-3"></i>
-        <figcaption class="offer-price-calculator__informer-description"><strong class="offer-price-calculator__informer-number-of-persons">2 человека</strong> планирует остановиться здесь в выбранный период</figcaption>
+        <figcaption class="form-booking__informer-description"><strong class="form-booking__informer-number-of-persons">2 человека</strong> планирует остановиться здесь в выбранный период</figcaption>
     </figure>
 </form>
-<!-- /Block: Offer price calculator -->
+<!-- /Form: form-booking -->
                     </div>
                     <div class="page-offer__offer-insterested-in mb-3">
                         <!-- Block: Offer interested in -->
@@ -1193,6 +1117,486 @@
     <iframe class="offer-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.3111179351!2d24.951889476121163!3d40.934257772476016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ae7e8984f4a313%3A0xe137cebac7387228!2zU2thbGEgQXZkaXJvbiA2NzAgNjEsINCT0YDQtdGG0LjRjw!5e0!3m2!1sru!2s!4v1528186971887" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </section>
 <!-- /Section: Offer location map -->
+    </div>
+    <div class="page-offer__complex bg-light pt-5 pb-3">
+        <div class="container">
+            <div class="page-offer__about-the-complex mb-4">
+                <!-- Section: about-the-complex -->
+<section class="about-the-complex">
+    <div class="row">
+        <div class="col-lg-5 col-xl-6">
+            <!-- Section: photos-of-the-complex -->
+<section class="photos-of-the-complex">
+    <h2 class="photos-of-the-complex__title mb-4">Фото комплекса <small class="text-muted">(10 фото)</small></h2>
+
+    <ul class="photos-of-the-complex__slider" is-slick-carousel>
+        <li class="photos-of-the-complex__slider-item">
+            <a href="content/images/complexes/complex-example/complex-example__image-1.jpg"
+               class="photos-of-the-complex__slider-link"
+               data-fancybox="photos-of-the-complex"
+               style="background-image: url(content/images/complexes/complex-example/complex-example__image-1.jpg"></a>
+        </li>
+        <li class="photos-of-the-complex__slider-item">
+            <a href="content/images/complexes/complex-example/complex-example__image-2.jpg"
+               class="photos-of-the-complex__slider-link"
+               data-fancybox="photos-of-the-complex"
+               style="background-image: url(content/images/complexes/complex-example/complex-example__image-2.jpg)">
+            </a>
+        </li>
+        <li class="photos-of-the-complex__slider-item">
+            <a href="content/images/complexes/complex-example/complex-example__image-3.jpg"
+               class="photos-of-the-complex__slider-link"
+               data-fancybox="photos-of-the-complex"
+               style="background-image: url(content/images/complexes/complex-example/complex-example__image-3.jpg)"></a>
+        </li>
+    </ul>
+</section>
+<!-- /Section: photos-of-the-complex -->
+        </div>
+        <div class="col-lg-7 col-xl-6">
+            <div class="about-the-complex__complex-description mb-4 mb-lg-0">
+                <!-- Section: description-of-the-complex -->
+<section class="description-of-the-complex">
+    <h2 class="description-of-the-complex__title mb-4">Описание</h2>
+    <article class="description-of-the-complex__content">
+        <p>Студия в собственности в северной части курорта Солнечный берег. Рядом Disco Orange, пляж, кафе, рестораны, остановка автобуса. Площадь студии 30 кв.м. (больше двух человек проблематично поместить). Есть вся мебель, техника, посуда. Бассейн. Пляж в 500-600 м.</p>
+    </article>
+</section>
+<!-- /Section: description-of-the-complex -->
+            </div>
+            <div class="about-the-complex__characteristics-of-the-complex">
+                <!-- Section: characteristics-of-the-complex -->
+<section class="characteristics-of-the-complex">
+    <h2 class="characteristics-of-the-complex__title mb-4">Характеристики</h2>
+    <ul class="characteristics-of-the-complex__list row">
+        <li class="characteristics-of-the-complex__list-item col-sm-6">
+            <figure class="figure d-flex">
+                <i class="icon icon__security mr-3"></i>
+                <figcaption class="characteristics-of-the-complex__caption">Охрана</figcaption>
+            </figure>
+        </li>
+        <li class="characteristics-of-the-complex__list-item col-sm-6">
+            <figure class="figure d-flex">
+                <i class="icon icon__coffee mr-3"></i>
+                <figcaption class="characteristics-of-the-complex__caption">Кафе</figcaption>
+            </figure>
+        </li>
+        <li class="characteristics-of-the-complex__list-item col-sm-6">
+            <figure class="figure d-flex">
+                <i class="icon icon__parking mr-3"></i>
+                <figcaption class="characteristics-of-the-complex__caption">Парковка <small class="text-muted">(20 мест)</small></figcaption>
+            </figure>
+        </li>
+        <li class="characteristics-of-the-complex__list-item col-sm-6">
+            <figure class="figure d-flex">
+                <i class="icon icon__bike mr-3"></i>
+                <figcaption class="characteristics-of-the-complex__caption">Прокат велосипедов</figcaption>
+            </figure>
+        </li>
+        <li class="characteristics-of-the-complex__list-item col-sm-6">
+            <figure class="figure d-flex">
+                <i class="icon icon__sea mr-3"></i>
+                <figcaption class="characteristics-of-the-complex__caption">Доступ к морю <small class="text-muted">(20 метров)</small></figcaption>
+            </figure>
+        </li>
+        <li class="characteristics-of-the-complex__list-item col-sm-6">
+            <figure class="figure d-flex">
+                <i class="icon icon__massage mr-3"></i>
+                <figcaption class="characteristics-of-the-complex__caption">Массаж</figcaption>
+            </figure>
+        </li>
+        <li class="characteristics-of-the-complex__list-item col-sm-6">
+            <figure class="figure d-flex">
+                <span class="icon icon__pool mr-3"></span>
+                <figcaption class="characteristics-of-the-complex__caption">Бассейн <small class="text-muted">(3 штуки)</small></figcaption>
+            </figure>
+        </li>
+        <li class="characteristics-of-the-complex__list-item col-sm-6">
+            <figure class="figure d-flex">
+                <i class="icon icon__SPA mr-3"></i>
+                <figcaption class="characteristics-of-the-complex__caption">СПА</figcaption>
+            </figure>
+        </li>
+    </ul>
+</section>
+<!-- /Section: characteristics-of-the-complex -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section: about-the-complex -->
+            </div>
+            <div class="page-offer__complex-offers">
+                <!-- Section: complex-offers -->
+<section class="complex-offers">
+    <h2 class="complex-offers__title mb-4">Другие предложения из этого комплекса</h2>
+    <ul class="complex-offers__list row">
+        
+        <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
+            <!-- Offer item -->
+<figure class="offer-item">
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <div class="offer-item__image-slider" offer-item__image-slider>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+    </div>
+    <figcaption class="offer-item__description">
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <ul class="offer-item__details">
+            <li class="offer-item__detail offer-item__country">Болгария</li>
+            <li class="offer-item__detail offer-item__city">Солнечный берег</li>
+            <li class="offer-item__detail offer-item__type">Квартира</li>
+            <li class="offer-item__detail offer-item__numbers-of-rooms">
+                <span class="offer-item__numbers-of-rooms-label">Комнат:</span>
+                <span class="offer-item__numbers-of-rooms-value">1</span>
+            </li>
+            <li class="offer-item__detail offer-item__numbers-of-guests">
+                <span class="offer-item__numbers-of-guests-label">Гостей:</span>
+                <span class="offer-item__numbers-of-guests-value">7</span>
+            </li>
+            <li class="offer-item__detail offer-item__price">
+                <span class="offer-item__price-currency">€</span>
+                <span class="offer-item__price-value">71</span>
+            </li>
+            <li class="offer-item__detail offer-item__price-per-day">
+                <span class="offer-item__price-per-day-currency">€</span>
+                <span class="offer-item__price-per-day-value">16</span>
+                <i class="icon icon__guest icon_size_16 ml-1"></i>
+            </li>
+        </ul>
+        <ul class="offer-item__special-details">
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__pets icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
+        </ul>
+    </figcaption>
+</figure>
+<!-- Offer item -->
+        </li>
+        
+        <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
+            <!-- Offer item -->
+<figure class="offer-item">
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <div class="offer-item__image-slider" offer-item__image-slider>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+    </div>
+    <figcaption class="offer-item__description">
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <ul class="offer-item__details">
+            <li class="offer-item__detail offer-item__country">Болгария</li>
+            <li class="offer-item__detail offer-item__city">Солнечный берег</li>
+            <li class="offer-item__detail offer-item__type">Квартира</li>
+            <li class="offer-item__detail offer-item__numbers-of-rooms">
+                <span class="offer-item__numbers-of-rooms-label">Комнат:</span>
+                <span class="offer-item__numbers-of-rooms-value">1</span>
+            </li>
+            <li class="offer-item__detail offer-item__numbers-of-guests">
+                <span class="offer-item__numbers-of-guests-label">Гостей:</span>
+                <span class="offer-item__numbers-of-guests-value">7</span>
+            </li>
+            <li class="offer-item__detail offer-item__price">
+                <span class="offer-item__price-currency">€</span>
+                <span class="offer-item__price-value">71</span>
+            </li>
+            <li class="offer-item__detail offer-item__price-per-day">
+                <span class="offer-item__price-per-day-currency">€</span>
+                <span class="offer-item__price-per-day-value">16</span>
+                <i class="icon icon__guest icon_size_16 ml-1"></i>
+            </li>
+        </ul>
+        <ul class="offer-item__special-details">
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__pets icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
+        </ul>
+    </figcaption>
+</figure>
+<!-- Offer item -->
+        </li>
+        
+        <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
+            <!-- Offer item -->
+<figure class="offer-item">
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <div class="offer-item__image-slider" offer-item__image-slider>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+    </div>
+    <figcaption class="offer-item__description">
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <ul class="offer-item__details">
+            <li class="offer-item__detail offer-item__country">Болгария</li>
+            <li class="offer-item__detail offer-item__city">Солнечный берег</li>
+            <li class="offer-item__detail offer-item__type">Квартира</li>
+            <li class="offer-item__detail offer-item__numbers-of-rooms">
+                <span class="offer-item__numbers-of-rooms-label">Комнат:</span>
+                <span class="offer-item__numbers-of-rooms-value">1</span>
+            </li>
+            <li class="offer-item__detail offer-item__numbers-of-guests">
+                <span class="offer-item__numbers-of-guests-label">Гостей:</span>
+                <span class="offer-item__numbers-of-guests-value">7</span>
+            </li>
+            <li class="offer-item__detail offer-item__price">
+                <span class="offer-item__price-currency">€</span>
+                <span class="offer-item__price-value">71</span>
+            </li>
+            <li class="offer-item__detail offer-item__price-per-day">
+                <span class="offer-item__price-per-day-currency">€</span>
+                <span class="offer-item__price-per-day-value">16</span>
+                <i class="icon icon__guest icon_size_16 ml-1"></i>
+            </li>
+        </ul>
+        <ul class="offer-item__special-details">
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__pets icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
+        </ul>
+    </figcaption>
+</figure>
+<!-- Offer item -->
+        </li>
+        
+        <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
+            <!-- Offer item -->
+<figure class="offer-item">
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <div class="offer-item__image-slider" offer-item__image-slider>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+    </div>
+    <figcaption class="offer-item__description">
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <ul class="offer-item__details">
+            <li class="offer-item__detail offer-item__country">Болгария</li>
+            <li class="offer-item__detail offer-item__city">Солнечный берег</li>
+            <li class="offer-item__detail offer-item__type">Квартира</li>
+            <li class="offer-item__detail offer-item__numbers-of-rooms">
+                <span class="offer-item__numbers-of-rooms-label">Комнат:</span>
+                <span class="offer-item__numbers-of-rooms-value">1</span>
+            </li>
+            <li class="offer-item__detail offer-item__numbers-of-guests">
+                <span class="offer-item__numbers-of-guests-label">Гостей:</span>
+                <span class="offer-item__numbers-of-guests-value">7</span>
+            </li>
+            <li class="offer-item__detail offer-item__price">
+                <span class="offer-item__price-currency">€</span>
+                <span class="offer-item__price-value">71</span>
+            </li>
+            <li class="offer-item__detail offer-item__price-per-day">
+                <span class="offer-item__price-per-day-currency">€</span>
+                <span class="offer-item__price-per-day-value">16</span>
+                <i class="icon icon__guest icon_size_16 ml-1"></i>
+            </li>
+        </ul>
+        <ul class="offer-item__special-details">
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__pets icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
+        </ul>
+    </figcaption>
+</figure>
+<!-- Offer item -->
+        </li>
+        
+        <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
+            <!-- Offer item -->
+<figure class="offer-item">
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <div class="offer-item__image-slider" offer-item__image-slider>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+    </div>
+    <figcaption class="offer-item__description">
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <ul class="offer-item__details">
+            <li class="offer-item__detail offer-item__country">Болгария</li>
+            <li class="offer-item__detail offer-item__city">Солнечный берег</li>
+            <li class="offer-item__detail offer-item__type">Квартира</li>
+            <li class="offer-item__detail offer-item__numbers-of-rooms">
+                <span class="offer-item__numbers-of-rooms-label">Комнат:</span>
+                <span class="offer-item__numbers-of-rooms-value">1</span>
+            </li>
+            <li class="offer-item__detail offer-item__numbers-of-guests">
+                <span class="offer-item__numbers-of-guests-label">Гостей:</span>
+                <span class="offer-item__numbers-of-guests-value">7</span>
+            </li>
+            <li class="offer-item__detail offer-item__price">
+                <span class="offer-item__price-currency">€</span>
+                <span class="offer-item__price-value">71</span>
+            </li>
+            <li class="offer-item__detail offer-item__price-per-day">
+                <span class="offer-item__price-per-day-currency">€</span>
+                <span class="offer-item__price-per-day-value">16</span>
+                <i class="icon icon__guest icon_size_16 ml-1"></i>
+            </li>
+        </ul>
+        <ul class="offer-item__special-details">
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__pets icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
+        </ul>
+    </figcaption>
+</figure>
+<!-- Offer item -->
+        </li>
+        
+        <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
+            <!-- Offer item -->
+<figure class="offer-item">
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <div class="offer-item__image-slider" offer-item__image-slider>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+    </div>
+    <figcaption class="offer-item__description">
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <ul class="offer-item__details">
+            <li class="offer-item__detail offer-item__country">Болгария</li>
+            <li class="offer-item__detail offer-item__city">Солнечный берег</li>
+            <li class="offer-item__detail offer-item__type">Квартира</li>
+            <li class="offer-item__detail offer-item__numbers-of-rooms">
+                <span class="offer-item__numbers-of-rooms-label">Комнат:</span>
+                <span class="offer-item__numbers-of-rooms-value">1</span>
+            </li>
+            <li class="offer-item__detail offer-item__numbers-of-guests">
+                <span class="offer-item__numbers-of-guests-label">Гостей:</span>
+                <span class="offer-item__numbers-of-guests-value">7</span>
+            </li>
+            <li class="offer-item__detail offer-item__price">
+                <span class="offer-item__price-currency">€</span>
+                <span class="offer-item__price-value">71</span>
+            </li>
+            <li class="offer-item__detail offer-item__price-per-day">
+                <span class="offer-item__price-per-day-currency">€</span>
+                <span class="offer-item__price-per-day-value">16</span>
+                <i class="icon icon__guest icon_size_16 ml-1"></i>
+            </li>
+        </ul>
+        <ul class="offer-item__special-details">
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__pets icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
+        </ul>
+    </figcaption>
+</figure>
+<!-- Offer item -->
+        </li>
+        
+        <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
+            <!-- Offer item -->
+<figure class="offer-item">
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <div class="offer-item__image-slider" offer-item__image-slider>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+    </div>
+    <figcaption class="offer-item__description">
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <ul class="offer-item__details">
+            <li class="offer-item__detail offer-item__country">Болгария</li>
+            <li class="offer-item__detail offer-item__city">Солнечный берег</li>
+            <li class="offer-item__detail offer-item__type">Квартира</li>
+            <li class="offer-item__detail offer-item__numbers-of-rooms">
+                <span class="offer-item__numbers-of-rooms-label">Комнат:</span>
+                <span class="offer-item__numbers-of-rooms-value">1</span>
+            </li>
+            <li class="offer-item__detail offer-item__numbers-of-guests">
+                <span class="offer-item__numbers-of-guests-label">Гостей:</span>
+                <span class="offer-item__numbers-of-guests-value">7</span>
+            </li>
+            <li class="offer-item__detail offer-item__price">
+                <span class="offer-item__price-currency">€</span>
+                <span class="offer-item__price-value">71</span>
+            </li>
+            <li class="offer-item__detail offer-item__price-per-day">
+                <span class="offer-item__price-per-day-currency">€</span>
+                <span class="offer-item__price-per-day-value">16</span>
+                <i class="icon icon__guest icon_size_16 ml-1"></i>
+            </li>
+        </ul>
+        <ul class="offer-item__special-details">
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__pets icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
+        </ul>
+    </figcaption>
+</figure>
+<!-- Offer item -->
+        </li>
+        
+        <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
+            <!-- Offer item -->
+<figure class="offer-item">
+    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
+    <div class="offer-item__image-slider" offer-item__image-slider>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
+    </div>
+    <figcaption class="offer-item__description">
+        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <ul class="offer-item__details">
+            <li class="offer-item__detail offer-item__country">Болгария</li>
+            <li class="offer-item__detail offer-item__city">Солнечный берег</li>
+            <li class="offer-item__detail offer-item__type">Квартира</li>
+            <li class="offer-item__detail offer-item__numbers-of-rooms">
+                <span class="offer-item__numbers-of-rooms-label">Комнат:</span>
+                <span class="offer-item__numbers-of-rooms-value">1</span>
+            </li>
+            <li class="offer-item__detail offer-item__numbers-of-guests">
+                <span class="offer-item__numbers-of-guests-label">Гостей:</span>
+                <span class="offer-item__numbers-of-guests-value">7</span>
+            </li>
+            <li class="offer-item__detail offer-item__price">
+                <span class="offer-item__price-currency">€</span>
+                <span class="offer-item__price-value">71</span>
+            </li>
+            <li class="offer-item__detail offer-item__price-per-day">
+                <span class="offer-item__price-per-day-currency">€</span>
+                <span class="offer-item__price-per-day-value">16</span>
+                <i class="icon icon__guest icon_size_16 ml-1"></i>
+            </li>
+        </ul>
+        <ul class="offer-item__special-details">
+            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__pets icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
+            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
+        </ul>
+    </figcaption>
+</figure>
+<!-- Offer item -->
+        </li>
+        
+    </ul>
+</section>
+<!-- /Section: complex-offers -->
+            </div>
+        </div>
     </div>
     <div class="page-offer__similar-offers container py-5">
         <!-- Section: Similar offers -->
@@ -1581,8 +1985,10 @@
             <div class="row align-items-center">
                 <div class="col mb-2 mb-md-0">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
                 <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
-                    <!-- Subscribe form -->
-<form action="/realties/subscribeClient/" data-post="&page=/" class="subscribe-form form-row w-100">
+                    <!-- Form: form-subscribe -->
+<form action="/realties/subscribeClient/" 
+      data-post="&page=/" 
+      class="form-subscribe form-row w-100">
     <div class="form-group col-7 mb-0">
         <label for="subscribtionEmail" class="sr-only">Password</label>
         <input type="email" class="form-control" id="subscribtionEmail" required placeholder="Ваш e-mail">
@@ -1591,7 +1997,7 @@
         <button type="submit" class="btn btn-primary w-100">Подписаться</button>
     </div>
 </form>
-<!-- Subscribe form -->
+<!-- /Form: form-subscribe -->
                 </div>
             </div>
         </div>

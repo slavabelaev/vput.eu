@@ -1,16 +1,781 @@
-<%- include('../../../common.blocks/meta-header/meta-header.tpl'); %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="//fonts.googleapis.com/css?family=Exo+2:700,300italic,600,500italic,700italic,300,400,800,600italic,500,800italic,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/bundles/scss.bundle.min.css">
+    <link rel="stylesheet" href="assets/bundles/css.bundle.min.css">
+</head>
+
+<body>
 <div class="page-article__page-header navbar-dark">
-    <%- include('../../../common.blocks/page-header/page-header.tpl'); %>
+    <!-- Page header -->
+<header class="page-header">
+    <nav class="navbar navbar-expand-md navbar-light container">
+        <a class="page-header__logo mr-md-4" href="/"></a>
+        <a class="page-header__favorites-link icon icon__heart icon_size_32 ml-auto mr-3" href="/favorites.html">99</a>
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts/">Контакты</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="page-header__language-nav-item nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="cabinetMenuDropdown"
+                       role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        Язык
+                    </a>
+                    <div class="dropdown-menu"
+                         aria-labelledby="cabinetMenuDropdown">
+                        <a class="dropdown-item" href="?lang=ru">Русский</a>
+                        <a class="dropdown-item" href="?lang=en">Английский</a>
+                        <a class="dropdown-item" href="?lang=ua">Украинский</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                       data-toggle="modal"
+                       data-target=".authorization-modal">Вход</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                       data-toggle="modal"
+                       data-target=".registration-modal">Регистрация</a>
+                </li>
+                <li class="page-header__cabinet-menu-dropdown nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="cabinetMenuDropdown"
+                       role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        <i class="page-header__cabinet-menu-icon icon icon__cabinet-user"></i>
+                        Кабинет
+                    </a>
+                    <div class="page-header__dropdown-menu dropdown-menu" aria-labelledby="cabinetMenuDropdown">
+                        <a class="dropdown-item" href="/cabinet/realties/">Мои объявления</a>
+                        <a class="dropdown-item" href="/cabinet/bookings/">Бронирования</a>
+                        <a class="dropdown-item" href="/cabinet/trips/">Мои поездки <span class="badge badge-primary">5</span></a>
+                        <a class="dropdown-item" href="/cabinet/profile/">Профиль</a>
+                        <a class="dropdown-item" href="/cabinet/balance/">Трансферы</a>
+                        <a class="dropdown-item" href="/cabinet/balance/">Баланс</a>
+                        <a class="dropdown-item" href="/cabinet/partnership/">Партнерская программа</a>
+                        <a class="dropdown-item" href="/cabinet/reviews/">Отзывы</a>
+                        <a class="dropdown-item" href="/cabinet/referralBookings/">Бронирования рефералов</a>
+                        <a class="dropdown-item page-header__dropdown-item-exit" href="/authorization/logout/">Выйти</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="ml-lg-4">
+                <a class="page-header__to-rent-button btn btn-outline-secondary btn-lg w-100" href="add.html">Сдать в аренду</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- /Page header -->
+
+<!-- Recovery modal -->
+<div class="password-recovery-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h2 class="modal-title">Забыли пароль?</h2>
+                <a href="#"
+                   data-dismiss="modal"
+                   class="close"
+                   aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+            </div>
+            <div class="modal-body">
+                <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
+                <div class="password-recovery-modal__form-recovery">
+                    <!-- Form: form-recovery -->
+<form method="post"
+      action="/recovery/ajaxPasswordRecovery/"
+      class="form-recovery">
+    <div class="form-group">
+        <input type="email"
+               name="login"
+               class="form-control form-control-lg"
+               required
+               placeholder="Адрес эл. почты">
+    </div>
+    <button type="submit"
+            class="btn btn-primary btn-lg w-100">Отправить</button>
+</form>
+<!-- /Form: form-recovery -->
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center pt-0">
+                <a href="#" class="nav-link" data-toggle="modal" data-target=".registration-modal" data-dismiss="modal">Регистрация</a>
+                <a href="#" class="nav-link" data-toggle="modal" data-target=".authorization-modal" data-dismiss="modal">Вход</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Recovery modal -->
+<!-- Authorization modal -->
+<div class="authorization-modal modal fade"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm"
+         role="document">
+        <a href="#"
+           data-dismiss="modal"
+           class="close"
+           aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- Block: Authorization form -->
+<form class="form-authorization">
+    <h2 class="form-authorization__title">Вход</h2>
+    <fieldset class="authorization-modal__fieldset">
+        <legend class="authorization-modal__legend">через</legend>
+        <!-- Social authorization -->
+        <ul class="social-authorization">
+            <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__vk icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__ok icon_size_48"></a></li>
+        </ul>
+        <!-- /Social authorization -->
+    </fieldset>
+    <fieldset class="authorization-modal__fieldset">
+        <legend class="authorization-modal__legend mb-4">или</legend>
+        <div class="form-group">
+            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+        </div>
+        <div class="form-group mb-2">
+            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+        </div>
+        <div class="row align-items-center mb-2">
+            <div class="col-auto">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="cookie" class="custom-control-input" id="rememberMe" required>
+                    <label class="custom-control-label" for="rememberMe">Запомнить меня</label>
+                </div>
+            </div>
+            <div class="col text-right">
+                <a href="#" class="nav-link" data-toggle="modal" data-target=".password-recovery-modal" data-dismiss="modal">Забыл пароль</a>
+            </div>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary btn-lg w-100">Войти</button>
+</form>
+<!-- /Block: Authorization form -->
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="authorization-modal__register-link"
+                   data-toggle="modal"
+                   data-dismiss="modal"
+                   data-target=".registration-modal">Регистрация</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Authorization modal -->
+<!-- Registration modal -->
+<div class="registration-modal modal fade"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm"
+         role="document">
+        <a href="#"
+           data-dismiss="modal"
+           class="close"
+           aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- Form: form-registration-->
+<form class="form-registration">
+    <h2 class="form-registration__title">Регистрация</h2>
+    <fieldset class="registration-modal__fieldset">
+        <legend class="registration-modal__legend">через</legend>
+        <!-- Social authorization -->
+        <ul class="social-authorization">
+            <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__vk icon_size_48"></a></li>
+            <li class="social-authorization__item"><a href="#" class="icon icon__ok icon_size_48"></a></li>
+        </ul>
+        <!-- /Social authorization -->
+    </fieldset>
+    <fieldset class="registration-modal__fieldset">
+        <legend class="registration-modal__legend mb-4">или</legend>
+        <div class="form-group">
+            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+        </div>
+        <div class="form-group mb-3">
+            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+        </div>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" checked name="newsSubscribed" class="custom-control-input" id="newsSubscribed" required>
+            <label class="custom-control-label" for="newsSubscribed">Подписаться на спец. предложения</label>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
+</form>
+<!-- Form: form-registration -->
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="registration-modal__authorization-link"
+                   data-toggle="modal"
+                   data-dismiss="modal"
+                   data-target=".authorization-modal">Войти</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Registration modal -->
 </div>
 
 <!-- Page: page-article -->
 <main class="page-article">
-    <%- include('../../../articles/article-cleaning/article-cleaning.en.tpl'); %>
+    <!-- Article: article-cleaning -->
+<link rel="stylesheet" href="assets/articles/article-cleaning.css">
+<script src="assets/articles/article-cleaning.js" defer></script>
+<article class="article-cleaning article-cleaning_lang_ru">
+    <header class="page-article__article-header"
+            style="background-image: url(templates/articles/article-cleaning/article-cleaning__header-bg.jpg)">
+        <div class="container">
+            <h1>CLEANING AND CHANGING BED SHEETS</h1>
+            <p class="lead">FOR YOUR HANDS</p>
+        </div>
+    </header>
+    <div class="bg-light d-none d-sm-block">
+        <div class="container mw-1024px">
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-item nav-link" href="/cleaning/">Cleaning services</a>
+                <a class="nav-item nav-link" href="/escort/">Guests escort</a>
+                <a class="nav-item nav-link active" href="#">Transfer</a>
+                <a class="nav-item nav-link" href="/rentacar/">Car rental</a>
+                <a class="nav-item nav-link" href="/management/">Property management</a>
+            </nav>
+        </div>
+    </div>
+    <section class="container py-5">
+        <ul class="row text-center">
+            <li class="col-lg-3 col-6">
+                <figure class="figure">
+                    <img src="templates/articles/article-cleaning/article-cleaning__money-box.svg" alt=""
+                         class="figure-img">
+                    <figcaption class="figure-caption lead">Don’t pay more to random companies or people</figcaption>
+                </figure>
+            </li>
+            <li class="col-lg-3 col-6">
+                <figure class="figure">
+                    <img src="templates/articles/article-cleaning/article-cleaning__support.svg" alt=""
+                         class="figure-img">
+                    <figcaption class="figure-caption lead">Contact our support, say your address, and provide access to your property</figcaption>
+                </figure>
+            </li>
+            <li class="col-lg-3 col-6">
+                <figure class="figure">
+                    <img src="templates/articles/article-cleaning/article-cleaning__cleaner.svg" alt=""
+                         class="figure-img">
+                    <figcaption class="figure-caption lead">Our team will clean your home fast and thoroughly</figcaption>
+                </figure>
+            </li>
+            <li class="col-lg-3 col-6">
+                <figure class="figure">
+                    <img src="templates/articles/article-cleaning/article-cleaning__balance.svg" alt=""
+                         class="figure-img">
+                    <figcaption class="figure-caption lead">Pay from your VPUT balance</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <div class="container mw-1024px">
+        <section>
+            <h2 class="mb-4 text-center">Apartment Cleaning</h2>
+            <div class="table-responsive mb-4">
+                <table class="table table-striped table-bordered mb-0">
+                    <thead>
+                    <tr>
+                        <th>Type of Apartment:</th>
+                        <th width="240">Standard</th>
+                        <th width="240">General</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1 room</td>
+                        <td><b class="text-secondary">€15</b></td>
+                        <td><b class="text-secondary">€25</b></td>
+                    </tr>
+                    <tr>
+                        <td>2 rooms</td>
+                        <td><b class="text-secondary">€20</b></td>
+                        <td><b class="text-secondary">€35</b></td>
+                    </tr>
+                    <tr>
+                        <td>3 rooms</td>
+                        <td><b class="text-secondary">€25</b></td>
+                        <td><b class="text-secondary">€45</b></td>
+                    </tr>
+                    <tr>
+                        <td>4 rooms</td>
+                        <td><b class="text-secondary">€30</b></td>
+                        <td><b class="text-secondary">€55</b></td>
+                    </tr>
+                    <tr>
+                        <td>5 rooms</td>
+                        <td><b class="text-secondary">€35</b></td>
+                        <td><b class="text-secondary">€65</b></td>
+                    </tr>
+                    <tr>
+                        <td>6 rooms</td>
+                        <td><b class="text-secondary">€40</b></td>
+                        <td><b class="text-secondary">€75</b></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive mb-4">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Cleaning</th>
+                        <th width="240">Standard</th>
+                        <th width="240">General</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Cleaning walls (dust and spider webs)</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning ceilings (dust and spider webs)</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning floors</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning balcony floors</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning floors under beds</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning floors under cabinets</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning cabinets</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning doors</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning bathrooms</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning sinks</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning appliances</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Washing dishes</td>
+                        <td><i class="icon icon__check"></i></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning windows from indoors</td>
+                        <td></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning windows from outdoors</td>
+                        <td></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning shower stall</td>
+                        <td></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning bathtub</td>
+                        <td></td>
+                        <td><i class="icon icon__check"></i></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Changing Bed Sheets</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered article-cleaning__table-center">
+                    <thead>
+                    <tr>
+                        <th width="50%">Single bed</th>
+                        <th width="50%">Double bed</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><b class="text-secondary">€3</b></td>
+                        <td><b class="text-secondary">€4</b></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-center mb-4">Start Using Our Services</h2>
+            <section class="mb-4">
+                <h3 class="text-center">You have to</h3>
+                <ol>
+                    <li class="mb-3">Sign a <a download href="/files/articles/files/102.docx">contract</a> with us</a></li>
+                    <li><b>Buy two sets of sheets for each bed.</b> Buy sheets at the Beloteks store at Dunes Street 43, Nessebar, Bulgaria. Or provide money and we’ll buy them at wholesale prices. The prices are shown for two sets of bed linen and towels. It also includes a special blanket for each bed.
+                    </li>
+                </ol>
+            </section>
+            <section class="py-5">
+                <h3 class="text-center mb-4">Bed sheets properties</h3>
+                <ul class="row text-center">
+                    <li class="col-md-3 col-6">
+                        <figure class="figure">
+                            <img src="templates/articles/article-cleaning/article-cleaning__money-box.svg" alt=""
+                                 class="figure-img">
+                            <figcaption class="lead">White color</figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-md-3 col-6">
+                        <figure class="figure">
+                            <img src="templates/articles/article-cleaning/article-cleaning__support.svg" alt=""
+                                 class="figure-img">
+                            <figcaption class="lead">No patterns or pictures</figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-md-3 col-6">
+                        <figure class="figure">
+                            <img src="templates/articles/article-cleaning/article-cleaning__cleaner.svg" alt=""
+                                 class="figure-img">
+                            <figcaption class="lead">100% cotton</figcaption>
+                        </figure>
+                    </li>
+                    <li class="col-md-3 col-6">
+                        <figure class="figure">
+                            <img src="templates/articles/article-cleaning/article-cleaning__balance.svg" alt=""
+                                 class="figure-img">
+                            <figcaption class="lead">60 threads per sq.cm</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <div class="row">
+                <section class="col-lg-6">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr class="header-row">
+                                <td colspan="4"><h3 class="lead text-center mb-0">Two sets for a <b class="text-dark">double bed</b></h3></td>
+                            </tr>
+                            <tr>
+                                <th width="40%">Item</th>
+                                <th width="20%">Size</th>
+                                <th width="20%">Price</th>
+                                <th width="20%">Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Sheet</td>
+                                <td>240x260</td>
+                                <td><b class="text-secondary">€7</b></td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Duvet cover</td>
+                                <td>150x220</td>
+                                <td><b class="text-secondary">€8</b></td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Blanket</td>
+                                <td>150x220</td>
+                                <td><b class="text-secondary">€10</b></td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Pillowcase</td>
+                                <td>50x70</td>
+                                <td><b class="text-secondary">€2</b></td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Large towel</td>
+                                <td>70x140</td>
+                                <td><b class="text-secondary">€3</b></td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Small towel</td>
+                                <td>50x90</td>
+                                <td><b class="text-secondary">€2</b></td>
+                                <td>4</td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="4" class="text-center lead">
+                                    <label>TOTAL:</label>
+                                    <b class="text-secondary">€94</b>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </section>
+                <section class="col-lg-6">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr class="header-row">
+                                <td colspan="4"><h3 class="lead text-center mb-0">Two sets for a <b class="text-dark">single bed</b></h3></td>
+                            </tr>
+                            <tr>
+                                <th width="40%">Item</th>
+                                <th width="20%">Size</th>
+                                <th width="20%">Price</th>
+                                <th width="20%">Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Sheet</td>
+                                <td>240x260</td>
+                                <td><b class="text-secondary">€7</b></td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Duvet cover</td>
+                                <td>150x220</td>
+                                <td><b class="text-secondary">€8</b></td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Blanket</td>
+                                <td>150x220</td>
+                                <td><b class="text-secondary">€10</b></td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Pillowcase</td>
+                                <td>50x70</td>
+                                <td><b class="text-secondary">€2</b></td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Large towel</td>
+                                <td>70x140</td>
+                                <td><b class="text-secondary">€3</b></td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Small towel</td>
+                                <td>50x90</td>
+                                <td><b class="text-secondary">€2</b></td>
+                                <td>2</td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="4" class="text-center lead">
+                                    <label>TOTAL:</label>
+                                    <b class="text-secondary">€54</b>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+            <figure class="card flex-md-row align-items-center">
+                <img src="templates/articles/article-cleaning/article-cleaning__linen.png" width="240" alt="Постельное бельё">
+                <figcaption class="card-body">
+                    <h3 class="lead mb-4">Cleaning and changing bed sheets are provided in:</h3>
+                    <ul class="list-inline lead mb-0">
+                        <li class="list-inline-item">Sunny Beach,</li>
+                        <li class="list-inline-item">Sveti Vlas,</li>
+                        <li class="list-inline-item">Elenite,</li>
+                        <li class="list-inline-item">Nessebar,</li>
+                        <li class="list-inline-item">Ravda,</li>
+                        <li class="list-inline-item">Aheloy</li>
+                    </ul>
+                    <p class="lead mb-0">For all questions, please contact <a target="_blank" href="/contacts/">our support</a></p>
+                </figcaption>
+            </figure>
+        </section>
+    </div>
+</article>
+<!-- /Article: article-cleaning -->
     <div class="container py-5">
-        <%- include('../../../sections/our-services/our-services.en.tpl'); %>
+        <!-- Section: our-services -->
+<section class="our-services">
+    <h2 class="mb-4 text-center">Other services</h2>
+    <nav class="our-services__nav row">
+        <a class="our-services__nav-item our-services_image_cleaning col-lg col-sm-6"
+           href="/cleaning/">Cleaning services</a>
+        <a class="our-services__nav-item our-services_image_escort col-lg col-sm-6"
+           href="/escort/">Guests escort</a>
+        <a class="our-services__nav-item our-services_image_transfer col-lg col-sm-6"
+           href="/transfer/">Transfer</a>
+        <a class="our-services__nav-item our-services_image_car-rental col-lg col-sm-6"
+           href="/rentacar/">Car rental</a>
+        <a class="our-services__nav-item our-services_image_management col-lg col-sm-6"
+           href="/management/">Property management</a>
+    </nav>
+</section>
+<!-- /Section: our-services -->
     </div>
 </main>
 <!-- /Page: page-article -->
 
-<%- include('../../../common.blocks/page-footer/page-footer.tpl'); %>
-<%- include('../../../common.blocks/meta-footer/meta-footer.tpl'); %>
+<!-- Page footer -->
+<footer class="page-footer">
+    <div class="page-footer__subscribe bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col mb-2 mb-md-0">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
+                <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
+                    <!-- Form: form-subscribe -->
+<form action="/realties/subscribeClient/" 
+      data-post="&page=/" 
+      class="form-subscribe form-row w-100">
+    <div class="form-group col-7 mb-0">
+        <label for="subscribtionEmail" class="sr-only">Password</label>
+        <input type="email" class="form-control" id="subscribtionEmail" required placeholder="Ваш e-mail">
+    </div>
+    <div class="col-5">
+        <button type="submit" class="btn btn-primary w-100">Подписаться</button>
+    </div>
+</form>
+<!-- /Form: form-subscribe -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="page-footer__list-of-navs row">
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">О нас</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="/about" class="page-footer__link">Компания</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/trust" class="page-footer__link">Безопасность</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">Правила сайта</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="/user_agreement/" class="page-footer__link">Общие условия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/booking_cancelation_rules/" class="page-footer__link">Отмена бронирования</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/withdraw/" class="page-footer__link">Вывод денег</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">Связаться</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="page-footer__link">Контакты</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-6 col-md-3 mb-4">
+                <h3 class="page-footer__title">Следите за нами</h3>
+                <ul class="page-footer__social-list">
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="http://ok.ru/group/53570038661351/"
+                           class="page-footer__social-icon page-footer__social-icon_type_ok"></a>
+                    </li>
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="https://vk.com/vput_eu"
+                           class="page-footer__social-icon page-footer__social-icon_type_vk"></a>
+                    </li>
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="https://www.facebook.com/groups/vput.eu/"
+                           class="page-footer__social-icon page-footer__social-icon_type_facebook"></a>
+                    </li>
+                    <li class="page-footer__social-item">
+                        <a target="_blank"
+                           href="https://www.instagram.com/v.p.u.t.bulgaria/"
+                           class="page-footer__social-icon page-footer__social-icon_type_instagram"></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="page-footer__info">
+            <figure class="page-footer__logo"></figure>
+            <div class="page-footer__copyright">Copyright © 2013 - 2018</div>
+            <hr class="page-footer__delimiter">
+            <div class="page-footer__developer">Developed by
+                <a target="_blank"
+                   href="https://webdelo.org/"
+                   class="page-footer__developed-by"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /Page footer -->
+<!-- Bundle Scripts -->
+<script src="assets/bundles/js.bundle.min.js"></script>
+<script src="assets/bundles/ts.bundle.min.js"></script>
+</body>
+</html>

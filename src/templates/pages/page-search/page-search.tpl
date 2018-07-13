@@ -6,8 +6,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 page-search__search-container">
-                <div class="page-search__offers-search-form py-4 border-bottom">
-                    <%- include('../../common.blocks/offers-search-form/offers-search-form.tpl'); %>
+                <div class="page-search__form-search-offers py-4 border-bottom">
+                    <%- include('../../forms/form-search-offers/form-search-offers.tpl'); %>
                 </div>
                 <div class="page-search__list-of-offers py-4">
                     <!-- List of offers -->

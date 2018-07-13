@@ -7,8 +7,8 @@
                     <h2 class="authorization__title">У меня есть аккаунт</h2>
                 </div>
                 <div class="authorization__card-back authorization__card-back-auth authorization__card-body">
-                    <div class="authorization__authorization-form">
-                        <%- include('../../common.blocks/authorization-form/authorization-form.tpl'); %>
+                    <div class="authorization__form-authorization">
+                        <%- include('../../forms/form-authorization/form-authorization.tpl'); %>
                     </div>
                 </div>
             </section>
@@ -19,8 +19,8 @@
                     <h2 class="authorization__title">Я тут новенький</h2>
                 </div>
                 <div class="authorization__card-back authorization__card-back-register authorization__card-body">
-                    <div class="authorization__registration-form">
-                        <%- include('../../common.blocks/registration-form/registration-form.tpl'); %>
+                    <div class="authorization__form-registration">
+                        <%- include('../../forms/form-registration/form-registration.tpl'); %>
                     </div>
                 </div>
             </section>

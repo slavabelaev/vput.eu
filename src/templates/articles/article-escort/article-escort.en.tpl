@@ -13,8 +13,8 @@
         <div class="container mw-1024px">
             <nav class="nav nav-pills nav-fill">
                 <a class="nav-item nav-link" href="/cleaning/">Cleaning services</a>
-                <a class="nav-item nav-link" href="/escort/">Guests escort</a>
-                <a class="nav-item nav-link active" href="#">Transfer</a>
+                <a class="nav-item nav-link active" href="#">Guests escort</a>
+                <a class="nav-item nav-link" href="/transfer/">Transfer</a>
                 <a class="nav-item nav-link" href="/rentacar/">Car rental</a>
                 <a class="nav-item nav-link" href="/management/">Property management</a>
             </nav>
@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-md-6 mb-4">
                 <section class="card h-100">
-                    <h2 class="h3 card-header bg-light text-black-50"><i class="icon icon__time-in icon_size_32 mr-3"></i>Check-in for — <b
+                    <h2 class="lead card-header bg-light text-black-50"><i class="icon icon__time-in mr-3"></i>Check-in for — <b
                                 class="text-secondary">€15</b></h2>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex align-items-center d-flex"><i
@@ -39,7 +39,7 @@
             </div>
             <div class="col-md-6 mb-4">
                 <section class="card h-100">
-                    <h2 class="h3 card-header bg-light text-black-50"><i class="icon icon__time-out icon_size_32 mr-3"></i>Check-out for — <b
+                    <h2 class="lead card-header bg-light text-black-50"><i class="icon icon__time-out mr-3"></i>Check-out for — <b
                                 class="text-secondary">€15</b></h2>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex align-items-center"><i class="icon icon__check mr-3"></i>Inventorying valuables</li>
@@ -54,35 +54,35 @@
     <section class="container">
         <h2 class="mb-4 text-center">Pay Escort</h2>
         <ul class="row text-center mb-4">
-            <li class="col-lg-3 col-6">
+            <li class="col-lg-3 col-sm-6 ">
                 <figure class="figure">
                     <img src="templates/articles/article-escort/article-escort__card.svg" alt="" class="figure-img">
                     <figcaption class="figure-caption">
-                        <h3 class="h5 text-dark">By bank card</h3>
+                        <h3 class="lead text-dark">By bank card</h3>
                     </figcaption>
                 </figure>
             </li>
-            <li class="col-lg-3 col-6">
+            <li class="col-lg-3 col-sm-6 ">
                 <figure class="figure">
                     <img src="templates/articles/article-escort/article-escort__balance.svg" alt="" class="figure-img">
                     <figcaption class="figure-caption">
-                        <h3 class="h5 text-dark">From VPUT balance</h3>
+                        <h3 class="lead text-dark">From VPUT balance</h3>
                     </figcaption>
                 </figure>
             </li>
-            <li class="col-lg-3 col-6">
+            <li class="col-lg-3 col-sm-6 ">
                 <figure class="figure">
                     <img src="templates/articles/article-escort/article-escort__cash.svg" alt="" class="figure-img">
                     <figcaption class="figure-caption">
-                        <h3 class="h5 text-dark">in our office in <br class="d-none d-sm-block">Sunny Beach</h3>
+                        <h3 class="lead text-dark">in our office in <br class="d-none d-md-block">Sunny Beach</h3>
                     </figcaption>
                 </figure>
             </li>
-            <li class="col-lg-3 col-6">
+            <li class="col-lg-3 col-sm-6 ">
                 <figure class="figure">
                     <img src="templates/articles/article-escort/article-escort__bank.svg" alt="" class="figure-img">
                     <figcaption class="figure-caption">
-                        <h3 class="h5 text-dark">By bank transfer</h3>
+                        <h3 class="lead text-dark">By bank transfer</h3>
                     </figcaption>
                 </figure>
             </li>

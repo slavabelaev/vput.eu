@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col mb-2 mb-md-0">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
                 <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
-                    <%- include('../../common.blocks/subscribe-form/subscribe-form.tpl'); %>
+                    <%- include('../../forms/form-subscribe/form-subscribe.tpl'); %>
                 </div>
             </div>
         </div>

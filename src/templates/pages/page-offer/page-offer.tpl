@@ -2,6 +2,9 @@
 <%- include('../../common.blocks/page-header/page-header.tpl'); %>
 
 <!-- Page: page-offer -->
+<link rel="stylesheet" href="assets/pages/page-offer.css">
+<script src="assets/pages/page-offer.js" defer></script>
+
 <main class="page-offer">
     <div class="container">
         <!-- Block: breadcrumb -->

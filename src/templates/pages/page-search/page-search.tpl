@@ -2,6 +2,9 @@
 <%- include('../../common.blocks/page-header/page-header.tpl'); %>
 
 <!-- Page: page-search -->
+<link rel="stylesheet" href="assets/pages/page-search.css">
+<script src="assets/pages/page-search.js" defer></script>
+
 <main class="page-search">
     <div class="container-fluid">
         <div class="row">

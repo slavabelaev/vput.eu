@@ -30,7 +30,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__сommission-of-the-bank.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Комиссия банка</h3>
                     </header>
                     <p>Банк-эквайер, предоставляющий услуги виртуального POS-терминала, снимает комиссию в размере от <b class="text-primary">3-5%</b> от полной суммы транзакции.</p>
@@ -39,7 +39,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__bank-transactions.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Банковские переводы</h3>
                     </header>
                     <p>При осуществлении выплат зарезервированных денежных средств владельцам объектов мы теряем <b class="text-primary">3%</b> комиссии на банковских переводах.</p>
@@ -57,7 +57,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__sales-department.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Коммерческий отдел</h3>
                     </header>
                     <p>Наши менеджеры круглосуточно следят за всем происходящим на нашем сервисе. В случае задержек с ответами или возникающими проблемами менеджеры связываются с клиентами и владельцами объектов по телефонам, стараясь в кратчайшие сроки разрешить любые вопросы. Такой индивидуальный подход отличает нас от крупных мировых сервисов.</p>
@@ -66,7 +66,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__development-department.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Технический отдел</h3>
                     </header>
                     <p>Наши технические специалисты делают проект максимально понятным, гибким и полнофункциональным. Однако каждый день мы сталкиваемся с неординарными ситуациями и индивидуальными потребностями наших клиентов. Подобные проблемы наши программисты решают в ручном режиме.</p>

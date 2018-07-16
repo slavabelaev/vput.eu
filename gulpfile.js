@@ -24,7 +24,8 @@ const paths = {
     src: './src',
     dest: './dist',
     bundles: './dist/assets/bundles',
-    articles: './dist/assets/articles'
+    articles: './dist/assets/articles',
+    pages: './dist/assets/pages'
 };
 
 const config = {
@@ -42,7 +43,6 @@ const config = {
                 paths.src + '/**/common.blocks/**/*.scss',
                 paths.src + '/**/sections/**/*.scss',
                 paths.src + '/**/forms/**/*.scss',
-                paths.src + '/**/pages/**/*.scss',
             ],
             css: []
         },
@@ -52,7 +52,6 @@ const config = {
                 paths.src + '/**/common.blocks/**/*.scss',
                 paths.src + '/**/sections/**/*.scss',
                 paths.src + '/**/forms/**/*.scss',
-                paths.src + '/**/pages/**/*.scss',
             ],
             css: [
                 'node_modules/slick-carousel/slick/slick.css',
@@ -61,6 +60,9 @@ const config = {
                 'node_modules/filepond/dist/filepond.min.css',
             ]
         },
+        pages: [
+            paths.src + '/**/pages/**/*.scss'
+        ],
         articles: [
             paths.src + '/**/articles/**/*.scss'
         ]
@@ -73,7 +75,6 @@ const config = {
                 paths.src + '/**/common.blocks/**/*.ts',
                 paths.src + '/**/sections/**/*.ts',
                 paths.src + '/**/forms/**/*.ts',
-                paths.src + '/**/pages/**/*.ts',
             ],
             js: []
         },
@@ -83,7 +84,6 @@ const config = {
                 paths.src + '/**/common.blocks/**/*.ts',
                 paths.src + '/**/sections/**/*.ts',
                 paths.src + '/**/forms/**/*.ts',
-                paths.src + '/**/pages/**/*.ts',
             ],
             js: [
                 'node_modules/jquery/dist/jquery.min.js',
@@ -102,6 +102,9 @@ const config = {
                 'node_modules/sticky-kit/dist/sticky-kit.min.js',
             ]
         },
+        pages: [
+            paths.src + '/**/pages/**/*.ts'
+        ],
         articles: [
             paths.src + '/**/articles/**/*.ts'
         ]
@@ -131,6 +134,21 @@ gulp.task('templates:build', function () {
             path.dirname = '';
         }))
         .pipe(gulp.dest(paths.dest))
+        .pipe(browserSync.reload({ stream: true }));
+});
+
+gulp.task('styles:buildPagesSCSS', function () {
+    return gulp.src(config.styles.pages)
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
+        .pipe(csso())
+        .pipe(sourcemaps.write('.'))
+        .pipe(rename(function(path) {
+            path.dirname = '';
+        }))
+        .pipe(gulp.dest(paths.pages))
         .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -180,7 +198,25 @@ gulp.task('styles:buildCSS', function () {
         .pipe(gulp.dest(paths.bundles))
         .pipe(browserSync.reload({ stream: true }));
 });
-gulp.task('styles:build', ['styles:buildSCSS', 'styles:buildCSS', 'styles:buildArticlesSCSS']);
+gulp.task('styles:build', [
+    'styles:buildSCSS',
+    'styles:buildCSS',
+    'styles:buildArticlesSCSS',
+    'styles:buildPagesSCSS'
+]);
+
+gulp.task('scripts:buildPagesTS', function() {
+    return gulp.src(config.scripts.pages)
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(typescript())
+        .pipe(sourcemaps.write('.'))
+        .pipe(rename(function(path) {
+            path.dirname = '';
+        }))
+        .pipe(gulp.dest(paths.pages))
+        .pipe(browserSync.reload({ stream: true }))
+});
 
 gulp.task('scripts:buildArticlesTS', function() {
     return gulp.src(config.scripts.articles)
@@ -225,7 +261,12 @@ gulp.task('scripts:buildJS', function() {
         .pipe(gulp.dest(paths.bundles))
         .pipe(browserSync.reload({ stream: true }));
 });
-gulp.task('scripts:build', ['scripts:buildTS', 'scripts:buildJS', 'scripts:buildArticlesTS']);
+gulp.task('scripts:build', [
+    'scripts:buildTS',
+    'scripts:buildJS',
+    'scripts:buildArticlesTS',
+    'scripts:buildPagesTS'
+]);
 
 gulp.task('images:build', function() {
     return gulp.src(config.images.buildFiles)
@@ -252,8 +293,10 @@ gulp.task('clean', function() {
 gulp.task('build', [
     'templates:build',
     'styles:build',
+    'styles:buildPagesSCSS',
     'styles:buildArticlesSCSS',
     'scripts:build',
+    'scripts:buildPagesTS',
     'scripts:buildArticlesTS',
     'images:build',
     'fonts:build',
@@ -263,6 +306,9 @@ gulp.task('watch', function() {
     watch(config.templates.watchFiles, function() {
         gulp.start('templates:build');
     });
+    watch(config.styles.pages, function() {
+        gulp.start('styles:buildPagesSCSS');
+    });
     watch(config.styles.articles, function() {
         gulp.start('styles:buildArticlesSCSS');
     });
@@ -271,6 +317,9 @@ gulp.task('watch', function() {
     });
     watch(config.styles.watchFiles.css, function() {
         gulp.start('styles:buildCSS');
+    });
+    watch(config.scripts.pages, function() {
+        gulp.start('scripts:buildPagesTS');
     });
     watch(config.scripts.articles, function() {
         gulp.start('scripts:buildArticlesTS');

@@ -2,15 +2,15 @@
 
 .page-footer {
   background-color: #707070;
-  color: #fff;
+  color: $white;
   padding-bottom: 3rem;
 }
 .page-footer__link {
-  color: #fff;
+  color: $white;
   opacity: .8;
   @include hover-focus {
     opacity: 1;
-    color: #fff;
+    color: $white;
     text-decoration: none;
   }
 }
@@ -49,7 +49,7 @@
 }
 .page-footer__delimiter {
   max-width: 70px;
-  border-color: #fff;
+  border-color: $white;
 }
 .page-footer__logo {
   margin-bottom: .5rem;

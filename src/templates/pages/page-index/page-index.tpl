@@ -4,6 +4,9 @@
 </div>
 
 <!-- Page: page-index -->
+<link rel="stylesheet" href="assets/pages/page-index.css">
+<script src="assets/pages/page-index.js" defer></script>
+
 <main class="page-index">
     <div class="page-index__section page-index__who-we-are">
         <div class="container">

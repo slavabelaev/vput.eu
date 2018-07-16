@@ -1,0 +1,1 @@
+{"version":3,"sources":["templates/pages/page-add/page-add.scss"],"names":[],"mappings":"AAEA,iB,CACE,qB,CACA,U","file":"page-add.css","sourcesContent":["@import \"../../library.blocks/bootstrap/bootstrap-reboot\";\r\n\r\n.page-add__header {\r\n  background-color: $dark;\r\n  color: $white;\r\n}"]}

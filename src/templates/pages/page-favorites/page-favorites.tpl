@@ -2,6 +2,9 @@
 <%- include('../../common.blocks/page-header/page-header.tpl'); %>
 
 <!-- Page: page-favorites -->
+<link rel="stylesheet" href="assets/pages/page-favorites.css">
+<script src="assets/pages/page-favorites.js" defer></script>
+
 <main class="page-favorites">
     <section class="page-favorites__section">
         <header class="bg-light">

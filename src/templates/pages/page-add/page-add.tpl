@@ -2,6 +2,9 @@
 <%- include('../../common.blocks/page-header/page-header.tpl'); %>
 
 <!-- Page: page-add -->
+<link rel="stylesheet" href="assets/pages/page-add.css">
+<script src="assets/pages/page-add.js" defer></script>
+
 <main class="page-add">
     <header class="page-add__header text-center py-5">
         <div class="container">

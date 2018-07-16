@@ -2,6 +2,9 @@
 <%- include('../../common.blocks/page-header/page-header.tpl'); %>
 
 <!-- Page: page-complex -->
+<link rel="stylesheet" href="assets/pages/page-complex.css">
+<script src="assets/pages/page-complex.js" defer></script>
+
 <main class="page-complex">
     <div class="pt-4 pb-2 border-bottom">
         <div class="container">

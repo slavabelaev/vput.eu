@@ -30,7 +30,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__сommission-of-the-bank.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Комісія банку</h3>
                     </header>
                     <p>Банк-еквайєр, що надає послуги віртуального POS-терміналу, стягує комісію в розмірі 3% від повної суми транзакції.</p>
@@ -39,7 +39,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__bank-transactions.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Банківські перекази</h3>
                     </header>
                     <p>При здійсненні виплат зарезервованих коштів власникам об'єктів ми витрачаємо 3% від комісії на банківські перекази.</p>
@@ -57,7 +57,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__sales-department.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Комерційний відділ</h3>
                     </header>
                     <p>Наші менеджери цілодобово стежать за всім, що відбувається на нашому сервісі. У разі затримок із відповідями або виникаючими проблемами вони зв'язуються з клієнтами і власниками об'єктів по телефону і намагаються якнайшвидше вирішити будь-які питання. Такий індивідуальний підхід відрізняє нас від великих світових сервісів.</p>
@@ -66,7 +66,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__development-department.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Технічний відділ</h3>
                     </header>
                     <p>Наші технічні фахівці роблять проект максимально зрозумілим, гнучким і повнофункціональним. Однак кожен день ми стикаємося з неординарними ситуаціями та індивідуальними потребами наших клієнтів. Такі проблеми наші програмісти вирішують в ручному режимі.</p>

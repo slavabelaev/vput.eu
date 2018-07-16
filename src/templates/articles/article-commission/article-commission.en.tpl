@@ -30,7 +30,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__сommission-of-the-bank.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Bank Fee</h3>
                     </header>
                     <p>Acquiring bank which provides a virtual POS-terminal charges a fee of 3–5% of the total transaction amount.</p>
@@ -39,7 +39,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__bank-transactions.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Bank Transfers</h3>
                     </header>
                     <p>While transferring the reserved funds to the hosts, we lose 3% commission on bank transfers.</p>
@@ -57,7 +57,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__sales-department.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Marketing Department</h3>
                     </header>
                     <p>Our managers are watching everything happening on the website twenty-four hours a day. In case of delays in responses or emerging problems, our staff contact both guests and hosts by phone trying to resolve any issues as soon as possible. Such personal approach makes us different from the world's major services.</p>
@@ -66,7 +66,7 @@
                     <header class="text-center mb-4">
                         <img src="templates/articles/article-commission/article-commission__development-department.svg"
                              alt=""
-                             class="">
+                             class="figure-img">
                         <h3>Technical Department</h3>
                     </header>
                     <p>Our technical experts are making the website utterly easy, flexible and full-featured. However, every day we deal with extraordinary situations and individual needs of our customers. Such problems are solved by our programmers in a manual way.</p>

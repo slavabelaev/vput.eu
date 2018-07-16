@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
     $('[data-toggle=tooltip]').tooltip();
     $('[data-toggle=popover]').popover();
-    FilePond.parse(document);
+    setTimeout(function () {
+        $('.page-preloader').fadeOut(700);
+    }, 1);
 });

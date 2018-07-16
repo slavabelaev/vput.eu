@@ -69,3 +69,10 @@
     }
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .services__img_is_luggage {
+    background-position: right center;
+    margin-right: 2rem;
+  }
+}

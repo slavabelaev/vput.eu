@@ -1,5 +1,9 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
+.page-preloader {
+  position: fixed;
+}
+
 .mh-100vh {
   min-height: 600px;
   min-height: 100vh;

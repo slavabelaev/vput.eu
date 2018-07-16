@@ -36,7 +36,10 @@
     left: 0;
   }
   .page-search__map-container {
-    position: relative;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
   }
   .page-search__map {
     position: absolute;

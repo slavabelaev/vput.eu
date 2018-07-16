@@ -12,7 +12,7 @@
     </div>
     <div class="container">
         <ul class="page-footer__list-of-navs row">
-            <li class="col-6 col-md-3 mb-4">
+            <li class="col-sm-6 col-md-3 mb-4">
                 <h3 class="page-footer__title">О нас</h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -23,7 +23,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="col-6 col-md-3 mb-4">
+            <li class="col-sm-6 col-md-3 mb-4">
                 <h3 class="page-footer__title">Правила сайта</h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -37,7 +37,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="col-6 col-md-3 mb-4">
+            <li class="col-sm-6 col-md-3 mb-4">
                 <h3 class="page-footer__title">Связаться</h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -45,7 +45,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="col-6 col-md-3 mb-4">
+            <li class="col-sm-6 col-md-3 mb-4">
                 <h3 class="page-footer__title">Следите за нами</h3>
                 <ul class="page-footer__social-list">
                     <li class="page-footer__social-item">

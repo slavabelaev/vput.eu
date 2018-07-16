@@ -4,7 +4,7 @@
         <section class="services__transfer col-xl-6 mb-3">
             <h2 class="services__title mb-4">ТРАНСФЕР</h2>
             <figure class="figure row text-left pr-xl-5">
-                <figure class="services__img figure-img col"
+                <figure class="services__img services__img_is_luggage figure-img col"
                         style="background-image: url(templates/sections/services/services__luggage.png)"></figure>
                 <figcaption class="figure-caption col-auto">
                     <h3 class="services__figure-title">Из аэропорта Бургас в</h3>
@@ -43,7 +43,7 @@
                     </table>
                     <a href="/rentacar/" class="services__link">Посмотреть автомобили</a>
                 </figcaption>
-                <figure class="services__img figure-img col"
+                <figure class="services__img service__img_is_car figure-img col"
                         style="background-image: url(templates/sections/services/services__car.png)"></figure>
             </figure>
         </section>

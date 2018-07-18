@@ -134,8 +134,10 @@
       }
     }
   }
+}
 
-  .form-search-offers__search-col {
+@include media-breakpoint-down(sm) {
+  .form-search-offers__search-col.col {
     flex: 100%;
   }
 }

@@ -7,20 +7,9 @@
 .offer-item__image-slider {
   display: block;
   position: relative;
-  height: 200px;
   overflow: hidden;
-  border-radius: .1825rem;
+  border-radius: $border-radius;
   background-color: $dark;
-  .slick-prev,
-  .slick-next {
-    z-index: 1;
-  }
-  .slick-prev {
-    left: .5rem;
-  }
-  .slick-next {
-    right: .5rem;
-  }
 }
 
 .offer-item__image.slick-slide,
@@ -31,7 +20,7 @@
 .offer-item__image {
   background-size: cover;
   background-position: center;
-  transition: .24s;
+  transition: $transition-base;
   &:hover {
     filter: brightness(1.1);
   }

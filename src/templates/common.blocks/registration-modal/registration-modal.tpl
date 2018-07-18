@@ -5,11 +5,11 @@
      aria-hidden="true">
     <div class="modal-dialog modal-sm"
          role="document">
-        <a href="#"
-           data-dismiss="modal"
-           class="close"
-           aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
         <div class="modal-content">
+            <a href="#"
+               data-dismiss="modal"
+               class="close"
+               aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
             <div class="modal-body">
                 <%- include('../../forms/form-registration/form-registration.tpl'); %>
             </div>

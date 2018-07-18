@@ -4,10 +4,10 @@
   text-align: center;
   background-color: $dark;
   color: $white;
-  min-height: 360px;
   display: flex;
   align-items: center;
   padding-top: 70px;
+  padding-bottom: 70px;
   background-size: cover;
   background-position: center;
   box-shadow: rgba(0,0,0,.5) 0 60px 60px inset;
@@ -21,5 +21,8 @@
 @include media-breakpoint-up(md) {
   .page-article__article-header {
     margin-top: -66px;
+  }
+  .page-article__article-header {
+    min-height: 360px;
   }
 }

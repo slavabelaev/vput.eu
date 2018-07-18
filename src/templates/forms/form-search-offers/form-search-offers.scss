@@ -94,7 +94,7 @@
   background-color: $red;
   right: 0;
   top: 0;
-  padding: $btn-padding-y $btn-padding-x;
+  padding: .5rem;
   border-bottom-left-radius: $border-radius;
   z-index: 99;
   display: none;
@@ -133,5 +133,9 @@
         display: none;
       }
     }
+  }
+
+  .form-search-offers__search-col {
+    flex: 100%;
   }
 }

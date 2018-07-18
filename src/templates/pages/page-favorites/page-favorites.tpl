@@ -7,13 +7,8 @@
 
 <main class="page-favorites">
     <section class="page-favorites__section">
-        <header class="bg-light">
-            <div class="container pt-4 pb-2">
-                <h1 class="text-center">Список избранных вами предложений</h1>
-                <a href="#" class="nav-link"><i class="icon icon__arrow-left icon_size_24 mr-3"></i>Вернуться к предложениям</a>
-            </div>
-        </header>
         <div class="container py-4">
+            <h1 class="page-favorites__title text-center mb-4">Список избранных вами предложений</h1>
             <%- include('../../common.blocks/list-of-offers/list-of-offers.tpl'); %>
         </div>
     </section>

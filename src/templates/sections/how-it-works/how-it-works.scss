@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 440px;
+  height: 280px;
   background-color: $dark;
   color: $white;
   border-radius: $card-border-radius;
@@ -23,5 +23,11 @@
   transition: $transition-base;
   &:hover {
     transform: scale(1.125);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .how-it-works {
+    height: 440px;
   }
 }

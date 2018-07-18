@@ -11,7 +11,7 @@
   align-items: stretch;
   justify-content: center;
   text-align: center;
-  min-height: 360px;
+  min-height: 180px;
   background-color: $dark;
   border-radius: $border-radius;
   color: $white;
@@ -39,4 +39,15 @@
   flex-direction: column;
   justify-content: space-around;
   z-index: 1;
+}
+
+@include media-breakpoint-up(md) {
+  .most-popular-cities__figure {
+    min-height: 200px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .most-popular-cities__figure {
+    min-height: 360px;
+  }
 }

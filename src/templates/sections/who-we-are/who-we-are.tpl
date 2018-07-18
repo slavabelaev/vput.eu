@@ -1,7 +1,7 @@
 <!-- Section: Who we are -->
 <section class="who-we-are">
     <header class="who-we-are__header mb-5 text-center">
-        <h1 class="who-we-are__title mb-0">ПОРТАЛ №1 В БОЛГАРИИ</h1>
+        <h1 class="who-we-are__title mb-md-0">ПОРТАЛ №1 В БОЛГАРИИ</h1>
         <div class="who-we-are__description">по безопасной аренде частного жилья</div>
     </header>
     <div class="who-we-are__form-search-offers form-search-offers__is_short">

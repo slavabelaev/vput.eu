@@ -1,5 +1,5 @@
 <%- include('../../common.blocks/meta-header/meta-header.tpl'); %>
-<div class="page-index__page-header navbar-dark">
+<div class="page-index__page-header navbar-dark-md">
 <%- include('../../common.blocks/page-header/page-header.tpl'); %>
 </div>
 

@@ -5,16 +5,17 @@
      aria-hidden="true">
     <div class="modal-dialog modal-sm"
          role="document">
-        <a href="#"
-           data-dismiss="modal"
-           class="close"
-           aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
         <div class="modal-content">
+            <a href="#"
+               data-dismiss="modal"
+               class="close"
+               aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
             <div class="modal-body">
                 <%- include('../../forms/form-authorization/form-authorization.tpl'); %>
             </div>
             <div class="modal-footer">
-                <a href="#" class="authorization-modal__register-link"
+                <a href="#"
+                   class="authorization-modal__register-link"
                    data-toggle="modal"
                    data-dismiss="modal"
                    data-target=".registration-modal">Регистрация</a>

@@ -167,9 +167,24 @@
   }
 
   .modal-sm { max-width: $modal-sm; }
-
 }
 
 @include media-breakpoint-up(lg) {
   .modal-lg { max-width: $modal-lg; }
+}
+
+
+@include media-breakpoint-down(sm) {
+  .modal-dialog {
+    .close {
+      margin: 0;
+      padding: .5rem;
+      border-radius: 0 $border-radius 0 $border-radius;
+      right: 0;
+      top: 0;
+      background-color: $red;
+      z-index: 1;
+      opacity: .8;
+    }
+  }
 }

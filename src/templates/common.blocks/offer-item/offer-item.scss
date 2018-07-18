@@ -11,16 +11,9 @@
   overflow: hidden;
   border-radius: .1825rem;
   background-color: $dark;
-  &:hover {
-    .slick-prev,
-    .slick-next {
-      opacity: 1;
-    }
-  }
   .slick-prev,
   .slick-next {
-    opacity: 0;
-    z-index: 99;
+    z-index: 1;
   }
   .slick-prev {
     left: .5rem;
@@ -47,7 +40,7 @@
   top: 12px;
   left: 12px;
   opacity: .36;
-  z-index: 2;
+  z-index: 1;
   outline: none;
   cursor: pointer;
   transition: $transition-base;
@@ -186,4 +179,19 @@
   position: absolute;
   right: 0;
   margin-right: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .offer-item__image-slider {
+    &:hover {
+      .slick-prev,
+      .slick-next {
+        opacity: 1;
+      }
+    }
+    .slick-prev,
+    .slick-next {
+      opacity: 0;
+    }
+  }
 }

@@ -22,10 +22,13 @@
     right: .5rem;
   }
 }
+
+.offer-item__image.slick-slide,
+.offer-item__image-slider {
+  height: 240px;
+}
+
 .offer-item__image {
-  &.slick-slide {
-    height: 200px;
-  }
   background-size: cover;
   background-position: center;
   transition: .24s;
@@ -193,5 +196,10 @@
     .slick-next {
       opacity: 0;
     }
+  }
+
+  .offer-item__image.slick-slide,
+  .offer-item__image-slider {
+    height: 200px;
   }
 }

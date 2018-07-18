@@ -11,7 +11,7 @@
   align-items: stretch;
   justify-content: center;
   text-align: center;
-  min-height: 180px;
+  min-height: 240px;
   background-color: $dark;
   border-radius: $border-radius;
   color: $white;
@@ -41,11 +41,6 @@
   z-index: 1;
 }
 
-@include media-breakpoint-up(md) {
-  .most-popular-cities__figure {
-    min-height: 200px;
-  }
-}
 @include media-breakpoint-up(lg) {
   .most-popular-cities__figure {
     min-height: 360px;

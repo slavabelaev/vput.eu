@@ -1,12 +1,24 @@
 <!-- Offer item -->
 <figure class="offer-item">
     <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
-    <div class="offer-item__image-slider" offer-item__image-slider>
-        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
-        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
-        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
-        <div data-src="https://vput.ru/cache/images/realties/483x315_focus/_mg_0185.jpg.JPG" alt="" class="offer-item__image"></div>
-    </div>
+    <nav class="offer-item__image-slider"
+         is-slick-carousel
+         style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);">
+        <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
+                aria-label="Next"
+                type="button">Next</button>
+        <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
+                aria-label="Prev"
+                type="button">Prev</button>
+        <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
+            class="offer-item__image"></a>
+        <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
+            class="offer-item__image"></a>
+        <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
+            class="offer-item__image"></a>
+        <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
+            class="offer-item__image"></a>
+    </nav>
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">
@@ -32,10 +44,18 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3"><i class="icon icon__pets icon_style_light"></i></li>
-            <li class="offer-item__detail offer-item__tv mr-3"><i class="icon icon__tv icon_style_light"></i></li>
-            <li class="offer-item__detail offer-item__conditioner mr-3"><i class="icon icon__air-conditioner icon_style_light"></i></li>
-            <li class="offer-item__detail offer-item__reliable-host"><i class="icon icon__reliable-host icon_size_32"></i></li>
+            <li class="offer-item__detail offer-item__animals mr-3">
+                <i class="icon icon__pets icon_style_light"></i>
+            </li>
+            <li class="offer-item__detail offer-item__tv mr-3">
+                <i class="icon icon__tv icon_style_light"></i>
+            </li>
+            <li class="offer-item__detail offer-item__conditioner mr-3">
+                <i class="icon icon__air-conditioner icon_style_light"></i>
+            </li>
+            <li class="offer-item__detail offer-item__reliable-host">
+                <i class="icon icon__reliable-host icon_size_32"></i>
+            </li>
         </ul>
     </figcaption>
 </figure>

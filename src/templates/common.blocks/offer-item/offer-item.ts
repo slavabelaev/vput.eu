@@ -1,10 +1,11 @@
 jQuery(document).ready(function($) {
-    let offerItemImageSliderElement = $('[offer-item__image-slider]'),
+    let offerItemImageSliderElement = $('[is-slick-carousel]'),
         offerItemAddToFavorites = $('.offer-item__add-to-favorites');
 
-    function initOfferItemImageSlider() {
-        offerItemImageSliderElement.slick({
-            dots: false,
+    function initOfferItemImageSlider(sliderElement) {
+        sliderElement.slick({
+            infinite: true,
+            dots: false
         })
         .on('beforeChange', function(event, slick) {
             let currentSlide = slick.$slider.find('.slick-current'),
@@ -32,7 +33,20 @@ jQuery(document).ready(function($) {
         offerItemImageFirstImage.css({ backgroundImage: 'url(' + offerItemImageFirstImageSource + ')' });
     }
 
-    initOfferItemImageSlider();
+    $('.offer-item__arrow').on('click', function() {
+        let arrowElement = $(this),
+            sliderElement = arrowElement.closest('.offer-item__image-slider[is-slick-carousel]');
+
+        initOfferItemImageSlider(sliderElement);
+
+        if (arrowElement.hasClass('offer-item__arrow_slide_prev')) {
+            sliderElement.slick('slickPrev');
+        } else {
+            sliderElement.slick('slickNext');
+        }
+        sliderElement.remove('.offer-item__arrow');
+    });
+
     offerItemAddToFavorites.on('click', function(e) {
         e.preventDefault();
         e.stopPropagation();

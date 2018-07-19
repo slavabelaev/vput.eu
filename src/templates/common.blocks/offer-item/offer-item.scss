@@ -19,9 +19,17 @@
   height: 240px;
 }
 .offer-item__image,
-.offer-item__image-slider {
+.offer-item__list-of-images {
   background-size: cover;
   background-position: center;
+}
+
+.offer-item__list-of-images {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 .offer-item__image {
   transition: $transition-base;

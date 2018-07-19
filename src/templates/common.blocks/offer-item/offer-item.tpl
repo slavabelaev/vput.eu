@@ -1,24 +1,28 @@
 <!-- Offer item -->
 <figure class="offer-item">
-    <a href="offer.html" class="offer-item__add-to-favorites icon icon__heart icon_style_light"></a>
-    <nav class="offer-item__image-slider"
-         is-slick-carousel
-         style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);">
+    <a href="offer.html"
+       class="offer-item__add-to-favorites icon icon__heart icon_style_light"
+       data-toggle="button"></a>
+    <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
                 type="button">Next</button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
                 type="button">Prev</button>
-        <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
-            class="offer-item__image"></a>
-        <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
-            class="offer-item__image"></a>
-        <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
-            class="offer-item__image"></a>
-        <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
-            class="offer-item__image"></a>
-    </nav>
+        <nav class="offer-item__list-of-images"
+             style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
+             is-slick-carousel>
+            <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
+                class="offer-item__image"></a>
+            <a  data-src="content/images/offers/previews/offer-item__preview-2.jpg"
+                class="offer-item__image"></a>
+            <a  data-src="content/images/offers/previews/offer-item__preview-3.jpg"
+                class="offer-item__image"></a>
+            <a  data-src="content/images/offers/previews/offer-item__preview-4.jpg"
+                class="offer-item__image"></a>
+        </nav>
+    </div>
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
         <ul class="offer-item__details">

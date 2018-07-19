@@ -1,55 +1,31 @@
 jQuery(document).ready(function($) {
-    let offerItemImageSliderElement = $('[is-slick-carousel]'),
-        offerItemAddToFavorites = $('.offer-item__add-to-favorites');
-
-    function initOfferItemImageSlider(sliderElement) {
-        sliderElement.slick({
-            infinite: true,
-            dots: false
-        })
-        .on('beforeChange', function(event, slick) {
-            let currentSlide = slick.$slider.find('.slick-current'),
-                preventSlide = currentSlide.prev(),
-                preventSlide2 = preventSlide.prev(),
-                nextSlide = currentSlide.next(),
-                nextSlide2 = nextSlide.next(),
-                slides = [ preventSlide, preventSlide2, nextSlide, nextSlide2 ];
-
-            slides.forEach(function(slide, index) {
-                let $image = slide,
-                    imageSource = $image.attr('data-src');
-
-                $image.css({ backgroundImage: 'url(' + imageSource + ')' });
-            });
-        });
-
-        initOfferItemImageSliderFirstSlide();
-    }
-
-    function initOfferItemImageSliderFirstSlide() {
-        let offerItemImageFirstImage = offerItemImageSliderElement.find('.slick-current.offer-item__image'),
-            offerItemImageFirstImageSource = offerItemImageFirstImage.attr('data-src');
-
-        offerItemImageFirstImage.css({ backgroundImage: 'url(' + offerItemImageFirstImageSource + ')' });
-    }
-
     $('.offer-item__arrow').on('click', function() {
         let arrowElement = $(this),
-            sliderElement = arrowElement.closest('.offer-item__image-slider[is-slick-carousel]');
+            sliderElement = arrowElement.closest('.offer-item__image-slider'),
+            slickSliderElement = sliderElement.find('.offer-item__list-of-images[is-slick-carousel]');
 
-        initOfferItemImageSlider(sliderElement);
+        slickSliderElement.slick({
+            infinite: true,
+            dots: false
+        });
+
+        slickSliderElement.find('[data-src]').each(function() {
+            let slideElement = $(this),
+                imageSource = slideElement.attr('data-src');
+
+            slideElement.css('background-image', 'url(' + imageSource + ')');
+        });
+
+        slickSliderElement.remove('.offer-item__arrow');
 
         if (arrowElement.hasClass('offer-item__arrow_slide_prev')) {
-            sliderElement.slick('slickPrev');
+            slickSliderElement.slick('slickPrev');
         } else {
-            sliderElement.slick('slickNext');
+            slickSliderElement.slick('slickNext');
         }
-        sliderElement.remove('.offer-item__arrow');
     });
 
-    offerItemAddToFavorites.on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $(this).toggleClass('active');
+    $('.offer-item__add-to-favorites[data-toggle="button"]').on('click', function() {
+       $(this).toggleClass('active');
     });
 });

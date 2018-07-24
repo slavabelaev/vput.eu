@@ -1,4 +1,6 @@
-<!-- Image slider -->
+<% var lang = JSON.parse(include('offer-image-slider_lang_ru.json')); %>
+
+<!-- Common: offer-image-slider -->
 <div class="offer-image-slider">
     <ul class="offer-image-slider__images-list" is-slider>
         <li class="offer-image-slider__slide">
@@ -65,4 +67,4 @@
         </li>
     </ul>
 </div>
-<!-- /Image slider -->
+<!-- /Common: offer-image-slider -->

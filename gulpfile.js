@@ -25,10 +25,14 @@ const paths = {
     dest: './dist',
     bundles: './dist/assets/bundles',
     articles: './dist/assets/articles',
-    pages: './dist/assets/pages'
+    pages: './dist/assets/pages',
+    languages: './dist/assets/lang'
 };
 
 const config = {
+    languages: {
+        watchFiles: paths.src + '/**/*.json'
+    },
     templates: {
         watchFiles: paths.src + '/**/*.tpl',
         buildFiles: [
@@ -86,11 +90,14 @@ const config = {
                 paths.src + '/**/forms/**/*.ts',
             ],
             js: [
+                // JQuery
                 'node_modules/jquery/dist/jquery.min.js',
                 // Bootstrap 4
                 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
                 // Image Gallery
                 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+                // Vue
+                'node_modules/vue/dist/vue.min.js',
                 // Price Slider
                 'node_modules/nouislider/distribute/nouislider.min.js',
                 'node_modules/wnumb/wNumb.js',
@@ -118,6 +125,16 @@ const config = {
         buildFiles: paths.src + '/**/*.{eot,woff,woff2,ttf}'
     }
 };
+
+gulp.task('languages:build', function () {
+    return gulp.src(config.languages.watchFiles)
+        .pipe(plumber())
+        .pipe(rename(function(path) {
+            path.dirname = '';
+        }))
+        .pipe(gulp.dest(paths.languages))
+        .pipe(browserSync.reload({ stream: true }));
+});
 
 gulp.task('templates:build', function () {
     return gulp.src(config.templates.buildFiles)
@@ -291,6 +308,7 @@ gulp.task('clean', function() {
 
 // Build
 gulp.task('build', [
+    'languages:build',
     'templates:build',
     'styles:build',
     'styles:buildPagesSCSS',
@@ -303,6 +321,9 @@ gulp.task('build', [
 ]);
 
 gulp.task('watch', function() {
+    watch(config.languages.watchFiles, function() {
+        gulp.start('languages:build');
+    });
     watch(config.templates.watchFiles, function() {
         gulp.start('templates:build');
     });

@@ -20,7 +20,7 @@
   background-position: left;
   background-image: url(#{$rootDir}/templates/common.blocks/page-header/page-header__VPUT-logo_style_light.svg);
 }
-.page-header__dropdown-item-exit {
+.page-header__dropdown-item-logout {
   border-bottom: 3px solid $primary;
   border-radius: 0 0 $border-radius $border-radius;
   text-align: center;

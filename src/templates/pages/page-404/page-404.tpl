@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="assets/pages/page-404.css">
 
 <main class="page-404">
-    <a href="/">
+    <a href="index.html">
         <img src="templates/pages/page-404/page-404__logo.svg"
              alt="V.P.U.T."
              class="page-404__logo">

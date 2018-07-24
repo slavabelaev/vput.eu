@@ -1,4 +1,6 @@
-<!-- Cities Tabs -->
+<% var lang = JSON.parse(include('cities-tabs_lang_ru.json')); %>
+
+<!-- Common: cities-tabs -->
 <div class="cities-tabs">
     <ul class="cities-tabs__header nav nav-tabs"
         role="tablist">
@@ -73,4 +75,4 @@
              role="tabpanel">...</div>
     </div>
 </div>
-<!-- /Cities Tabs -->
+<!-- /Common: cities-tabs -->

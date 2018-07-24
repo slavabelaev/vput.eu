@@ -1,4 +1,6 @@
-<!-- Block: complex-tabs -->
+<% var lang = JSON.parse(include('complex-tabs_lang_ru.json')); %>
+
+<!-- Common: complex-tabs -->
 <div class="complex-tabs">
     <ul class="nav nav-tabs"
         role="tablist">
@@ -7,21 +9,21 @@
                class="nav-link active"
                data-toggle="tab"
                data-target=".complex-tabs__about-the-complex-collapse"
-               role="tab">Описание</a>
+               role="tab"><%= lang.description %></a>
         </li>
         <li class="nav-item">
             <a href="#"
                class="nav-link"
                data-toggle="tab"
                data-target=".complex-tabs__apartments-in-the-complex-collapse"
-               role="tab">Апартаменты</a>
+               role="tab"><%= lang.apartments %></a>
         </li>
         <li class="nav-item">
             <a href="#"
                class="nav-link"
                data-toggle="tab"
                data-target=".complex-tabs__complex-on-the-map-collapse"
-               role="tab">На карте</a>
+               role="tab"><%= lang.on_the_map %></a>
         </li>
     </ul>
     <div class="tab-content">
@@ -45,4 +47,4 @@
         </div>
     </div>
 </div>
-<!-- /Block: complex-tabs -->
+<!-- /Common: complex-tabs -->

@@ -1,0 +1,25 @@
+{
+  "contacts": "Контакти",
+  "language": "Укр",
+  "languages": {
+    "russian": "Русский",
+    "english": "Англійська",
+    "ukrainian": "Український"
+  },
+  "sign_in": "Вхід",
+  "sign_up": "Реєстрація",
+  "cabinet_title": "Кабинет",
+  "cabinet": {
+    "realties": "Мої оголошення",
+    "bookings": "Бронювання",
+    "trips": "Мої подорожі",
+    "profile": "Профіль",
+    "transfers": "Трансферы",
+    "balance": "Баланс",
+    "partnership": "Партнерська програма",
+    "reviews": "Отзывы",
+    "referral_bookings": "Бронирования рефераллов",
+    "logout": "Выйти"
+  },
+  "to_rent": "Здати в оренду"
+}

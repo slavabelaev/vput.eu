@@ -12,11 +12,11 @@
     <div class="bg-light d-none d-sm-block">
         <div class="container mw-1024px">
             <nav class="nav nav-pills nav-fill">
-                <a class="nav-item nav-link active" href="/cleaning/">Клининговые услуги</a>
-                <a class="nav-item nav-link" href="/escort/">Заселение и выселение гостей</a>
-                <a class="nav-item nav-link" href="/transfer/">Трансфер</a>
-                <a class="nav-item nav-link" href="/rentacar/">Аренда авто</a>
-                <a class="nav-item nav-link" href="/management/">Управление объектами</a>
+                <a class="nav-item nav-link active" href="cleaning-ru.html">Клининговые услуги</a>
+                <a class="nav-item nav-link" href="escort-ru.html">Заселение и выселение гостей</a>
+                <a class="nav-item nav-link" href="transfer-ru.html">Трансфер</a>
+                <a class="nav-item nav-link" href="rentacar-ru.html">Аренда авто</a>
+                <a class="nav-item nav-link" href="management-ru.html">Управление объектами</a>
             </nav>
         </div>
     </div>
@@ -221,7 +221,7 @@
             <section class="mb-4">
                 <h3 class="text-center">Вам нужно</h3>
                 <ol>
-                    <li class="mb-3">Подписать с нами <a download href="/files/articles/files/102.docx">договор</a></li>
+                    <li class="mb-3">Подписать с нами <a download href="files/articles/files/102.docx">договор</a></li>
                     <li><b>Приобрести по два комплекта постельного белья</b> на каждое спальное место. Купите бельё
                         самостоятельно в магазине «Белотекс» по адресу: ул. Дюни 43, г. Несебр, Болгария. Или
                         предоставьте средства, и мы закупим его по оптовым ценам. Цены приведены за два комплекта
@@ -405,7 +405,7 @@
                         <li class="list-inline-item">Равда,</li>
                         <li class="list-inline-item">Ахелой</li>
                     </ul>
-                    <p class="lead mb-0">По всем вопросам обращайтесь в <a target="_blank" href="/contacts/">службу поддержки</a></p>
+                    <p class="lead mb-0">По всем вопросам обращайтесь в <a target="_blank" href="/contacts-ru.html">службу поддержки</a></p>
                 </figcaption>
             </figure>
         </section>

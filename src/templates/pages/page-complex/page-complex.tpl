@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="container py-4">
-        <section class="page-complex__section">
+        <section class="page-complex__section mb-4">
             <header class="page-complex__header">
                 <h1 class="page-complex__title">Sunny View North,
                     <a href="#" class="page-complex__city">Святой Влас, Болгария</a>

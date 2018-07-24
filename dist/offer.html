@@ -1,56 +1,81 @@
+
+
+<!-- Common: meta-header -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <meta name="description" content="V.P.U.T. (В путь) — безопасный сервис аренды недвижимости в Болгарии №1. Предложения по ценам от хозяев" />
-    <meta name="keywords" content="Аренда недвижимости за рубежом, снять жилье за рубежом, vput, впуть, в путь, аренда недвижимости для отдыха" />
-    <meta property="og:title" content="Аренда апартаментов в Болгарии">
-    <meta property="og:locale" content="ru_RU">
+    <meta name="description"
+          content="V.P.U.T. (В путь) — безопасный сервис аренды недвижимости в Болгарии №1. Предложения по ценам от хозяев" />
+    <meta name="keywords"
+          content="Аренда недвижимости за рубежом, снять жилье за рубежом, vput, впуть, в путь, аренда недвижимости для отдыха" />
+    <meta property="og:title"
+          content="Аренда апартаментов в Болгарии">
+    <meta property="og:locale"
+          content="ru_RU">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.P.U.T.</title>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/touch_icons/apple-touch-icon-57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/touch_icons/apple-touch-icon-72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/touch_icons/apple-touch-icon-114.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/touch_icons/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon"
+          sizes="57x57"
+          href="/images/touch_icons/apple-touch-icon-57.png" />
+    <link rel="apple-touch-icon"
+          sizes="72x72"
+          href="/images/touch_icons/apple-touch-icon-72.png" />
+    <link rel="apple-touch-icon"
+          sizes="114x114"
+          href="/images/touch_icons/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon"
+          sizes="144x144"
+          href="/images/touch_icons/apple-touch-icon-144.png" />
 
-    <link href="/templates/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="//fonts.googleapis.com/css?family=Exo+2:700,300italic,600,500italic,700italic,300,400,800,600italic,500,800italic,400italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/bundles/scss.bundle.min.css">
-    <link rel="stylesheet" href="assets/bundles/css.bundle.min.css">
+    <link href="/templates/favicon/favicon.ico"
+          rel="shortcut icon"
+          type="image/x-icon" />
+
+    <link href="//fonts.googleapis.com/css?family=Exo+2:700,300italic,600,500italic,700italic,300,400,800,600italic,500,800italic,400italic"
+          rel="stylesheet"
+          type="text/css">
+    <link rel="stylesheet"
+          href="assets/bundles/scss.bundle.min.css">
+    <link rel="stylesheet"
+          href="assets/bundles/css.bundle.min.css">
 </head>
 
 <body>
-    <div class="page-preloader preloader"></div>
-<!-- Page header -->
+<div class="page-preloader preloader"></div>
+<div id="app">
+<!-- /Common: meta-header -->
+
+
+<!-- Common: page-header -->
 <header class="page-header">
     <nav class="navbar navbar-expand-md navbar-light container">
-        <a class="page-header__logo mr-md-4" href="/"></a>
+        <a class="page-header__logo mr-md-4"
+           href="index.html"></a>
         <a class="page-header__favorites-link icon icon__heart icon_size_32 ml-auto mr-4 d-md-none"
-           href="/favorites.html"
-           aria-label="Favorites">99</a>
+           href="favorites.html">99</a>
         <button class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target=".page-header__collapse"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+                aria-expanded="false">
             <i class="navbar-toggler-icon"></i>
         </button>
         <div class="page-header__collapse collapse navbar-collapse">
             <ul class="navbar-nav mr-auto d-md-none d-lg-block">
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacts/">Контакты</a>
+                    <a class="nav-link"
+                       href="contacts-ru.html">Контакты</a>
                 </li>
             </ul>
             <ul class="navbar-nav mr-md-4 ml-md-auto">
                 <li class="nav-item d-none d-md-flex align-items-center">
                     <a class="page-header__favorites-link icon icon__heart icon_size_32 mr-4"
-                       href="/favorites.html"
-                       aria-label="Favorites">99</a>
+                       href="favorites.html">99</a>
                 </li>
                 <li class="page-header__language-nav-item nav-item dropdown">
                     <a class="nav-link dropdown-toggle"
@@ -60,25 +85,30 @@
                        data-toggle="dropdown"
                        aria-haspopup="true"
                        aria-expanded="false">
-                        RU
+                        Руc
                     </a>
                     <div class="dropdown-menu"
                          aria-labelledby="cabinetMenuDropdown">
-                        <a class="dropdown-item" href="?lang=ru">Русский</a>
-                        <a class="dropdown-item" href="?lang=en">Английский</a>
-                        <a class="dropdown-item" href="?lang=ua">Украинский</a>
+                        <a class="dropdown-item"
+                           href="?lang=ru">Русский</a>
+                        <a class="dropdown-item"
+                           href="?lang=en">Английский</a>
+                        <a class="dropdown-item"
+                           href="?lang=ua">Украинский</a>
                     </div>
                 </li>
             </ul>
             <!-- Hide if user authorized -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"
+                    <a class="nav-link"
+                       href="#"
                        data-toggle="modal"
                        data-target=".authorization-modal">Вход</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"
+                    <a class="nav-link"
+                       href="#"
                        data-toggle="modal"
                        data-target=".registration-modal">Регистрация</a>
                 </li>
@@ -96,38 +126,55 @@
                         <i class="page-header__cabinet-menu-icon icon icon__cabinet-user"></i>
                         Кабинет
                     </a>
-                    <div class="page-header__dropdown-menu dropdown-menu" aria-labelledby="cabinetMenuDropdown">
-                        <a class="dropdown-item" href="/cabinet/realties/">Мои объявления</a>
-                        <a class="dropdown-item" href="/cabinet/bookings/">Бронирования</a>
-                        <a class="dropdown-item" href="/cabinet/trips/">Мои поездки <span class="badge badge-primary">5</span></a>
-                        <a class="dropdown-item" href="/cabinet/profile/">Профиль</a>
-                        <a class="dropdown-item" href="/cabinet/balance/">Трансферы</a>
-                        <a class="dropdown-item" href="/cabinet/balance/">Баланс</a>
-                        <a class="dropdown-item" href="/cabinet/partnership/">Партнерская программа</a>
-                        <a class="dropdown-item" href="/cabinet/reviews/">Отзывы</a>
-                        <a class="dropdown-item" href="/cabinet/referralBookings/">Бронирования рефералов</a>
-                        <a class="dropdown-item page-header__dropdown-item-exit" href="/authorization/logout/">Выйти</a>
+                    <div class="page-header__dropdown-menu dropdown-menu"
+                         aria-labelledby="cabinetMenuDropdown">
+                        <a class="dropdown-item"
+                           href="cabinet/realties-ru.html">Мои объявления</a>
+                        <a class="dropdown-item"
+                           href="cabinet/bookings-ru.html">Бронирования</a>
+                        <a class="dropdown-item"
+                           href="cabinet/trips-ru.html">Мои поездки <span class="badge badge-primary">5</span></a>
+                        <a class="dropdown-item"
+                           href="cabinet/profile-ru.html">Профиль</a>
+                        <a class="dropdown-item"
+                           href="cabinet/transfers-ru.html">Трансферы</a>
+                        <a class="dropdown-item"
+                           href="cabinet/balance-ru.html">Баланс</a>
+                        <a class="dropdown-item"
+                           href="cabinet/partnership-ru.html">Партнерская программа</a>
+                        <a class="dropdown-item"
+                           href="cabinet/reviews-ru.html">Отзывы</a>
+                        <a class="dropdown-item"
+                           href="cabinet/referralBookings-ru.html">Бронирования рефералов</a>
+                        <a class="dropdown-item page-header__dropdown-item-logout"
+                           href="authorization/logout-ru.html">Выйти</a>
                     </div>
                 </li>
             </ul>
             <div class="ml-md-4 my-2 my-md-0">
-                <a class="page-header__to-rent-button btn btn-outline-secondary btn-lg w-100" href="add.html">Сдать в аренду</a>
+                <a class="page-header__to-rent-button btn btn-outline-secondary btn-lg w-100"
+                   href="add.html">Сдать в аренду</a>
             </div>
         </div>
     </nav>
 </header>
-<!-- /Page header -->
+<!-- /Common: page-header -->
 
-<!-- Recovery modal -->
-<div class="password-recovery-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
+
+
+<!-- Common: password-recovery-modal -->
+<div class="password-recovery-modal modal fade"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm"
+         role="document">
         <div class="modal-content">
             <div class="modal-header justify-content-center">
                 <h2 class="modal-title">Забыли пароль?</h2>
                 <a href="#"
                    data-dismiss="modal"
-                   class="close"
-                   aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+                   class="close"><i class="icon icon__close icon_style_light"></i></a>
             </div>
             <div class="modal-body">
                 <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
@@ -150,26 +197,38 @@
                 </div>
             </div>
             <div class="modal-footer justify-content-center pt-0">
-                <a href="#" class="nav-link" data-toggle="modal" data-target=".registration-modal" data-dismiss="modal">Регистрация</a>
-                <a href="#" class="nav-link" data-toggle="modal" data-target=".authorization-modal" data-dismiss="modal">Вход</a>
+                <a href="#"
+                   class="nav-link"
+                   data-toggle="modal"
+                   data-target=".registration-modal"
+                   data-dismiss="modal">Регистрация</a>
+                <a href="#"
+                   class="nav-link"
+                   data-toggle="modal"
+                   data-target=".authorization-modal"
+                   data-dismiss="modal">Вход</a>
             </div>
         </div>
     </div>
 </div>
-<!-- /Recovery modal -->
-<!-- Authorization modal -->
+<!-- /Common: password-recovery-modal -->
+
+
+<!-- Common: authorization-modal -->
 <div class="authorization-modal modal fade"
      tabindex="-1"
      role="dialog"
      aria-hidden="true">
     <div class="modal-dialog modal-sm"
          role="document">
-        <div class="modal-content">
+        <div class="authorization-modal__content modal-content">
             <a href="#"
                data-dismiss="modal"
                class="close"
-               aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
-            <div class="modal-body">
+               aria-label="Закрыть">
+                <i class="icon icon__close icon_style_light"></i>
+            </a>
+            <div class="authorization-modal__body modal-body">
                 <!-- Block: Authorization form -->
 <form class="form-authorization">
     <h2 class="form-authorization__title">Вход</h2>
@@ -207,7 +266,7 @@
 </form>
 <!-- /Block: Authorization form -->
             </div>
-            <div class="modal-footer">
+            <div class="authorization-modal__footer modal-footer">
                 <a href="#"
                    class="authorization-modal__register-link"
                    data-toggle="modal"
@@ -217,7 +276,7 @@
         </div>
     </div>
 </div>
-<!-- /Authorization modal -->
+<!-- /Common: authorization-modal -->
 <!-- Registration modal -->
 <div class="registration-modal modal fade"
      tabindex="-1"
@@ -278,7 +337,7 @@
 
 <main class="page-offer">
     <div class="container">
-        <!-- Block: breadcrumb -->
+        <!-- Common: breadcrumb -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Главная</a></li>
@@ -288,10 +347,12 @@
                     aria-current="page">Студия - Форт Нокс Гранд Резорт</li>
             </ol>
         </nav>
-        <!-- /Block: breadcrumb -->
+        <!-- /Common: breadcrumb -->
 
         <div class="page-offer__image-slider">
-            <!-- Image slider -->
+            
+
+<!-- Common: offer-image-slider -->
 <div class="offer-image-slider">
     <ul class="offer-image-slider__images-list" is-slider>
         <li class="offer-image-slider__slide">
@@ -358,7 +419,7 @@
         </li>
     </ul>
 </div>
-<!-- /Image slider -->
+<!-- /Common: offer-image-slider -->
         </div>
 
         <div class="row">
@@ -366,7 +427,7 @@
                 <article class="page-offer__article py-4">
                     <header class="page-offer__header pb-3 border-bottom">
                         <h1 class="page-offer__title">Студия - Форт Нокс Гранд Резорт</h1>
-                        <div class="page-offer__place">Болгария, Святой Влас, <a href="#" class="page-offer__complex">Комплекс Венера-палас</a></div>
+                        <div class="page-offer__place">Болгария, Святой Влас, <a href="complex.html" class="page-offer__complex">Комплекс Венера-палас</a></div>
                     </header>
 
                     <div class="page-offer__list-of-main-characteristics pt-4 border-bottom">
@@ -488,50 +549,61 @@
         </div>
     </h2>
     <div class="offer-reviews__list-of-offer-ratings mb-4">
-        <!-- Block: List of offer ratings -->
+        
+
+<!-- Common: list-of-offer-ratings -->
 <ul class="list-of-offer-ratings row">
     <li class="list-of-offer-ratings__item col-md-6">
         <label class="list-of-offer-ratings__label">Чистота:</label>
         <div class="list-of-offer-ratings__rating">
-            <figure class="review-rating" data-rating="3"></figure>
+            <figure class="review-rating"
+                    data-rating="3"></figure>
         </div>
     </li>
     <li class="list-of-offer-ratings__item col-md-6">
         <label class="list-of-offer-ratings__label">Соответствие описанию:</label>
         <div class="list-of-offer-ratings__rating">
-            <figure class="review-rating" data-rating="3"></figure>
+            <figure class="review-rating"
+                    data-rating="3"></figure>
         </div>
     </li>
     <li class="list-of-offer-ratings__item col-md-6">
         <label class="list-of-offer-ratings__label">Общение:</label>
         <div class="list-of-offer-ratings__rating">
-            <figure class="review-rating" data-rating="3"></figure>
+            <figure class="review-rating"
+                    data-rating="3"></figure>
         </div>
     </li>
     <li class="list-of-offer-ratings__item col-md-6">
         <label class="list-of-offer-ratings__label">Расположение:</label>
         <div class="list-of-offer-ratings__rating">
-            <figure class="review-rating" data-rating="3"></figure>
+            <figure class="review-rating"
+                    data-rating="3"></figure>
         </div>
     </li>
     <li class="list-of-offer-ratings__item col-md-6">
         <label class="list-of-offer-ratings__label">Владелец:</label>
         <div class="list-of-offer-ratings__rating">
-            <figure class="review-rating" data-rating="3"></figure>
+            <figure class="review-rating"
+                    data-rating="3"></figure>
         </div>
     </li>
     <li class="list-of-offer-ratings__item col-md-6">
         <label class="list-of-offer-ratings__label">Заселение:</label>
         <div class="list-of-offer-ratings__rating">
-            <figure class="review-rating" data-rating="3"></figure>
+            <figure class="review-rating"
+                    data-rating="3"></figure>
         </div>
     </li>
 </ul>
-<!-- /Block: List of offer ratings -->
+<!-- /Common: list-of-offer-ratings -->
     </div>
     <div class="offer-reviews__list-of-reviews">
-        <!-- Block: List of reviews -->
+        
+
+<!-- Common: list-of-reviews -->
 <ul class="list-of-reviews">
+    
     <li class="list-of-reviews__item">
         <!-- Block: Review -->
 <figure class="review">
@@ -549,8 +621,27 @@
 </figure>
 <!-- /Block: Review -->
     </li>
+    
+    <li class="list-of-reviews__item">
+        <!-- Block: Review -->
+<figure class="review">
+    <figure class="review__user">
+        <div class="review__user-image" style=""></div>
+        <figcaption class="user__description">Татьяна</figcaption>
+    </figure>
+    <figcaption class="review__content">
+        <time class="review__created-at">2018-01-02 23:06:57</time>
+        <div class="review__review-rating">
+            <figure class="review-rating" data-rating="3"></figure>
+        </div>
+        <div class="review__message">Замечательно отдохнули! Нас было 6 - 5 взрослых и один ребёнок 2 лет. Встретили, разместили, помогли сориентироваться на местности (где магазины, аптеки и т.п). Расположение выше всяких похвал! Засыпали и просыпались под шум прибоя! Спасибо Мине за прием! Отзывчивая и при этом не назойливая хозяйка! Все было СУПЕР!</div>
+    </figcaption>
+</figure>
+<!-- /Block: Review -->
+    </li>
+    
 </ul>
-<!-- /Block: List of reviews -->
+<!-- /Common: list-of-reviews -->
     </div>
 </section>
 <!-- Section: Offer reviews -->
@@ -943,17 +1034,19 @@
                 </a>
                 <aside class="page-offer__aside py-4">
                     <div class="page-offer__offer-employed-by mb-3">
-                        <!-- Block: Offer employed by -->
+                        
+
+<!-- Common: offer-employed-by -->
 <div class="offer-employed-by progress">
-    <div class="progress-bar"
+    <div class="offer-employed-by__progress-bar progress-bar"
          role="progressbar"
-         style="width: 50%"
-         aria-valuenow="50"
+         style="width: 30%"
+         aria-valuenow="30"
          aria-valuemin="0"
          aria-valuemax="100"></div>
     <div class="offer-employed-by__message">Занято на&nbsp;<span class="offer-employed-by__percent">30</span>%</div>
 </div>
-<!-- /Block: Offer employed by -->
+<!-- /Common: offer-employed-by -->
                     </div>
                     <div class="page-offer__form-booking mb-3">
                         <!-- Form: form-booking -->
@@ -1016,7 +1109,9 @@
 <!-- /Form: form-booking -->
                     </div>
                     <div class="page-offer__offer-insterested-in mb-3">
-                        <!-- Block: Offer interested in -->
+                        
+
+<!-- Common: offer-interested-in -->
 <div class="offer-interested-in">
     <figure class="offer-interested-in__how-much">
         <div class="offer-interested-in__how-much-number">13</div>
@@ -1024,16 +1119,19 @@
     </figure>
     <figure class="offer-interested-in__time">
         <i class="offer-interested-in__time-icon icon icon__time-in icon_size_32"></i>
-        <figcaption class="offer-interested-in__description">данные подсчитаны за прошлые сутки.</figcaption>
+        <figcaption class="offer-interested-in__description">данные подсчитаны за прошлые сутки</figcaption>
     </figure>
 </div>
-<!-- /Block: Offer interested in -->
+<!-- /Common: offer-interested-in -->
                     </div>
                     <div class="page-offer__offer-owner mb-3">
-                        <!-- Block: Offer owner -->
+                        
+
+<!-- Common: offer-owner -->
 <div class="offer-owner">
     <figure class="offer-owner__about">
-        <div class="offer-owner__photo icon__cabinet-user" style="_background-image: url(url-to-user-avatar);">
+        <div class="offer-owner__photo icon__cabinet-user"
+             style="_background-image: url(url-to-user-avatar);">
             <i class="offer-owner__reliable-host icon icon__reliable-host icon_size_32"></i>
         </div>
         <figcaption class="offer-owner__info">
@@ -1054,14 +1152,18 @@
         <div class="offer-owner__message mt-3">
             <p>Я буду рад обсудить с вами любые вопросы внутри сервиса.</p>
             <p>Мои прямые контакты вы получите после заключения сделки.</p>
-            <a href="/user_agreement/" target="_blank" class="offer-owner__message-link">Почему так?</a>
+            <a href="user-agreement-ru.html"
+               target="_blank"
+               class="offer-owner__message-link">Почему так?</a>
         </div>
     </div>
 </div>
-<!-- /Block: Offer owner -->
+<!-- /Common: offer-owner -->
                     </div>
                     <div class="page-offer__offer-share mb-3">
-                        <!-- Block: Offer share -->
+                        
+
+<!-- Common: offer-share -->
 <div class="offer-share">
     <a href="#"
        class="offer-share__add-to-favorites mb-3 btn"
@@ -1073,7 +1175,9 @@
         <span class="offer-share__add-to-favorites-label-minus">Убрать из избранного</span>
     </a>
     <section class="offer-share__socials-share">
-        <h3 class="offer-share__title mb-3"><span class="offer-share__title-text">Поделиться</span></h3>
+        <h3 class="offer-share__title mb-3">
+            <span class="offer-share__title-text">Поделиться</span>
+        </h3>
         <ul class="offer-share__social-list">
             <li class="offer-share__social-list-item">
                 <a href="http://www.facebook.com/sharer.php?m2w&u="
@@ -1102,7 +1206,7 @@
         </ul>
     </section>
 </div>
-<!-- /Block: Offer share -->
+<!-- /Common: offer-share -->
                     </div>
                     <div class="page-offer__how-it-works">
                         <!-- Section: How it works -->
@@ -1158,7 +1262,7 @@
 <section class="photos-of-the-complex">
     <h2 class="photos-of-the-complex__title mb-4">Фото комплекса <small class="text-muted">(10 фото)</small></h2>
 
-    <ul class="photos-of-the-complex__slider" is-slick-carousel>
+    <ul class="photos-of-the-complex__slider mb-4 mb-lg-0" is-slick-carousel>
         <li class="photos-of-the-complex__slider-item">
             <a href="content/images/complexes/complex-example/complex-example__image-1.jpg"
                class="photos-of-the-complex__slider-link"
@@ -1262,18 +1366,20 @@
     <ul class="complex-offers__list row">
         
         <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
-            <!-- Offer item -->
+            
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1288,7 +1394,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1327,22 +1436,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
         </li>
         
         <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
-            <!-- Offer item -->
+            
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1357,7 +1468,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1396,22 +1510,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
         </li>
         
         <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
-            <!-- Offer item -->
+            
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1426,7 +1542,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1465,22 +1584,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
         </li>
         
         <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
-            <!-- Offer item -->
+            
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1495,7 +1616,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1534,22 +1658,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
         </li>
         
         <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
-            <!-- Offer item -->
+            
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1564,7 +1690,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1603,22 +1732,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
         </li>
         
         <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
-            <!-- Offer item -->
+            
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1633,7 +1764,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1672,22 +1806,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
         </li>
         
         <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
-            <!-- Offer item -->
+            
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1702,7 +1838,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1741,22 +1880,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
         </li>
         
         <li class="complex-offers__list-item col-md-6 col-lg-4 col-xl-3 mb-3">
-            <!-- Offer item -->
+            
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1771,7 +1912,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1810,7 +1954,7 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
         </li>
         
     </ul>
@@ -1828,18 +1972,20 @@
         <ul class="list-of-offers row">
             
             <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                <!-- Offer item -->
+                
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1854,7 +2000,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1893,22 +2042,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
             </li>
             
             <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                <!-- Offer item -->
+                
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1923,7 +2074,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -1962,22 +2116,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
             </li>
             
             <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                <!-- Offer item -->
+                
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -1992,7 +2148,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -2031,22 +2190,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
             </li>
             
             <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                <!-- Offer item -->
+                
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -2061,7 +2222,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -2100,22 +2264,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
             </li>
             
             <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                <!-- Offer item -->
+                
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -2130,7 +2296,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -2169,22 +2338,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
             </li>
             
             <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                <!-- Offer item -->
+                
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -2199,7 +2370,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -2238,22 +2412,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
             </li>
             
             <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                <!-- Offer item -->
+                
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -2268,7 +2444,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -2307,22 +2486,24 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
             </li>
             
             <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
-                <!-- Offer item -->
+                
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -2337,7 +2518,10 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
@@ -2376,7 +2560,7 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->
             </li>
             
         </ul>
@@ -2391,7 +2575,9 @@
 </main>
 <!-- /Page: page-offer -->
 
-<!-- Page footer -->
+
+
+<!-- Common: page-footer -->
 <footer class="page-footer">
     <div class="page-footer__subscribe bg-light">
         <div class="container">
@@ -2421,10 +2607,12 @@
                 <h3 class="page-footer__title">О нас</h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="/about" class="page-footer__link">Компания</a>
+                        <a href="about-ru.html"
+                           class="page-footer__link">Компания</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/trust" class="page-footer__link">Безопасность</a>
+                        <a href="trust-ru.html"
+                           class="page-footer__link">Безопасность</a>
                     </li>
                 </ul>
             </li>
@@ -2432,13 +2620,16 @@
                 <h3 class="page-footer__title">Правила сайта</h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="/user_agreement/" class="page-footer__link">Общие условия</a>
+                        <a href="user-agreement-ru.html"
+                           class="page-footer__link">Общие условия</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/booking_cancelation_rules/" class="page-footer__link">Отмена бронирования</a>
+                        <a href="booking-cancelation-rules-ru.html"
+                           class="page-footer__link">Отмена бронирования</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/withdraw/" class="page-footer__link">Вывод денег</a>
+                        <a href="withdraw-ru.html"
+                           class="page-footer__link">Вывод денег</a>
                     </li>
                 </ul>
             </li>
@@ -2446,7 +2637,8 @@
                 <h3 class="page-footer__title">Связаться</h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="#" class="page-footer__link">Контакты</a>
+                        <a href="contacts-ru.html"
+                           class="page-footer__link">Контакты</a>
                     </li>
                 </ul>
             </li>
@@ -2488,9 +2680,14 @@
         </div>
     </div>
 </footer>
-<!-- /Page footer -->
+<!-- /Common: page-footer -->
+
+
+<!-- Common: meta-footer -->
 <!-- Bundle Scripts -->
 <script src="assets/bundles/js.bundle.min.js"></script>
 <script src="assets/bundles/ts.bundle.min.js"></script>
+</div>
 </body>
 </html>
+<!-- /Common: meta-footer -->

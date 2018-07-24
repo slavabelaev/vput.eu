@@ -11,11 +11,11 @@
     <div class="bg-light d-none d-sm-block">
         <div class="container mw-1024px">
             <nav class="nav nav-pills nav-fill">
-                <a class="nav-item nav-link" href="/cleaning/">Cleaning services</a>
-                <a class="nav-item nav-link" href="/escort/">Guests escort</a>
+                <a class="nav-item nav-link" href="cleaning-ru.html">Cleaning services</a>
+                <a class="nav-item nav-link" href="escort-ru.html">Guests escort</a>
                 <a class="nav-item nav-link active" href="#">Transfer</a>
-                <a class="nav-item nav-link" href="/rentacar/">Car rental</a>
-                <a class="nav-item nav-link" href="/management/">Property management</a>
+                <a class="nav-item nav-link" href="rentacar-ru.html">Car rental</a>
+                <a class="nav-item nav-link" href="management-ru.html">Property management</a>
             </nav>
         </div>
     </div>

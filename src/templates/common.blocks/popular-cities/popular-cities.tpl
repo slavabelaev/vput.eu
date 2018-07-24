@@ -1,4 +1,6 @@
-<!-- Block: Popular cities -->
+<% var lang = JSON.parse(include('popular-cities_lang_ru.json')); %>
+
+<!-- Common: popular-cities -->
 <dl class="popular-cities row">
     <dt class="popular-cities__title col-auto">Популярные:</dt>
     <dd class="popular-cities__item col-auto">
@@ -43,4 +45,4 @@
            data-goal="24">Поморие</a>
     </dd>
 </dl>
-<!-- /Block: Popular cities -->
+<!-- /Common: popular-cities -->

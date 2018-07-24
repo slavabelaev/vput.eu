@@ -6,7 +6,7 @@
 
 <main class="page-authorization">
     <div class="container">
-        <a class="page-authorization__logo my-4" href="/"></a>
+        <a class="page-authorization__logo my-4" href="index.html"></a>
         <h1 class="text-center text-white mb-5">ВЫ НЕ ЗАРЕГИСТРИРОВАНЫ ИЛИ НЕ АВТОРИЗОВАНЫ</h1>
         <div class="page-authorization__container">
         <%- include('../../sections/authorization/authorization.tpl'); %>

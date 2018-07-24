@@ -1,7 +1,7 @@
 <!-- Form: form-car-rental -->
 <form class="form-car-rental card bg-light"
       method="post"
-      action="/feedback/rentCarSend/">
+      action="/feedback/rentCarSend-ru.html">
     <legend class="card-header bg-light text-center">ЗАКАЗАТЬ АРЕНДУ АВТОМОБИЛЯ</legend>
     <div class="card-body">
         <ul class="row">

@@ -1,15 +1,17 @@
-<!-- Offer item -->
+<% var lang = JSON.parse(include('offer-item_lang_ru.json')); %>
+
+<!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="offer.html"
+    <a href="javascript: return false;"
        class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       data-toggle="button"></a>
+       @click="toggleFavorites(12345)"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"
-                type="button">Next</button>
+                type="button"></button>
         <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
                 aria-label="Prev"
-                type="button">Prev</button>
+                type="button"></button>
         <nav class="offer-item__list-of-images"
              style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
              is-slick-carousel>
@@ -24,17 +26,20 @@
         </nav>
     </div>
     <figcaption class="offer-item__description">
-        <h3 class="offer-item__title"><a href="offer.html" class="offer-item__link">Studio - Fort Noks Grand Resort</a></h3>
+        <h3 class="offer-item__title">
+            <a href="offer.html"
+               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+        </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
             <li class="offer-item__detail offer-item__type">Квартира</li>
             <li class="offer-item__detail offer-item__numbers-of-rooms">
-                <span class="offer-item__numbers-of-rooms-label">Комнат:</span>
+                <span class="offer-item__numbers-of-rooms-label"><%= lang.rooms %></span>
                 <span class="offer-item__numbers-of-rooms-value">1</span>
             </li>
             <li class="offer-item__detail offer-item__numbers-of-guests">
-                <span class="offer-item__numbers-of-guests-label">Гостей:</span>
+                <span class="offer-item__numbers-of-guests-label"><%= lang.guests %></span>
                 <span class="offer-item__numbers-of-guests-value">7</span>
             </li>
             <li class="offer-item__detail offer-item__price">
@@ -63,4 +68,4 @@
         </ul>
     </figcaption>
 </figure>
-<!-- Offer item -->
+<!-- /Common: offer-item -->

@@ -7,7 +7,7 @@
 
 <main class="page-offer">
     <div class="container">
-        <!-- Block: breadcrumb -->
+        <!-- Common: breadcrumb -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Главная</a></li>
@@ -17,7 +17,7 @@
                     aria-current="page">Студия - Форт Нокс Гранд Резорт</li>
             </ol>
         </nav>
-        <!-- /Block: breadcrumb -->
+        <!-- /Common: breadcrumb -->
 
         <div class="page-offer__image-slider">
             <%- include('../../common.blocks/offer-image-slider/offer-image-slider.tpl'); %>
@@ -28,7 +28,7 @@
                 <article class="page-offer__article py-4">
                     <header class="page-offer__header pb-3 border-bottom">
                         <h1 class="page-offer__title">Студия - Форт Нокс Гранд Резорт</h1>
-                        <div class="page-offer__place">Болгария, Святой Влас, <a href="#" class="page-offer__complex">Комплекс Венера-палас</a></div>
+                        <div class="page-offer__place">Болгария, Святой Влас, <a href="complex.html" class="page-offer__complex">Комплекс Венера-палас</a></div>
                     </header>
 
                     <div class="page-offer__list-of-main-characteristics pt-4 border-bottom">

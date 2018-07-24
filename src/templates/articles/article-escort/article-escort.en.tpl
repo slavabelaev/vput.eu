@@ -12,11 +12,11 @@
     <div class="bg-light d-none d-sm-block">
         <div class="container mw-1024px">
             <nav class="nav nav-pills nav-fill">
-                <a class="nav-item nav-link" href="/cleaning/">Cleaning services</a>
+                <a class="nav-item nav-link" href="cleaning-ru.html">Cleaning services</a>
                 <a class="nav-item nav-link active" href="#">Guests escort</a>
-                <a class="nav-item nav-link" href="/transfer/">Transfer</a>
-                <a class="nav-item nav-link" href="/rentacar/">Car rental</a>
-                <a class="nav-item nav-link" href="/management/">Property management</a>
+                <a class="nav-item nav-link" href="transfer-ru.html">Transfer</a>
+                <a class="nav-item nav-link" href="rentacar-ru.html">Car rental</a>
+                <a class="nav-item nav-link" href="management-ru.html">Property management</a>
             </nav>
         </div>
     </div>
@@ -90,7 +90,7 @@
     </section>
 
     <figure class="alert alert-info lead text-center container mw-1024px mb-0">
-        Book a <a target="_blank" href="/transfer/">transfer</a> from the airport.
+        Book a <a target="_blank" href="transfer-ru.html">transfer</a> from the airport.
     </figure>
 </article>
 <!-- /Article: article-escort -->

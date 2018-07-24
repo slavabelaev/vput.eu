@@ -12,11 +12,11 @@
     <div class="bg-light d-none d-sm-block">
         <div class="container mw-1024px">
             <nav class="nav nav-pills nav-fill">
-                <a class="nav-item nav-link" href="/cleaning/">Клининговые услуги</a>
+                <a class="nav-item nav-link" href="cleaning-ru.html">Клининговые услуги</a>
                 <a class="nav-item nav-link active" href="#">Заселение и выселение гостей</a>
-                <a class="nav-item nav-link" href="/transfer/">Трансфер</a>
-                <a class="nav-item nav-link" href="/rentacar/">Аренда авто</a>
-                <a class="nav-item nav-link" href="/management/">Управление объектами</a>
+                <a class="nav-item nav-link" href="transfer-ru.html">Трансфер</a>
+                <a class="nav-item nav-link" href="rentacar-ru.html">Аренда авто</a>
+                <a class="nav-item nav-link" href="management-ru.html">Управление объектами</a>
             </nav>
         </div>
     </div>
@@ -113,7 +113,7 @@
     </section>
 
     <figure class="alert alert-info lead text-center container mw-1024px mb-0">
-        Дополнительно закажите <a target="_blank" href="/transfer/">трансфер из аэропорта</a>.
+        Дополнительно закажите <a target="_blank" href="transfer-ru.html">трансфер из аэропорта</a>.
     </figure>
 </article>
 <!-- /Article: article-escort -->

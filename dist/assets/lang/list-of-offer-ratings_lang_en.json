@@ -1,0 +1,8 @@
+{
+  "cleanness": "Cleanness",
+  "conformity_with_the_description": "Conformity with the description",
+  "communication": "Communication",
+  "location": "Location",
+  "owner": "Owner",
+  "check_in_time": "Check-in time"
+}

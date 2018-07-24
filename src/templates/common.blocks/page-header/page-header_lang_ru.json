@@ -1,0 +1,25 @@
+{
+  "contacts": "Контакты",
+  "language": "Руc",
+  "languages": {
+    "russian": "Русский",
+    "english": "Английский",
+    "ukrainian": "Украинский"
+  },
+  "sign_in": "Вход",
+  "sign_up": "Регистрация",
+  "cabinet_title": "Кабинет",
+  "cabinet": {
+    "realties": "Мои объявления",
+    "bookings": "Бронирования",
+    "trips": "Мои поездки",
+    "profile": "Профиль",
+    "transfers": "Трансферы",
+    "balance": "Баланс",
+    "partnership": "Партнерская программа",
+    "reviews": "Отзывы",
+    "referral_bookings": "Бронирования рефералов",
+    "logout": "Выйти"
+  },
+  "to_rent": "Сдать в аренду"
+}

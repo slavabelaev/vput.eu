@@ -38,12 +38,10 @@
                     </a>
                     <div class="dropdown-menu"
                          aria-labelledby="cabinetMenuDropdown">
+                        <% for(var i = 0;i < lang.languages.length;i++) { %>
                         <a class="dropdown-item"
-                           href="?lang=ru"><%= lang.languages.russian %></a>
-                        <a class="dropdown-item"
-                           href="?lang=en"><%= lang.languages.english %></a>
-                        <a class="dropdown-item"
-                           href="?lang=ua"><%= lang.languages.ukrainian %></a>
+                           href="?lang=<%= lang.languages[i].code %>"><%= lang.languages[i].name %></a>
+                        <% } %>
                     </div>
                 </li>
             </ul>

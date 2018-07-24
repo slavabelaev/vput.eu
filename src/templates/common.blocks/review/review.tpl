@@ -1,15 +1,19 @@
-<!-- Block: Review -->
+<% var lang = JSON.parse(include('review_lang_ru.json')); %>
+<% var data = JSON.parse(include('review__data.json')); %>
+
+<!-- Common: review -->
 <figure class="review">
     <figure class="review__user">
-        <div class="review__user-image" style=""></div>
-        <figcaption class="user__description">Татьяна</figcaption>
+        <div class="review__user-image" style="background-image: url(<%= data.avatar_url %>)"></div>
+        <figcaption class="user__description"><%= data.name %></figcaption>
     </figure>
     <figcaption class="review__content">
-        <time class="review__created-at">2018-01-02 23:06:57</time>
+        <time class="review__created-at"><%= data.created_at %></time>
         <div class="review__review-rating">
-            <figure class="review-rating" data-rating="3"></figure>
+            <figure class="review-rating"
+                    data-rating="<%= data.rating %>"></figure>
         </div>
-        <div class="review__message">Замечательно отдохнули! Нас было 6 - 5 взрослых и один ребёнок 2 лет. Встретили, разместили, помогли сориентироваться на местности (где магазины, аптеки и т.п). Расположение выше всяких похвал! Засыпали и просыпались под шум прибоя! Спасибо Мине за прием! Отзывчивая и при этом не назойливая хозяйка! Все было СУПЕР!</div>
+        <div class="review__message"><%= data.message %></div>
     </figcaption>
 </figure>
-<!-- /Block: Review -->
+<!-- /Common: review -->

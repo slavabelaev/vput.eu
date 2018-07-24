@@ -1,11 +1,10 @@
 {
   "contacts": "Contacts",
   "language": "Eng",
-  "languages": {
-    "russian": "Russian",
-    "english": "English",
-    "ukrainian": "Ukrainian"
-  },
+  "languages": [
+    { "name": "Russian", "code": "ru" },
+    { "name": "Ukrainian", "code": "ua" }
+  ],
   "sign_in": "Sign in",
   "sign_up": "Sign up",
   "cabinet_title": "Account",

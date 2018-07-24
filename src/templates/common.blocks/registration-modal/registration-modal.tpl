@@ -1,4 +1,6 @@
-<!-- Registration modal -->
+<% var lang = JSON.parse(include('registration-modal_lang_ru.json')); %>
+
+<!-- Common: registration-modal -->
 <div class="registration-modal modal fade"
      tabindex="-1"
      role="dialog"
@@ -8,8 +10,7 @@
         <div class="modal-content">
             <a href="#"
                data-dismiss="modal"
-               class="close"
-               aria-label="Close"><i class="icon icon__close icon_style_light"></i></a>
+               class="close"><i class="icon icon__close icon_style_light"></i></a>
             <div class="modal-body">
                 <%- include('../../forms/form-registration/form-registration.tpl'); %>
             </div>
@@ -17,9 +18,9 @@
                 <a href="#" class="registration-modal__authorization-link"
                    data-toggle="modal"
                    data-dismiss="modal"
-                   data-target=".authorization-modal">Войти</a>
+                   data-target=".authorization-modal"><%= lang.sign_in %></a>
             </div>
         </div>
     </div>
 </div>
-<!-- /Registration modal -->
+<!-- /Common: registration-modal -->

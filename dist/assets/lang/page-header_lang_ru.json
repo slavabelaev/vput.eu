@@ -1,11 +1,10 @@
 {
   "contacts": "Контакты",
   "language": "Руc",
-  "languages": {
-    "russian": "Русский",
-    "english": "Английский",
-    "ukrainian": "Украинский"
-  },
+  "languages": [
+    { "name": "Английский", "code": "en" },
+    { "name": "Украинский", "code": "ua" }
+  ],
   "sign_in": "Вход",
   "sign_up": "Регистрация",
   "cabinet_title": "Кабинет",

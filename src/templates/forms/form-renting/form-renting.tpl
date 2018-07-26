@@ -10,7 +10,8 @@
                         aria-expanded="false">1. Основная информация</h3>
                     <div class="form-renting__accordion-item-collapse form-renting__accordion-basic-information collapse"
                          data-parent=".accordion">
-                        <form action="#" class="form-renting__accordion-item-content">
+                        <form action="#"
+                              class="form-renting__accordion-item-content">
 
                             <fieldset class="form-renting__fieldset">
                                 <ul class="form-renting__form-group-list row">

@@ -41,7 +41,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <a href="rentacar-ru.html" class="services__link">Посмотреть автомобили</a>
+                    <a href="car-rental-ru.html" class="services__link">Посмотреть автомобили</a>
                 </figcaption>
                 <figure class="services__img service__img_is_car figure-img col"
                         style="background-image: url(templates/sections/services/services__car.png)"></figure>

@@ -9,7 +9,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 page-search__search-container">
-                <div class="page-search__form-search-offers py-4 border-bottom">
+                <div class="page-search__form-search-offers pt-4 pb-2 border-bottom">
                     <%- include('../../forms/form-search-offers/form-search-offers.tpl'); %>
                 </div>
                 <div class="page-search__list-of-offers py-4">

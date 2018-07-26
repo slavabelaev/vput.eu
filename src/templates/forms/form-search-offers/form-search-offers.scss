@@ -15,20 +15,20 @@
       cursor: pointer;
     }
   }
-
   .custom-control-label {
     display: block;
   }
+}
+.form-search-offers__search-by-complexes-col,
+.form-search-offers__cityId-col {
+  min-width: 270px;
+}
 
-  .form-group {
-    min-width: 135px;
-    margin-top: ($form-group-margin-bottom / 2);
-    margin-bottom: ($form-group-margin-bottom / 2);
-  }
-  .form-search-offers__search-by-complexes-col,
-  .form-search-offers__cityId-col {
-    min-width: 270px;
-  }
+.form-search-offers__id-col,
+.form-search-offers__guests-col,
+.form-search-offers__startDate-col,
+.form-search-offers__endDate-col {
+  min-width: 120px;
 }
 .form-search-offers__slider {
   margin: auto;
@@ -36,31 +36,21 @@
   max-width: 90%;
   max-width: calc(100% - 50px);
 }
-.form-search-offers__fieldset {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: ($form-group-margin-bottom / 2);
-  padding-bottom: ($form-group-margin-bottom / 2);
-  .col {
-    min-width: 200px;
+.form-search-offers__fieldset-list {
+  .form-group {
+    margin-bottom: .5rem;
   }
+}
+.form-search-offers__fieldset {
   &:not(:last-child) {
     border-bottom: 1px solid $border-color;
   }
 }
-.form-search-offers__legend {
-  font-size: 1.25rem;
-  font-weight: 500;
-  max-width: 180px;
-  color: $dark;
-  flex: 1 200px;
-  margin-top: ($form-group-margin-bottom / 2);
-  margin-bottom: ($form-group-margin-bottom / 2);
-}
 
 .form-search-offers__options-list {
-  flex: 1 auto;
-  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 .form-search-offers__cities-dropdown {
@@ -99,6 +89,11 @@
   display: none;
 }
 
+@include media-breakpoint-up(xl) {
+  .form-search-offers__search-by-complexes-button {
+    max-width: 80%;
+  }
+}
 @include media-breakpoint-down(md) {
   .form-search-offers__cities-dropdown-close {
     display: inline-block;

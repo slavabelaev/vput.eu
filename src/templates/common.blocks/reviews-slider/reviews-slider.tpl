@@ -1,4 +1,6 @@
-<!-- Block: reviews-slider -->
+<% var lang = JSON.parse(include('review-slider_lang_ru.json')); %>
+
+<!-- Common: reviews-slider -->
 <ul class="reviews-slider" is-slider>
     <li class="reviews-slider__item">
         <div class="reviews-slider__offer-item">
@@ -25,4 +27,4 @@
         </div>
     </li>
 </ul>
-<!-- /Block: reviews-slider -->
+<!-- /Common: reviews-slider -->

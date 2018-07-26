@@ -1,3 +1,5 @@
+<% var lang = JSON.parse(include('form-recovery_lang_ru.json')); %>
+
 <!-- Form: form-recovery -->
 <form method="post"
       action="/recovery/ajaxPasswordRecovery/"
@@ -7,9 +9,9 @@
                name="login"
                class="form-control form-control-lg"
                required
-               placeholder="Адрес эл. почты">
+               placeholder="<%= lang.email %>">
     </div>
     <button type="submit"
-            class="btn btn-primary btn-lg w-100">Отправить</button>
+            class="btn btn-primary btn-lg w-100"><%= lang.send %></button>
 </form>
 <!-- /Form: form-recovery -->

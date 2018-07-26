@@ -16,7 +16,7 @@
                 <a class="nav-item nav-link" href="cleaning-ru.html">Клининговые услуги</a>
                 <a class="nav-item nav-link" href="escort-ru.html">Заселение и выселение гостей</a>
                 <a class="nav-item nav-link" href="transfer-ru.html">Трансфер</a>
-                <a class="nav-item nav-link" href="rentacar-ru.html">Аренда авто</a>
+                <a class="nav-item nav-link" href="car-rental-ru.html">Аренда авто</a>
                 <a class="nav-item nav-link active" href="#">Управление объектами</a>
             </nav>
         </div>

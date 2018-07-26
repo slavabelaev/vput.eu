@@ -129,6 +129,24 @@
   }
 }
 
+.custom-checkbox,
+.custom-radio {
+  &.input-group-text {
+    border-left-width: 0;
+    background-color: $white;
+    margin-left: -1px;
+    .custom-control-label {
+      &:after, &:before {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
 // Radios
 //
 // Tweak just a few things for radios.

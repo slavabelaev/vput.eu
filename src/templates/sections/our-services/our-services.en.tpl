@@ -9,7 +9,7 @@
         <a class="our-services__nav-item our-services_image_transfer col-lg col-sm-6"
            href="transfer-ru.html">Transfer</a>
         <a class="our-services__nav-item our-services_image_car-rental col-lg col-sm-6"
-           href="rentacar-ru.html">Car rental</a>
+           href="car-rental-ru.html">Car rental</a>
         <a class="our-services__nav-item our-services_image_management col-lg col-sm-6"
            href="management-ru.html">Property management</a>
     </nav>

@@ -180,7 +180,9 @@
             <div class="modal-body">
                 <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
                 <div class="password-recovery-modal__form-recovery">
-                    <!-- Form: form-recovery -->
+                    
+
+<!-- Form: form-recovery -->
 <form method="post"
       action="/recovery/ajaxPasswordRecovery/"
       class="form-recovery">
@@ -230,42 +232,64 @@
                 <i class="icon icon__close icon_style_light"></i>
             </a>
             <div class="authorization-modal__body modal-body">
-                <!-- Block: Authorization form -->
-<form class="form-authorization">
+                
+
+<!-- Form: form-authorization -->
+<form action="/authorization/ajaxAuthorization/"
+      method="post"
+      class="form-authorization">
     <h2 class="form-authorization__title">Вход</h2>
     <fieldset class="authorization-modal__fieldset">
         <legend class="authorization-modal__legend">через</legend>
-        <!-- Social authorization -->
+        <!-- Common: social-authorization -->
         <ul class="social-authorization">
             <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
             <li class="social-authorization__item"><a href="#" class="icon icon__vk icon_size_48"></a></li>
             <li class="social-authorization__item"><a href="#" class="icon icon__ok icon_size_48"></a></li>
         </ul>
-        <!-- /Social authorization -->
+        <!-- /Common: social-authorization -->
     </fieldset>
     <fieldset class="authorization-modal__fieldset">
-        <legend class="authorization-modal__legend mb-4">или</legend>
+        <legend class="authorization-modal__legend mb-3">или</legend>
         <div class="form-group">
-            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+            <input type="email"
+                   name="login"
+                   class="form-control form-control-lg"
+                   required
+                   placeholder="Адрес эл. почты">
         </div>
         <div class="form-group mb-2">
-            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+            <input type="password"
+                   name="password"
+                   class="form-control form-control-lg"
+                   required
+                   placeholder="Пароль">
         </div>
         <div class="row align-items-center mb-2">
             <div class="col-auto">
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="cookie" class="custom-control-input" id="rememberMe" required>
-                    <label class="custom-control-label" for="rememberMe">Запомнить меня</label>
+                    <input type="checkbox"
+                           name="cookie"
+                           class="custom-control-input"
+                           id="rememberMe"
+                           required>
+                    <label class="custom-control-label"
+                           for="rememberMe">Запомнить меня</label>
                 </div>
             </div>
             <div class="col text-right">
-                <a href="#" class="nav-link" data-toggle="modal" data-target=".password-recovery-modal" data-dismiss="modal">Забыл пароль</a>
+                <a href="#"
+                   class="nav-link"
+                   data-toggle="modal"
+                   data-target=".password-recovery-modal"
+                   data-dismiss="modal">Забыл пароль</a>
             </div>
         </div>
     </fieldset>
-    <button type="submit" class="btn btn-primary btn-lg w-100">Войти</button>
+    <button type="submit"
+            class="btn btn-primary btn-lg w-100">Войти</button>
 </form>
-<!-- /Block: Authorization form -->
+<!-- /Form: form-authorization -->
             </div>
             <div class="authorization-modal__footer modal-footer">
                 <a href="#"
@@ -292,33 +316,52 @@
                data-dismiss="modal"
                class="close"><i class="icon icon__close icon_style_light"></i></a>
             <div class="modal-body">
-                <!-- Form: form-registration-->
-<form class="form-registration">
-    <h2 class="form-registration__title">Регистрация</h2>
+                
+
+<!-- Form: form-registration-->
+<form action="/clients/ajaxAdd/"
+      method="post"
+      class="form-registration">
+    <h2 class="form-registration__title">Новый аккаунт</h2>
     <fieldset class="registration-modal__fieldset">
         <legend class="registration-modal__legend">через</legend>
-        <!-- Social authorization -->
+        <!-- Common: social-authorization -->
         <ul class="social-authorization">
             <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
             <li class="social-authorization__item"><a href="#" class="icon icon__vk icon_size_48"></a></li>
             <li class="social-authorization__item"><a href="#" class="icon icon__ok icon_size_48"></a></li>
         </ul>
-        <!-- /Social authorization -->
+        <!-- /Common: social-authorization -->
     </fieldset>
     <fieldset class="registration-modal__fieldset">
-        <legend class="registration-modal__legend mb-4">или</legend>
+        <legend class="registration-modal__legend mb-3">или</legend>
         <div class="form-group">
-            <input type="email" name="login" class="form-control form-control-lg" required placeholder="Адрес эл. почты">
+            <input type="email"
+                   name="login"
+                   class="form-control form-control-lg"
+                   required
+                   placeholder="E-mail">
         </div>
         <div class="form-group mb-3">
-            <input type="password" name="password" class="form-control form-control-lg" required placeholder="Пароль">
+            <input type="password"
+                   name="password"
+                   class="form-control form-control-lg"
+                   required
+                   placeholder="Пароль">
         </div>
         <div class="custom-control custom-checkbox mb-3">
-            <input type="checkbox" checked name="newsSubscribed" class="custom-control-input" id="newsSubscribed" required>
-            <label class="custom-control-label" for="newsSubscribed">Подписаться на спец. предложения</label>
+            <input type="checkbox"
+                   checked
+                   name="newsSubscribed"
+                   class="custom-control-input"
+                   id="newsSubscribed"
+                   required>
+            <label class="custom-control-label"
+                   for="newsSubscribed">Подписаться на спец. предложения</label>
         </div>
     </fieldset>
-    <button type="submit" class="btn btn-primary btn-lg w-100">Регистрация</button>
+    <button type="submit"
+            class="btn btn-primary btn-lg w-100">Регистрация</button>
 </form>
 <!-- Form: form-registration -->
             </div>
@@ -1059,8 +1102,11 @@
 <!-- /Common: offer-employed-by -->
                     </div>
                     <div class="page-offer__form-booking mb-3">
-                        <!-- Form: form-booking -->
-<form action="#" class="form-booking">
+                        
+
+<!-- Form: form-booking -->
+<form action="/realties/getFactureToPeriod/"
+      class="form-booking">
     <div class="row mb-3">
         <div class="form-booking__price col-6">
             <label class="form-booking__price-label">От</label>
@@ -1073,47 +1119,82 @@
     <div class="form-booking__form form-row">
         <div class="form-group col-6">
             <label for="form-booking__control_name_check-in">Заезд</label>
-            <input name=""
+            <input name="startDate"
                    type="date"
+                   required
                    class="form-control"
                    id="form-booking__control_name_check-in">
         </div>
         <div class="form-group col-6">
             <label for="form-booking__control_name_check-out">Выезд</label>
-            <input name=""
+            <input name="endDate"
                    type="date"
+                   required
                    class="form-control"
                    id="form-booking__control_name_check-out">
         </div>
         <div class="form-group col-12">
             <select name="guests"
+                    required
                     class="custom-select mr-sm-2"
                     id="form-booking__control_name_guests">
-                <option selected>1 гость</option>
-                <option value="1">2 гостя</option>
-                <option value="2">3 гостя</option>
-                <option value="3">4 гостя</option>
+                <option selected disabled>Гостей</option>
+                
+                <option value="1">1</option>
+                
+                <option value="2">2</option>
+                
+                <option value="3">3</option>
+                
+                <option value="4">4</option>
+                
+                <option value="5">5</option>
+                
+                <option value="6">6</option>
+                
+                <option value="7">7</option>
+                
+                <option value="8">8</option>
+                
+                <option value="9">9</option>
+                
+                <option value="10">10</option>
+                
             </select>
         </div>
     </div>
+
     <table class="form-booking__table table">
         <tbody>
         <tr>
             <td>€25 x 5 ночей</td>
-            <td class="text-right"><strong class="form-booking__amount">€123</strong></td>
+            <td class="text-right">
+                <strong class="form-booking__amount">€123</strong>
+            </td>
         </tr>
         <tr>
             <td>К оплате:</td>
-            <td class="text-right"><strong class="form-booking__to-pay">€123</strong></td>
+            <td class="text-right">
+                <strong class="form-booking__to-pay">€123</strong>
+            </td>
         </tr>
         </tbody>
     </table>
+
     <a href="#" class="btn btn-secondary btn-lg w-100 mb-3">Написать хозяину</a>
     <a href="#" class="btn btn-outline-primary btn-filled btn-lg w-100 mb-3">Оплатить бронирование</a>
+
     <div class="form-booking__alert alert alert-danger">Бронирование невозможно</div>
+    <div class="form-booking__alert alert alert-danger">Эти дни недоступны!</div>
+
     <figure class="form-booking__informer">
         <i class="icon icon__lamp icon_size_32 mr-3"></i>
-        <figcaption class="form-booking__informer-description"><strong class="form-booking__informer-number-of-persons">2 человека</strong> планирует остановиться здесь в выбранный период</figcaption>
+        <figcaption class="form-booking__informer-description">
+            <strong class="form-booking__informer-number-of-persons">2 человек</strong>
+            планирует остановиться здесь
+            <span class="form-booking__informer-period">в выбранный период</span>
+            <span class="form-booking__informer-season">в этот сезон</span>
+        </figcaption>
     </figure>
 </form>
 <!-- /Form: form-booking -->

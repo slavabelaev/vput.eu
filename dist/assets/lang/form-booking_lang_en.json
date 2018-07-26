@@ -1,0 +1,17 @@
+{
+  "from": "From",
+  "description": "The price for the whole accommodation",
+  "check_in": "Check-in",
+  "check_out": "Check-out",
+  "guests": "Guests",
+  "nights": "nights",
+  "to_pay": "To pay",
+  "contact_host": "Contact host",
+  "book": "Book",
+  "booking_is_not_possible": "Booking is not available",
+  "these_days_are_unavailable": "Those dates are not available!",
+  "persons": "persons are",
+  "informer_message": "going to stay here in this season",
+  "in_this_season": "in this season",
+  "in_chosen_period": "in chosen period"
+}

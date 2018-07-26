@@ -4,6 +4,9 @@
 // Textual form controls
 //
 
+label.form-control {
+  user-select: none;
+}
 .form-control {
   display: block;
   width: 100%;

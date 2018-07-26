@@ -34,7 +34,10 @@ const config = {
         watchFiles: paths.src + '/**/*.json'
     },
     templates: {
-        watchFiles: paths.src + '/**/*.tpl',
+        watchFiles: [
+            paths.src + '/**/*.json',
+            paths.src + '/**/*.tpl',
+        ],
         buildFiles: [
             paths.src + '/**/pages/**/*.tpl',
         ]

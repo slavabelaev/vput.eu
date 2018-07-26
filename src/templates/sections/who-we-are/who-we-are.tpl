@@ -6,7 +6,7 @@
         <h1 class="who-we-are__title mb-md-0"><%= lang.title %></h1>
         <div class="who-we-are__description"><%= lang.description %></div>
     </header>
-    <div class="who-we-are__form-search-offers form-search-offers__is_short">
+    <div class="who-we-are__form-search-offers pr-3 pl-3 pt-3 form-search-offers__is_short">
         <%- include('../../forms/form-search-offers/form-search-offers.tpl'); %>
     </div>
     <div class="who-we-are__popular-cities p-3">

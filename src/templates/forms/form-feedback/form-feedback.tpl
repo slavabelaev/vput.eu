@@ -1,3 +1,5 @@
+<% var lang = JSON.parse(include('form-feedback_lang_ru.json')); %>
+
 <!-- Form: form-feedback -->
 <form action="/feedback/ajaxAboutFeedbackSend/"
       method="post"
@@ -9,7 +11,7 @@
                        name="aboutName"
                        required
                        class="form-control form-control-lg"
-                       placeholder="Ваше имя и фамилия">
+                       placeholder="<%= lang.full_name %>">
             </div>
         </li>
         <li class="col-md-6">
@@ -18,7 +20,7 @@
                        name="aboutPhone"
                        required
                        class="form-control form-control-lg"
-                       placeholder="Телефон">
+                       placeholder="<%= lang.phone %>">
             </div>
         </li>
         <li class="col-md-6">
@@ -27,7 +29,7 @@
                        name="aboutEmail"
                        required
                        class="form-control form-control-lg"
-                       placeholder="E-mail">
+                       placeholder="<%= lang.email %>">
             </div>
         </li>
         <li class="col-12">
@@ -35,7 +37,7 @@
                 <textarea class="form-control form-control-lg"
                           name="aboutComment"
                           required
-                          placeholder="Комментарий"></textarea>
+                          placeholder="<%= lang.message %>"></textarea>
             </div>
         </li>
         <li class="col-md-12">
@@ -45,7 +47,7 @@
                        class="custom-control-input"
                        id="form-feedback__about-juridic">
                 <label class="custom-control-label"
-                       for="form-feedback__about-juridic">Я юридическое лицо</label>
+                       for="form-feedback__about-juridic"><%= lang.is_juridic %></label>
             </div>
         </li>
         <li class="col-md-12">
@@ -53,7 +55,7 @@
                 <input type="text"
                        name="aboutRequisits"
                        class="form-control form-control-lg"
-                       placeholder="Реквизиты">
+                       placeholder="<%= lang.requisits %>">
             </div>
         </li>
         <li class="col-md-12">
@@ -61,19 +63,19 @@
                 <input type="text"
                        name="aboutMap"
                        class="form-control form-control-lg"
-                       placeholder="Карта">
+                       placeholder="<%= lang.card %>">
             </div>
         </li>
     </ul>
     <div class="text-right">
         <button type="submit"
-                class="btn btn-secondary btn-lg">Отправить</button>
+                class="btn btn-secondary btn-lg"><%= lang.send %></button>
     </div>
     <div class="form-feedback__alert form-feedback__alert_is_success alert alert-success mt-3 mb-0 d-none">
-        Спасибо! Заявка была успешно отправлена.
+        <%= lang.success_message %>
     </div>
     <div class="form-feedback__alert form-feedback__alert_is_danger alert alert-danger mt-3 mb-0 d-none">
-        Простите! Похоже что-то пошло не так. Пожалуйста, обратитесь в нашу службу поддержки.
+        <%= lang.error_message %>
     </div>
 </form>
 <!-- /Form: form-feedback -->

@@ -4,13 +4,6 @@
   position: fixed;
 }
 
-.mh-100vh {
-  min-height: 600px;
-  min-height: 100vh;
-}
-.mw-1024px {
-  max-width: 1024px;
-}
 .block-image {
   min-height: 240px;
   background-size: 90%;
@@ -22,6 +15,7 @@
 ul {
   &.d-inline-flex,
   &.d-flex,
+  &.form-row,
   &.row {
     list-style: none;
     padding-left: 0;

@@ -1,12 +1,13 @@
+<% var lang = JSON.parse(include('feedback_lang_ru.json')); %>
+
 <!-- Section: feedback -->
-<div class="feedback card text-white bg-primary">
-    <h2 class="card-header bg-primary">Идеи, предложения и пожелания</h2>
+<section class="feedback card text-white bg-primary">
+    <h2 class="card-header bg-primary"><%= lang.title %></h2>
     <div class="card-body">
         <div class="row">
             <div class="col-lg-6">
                 <div class="lead">
-                    <p>Для нас очень важен ваш отзыв о нашем проекте, а также мы рады любым идеям и предложениям со стороны наших клиентов.</p>
-                    <p>А авторы особо интересных идей не останутся «безнаказанными»!</p>
+                    <%= lang.description %>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -14,5 +15,5 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!-- /Section: feedback -->

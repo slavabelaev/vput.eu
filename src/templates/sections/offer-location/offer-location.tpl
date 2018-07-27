@@ -1,6 +1,21 @@
-<!-- Section: Offer location map -->
+<% var lang = JSON.parse(include('offer-location_lang_ru.json')); %>
+<%
+    var data = {
+        title: "Болгария, Святой Влас",
+        latitude: "42.69955610242388",
+        longitude: "27.7021554442872"
+    }
+%>
+
+<!-- Section: offer-location -->
 <section class="offer-location">
-    <h2 class="offer-location__title container mb-4">Болгария Святой Влас</h2>
-    <iframe class="offer-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6028.3111179351!2d24.951889476121163!3d40.934257772476016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ae7e8984f4a313%3A0xe137cebac7387228!2zU2thbGEgQXZkaXJvbiA2NzAgNjEsINCT0YDQtdGG0LjRjw!5e0!3m2!1sru!2s!4v1528186971887" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <h2 class="offer-location__title container mb-4"><%= data.title %></h2>
+    <iframe class="offer-location__map"
+            width="100%"
+            height="450"
+            frameborder="0"
+            allowfullscreen
+            src="https://maps.google.com/maps?q=<%= data.latitude %>,<%= data.longitude %>&output=embed">
+    </iframe>
 </section>
-<!-- /Section: Offer location map -->
+<!-- /Section: offer-location -->

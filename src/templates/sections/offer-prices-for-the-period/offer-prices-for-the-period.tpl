@@ -1,11 +1,13 @@
-<!-- Section: Offer prices for the period -->
+<% var lang = JSON.parse(include('offer-prices-for-the-period_lang_ru.json')); %>
+
+<!-- Section: offer-prices-for-the-period -->
 <section class="offer-prices-for-the-period">
-    <h2 class="offer-prices-for-the-period__title mb-4">ЦЕНЫ ЗА ПЕРИОД:</h2>
+    <h2 class="offer-prices-for-the-period__title mb-4"><%= lang.title %></h2>
     <table class="table table-bordered text-center">
         <thead>
         <tr>
-            <th scope="col">Период</th>
-            <th scope="col">Цена за ночь</th>
+            <th scope="col"><%= lang.period %></th>
+            <th scope="col"><%= lang.price_per_night %></th>
         </tr>
         </thead>
         <tbody class="text-muted">
@@ -16,4 +18,4 @@
         </tbody>
     </table>
 </section>
-<!-- /Section: Offer prices for the period -->
+<!-- /Section: offer-prices-for-the-period -->

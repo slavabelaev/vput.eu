@@ -1,0 +1,14 @@
+{
+  "title": "Characteristics",
+  "security": "Security",
+  "cafe": "A cafe",
+  "parking": "Parking space",
+  "bicycles_for_rent": "Bicycles for rent",
+  "access_to_the_sea": "Access to the sea",
+  "massage": "Massage",
+  "pool": "Poll",
+  "spa": "SPA",
+
+  "_meter": ["meter", "meters", "meters"],
+  "_piece": ["piece", "pieces", "pieces"]
+}

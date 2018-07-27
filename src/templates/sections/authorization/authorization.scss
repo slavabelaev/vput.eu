@@ -1,5 +1,11 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
+.authorization {
+  .form-control {
+    border-width: 0;
+  }
+}
+
 .authorization__card {
   position: relative;
   color: $white;

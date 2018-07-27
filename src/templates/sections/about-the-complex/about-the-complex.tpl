@@ -1,3 +1,5 @@
+<% var lang = JSON.parse(include('about-the-complex_lang_ru.json')); %>
+
 <!-- Section: about-the-complex -->
 <section class="about-the-complex">
     <div class="row">

@@ -1,6 +1,8 @@
+<% var lang = JSON.parse(include('guarantees_lang_ru.json')); %>
+
 <!-- Section: guarantees -->
 <section class="guarantees">
-    <h2 class="guarantees__title mb-4">ГАРАНТИРУЕМ БЕЗОПАСНОСТЬ</h2>
+    <h2 class="guarantees__title mb-4"><%= lang.title %></h2>
     <ul class="guarantees__list row">
         <li class="guarantees__list-item col-sm-6 col-lg-3 mb-4">
             <img src="templates/sections/guarantees/guarantees__mastercard-securecode.svg"

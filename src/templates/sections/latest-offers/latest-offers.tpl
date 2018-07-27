@@ -18,7 +18,7 @@
         <!-- /List of offers -->
     </div>
     <div class="latest-offers__link-container mt-3 text-center">
-        <a href="#" class="btn btn-primary btn-lg"><%= lang.see_more_offers %></a>
+        <a href="search.html" class="btn btn-primary btn-lg"><%= lang.see_more_offers %></a>
     </div>
 </section>
 <!-- /Section: latest-offers -->

@@ -61,7 +61,7 @@
                          alt=""
                          class="figure-img mb-3">
                     <figcaption class="figure-caption">
-                        <a href="#" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.guests_escort %></h3></a>
+                        <a href="escort-ru.html" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.guests_escort %></h3></a>
                         <div class="services__figure-description"><%= lang.guests_escort_description %></div>
                     </figcaption>
                 </figure>
@@ -72,7 +72,7 @@
                          alt=""
                          class="figure-img mb-3">
                     <figcaption class="figure-caption">
-                        <a href="#" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.cleaning %></h3></a>
+                        <a href="cleaning-ru.html" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.cleaning %></h3></a>
                         <div class="services__figure-description"><%= lang.cleaning_description %></div>
                     </figcaption>
                 </figure>
@@ -83,7 +83,7 @@
                          alt=""
                          class="figure-img mb-3">
                     <figcaption class="figure-caption">
-                        <a href="#" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.property_management %></h3></a>
+                        <a href="management-ru.html" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.property_management %></h3></a>
                         <div class="services__figure-description"><%= lang.property_management_description %></div>
                     </figcaption>
                 </figure>

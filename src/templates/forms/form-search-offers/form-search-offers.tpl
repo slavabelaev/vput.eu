@@ -11,7 +11,7 @@
             <li class="form-search-offers__cityId-col form-group col">
                 <input type="hidden"
                        name="filters[cityId]">
-                <input class="form-search-offers__cities-tabs-toggle custom-select custom-select-lg"
+                <input class="form-search-offers__cities-tabs-toggle custom-select custom-select-lg collapsed"
                        readonly
                        placeholder="<%= lang.city %>"
                        data-toggle="collapse"
@@ -37,12 +37,12 @@
                 </select>
             </li>
             <li class="form-search-offers__search-by-complexes-col form-group col">
-                <a href="#"
-                   class="form-search-offers__search-by-complexes-button btn btn-outline-primary btn-lg w-100"><%= lang.search_by_complexes %></a>
+                <button type="submit"
+                        class="form-search-offers__search-by-complexes-button btn btn-outline-primary btn-lg w-100"><%= lang.search_by_complexes %></button>
             </li>
             <li class="form-search-offers__other-filters-col form-group col">
                 <a href="#"
-                   class="btn btn-outline-primary btn-lg w-100"
+                   class="form-search-offers__other-filters-toggle-button btn btn-outline-primary btn-lg w-100 collapsed"
                    data-toggle="collapse"
                    data-target=".form-search-offers__other-filters"><%= lang.more_filters %></a>
             </li>
@@ -68,7 +68,8 @@
                for="form-search-offers__show-booked-control"><%= lang.do_not_show_booked %></label>
     </div>
 
-    <div class="form-search-offers__cities-dropdown collapse">
+    <div class="form-search-offers__cities-dropdown collapse"
+         data-parent=".form-search-offers">
         <a href="#"
            data-toggle="collapse"
            data-target=".form-search-offers__cities-dropdown"
@@ -79,7 +80,8 @@
     </div>
 
     <!-- Other filters -->
-    <div class="form-search-offers__other-filters collapse">
+    <div class="form-search-offers__other-filters collapse"
+         data-parent=".form-search-offers">
         <fieldset class="form-search-offers__fieldset">
             <div class="form-row align-items-center">
                 <legend class="form-search-offers__legend col-md-3 text-center text-md-left mb-md-0 mt-md-3"><%= lang.price_per_day %></legend>

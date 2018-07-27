@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
-    $('.offer-item__arrow').on('click', function () {
+    var blockElement = $('.offer-item');
+    blockElement.find('.offer-item__arrow').on('click', function () {
         var arrowElement = $(this), sliderElement = arrowElement.closest('.offer-item__image-slider'), slickSliderElement = sliderElement.find('.offer-item__list-of-images[is-slick-carousel]');
         slickSliderElement.slick({
             infinite: true,
@@ -17,7 +18,9 @@ jQuery(document).ready(function ($) {
             slickSliderElement.slick('slickNext');
         }
     });
-    $('.offer-item__add-to-favorites[data-toggle="button"]').on('click', function () {
+    blockElement
+        .find('.offer-item__add-to-favorites[data-toggle="button"]')
+        .on('click', function () {
         $(this).toggleClass('active');
     });
 });

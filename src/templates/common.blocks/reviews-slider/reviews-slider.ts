@@ -1,3 +1,5 @@
 jQuery(document).ready(function($) {
-    $('.reviews-slider').slick();
+    let blockElement = $('.reviews-slider');
+
+    blockElement.slick();
 });

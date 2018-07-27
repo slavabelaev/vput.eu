@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
-    $('.offer-item__arrow').on('click', function() {
+    let blockElement = $('.offer-item');
+
+    blockElement.find('.offer-item__arrow').on('click', function() {
         let arrowElement = $(this),
             sliderElement = arrowElement.closest('.offer-item__image-slider'),
             slickSliderElement = sliderElement.find('.offer-item__list-of-images[is-slick-carousel]');
@@ -25,7 +27,9 @@ jQuery(document).ready(function($) {
         }
     });
 
-    $('.offer-item__add-to-favorites[data-toggle="button"]').on('click', function() {
-       $(this).toggleClass('active');
-    });
+    blockElement
+        .find('.offer-item__add-to-favorites[data-toggle="button"]')
+        .on('click', function() {
+           $(this).toggleClass('active');
+        });
 });

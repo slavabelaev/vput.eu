@@ -1,8 +1,10 @@
 jQuery(document).ready(function($){
+    let blockElement = $('.cities-tabs');
+
     function setCitiesLetters() {
         let usedLetters = [];
 
-        $('.cities-tabs [data-name]').each(function(index, element) {
+        blockElement.find('[data-name]').each(function(index, element) {
             let $element = $(element),
                 cityName = $element.data('name'),
                 cityNameFirstLetter = cityName.substring(0, 1).toUpperCase(),

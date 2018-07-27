@@ -407,7 +407,7 @@
             <li class="form-search-offers__cityId-col form-group col">
                 <input type="hidden"
                        name="filters[cityId]">
-                <input class="form-search-offers__cities-tabs-toggle custom-select custom-select-lg"
+                <input class="form-search-offers__cities-tabs-toggle custom-select custom-select-lg collapsed"
                        readonly
                        placeholder="Куда вы собираетесь поехать?"
                        data-toggle="collapse"
@@ -451,12 +451,12 @@
                 </select>
             </li>
             <li class="form-search-offers__search-by-complexes-col form-group col">
-                <a href="#"
-                   class="form-search-offers__search-by-complexes-button btn btn-outline-primary btn-lg w-100">Искать по комплексам</a>
+                <button type="submit"
+                        class="form-search-offers__search-by-complexes-button btn btn-outline-primary btn-lg w-100">Искать по комплексам</button>
             </li>
             <li class="form-search-offers__other-filters-col form-group col">
                 <a href="#"
-                   class="btn btn-outline-primary btn-lg w-100"
+                   class="form-search-offers__other-filters-toggle-button btn btn-outline-primary btn-lg w-100 collapsed"
                    data-toggle="collapse"
                    data-target=".form-search-offers__other-filters">Ещё фильтры</a>
             </li>
@@ -482,7 +482,8 @@
                for="form-search-offers__show-booked-control">Не показывать забронированные</label>
     </div>
 
-    <div class="form-search-offers__cities-dropdown collapse">
+    <div class="form-search-offers__cities-dropdown collapse"
+         data-parent=".form-search-offers">
         <a href="#"
            data-toggle="collapse"
            data-target=".form-search-offers__cities-dropdown"
@@ -1186,7 +1187,8 @@
     </div>
 
     <!-- Other filters -->
-    <div class="form-search-offers__other-filters collapse">
+    <div class="form-search-offers__other-filters collapse"
+         data-parent=".form-search-offers">
         <fieldset class="form-search-offers__fieldset">
             <div class="form-row align-items-center">
                 <legend class="form-search-offers__legend col-md-3 text-center text-md-left mb-md-0 mt-md-3">Цена в сутки</legend>
@@ -1659,7 +1661,7 @@
 
 <!-- Section: best-offers-of-the-week -->
 <section class="best-offers-of-the-week">
-    <h2 class="best-offers-of-the-week__title text-center mb-4">ЛУЧШИЕ АПАРТАМЕНТЫ НЕДЕЛИ</h2>
+    <h2 class="best-offers-of-the-week__title text-center mb-4">Лучшие апартаменты недели</h2>
     <div class="best-offers-of-the-week__list-of-offers">
         <!-- List of offers -->
         <ul class="list-of-offers row">
@@ -2319,7 +2321,7 @@
 <div class="services">
     <div class="row mb-5">
         <section class="services__transfer col-xl-6 mb-3">
-            <h2 class="services__title mb-4">ТРАНСФЕР</h2>
+            <h2 class="services__title mb-4">Трансфер</h2>
             <figure class="figure row text-left pr-xl-5">
                 <figure class="services__img services__img_is_luggage figure-img col"
                         style="background-image: url(templates/sections/services/services__luggage.png)"></figure>
@@ -2343,7 +2345,7 @@
             </figure>
         </section>
         <section class="services__rent-a-car col-xl-6 mb-3">
-            <h2 class="services__title mb-4">АРЕНДА АВТО</h2>
+            <h2 class="services__title mb-4">Аренда авто</h2>
             <figure class="figure row text-left pl-xl-5">
                 <figcaption class="figure-caption col-auto">
                     <h3 class="services__figure-title">Лучшие цены на побережье</h3>
@@ -2368,7 +2370,7 @@
         </section>
     </div>
     <section class="services__other">
-        <h2 class="services__title mb-4">ДРУГИЕ УСЛУГИ</h2>
+        <h2 class="services__title mb-4">Другие услуги</h2>
         <ul class="services__other-services-list row">
             <li class="services__other-services-list-item col-md-4 mb-3">
                 <figure class="services__other-services-item">
@@ -2376,7 +2378,7 @@
                          alt=""
                          class="figure-img mb-3">
                     <figcaption class="figure-caption">
-                        <a href="#" class="services__title-link mb-2"><h3 class="services__figure-title">Заселение и выселение</h3></a>
+                        <a href="escort-ru.html" class="services__title-link mb-2"><h3 class="services__figure-title">Заселение и выселение</h3></a>
                         <div class="services__figure-description">Встречаем гостей и проверяем сохранность имущества</div>
                     </figcaption>
                 </figure>
@@ -2387,7 +2389,7 @@
                          alt=""
                          class="figure-img mb-3">
                     <figcaption class="figure-caption">
-                        <a href="#" class="services__title-link mb-2"><h3 class="services__figure-title">Клининговые услуги</h3></a>
+                        <a href="cleaning-ru.html" class="services__title-link mb-2"><h3 class="services__figure-title">Клининговые услуги</h3></a>
                         <div class="services__figure-description">Сделаем уборку и сменим постельное белье по вашему поручению</div>
                     </figcaption>
                 </figure>
@@ -2398,7 +2400,7 @@
                          alt=""
                          class="figure-img mb-3">
                     <figcaption class="figure-caption">
-                        <a href="#" class="services__title-link mb-2"><h3 class="services__figure-title">Управление жильем</h3></a>
+                        <a href="management-ru.html" class="services__title-link mb-2"><h3 class="services__figure-title">Управление жильем</h3></a>
                         <div class="services__figure-description">Общаемся с туристами, сопровождаем при заселении, убираем и меняем постельное бельё</div>
                     </figcaption>
                 </figure>
@@ -3384,7 +3386,7 @@
 
 <!-- Section: guarantees -->
 <section class="guarantees">
-    <h2 class="guarantees__title mb-4">ГАРАНТИРУЕМ БЕЗОПАСНОСТЬ</h2>
+    <h2 class="guarantees__title mb-4">Гарантируем безопасность</h2>
     <ul class="guarantees__list row">
         <li class="guarantees__list-item col-sm-6 col-lg-3 mb-4">
             <img src="templates/sections/guarantees/guarantees__mastercard-securecode.svg"

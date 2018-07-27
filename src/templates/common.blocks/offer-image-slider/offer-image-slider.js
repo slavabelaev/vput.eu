@@ -1,11 +1,12 @@
 jQuery(document).ready(function ($) {
-    $('.offer-image-slider [is-slider]').slick({
+    var blockElement = $('.offer-image-slider');
+    blockElement.find('[is-slider]').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         asNavFor: '.offer-image-slider [is-slider-nav]'
     });
-    $('.offer-image-slider [is-slider-nav]').slick({
+    blockElement.find('[is-slider-nav]').slick({
         slidesToShow: 10,
         slidesToScroll: 1,
         asNavFor: '.offer-image-slider [is-slider]',

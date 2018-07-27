@@ -23,6 +23,13 @@
   .form-search-offers__cities-dropdown {
     margin-left: -1rem;
     margin-right: -1rem;
+    &,
+    &.collapsing {
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 99;
+    }
   }
 }
 

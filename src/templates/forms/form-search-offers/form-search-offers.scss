@@ -53,13 +53,15 @@
   margin-bottom: 0;
 }
 
-.form-search-offers__cities-dropdown {
-  &,
-  &.collapsing {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 99;
+.form-search-offers__other-filters-toggle-button {
+  &:not(.collapsed) {
+    background-color: $primary;
+    color: $white;
+  }
+}
+.form-search-offers__cities-tabs-toggle {
+  &:not(.collapsed) {
+    border-color: $primary;
   }
 }
 
@@ -78,6 +80,9 @@
   }
 }
 
+.form-search-offers__cities-dropdown {
+  margin-bottom: .5rem;
+}
 .form-search-offers__cities-dropdown-close {
   position: fixed;
   background-color: $red;

@@ -1,28 +1,29 @@
 jQuery(document).ready(function ($) {
-    $('.form-car-rental').on('submit', function (e) {
+    var blockElement = $('.form-car-rental');
+    blockElement.on('submit', function (e) {
         e.preventDefault();
-        var formElement = $(this), isValidForm = formElement[0].checkValidity();
+        var isValidForm = blockElement[0].checkValidity();
         function hideAlerts() {
             setTimeout(function () {
-                formElement.find('.form-car-rental__alert').fadeOut();
+                blockElement.find('.form-car-rental__alert').fadeOut();
             }, 5000);
         }
         if (isValidForm) {
             $.ajax({
-                url: formElement.attr('action'),
-                method: formElement.attr('method'),
-                data: formElement.serialize()
+                url: blockElement.attr('action'),
+                method: blockElement.attr('method'),
+                data: blockElement.serialize()
             })
                 .done(function () {
-                formElement[0].reset();
-                formElement.find('.form-car-rental__alert_is_success')
+                blockElement[0].reset();
+                blockElement.find('.form-car-rental__alert_is_success')
                     .removeClass('d-none')
                     .css('display', 'none')
                     .fadeIn();
                 hideAlerts();
             })
                 .fail(function () {
-                formElement.find('.form-car-rental__alert_is_danger')
+                blockElement.find('.form-car-rental__alert_is_danger')
                     .removeClass('d-none')
                     .css('display', 'none')
                     .fadeIn();

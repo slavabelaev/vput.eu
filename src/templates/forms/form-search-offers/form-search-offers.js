@@ -1,9 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var offerSearchFormElement = $('.form-search-offers');
-    offerSearchFormElement
+    var blockElement = $('.form-search-offers');
+    blockElement.find('.cities-tabs__link').on('click', function (e) {
+        e.preventDefault();
+        var data = $(this).data(), toggleCollapseElement = blockElement.find('.form-search-offers__cities-tabs-toggle');
+        toggleCollapseElement.val(data.name);
+        blockElement.find('[name="filters[cityId]"]').val(data.id);
+        toggleCollapseElement.trigger('click');
+    });
+    blockElement
         .find('.form-search-offers__list-of-cities-toggle')
         .on('click', function () {
-        var cityNameInputElement = $(this), cityIdInputElement = offerSearchFormElement.find('[name="filters[cityId]"]'), listOfCitiesElement = offerSearchFormElement.find('.list-of-cities');
+        var cityNameInputElement = $(this), cityIdInputElement = blockElement.find('[name="filters[cityId]"]'), listOfCitiesElement = blockElement.find('.list-of-cities');
         listOfCitiesElement.toggleClass('d-none');
         listOfCitiesElement.find('.list-of-cities__nav > .nav-link').on('click', function (e) {
             console.log('Clicked on city');
@@ -13,8 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             cityIdInputElement.val(that.data('id'));
         });
     });
-    var sliderElement = offerSearchFormElement.find('.form-search-offers__slider').get(0), minPriceElement = offerSearchFormElement.find('[name="filters[prices][minPrice]"]').get(0), maxPriceElement = offerSearchFormElement.find('[name="filters[prices][maxPrice]"]').get(0), inputs = [minPriceElement, maxPriceElement], minPrice = sliderElement.dataset.min ? sliderElement.dataset.min * 1 : 0, maxPrice = sliderElement.dataset.max ? sliderElement.dataset.max * 1 : 1000;
-    console.log(minPrice, maxPrice);
+    var sliderElement = blockElement.find('.form-search-offers__slider').get(0), minPriceElement = blockElement.find('[name="filters[prices][minPrice]"]').get(0), maxPriceElement = blockElement.find('[name="filters[prices][maxPrice]"]').get(0), inputs = [minPriceElement, maxPriceElement], minPrice = sliderElement.dataset.min ? sliderElement.dataset.min * 1 : 0, maxPrice = sliderElement.dataset.max ? sliderElement.dataset.max * 1 : 1000;
     noUiSlider.create(sliderElement, {
         start: [minPrice, maxPrice],
         connect: true,

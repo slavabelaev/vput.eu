@@ -1,6 +1,6 @@
 {
-  "transfer": "ТРАНСФЕР",
-  "car_rental": "АРЕНДА АВТО",
+  "transfer": "Трансфер",
+  "car_rental": "Аренда авто",
   "from_burgas_airport_to": "Из аэропорта Бургас в",
   "best_prices_at_seaside": "Лучшие цены на побережье",
   "sunny_beach": "Солнечный берег",
@@ -9,7 +9,7 @@
   "july_and_august_from": "В июле и августе от",
   "other_destinations": "Остальные направления",
   "all_cars": "Посмотреть автомобили",
-  "other_services": "ДРУГИЕ УСЛУГИ",
+  "other_services": "Другие услуги",
   "guests_escort": "Заселение и выселение",
   "guests_escort_description": "Встречаем гостей и проверяем сохранность имущества",
   "cleaning": "Клининговые услуги",

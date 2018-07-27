@@ -1,6 +1,6 @@
 {
-  "transfer": "TRANSFER",
-  "car_rental": "CAR RENTAL",
+  "transfer": "Transfer",
+  "car_rental": "Car Rental",
   "from_burgas_airport_to": "From Burgas airport to",
   "best_prices_at_seaside": "Best prices at seaside",
   "sunny_beach": "Sunny Beach",
@@ -9,7 +9,7 @@
   "july_and_august_from": "July and August from",
   "other_destinations": "Other destinations",
   "all_cars": "All cars",
-  "other_services": "OTHER SERVICES",
+  "other_services": "Other Services",
   "guests_escort": "Guests Escort",
   "guests_escort_description": "Escorting guests on check-in and check-out",
   "cleaning": "Cleaning",

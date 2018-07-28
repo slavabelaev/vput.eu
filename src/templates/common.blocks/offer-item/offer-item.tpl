@@ -2,9 +2,9 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a href="javascript: return false;"
-       class="offer-item__add-to-favorites icon icon__heart icon_style_light"
-       @click="toggleFavorites(12345)"></a>
+    <a class="offer-item__add-to-favorites toggle-heart icon icon__heart icon_style_light"
+       data-toggle="button"
+       aria-pressed="false"></a>
     <div class="offer-item__image-slider">
         <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
                 aria-label="Next"

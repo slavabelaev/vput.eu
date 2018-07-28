@@ -38,7 +38,10 @@
   .page-header__collapse {
     margin-left: -($navbar-padding-x);
     margin-right: -($navbar-padding-x);
-
+    &>.navbar-nav:nth-child(1) {
+      margin-top: $navbar-padding-y;
+      border-top: $border-color $border-width solid;
+    }
     .nav-link {
       padding: $dropdown-item-padding-y $dropdown-item-padding-x;
       border-bottom: $border-color $border-width solid;

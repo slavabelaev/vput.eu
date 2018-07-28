@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         var data = $(this).data();
         blockElement.find('.form-search-offers__cities-tabs-toggle').val(data.name);
+        blockElement.find('.form-search-offers__cities-dropdown').collapse('hide');
         blockElement.find('[name="filters[cityId]"]').val(data.id);
     });
 });

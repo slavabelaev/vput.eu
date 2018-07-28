@@ -32,8 +32,28 @@
 }
 
 @include media-breakpoint-down(sm) {
-  .page-header>.container {
-    max-width: initial;
+  .page-header {
+    border-bottom: $border-color $border-width solid;
+  }
+  .page-header__collapse {
+    .navbar-nav {
+      margin-left: -($navbar-padding-x);
+      margin-right: -($navbar-padding-x);
+    }
+    .nav-link {
+      padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+      border-bottom: $border-color $border-width solid;
+    }
+    .dropdown-menu {
+      border-left-width: 0;
+      border-right-width: 0;
+      border-top-width: 0;
+      margin: 0;
+      background-color: rgba(0,0,0,.036);
+    }
+  }
+  .page-header__dropdown-item-logout {
+    border-radius: 0;
   }
 }
 

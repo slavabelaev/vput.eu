@@ -98,7 +98,7 @@
                     </div>
                 </li>
             </ul>
-            <div class="ml-md-4 my-2 my-md-0">
+            <div class="ml-md-4 mt-3 mb-2 my-md-0">
                 <a class="page-header__to-rent-button btn btn-outline-secondary btn-lg w-100"
                    href="add.html"><%= lang.to_rent %></a>
             </div>

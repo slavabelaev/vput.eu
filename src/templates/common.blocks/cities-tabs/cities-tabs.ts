@@ -1,10 +1,10 @@
 jQuery(document).ready(function($){
     let blockElement = $('.cities-tabs');
 
-    function setCitiesLetters() {
+    function setCitiesLetters(contentElement) {
         let usedLetters = [];
 
-        blockElement.find('[data-name]').each(function(index, element) {
+        contentElement.find('[data-name]').each(function(index, element) {
             let $element = $(element),
                 cityName = $element.data('name'),
                 cityNameFirstLetter = cityName.substring(0, 1).toUpperCase(),
@@ -17,5 +17,7 @@ jQuery(document).ready(function($){
         });
     }
 
-    setCitiesLetters();
+    blockElement.find('.tab-pane').each(function(index, element) {
+        setCitiesLetters($(element));
+    });
 });

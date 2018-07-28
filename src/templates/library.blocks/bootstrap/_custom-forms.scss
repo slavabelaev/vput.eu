@@ -58,7 +58,10 @@
 
 .custom-control-label {
   margin-bottom: 0;
-
+  &::before,
+  &::after {
+    transition: $transition-base;
+  }
   // Background-color and (when enabled) gradient
   &::before {
     position: absolute;

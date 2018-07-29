@@ -1,7 +1,5 @@
-// @import compass;
-
-$bubble-d: 4.5rem; // bubble diameter
-$bubble-r: .5*$bubble-d; // bubble-radius
+$bubble-d: 4.5rem;
+$bubble-r: .5*$bubble-d;
 $particle-d: .375rem;
 $particle-r: .5*$particle-d;
 
@@ -83,7 +81,7 @@ $_precision: 10;
       $ys: $yg + $particle-d*sin($particle-curr-angle);
 
       $shadow-list: $shadow-list, $xs $ys 0 $spread-r
-      hsl(($i + $j)*$group-base-angle, 100%, 75%);
+      #fff;
     }
   }
 
@@ -108,7 +106,7 @@ $_precision: 10;
   &:before {
     box-sizing: border-box;
     margin: -$bubble-r;
-    border: solid $bubble-r #e2264d;
+    border: solid $bubble-r #fff;
     width: $bubble-d;
     height: $bubble-d;
     transform: scale(0);
@@ -116,7 +114,8 @@ $_precision: 10;
 
   &:after {
     margin: -$particle-r;
-    width: $particle-d; height: $particle-d;
+    width: $particle-d;
+    height: $particle-d;
     @include particles(1);
   }
 

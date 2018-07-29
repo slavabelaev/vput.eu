@@ -14,11 +14,17 @@
   @include hover-focus {
     color: $dark;
   }
+  .icon {
+    filter: brightness(0) invert(.5);
+  }
 
   .offer-share__add-to-favorites-label-minus { display: none; }
   &.active {
     .offer-share__add-to-favorites-label-plus { display: none; }
     .offer-share__add-to-favorites-label-minus { display: inline-block; }
+    .icon {
+      filter: initial;
+    }
   }
 }
 .offer-share__title {

@@ -33,6 +33,7 @@
   background-color: $dark;
 }
 .offer-item__image {
+  background-color: $dark;
   transition: $transition-base;
   &:hover {
     filter: brightness(1.1);
@@ -64,16 +65,13 @@
 }
 .offer-item__details {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
   padding-right: 50px;
   margin-bottom: 0;
   color: $text-muted;
 }
-.offer-item__price-value-icon.icon {
-  width: 1.125rem;
-  height: 1.125rem;
-  margin-left: .5rem;
+.offer-item__detail {
+  display: inline-block;
+  vertical-align: middle;
 }
 .offer-item__special-details {
   list-style: none;
@@ -90,14 +88,10 @@
   flex: 1;
 }
 .offer-item__city {
-  flex: 1 60%;
+  max-width: 155px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.offer-item__country,
-.offer-item__city {
-  margin-bottom: .25rem;
 }
 
 .offer-item__country,
@@ -126,7 +120,7 @@
   text-transform: initial;
   font-weight: 500;
   font-size: 1.125rem;
-  margin-bottom: .5rem;
+  margin-bottom: .25rem;
   &:before {
     content: "";
     display: inline-block;
@@ -180,6 +174,7 @@
 .offer-item__reliable-host {
   position: absolute;
   right: 0;
+  bottom: 0;
   margin-right: 0;
 }
 

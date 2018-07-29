@@ -7,7 +7,7 @@
        data-toggle="button"
        aria-pressed="false"
        autocomplete="off">
-        <i class="icon icon__heart icon_size_16 mr-2"></i>
+        <i class="icon icon__heart mr-2"></i>
         <span class="offer-share__add-to-favorites-label-plus"><%= lang.add_to_favorites %></span>
         <span class="offer-share__add-to-favorites-label-minus"><%= lang.remove_from_favorites %></span>
     </a>

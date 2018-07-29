@@ -33,6 +33,7 @@
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
             <li class="offer-item__detail offer-item__city">Солнечный берег</li>
+            <br>
             <li class="offer-item__detail offer-item__type">Квартира</li>
             <li class="offer-item__detail offer-item__numbers-of-rooms">
                 <span class="offer-item__numbers-of-rooms-label"><%= lang.rooms %></span>

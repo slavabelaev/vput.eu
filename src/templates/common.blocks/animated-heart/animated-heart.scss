@@ -1,3 +1,5 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
 $bubble-d: 4.5rem;
 $bubble-r: .5*$bubble-d;
 $particle-d: .375rem;
@@ -94,7 +96,7 @@ $_precision: 10;
   border-width: $ext;
 }
 
-.toggle-heart {
+.animated-heart {
   &:before, &:after {
     position: absolute;
     z-index: -1;

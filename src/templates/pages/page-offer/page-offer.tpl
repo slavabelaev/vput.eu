@@ -1,3 +1,5 @@
+<% var lang = JSON.parse(include('page-offer_lang_ru.json')); %>
+
 <%- include('../../common.blocks/meta-header/meta-header.tpl'); %>
 <%- include('../../common.blocks/page-header/page-header.tpl'); %>
 

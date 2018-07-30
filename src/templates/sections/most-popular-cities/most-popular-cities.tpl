@@ -13,7 +13,7 @@
                      style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Sunny-Beach.jpg);"></div>
                 <figcaption class="most-popular-cities__caption">
                     <h3 class="most-popular-cities__list-title"><%= lang.sunny_beach %></h3>
-                    <a href="#" class="most-popular-cities__list-btn btn btn-primary btn-lg"><%= lang.see %></a>
+                    <a href="search.html?useFilter=true&cityId=15789522" class="most-popular-cities__list-btn btn btn-primary btn-lg"><%= lang.see %></a>
                 </figcaption>
             </figure>
         </li>
@@ -23,7 +23,7 @@
                      style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Saint-Vlas.jpg);"></div>
                 <figcaption class="most-popular-cities__caption">
                     <h3 class="most-popular-cities__list-title"><%= lang.saint_vlas %></h3>
-                    <a href="#" class="most-popular-cities__list-btn btn btn-primary btn-lg"><%= lang.see %></a>
+                    <a href="search.html?useFilter=true&cityId=15789521" class="most-popular-cities__list-btn btn btn-primary btn-lg"><%= lang.see %></a>
                 </figcaption>
             </figure>
         </li>
@@ -33,7 +33,7 @@
                      style="background-image: url(templates/sections/most-popular-cities/most-popular-cities__Neseber.jpg);"></div>
                 <figcaption class="most-popular-cities__caption">
                     <h3 class="most-popular-cities__list-title"><%= lang.nessebar %></h3>
-                    <a href="#" class="most-popular-cities__list-btn btn btn-primary btn-lg"><%= lang.see %></a>
+                    <a href="search.html?useFilter=true&cityId=15789523" class="most-popular-cities__list-btn btn btn-primary btn-lg"><%= lang.see %></a>
                 </figcaption>
             </figure>
         </li>

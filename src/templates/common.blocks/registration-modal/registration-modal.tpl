@@ -7,14 +7,14 @@
      aria-hidden="true">
     <div class="modal-dialog modal-sm"
          role="document">
-        <div class="modal-content">
+        <div class="registration-modal__content modal-content">
             <a href="#"
                data-dismiss="modal"
                class="close"><i class="icon icon__close icon_style_light"></i></a>
             <div class="modal-body">
                 <%- include('../../forms/form-registration/form-registration.tpl'); %>
             </div>
-            <div class="modal-footer">
+            <div class="registration-modal__footer modal-footer">
                 <a href="#" class="registration-modal__authorization-link"
                    data-toggle="modal"
                    data-dismiss="modal"

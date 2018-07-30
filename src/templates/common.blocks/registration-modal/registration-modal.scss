@@ -1,11 +1,12 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
-.registration-modal {
-  .modal-footer {
-    justify-content: center;
-    margin-bottom: -60px;
-    font-size: 1.125rem;
-  }
+.registration-modal__footer {
+  justify-content: center;
+  margin-bottom: -60px;
+  font-size: 1.125rem;
+}
+.registration-modal__content {
+  background-color: $light;
 }
 .registration-modal__legend {
   text-align: center;

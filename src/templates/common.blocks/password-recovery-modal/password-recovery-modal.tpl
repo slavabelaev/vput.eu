@@ -7,7 +7,7 @@
      aria-hidden="true">
     <div class="modal-dialog modal-sm"
          role="document">
-        <div class="modal-content">
+        <div class="password-recovery-modal__content modal-content">
             <div class="modal-header justify-content-center">
                 <h2 class="modal-title"><%= lang.forgot_password %></h2>
                 <a href="#"
@@ -20,14 +20,14 @@
                     <%- include('../../forms/form-recovery/form-recovery.tpl'); %>
                 </div>
             </div>
-            <div class="modal-footer justify-content-center pt-0">
+            <div class="password-recovery-modal__footer modal-footer">
                 <a href="#"
-                   class="nav-link"
+                   class="password-recovery-modal__footer-link nav-link"
                    data-toggle="modal"
                    data-target=".registration-modal"
                    data-dismiss="modal"><%= lang.sign_in %></a>
                 <a href="#"
-                   class="nav-link"
+                   class="password-recovery-modal__footer-link nav-link"
                    data-toggle="modal"
                    data-target=".authorization-modal"
                    data-dismiss="modal"><%= lang.sign_up %></a>

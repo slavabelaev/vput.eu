@@ -170,7 +170,7 @@
      aria-hidden="true">
     <div class="modal-dialog modal-sm"
          role="document">
-        <div class="modal-content">
+        <div class="password-recovery-modal__content modal-content">
             <div class="modal-header justify-content-center">
                 <h2 class="modal-title">Забыли пароль?</h2>
                 <a href="#"
@@ -199,14 +199,14 @@
 <!-- /Form: form-recovery -->
                 </div>
             </div>
-            <div class="modal-footer justify-content-center pt-0">
+            <div class="password-recovery-modal__footer modal-footer">
                 <a href="#"
-                   class="nav-link"
+                   class="password-recovery-modal__footer-link nav-link"
                    data-toggle="modal"
                    data-target=".registration-modal"
                    data-dismiss="modal">Регистрация</a>
                 <a href="#"
-                   class="nav-link"
+                   class="password-recovery-modal__footer-link nav-link"
                    data-toggle="modal"
                    data-target=".authorization-modal"
                    data-dismiss="modal">Вход</a>
@@ -311,7 +311,7 @@
      aria-hidden="true">
     <div class="modal-dialog modal-sm"
          role="document">
-        <div class="modal-content">
+        <div class="registration-modal__content modal-content">
             <a href="#"
                data-dismiss="modal"
                class="close"><i class="icon icon__close icon_style_light"></i></a>
@@ -365,7 +365,7 @@
 </form>
 <!-- Form: form-registration -->
             </div>
-            <div class="modal-footer">
+            <div class="registration-modal__footer modal-footer">
                 <a href="#" class="registration-modal__authorization-link"
                    data-toggle="modal"
                    data-dismiss="modal"
@@ -2189,14 +2189,18 @@
                     </ul>
                     <!-- /List of offers -->
                 </div>
-                <nav aria-label="Pagination">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
+                <nav class="page-search__pagination">
+                    
+
+<!-- Block: pagination -->
+<ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Предыдущая</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Следующая</a></li>
+</ul>
+<!-- /Block: pagination -->
                 </nav>
             </div>
             <div class="col-lg-4 page-search__map-container d-none d-lg-block">

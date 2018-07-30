@@ -3,7 +3,7 @@
 
 <!-- Section: offer-reviews -->
 <section class="offer-reviews">
-    <h2 class="offer-reviews__title mb-4">
+    <h2 class="offer-reviews__title mb-3">
         <span class="offer-reviews__title-text mr-3">1 <%= Utils.declension(1, lang._review); %></span>
         <div class="offer-reviews__total-rating">
             <figure class="review-rating"

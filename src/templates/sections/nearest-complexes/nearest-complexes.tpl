@@ -2,7 +2,7 @@
 
 <!-- Section: nearest-complexes -->
 <section class="nearest-complexes">
-    <h2 class="nearest-complexes__title mb-4"><%= lang.title %></h2>
+    <h2 class="nearest-complexes__title mb-3"><%= lang.title %></h2>
     <div class="nearest-complexes__list-of-complexes">
         <%- include('../../common.blocks/list-of-complexes/list-of-complexes.tpl'); %>
     </div>

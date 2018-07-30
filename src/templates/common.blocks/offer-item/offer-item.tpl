@@ -2,7 +2,7 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites toggle-heart icon icon__heart icon_style_light"
+    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -54,13 +54,13 @@
             </li>
         </ul>
         <ul class="offer-item__special-details">
-            <li class="offer-item__detail offer-item__animals mr-3">
+            <li class="offer-item__detail offer-item__pets mr-3">
                 <i class="icon icon__pets icon_style_light"></i>
             </li>
             <li class="offer-item__detail offer-item__tv mr-3">
                 <i class="icon icon__tv icon_style_light"></i>
             </li>
-            <li class="offer-item__detail offer-item__conditioner mr-3">
+            <li class="offer-item__detail offer-item__air-conditioner mr-3">
                 <i class="icon icon__air-conditioner icon_style_light"></i>
             </li>
             <li class="offer-item__detail offer-item__reliable-host">

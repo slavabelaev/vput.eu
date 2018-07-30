@@ -162,7 +162,7 @@ gulp.task('styles:buildPagesSCSS', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+        .pipe(autoprefixer())
         .pipe(csso())
         .pipe(sourcemaps.write('.'))
         .pipe(rename(function(path) {
@@ -177,7 +177,7 @@ gulp.task('styles:buildArticlesSCSS', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+        .pipe(autoprefixer())
         .pipe(csso())
         .pipe(sourcemaps.write('.'))
         .pipe(rename(function(path) {
@@ -196,7 +196,7 @@ gulp.task('styles:buildSCSS', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+        .pipe(autoprefixer())
         .pipe(concat(bundleSCSSFileName))
         .pipe(csso())
         .pipe(sourcemaps.write('.'))

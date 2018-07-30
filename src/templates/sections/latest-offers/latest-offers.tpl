@@ -4,7 +4,7 @@
 <section class="latest-offers">
     <header class="latest-offers__header mb-4 text-center">
         <h2 class="latest-offers__title mb-0"><%= lang.title %></h2>
-        <div class="latest-offers__description lead"><%= lang.description %></div>
+        <div class="latest-offers__description lead text-muted"><%= lang.description %></div>
     </header>
     <div class="latest-offers__list-of-offers">
         <!-- List of offers -->

@@ -2,7 +2,7 @@
 
 <!-- Section: offer-facilities -->
 <section class="offer-facilities">
-    <h2 class="offer-facilities__title mb-4"><%= lang.title %></h2>
+    <h2 class="offer-facilities__title mb-3"><%= lang.title %></h2>
     <ul class="offer-facilities__list">
         <li class="offer-facilities__list-item offer-facilities__list-item_is_checked"><%= lang.cooker %></li>
         <li class="offer-facilities__list-item offer-facilities__list-item_is_checked"><%= lang.refrigerator %></li>

@@ -3,7 +3,7 @@
 
 <!-- Section: offer-rules-of-residence -->
 <section class="offer-rules-of-residence">
-    <h2 class="offer-rules-of-residence__title mb-4"><%= lang.title %></h2>
+    <h2 class="offer-rules-of-residence__title mb-3"><%= lang.title %></h2>
     <ul class="list-of-offer-characteristics row">
         <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">

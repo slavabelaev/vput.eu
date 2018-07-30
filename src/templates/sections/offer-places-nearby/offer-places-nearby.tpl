@@ -2,7 +2,7 @@
 
 <!-- Section: offer-places-nearby -->
 <section class="offer-places-nearby">
-    <h2 class="offer-places-nearby__title mb-4"><%= lang.title %></h2>
+    <h2 class="offer-places-nearby__title mb-3"><%= lang.title %></h2>
     <ul class="list-of-offer-characteristics row">
         <li class="list-of-offer-characteristics__item col-md-6">
             <figure class="offer-characteristic">

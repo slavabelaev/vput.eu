@@ -37,7 +37,10 @@
   filter: brightness(0) invert(.5);
 }
 .icon_style_light {
-  filter: brightness(0) invert(1);
+  &.icon__pets { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pets_style_light.svg); }
+  &.icon__air-conditioner { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__air-conditioner_style_light.svg); }
+  &.icon__tv { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__tv_style_light.svg); }
+  &.icon__heart { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__heart_style_light.svg); }
 }
 
 .icon__security { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__security.svg); }

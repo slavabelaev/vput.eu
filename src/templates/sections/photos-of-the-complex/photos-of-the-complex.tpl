@@ -3,7 +3,7 @@
 
 <!-- Section: photos-of-the-complex -->
 <section class="photos-of-the-complex">
-    <h2 class="photos-of-the-complex__title mb-4">
+    <h2 class="photos-of-the-complex__title mb-3">
         <%= lang.title %>
         <small class="text-muted">(10 <%= Utils.declension(10, lang._photo); %>)</small>
     </h2>

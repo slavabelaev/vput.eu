@@ -3,7 +3,7 @@
 
 <!-- Section: characteristics-of-the-complex -->
 <section class="characteristics-of-the-complex">
-    <h2 class="characteristics-of-the-complex__title mb-4"><%= lang.title %></h2>
+    <h2 class="characteristics-of-the-complex__title mb-3"><%= lang.title %></h2>
     <ul class="characteristics-of-the-complex__list row">
         <li class="characteristics-of-the-complex__list-item col-sm-6">
             <figure class="figure d-flex">

@@ -14,8 +14,8 @@
                 <input class="form-search-offers__cities-tabs-toggle custom-select custom-select-lg collapsed"
                        readonly
                        placeholder="<%= lang.city %>"
-                       data-toggle="collapse"
-                       data-target=".form-search-offers__cities-dropdown">
+                       data-toggle="modal"
+                       data-target=".form-search-offers__cities-tabs">
             </li>
             <li class="form-search-offers__startDate-col form-group col">
                 <input name="filters[startDate]"
@@ -68,15 +68,16 @@
                for="form-search-offers__show-booked-control"><%= lang.do_not_show_booked %></label>
     </div>
 
-    <div class="form-search-offers__cities-dropdown collapse"
-         data-parent=".form-search-offers">
-        <a href="#"
-           data-toggle="collapse"
-           data-target=".form-search-offers__cities-dropdown"
-           class="form-search-offers__cities-dropdown-close close">
-            <i class="icon icon__close icon_style_light"></i>
-        </a>
-        <%- include('../../common.blocks/cities-tabs/cities-tabs.tpl'); %>
+    <div class="form-search-offers__cities-tabs modal fade"
+         tabindex="-1"
+         role="dialog"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"
+             role="document">
+            <div class="modal-content">
+                <%- include('../../common.blocks/cities-tabs/cities-tabs.tpl'); %>
+            </div>
+        </div>
     </div>
 
     <!-- Other filters -->

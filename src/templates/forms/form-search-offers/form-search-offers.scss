@@ -81,18 +81,8 @@
   }
 }
 
-.form-search-offers__cities-dropdown {
+.form-search-offers__cities-tabs {
   margin-bottom: .5rem;
-}
-.form-search-offers__cities-dropdown-close {
-  position: fixed;
-  background-color: $red;
-  right: 0;
-  top: 0;
-  padding: .5rem;
-  border-bottom-left-radius: $border-radius;
-  z-index: 99;
-  display: none;
 }
 
 @include media-breakpoint-up(xl) {
@@ -101,33 +91,10 @@
   }
 }
 @include media-breakpoint-down(md) {
-  .form-search-offers__cities-dropdown-close {
-    display: inline-block;
-  }
   .cities-tabs__content {
     padding: 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 70px;
-    overflow: scroll;
-    background-color: #fff;
   }
-  .form-search-offers__cities-dropdown {
-    &,
-    &.collapsing {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 98;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-      margin: 0!important;
-    }
-
+  .form-search-offers__cities-tabs {
     .cities-tabs__link {
       padding: $btn-padding-y-lg $btn-padding-x-lg;
       border-bottom: 1px solid $border-color;

@@ -11,7 +11,7 @@
             <li class="form-search-offers__cityId-col form-group col">
                 <input type="hidden"
                        name="filters[cityId]">
-                <input class="form-search-offers__cities-tabs-toggle custom-select custom-select-lg collapsed"
+                <input class="form-search-offers__cities-tabs-toggle custom-select disabled custom-select-lg collapsed"
                        readonly
                        placeholder="<%= lang.city %>"
                        data-toggle="collapse"

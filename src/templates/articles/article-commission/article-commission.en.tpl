@@ -195,9 +195,6 @@
                 <li class="col-lg-6">
                     <section>
                         <header class="text-center mb-4">
-                            <img src="templates/articles/article-commission/article-commission__ADS.svg"
-                                 alt=""
-                                 class="">
                             <h3>Regional Advertising</h3>
                         </header>
                         <p>We invest heavily in advertising of our project in different countries analyzing the needs and situations in every region. Thanks to this flexible, individual approach, we encourage a larger number of bookings and focus attention of our potential customers on those offers that are of interest to this specific audience.</p>
@@ -206,9 +203,6 @@
                 <li class="col-lg-6">
                     <section>
                         <header class="text-center mb-4">
-                            <img src="templates/articles/article-commission/article-commission__Bulgaria.svg"
-                                 alt=""
-                                 class="">
                             <h3>Campaigns for Bulgarian Destinations</h3>
                         </header>
                         <p>Our research has shown that a large number of people have a misconception about Bulgarian resorts. Many of them remember the resorts of the distant Soviet past. Today, Bulgaria has modern European resorts at the most affordable prices in Europe. We run campaigns to attract people to this area. We believe that this effort will increase the number of tourists for this destination and, consequently, the number of your bookings.</p>

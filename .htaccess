@@ -1,0 +1,35 @@
+AddType text/x-component .htc
+AddType application/x-httpd-php .php .htm .html .phtml .tpl
+RewriteEngine On
+RewriteBase /
+
+php_flag magic_quotes_gpc off
+
+RewriteCond %{REQUEST_FILENAME} /admin/(.*)
+RewriteCond %{REQUEST_FILENAME} !/admin/captcha.php
+
+RewriteRule !\.(js|ico|css|png)$ %{DOCUMENT_ROOT}/admin/index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !/admin/(.*)
+RewriteCond %{REQUEST_FILENAME} !/vendor/gearman-monitor/(.*)
+RewriteCond %{REQUEST_FILENAME} !/chat/(.*)
+RewriteCond %{REQUEST_FILENAME} !/files/(.*)
+RewriteCond %{REQUEST_FILENAME} !/cache/(.*)
+RewriteCond %{REQUEST_FILENAME} !/microtest.php
+RewriteCond %{REQUEST_FILENAME} !/gearmanIpResolver.php
+RewriteCond %{REQUEST_FILENAME} !/microtest.html
+RewriteCond %{REQUEST_FILENAME} !/adminer.php
+RewriteCond %{REQUEST_FILENAME} !/*.tpl
+RewriteCond %{REQUEST_FILENAME} !/manifest.json
+RewriteCond %{REQUEST_FILENAME} !/OneSignalSDKWorker.js
+RewriteCond %{REQUEST_FILENAME} !/OneSignalSDKUpdaterWorker.js
+RewriteCond %{REQUEST_FILENAME} !/sxd/(.*)
+RewriteCond %{REQUEST_FILENAME} !/images/fonts/(.*)
+RewriteCond %{REQUEST_FILENAME} !/images/authorization/video.mp4
+RewriteCond %{REQUEST_FILENAME} !/images/authorization/video.webm
+RewriteCond %{REQUEST_FILENAME} !/images/video/(.*)
+RewriteCond %{REQUEST_FILENAME} !/PIE.htc
+RewriteCond %{REQUEST_FILENAME} !/mailru-domaingRXiQk6fpXGTqZ4P.html
+RewriteCond %{REQUEST_FILENAME} !/yandex_6ea9189aa3b415e0.txt
+
+RewriteRule !\.(js|ico|css|ttf|woff|woff2|less|html)$ index.php [L]

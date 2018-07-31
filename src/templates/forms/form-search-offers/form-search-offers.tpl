@@ -14,7 +14,7 @@
                 <input class="form-search-offers__cities-tabs-toggle custom-select custom-select-lg collapsed"
                        readonly
                        placeholder="<%= lang.city %>"
-                       data-toggle="modal"
+                       data-toggle="collapse"
                        data-target=".form-search-offers__cities-tabs">
             </li>
             <li class="form-search-offers__startDate-col form-group col">
@@ -68,16 +68,9 @@
                for="form-search-offers__show-booked-control"><%= lang.do_not_show_booked %></label>
     </div>
 
-    <div class="form-search-offers__cities-tabs modal fade"
-         tabindex="-1"
-         role="dialog"
-         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg"
-             role="document">
-            <div class="modal-content">
-                <%- include('../../common.blocks/cities-tabs/cities-tabs.tpl'); %>
-            </div>
-        </div>
+    <div class="form-search-offers__cities-tabs collapse"
+         data-parent=".form-search-offers">
+        <%- include('../../common.blocks/cities-tabs/cities-tabs.tpl'); %>
     </div>
 
     <!-- Other filters -->

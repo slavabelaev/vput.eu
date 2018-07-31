@@ -402,7 +402,7 @@
                 <input class="form-search-offers__cities-tabs-toggle custom-select custom-select-lg collapsed"
                        readonly
                        placeholder="Куда вы собираетесь поехать?"
-                       data-toggle="modal"
+                       data-toggle="collapse"
                        data-target=".form-search-offers__cities-tabs">
             </li>
             <li class="form-search-offers__startDate-col form-group col">
@@ -474,14 +474,9 @@
                for="form-search-offers__show-booked-control">Не показывать забронированные</label>
     </div>
 
-    <div class="form-search-offers__cities-tabs modal fade"
-         tabindex="-1"
-         role="dialog"
-         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg"
-             role="document">
-            <div class="modal-content">
-                
+    <div class="form-search-offers__cities-tabs collapse"
+         data-parent=".form-search-offers">
+        
 
 
 <!-- Common: cities-tabs -->
@@ -1175,8 +1170,6 @@
     </div>
 </div>
 <!-- /Common: cities-tabs -->
-            </div>
-        </div>
     </div>
 
     <!-- Other filters -->

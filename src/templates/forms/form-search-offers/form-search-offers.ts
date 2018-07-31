@@ -1,3 +1,26 @@
+(function() {
+    let changeCitiesTabsComponent = function() {
+        let blockElement = $('.form-search-offers'),
+            toggleElement = blockElement.find('.form-search-offers__cities-tabs-toggle'),
+            citiesTabsElement = blockElement.find('.form-search-offers__cities-tabs');
+
+        if (window.outerWidth > 992) {
+            toggleElement.attr('data-toggle', 'collapse');
+            citiesTabsElement
+                .addClass('collapse')
+                .removeClass('modal');
+        } else {
+            toggleElement.attr('data-toggle', 'modal');
+            citiesTabsElement
+                .addClass('modal')
+                .removeClass('collapse');
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', changeCitiesTabsComponent);
+    window.addEventListener('resize', changeCitiesTabsComponent);
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     let blockElement = $('.form-search-offers');
 

@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="assets/pages/page-article.css">
 <script src="assets/pages/page-article.js" defer></script>
 <main class="page-article">
-    <%- include('../../../articles/article-about/article-about.en.tpl'); %>
+    <%- include('../../../articles/article-about/article-about_lang_en.tpl'); %>
     <section class="page-article__section pb-5">
         <div class="container">
             <%- include('../../../sections/feedback/feedback.tpl'); %>

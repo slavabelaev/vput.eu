@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="assets/pages/page-article.css">
 <script src="assets/pages/page-article.js" defer></script>
 <main class="page-article">
-    <%- include('../../../articles/article-withdraw/article-withdraw.ua.tpl'); %>
+    <%- include('../../../articles/article-withdraw/article-withdraw_lang_ua.tpl'); %>
 </main>
 <!-- /Page: page-article -->
 

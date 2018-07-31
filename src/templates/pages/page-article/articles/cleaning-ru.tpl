@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="assets/pages/page-article.css">
 <script src="assets/pages/page-article.js" defer></script>
 <main class="page-article">
-    <%- include('../../../articles/article-cleaning/article-cleaning.ru.tpl'); %>
+    <%- include('../../../articles/article-cleaning/article-cleaning_lang_ru.tpl'); %>
     <div class="container py-5">
         <%- include('../../../sections/our-services/our-services.tpl'); %>
     </div>

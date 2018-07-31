@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="assets/pages/page-article.css">
 <script src="assets/pages/page-article.js" defer></script>
 <main class="page-article">
-    <%- include('../../../articles/article-contacts/article-contacts.en.tpl'); %>
+    <%- include('../../../articles/article-contacts/article-contacts_lang_en.tpl'); %>
 </main>
 <!-- /Page: page-article -->
 

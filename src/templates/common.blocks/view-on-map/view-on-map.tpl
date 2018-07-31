@@ -7,11 +7,13 @@
 %>
 
 <!-- Block: view-on-map -->
-<iframe class="view-on-map"
-        width="100%"
-        height="450"
-        frameborder="0"
-        allowfullscreen
-        src="https://maps.google.com/maps?q=<%= data.latitude %>,<%= data.longitude %>&output=embed">
-</iframe>
+<div class="view-on-map">
+    <iframe class="view-on-map__iframe"
+            width="100%"
+            height="450"
+            frameborder="0"
+            allowfullscreen
+            src="https://maps.google.com/maps?q=<%= data.latitude %>,<%= data.longitude %>&output=embed">
+    </iframe>
+</div>
 <!-- /Block: view-on-map -->

@@ -32,9 +32,10 @@
         <div class="form-group col-12">
             <select name="guests"
                     required
-                    class="custom-select mr-sm-2"
+                    class="custom-select"
                     id="form-booking__control_name_guests">
-                <option selected disabled><%= lang.guests %></option>
+                <option selected
+                        disabled><%= lang.guests %></option>
                 <% for(var i = 1;i <= 10;i++) { %>
                 <option value="<%= i %>"><%= i %></option>
                 <% } %>

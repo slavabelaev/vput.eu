@@ -27,7 +27,7 @@
                    data-name="<%= data.tabs[i].cities[j].name %>"
                    class="cities-tabs__link">
                     <%= data.tabs[i].cities[j].name %>
-                    <span class="cities-tabs__count-offers">(<%= data.tabs[i].cities[j].count_offers %>)</span>
+                    <span class="cities-tabs__count-offers badge badge-info"><%= data.tabs[i].cities[j].count_offers %></span>
                 </a>
                 <% } %>
             </nav>

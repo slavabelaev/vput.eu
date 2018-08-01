@@ -1,19 +1,23 @@
 (function() {
     let changeCitiesTabsComponent = function() {
         let blockElement = $('.form-search-offers'),
-            toggleElement = blockElement.find('.form-search-offers__cities-tabs-toggle'),
+            toggleElement = blockElement.find('[data-target=".form-search-offers__cities-tabs"]'),
             citiesTabsElement = blockElement.find('.form-search-offers__cities-tabs');
 
         if (window.outerWidth > 992) {
-            toggleElement.attr('data-toggle', 'collapse');
+            toggleElement
+                .attr('data-toggle', 'collapse');
             citiesTabsElement
-                .addClass('collapse')
+                .removeAttr('style')
                 .removeClass('modal');
+            $('.modal-backdrop').remove();
+            $('.modal-open').removeClass('modal-open');
         } else {
-            toggleElement.attr('data-toggle', 'modal');
+            toggleElement
+                .attr('data-toggle', 'modal');
             citiesTabsElement
-                .addClass('modal')
-                .removeClass('collapse');
+                .removeAttr('style')
+                .addClass('modal');
         }
     };
 
@@ -28,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
 
         let data = $(this).data(),
-            toggleCollapseElement = blockElement.find('.form-search-offers__cities-tabs-toggle');
+            toggleCollapseElement = blockElement.find('[data-target=".form-search-offers__cities-tabs"]');
         toggleCollapseElement.val(data.name);
         blockElement.find('[name="filters[cityId]"]').val(data.id);
         toggleCollapseElement.trigger('click');

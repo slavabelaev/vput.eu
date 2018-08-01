@@ -73,7 +73,8 @@
             <div class="col-xl-auto">
                 <a href="#"
                    class="btn btn-primary page-offer__aside-toggle"
-                   data-toggle="button">
+                   data-target="page-offer__aside"
+                   data-toggle="modal">
                     <span class="page-offer__aside-toggle-caption-show">Забронировать</span>
                     <span class="page-offer__aside-toggle-caption-hide"><i class="icon icon__close icon_size_16 icon_style_light"></i></span>
                 </a>

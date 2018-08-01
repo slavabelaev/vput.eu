@@ -72,32 +72,37 @@
             </div>
             <div class="col-xl-auto">
                 <a href="#"
-                   class="btn btn-primary page-offer__aside-toggle"
-                   data-target="page-offer__aside"
+                   class="page-offer__modal-toggle btn btn-primary"
+                   data-target=".page-offer__modal"
                    data-toggle="modal">
-                    <span class="page-offer__aside-toggle-caption-show">Забронировать</span>
-                    <span class="page-offer__aside-toggle-caption-hide"><i class="icon icon__close icon_size_16 icon_style_light"></i></span>
+                    <i class="icon icon__book icon_style_light"></i>
                 </a>
-                <aside class="page-offer__aside py-4">
-                    <div class="page-offer__offer-employed-by mb-3">
-                        <%- include('../../common.blocks/offer-employed-by/offer-employed-by.tpl'); %>
+                <div class="page-offer__modal modal modal-right fade"
+                     tabindex="-1"
+                     is-sticked>
+                    <div class="page-offer__modal-dialog modal-dialog">
+                        <aside class="page-offer__aside modal-content">
+                            <div class="page-offer__offer-employed-by mb-3">
+                                <%- include('../../common.blocks/offer-employed-by/offer-employed-by.tpl'); %>
+                            </div>
+                            <div class="page-offer__form-booking mb-3">
+                                <%- include('../../forms/form-booking/form-booking.tpl'); %>
+                            </div>
+                            <div class="page-offer__offer-insterested-in mb-3">
+                                <%- include('../../common.blocks/offer-interested-in/offer-interested-in.tpl'); %>
+                            </div>
+                            <div class="page-offer__offer-owner mb-3">
+                                <%- include('../../common.blocks/offer-owner/offer-owner.tpl'); %>
+                            </div>
+                            <div class="page-offer__offer-share mb-3">
+                                <%- include('../../common.blocks/offer-share/offer-share.tpl'); %>
+                            </div>
+                            <div class="page-offer__how-it-works">
+                                <%- include('../../sections/how-it-works/how-it-works.tpl'); %>
+                            </div>
+                        </aside>
                     </div>
-                    <div class="page-offer__form-booking mb-3">
-                        <%- include('../../forms/form-booking/form-booking.tpl'); %>
-                    </div>
-                    <div class="page-offer__offer-insterested-in mb-3">
-                        <%- include('../../common.blocks/offer-interested-in/offer-interested-in.tpl'); %>
-                    </div>
-                    <div class="page-offer__offer-owner mb-3">
-                        <%- include('../../common.blocks/offer-owner/offer-owner.tpl'); %>
-                    </div>
-                    <div class="page-offer__offer-share mb-3">
-                        <%- include('../../common.blocks/offer-share/offer-share.tpl'); %>
-                    </div>
-                    <div class="page-offer__how-it-works">
-                        <%- include('../../sections/how-it-works/how-it-works.tpl'); %>
-                    </div>
-                </aside>
+                </div>
             </div>
         </div>
     </div>

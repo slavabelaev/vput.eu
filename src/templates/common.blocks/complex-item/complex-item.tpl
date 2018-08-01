@@ -7,8 +7,8 @@
         <h3 class="complex-item__title"><a href="#" class="complex-item__link">Marina Fort Noks</a></h3>
         <ul class="complex-item__details">
             <li class="complex-item__detail">
-                <span class="complex-item__number-of-apartaments-label"><%= lang.apartments %></span>
-                <span class="complex-item__number-of-apartaments">27</span>
+                <span class="complex-item__number-of-apartments-label"><%= lang.apartments %></span>
+                <span class="complex-item__number-of-apartments">27</span>
             </li>
             <li class="complex-item__detail">
                 <span class="complex-item__price-label"><%= lang.prices %></span>

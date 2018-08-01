@@ -1,5 +1,8 @@
 jQuery(document).ready(function ($) {
-    $(".page-offer__aside").stick_in_parent();
+    var blockElement = $('.page-offer'), stickedElement = blockElement.find('[is-sticked]');
+    stickedElement.stick_in_parent({
+        parent: '.page-offer__article'
+    });
 });
 
 //# sourceMappingURL=page-offer.js.map

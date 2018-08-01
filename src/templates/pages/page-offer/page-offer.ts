@@ -1,4 +1,8 @@
 jQuery(document).ready(function($) {
-    $(".page-offer__aside").stick_in_parent();
-    
+    let blockElement = $('.page-offer'),
+        stickedElement = blockElement.find('[is-sticked]');
+
+    stickedElement.stick_in_parent({
+        parent: '.page-offer__article'
+    });
 });

@@ -1101,15 +1101,18 @@
             </div>
             <div class="col-xl-auto">
                 <a href="#"
-                   class="btn btn-primary page-offer__aside-toggle"
-                   data-target="page-offer__aside"
+                   class="page-offer__modal-toggle btn btn-primary"
+                   data-target=".page-offer__modal"
                    data-toggle="modal">
-                    <span class="page-offer__aside-toggle-caption-show">Забронировать</span>
-                    <span class="page-offer__aside-toggle-caption-hide"><i class="icon icon__close icon_size_16 icon_style_light"></i></span>
+                    <i class="icon icon__book icon_style_light"></i>
                 </a>
-                <aside class="page-offer__aside py-4">
-                    <div class="page-offer__offer-employed-by mb-3">
-                        
+                <div class="page-offer__modal modal modal-right fade"
+                     tabindex="-1"
+                     is-sticked>
+                    <div class="page-offer__modal-dialog modal-dialog">
+                        <aside class="page-offer__aside modal-content">
+                            <div class="page-offer__offer-employed-by mb-3">
+                                
 
 <!-- Common: offer-employed-by -->
 <div class="offer-employed-by progress">
@@ -1122,9 +1125,9 @@
     <div class="offer-employed-by__message">Занято на&nbsp;<span class="offer-employed-by__percent">30</span>%</div>
 </div>
 <!-- /Common: offer-employed-by -->
-                    </div>
-                    <div class="page-offer__form-booking mb-3">
-                        
+                            </div>
+                            <div class="page-offer__form-booking mb-3">
+                                
 
 <!-- Form: form-booking -->
 <form action="/realties/getFactureToPeriod/"
@@ -1221,9 +1224,9 @@
     </figure>
 </form>
 <!-- /Form: form-booking -->
-                    </div>
-                    <div class="page-offer__offer-insterested-in mb-3">
-                        
+                            </div>
+                            <div class="page-offer__offer-insterested-in mb-3">
+                                
 
 <!-- Common: offer-interested-in -->
 <div class="offer-interested-in">
@@ -1237,9 +1240,9 @@
     </figure>
 </div>
 <!-- /Common: offer-interested-in -->
-                    </div>
-                    <div class="page-offer__offer-owner mb-3">
-                        
+                            </div>
+                            <div class="page-offer__offer-owner mb-3">
+                                
 
 <!-- Common: offer-owner -->
 <div class="offer-owner">
@@ -1273,9 +1276,9 @@
     </div>
 </div>
 <!-- /Common: offer-owner -->
-                    </div>
-                    <div class="page-offer__offer-share mb-3">
-                        
+                            </div>
+                            <div class="page-offer__offer-share mb-3">
+                                
 
 <!-- Common: offer-share -->
 <div class="offer-share">
@@ -1321,9 +1324,9 @@
     </section>
 </div>
 <!-- /Common: offer-share -->
-                    </div>
-                    <div class="page-offer__how-it-works">
-                        
+                            </div>
+                            <div class="page-offer__how-it-works">
+                                
 
 <!-- Section: how-it-works -->
 <section class="how-it-works">
@@ -1355,8 +1358,10 @@
     </div>
 </section>
 <!-- /Section: how-it-works -->
+                            </div>
+                        </aside>
                     </div>
-                </aside>
+                </div>
             </div>
         </div>
     </div>

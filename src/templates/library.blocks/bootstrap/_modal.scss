@@ -151,6 +151,26 @@
   overflow: scroll;
 }
 
+.modal-right {
+  padding-right: 0!important;
+  &.fade {
+    .modal-dialog {
+      transform: translateX(375px);
+      opacity: 1;
+    }
+  }
+  &.show {
+    .modal-dialog {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .modal-dialog {
+    margin: 0 0 0 auto;
+  }
+}
+
 // Scale up the modal
 @include media-breakpoint-up(sm) {
   // Automatically set modal's width for larger viewports

@@ -421,11 +421,14 @@
                                                 <label for="form-renting__type-of-accommodation__house"
                                                        class="form-control">Дом</label>
                                                 <div class="input-group-append">
-                                                    <div class="input-group-text">
+                                                    <div class="custom-control custom-radio input-group-text">
                                                         <input type="radio"
                                                                value="2"
                                                                name="data[basic_information][type_of_accommodation]"
+                                                               class="custom-control-input"
                                                                id="form-renting__type-of-accommodation__house">
+                                                        <label class="custom-control-label"
+                                                               for="form-renting__type-of-accommodation__house"></label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -440,15 +443,17 @@
                                                         <span class="icon icon__building"></span>
                                                     </div>
                                                 </div>
-                                                <label for="form-renting__type-of-accommodation__apartament"
+                                                <label for="form-renting__type-of-accommodation__apartment"
                                                        class="form-control">Квартира</label>
                                                 <div class="input-group-append">
-                                                    <div class="input-group-text">
+                                                    <div class="custom-control custom-radio input-group-text">
                                                         <input type="radio"
-                                                               checked
-                                                               value="1"
+                                                               value="2"
                                                                name="data[basic_information][type_of_accommodation]"
-                                                               id="form-renting__type-of-accommodation__apartament">
+                                                               class="custom-control-input"
+                                                               id="form-renting__type-of-accommodation__apartment">
+                                                        <label class="custom-control-label"
+                                                               for="form-renting__type-of-accommodation__apartment"></label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -618,7 +623,7 @@
                         <form action="#" class="form-renting__accordion-item-content">
                             <figure class="alert alert-warning" role="alert">
                                 Цена включает <strong>9-12%</strong> за услуги V.P.U.T.
-                                <a href="/commission/" target="_blank">Почему мы берем комиссию?</a>
+                                <a href="commission-ru.html" target="_blank">Почему мы берем комиссию?</a>
                             </figure>
 
                             <fieldset class="form-renting__fieldset">
@@ -1232,11 +1237,14 @@
                                                 <label for="form-renting__supplement-for-extra-guest__you-can-not"
                                                        class="form-control">Нельзя</label>
                                                 <div class="input-group-append">
-                                                    <div class="input-group-text">
+                                                    <div class="custom-control custom-radio input-group-text">
                                                         <input type="radio"
                                                                value="false"
                                                                name="data[information_about_accommodation][rules_for_settling_and_eviction][supplement_for_extra_guest]"
+                                                               class="custom-control-input"
                                                                id="form-renting__supplement-for-extra-guest__you-can-not">
+                                                        <label class="custom-control-label"
+                                                               for="form-renting__supplement-for-extra-guest__you-can-not"></label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1249,11 +1257,14 @@
                                                 <label for="form-renting__supplement-for-extra-guest__is-free"
                                                        class="form-control">Бесплатно</label>
                                                 <div class="input-group-append">
-                                                    <div class="input-group-text">
+                                                    <div class="custom-control custom-radio input-group-text">
                                                         <input type="radio"
                                                                value="0"
                                                                name="data[information_about_accommodation][rules_for_settling_and_eviction][supplement_for_extra_guest]"
+                                                               class="custom-control-input"
                                                                id="form-renting__supplement-for-extra-guest__is-free">
+                                                        <label class="custom-control-label"
+                                                               for="form-renting__supplement-for-extra-guest__is-free"></label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1450,7 +1461,7 @@
                                 <legend class="form-renting__legend">Дополнительная информация</legend>
 
                                 <div class="row">
-                                    <div class="col-5">
+                                    <div class="col-xl-5 col-sm-6">
                                         <ul class="form-renting__form-group-list row">
                                             <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
@@ -1739,8 +1750,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-2"></div>
-                                    <div class="col-5">
+                                    <div class="col-xl-5 col-sm-6 offset-xl-2">
                                         <ul class="form-renting__form-group-list row">
                                             <li class="form-renting__form-group-list-item col">
                                                 <div class="form-group">
@@ -2665,7 +2675,7 @@
                                                 <div class="input-group">
                                                     <div class="input-group-prepend">
                                                         <div class="input-group-text">
-                                                            <i class="icon icon__calendar"></i>
+                                                            <i class="icon icon__phone"></i>
                                                         </div>
                                                     </div>
                                                     <input type="tel"

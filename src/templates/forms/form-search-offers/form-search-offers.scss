@@ -61,8 +61,13 @@
   }
 }
 .form-search-offers__cities-tabs-toggle {
+  transition: $transition-base;
   &:not(.collapsed) {
-    border-color: $primary;
+    @if $enable-shadows {
+      box-shadow: $input-box-shadow, $input-focus-box-shadow;
+    } @else {
+      box-shadow: $input-focus-box-shadow;
+    }
   }
 }
 

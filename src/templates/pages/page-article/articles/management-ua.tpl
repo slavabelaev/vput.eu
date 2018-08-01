@@ -9,7 +9,7 @@
 <main class="page-article">
     <%- include('../../../articles/article-management/article-management_lang_ua.tpl'); %>
     <div class="container py-5">
-        <%- include('../../../sections/our-services/our-services_lang_ua.tpl'); %>
+        <%- include('../../../sections/our-services/our-services.tpl'); %>
     </div>
 </main>
 <!-- /Page: page-article -->

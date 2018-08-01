@@ -16,7 +16,6 @@
             toggleElement
                 .attr('data-toggle', 'modal');
             citiesTabsElement
-                .removeAttr('style')
                 .addClass('modal');
         }
     };

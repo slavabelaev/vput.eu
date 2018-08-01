@@ -96,6 +96,9 @@
     padding: 0;
   }
   .form-search-offers__cities-tabs {
+    .cities-tabs {
+      border-radius: 0;
+    }
     .cities-tabs__link {
       padding: $btn-padding-y-lg $btn-padding-x-lg;
       border-bottom: 1px solid $border-color;

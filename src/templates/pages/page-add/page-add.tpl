@@ -6,7 +6,8 @@
 </div>
 
 <!-- Page: page-add -->
-<link rel="stylesheet" href="assets/pages/page-add.css">
+<link rel="stylesheet"
+      href="assets/pages/page-add.css">
 <script src="assets/pages/page-add.js" defer></script>
 
 <main class="page-add">
@@ -17,7 +18,17 @@
         </div>
     </header>
     <div class="container py-5">
-        <%- include('../../forms/form-renting/form-renting.tpl'); %>
+        <div class="page-add__form-renting">
+            <%- include('../../forms/form-renting/form-renting.tpl'); %>
+        </div>
+
+        <div class="row pt-5 mt-5">
+            <div class="col-md-10 offset-md-1">
+                <div class="page-add__ask-for-help">
+                    <%- include('../../common.blocks/ask-for-help/ask-for-help.tpl'); %>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 <!-- /Page: page-add -->

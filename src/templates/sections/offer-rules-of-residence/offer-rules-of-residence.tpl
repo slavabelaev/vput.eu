@@ -1,4 +1,4 @@
-<% eval(include('../../_utils/common.js')) %>
+<% eval(include('../../../../develop/common.js')) %>
 <% var lang = JSON.parse(include('offer-rules-of-residence_lang_ru.json')); %>
 
 <!-- Section: offer-rules-of-residence -->

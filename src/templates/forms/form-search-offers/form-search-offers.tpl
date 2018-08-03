@@ -1,4 +1,4 @@
-<% eval(include('../../_utils/common.js')) %>
+<% eval(include('../../../../develop/common.js')) %>
 <% var lang = JSON.parse(include('form-search-offers_lang_ru.json')); %>
 
 <!-- Form: form-search-offers -->

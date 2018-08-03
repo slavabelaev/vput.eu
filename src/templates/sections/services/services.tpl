@@ -22,7 +22,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <a href="transfer-ru.html"
+                    <a href="transfer.html"
                        class="services__link"><%= lang.other_destinations %></a>
                 </figcaption>
             </figure>
@@ -44,7 +44,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <a href="car-rental-ru.html"
+                    <a href="car-rental.html"
                        class="services__link"><%= lang.all_cars %></a>
                 </figcaption>
                 <figure class="services__img service__img_is_car figure-img col"
@@ -61,7 +61,7 @@
                          alt=""
                          class="figure-img mb-3">
                     <figcaption class="figure-caption">
-                        <a href="escort-ru.html" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.guests_escort %></h3></a>
+                        <a href="escort.html" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.guests_escort %></h3></a>
                         <div class="services__figure-description"><%= lang.guests_escort_description %></div>
                     </figcaption>
                 </figure>
@@ -72,7 +72,7 @@
                          alt=""
                          class="figure-img mb-3">
                     <figcaption class="figure-caption">
-                        <a href="cleaning-ru.html" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.cleaning %></h3></a>
+                        <a href="cleaning.html" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.cleaning %></h3></a>
                         <div class="services__figure-description"><%= lang.cleaning_description %></div>
                     </figcaption>
                 </figure>
@@ -83,7 +83,7 @@
                          alt=""
                          class="figure-img mb-3">
                     <figcaption class="figure-caption">
-                        <a href="management-ru.html" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.property_management %></h3></a>
+                        <a href="management.html" class="services__title-link mb-2"><h3 class="services__figure-title"><%= lang.property_management %></h3></a>
                         <div class="services__figure-description"><%= lang.property_management_description %></div>
                     </figcaption>
                 </figure>

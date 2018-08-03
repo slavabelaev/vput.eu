@@ -1,4 +1,4 @@
-<% eval(include('../../_utils/common.js')) %>
+<% eval(include('../../../../develop/common.js')) %>
 <% var lang = JSON.parse(include('characteristics-of-the-complex_lang_ru.json')); %>
 
 <!-- Section: characteristics-of-the-complex -->

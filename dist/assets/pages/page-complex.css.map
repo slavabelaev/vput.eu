@@ -1,1 +1,0 @@
-{"version":3,"sources":["templates/pages/page-complex/page-complex.scss"],"names":[],"mappings":"AAEA,mB,CACE,c,CACA,a","file":"page-complex.css","sourcesContent":["@import \"../../library.blocks/bootstrap/bootstrap-reboot\";\r\n\r\n.page-complex__city {\r\n  font-size: 20px;\r\n  color: $text-muted;\r\n}"]}

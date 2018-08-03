@@ -17,15 +17,28 @@ const sourcemaps    = require('gulp-sourcemaps');
 
 const watch         = require('gulp-watch');
 const browserSync   = require('browser-sync').create();
-const gulpSequence  = require('gulp-sequence');
 const del           = require('del');
 
 const paths = {
     src: './src',
     dest: './dist',
-    bundles: './dist/assets/bundles',
-    articles: './dist/assets/articles',
-    pages: './dist/assets/pages',
+    scripts: {
+        bundle: './dist/assets/bundles',
+        site: './dist/assets/pages/site',
+        cabinet: './dist/assets/pages/cabinet',
+        articles: './dist/assets/articles'
+    },
+    templates: {
+        site: './dist',
+        cabinet: './dist/cabinet',
+        articles: './dist',
+    },
+    styles: {
+        bundle: './dist/assets/bundles',
+        site: './dist/assets/pages/site',
+        cabinet: './dist/assets/pages/cabinet',
+        articles: './dist/assets/articles'
+    },
     languages: './dist/assets/lang'
 };
 
@@ -34,65 +47,72 @@ const config = {
         watchFiles: paths.src + '/**/*.json'
     },
     templates: {
-        watchFiles: [
-            paths.src + '/**/*.json',
-            paths.src + '/**/*.tpl',
-        ],
-        buildFiles: [
-            paths.src + '/**/pages/**/*.tpl',
-        ]
+        watchFiles: {
+            site: [paths.src + '/**/*.tpl'],
+            cabinet: [paths.src + '/**/*.tpl'],
+            articles: [paths.src + '/**/*.tpl']
+        },
+        buildFiles: {
+            site: [paths.src + '/**/pages/site/**/*.tpl'],
+            cabinet: [paths.src + '/**/pages/cabinet/**/*.tpl'],
+            articles: [paths.src + '/**/pages/articles/**/*.tpl']
+        }
     },
     styles: {
         bundleFileName: 'bundle.min.css',
         watchFiles: {
-            scss: [
+            bundleSCSS: [
                 paths.src + '/**/library.blocks/**/*.scss',
                 paths.src + '/**/common.blocks/**/*.scss',
                 paths.src + '/**/sections/**/*.scss',
                 paths.src + '/**/forms/**/*.scss',
             ],
-            css: []
+            bundleCSS: [],
+            site: [paths.src + '/**/pages/site/**/*.scss'],
+            cabinet: [paths.src + '/**/pages/cabinet/**/*.scss'],
+            articles: [paths.src + '/**/articles/**/*.scss']
+
         },
         buildFiles: {
-            scss: [
+            bundleSCSS: [
                 paths.src + '/**/library.blocks/**/*.scss',
                 paths.src + '/**/common.blocks/**/*.scss',
                 paths.src + '/**/sections/**/*.scss',
                 paths.src + '/**/forms/**/*.scss',
             ],
-            css: [
+            bundleCSS: [
                 'node_modules/slick-carousel/slick/slick.css',
                 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
                 'node_modules/nouislider/distribute/nouislider.min.css',
                 'node_modules/filepond/dist/filepond.min.css',
-            ]
-        },
-        pages: [
-            paths.src + '/**/pages/**/*.scss'
-        ],
-        articles: [
-            paths.src + '/**/articles/**/*.scss'
-        ]
+            ],
+            site: [paths.src + '/**/pages/site/**/*.scss'],
+            cabinet: [paths.src + '/**/pages/cabinet/**/*.scss'],
+            articles: [paths.src + '/**/articles/**/*.scss']
+        }
     },
     scripts: {
         bundleFileName: 'bundle.min.js',
         watchFiles: {
-            ts: [
+            bundleTS: [
                 paths.src + '/**/library.blocks/**/*.ts',
                 paths.src + '/**/common.blocks/**/*.ts',
                 paths.src + '/**/sections/**/*.ts',
                 paths.src + '/**/forms/**/*.ts',
             ],
-            js: []
+            bundleJS: [],
+            site: [paths.src + '/**/pages/site/**/*.ts'],
+            cabinet: [paths.src + '/**/pages/cabinet/**/*.ts'],
+            articles: [paths.src + '/**/articles/**/*.ts']
         },
         buildFiles: {
-            ts: [
+            bundleTS: [
                 paths.src + '/**/library.blocks/**/*.ts',
                 paths.src + '/**/common.blocks/**/*.ts',
                 paths.src + '/**/sections/**/*.ts',
                 paths.src + '/**/forms/**/*.ts',
             ],
-            js: [
+            bundleJS: [
                 // JQuery
                 'node_modules/jquery/dist/jquery.min.js',
                 // Bootstrap 4
@@ -110,14 +130,11 @@ const config = {
                 'node_modules/filepond/dist/filepond.js',
                 // Sticky menu
                 'node_modules/sticky-kit/dist/sticky-kit.min.js',
-            ]
-        },
-        pages: [
-            paths.src + '/**/pages/**/*.ts'
-        ],
-        articles: [
-            paths.src + '/**/articles/**/*.ts'
-        ]
+            ],
+            site: [paths.src + '/**/pages/site/**/*.ts'],
+            cabinet: [paths.src + '/**/pages/cabinet/**/*.ts'],
+            articles: [paths.src + '/**/articles/**/*.ts']
+        }
     },
     images: {
         watchFiles: paths.src + '/**/*.{svg,jpg,jpeg,png,gif}',
@@ -139,13 +156,13 @@ gulp.task('languages:build', function () {
         .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('templates:build', function () {
-    return gulp.src(config.templates.buildFiles)
+gulp.task('templates:buildSiteTemplates', function () {
+    return gulp.src(config.templates.buildFiles.site)
         .pipe(plumber())
         .pipe(ejs({
             bundlePath: {
-                styles: paths.bundles.replace(paths.dest + '/', '') + '/' + config.styles.bundleFileName,
-                scripts: paths.bundles.replace(paths.dest + '/', '') + '/' + config.scripts.bundleFileName
+                styles: paths.styles.bundle.replace(paths.dest + '/', '') + '/' + config.styles.bundleFileName,
+                scripts: paths.scripts.bundle.replace(paths.dest + '/', '') + '/' + config.scripts.bundleFileName
             },
         }))
         .pipe(rename(function(path) {
@@ -153,12 +170,51 @@ gulp.task('templates:build', function () {
             path.extname = '.html';
             path.dirname = '';
         }))
-        .pipe(gulp.dest(paths.dest))
+        .pipe(gulp.dest(paths.templates.site))
         .pipe(browserSync.reload({ stream: true }));
 });
+gulp.task('templates:buildCabinetTemplates', function () {
+    return gulp.src(config.templates.buildFiles.cabinet)
+        .pipe(plumber())
+        .pipe(ejs({
+            bundlePath: {
+                styles: paths.styles.bundle.replace(paths.dest + '/', '') + '/' + config.styles.bundleFileName,
+                scripts: paths.scripts.bundle.replace(paths.dest + '/', '') + '/' + config.scripts.bundleFileName
+            },
+        }))
+        .pipe(rename(function(path) {
+            path.basename  = path.basename.replace('page-', '');
+            path.extname = '.html';
+            path.dirname = '';
+        }))
+        .pipe(gulp.dest(paths.templates.cabinet))
+        .pipe(browserSync.reload({ stream: true }));
+});
+gulp.task('templates:buildArticlesTemplates', function () {
+    return gulp.src(config.templates.buildFiles.articles)
+        .pipe(plumber())
+        .pipe(ejs({
+            bundlePath: {
+                styles: paths.styles.bundle.replace(paths.dest + '/', '') + '/' + config.styles.bundleFileName,
+                scripts: paths.scripts.bundle.replace(paths.dest + '/', '') + '/' + config.scripts.bundleFileName
+            },
+        }))
+        .pipe(rename(function(path) {
+            path.basename  = path.basename.replace('page-', '');
+            path.extname = '.html';
+            path.dirname = '';
+        }))
+        .pipe(gulp.dest(paths.templates.articles))
+        .pipe(browserSync.reload({ stream: true }));
+});
+gulp.task('templates:build', [
+    'templates:buildSiteTemplates',
+    'templates:buildCabinetTemplates',
+    'templates:buildArticlesTemplates'
+]);
 
-gulp.task('styles:buildPagesSCSS', function () {
-    return gulp.src(config.styles.pages)
+gulp.task('styles:buildSitePagesSCSS', function () {
+    return gulp.src(config.styles.buildFiles.site)
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
@@ -168,12 +224,11 @@ gulp.task('styles:buildPagesSCSS', function () {
         .pipe(rename(function(path) {
             path.dirname = '';
         }))
-        .pipe(gulp.dest(paths.pages))
+        .pipe(gulp.dest(paths.styles.site))
         .pipe(browserSync.reload({ stream: true }));
 });
-
-gulp.task('styles:buildArticlesSCSS', function () {
-    return gulp.src(config.styles.articles)
+gulp.task('styles:buildCabinetPagesSCSS', function () {
+    return gulp.src(config.styles.buildFiles.cabinet)
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
@@ -183,15 +238,28 @@ gulp.task('styles:buildArticlesSCSS', function () {
         .pipe(rename(function(path) {
             path.dirname = '';
         }))
-        .pipe(gulp.dest(paths.articles))
+        .pipe(gulp.dest(paths.styles.cabinet))
         .pipe(browserSync.reload({ stream: true }));
 });
-
-gulp.task('styles:buildSCSS', function () {
+gulp.task('styles:buildArticlesPagesSCSS', function () {
+    return gulp.src(config.styles.buildFiles.articles)
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
+        .pipe(csso())
+        .pipe(sourcemaps.write('.'))
+        .pipe(rename(function(path) {
+            path.dirname = '';
+        }))
+        .pipe(gulp.dest(paths.styles.articles))
+        .pipe(browserSync.reload({ stream: true }));
+});
+gulp.task('styles:buildBundleSCSS', function () {
     const bundleSCSSPath = paths.bundles + '/' + config.styles.bundleFileName,
           bundleSCSSFileName = 'scss.' + config.styles.bundleFileName;
 
-    return gulp.src(config.styles.buildFiles.scss)
+    return gulp.src(config.styles.buildFiles.bundleSCSS)
         .pipe(newer(bundleSCSSPath))
         .pipe(plumber())
         .pipe(sourcemaps.init())
@@ -200,14 +268,14 @@ gulp.task('styles:buildSCSS', function () {
         .pipe(concat(bundleSCSSFileName))
         .pipe(csso())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.bundles))
+        .pipe(gulp.dest(paths.styles.bundle))
         .pipe(browserSync.reload({ stream: true }));
 });
-gulp.task('styles:buildCSS', function () {
+gulp.task('styles:buildBundleCSS', function () {
     const bundleCSSPath = paths.bundles + '/' + config.styles.bundleFileName,
           bundleCSSFileName = 'css.' + config.styles.bundleFileName;
 
-    return gulp.src(config.styles.buildFiles.css)
+    return gulp.src(config.styles.buildFiles.bundleCSS)
         .pipe(newer(bundleCSSPath))
         .pipe(plumber())
         .pipe(sourcemaps.init())
@@ -215,18 +283,19 @@ gulp.task('styles:buildCSS', function () {
         .pipe(concat(bundleCSSFileName))
         .pipe(csso())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.bundles))
+        .pipe(gulp.dest(paths.styles.bundle))
         .pipe(browserSync.reload({ stream: true }));
 });
 gulp.task('styles:build', [
-    'styles:buildSCSS',
-    'styles:buildCSS',
-    'styles:buildArticlesSCSS',
-    'styles:buildPagesSCSS'
+    'styles:buildSitePagesSCSS',
+    'styles:buildCabinetPagesSCSS',
+    'styles:buildArticlesPagesSCSS',
+    'styles:buildBundleSCSS',
+    'styles:buildBundleCSS'
 ]);
 
-gulp.task('scripts:buildPagesTS', function() {
-    return gulp.src(config.scripts.pages)
+gulp.task('scripts:buildSitePagesTS', function() {
+    return gulp.src(config.scripts.buildFiles.site)
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(typescript())
@@ -234,12 +303,11 @@ gulp.task('scripts:buildPagesTS', function() {
         .pipe(rename(function(path) {
             path.dirname = '';
         }))
-        .pipe(gulp.dest(paths.pages))
+        .pipe(gulp.dest(paths.scripts.site))
         .pipe(browserSync.reload({ stream: true }))
 });
-
-gulp.task('scripts:buildArticlesTS', function() {
-    return gulp.src(config.scripts.articles)
+gulp.task('scripts:buildCabinetPagesTS', function() {
+    return gulp.src(config.scripts.buildFiles.cabinet)
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(typescript())
@@ -247,15 +315,26 @@ gulp.task('scripts:buildArticlesTS', function() {
         .pipe(rename(function(path) {
             path.dirname = '';
         }))
-        .pipe(gulp.dest(paths.articles))
+        .pipe(gulp.dest(paths.scripts.cabinet))
         .pipe(browserSync.reload({ stream: true }))
 });
-
-gulp.task('scripts:buildTS', function() {
+gulp.task('scripts:buildArticlesPagesTS', function() {
+    return gulp.src(config.scripts.buildFiles.articles)
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(typescript())
+        .pipe(sourcemaps.write('.'))
+        .pipe(rename(function(path) {
+            path.dirname = '';
+        }))
+        .pipe(gulp.dest(paths.scripts.articles))
+        .pipe(browserSync.reload({ stream: true }))
+});
+gulp.task('scripts:buildBundleTS', function() {
     const bundleTSFilePath = paths.bundles + '/ts.' + config.scripts.bundleFileName,
           bundleTSFileName = 'ts.' + config.scripts.bundleFileName;
 
-    return gulp.src(config.scripts.buildFiles.ts)
+    return gulp.src(config.scripts.buildFiles.bundleTS)
         .pipe(newer(bundleTSFilePath))
         .pipe(plumber())
         .pipe(sourcemaps.init())
@@ -263,29 +342,29 @@ gulp.task('scripts:buildTS', function() {
             outFile: bundleTSFileName
         }))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.bundles))
+        .pipe(gulp.dest(paths.scripts.bundle))
         .pipe(browserSync.reload({ stream: true }))
 });
-
-gulp.task('scripts:buildJS', function() {
+gulp.task('scripts:buildBundleJS', function() {
     const bundleJSFilePath = paths.bundles + '/js.' + config.scripts.bundleFileName,
           bundleJSFileName = 'js.' + config.scripts.bundleFileName;
 
-    return gulp.src(config.scripts.buildFiles.js)
+    return gulp.src(config.scripts.buildFiles.bundleJS)
         .pipe(newer(bundleJSFilePath))
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(concat(bundleJSFileName))
         .pipe(uglify())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.bundles))
+        .pipe(gulp.dest(paths.scripts.bundle))
         .pipe(browserSync.reload({ stream: true }));
 });
 gulp.task('scripts:build', [
-    'scripts:buildTS',
-    'scripts:buildJS',
-    'scripts:buildArticlesTS',
-    'scripts:buildPagesTS'
+    'scripts:buildSitePagesTS',
+    'scripts:buildCabinetPagesTS',
+    'scripts:buildArticlesPagesTS',
+    'scripts:buildBundleTS',
+    'scripts:buildBundleJS'
 ]);
 
 gulp.task('images:build', function() {
@@ -314,11 +393,7 @@ gulp.task('build', [
     'languages:build',
     'templates:build',
     'styles:build',
-    'styles:buildPagesSCSS',
-    'styles:buildArticlesSCSS',
     'scripts:build',
-    'scripts:buildPagesTS',
-    'scripts:buildArticlesTS',
     'images:build',
     'fonts:build',
 ]);
@@ -327,36 +402,55 @@ gulp.task('watch', function() {
     watch(config.languages.watchFiles, function() {
         gulp.start('languages:build');
     });
-    watch(config.templates.watchFiles, function() {
-        gulp.start('templates:build');
+
+    watch(config.templates.watchFiles.site, function() {
+        gulp.start('templates:buildSiteTemplates');
     });
-    watch(config.styles.pages, function() {
-        gulp.start('styles:buildPagesSCSS');
+    watch(config.templates.watchFiles.cabinet, function() {
+        gulp.start('templates:buildCabinetTemplates');
     });
-    watch(config.styles.articles, function() {
-        gulp.start('styles:buildArticlesSCSS');
+    watch(config.templates.watchFiles.articles, function() {
+        gulp.start('templates:buildArticlesTemplates');
     });
-    watch(config.styles.watchFiles.scss, function() {
-        gulp.start('styles:buildSCSS');
+
+
+    watch(config.styles.watchFiles.site, function() {
+        gulp.start('styles:buildSitePagesSCSS');
     });
-    watch(config.styles.watchFiles.css, function() {
-        gulp.start('styles:buildCSS');
+    watch(config.styles.watchFiles.cabinet, function() {
+        gulp.start('styles:buildCabinetPagesSCSS');
     });
-    watch(config.scripts.pages, function() {
-        gulp.start('scripts:buildPagesTS');
+    watch(config.styles.watchFiles.articles, function() {
+        gulp.start('styles:buildArticlesPagesSCSS');
     });
-    watch(config.scripts.articles, function() {
-        gulp.start('scripts:buildArticlesTS');
+    watch(config.styles.watchFiles.bundleSCSS, function() {
+        gulp.start('styles:buildBundleSCSS');
     });
-    watch(config.scripts.watchFiles.ts, function() {
-        gulp.start('scripts:buildTS');
+    watch(config.styles.watchFiles.bundleCSS, function() {
+        gulp.start('styles:buildBundleCSS');
     });
-    watch(config.scripts.watchFiles.js, function() {
-        gulp.start('scripts:buildJS');
+
+
+    watch(config.scripts.watchFiles.site, function() {
+        gulp.start('scripts:buildSitePagesTS');
     });
+    watch(config.scripts.watchFiles.cabinet, function() {
+        gulp.start('scripts:buildCabinetPagesTS');
+    });
+    watch(config.scripts.watchFiles.articles, function() {
+        gulp.start('scripts:buildArticlesPagesTS');
+    });
+    watch(config.scripts.watchFiles.bundleTS, function() {
+        gulp.start('scripts:buildBundleTS');
+    });
+    watch(config.scripts.watchFiles.bundleJS, function() {
+        gulp.start('scripts:buildBundleJS');
+    });
+
     watch(config.images.watchFiles, function() {
         gulp.start('images:build');
     });
+
     watch(config.fonts.watchFiles, function() {
         gulp.start('fonts:build');
     });

@@ -18,7 +18,7 @@
             <ul class="navbar-nav mr-auto d-md-none d-lg-block">
                 <li class="nav-item">
                     <a class="nav-link"
-                       href="contacts-ru.html"><%= lang.contacts %></a>
+                       href="contacts.html"><%= lang.contacts %></a>
                 </li>
             </ul>
             <ul class="navbar-nav mr-md-4 ml-md-auto">

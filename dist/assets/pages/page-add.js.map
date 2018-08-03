@@ -1,1 +1,0 @@
-{"version":3,"sources":["templates/pages/page-add/page-add.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,QAAQ,CAAC,CAAC,KAAK,CAAC,UAAS,CAAC;IAC7B,QAAQ,CAAC,KAAK,CAAC,QAAQ,CAAC,CAAC;AAC7B,CAAC,CAAC,CAAC","file":"page-add.js","sourcesContent":["jQuery(document).ready(function($) {\r\n    FilePond.parse(document);\r\n});"]}

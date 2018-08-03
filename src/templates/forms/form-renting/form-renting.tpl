@@ -229,7 +229,7 @@
                         <form action="#" class="form-renting__accordion-item-content">
                             <figure class="alert alert-warning" role="alert">
                                 Цена включает <strong>9-12%</strong> за услуги V.P.U.T.
-                                <a href="commission-ru.html" target="_blank">Почему мы берем комиссию?</a>
+                                <a href="commission.html" target="_blank">Почему мы берем комиссию?</a>
                             </figure>
 
                             <fieldset class="form-renting__fieldset">

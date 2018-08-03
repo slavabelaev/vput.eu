@@ -1,0 +1,11 @@
+{
+  "title": "Попросить помощи",
+  "full_name": "Ф.И.О.",
+  "phone": "Телефон",
+  "skype": "Skype",
+  "email": "E-mail",
+  "message": "Опишите проблему",
+  "submit_button_text": "Отправить",
+  "submit_success_message": "Сообщение успешно отправлено!",
+  "submit_danger_message": "Сообщение не было отправлено!"
+}

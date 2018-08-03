@@ -18,11 +18,11 @@
                 <h3 class="page-footer__title"><%= lang.who_we_are %></h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="about-ru.html"
+                        <a href="about.html"
                            class="page-footer__link"><%= lang.about %></a>
                     </li>
                     <li class="nav-item">
-                        <a href="trust-ru.html"
+                        <a href="trust.html"
                            class="page-footer__link"><%= lang.trust %></a>
                     </li>
                 </ul>
@@ -39,7 +39,7 @@
                            class="page-footer__link"><%= lang.cancellation_policies %></a>
                     </li>
                     <li class="nav-item">
-                        <a href="withdraw-ru.html"
+                        <a href="withdraw.html"
                            class="page-footer__link"><%= lang.withdraw %></a>
                     </li>
                 </ul>
@@ -48,7 +48,7 @@
                 <h3 class="page-footer__title"><%= lang.contact_us %></h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="contacts-ru.html"
+                        <a href="contacts.html"
                            class="page-footer__link"><%= lang.contacts %></a>
                     </li>
                 </ul>

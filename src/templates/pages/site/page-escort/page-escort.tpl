@@ -1,3 +1,5 @@
+<% var lang = JSON.parse(include('page-escort_lang_ru.json')); %>
+
 <%- include('../../../common.blocks/meta-header/meta-header.tpl'); %>
 <div class="page-escort__page-header navbar-dark-md">
     <%- include('../../../common.blocks/page-header/page-header.tpl'); %>

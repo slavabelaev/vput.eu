@@ -1,3 +1,5 @@
+<% var lang = JSON.parse(include('page-transfer_lang_ru.json')); %>
+
 <%- include('../../../common.blocks/meta-header/meta-header.tpl'); %>
 <div class="page-transfer__page-header navbar-dark-md">
     <%- include('../../../common.blocks/page-header/page-header.tpl'); %>

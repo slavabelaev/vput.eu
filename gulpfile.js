@@ -30,7 +30,7 @@ const paths = {
     },
     templates: {
         site: './dist',
-        cabinet: './dist/cabinet',
+        cabinet: './dist',
         articles: './dist',
     },
     styles: {
@@ -84,7 +84,7 @@ const config = {
                 'node_modules/slick-carousel/slick/slick.css',
                 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
                 'node_modules/nouislider/distribute/nouislider.min.css',
-                'node_modules/filepond/dist/filepond.min.css',
+                'node_modules/filepond/dist/filepond.min.css'
             ],
             site: [paths.src + '/**/pages/site/**/*.scss'],
             cabinet: [paths.src + '/**/pages/cabinet/**/*.scss'],
@@ -129,7 +129,7 @@ const config = {
                 // Drag and drop Uploader
                 'node_modules/filepond/dist/filepond.js',
                 // Sticky menu
-                'node_modules/sticky-kit/dist/sticky-kit.min.js',
+                'node_modules/sticky-kit/dist/sticky-kit.min.js'
             ],
             site: [paths.src + '/**/pages/site/**/*.ts'],
             cabinet: [paths.src + '/**/pages/cabinet/**/*.ts'],

@@ -68,14 +68,12 @@
                for="form-search-offers__show-booked-control"><%= lang.do_not_show_booked %></label>
     </div>
 
-    <div class="form-search-offers__cities-tabs collapse"
-         data-parent=".form-search-offers">
+    <div class="form-search-offers__cities-tabs collapse">
         <%- include('../../common.blocks/cities-tabs/cities-tabs.tpl'); %>
     </div>
 
     <!-- Other filters -->
-    <div class="form-search-offers__other-filters collapse"
-         data-parent=".form-search-offers">
+    <div class="form-search-offers__other-filters collapse">
         <fieldset class="form-search-offers__fieldset">
             <div class="form-row align-items-center">
                 <legend class="form-search-offers__legend col-md-3 text-center text-md-left mb-md-0 mt-md-3"><%= lang.price_per_day %></legend>

@@ -39,7 +39,7 @@
     filter: brightness(1.1);
   }
 }
-.offer-item__add-to-favorites {
+.offer-item__toggle-favorites {
   position: absolute;
   width: 32px;
   height: 32px;
@@ -83,6 +83,9 @@
   top: -36px;
   left: 1rem;
   right: 1rem;
+  .icon_style_light {
+    filter: drop-shadow(rgba(0,0,0,.24) 0 0 1px);
+  }
 }
 .offer-item__country {
   flex: 1;
@@ -176,6 +179,44 @@
   right: 0;
   bottom: 0;
   margin-right: 0;
+}
+
+.offer-item__editor-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+}
+
+.offer-item_has-rights_edit {
+  .offer-item__editor-header {
+    display: block;
+  }
+  .offer-item__toggle-favorites {
+    display: none;
+  }
+}
+
+.offer-item__actions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 6px;
+}
+.offer-item__statuses {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+}
+.offer-item__status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
 }
 
 @include media-breakpoint-up(lg) {

@@ -23,6 +23,12 @@
   min-width: 2rem;
   min-height: 2rem;
 }
+.icon_size_20 {
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+}
 .icon_size_16 {
   width: 1rem;
   height: 1rem;
@@ -37,12 +43,16 @@
   filter: brightness(0) invert(.5);
 }
 .icon_style_light {
+  filter: brightness(0) invert(1);
   &.icon__pets { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pets_style_light.svg); }
   &.icon__air-conditioner { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__air-conditioner_style_light.svg); }
   &.icon__tv { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__tv_style_light.svg); }
   &.icon__heart { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__heart_style_light.svg); }
   &.icon__close { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__close_style_light.svg); }
   &.icon__book { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__book_style_light.svg); }
+  &.icon__check { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__check_style_light.svg); }
+  &.icon__eye { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__eye_style_light.svg); }
+  &.icon__blocked { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__blocked_style_light.svg); }
 }
 
 .icon__security { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__security.svg); }
@@ -142,5 +152,8 @@
 .icon__telegram { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__telegram.svg); }
 .icon__whatsapp { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__whatsapp.svg); }
 .icon__viber { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__viber.svg); }
+.icon__link { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__link.svg); }
+.icon__blocked { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__blocked.svg); }
+.icon__eye { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__eye.svg); }
 .icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }
 

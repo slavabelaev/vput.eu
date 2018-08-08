@@ -79,14 +79,21 @@
   .nav-link {
     @include border-radius($nav-pills-border-radius);
   }
-
   .nav-link.active,
   .show > .nav-link {
     color: $nav-pills-link-active-color;
     background-color: $nav-pills-link-active-bg;
-    border-bottom: 3px solid $nav-pills-link-active-color;
-    font-weight: bold;
+    border-radius: $border-radius;
   }
+}
+
+.nav-pills_orientation_horizontal .nav-link.active,
+.nav-pills_orientation_horizontal .show > .nav-link {
+  color: $nav-pills-link-active-bg;
+  background-color: transparent;
+  border-bottom: 3px solid $nav-pills-link-active-bg;
+  font-weight: bold;
+  border-radius: 0;
 }
 
 

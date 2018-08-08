@@ -576,8 +576,8 @@ $dropdown-link-active-bg:           $component-active-bg !default;
 
 $dropdown-link-disabled-color:      $gray-600 !default;
 
-$dropdown-item-padding-y:           .75rem !default;
-$dropdown-item-padding-x:           1.5rem !default;
+$dropdown-item-padding-y:           $btn-padding-y !default;
+$dropdown-item-padding-x:           $btn-padding-x !default;
 
 $dropdown-header-color:             $gray-600 !default;
 
@@ -611,8 +611,8 @@ $nav-tabs-link-active-border-color: transparent !default;
 $nav-tabs-font-size:                $font-size-base * 1.125 !default;
 
 $nav-pills-border-radius:           0 !default;
-$nav-pills-link-active-color:       $primary !default;
-$nav-pills-link-active-bg:          transparent !default;
+$nav-pills-link-active-color:       $white !default;
+$nav-pills-link-active-bg:          $primary !default;
 
 $nav-divider-color:                 $gray-200 !default;
 $nav-divider-margin-y:              ($spacer / 2) !default;
@@ -715,8 +715,8 @@ $tooltip-color:                     $dark !default;
 $tooltip-bg:                        $white !default;
 $tooltip-border-radius:             $border-radius !default;
 $tooltip-opacity:                   1 !default;
-$tooltip-padding-y:                 .5rem !default;
-$tooltip-padding-x:                 1rem !default;
+$tooltip-padding-y:                 .75rem !default;
+$tooltip-padding-x:                 $tooltip-padding-y !default;
 $tooltip-margin:                    0 !default;
 $tooltip-box-shadow:                0 0 20px -5px $gray-600 !default;
 
@@ -809,8 +809,8 @@ $alert-border-radius:               $border-radius !default;
 $alert-link-font-weight:            $font-weight-bold !default;
 $alert-border-width:                $border-width !default;
 
-$alert-bg-level:                    -10 !default;
-$alert-border-level:                -9 !default;
+$alert-bg-level:                    -11 !default;
+$alert-border-level:                -10 !default;
 $alert-color-level:                 6 !default;
 
 

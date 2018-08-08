@@ -89,7 +89,7 @@
                        aria-expanded="false">
                         Руc
                     </a>
-                    <div class="dropdown-menu"
+                    <div class="dropdown-menu dropdown-menu-lg"
                          aria-labelledby="cabinetMenuDropdown">
                         
                         <a class="dropdown-item"
@@ -129,28 +129,28 @@
                         <i class="page-header__cabinet-menu-icon icon icon__cabinet-user"></i>
                         Кабинет
                     </a>
-                    <div class="page-header__dropdown-menu dropdown-menu"
+                    <div class="page-header__dropdown-menu dropdown-menu dropdown-menu-lg"
                          aria-labelledby="cabinetMenuDropdown">
                         <a class="dropdown-item"
-                           href="cabinet/realties-ru.html">Мои объявления</a>
+                           href="realties.html">Мои объявления</a>
                         <a class="dropdown-item"
-                           href="cabinet/bookings-ru.html">Бронирования</a>
+                           href="bookings.html">Бронирования</a>
                         <a class="dropdown-item"
-                           href="cabinet/trips-ru.html">Мои поездки <span class="badge badge-primary">5</span></a>
+                           href="trips.html">Мои поездки <span class="badge badge-primary">5</span></a>
                         <a class="dropdown-item"
-                           href="cabinet/profile-ru.html">Профиль</a>
+                           href="profile.html">Профиль</a>
                         <a class="dropdown-item"
-                           href="cabinet/transfers-ru.html">Трансферы</a>
+                           href="transfers.html">Трансферы</a>
                         <a class="dropdown-item"
-                           href="cabinet/balance-ru.html">Баланс</a>
+                           href="balance.html">Баланс</a>
                         <a class="dropdown-item"
-                           href="cabinet/partnership-ru.html">Партнерская программа</a>
+                           href="partnership.html">Партнерская программа</a>
                         <a class="dropdown-item"
-                           href="cabinet/reviews-ru.html">Отзывы</a>
+                           href="reviews.html">Отзывы</a>
                         <a class="dropdown-item"
-                           href="cabinet/referralBookings-ru.html">Бронирования рефералов</a>
+                           href="referral-bookings.html">Бронирования рефералов</a>
                         <a class="dropdown-item page-header__dropdown-item-logout"
-                           href="authorization/logout-ru.html">Выйти</a>
+                           href="logout.html">Выйти</a>
                     </div>
                 </li>
             </ul>
@@ -1526,7 +1526,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -1552,7 +1599,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -1601,7 +1650,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -1627,7 +1723,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -1676,7 +1774,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -1702,7 +1847,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -1751,7 +1898,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -1777,7 +1971,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -1826,7 +2022,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -1852,7 +2095,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -1901,7 +2146,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -1927,7 +2219,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -1976,7 +2270,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -2002,7 +2343,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -2051,7 +2394,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -2077,7 +2467,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -2142,7 +2534,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -2168,7 +2607,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -2217,7 +2658,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -2243,7 +2731,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -2292,7 +2782,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -2318,7 +2855,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -2367,7 +2906,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -2393,7 +2979,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -2442,7 +3030,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -2468,7 +3103,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -2517,7 +3154,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -2543,7 +3227,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -2592,7 +3278,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -2618,7 +3351,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>
@@ -2667,7 +3402,54 @@
 
 <!-- Common: offer-item -->
 <figure class="offer-item">
-    <a class="offer-item__add-to-favorites animated-heart icon icon__heart icon_style_light"
+    <!-- If the item belongs to the owner -->
+    <header class="offer-item__editor-header">
+        <div class="offer-item__actions">
+            <a href="add.html?id=4412&substep=9"
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Пройдено <b class='text-warning'>5</b> шагов из <b class='text-success'>11</b>">Продолжить добавление</a>
+            <a href=""
+               class="btn btn-warning btn-sm"
+               data-toggle="tooltip"
+               data-placement="bottom"
+               data-html="true"
+               title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
+            <button type="button"
+                    class="btn btn-light btn-sm"
+                    data-toggle="tooltip"
+                    data-placement="bottom"
+                    data-html="true"
+                    title="Копировать ссылку на объект"><i class="icon icon__link icon_style_dark icon_size_16"></i></button>
+        </div>
+        <div class="offer-item__statuses">
+            <div class="offer-item__status bg-success"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Опубликовано и доступно гостям">
+                <i class="icon icon__check icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-warning"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="На модерации">
+                <i class="icon icon__eye icon_size_20 icon_style_light"></i>
+            </div>
+            <div class="offer-item__status bg-danger"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 data-html="true"
+                 title="Заблокировано">
+                <i class="icon icon__blocked icon_size_20 icon_style_light"></i>
+            </div>
+        </div>
+    </header>
+    <!-- /If the item belongs to the owner -->
+    <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
     <div class="offer-item__image-slider">
@@ -2693,7 +3475,9 @@
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">
             <a href="offer.html"
-               class="offer-item__link">Studio - Fort Noks Grand Resort</a>
+               target="_blank"
+               class="offer-item__link"
+               title="Studio - Fort Noks Grand Resort">Studio - Fort Noks Grand Resort</a>
         </h3>
         <ul class="offer-item__details">
             <li class="offer-item__detail offer-item__country">Болгария</li>

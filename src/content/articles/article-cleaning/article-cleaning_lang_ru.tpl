@@ -11,7 +11,7 @@
     </header>
     <div class="bg-light d-none d-sm-block">
         <div class="container mw-1024px">
-            <nav class="nav nav-pills nav-fill">
+            <nav class="nav nav-pills nav-fill nav-pills_orientation_horizontal">
                 <a class="nav-item nav-link active" href="/cleaning-ru.html">Клининговые услуги</a>
                 <a class="nav-item nav-link" href="/escort-ru.html">Заселение и выселение гостей</a>
                 <a class="nav-item nav-link" href="/transfer-ru.html">Трансфер</a>

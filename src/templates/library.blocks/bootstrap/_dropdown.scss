@@ -148,6 +148,19 @@
   }
 }
 
+
+.dropdown-menu-sm {
+  .dropdown-item {
+    padding: $btn-padding-y-sm $btn-padding-x-sm;
+    font-size: $font-size-sm;
+  }
+}
+.dropdown-menu-lg {
+  .dropdown-item {
+    padding: $btn-padding-y-lg $btn-padding-x-lg;
+  }
+}
+
 .dropdown-menu.show {
   display: block;
 }

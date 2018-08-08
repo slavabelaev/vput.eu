@@ -10,6 +10,11 @@
   @include border-radius($alert-border-radius);
 }
 
+.alert-sm {
+  padding: $btn-padding-y-sm $btn-padding-x-sm;
+  font-size: $font-size-sm;
+}
+
 // Headings for larger alerts
 .alert-heading {
   // Specified to prevent conflicts of changing $headings-color

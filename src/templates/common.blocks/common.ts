@@ -1,5 +1,10 @@
 jQuery(document).ready(function($) {
-    $('[data-toggle=tooltip]').tooltip();
+    $('[data-toggle=tooltip]').tooltip({
+        delay: {
+            show: 240,
+            hide: 120
+        }
+    });
     $('[data-toggle=popover]').popover();
 
     setTimeout(function() {

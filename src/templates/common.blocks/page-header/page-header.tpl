@@ -36,7 +36,7 @@
                        aria-expanded="false">
                         <%= lang.language %>
                     </a>
-                    <div class="dropdown-menu"
+                    <div class="dropdown-menu dropdown-menu-lg"
                          aria-labelledby="cabinetMenuDropdown">
                         <% for(var i = 0;i < lang.languages.length;i++) { %>
                         <a class="dropdown-item"
@@ -73,28 +73,28 @@
                         <i class="page-header__cabinet-menu-icon icon icon__cabinet-user"></i>
                         <%= lang.cabinet_title %>
                     </a>
-                    <div class="page-header__dropdown-menu dropdown-menu"
+                    <div class="page-header__dropdown-menu dropdown-menu dropdown-menu-lg"
                          aria-labelledby="cabinetMenuDropdown">
                         <a class="dropdown-item"
-                           href="cabinet/realties-ru.html"><%= lang.cabinet.realties %></a>
+                           href="realties.html"><%= lang.cabinet.realties %></a>
                         <a class="dropdown-item"
-                           href="cabinet/bookings-ru.html"><%= lang.cabinet.bookings %></a>
+                           href="bookings.html"><%= lang.cabinet.bookings %></a>
                         <a class="dropdown-item"
-                           href="cabinet/trips-ru.html"><%= lang.cabinet.trips %> <span class="badge badge-primary">5</span></a>
+                           href="trips.html"><%= lang.cabinet.trips %> <span class="badge badge-primary">5</span></a>
                         <a class="dropdown-item"
-                           href="cabinet/profile-ru.html"><%= lang.cabinet.profile %></a>
+                           href="profile.html"><%= lang.cabinet.profile %></a>
                         <a class="dropdown-item"
-                           href="cabinet/transfers-ru.html"><%= lang.cabinet.transfers %></a>
+                           href="transfers.html"><%= lang.cabinet.transfers %></a>
                         <a class="dropdown-item"
-                           href="cabinet/balance-ru.html"><%= lang.cabinet.balance %></a>
+                           href="balance.html"><%= lang.cabinet.balance %></a>
                         <a class="dropdown-item"
-                           href="cabinet/partnership-ru.html"><%= lang.cabinet.partnership %></a>
+                           href="partnership.html"><%= lang.cabinet.partnership %></a>
                         <a class="dropdown-item"
-                           href="cabinet/reviews-ru.html"><%= lang.cabinet.reviews %></a>
+                           href="reviews.html"><%= lang.cabinet.reviews %></a>
                         <a class="dropdown-item"
-                           href="cabinet/referralBookings-ru.html"><%= lang.cabinet.referral_bookings %></a>
+                           href="referral-bookings.html"><%= lang.cabinet.referral_bookings %></a>
                         <a class="dropdown-item page-header__dropdown-item-logout"
-                           href="authorization/logout-ru.html"><%= lang.cabinet.logout %></a>
+                           href="logout.html"><%= lang.cabinet.logout %></a>
                     </div>
                 </li>
             </ul>

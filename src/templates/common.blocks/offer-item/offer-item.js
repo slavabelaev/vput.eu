@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
         }
     });
     blockElement
-        .find('.offer-item__add-to-favorites[data-toggle="button"]')
+        .find('.offer-item__toggle-favorites[data-toggle="button"]')
         .on('click', function () {
         $(this).toggleClass('active');
     });

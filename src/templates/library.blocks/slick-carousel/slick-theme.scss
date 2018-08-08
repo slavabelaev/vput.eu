@@ -83,7 +83,7 @@ $slick-opacity-not-active: 0.25 !default;
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    filter: drop-shadow(rgba(0,0,0,.2) 0 0 5px);
+    filter: drop-shadow(rgba(0,0,0,.24) 0 0 1px);;
     z-index: 1;
     opacity: .8;
     transition: $transition-base;

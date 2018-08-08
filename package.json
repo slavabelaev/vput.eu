@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",
+    "@progress/kendo-ui": "^2018.2.704",
     "bootstrap": "^4.1.1",
     "filepond": "^1.8.3",
     "jquery": "^3.3.1",

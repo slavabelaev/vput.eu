@@ -10,7 +10,7 @@
     </header>
     <div class="bg-light d-none d-sm-block">
         <div class="container mw-1024px">
-            <nav class="nav nav-pills nav-fill">
+            <nav class="nav nav-pills nav-fill nav-pills_orientation_horizontal">
                 <a class="nav-item nav-link" href="cleaning.html">Клининговые услуги</a>
                 <a class="nav-item nav-link active" href="#">Заселение и выселение гостей</a>
                 <a class="nav-item nav-link" href="transfer.html">Трансфер</a>

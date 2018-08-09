@@ -11,7 +11,7 @@
     <div class="container py-4">
         <h1 class="page-realties__title text-center mb-4">Ваши объявления</h1>
         <div class="row">
-            <div class="col-md-4 col-xl-3">
+            <div class="col-xl-3 d-none d-xl-block">
                 <aside class="cabinet-aside">
                     <nav class="nav flex-column nav-pills">
                         <a class="nav-link active" href="realties.html">Мои объявления</a>
@@ -26,7 +26,7 @@
                     </nav>
                 </aside>
             </div>
-            <div class="col-md-8 col-xl-9">
+            <div class="col-xl-9">
                 <div class="alert alert-info mb-4">
                     <h2 class="h4 text-center">АКТУАЛЬНОСТЬ КАЛЕНДАРЯ</h2>
                     <div class="row">
@@ -48,22 +48,22 @@
                     </div>
                 </div>
                 <ul class="row offer-item_has-rights_edit">
-                    <li class="col-xl-4 col-md-6 mb-4">
+                    <li class="col-lg-4 col-md-6 mb-4">
                         <%- include('../../../common.blocks/offer-item/offer-item.tpl'); %>
                     </li>
-                    <li class="col-xl-4 col-md-6 mb-4">
+                    <li class="col-lg-4 col-md-6 mb-4">
                         <%- include('../../../common.blocks/offer-item/offer-item.tpl'); %>
                     </li>
-                    <li class="col-xl-4 col-md-6 mb-4">
+                    <li class="col-lg-4 col-md-6 mb-4">
                         <%- include('../../../common.blocks/offer-item/offer-item.tpl'); %>
                     </li>
-                    <li class="col-xl-4 col-md-6 mb-4">
+                    <li class="col-lg-4 col-md-6 mb-4">
                         <%- include('../../../common.blocks/offer-item/offer-item.tpl'); %>
                     </li>
-                    <li class="col-xl-4 col-md-6 mb-4">
+                    <li class="col-lg-4 col-md-6 mb-4">
                         <%- include('../../../common.blocks/offer-item/offer-item.tpl'); %>
                     </li>
-                    <li class="col-xl-4 col-md-6 mb-4">
+                    <li class="col-lg-4 col-md-6 mb-4">
                         <%- include('../../../common.blocks/offer-item/offer-item.tpl'); %>
                     </li>
                 </ul>

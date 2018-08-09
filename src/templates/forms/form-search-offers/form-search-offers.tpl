@@ -13,6 +13,7 @@
                        name="filters[cityId]">
                 <input class="form-search-offers__cities-tabs-toggle custom-select disabled custom-select-lg collapsed"
                        readonly
+                       onfocus="this.blur()"
                        placeholder="<%= lang.city %>"
                        data-toggle="collapse"
                        data-target=".form-search-offers__cities-tabs">

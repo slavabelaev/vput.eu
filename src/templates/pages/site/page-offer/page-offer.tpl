@@ -70,7 +70,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-xl-auto">
+            <div class="page-offer__aside-wrapper col-xl-auto">
                 <a href="#"
                    class="page-offer__modal-toggle btn btn-primary"
                    data-target=".page-offer__modal"

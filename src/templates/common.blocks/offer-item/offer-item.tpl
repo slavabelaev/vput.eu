@@ -52,25 +52,8 @@
     <a class="offer-item__toggle-favorites animated-heart icon icon__heart icon_style_light"
        data-toggle="button"
        aria-pressed="false"></a>
-    <div class="offer-item__image-slider">
-        <button class="offer-item__arrow offer-item__arrow_slide_next slick-next slick-arrow"
-                aria-label="Next"
-                type="button"></button>
-        <button class="offer-item__arrow offer-item__arrow_slide_prev slick-prev slick-arrow"
-                aria-label="Prev"
-                type="button"></button>
-        <nav class="offer-item__list-of-images"
-             style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
-             is-slick-carousel>
-            <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
-                class="offer-item__image"></a>
-            <a  data-src="content/images/offers/previews/offer-item__preview-2.jpg"
-                class="offer-item__image"></a>
-            <a  data-src="content/images/offers/previews/offer-item__preview-3.jpg"
-                class="offer-item__image"></a>
-            <a  data-src="content/images/offers/previews/offer-item__preview-4.jpg"
-                class="offer-item__image"></a>
-        </nav>
+    <div class="offer-item__offer-item-carousel">
+        <%- include('../../common.blocks/offer-item-carousel/offer-item-carousel.tpl'); %>
     </div>
     <figcaption class="offer-item__description">
         <h3 class="offer-item__title">

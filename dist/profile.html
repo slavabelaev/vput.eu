@@ -54,7 +54,7 @@
 
 
 <!-- Common: page-header -->
-<header class="page-header">
+<header class="page-header" data-headroom>
     <nav class="navbar navbar-expand-md navbar-light container">
         <a class="page-header__logo mr-md-4"
            href="index.html"></a>
@@ -382,7 +382,235 @@
 <link rel="stylesheet" href="assets/pages/cabinet/page-profile.css">
 <script src="assets/pages/cabinet/page-profile.js" defer></script>
 
-<main class="page-profile">
+<main class="page-profile bg-light">
+    <div class="container py-4">
+        <h1 class="page-realties__title text-center mb-4">Ваш профиль</h1>
+
+        <div class="alert alert-info lead">
+            <p class="mb-0">Анализ статистики показывает: <strong>объекты, у которых есть отзывы, получают в 2-5 раз больше бронирований</strong>. Вы можете получить ваши первые отзывы от своих друзей прямо сейчас.</p>
+            <div class="text-center"><a href="reviews.html" class="nav-link">Узнайте как это сделать</a></div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="page-profile__form-change-languages">
+                    <!-- Form: form-change-languages -->
+<form class="form-change-languages card">
+    <h3 class="card-header lead font-weight-bold">Ваши языки</h3>
+    <div class="card-body">
+        <p class="card-text text-muted">Выберите языки, которыми вы владеете, из предложенного списка. Также у вас есть возможность указать свой основной язык.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Русский</label>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Беларусская</label>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Français, Langue Française</label>
+            </div>
+        </li>
+    </ul>
+    <footer class="card-footer text-center border-top-0">
+        <div class="input-group mb-0">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">
+                    <i class="icon icon__language"></i>
+                </label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>English</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+    </footer>
+    <footer class="card-footer text-center">
+        <a href="#" class="btn btn-primary">Добавить язык</a>
+    </footer>
+</form>
+<!-- /Form: form-change-languages -->
+                </div>
+
+                <div class="page-profile__form-change-password">
+                    <!-- Form: form-change-password -->
+<form class="form-change-password card my-4">
+    <h3 class="card-header lead font-weight-bold border-bottom-0"
+        data-toggle="collapse"
+        data-target=".form-change-password__content">Смена пароля</h3>
+    <div class="form-change-password__content collapse">
+        <ul class="card-body list-unstyled mb-0 border-top">
+            <li class="form-group">
+                <label for="">Текущий пароль</label>
+                <input type="password"
+                       required
+                       class="form-control">
+            </li>
+            <li class="form-group">
+                <label for="">Новый пароль</label>
+                <input type="password"
+                       required
+                       class="form-control">
+            </li>
+            <li class="form-group mb-0">
+                <label for="">Повторите новый пароль</label>
+                <input type="password"
+                       required
+                       class="form-control">
+            </li>
+        </ul>
+        <footer class="card-footer text-center">
+            <button type="submit"
+                    class="btn btn-primary">Изменить пароль</button>
+        </footer>
+    </div>
+</form>
+<!-- /Form: form-change-password -->
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-8 col-md-6">
+                <div class="page-profile__form-change-personal-data">
+                    <!-- Form: form-change-personal-data -->
+<div class="form-change-personal-data card">
+    <h3 class="card-header lead font-weight-bold">Ваши личные данные</h3>
+    <figure class="card-body bg-light d-md-flex">
+        <img src="templates/forms/form-change-personal-data/form-change-personal-data__profile.svg" alt="" class="mb-3 mb-md-0 mr-md-3">
+        <figcatpion>
+            <h4 class="lead">Заполни свой профиль за 1 секунду, используя соцсеть</h4>
+            <p class="mb-0 text-muted">Система обновит фото и основные данные</p>
+        </figcatpion>
+    </figure>
+    <form class="card-body">
+        <div class="form-row">
+            <div class="col-xl-5 col-lg-6">
+                <div class="form-group">
+                    <label for="inputEmail4">Имя</label>
+                    <input type="name" class="form-control" id="inputEmail4" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword4">Фамилия</label>
+                    <input type="name" class="form-control" id="inputPassword4" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="inputState">О себе</label>
+                    <textarea name="" id="" rows="5" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 offset-xl-1">
+                <div class="form-group">
+                    <label for="inputCity">Мобильный телефон</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="icon icon__mobile"></i></span>
+                        </div>
+                        <input type="phone" class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-success collapsed"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target=".form-change-personal-data__confirm-number"
+                                    id="button-addon2">Подтвердить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputState">Доп. мобильный телефон</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="icon icon__mobile"></i></span>
+                        </div>
+                        <input type="phone" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputState">E-mail</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="icon icon__email"></i></span>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="form-change-personal-data__confirm-number collapse">
+        <form class="card-footer bg-light">
+            <header>
+                <h3 class="lead">Подтверждение номера телефона:</h3>
+                <p class="text-muted">На ваш номер телефона выслан код, введите его в поле, указанное ниже</p>
+            </header>
+            <div class="row">
+                <div class="form-group col-md-6 col-lg-5">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="icon icon__mobile"></i></span>
+                        </div>
+                        <input type="number"
+                               required
+                               class="form-control"
+                               placeholder="Код">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="submit" id="button-addon2">Подтвердить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted mb-0">Ваши личные данные не подтверждены. Из-за этого ваш аккаунт не будет вызывать доверия у потенциальных клиентов. Пожалуйста, подтвердите ваш телефон и email.</p>
+        </form>
+    </div>
+</div>
+<!-- /Form: form-change-personal-data -->
+                </div>
+
+                <form class="card my-4">
+                    <h3 class="card-header lead font-weight-bold">Настройки сервиса</h3>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="form-group col-md-6 col-lg-5">
+                                <label for="inputState">Ваш язык по умолчанию</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">
+                                            <i class="icon icon__language"></i>
+                                        </label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected="">English</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
+                                <label class="custom-control-label" for="customCheckDisabled">Не получать уведомления о моих объявлениях с сайта</label>
+                            </div>
+                        </div>
+                        <div class="form-group mb-0">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
+                                <label class="custom-control-label" for="customCheckDisabled">Не получать уведомления о интересных предложениях с сайта</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 </main>
 <!-- /Page: page-profile -->
 

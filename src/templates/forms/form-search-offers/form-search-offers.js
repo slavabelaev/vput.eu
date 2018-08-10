@@ -1,4 +1,7 @@
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
+    var blockElement = $('.form-search-offers');
+    if (blockElement.length == 0)
+        return false;
     var changeCitiesTabsComponent = function () {
         var blockElement = $('.form-search-offers'), toggleElement = blockElement.find('[data-target=".form-search-offers__cities-tabs"]'), citiesTabsElement = blockElement.find('.form-search-offers__cities-tabs');
         if (window.outerWidth > 992) {
@@ -17,11 +20,8 @@
                 .addClass('modal');
         }
     };
-    document.addEventListener('DOMContentLoaded', changeCitiesTabsComponent);
+    changeCitiesTabsComponent();
     window.addEventListener('resize', changeCitiesTabsComponent);
-})();
-document.addEventListener('DOMContentLoaded', function () {
-    var blockElement = $('.form-search-offers');
     blockElement.find('.cities-tabs__link').on('click', function (e) {
         e.preventDefault();
         var data = $(this).data(), toggleCollapseElement = blockElement.find('[data-target=".form-search-offers__cities-tabs"]');

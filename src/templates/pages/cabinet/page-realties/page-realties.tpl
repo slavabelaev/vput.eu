@@ -12,18 +12,8 @@
         <h1 class="page-realties__title text-center mb-4">Ваши объявления</h1>
         <div class="row">
             <div class="col-xl-3 d-none d-xl-block">
-                <aside class="cabinet-aside">
-                    <nav class="nav flex-column nav-pills">
-                        <a class="nav-link active" href="realties.html">Мои объявления</a>
-                        <a class="nav-link" href="bookings.html">Бронирования</a>
-                        <a class="nav-link" href="trips.html">Мои поездки <span class="badge badge-primary">5</span></a>
-                        <a class="nav-link" href="profile.html">Профиль</a>
-                        <a class="nav-link" href="transfers.html">Трансферы</a>
-                        <a class="nav-link" href="balance.html">Баланс</a>
-                        <a class="nav-link" href="partnership.html">Партнерская программа</a>
-                        <a class="nav-link" href="reviews.html">Отзывы</a>
-                        <a class="nav-link" href="referral-bookings.html">Бронирования рефералов</a>
-                    </nav>
+                <aside class="page-realties__aside">
+                    <%- include('../../../common.blocks/cabinet-navigation/cabinet-navigation.tpl'); %>
                 </aside>
             </div>
             <div class="col-xl-9">

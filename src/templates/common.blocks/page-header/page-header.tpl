@@ -1,7 +1,7 @@
 <% var lang = JSON.parse(include('page-header_lang_ru.json')); %>
 
 <!-- Common: page-header -->
-<header class="page-header">
+<header class="page-header" data-headroom>
     <nav class="navbar navbar-expand-md navbar-light container">
         <a class="page-header__logo mr-md-4"
            href="index.html"></a>

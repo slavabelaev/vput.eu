@@ -128,8 +128,8 @@ const config = {
                 'node_modules/slick-carousel/slick/slick.min.js',
                 // Drag and drop Uploader
                 'node_modules/filepond/dist/filepond.js',
-                // Sticky menu
-                'node_modules/sticky-kit/dist/sticky-kit.min.js'
+                // Sticky Sidebar
+                //'node_modules/sticky-sidebar/dist/sticky-sidebar.min.js'
             ],
             site: [paths.src + '/**/pages/site/**/*.ts'],
             cabinet: [paths.src + '/**/pages/cabinet/**/*.ts'],

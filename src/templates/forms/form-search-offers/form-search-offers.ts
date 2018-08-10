@@ -1,4 +1,8 @@
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
+    let blockElement = $('.form-search-offers');
+
+    if (blockElement.length == 0) return false;
+
     let changeCitiesTabsComponent = function() {
         let blockElement = $('.form-search-offers'),
             toggleElement = blockElement.find('[data-target=".form-search-offers__cities-tabs"]'),
@@ -20,12 +24,8 @@
         }
     };
 
-    document.addEventListener('DOMContentLoaded', changeCitiesTabsComponent);
+    changeCitiesTabsComponent();
     window.addEventListener('resize', changeCitiesTabsComponent);
-})();
-
-document.addEventListener('DOMContentLoaded', function() {
-    let blockElement = $('.form-search-offers');
 
     blockElement.find('.cities-tabs__link').on('click', function(e) {
         e.preventDefault();

@@ -6,6 +6,11 @@ jQuery(document).ready(function($) {
         }
     });
     $('[data-toggle=popover]').popover();
+    $('[data-plugin=int-tel-input]').intlTelInput({
+        initialCountry: 'bg',
+        preferredCountries: ['bg', 'ru'],
+        separateDialCode: true
+    });
 
     setTimeout(function() {
         $('.page-preloader').fadeOut(700);

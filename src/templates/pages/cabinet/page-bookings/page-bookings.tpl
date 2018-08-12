@@ -20,7 +20,7 @@
                 <ul class="row offer-item_has-rights_edit">
                     <li class="col-md-6 mb-4">
                         <div class="card">
-                            <h3 class="lead card-header bg-light">№2573 | 4424 Название не указано</h3>
+                            <h3 class="lead card-header">№2573 | 4424 Название не указано</h3>
                             <%- include('../../../common.blocks/offer-item-carousel/offer-item-carousel.tpl'); %>
                             <div class="card-body">
                                 <div class="alert alert-danger">Гость не оплатил счет в течение 48 часов</div>
@@ -68,7 +68,7 @@
                             <footer class="card-footer">
                                 <i class="icon icon__email mr-2"></i>Новых сообщений нет
                             </footer>
-                            <footer class="card-footer bg-light text-right">
+                            <footer class="card-footer text-right">
                                 <a href="#" class="btn btn-dark">В архив</a>
                                 <a href="#" class="btn btn-link">Подробнее</a>
                             </footer>
@@ -76,7 +76,7 @@
                     </li>
                     <li class="col-md-6 mb-4">
                         <div class="card">
-                            <h3 class="lead card-header bg-light">№2573 | 4424 Название не указано</h3>
+                            <h3 class="lead card-header">№2573 | 4424 Название не указано</h3>
                             <%- include('../../../common.blocks/offer-item-carousel/offer-item-carousel.tpl'); %>
                             <div class="card-body">
                                 <div class="alert alert-danger">Гость не оплатил счет в течение 48 часов</div>
@@ -124,7 +124,7 @@
                             <footer class="card-footer">
                                 <i class="icon icon__email mr-2"></i>Новых сообщений нет
                             </footer>
-                            <footer class="card-footer bg-light text-right">
+                            <footer class="card-footer text-right">
                                 <a href="#" class="btn btn-dark">В архив</a>
                                 <a href="#" class="btn btn-link">Подробнее</a>
                             </footer>

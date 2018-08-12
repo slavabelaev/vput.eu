@@ -2612,107 +2612,135 @@
                                 <div>Подтвержденные данные профиля вызывают доверие у ваших гостей!</div>
                             </figure>
 
-                            <fieldset class="form-renting__fieldset">
-                                <header class="mb-3">
-                                    <legend class="form-renting__legend">
-                                        <div class="d-flex align-items-center">ЗАПОЛНИТЕ ОДНИМ КЛИКОМ <span
-                                                    class="text-secondary ml-auto">1 секунда</span></div>
-                                    </legend>
-                                    <div>Выберите социальную сеть, в которой вы зарегестрированны</div>
-                                </header>
-
-                                <ul class="list-inline">
-                                    <li class="list-inline-item">
-                                        <a href=""
-                                           class="icon icon__facebook icon_size_48"></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href=""
-                                           class="icon icon__vk icon_size_48"></a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href=""
-                                           class="icon icon__ok icon_size_48"></a>
-                                    </li>
-                                </ul>
-                            </fieldset>
-
-                            <hr>
-
-                            <fieldset class="form-renting__fieldset">
-                                <legend class="form-renting__legend">
-                                    <div class="d-flex align-items-center">
-                                        ИЛИ <a href="#"
-                                               data-toggle="collapse"
-                                               data-target=".form-renting__profile-collapse"
-                                               class="btn btn-outline-primary btn-sm ml-3">ЗАПОЛНИТЕ ВРУЧНУЮ</a>
-                                        <span class="text-secondary ml-auto">1 минута</span>
-                                    </div>
-                                </legend>
-                                <div class="form-renting__profile-collapse collapse">
-                                    <ul class="form-renting__form-group-list row">
-                                        <li class="form-renting__form-group-list-item col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-renting__form-group-label">Имя <b class="text-danger">*</b></label>
-                                                <div class="input-group">
-                                                    <input type="text"
-                                                           placeholder="Иван"
-                                                           class="form-control">
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="form-renting__form-group-list-item col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-renting__form-group-label">Фамилия <b class="text-danger">*</b></label>
-                                                <div class="input-group">
-                                                    <input type="text"
-                                                           placeholder="Иванов"
-                                                           class="form-control">
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="form-renting__form-group-list-item col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-renting__form-group-label">Номер телефона *</label>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <div class="input-group-text">
-                                                            <i class="icon icon__phone"></i>
-                                                        </div>
-                                                    </div>
-                                                    <input type="tel"
-                                                           class="form-control">
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="form-renting__form-group-list-item col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-renting__form-group-label">Дата рождения</label>
-                                                <div class="input-group">
-                                                    <div class="input-group-prepend">
-                                                        <div class="input-group-text">
-                                                            <i class="icon icon__calendar"></i>
-                                                        </div>
-                                                    </div>
-                                                    <input type="date"
-                                                           class="form-control">
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="form-renting__form-group-list-item col-md-12">
-                                            <div class="form-group">
-                                                <label class="form-renting__form-group-label">Фотография профиля</label>
-                                                <input type="file"
-                                                       class="filepond"
-                                                       name="filepond"
-                                                       multiple
-                                                       data-max-file-size="5MB"
-                                                       data-max-files="1"/>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </fieldset>
+                            <div class="form-renting__form-change-personal-data">
+                                <!-- Form: form-change-personal-data -->
+<div class="form-change-personal-data card">
+    <h3 class="card-header lead font-weight-bold">Ваши личные данные</h3>
+    <figure class="card-body bg-success text-white d-lg-flex align-items-center">
+        <img src="templates/forms/form-change-personal-data/form-change-personal-data__profile.svg" alt="" class="mb-3 mb-lg-0 mr-lg-3">
+        <figcatpion class="mr-lg-3">
+            <h4 class="lead">Заполни свой профиль за 1 секунду, используя соцсеть</h4>
+            <p class="mb-lg-0">Система обновит фото и основные данные</p>
+        </figcatpion>
+        <ul class="form-change-personal-data__socials ml-auto">
+            <li class="form-change-personal-data__social-item mr-3">
+                <a href="https://www.facebook.com/v2.3/dialog/oauth?client_id=810113435771185&redirect_uri=https%3A%2F%2Fvput.ru%2Fauthorization%2FfacebookFastProfileFill%2F%3FreturnCabinet%3D1&state=6eafc8d70441d6dada1c897d31e36dbb&sdk=php-sdk-4.0.23&scope=public_profile%2Cuser_friends%2Cemail"
+                   class="icon icon__facebook icon_size_48"></a>
+            </li>
+            <li class="form-change-personal-data__social-item mr-3">
+                <a href="https://oauth.vk.com/authorize?client_id=5003692&scope=offline%2Cnotify%2Cemail&redirect_uri=https%3A%2F%2Fvput.ru%2Fauthorization%2FvkFastProfileFill%2F%3FreturnCabinet%3D1&response_type=code&v=5.5"
+                   class="icon icon__vk icon_size_48"></a>
+            </li>
+            <li class="form-change-personal-data__social-item">
+                <a href="http://www.odnoklassniki.ru/oauth/authorize?client_id=1146889984&scope=VALUABLE_ACCESS%3BGET_EMAIL&response_type=code&redirect_uri=https%3A%2F%2Fvput.ru%2Fauthorization%2FokFastProfileFill%2F%3FreturnCabinet%3D1"
+                   class="icon icon__ok icon_size_48"></a>
+            </li>
+        </ul>
+    </figure>
+    <form class="form-change-personal-data__content">
+        <div class="card-body">
+            <div class="form-row">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="form-group">
+                        <label for="form-change-personal-data__name">Имя</label>
+                        <input type="text"
+                               name="name"
+                               required
+                               class="form-control"
+                               id="form-change-personal-data__name"
+                               placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-change-personal-data__second-name">Фамилия</label>
+                        <input type="text"
+                               name="surname"
+                               required
+                               class="form-control"
+                               id="form-change-personal-data__second-name"
+                               placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-change-personal-data__about">О себе</label>
+                        <textarea name="aboutMe"
+                                  id="form-change-personal-data__about"
+                                  rows="5"
+                                  class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 offset-xl-1">
+                    <div class="form-group">
+                        <label for="form-change-personal-data__phone">Мобильный телефон</label>
+                        <input type="tel"
+                               name="phone"
+                               required
+                               class="form-control"
+                               id="form-change-personal-data__phone"
+                               data-plugin="int-tel-input">
+                        <div class="form-text">
+                            <small class="text-danger">Не подтвержден</small>
+                            <a href="#"
+                               class="nav-link_style_dashed text-success ml-4"
+                               data-toggle="collapse"
+                               data-target=".form-change-personal-data__confirm-number"><small>Подтвердить</small></a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-change-personal-data__additional-phone">Доп. мобильный телефон</label>
+                        <input type="tel"
+                               name="mobile"
+                               class="form-control"
+                               id="form-change-personal-data__additional-phone"
+                               data-plugin="int-tel-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-change-personal-data__email">E-mail</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="icon icon__email"></i></span>
+                            </div>
+                            <input type="text"
+                                   name="login"
+                                   required
+                                   class="form-control"
+                                   id="form-change-personal-data__email">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="card-footer text-right">
+            <button type="submit"
+                    class="btn btn-success">Сохранить изменения</button>
+        </footer>
+    </form>
+    <div class="form-change-personal-data__confirm-number collapse">
+        <form class="card-footer bg-light">
+            <header>
+                <h3 class="lead">Подтверждение номера телефона:</h3>
+                <p class="text-muted">На ваш номер телефона выслан код, введите его в поле, указанное ниже</p>
+            </header>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="icon icon__mobile"></i></span>
+                    </div>
+                    <input type="text"
+                           required
+                           class="form-change-personal-data__control-code form-control"
+                           placeholder="Код">
+                    <div class="input-group-append">
+                        <button class="btn btn-success"
+                                type="submit"
+                                id="button-addon2">Подтвердить</button>
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted mb-0">Ваши личные данные не подтверждены. Из-за этого ваш аккаунт не будет вызывать доверия у потенциальных клиентов. Пожалуйста, подтвердите ваш телефон и email.</p>
+        </form>
+    </div>
+</div>
+<!-- /Form: form-change-personal-data -->
+                            </div>
                         </div>
                     </div>
                 </section>

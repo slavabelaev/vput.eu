@@ -17,7 +17,7 @@
   }
 }
 .popular-cities__link {
-  border-bottom: 1px solid transparentize($light, .2);
+  border-bottom: 1px dashed;
   cursor: pointer;
   color: transparentize($light, .2);
   transition: $transition-base;

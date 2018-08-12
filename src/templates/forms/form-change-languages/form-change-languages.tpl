@@ -27,15 +27,26 @@
     <footer class="card-footer text-center border-top-0">
         <div class="input-group mb-0">
             <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">
+                <label class="input-group-text"
+                       for="form-change-languages__language">
                     <i class="icon icon__language"></i>
                 </label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>English</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+            <select required
+                    class="custom-select"
+                    id="form-change-languages__language">
+                <option value="0">Выбрать язык</option>
+                <option value="12">беларуская (be)</option>
+                <option value="17">български (bg)</option>
+                <option value="32">english (en)</option>
+                <option value="37">français, langue française (fr)</option>
+                <option value="40">deutsch (de)</option>
+                <option value="53">italiano (it)</option>
+                <option value="89">język polski, polszczyzna (pl)</option>
+                <option value="133">română (ro)</option>
+                <option value="93">русский (ru)</option>
+                <option value="105">español (es)</option>
+                <option value="122">українська (ua)</option>
             </select>
         </div>
     </footer>

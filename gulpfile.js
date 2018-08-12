@@ -130,6 +130,8 @@ const config = {
                 'node_modules/filepond/dist/filepond.js',
                 // Sticky Sidebar
                 //'node_modules/sticky-sidebar/dist/sticky-sidebar.min.js'
+                // Int-tel-input - https://github.com/jackocnr/intl-tel-input
+                'node_modules/intl-tel-input/build/js/intlTelInput.min.js'
             ],
             site: [paths.src + '/**/pages/site/**/*.ts'],
             cabinet: [paths.src + '/**/pages/cabinet/**/*.ts'],

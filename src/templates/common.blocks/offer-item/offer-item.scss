@@ -147,8 +147,8 @@
   margin-right: 0;
 }
 
-.offer-item__editor-header {
-  position: absolute;
+.offer-item__editor {
+  //position: absolute;
   left: 0;
   top: 0;
   right: 0;
@@ -157,30 +157,31 @@
 }
 
 .offer-item_has-rights_edit {
-  .offer-item__editor-header {
+  .offer-item__editor {
     display: block;
   }
   .offer-item__toggle-favorites {
     display: none;
   }
 }
-
-.offer-item__actions {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: 6px;
-}
-.offer-item__statuses {
-  position: absolute;
-  right: -12px;
-  top: -12px;
+.offer-item__action {
+  padding: $btn-padding-y-sm $btn-padding-x-sm;
 }
 .offer-item__status {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: 12px;
+  padding: $badge-padding-y $badge-padding-x;
+  border-radius: $badge-border-radius;
+  color: $white;
+  font-size: $font-size-sm;
+}
+.offer-item__status_state_success {
+  background-color: $success;
+}
+.offer-item__status_state_warning {
+  background-color: $warning;
+}
+.offer-item__status_state_danger {
+  background-color: $danger;
 }

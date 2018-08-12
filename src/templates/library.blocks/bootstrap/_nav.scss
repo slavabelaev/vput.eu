@@ -25,6 +25,14 @@
   }
 }
 
+.nav-link_style_dashed {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 //
 // Tabs
 //

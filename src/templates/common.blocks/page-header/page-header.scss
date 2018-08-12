@@ -19,6 +19,10 @@
   background-repeat: no-repeat;
   background-position: left;
   background-image: url(#{$rootDir}/templates/common.blocks/page-header/page-header__VPUT-logo_style_light.svg);
+  transition: $transition-base;
+  &:hover {
+    opacity: .7;
+  }
 }
 .page-header__dropdown-item-logout {
   border-bottom: 3px solid $primary;

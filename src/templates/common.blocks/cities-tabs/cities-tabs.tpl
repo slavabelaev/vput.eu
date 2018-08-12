@@ -16,7 +16,7 @@
         </li>
         <% } %>
     </ul>
-    <div class="cities-tabs__content tab-content">
+    <div class="cities-tabs__content tab-content bg-white">
         <% for(var i = 0;i < data.tabs.length;i++) { %>
         <div class="cities-tabs__tab-<%= i %> tab-pane fade <%= data.tabs[i].is_active ? 'active show' : '' %>"
              role="tabpanel">
@@ -27,7 +27,7 @@
                    data-name="<%= data.tabs[i].cities[j].name %>"
                    class="cities-tabs__link">
                     <%= data.tabs[i].cities[j].name %>
-                    <span class="cities-tabs__count-offers badge badge-info"><%= data.tabs[i].cities[j].count_offers %></span>
+                    <span class="cities-tabs__count-offers badge badge-primary"><%= data.tabs[i].cities[j].count_offers %></span>
                 </a>
                 <% } %>
             </nav>

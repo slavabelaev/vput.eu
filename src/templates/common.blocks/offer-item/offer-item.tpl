@@ -84,7 +84,7 @@
             <div class="offer-item__status offer-item__status_state_danger d-none">Заблокированно</div>
             <div class="offer-item__status offer-item__status_state_warning d-none">На модерации</div>
             <!-- /! -->
-            <div class="offer-item__status offer-item__status_state_success">Опубликовано</div>
+            <div class="offer-item__status offer-item__status_state_success">Публикуется</div>
         </div>
     </footer>
     <!-- /If the item belongs to the owner -->

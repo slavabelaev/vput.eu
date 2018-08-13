@@ -35,7 +35,7 @@
                             </figure>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Валюта:</h3>
+                            
                             <div class="">EUR</div>
                         </td>
                         <td class="text-center align-middle">

@@ -26,7 +26,6 @@
                     <tbody>
                     <tr>
                         <td>
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Система:</h3>
                             <figure class="figure d-flex align-items-center">
                                 <img src="content/articles/article-withdraw/article-withdraw__bank.svg"
                                      alt="Банк"
@@ -35,11 +34,9 @@
                             </figure>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Валюта:</h3>
                             <div class="">EUR</div>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Комиссия:</h3>
                             <b class="text-secondary">€26</b>
                         </td>
                         <td>Комиссия не зависит от суммы перевода. Ваш банк может взять дополнительную комиссию за
@@ -72,7 +69,6 @@
                     <tbody>
                     <tr>
                         <td>
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Система:</h3>
                             <figure class="figure d-flex align-items-center mb-0">
                                 <img src="content/articles/article-withdraw/article-withdraw__card.svg"
                                      alt="Платежная карта"
@@ -83,18 +79,15 @@
                             </figure>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Валюта:</h3>
                             <div class="">RUB</div>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Коммисия:</h3>
                             <b class="text-secondary">2.5%</b>
                         </td>
                         <td>Банк не берет комиссию за входящую транзакцию</td>
                     </tr>
                     <tr>
                         <td>
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Система:</h3>
                             <figure class="figure d-flex align-items-center mb-0">
                                 <img src="content/articles/article-withdraw/article-withdraw__payment-system-contact.svg"
                                      alt="Платежная карта"
@@ -108,17 +101,13 @@
                             </figure>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Валюта:</h3>
                             <div class="">RUB</div>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Коммисия:</h3>
                             <b class="text-secondary">2.5%</b>
                         </td>
                         <td>Для получения средств необходимо предъявить паспорт и номер, который мы вам отправим в одном
-                            из
-                            отделений Contact
-                        </td>
+                            из отделений Contact</td>
                     </tr>
                     </tbody>
                 </table>
@@ -146,7 +135,6 @@
                     <tbody>
                     <tr>
                         <td>
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Система:</h3>
                             <figure class="figure d-flex align-items-center mb-0">
                                 <img src="content/articles/article-withdraw/article-withdraw__bank.svg"
                                      alt="Банк"
@@ -155,11 +143,9 @@
                             </figure>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Валюта:</h3>
                             <div class="">BGN</div>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Комиссия:</h3>
                             <b class="text-secondary">2BGN</b>
                         </td>
                         <td>Банк не берет комиссию за входящую транзакцию. Независимо от суммы перевода.</td>
@@ -179,11 +165,9 @@
                             </figure>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Валюта:</h3>
                             <div class="">EUR</div>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Комиссия:</h3>
                             <b class="text-secondary">Без комиссии</b
                         </td>
                         <td>
@@ -193,7 +177,6 @@
                     </tr>
                     <tr>
                         <td>
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Система:</h3>
                             <figure class="figure d-flex align-items-center mb-0">
                                 <img src="content/articles/article-withdraw/article-withdraw__bank-SDK.svg"
                                      alt="Банковский счет DSK"
@@ -202,11 +185,9 @@
                             </figure>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Валюта:</h3>
                             <div class="">EUR</div>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Комиссия:</h3>
                             <b class="text-secondary">€3</b>
                         </td>
                         <td rowspan="2">Независимо от суммы перевода.</td>
@@ -237,7 +218,6 @@
                     <tbody>
                     <tr>
                         <td>
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Система:</h3>
                             <figure class="figure d-flex align-items-center mb-0">
                                 <img src="content/articles/article-withdraw/article-withdraw__inteliexpress.svg"
                                      alt="Inteliexpress"
@@ -249,11 +229,9 @@
                             </figure>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Валюта:</h3>
                             <div class="">EUR</div>
                         </td>
                         <td class="text-center align-middle">
-                            <h3 class="d-md-none text-center border-bottom mb-3 pb-3">Комиссия:</h3>
                             <b class="text-secondary">2.5%</b>
                         </td>
                         <td>Для получения средств необходимо предъявить паспорт и номер, который мы вам отправим, в

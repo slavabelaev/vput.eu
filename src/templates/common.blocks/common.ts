@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
             hide: 120
         }
     });
+
     $('[data-toggle=popover]').popover();
     $('[data-plugin=int-tel-input]').intlTelInput({
         initialCountry: 'bg',

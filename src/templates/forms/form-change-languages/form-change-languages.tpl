@@ -1,6 +1,6 @@
 <!-- Form: form-change-languages -->
 <form class="form-change-languages card">
-    <h3 class="card-header lead font-weight-bold">Ваши языки</h3>
+    <h3 class="card-header">Ваши языки</h3>
     <div class="card-body">
         <p class="card-text text-muted">Выберите языки, которыми вы владеете, из предложенного списка. Также у вас есть возможность указать свой основной язык.</p>
     </div>

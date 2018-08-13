@@ -4,7 +4,7 @@
 <form class="form-car-rental card bg-light"
       method="post"
       action="/feedback/rentCarSend/">
-    <legend class="card-header bg-light text-center"><%= lang.title %></legend>
+    <legend class="card-header text-center"><%= lang.title %></legend>
     <div class="card-body">
         <ul class="row">
             <li class="col-lg-4 col-md-6">
@@ -28,8 +28,8 @@
                     <label for="form-car-rental__date-start"><%= lang.start_date_of_lease %></label>
                     <input type="date"
                            name="dateStart"
-                           id="form-car-rental__date-start"
                            required
+                           id="form-car-rental__date-start"
                            class="form-control">
                 </div>
             </li>
@@ -38,8 +38,8 @@
                     <label for="form-car-rental__date-end"><%= lang.end_date_of_lease %></label>
                     <input type="date"
                            name="dateEnd"
-                           id="form-car-rental__date-end"
                            required
+                           id="form-car-rental__date-end"
                            class="form-control">
                 </div>
             </li>
@@ -48,9 +48,9 @@
                     <label for="form-car-rental__name"><%= lang.first_name %></label>
                     <input type="text"
                            name="name"
-                           id="form-car-rental__name"
                            required
                            placeholder="Ivan"
+                           id="form-car-rental__name"
                            class="form-control">
                 </div>
             </li>
@@ -59,8 +59,8 @@
                     <label for="form-car-rental__family"><%= lang.second_name %></label>
                     <input type="text"
                            name="family"
-                           id="form-car-rental__family"
                            required
+                           id="form-car-rental__family"
                            placeholder="Ivanov"
                            class="form-control">
                 </div>
@@ -71,8 +71,8 @@
                     <label for="form-car-rental__email"><%= lang.email %></label>
                     <input type="email"
                            name="email"
-                           id="form-car-rental__email"
                            required
+                           id="form-car-rental__email"
                            placeholder="vash_email@email.com"
                            class="form-control">
                 </div>
@@ -82,9 +82,10 @@
                     <label for="form-car-rental__phone"><%= lang.phone %></label>
                     <input type="tel"
                            name="phone"
-                           id="form-car-rental__phone"
                            required
-                           class="form-control">
+                           id="form-car-rental__phone"
+                           class="form-control"
+                           data-plugin="int-tel-input">
                 </div>
             </li>
             <li class="col-lg-4 col-md-6"></li>

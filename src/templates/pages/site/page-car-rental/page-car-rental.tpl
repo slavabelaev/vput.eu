@@ -34,7 +34,7 @@
             <ul class="row">
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">OPEL MERIVA</h2>
+                        <h2 class="card-header text-center">OPEL MERIVA</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__OPEL-MERIVA.png);"></figure>
                         <figcaption>
@@ -72,7 +72,7 @@
                 </li>
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">RENAULT MEGANE COUPE
+                        <h2 class="card-header text-center">RENAULT MEGANE COUPE
                             CABRIOLET</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__RENAULT-MEGANE-COUPE-CABRIOLET.png);"></figure>
@@ -111,7 +111,7 @@
                 </li>
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">PEUGEOT 307</h2>
+                        <h2 class="card-header text-center">PEUGEOT 307</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__PEUGEOT-307.png);"></figure>
                         <figcaption>
@@ -149,7 +149,7 @@
                 </li>
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">FORD FOCUS C-MAX</h2>
+                        <h2 class="card-header text-center">FORD FOCUS C-MAX</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__FORD-FOCUS-C-MAX.png);"></figure>
                         <figcaption>
@@ -187,7 +187,7 @@
                 </li>
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">VOLKSWAGEN PASSAT</h2>
+                        <h2 class="card-header text-center">VOLKSWAGEN PASSAT</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__VOLKSWAGEN-PASSAT.png);"></figure>
                         <figcaption>
@@ -225,7 +225,7 @@
                 </li>
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">RENAULT MEGANE SCENIC</h2>
+                        <h2 class="card-header text-center">RENAULT MEGANE SCENIC</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__RENAULT-MEGANE-SCENIC.png);"></figure>
                         <figcaption>

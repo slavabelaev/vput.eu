@@ -1,6 +1,6 @@
 <!-- Form: form-service-settings -->
 <form class="form-service-settings card">
-    <h3 class="card-header lead font-weight-bold">Настройки сервиса</h3>
+    <h3 class="card-header">Настройки сервиса</h3>
     <div class="card-body">
         <div class="form-group">
             <label for="inputState">Ваш язык по умолчанию</label>

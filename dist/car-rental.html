@@ -409,7 +409,7 @@
             <ul class="row">
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">OPEL MERIVA</h2>
+                        <h2 class="card-header text-center">OPEL MERIVA</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__OPEL-MERIVA.png);"></figure>
                         <figcaption>
@@ -447,7 +447,7 @@
                 </li>
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">RENAULT MEGANE COUPE
+                        <h2 class="card-header text-center">RENAULT MEGANE COUPE
                             CABRIOLET</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__RENAULT-MEGANE-COUPE-CABRIOLET.png);"></figure>
@@ -486,7 +486,7 @@
                 </li>
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">PEUGEOT 307</h2>
+                        <h2 class="card-header text-center">PEUGEOT 307</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__PEUGEOT-307.png);"></figure>
                         <figcaption>
@@ -524,7 +524,7 @@
                 </li>
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">FORD FOCUS C-MAX</h2>
+                        <h2 class="card-header text-center">FORD FOCUS C-MAX</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__FORD-FOCUS-C-MAX.png);"></figure>
                         <figcaption>
@@ -562,7 +562,7 @@
                 </li>
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">VOLKSWAGEN PASSAT</h2>
+                        <h2 class="card-header text-center">VOLKSWAGEN PASSAT</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__VOLKSWAGEN-PASSAT.png);"></figure>
                         <figcaption>
@@ -600,7 +600,7 @@
                 </li>
                 <li class="col-xl-4 col-md-6">
                     <figure class="card page-car-rental__car-card">
-                        <h2 class="card-header bg-light lead font-weight-bold text-center">RENAULT MEGANE SCENIC</h2>
+                        <h2 class="card-header text-center">RENAULT MEGANE SCENIC</h2>
                         <figure class="card-img-top block-image"
                                 style="background-image: url(templates/pages/site/page-car-rental/page-car-rental__RENAULT-MEGANE-SCENIC.png);"></figure>
                         <figcaption>
@@ -695,7 +695,7 @@
 <form class="form-car-rental card bg-light"
       method="post"
       action="/feedback/rentCarSend/">
-    <legend class="card-header bg-light text-center">ЗАКАЗАТЬ АРЕНДУ АВТОМОБИЛЯ</legend>
+    <legend class="card-header text-center">ЗАКАЗАТЬ АРЕНДУ АВТОМОБИЛЯ</legend>
     <div class="card-body">
         <ul class="row">
             <li class="col-lg-4 col-md-6">
@@ -729,8 +729,8 @@
                     <label for="form-car-rental__date-start">Дата начала аренды</label>
                     <input type="date"
                            name="dateStart"
-                           id="form-car-rental__date-start"
                            required
+                           id="form-car-rental__date-start"
                            class="form-control">
                 </div>
             </li>
@@ -739,8 +739,8 @@
                     <label for="form-car-rental__date-end">Дата конца аренды</label>
                     <input type="date"
                            name="dateEnd"
-                           id="form-car-rental__date-end"
                            required
+                           id="form-car-rental__date-end"
                            class="form-control">
                 </div>
             </li>
@@ -749,9 +749,9 @@
                     <label for="form-car-rental__name">Имя</label>
                     <input type="text"
                            name="name"
-                           id="form-car-rental__name"
                            required
                            placeholder="Ivan"
+                           id="form-car-rental__name"
                            class="form-control">
                 </div>
             </li>
@@ -760,8 +760,8 @@
                     <label for="form-car-rental__family">Фамилия</label>
                     <input type="text"
                            name="family"
-                           id="form-car-rental__family"
                            required
+                           id="form-car-rental__family"
                            placeholder="Ivanov"
                            class="form-control">
                 </div>
@@ -772,8 +772,8 @@
                     <label for="form-car-rental__email">E-mail</label>
                     <input type="email"
                            name="email"
-                           id="form-car-rental__email"
                            required
+                           id="form-car-rental__email"
                            placeholder="vash_email@email.com"
                            class="form-control">
                 </div>
@@ -783,9 +783,10 @@
                     <label for="form-car-rental__phone">Телефон</label>
                     <input type="tel"
                            name="phone"
-                           id="form-car-rental__phone"
                            required
-                           class="form-control">
+                           id="form-car-rental__phone"
+                           class="form-control"
+                           data-plugin="int-tel-input">
                 </div>
             </li>
             <li class="col-lg-4 col-md-6"></li>

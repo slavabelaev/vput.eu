@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <section class="card h-100">
-                        <h3 class="lead card-header bg-light text-black-50">Мы поможем</h3>
+                        <h3 class="card-header">Мы поможем</h3>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex align-items-center d-flex"><i
                                         class="icon icon__check mr-3"></i>Провести профессиональную фотосъёмку помещений и территории</li>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-md-6 mb-4">
                     <section class="card h-100">
-                        <h3 class="lead card-header bg-light text-black-50">Вы сможете</h3>
+                        <h3 class="card-header">Вы сможете</h3>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex align-items-center"><i class="icon icon__check mr-3"></i>Полностью контролировать свои бронирования</li>
                             <li class="list-group-item d-flex align-items-center"><i class="icon icon__check mr-3"></i>Получить оговоренную сумму за сданные в аренду дни</li>
@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <section class="card h-100">
-                        <h3 class="lead card-header bg-light text-black-50">Условия сотрудничества:</h3>
+                        <h3 class="card-header">Условия сотрудничества:</h3>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex align-items-center d-flex"><i
                                         class="icon icon__check mr-3"></i>Предоставьте два набора ключей от сдаваемого объекта</li>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="col-md-6 mb-4">
                     <section class="card h-100">
-                        <h3 class="lead card-header bg-light text-black-50">Свяжитесь с нами:</h3>
+                        <h3 class="card-header">Свяжитесь с нами:</h3>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex align-items-center">
                                 <i class="icon icon__email mr-3"></i>

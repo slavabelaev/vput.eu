@@ -1,7 +1,7 @@
 <!-- Form: form-change-personal-data -->
 <div class="form-change-personal-data card">
-    <h3 class="card-header lead font-weight-bold">Ваши личные данные</h3>
-    <figure class="card-body bg-success text-white d-lg-flex align-items-center">
+    <h3 class="card-header">Ваши личные данные</h3>
+    <figure class="card-body alert-success d-lg-flex align-items-center">
         <img src="templates/forms/form-change-personal-data/form-change-personal-data__profile.svg" alt="" class="mb-3 mb-lg-0 mr-lg-3">
         <figcatpion class="mr-lg-3">
             <h4 class="lead">Заполни свой профиль за 1 секунду, используя соцсеть</h4>

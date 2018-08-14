@@ -1,7 +1,7 @@
 <!-- Form: form-change-personal-data -->
 <div class="form-change-personal-data card">
     <h3 class="card-header">Ваши личные данные</h3>
-    <figure class="card-body alert-success d-lg-flex align-items-center">
+    <figure class="card-body alert-success d-lg-flex align-items-center text-center text-md-left">
         <img src="templates/forms/form-change-personal-data/form-change-personal-data__profile.svg"
              alt=""
              class="mb-3 mb-lg-0 mr-lg-3">

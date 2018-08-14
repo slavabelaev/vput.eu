@@ -14,7 +14,7 @@
     </div>
     <div class="container">
         <ul class="page-footer__list-of-navs row">
-            <li class="col-sm-6 col-md-3 mb-4">
+            <li class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h3 class="page-footer__title"><%= lang.who_we_are %></h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -27,7 +27,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="col-sm-6 col-md-3 mb-4">
+            <li class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h3 class="page-footer__title"><%= lang.how_it_works %></h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -44,7 +44,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="col-sm-6 col-md-3 mb-4">
+            <li class="col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h3 class="page-footer__title"><%= lang.contact_us %></h3>
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -53,9 +53,9 @@
                     </li>
                 </ul>
             </li>
-            <li class="col-sm-6 col-md-3 mb-4">
+            <li class="col-lg-3 mb-4 mt-4 mt-lg-0 text-center text-lg-left">
                 <h3 class="page-footer__title"><%= lang.follow_us %></h3>
-                <ul class="page-footer__social-list">
+                <ul class="page-footer__social-list m-auto m-lg-0">
                     <li class="page-footer__social-item">
                         <a target="_blank"
                            href="http://ok.ru/group/53570038661351/"

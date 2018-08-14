@@ -72,7 +72,6 @@
                     <tbody>
                     <tr>
                         <td>
-                            
                             <figure class="figure d-flex align-items-center mb-0">
                                 <img src="content/articles/article-withdraw/article-withdraw__card.svg"
                                      alt="Платежная карта"
@@ -86,7 +85,6 @@
                             <div class="">RUB</div>
                         </td>
                         <td class="text-center align-middle">
-                            
                             <b class="text-secondary">2.5%</b>
                         </td>
                         <td>Банк не берет комиссию за входящую транзакцию</td>

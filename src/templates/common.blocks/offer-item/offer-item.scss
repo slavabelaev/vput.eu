@@ -15,7 +15,7 @@
   z-index: 1;
   outline: none;
   cursor: pointer;
-  filter: drop-shadow(rgba(0,0,0,.24) 0 0 1px)
+  filter: drop-shadow(rgba(0,0,0,.24) 0 0 1px);
   transition: $transition-base;
   &:hover {
     opacity: .72;

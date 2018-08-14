@@ -24,6 +24,19 @@
     opacity: .7;
   }
 }
+.page-header__cabinet-menu {
+  .dropdown-item {
+    position: relative;
+  }
+  .badge {
+    position: absolute;
+    right: $dropdown-item-padding-x;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1.125rem;
+  }
+}
 .page-header__dropdown-item-logout {
   border-bottom: 3px solid $primary;
   border-radius: 0 0 $border-radius $border-radius;

@@ -4,18 +4,18 @@
        href="realties.html">
         <i class="icon icon__pencil icon_style_light mr-2"></i>
         Мои объявления
-        <span class="badge badge-info">99</span>
+        <span class="badge badge-dark">99</span>
     </a>
     <a class="nav-link"
        href="bookings.html">
         <i class="icon icon__book icon_style_primary mr-2"></i>
         Бронирования
-        <span class="badge badge-info">99</span>
+        <span class="badge badge-dark">99</span>
     </a>
     <a class="nav-link"
        href="trips.html">
         <i class="icon icon__suitcase icon_style_primary mr-2"></i>
-        Мои поездки <span class="badge badge-info">99</span>
+        Мои поездки <span class="badge badge-dark">99</span>
     </a>
     <a class="nav-link"
        href="profile.html">
@@ -25,7 +25,7 @@
     <a class="nav-link"
        href="transfers.html">
         <i class="icon icon__car icon_style_primary mr-2"></i>Трансферы
-        <span class="badge badge-info">99</span>
+        <span class="badge badge-dark">99</span>
     </a>
     <a class="nav-link"
        href="balance.html">
@@ -41,7 +41,7 @@
        href="reviews.html">
         <i class="icon icon__review  icon_style_primary mr-2"></i>
         Отзывы
-        <span class="badge badge-info">5</span>
+        <span class="badge badge-dark">5</span>
     </a>
     <a class="nav-link"
        href="referral-bookings.html">

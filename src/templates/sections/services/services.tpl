@@ -9,7 +9,7 @@
                 <figure class="services__img services__img_is_luggage figure-img col"
                         style="background-image: url(templates/sections/services/services__luggage.png)"></figure>
                 <figcaption class="figure-caption col-auto">
-                    <h3 class="services__figure-title"><%= lang.from_burgas_airport_to %></h3>
+                    <h3 class="services__figure-title text-dark font-weight-bold"><%= lang.from_burgas_airport_to %></h3>
                     <table class="services__table mb-4">
                         <tbody class="services__table-tbody">
                         <tr class="services__table-tr">
@@ -31,7 +31,7 @@
             <h2 class="services__title mb-4"><%= lang.car_rental %></h2>
             <figure class="figure row text-left pl-xl-5">
                 <figcaption class="figure-caption col-auto">
-                    <h3 class="services__figure-title"><%= lang.best_prices_at_seaside %></h3>
+                    <h3 class="services__figure-title text-dark font-weight-bold"><%= lang.best_prices_at_seaside %></h3>
                     <table class="services__table mb-4">
                         <tbody class="services__table-tbody">
                         <tr class="services__table-tr">

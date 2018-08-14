@@ -17,14 +17,6 @@
 }
 .services__figure-title {
   font-size: 1.25rem;
-  font-weight: 600;
-  color: $dark;
-}
-.services__title-link {
-  color: $dark;
-  @include hover-focus {
-    color: $dark;
-  }
 }
 .services__price {
   color: $secondary;

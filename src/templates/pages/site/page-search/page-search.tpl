@@ -16,7 +16,7 @@
                 </div>
                 <div class="page-search__list-of-offers py-4">
                     <!-- List of offers -->
-                    <ul class="list-of-offers row">
+                    <ul class="list-of-offers row" data-slick-adaptive>
                         <% for(var i = 0; i < 8; i++) { %>
                         <li class="col-sm-6 col-xl-4 mb-3">
                             <%- include('../../../common.blocks/offer-item/offer-item.tpl'); %>

@@ -56,3 +56,12 @@ ul {
     background-color: $gray-700;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  [data-slick-adaptive] {
+    .slick-slide {
+      padding-left: ($grid-gutter-width / 4);
+      padding-right: ($grid-gutter-width / 4);
+    }
+  }
+}

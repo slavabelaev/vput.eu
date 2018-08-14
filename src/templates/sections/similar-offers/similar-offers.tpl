@@ -5,7 +5,7 @@
     <h2 class="similar-offers__title mb-4 text-center"><%= lang.title %></h2>
     <div class="similar-offers__list-of-offers">
         <!-- list-of-offers -->
-        <ul class="list-of-offers row">
+        <ul class="list-of-offers row" data-slick-adaptive>
             <% for(var i = 0; i < 8; i++) { %>
             <li class="col-md-6 col-lg-4 col-xl-3 mb-3">
                 <%- include('../../common.blocks/offer-item/offer-item.tpl'); %>

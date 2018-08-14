@@ -3,7 +3,7 @@
 <!-- Section: offer-prices-for-the-period -->
 <section class="offer-prices-for-the-period">
     <h2 class="offer-prices-for-the-period__title mb-3"><%= lang.title %></h2>
-    <table class="table table-bordered text-center">
+    <table class="table table-bordered table-adaptive text-center">
         <thead>
         <tr>
             <th scope="col"><%= lang.period %></th>

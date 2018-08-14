@@ -10,7 +10,7 @@
 <script src="assets/pages/page-commission.js" defer></script>
 
 <main class="page-commission">
-    <%- include('../../../../content/articles/article-contacts/article-contacts_lang_ru.tpl'); %>
+    <%- include('../../../../content/articles/article-commission/article-commission_lang_ru.tpl'); %>
 </main>
 <!-- /Page: page-commission -->
 

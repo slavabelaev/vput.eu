@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="lead">
-                    <%= lang.description %>
+                    <%- lang.description %>
                 </div>
             </div>
             <div class="col-lg-6">

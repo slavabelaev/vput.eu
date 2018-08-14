@@ -90,11 +90,11 @@
                 </table>
             </div>
 
-            <figure class="alert alert-info d-flex align-items-center">
+            <figure class="alert alert-info d-md-flex align-items-center text-center text-md-left">
                 <img src="content/articles/article-contacts/article-contacts__clock.svg"
                      alt="Время"
-                     class="mr-4">
-                <figcaption class="lead">We try to respond as soon as possible, but in some cases it may take up to 24 hours.</figcaption>
+                     class="mb-3 mb-md-0 m-md-0 mr-md-44">
+                <figcaption class="lead text-left">We try to respond as soon as possible, but in some cases it may take up to 24 hours.</figcaption>
             </figure>
         </div>
     </section>
@@ -102,7 +102,7 @@
         <div class="container">
             <h2 class="mb-4">Details of LLC «VPUT»</h2>
             <div class="table-responsive">
-                <table class="table table-bordered table-striped mb-0">
+                <table class="table table-bordered table-striped table-adaptive mb-0">
                     <caption><span class="text-danger">*</span> Unique Identification Code</caption>
                     <tbody>
                     <tr>

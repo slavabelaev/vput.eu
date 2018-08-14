@@ -76,23 +76,23 @@
                     <div class="page-header__dropdown-menu dropdown-menu dropdown-menu-lg"
                          aria-labelledby="cabinetMenuDropdown">
                         <a class="dropdown-item"
-                           href="realties.html"><%= lang.cabinet.realties %></a>
+                           href="realties.html"><i class="icon icon__pencil mr-2"></i><%= lang.cabinet.realties %></a>
                         <a class="dropdown-item"
-                           href="bookings.html"><%= lang.cabinet.bookings %></a>
+                           href="bookings.html"><i class="icon icon__book mr-2"></i><%= lang.cabinet.bookings %></a>
                         <a class="dropdown-item"
-                           href="trips.html"><%= lang.cabinet.trips %> <span class="badge badge-primary">5</span></a>
+                           href="trips.html"><i class="icon icon__suitcase mr-2"></i><%= lang.cabinet.trips %> <span class="badge badge-primary">5</span></a>
                         <a class="dropdown-item"
-                           href="profile.html"><%= lang.cabinet.profile %></a>
+                           href="profile.html"><i class="icon icon__profile mr-2"></i><%= lang.cabinet.profile %></a>
                         <a class="dropdown-item"
-                           href="transfers.html"><%= lang.cabinet.transfers %></a>
+                           href="transfers.html"><i class="icon icon__car mr-2"></i><%= lang.cabinet.transfers %></a>
                         <a class="dropdown-item"
-                           href="balance.html"><%= lang.cabinet.balance %></a>
+                           href="balance.html"><i class="icon icon__bank mr-2"></i><%= lang.cabinet.balance %></a>
                         <a class="dropdown-item"
-                           href="partnership.html"><%= lang.cabinet.partnership %></a>
+                           href="partnership.html"><i class="icon icon__megaphone mr-2"></i><%= lang.cabinet.partnership %></a>
                         <a class="dropdown-item"
-                           href="reviews.html"><%= lang.cabinet.reviews %></a>
+                           href="reviews.html"><i class="icon icon__review mr-2"></i><%= lang.cabinet.reviews %></a>
                         <a class="dropdown-item"
-                           href="referral-bookings.html"><%= lang.cabinet.referral_bookings %></a>
+                           href="referral-bookings.html"><i class="icon icon__group mr-2"></i><%= lang.cabinet.referral_bookings %></a>
                         <a class="dropdown-item page-header__dropdown-item-logout"
                            href="logout.html"><%= lang.cabinet.logout %></a>
                     </div>

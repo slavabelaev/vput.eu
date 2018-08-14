@@ -1,5 +1,5 @@
 <!-- Form: form-service-settings -->
-<form class="form-service-settings card">
+<form class="form-service-settings card bg-light">
     <h3 class="card-header">Настройки сервиса</h3>
     <div class="card-body">
         <div class="form-group">
@@ -42,7 +42,7 @@
     </div>
     <footer class="card-footer text-right">
         <button type="submit"
-                class="btn btn-success">Сохранить изменения</button>
+                class="btn btn-primary">Сохранить изменения</button>
     </footer>
 </form>
 <!-- /Form: form-service-settings -->

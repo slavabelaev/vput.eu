@@ -4,10 +4,36 @@
 <%- include('../../../common.blocks/page-header/page-header.tpl'); %>
 
 <!-- Page: page-transfers -->
-<link rel="stylesheet" href="assets/pages/cabinet/page-transfers.css">
-<script src="assets/pages/cabinet/page-transfers.js" defer></script>
+<link rel="stylesheet" href="assets/pages/site/page-transfers.css">
+<script src="assets/pages/site/page-transfers.js" defer></script>
 
 <main class="page-transfers">
+    <div class="container py-4">
+        <h1 class="page-transfers__title text-center mb-4">Трансферы</h1>
+        <div class="row">
+            <div class="col-xl-3 d-none d-xl-block">
+                <aside class="page-transfers__aside">
+                    <%- include('../../../common.blocks/cabinet-navigation/cabinet-navigation.tpl'); %>
+                </aside>
+            </div>
+            <div class="col-xl-9">
+                <ul class="row">
+                    <li class="col-12 mb-4">
+                        <%- include('../../../common.blocks/transfer-item/transfer-item.tpl'); %>
+                    </li>
+                    <li class="col-12 mb-4">
+                        <%- include('../../../common.blocks/transfer-item/transfer-item.tpl'); %>
+                    </li>
+                    <li class="col-12 mb-4">
+                        <%- include('../../../common.blocks/transfer-item/transfer-item.tpl'); %>
+                    </li>
+                    <li class="col-12 mb-4">
+                        <%- include('../../../common.blocks/transfer-item/transfer-item.tpl'); %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </main>
 <!-- /Page: page-transfers -->
 

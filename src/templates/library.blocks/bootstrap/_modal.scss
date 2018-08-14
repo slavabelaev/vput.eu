@@ -55,7 +55,7 @@
     // auto on the left force icon to the right even when there is no .modal-title
     margin: (-$modal-header-padding) (-$modal-header-padding) (-$modal-header-padding) auto;
     position: absolute;
-    right: -40px;
+    right: -64px;
     top: 0;
   }
 }
@@ -105,7 +105,6 @@
   align-items: flex-start; // so the close btn always stays on the upper right corner
   justify-content: center; // Put modal header elements (title and dismiss) on opposite ends
   padding: $modal-header-padding;
-  padding-bottom: 0;
   border-bottom: $modal-header-border-width solid $modal-header-border-color;
   @include border-top-radius($modal-content-border-radius);
 }

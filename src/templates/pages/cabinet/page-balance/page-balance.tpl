@@ -3,6 +3,10 @@
 <%- include('../../../common.blocks/meta-header/meta-header.tpl'); %>
 <%- include('../../../common.blocks/page-header/page-header.tpl'); %>
 
+<!-- DataTable — https://datatables.net/examples/styling/bootstrap4 -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" defer></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js" defer></script>
 <!-- Page: page-balance -->
 <link rel="stylesheet" href="assets/pages/cabinet/page-balance.css">
 <script src="assets/pages/cabinet/page-balance.js" defer></script>
@@ -12,7 +16,7 @@
         <h1 class="page-balance__title text-center mb-4">Ваш баланс</h1>
 
         <div class="alert alert-info lead">Текущая сумма: <b class="text-secondary">€0</b></div>
-        <form class="card mb-4">
+        <form class="card bg-light mb-4">
             <header class="card-header">Фильтр активных бонусов</header>
             <div class="card-body">
                 <ul class="row">
@@ -70,7 +74,7 @@
         </form>
 
         <div class="table-responsive">
-            <table class="table table-striped table-bordered table-adaptive">
+            <table class="table table-striped table-bordered table-adaptive" data-plugin="data-table">
                 <thead>
                 <tr>
                     <th class="table-balance__number">#</th>

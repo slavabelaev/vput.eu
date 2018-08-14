@@ -53,6 +53,28 @@
   &.icon__check { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__check_style_light.svg); }
   &.icon__eye { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__eye_style_light.svg); }
   &.icon__blocked { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__blocked_style_light.svg); }
+
+  &.icon__group { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__group_style_light.svg); }
+  &.icon__suitcase { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__suitcase_style_light.svg); }
+  &.icon__profile { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__profile_style_light.svg); }
+  &.icon__megaphone { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__megaphone_style_light.svg); }
+  &.icon__bank { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bank_style_light.svg); }
+  &.icon__pencil { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pencil_style_light.svg); }
+  &.icon__book { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__book_style_light.svg); }
+  &.icon__review { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__review_style_light.svg); }
+  &.icon__car { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__car_style_light.svg); }
+}
+
+.icon_style_primary {
+  &.icon__group { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__group_style_primary.svg); }
+  &.icon__suitcase { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__suitcase_style_primary.svg); }
+  &.icon__profile { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__profile_style_primary.svg); }
+  &.icon__megaphone { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__megaphone_style_primary.svg); }
+  &.icon__bank { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bank_style_primary.svg); }
+  &.icon__pencil { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pencil_style_primary.svg); }
+  &.icon__book { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__book_style_primary.svg); }
+  &.icon__review { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__review_style_primary.svg); }
+  &.icon__car { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__car_style_primary.svg); }
 }
 
 .icon__security { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__security.svg); }
@@ -157,5 +179,16 @@
 .icon__eye { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__eye.svg); }
 .icon__language { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__language.svg); }
 .icon__mobile { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__mobile.svg); }
+
+.icon__group { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__group.svg); }
+.icon__suitcase { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__suitcase.svg); }
+.icon__profile { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__profile.svg); }
+.icon__megaphone { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__megaphone.svg); }
+.icon__bank { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bank.svg); }
+.icon__pencil { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pencil.svg); }
+.icon__book { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__book.svg); }
+.icon__review { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__review.svg); }
+.icon__car { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__car.svg); }
+
 .icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }
 

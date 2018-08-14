@@ -1,2 +1,15 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
+.cabinet-navigation {
+  .nav-link {
+    position: relative;
+  }
+  .badge {
+    position: absolute;
+    right: $nav-link-padding-y;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1.125rem;
+  }
+}

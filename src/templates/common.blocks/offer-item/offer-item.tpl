@@ -73,7 +73,7 @@
                data-html="true"
                title="Подтвердить актуальность календаря <div class='alert alert-warning alert-sm mb-0 mt-2'>Последнее обновление календаря: <b class='d-block'>26-06-2018 16:45:05</b></div><div class='alert alert-warning alert-sm mb-0 mt-2'>Календарь не актуален</div>"><i class="icon icon__calendar icon_size_16 icon_style_dark"></i></a>
             <button type="button"
-                    class="offer-item__action btn"
+                    class="offer-item__action btn btn-light"
                     data-toggle="tooltip"
                     data-placement="top"
                     data-html="true"

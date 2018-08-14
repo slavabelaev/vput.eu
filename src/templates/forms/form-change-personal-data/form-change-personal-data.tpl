@@ -1,5 +1,5 @@
 <!-- Form: form-change-personal-data -->
-<div class="form-change-personal-data card">
+<div class="form-change-personal-data card bg-light">
     <h3 class="card-header">Ваши личные данные</h3>
     <figure class="card-body alert-success d-lg-flex align-items-center text-center text-md-left">
         <img src="templates/forms/form-change-personal-data/form-change-personal-data__profile.svg"
@@ -97,11 +97,11 @@
         </div>
         <footer class="card-footer text-right">
             <button type="submit"
-                    class="btn btn-success">Сохранить изменения</button>
+                    class="btn btn-primary">Сохранить изменения</button>
         </footer>
     </form>
     <div class="form-change-personal-data__confirm-number collapse">
-        <form class="card-footer bg-light">
+        <form class="card-footer alert-success">
             <header>
                 <h3 class="lead">Подтверждение номера телефона:</h3>
                 <p class="text-muted">На ваш номер телефона выслан код, введите его в поле, указанное ниже</p>

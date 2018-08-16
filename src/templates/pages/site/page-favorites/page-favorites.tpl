@@ -11,7 +11,15 @@
     <section class="page-favorites__section">
         <div class="container py-4">
             <h1 class="page-favorites__title text-center mb-4">Список избранных вами предложений</h1>
-            <%- include('../../../common.blocks/list-of-offers/list-of-offers.tpl'); %>
+            <!-- Common: list-of-offers -->
+            <ul class="list-of-offers row">
+                <% for(var i = 0; i < 8; i++) { %>
+                <li class="col-xl-3 col-lg-4 col-md-6 mb-3">
+                    <%- include('../../../common.blocks/offer-item/offer-item.tpl'); %>
+                </li>
+                <% } %>
+            </ul>
+            <!-- /Common: list-of-offers -->
         </div>
     </section>
 </main>

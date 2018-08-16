@@ -70,7 +70,9 @@
                        data-toggle="dropdown"
                        aria-haspopup="true"
                        aria-expanded="false">
-                        <i class="page-header__cabinet-menu-icon icon icon__cabinet-user"></i>
+                        <div class="page-header__user-avatar mr-2">
+                            <%- include('../../common.blocks/user-avatar/user-avatar.tpl'); %>
+                        </div>
                         <%= lang.cabinet_title %>
                     </a>
                     <div class="page-header__cabinet-menu dropdown-menu dropdown-menu-lg"

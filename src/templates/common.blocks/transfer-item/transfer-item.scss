@@ -1,0 +1,11 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.transfer-item__id,
+.transfer-item__price {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.transfer-item__price {
+  color: $secondary;
+}

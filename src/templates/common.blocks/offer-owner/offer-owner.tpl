@@ -3,8 +3,8 @@
 <!-- Common: offer-owner -->
 <div class="offer-owner">
     <figure class="offer-owner__about">
-        <div class="offer-owner__photo icon__cabinet-user"
-             style="_background-image: url(url-to-user-avatar);">
+        <div class="offer-owner__user-avatar">
+            <%- include('../../common.blocks/user-avatar/user-avatar.tpl'); %>
             <i class="offer-owner__reliable-host icon icon__reliable-host icon_size_32"></i>
         </div>
         <figcaption class="offer-owner__info">

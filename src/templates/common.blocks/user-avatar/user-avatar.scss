@@ -1,0 +1,13 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.user-avatar {
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 0;
+  border-radius: 50%;
+  background-color: $dark;
+  background-size: cover;
+  background-position: center;
+}

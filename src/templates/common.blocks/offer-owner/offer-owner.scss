@@ -15,21 +15,16 @@
   font-size: 1rem;
   text-align: center;
 }
-
 .offer-owner__about {
   display: flex;
   margin-bottom: 0;
 }
-.offer-owner__photo {
+.offer-owner__user-avatar {
   position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: $dark;
 }
 .offer-owner__reliable-host {
   position: absolute;
-  bottom: 0;
+  bottom: .5rem;
   right: .5rem;
 }
 .offer-owner__info {
@@ -50,8 +45,4 @@
   &:not(:last-child):after {
     content: ", ";
   }
-}
-.offer-owner__photo {
-  background-size: cover;
-  background-position: center;
 }

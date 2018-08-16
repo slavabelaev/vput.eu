@@ -44,8 +44,13 @@
   font-size: $font-size-lg;
   color: $primary;
 }
-.page-header__cabinet-menu-icon {
-  margin-right: .5rem;
+.page-header__user-avatar {
+  display: inline-block;
+  vertical-align: middle;
+  .user-avatar {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 @include media-breakpoint-down(sm) {

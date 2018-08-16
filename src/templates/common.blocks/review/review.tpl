@@ -4,7 +4,9 @@
 <!-- Common: review -->
 <figure class="review">
     <figure class="review__user">
-        <div class="review__user-image" style="background-image: url(<%= data.avatar_url %>)"></div>
+        <div class="review__user-avatar mb-2">
+            <%- include('../../common.blocks/user-avatar/user-avatar.tpl'); %>
+        </div>
         <figcaption class="user__description"><%= data.name %></figcaption>
     </figure>
     <figcaption class="review__content">

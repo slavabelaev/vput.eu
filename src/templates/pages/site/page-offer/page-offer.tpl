@@ -77,11 +77,11 @@
                    data-toggle="modal">
                     <i class="icon icon__book icon_style_light"></i>
                 </a>
-                <div class="page-offer__modal modal modal-right fade"
+                <div class="page-offer__modal"
                      tabindex="-1"
                      is-sticked>
-                    <div class="page-offer__modal-dialog modal-dialog">
-                        <aside class="page-offer__aside modal-content">
+                    <div class="page-offer__modal-dialog">
+                        <aside class="page-offer__aside">
                             <div class="page-offer__offer-employed-by mb-3">
                                 <%- include('../../../common.blocks/offer-employed-by/offer-employed-by.tpl'); %>
                             </div>

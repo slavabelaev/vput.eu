@@ -2,9 +2,9 @@
 <section class="transfer-item card">
     <header class="card-header">
         <ul class="row">
-            <li class="font-weight-normal col-6 col-md-auto">№12</li>
-            <li class="text-secondary col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
-            <li class="col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
+            <li class="transfer-item__id col-6 col-md-auto">№12</li>
+            <li class="transfer-item__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
+            <li class="transfer-item__title col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
         </ul>
     </header>
     <div class="card-body">

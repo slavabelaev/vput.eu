@@ -6,16 +6,18 @@ jQuery(document).ready(function($) {
     blockElement.find('.offer-item-carousel__arrow').on('click', function() {
         let arrowElement = $(this),
             sliderElement = arrowElement.closest('.offer-item-carousel'),
-            slickSliderElement = sliderElement.find('.offer-item-carousel__images-list[is-slick-carousel]');
+            slickSliderElement = sliderElement.find('.offer-item-carousel__images-list[data-slick-carousel]');
 
         slickSliderElement.slick({
+            lazyLoad: 'ondemand',
             infinite: true,
-            dots: false
+            dots: false,
+            swipe: false
         });
 
-        slickSliderElement.find('[data-src]').each(function() {
+        slickSliderElement.find('[data-lazy]').each(function() {
             let slideElement = $(this),
-                imageSource = slideElement.attr('data-src');
+                imageSource = slideElement.attr('data-lazy');
 
             slideElement.css('background-image', 'url(' + imageSource + ')');
         });

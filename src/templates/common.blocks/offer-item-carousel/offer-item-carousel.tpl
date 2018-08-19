@@ -8,14 +8,14 @@
             type="button"></button>
     <nav class="offer-item-carousel__images-list"
          style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
-         is-slick-carousel>
-        <a  data-src="content/images/offers/previews/offer-item__preview-1.jpg"
+         data-slick-carousel>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-1.jpg"
             class="offer-item-carousel__image"></a>
-        <a  data-src="content/images/offers/previews/offer-item__preview-2.jpg"
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-2.jpg"
             class="offer-item-carousel__image"></a>
-        <a  data-src="content/images/offers/previews/offer-item__preview-3.jpg"
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-3.jpg"
             class="offer-item-carousel__image"></a>
-        <a  data-src="content/images/offers/previews/offer-item__preview-4.jpg"
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-4.jpg"
             class="offer-item-carousel__image"></a>
     </nav>
 </div>

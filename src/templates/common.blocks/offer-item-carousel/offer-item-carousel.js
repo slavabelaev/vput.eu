@@ -3,13 +3,15 @@ jQuery(document).ready(function ($) {
     if (!blockElement.length)
         return false;
     blockElement.find('.offer-item-carousel__arrow').on('click', function () {
-        var arrowElement = $(this), sliderElement = arrowElement.closest('.offer-item-carousel'), slickSliderElement = sliderElement.find('.offer-item-carousel__images-list[is-slick-carousel]');
+        var arrowElement = $(this), sliderElement = arrowElement.closest('.offer-item-carousel'), slickSliderElement = sliderElement.find('.offer-item-carousel__images-list[data-slick-carousel]');
         slickSliderElement.slick({
+            lazyLoad: 'ondemand',
             infinite: true,
-            dots: false
+            dots: false,
+            swipe: false
         });
-        slickSliderElement.find('[data-src]').each(function () {
-            var slideElement = $(this), imageSource = slideElement.attr('data-src');
+        slickSliderElement.find('[data-lazy]').each(function () {
+            var slideElement = $(this), imageSource = slideElement.attr('data-lazy');
             slideElement.css('background-image', 'url(' + imageSource + ')');
         });
         slickSliderElement.remove('.offer-item-carousel__arrow');

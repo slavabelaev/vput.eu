@@ -6,8 +6,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col mb-2 mb-md-0"><%= lang.subscribe_message %></div>
-                <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
-                    <%- include('../../forms/form-subscribe/form-subscribe.tpl'); %>
+                <div class="col-md-auto">
+                    <div class="page-footer__form-subscribe">
+                        <%- include('../../forms/form-subscribe/form-subscribe.tpl'); %>
+                    </div>
                 </div>
             </div>
         </div>

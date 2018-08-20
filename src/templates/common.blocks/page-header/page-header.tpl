@@ -78,7 +78,7 @@
                     <div class="page-header__cabinet-menu dropdown-menu dropdown-menu-lg"
                          aria-labelledby="cabinetMenuDropdown">
                         <a class="dropdown-item"
-                           href="realties.html"><i class="icon icon__pencil mr-2"></i><%= lang.cabinet.realties %></a>
+                           href="realties.html"><i class="icon icon__poster mr-2"></i><%= lang.cabinet.realties %></a>
                         <a class="dropdown-item"
                            href="bookings.html"><i class="icon icon__book mr-2"></i><%= lang.cabinet.bookings %></a>
                         <a class="dropdown-item"
@@ -88,7 +88,7 @@
                         <a class="dropdown-item"
                            href="transfers.html"><i class="icon icon__car mr-2"></i><%= lang.cabinet.transfers %></a>
                         <a class="dropdown-item"
-                           href="balance.html"><i class="icon icon__bank mr-2"></i><%= lang.cabinet.balance %></a>
+                           href="balance.html"><i class="icon icon__credit-card mr-2"></i><%= lang.cabinet.balance %></a>
                         <a class="dropdown-item"
                            href="partnership.html"><i class="icon icon__megaphone mr-2"></i><%= lang.cabinet.partnership %></a>
                         <a class="dropdown-item"

@@ -17,6 +17,9 @@
                 </aside>
             </div>
             <div class="col-xl-9">
+                <div class="page-realties_form-realties-filter mb-4">
+                    <%- include('../../../forms/form-realties-filter/form-realties-filter.tpl'); %>
+                </div>
                 <div class="alert alert-info mb-4">
                     <h2 class="h4 text-center">АКТУАЛЬНОСТЬ КАЛЕНДАРЯ</h2>
                     <div class="row">

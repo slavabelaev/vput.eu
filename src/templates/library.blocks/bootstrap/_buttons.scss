@@ -149,7 +149,7 @@ input[type="button"] {
 
 @media screen and (max-device-width: 320px) {
   .btn {
-    max-width: (320px - $grid-gutter-width);
+    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
   }

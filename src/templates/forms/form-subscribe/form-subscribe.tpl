@@ -3,15 +3,15 @@
 <!-- Form: form-subscribe -->
 <form action="/realties/subscribeClient/" 
       data-post="&page=/?lang=ru"
-      class="form-subscribe form-row w-100">
-    <div class="form-group col-7 mb-0">
+      class="form-subscribe form-row">
+    <div class="form-group col mb-0">
         <input type="email"
                required
                id="subscribtionEmail"
                class="form-control"
                placeholder="<%= lang.email %>">
     </div>
-    <div class="col-5">
+    <div class="col-auto">
         <button type="submit"
                 class="btn btn-primary w-100"><%= lang.subscribe %></button>
     </div>

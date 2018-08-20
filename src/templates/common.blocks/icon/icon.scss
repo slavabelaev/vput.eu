@@ -63,6 +63,9 @@
   &.icon__book { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__book_style_light.svg); }
   &.icon__review { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__review_style_light.svg); }
   &.icon__car { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__car_style_light.svg); }
+  &.icon__poster { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__poster_style_light.svg); }
+  &.icon__coins { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__coins_style_light.svg); }
+  &.icon__credit-card { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__credit-card_style_light.svg); }
 }
 
 .icon_style_primary {
@@ -75,6 +78,9 @@
   &.icon__book { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__book_style_primary.svg); }
   &.icon__review { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__review_style_primary.svg); }
   &.icon__car { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__car_style_primary.svg); }
+  &.icon__poster { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__poster_style_primary.svg); }
+  &.icon__coins { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__coins_style_primary.svg); }
+  &.icon__credit-card { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__credit-card_style_primary.svg); }
 }
 
 .icon__security { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__security.svg); }
@@ -186,9 +192,11 @@
 .icon__megaphone { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__megaphone.svg); }
 .icon__bank { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__bank.svg); }
 .icon__pencil { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__pencil.svg); }
+.icon__poster { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__poster.svg); }
 .icon__book { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__book.svg); }
 .icon__review { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__review.svg); }
 .icon__car { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__car.svg); }
+.icon__coins { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__coins.svg); }
 
 .icon__ { background-image: url(#{$rootDir}/templates/common.blocks/icon/icon__.svg); }
 

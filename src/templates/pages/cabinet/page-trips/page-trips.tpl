@@ -17,6 +17,9 @@
                 </aside>
             </div>
             <div class="col-xl-9">
+                <div class="page-trips__form-bookings-filter mb-4">
+                    <%- include('../../../forms/form-bookings-filter/form-bookings-filter.tpl'); %>
+                </div>
                 <ul class="list-unstyled">
                     <li class="page-booking__booking-item mb-4">
                         <%- include('../../../common.blocks/booking-item/booking-item.tpl'); %>

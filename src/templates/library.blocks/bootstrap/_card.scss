@@ -71,7 +71,7 @@
   background-color: $card-cap-bg;
   border-bottom: $card-border-width solid $card-border-color;
   font-size: $lead-font-size;
-  font-weight: bold;
+  font-weight: 600;
 
   &:first-child {
     @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);

@@ -138,7 +138,7 @@
                     <div class="page-header__cabinet-menu dropdown-menu dropdown-menu-lg"
                          aria-labelledby="cabinetMenuDropdown">
                         <a class="dropdown-item"
-                           href="realties.html"><i class="icon icon__pencil mr-2"></i>Мои объявления</a>
+                           href="realties.html"><i class="icon icon__poster mr-2"></i>Мои объявления</a>
                         <a class="dropdown-item"
                            href="bookings.html"><i class="icon icon__book mr-2"></i>Бронирования</a>
                         <a class="dropdown-item"
@@ -148,7 +148,7 @@
                         <a class="dropdown-item"
                            href="transfers.html"><i class="icon icon__car mr-2"></i>Трансферы</a>
                         <a class="dropdown-item"
-                           href="balance.html"><i class="icon icon__bank mr-2"></i>Баланс</a>
+                           href="balance.html"><i class="icon icon__credit-card mr-2"></i>Баланс</a>
                         <a class="dropdown-item"
                            href="partnership.html"><i class="icon icon__megaphone mr-2"></i>Партнерская программа</a>
                         <a class="dropdown-item"
@@ -398,9 +398,8 @@
 <nav class="cabinet-navigation nav flex-column nav-pills">
     <a class="nav-link active"
        href="realties.html">
-        <i class="icon icon__pencil icon_style_light mr-2"></i>
+        <i class="icon icon__poster icon_style_light mr-2"></i>
         Мои объявления
-        <span class="badge badge-dark">99</span>
     </a>
     <a class="nav-link"
        href="bookings.html">
@@ -421,11 +420,10 @@
     <a class="nav-link"
        href="transfers.html">
         <i class="icon icon__car icon_style_primary mr-2"></i>Трансферы
-        <span class="badge badge-dark">99</span>
     </a>
     <a class="nav-link"
        href="balance.html">
-        <i class="icon icon__bank icon_style_primary mr-2"></i>
+        <i class="icon icon__credit-card icon_style_primary mr-2"></i>
         Баланс
     </a>
     <a class="nav-link"
@@ -437,7 +435,7 @@
        href="reviews.html">
         <i class="icon icon__review  icon_style_primary mr-2"></i>
         Отзывы
-        <span class="badge badge-dark">5</span>
+        <span class="badge badge-dark">99</span>
     </a>
     <a class="nav-link"
        href="referral-bookings.html">
@@ -449,6 +447,43 @@
                 </aside>
             </div>
             <div class="col-xl-9">
+                <div class="page-realties_form-realties-filter mb-4">
+                    <!-- Form: form-realties-filter -->
+<form action=""
+      class="form-realties-filter card bg-light px-3 pt-3 mb-0">
+    <ul class="row">
+        <li class="col-lg">
+            <legend>Фильтры:</legend>
+        </li>
+        <li class="col-sm-6 col-md col-lg-3">
+            <div class="form-group">
+                <select class="custom-select"
+                        name="status">
+                    <option value="">Все</option>
+                    <option value="adding">На добавлении</option>
+                    <option value="moderation">На модерации</option>
+                    <option value="blocked" selected="">Заблокированные</option>
+                </select>
+            </div>
+        </li>
+        <li class="col-sm-6 col-md col-lg-3">
+            <div class="form-group">
+                <input type="number"
+                       name="search"
+                       autocomplete="off"
+                       placeholder="Поиск по коду"
+                       class="form-control">
+            </div>
+        </li>
+        <li class="col-md-auto">
+            <div class="form-group">
+                <button class="btn btn-primary">Применить</button>
+            </div>
+        </li>
+    </ul>
+</form>
+<!-- /Form: form-realties-filter -->
+                </div>
                 <div class="alert alert-info mb-4">
                     <h2 class="h4 text-center">АКТУАЛЬНОСТЬ КАЛЕНДАРЯ</h2>
                     <div class="row">
@@ -1176,26 +1211,28 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col mb-2 mb-md-0">Хотите быть в курсе последних объявлений? Подпишитесь на эксклюзивную рассылку предложений</div>
-                <div class="col-md-auto d-flex justify-content-center justify-content-lg-end">
-                    
+                <div class="col-md-auto">
+                    <div class="page-footer__form-subscribe">
+                        
 
 <!-- Form: form-subscribe -->
 <form action="/realties/subscribeClient/" 
       data-post="&page=/?lang=ru"
-      class="form-subscribe form-row w-100">
-    <div class="form-group col-7 mb-0">
+      class="form-subscribe form-row">
+    <div class="form-group col mb-0">
         <input type="email"
                required
                id="subscribtionEmail"
                class="form-control"
                placeholder="Ваш email">
     </div>
-    <div class="col-5">
+    <div class="col-auto">
         <button type="submit"
                 class="btn btn-primary w-100">Подписаться</button>
     </div>
 </form>
 <!-- /Form: form-subscribe -->
+                    </div>
                 </div>
             </div>
         </div>

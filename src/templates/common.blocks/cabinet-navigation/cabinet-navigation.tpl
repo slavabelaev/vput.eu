@@ -2,9 +2,8 @@
 <nav class="cabinet-navigation nav flex-column nav-pills">
     <a class="nav-link active"
        href="realties.html">
-        <i class="icon icon__pencil icon_style_light mr-2"></i>
+        <i class="icon icon__poster icon_style_light mr-2"></i>
         Мои объявления
-        <span class="badge badge-dark">99</span>
     </a>
     <a class="nav-link"
        href="bookings.html">
@@ -25,11 +24,10 @@
     <a class="nav-link"
        href="transfers.html">
         <i class="icon icon__car icon_style_primary mr-2"></i>Трансферы
-        <span class="badge badge-dark">99</span>
     </a>
     <a class="nav-link"
        href="balance.html">
-        <i class="icon icon__bank icon_style_primary mr-2"></i>
+        <i class="icon icon__credit-card icon_style_primary mr-2"></i>
         Баланс
     </a>
     <a class="nav-link"
@@ -41,7 +39,7 @@
        href="reviews.html">
         <i class="icon icon__review  icon_style_primary mr-2"></i>
         Отзывы
-        <span class="badge badge-dark">5</span>
+        <span class="badge badge-dark">99</span>
     </a>
     <a class="nav-link"
        href="referral-bookings.html">

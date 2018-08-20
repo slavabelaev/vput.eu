@@ -6,14 +6,8 @@
     border-radius: 0;
   }
 }
-.booking-item__communication {
-  margin-bottom: 0;
-}
-.booking-item__id,
-.booking-item__price {
-  font-size: 1.5rem;
+.booking-item__id {
   font-weight: normal;
-  line-height: 1;
 }
 .booking-item__price {
   color: $secondary;

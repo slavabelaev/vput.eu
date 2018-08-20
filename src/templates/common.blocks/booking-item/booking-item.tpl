@@ -3,8 +3,11 @@
     <header class="card-header">
         <ul class="row">
             <li class="booking-item__id font-weight-normal col-6 col-md-auto">№3744</li>
-            <li class="booking-item__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€1205</li>
-            <li class="booking-item__title col-md-auto mt-3 mt-md-0">Квартира с фронтальным видом на море в Несебре</li>
+            <li class="booking-item__price col-6 col-md-auto ml-sm-auto order-lg-1 text-right">€1205</li>
+            <li class="booking-item__title col-md-auto mt-3 mt-md-0">
+                <span class="booking-item__object-id">ID 9999</span> |
+                <span class="booking-item__object-name">Квартира с фронтальным видом на море в Несебре</span>
+            </li>
         </ul>
     </header>
     <div class="row align-items-center">
@@ -58,7 +61,7 @@
                         </div>
                     </li>
                 </ul>
-                <figure class="booking-item__communication text-center text-sm-left">
+                <figure class="booking-item__communication text-center text-sm-left mb-0">
                     <div class="booking-item__user-avatar mr-sm-3">
                         <%- include('../../common.blocks/user-avatar/user-avatar.tpl'); %>
                     </div>

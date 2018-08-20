@@ -1,5 +1,11 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
+.booking-item {
+  .offer-item-carousel,
+  .offer-item-carousel__image {
+    border-radius: 0;
+  }
+}
 .booking-item__communication {
   margin-bottom: 0;
 }

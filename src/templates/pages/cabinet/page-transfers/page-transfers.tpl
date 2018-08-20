@@ -19,16 +19,16 @@
             <div class="col-xl-9">
                 <ul class="row">
                     <li class="col-12 mb-4">
-                        <%- include('../../../common.blocks/transfer-item/transfer-item.tpl'); %>
+                        <%- include('../../../forms/form-edit-transfer/form-edit-transfer.tpl'); %>
                     </li>
                     <li class="col-12 mb-4">
-                        <%- include('../../../common.blocks/transfer-item/transfer-item.tpl'); %>
+                        <%- include('../../../forms/form-edit-transfer/form-edit-transfer.tpl'); %>
                     </li>
                     <li class="col-12 mb-4">
-                        <%- include('../../../common.blocks/transfer-item/transfer-item.tpl'); %>
+                        <%- include('../../../forms/form-edit-transfer/form-edit-transfer.tpl'); %>
                     </li>
                     <li class="col-12 mb-4">
-                        <%- include('../../../common.blocks/transfer-item/transfer-item.tpl'); %>
+                        <%- include('../../../forms/form-edit-transfer/form-edit-transfer.tpl'); %>
                     </li>
                 </ul>
             </div>

@@ -126,7 +126,7 @@
                        data-toggle="dropdown"
                        aria-haspopup="true"
                        aria-expanded="false">
-                        <div class="page-header__user-avatar mr-2">
+                        <div class="page-header__user-avatar mr-1">
                             <!-- Block: user-avatar -->
 <figure class="user-avatar icon__cabinet-user"
         style="_background-image: url(url-to-user-avatar);">
@@ -451,552 +451,440 @@
             <div class="col-xl-9">
                 <ul class="row">
                     <li class="col-12 mb-4">
-                        <!-- Block: transfer-item -->
-<section class="transfer-item card">
+                        <!-- Block: form-edit-transfer -->
+<form action="#"
+      class="form-edit-transfer card bg-light">
     <header class="card-header">
         <ul class="row">
-            <li class="transfer-item__id col-6 col-md-auto">№12</li>
-            <li class="transfer-item__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
-            <li class="transfer-item__title col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
+            <li class="form-edit-transfer__id col-6 col-md-auto">№12</li>
+            <li class="form-edit-transfer__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
+            <li class="form-edit-transfer__title col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
         </ul>
     </header>
-    <div class="card-body">
+    <div class="card-body pb-2">
         <ul class="row">
-            <li class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                <label class="text-muted mb-0">Имя на табличке:</label>
-                <div class="lead">Дмитрий Черчер</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Надпись на табличке</label>
+                    <input type="text"
+                           name="nameplate"
+                           value="Дмитрий Черчел"
+                           disabled
+                           required
+                           class="form-control">
+                </div>
             </li>
-            <li class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                <label class="text-muted mb-0">Дата и время встречи:</label>
-                <div class="lead">2017-09-06 09:00:00</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Дата и время встречи</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="icon icon__calendar"></i>
+                            </div>
+                        </div>
+                        <input type="text"
+                               name="datetime"
+                               value="2017-09-06 09:00"
+                               required
+                               disabled
+                               class="form-control">
+                    </div>
+                </div>
             </li>
-            <li class="col-lg-2 col-sm-6 mb-3 mb-md-0">
-                <label class="text-muted mb-0">Пассажиров:</label>
-                <div class="lead">5</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Количество пасажиров</label>
+                    <select name="NumberOfGuests"
+                            disabled
+                            required
+                            class="custom-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
             </li>
-            <li class="col-lg-4 col-sm-6">
-                <label class="text-muted mb-0">Машина:</label>
-                <div class="lead">Легковой автомобиль</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Машина</label>
+                    <select name="car"
+                            disabled
+                            class="custom-select">
+                        <option value="" selected>Легковой автомобиль</option>
+                    </select>
+                </div>
+            </li>
+            <li class="col-12">
+                <div class="form-edit-transfer__note-collapse collapse">
+                    <div class="form-group">
+                        <label>Примечание</label>
+                        <textarea name="note"
+                                  disabled
+                                  rows="4"
+                                  class="form-control"></textarea>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
     <footer class="card-footer">
         <div class="row align-items-center">
-            <div class="col">
-                <div class="text-success p-2">Зарегистрирован</div>
+            <div class="col-sm">
+                <div class="text-success text-center text-sm-left mb-3 mb-sm-0">Зарегистрирован</div>
             </div>
-            <div class="col text-right">
-                <button class="btn btn-primary"
-                        data-toggle="modal"
-                        data-target=".transfer-details-modal">Изменить</button>
-                <button class="btn btn-link"
-                        data-toggle="modal"
-                        data-target=".transfer-details-modal">Подробнее</button>
+            <div class="col-sm text-center text-sm-right">
+                <div class="form-edit-transfer__editable-buttons">
+                    <button type="submit"
+                            class="form-edit-transfer__button-save btn btn-primary">Сохранить</button>
+                    <a href="#"
+                       class="form-edit-transfer__button-cancel btn btn-danger">Отмена</a>
+                </div>
+                <div class="form-edit-transfer__buttons">
+                    <a href="#"
+                       class="form-edit-transfer__button-edit btn btn-outline-primary btn-filled">Изменить</a>
+                    <a href="#"
+                       class="form-edit-transfer__button-details btn btn-outline-info btn-filled collapsed">Подробнее</a>
+                </div>
             </div>
         </div>
     </footer>
-</section>
-
-<div class="transfer-details-modal modal fade"
-     tabindex="-1"
-     role="dialog">
-    <div class="modal-dialog modal-dialog-centered"
-         role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Трансфер №12</h5>
-                <button type="button"
-                        class="close"
-                        data-dismiss="modal">
-                    <i class="icon icon__close icon_style_light"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <!-- Form: form-edit-transfer -->
-<form class="form-edit-transfer">
-    <ul class="row">
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Надпись на табличке</label>
-                <input type="email"
-                       class="form-control"
-                       id=""
-                       placeholder="">
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Дата и время встречи</label>
-                <input type="date"
-                       class="form-control"
-                       id=""
-                       placeholder="">
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Количество пасажиров</label>
-                <select name=""
-                        id=""
-                        class="custom-select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Машина</label>
-                <select name=""
-                        disabled
-                        id=""
-                        class="custom-select">
-                    <option value="" selected>Легковой автомобиль</option>
-                </select>
-            </div>
-        </li>
-        <li class="col-12">
-            <div class="form-group mb-0">
-                <label for="">Примечание</label>
-                <textarea name=""
-                          rows="4"
-                          class="form-control"></textarea>
-            </div>
-        </li>
-    </ul>
 </form>
-<!-- /Form: form-edit-transfer -->
-            </div>
-            <div class="modal-footer">
-                <button type="submit"
-                        class="btn btn-primary">Сохранить</button>
-                <button type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal">Отмена</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /Block: transfer-item -->
+<!-- /Block: form-edit-transfer -->
                     </li>
                     <li class="col-12 mb-4">
-                        <!-- Block: transfer-item -->
-<section class="transfer-item card">
+                        <!-- Block: form-edit-transfer -->
+<form action="#"
+      class="form-edit-transfer card bg-light">
     <header class="card-header">
         <ul class="row">
-            <li class="transfer-item__id col-6 col-md-auto">№12</li>
-            <li class="transfer-item__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
-            <li class="transfer-item__title col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
+            <li class="form-edit-transfer__id col-6 col-md-auto">№12</li>
+            <li class="form-edit-transfer__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
+            <li class="form-edit-transfer__title col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
         </ul>
     </header>
-    <div class="card-body">
+    <div class="card-body pb-2">
         <ul class="row">
-            <li class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                <label class="text-muted mb-0">Имя на табличке:</label>
-                <div class="lead">Дмитрий Черчер</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Надпись на табличке</label>
+                    <input type="text"
+                           name="nameplate"
+                           value="Дмитрий Черчел"
+                           disabled
+                           required
+                           class="form-control">
+                </div>
             </li>
-            <li class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                <label class="text-muted mb-0">Дата и время встречи:</label>
-                <div class="lead">2017-09-06 09:00:00</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Дата и время встречи</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="icon icon__calendar"></i>
+                            </div>
+                        </div>
+                        <input type="text"
+                               name="datetime"
+                               value="2017-09-06 09:00"
+                               required
+                               disabled
+                               class="form-control">
+                    </div>
+                </div>
             </li>
-            <li class="col-lg-2 col-sm-6 mb-3 mb-md-0">
-                <label class="text-muted mb-0">Пассажиров:</label>
-                <div class="lead">5</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Количество пасажиров</label>
+                    <select name="NumberOfGuests"
+                            disabled
+                            required
+                            class="custom-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
             </li>
-            <li class="col-lg-4 col-sm-6">
-                <label class="text-muted mb-0">Машина:</label>
-                <div class="lead">Легковой автомобиль</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Машина</label>
+                    <select name="car"
+                            disabled
+                            class="custom-select">
+                        <option value="" selected>Легковой автомобиль</option>
+                    </select>
+                </div>
+            </li>
+            <li class="col-12">
+                <div class="form-edit-transfer__note-collapse collapse">
+                    <div class="form-group">
+                        <label>Примечание</label>
+                        <textarea name="note"
+                                  disabled
+                                  rows="4"
+                                  class="form-control"></textarea>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
     <footer class="card-footer">
         <div class="row align-items-center">
-            <div class="col">
-                <div class="text-success p-2">Зарегистрирован</div>
+            <div class="col-sm">
+                <div class="text-success text-center text-sm-left mb-3 mb-sm-0">Зарегистрирован</div>
             </div>
-            <div class="col text-right">
-                <button class="btn btn-primary"
-                        data-toggle="modal"
-                        data-target=".transfer-details-modal">Изменить</button>
-                <button class="btn btn-link"
-                        data-toggle="modal"
-                        data-target=".transfer-details-modal">Подробнее</button>
+            <div class="col-sm text-center text-sm-right">
+                <div class="form-edit-transfer__editable-buttons">
+                    <button type="submit"
+                            class="form-edit-transfer__button-save btn btn-primary">Сохранить</button>
+                    <a href="#"
+                       class="form-edit-transfer__button-cancel btn btn-danger">Отмена</a>
+                </div>
+                <div class="form-edit-transfer__buttons">
+                    <a href="#"
+                       class="form-edit-transfer__button-edit btn btn-outline-primary btn-filled">Изменить</a>
+                    <a href="#"
+                       class="form-edit-transfer__button-details btn btn-outline-info btn-filled collapsed">Подробнее</a>
+                </div>
             </div>
         </div>
     </footer>
-</section>
-
-<div class="transfer-details-modal modal fade"
-     tabindex="-1"
-     role="dialog">
-    <div class="modal-dialog modal-dialog-centered"
-         role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Трансфер №12</h5>
-                <button type="button"
-                        class="close"
-                        data-dismiss="modal">
-                    <i class="icon icon__close icon_style_light"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <!-- Form: form-edit-transfer -->
-<form class="form-edit-transfer">
-    <ul class="row">
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Надпись на табличке</label>
-                <input type="email"
-                       class="form-control"
-                       id=""
-                       placeholder="">
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Дата и время встречи</label>
-                <input type="date"
-                       class="form-control"
-                       id=""
-                       placeholder="">
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Количество пасажиров</label>
-                <select name=""
-                        id=""
-                        class="custom-select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Машина</label>
-                <select name=""
-                        disabled
-                        id=""
-                        class="custom-select">
-                    <option value="" selected>Легковой автомобиль</option>
-                </select>
-            </div>
-        </li>
-        <li class="col-12">
-            <div class="form-group mb-0">
-                <label for="">Примечание</label>
-                <textarea name=""
-                          rows="4"
-                          class="form-control"></textarea>
-            </div>
-        </li>
-    </ul>
 </form>
-<!-- /Form: form-edit-transfer -->
-            </div>
-            <div class="modal-footer">
-                <button type="submit"
-                        class="btn btn-primary">Сохранить</button>
-                <button type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal">Отмена</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /Block: transfer-item -->
+<!-- /Block: form-edit-transfer -->
                     </li>
                     <li class="col-12 mb-4">
-                        <!-- Block: transfer-item -->
-<section class="transfer-item card">
+                        <!-- Block: form-edit-transfer -->
+<form action="#"
+      class="form-edit-transfer card bg-light">
     <header class="card-header">
         <ul class="row">
-            <li class="transfer-item__id col-6 col-md-auto">№12</li>
-            <li class="transfer-item__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
-            <li class="transfer-item__title col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
+            <li class="form-edit-transfer__id col-6 col-md-auto">№12</li>
+            <li class="form-edit-transfer__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
+            <li class="form-edit-transfer__title col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
         </ul>
     </header>
-    <div class="card-body">
+    <div class="card-body pb-2">
         <ul class="row">
-            <li class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                <label class="text-muted mb-0">Имя на табличке:</label>
-                <div class="lead">Дмитрий Черчер</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Надпись на табличке</label>
+                    <input type="text"
+                           name="nameplate"
+                           value="Дмитрий Черчел"
+                           disabled
+                           required
+                           class="form-control">
+                </div>
             </li>
-            <li class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                <label class="text-muted mb-0">Дата и время встречи:</label>
-                <div class="lead">2017-09-06 09:00:00</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Дата и время встречи</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="icon icon__calendar"></i>
+                            </div>
+                        </div>
+                        <input type="text"
+                               name="datetime"
+                               value="2017-09-06 09:00"
+                               required
+                               disabled
+                               class="form-control">
+                    </div>
+                </div>
             </li>
-            <li class="col-lg-2 col-sm-6 mb-3 mb-md-0">
-                <label class="text-muted mb-0">Пассажиров:</label>
-                <div class="lead">5</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Количество пасажиров</label>
+                    <select name="NumberOfGuests"
+                            disabled
+                            required
+                            class="custom-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
             </li>
-            <li class="col-lg-4 col-sm-6">
-                <label class="text-muted mb-0">Машина:</label>
-                <div class="lead">Легковой автомобиль</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Машина</label>
+                    <select name="car"
+                            disabled
+                            class="custom-select">
+                        <option value="" selected>Легковой автомобиль</option>
+                    </select>
+                </div>
+            </li>
+            <li class="col-12">
+                <div class="form-edit-transfer__note-collapse collapse">
+                    <div class="form-group">
+                        <label>Примечание</label>
+                        <textarea name="note"
+                                  disabled
+                                  rows="4"
+                                  class="form-control"></textarea>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
     <footer class="card-footer">
         <div class="row align-items-center">
-            <div class="col">
-                <div class="text-success p-2">Зарегистрирован</div>
+            <div class="col-sm">
+                <div class="text-success text-center text-sm-left mb-3 mb-sm-0">Зарегистрирован</div>
             </div>
-            <div class="col text-right">
-                <button class="btn btn-primary"
-                        data-toggle="modal"
-                        data-target=".transfer-details-modal">Изменить</button>
-                <button class="btn btn-link"
-                        data-toggle="modal"
-                        data-target=".transfer-details-modal">Подробнее</button>
+            <div class="col-sm text-center text-sm-right">
+                <div class="form-edit-transfer__editable-buttons">
+                    <button type="submit"
+                            class="form-edit-transfer__button-save btn btn-primary">Сохранить</button>
+                    <a href="#"
+                       class="form-edit-transfer__button-cancel btn btn-danger">Отмена</a>
+                </div>
+                <div class="form-edit-transfer__buttons">
+                    <a href="#"
+                       class="form-edit-transfer__button-edit btn btn-outline-primary btn-filled">Изменить</a>
+                    <a href="#"
+                       class="form-edit-transfer__button-details btn btn-outline-info btn-filled collapsed">Подробнее</a>
+                </div>
             </div>
         </div>
     </footer>
-</section>
-
-<div class="transfer-details-modal modal fade"
-     tabindex="-1"
-     role="dialog">
-    <div class="modal-dialog modal-dialog-centered"
-         role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Трансфер №12</h5>
-                <button type="button"
-                        class="close"
-                        data-dismiss="modal">
-                    <i class="icon icon__close icon_style_light"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <!-- Form: form-edit-transfer -->
-<form class="form-edit-transfer">
-    <ul class="row">
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Надпись на табличке</label>
-                <input type="email"
-                       class="form-control"
-                       id=""
-                       placeholder="">
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Дата и время встречи</label>
-                <input type="date"
-                       class="form-control"
-                       id=""
-                       placeholder="">
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Количество пасажиров</label>
-                <select name=""
-                        id=""
-                        class="custom-select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Машина</label>
-                <select name=""
-                        disabled
-                        id=""
-                        class="custom-select">
-                    <option value="" selected>Легковой автомобиль</option>
-                </select>
-            </div>
-        </li>
-        <li class="col-12">
-            <div class="form-group mb-0">
-                <label for="">Примечание</label>
-                <textarea name=""
-                          rows="4"
-                          class="form-control"></textarea>
-            </div>
-        </li>
-    </ul>
 </form>
-<!-- /Form: form-edit-transfer -->
-            </div>
-            <div class="modal-footer">
-                <button type="submit"
-                        class="btn btn-primary">Сохранить</button>
-                <button type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal">Отмена</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /Block: transfer-item -->
+<!-- /Block: form-edit-transfer -->
                     </li>
                     <li class="col-12 mb-4">
-                        <!-- Block: transfer-item -->
-<section class="transfer-item card">
+                        <!-- Block: form-edit-transfer -->
+<form action="#"
+      class="form-edit-transfer card bg-light">
     <header class="card-header">
         <ul class="row">
-            <li class="transfer-item__id col-6 col-md-auto">№12</li>
-            <li class="transfer-item__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
-            <li class="transfer-item__title col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
+            <li class="form-edit-transfer__id col-6 col-md-auto">№12</li>
+            <li class="form-edit-transfer__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
+            <li class="form-edit-transfer__title col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
         </ul>
     </header>
-    <div class="card-body">
+    <div class="card-body pb-2">
         <ul class="row">
-            <li class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                <label class="text-muted mb-0">Имя на табличке:</label>
-                <div class="lead">Дмитрий Черчер</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Надпись на табличке</label>
+                    <input type="text"
+                           name="nameplate"
+                           value="Дмитрий Черчел"
+                           disabled
+                           required
+                           class="form-control">
+                </div>
             </li>
-            <li class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
-                <label class="text-muted mb-0">Дата и время встречи:</label>
-                <div class="lead">2017-09-06 09:00:00</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Дата и время встречи</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="icon icon__calendar"></i>
+                            </div>
+                        </div>
+                        <input type="text"
+                               name="datetime"
+                               value="2017-09-06 09:00"
+                               required
+                               disabled
+                               class="form-control">
+                    </div>
+                </div>
             </li>
-            <li class="col-lg-2 col-sm-6 mb-3 mb-md-0">
-                <label class="text-muted mb-0">Пассажиров:</label>
-                <div class="lead">5</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Количество пасажиров</label>
+                    <select name="NumberOfGuests"
+                            disabled
+                            required
+                            class="custom-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
             </li>
-            <li class="col-lg-4 col-sm-6">
-                <label class="text-muted mb-0">Машина:</label>
-                <div class="lead">Легковой автомобиль</div>
+            <li class="col-md-6 col-lg">
+                <div class="form-group">
+                    <label>Машина</label>
+                    <select name="car"
+                            disabled
+                            class="custom-select">
+                        <option value="" selected>Легковой автомобиль</option>
+                    </select>
+                </div>
+            </li>
+            <li class="col-12">
+                <div class="form-edit-transfer__note-collapse collapse">
+                    <div class="form-group">
+                        <label>Примечание</label>
+                        <textarea name="note"
+                                  disabled
+                                  rows="4"
+                                  class="form-control"></textarea>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
     <footer class="card-footer">
         <div class="row align-items-center">
-            <div class="col">
-                <div class="text-success p-2">Зарегистрирован</div>
+            <div class="col-sm">
+                <div class="text-success text-center text-sm-left mb-3 mb-sm-0">Зарегистрирован</div>
             </div>
-            <div class="col text-right">
-                <button class="btn btn-primary"
-                        data-toggle="modal"
-                        data-target=".transfer-details-modal">Изменить</button>
-                <button class="btn btn-link"
-                        data-toggle="modal"
-                        data-target=".transfer-details-modal">Подробнее</button>
+            <div class="col-sm text-center text-sm-right">
+                <div class="form-edit-transfer__editable-buttons">
+                    <button type="submit"
+                            class="form-edit-transfer__button-save btn btn-primary">Сохранить</button>
+                    <a href="#"
+                       class="form-edit-transfer__button-cancel btn btn-danger">Отмена</a>
+                </div>
+                <div class="form-edit-transfer__buttons">
+                    <a href="#"
+                       class="form-edit-transfer__button-edit btn btn-outline-primary btn-filled">Изменить</a>
+                    <a href="#"
+                       class="form-edit-transfer__button-details btn btn-outline-info btn-filled collapsed">Подробнее</a>
+                </div>
             </div>
         </div>
     </footer>
-</section>
-
-<div class="transfer-details-modal modal fade"
-     tabindex="-1"
-     role="dialog">
-    <div class="modal-dialog modal-dialog-centered"
-         role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Трансфер №12</h5>
-                <button type="button"
-                        class="close"
-                        data-dismiss="modal">
-                    <i class="icon icon__close icon_style_light"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <!-- Form: form-edit-transfer -->
-<form class="form-edit-transfer">
-    <ul class="row">
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Надпись на табличке</label>
-                <input type="email"
-                       class="form-control"
-                       id=""
-                       placeholder="">
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Дата и время встречи</label>
-                <input type="date"
-                       class="form-control"
-                       id=""
-                       placeholder="">
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Количество пасажиров</label>
-                <select name=""
-                        id=""
-                        class="custom-select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-            </div>
-        </li>
-        <li class="col-sm-6">
-            <div class="form-group">
-                <label for="">Машина</label>
-                <select name=""
-                        disabled
-                        id=""
-                        class="custom-select">
-                    <option value="" selected>Легковой автомобиль</option>
-                </select>
-            </div>
-        </li>
-        <li class="col-12">
-            <div class="form-group mb-0">
-                <label for="">Примечание</label>
-                <textarea name=""
-                          rows="4"
-                          class="form-control"></textarea>
-            </div>
-        </li>
-    </ul>
 </form>
-<!-- /Form: form-edit-transfer -->
-            </div>
-            <div class="modal-footer">
-                <button type="submit"
-                        class="btn btn-primary">Сохранить</button>
-                <button type="button"
-                        class="btn btn-secondary"
-                        data-dismiss="modal">Отмена</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /Block: transfer-item -->
+<!-- /Block: form-edit-transfer -->
                     </li>
                 </ul>
             </div>

@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
     var blockElement = $('.cities-tabs');
+    if (!blockElement.length)
+        return false;
     function setCitiesLetters(contentElement) {
         var usedLetters = [];
         contentElement.find('[data-name]').each(function (index, element) {

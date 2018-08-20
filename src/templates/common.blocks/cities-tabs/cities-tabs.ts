@@ -1,6 +1,8 @@
 jQuery(document).ready(function($){
     let blockElement = $('.cities-tabs');
 
+    if (!blockElement.length) return false;
+
     function setCitiesLetters(contentElement) {
         let usedLetters = [];
 

@@ -70,7 +70,7 @@
                        data-toggle="dropdown"
                        aria-haspopup="true"
                        aria-expanded="false">
-                        <div class="page-header__user-avatar mr-2">
+                        <div class="page-header__user-avatar mr-1">
                             <%- include('../../common.blocks/user-avatar/user-avatar.tpl'); %>
                         </div>
                         <%= lang.cabinet_title %>

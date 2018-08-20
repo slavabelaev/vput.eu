@@ -1,0 +1,24 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+
+.form-edit-transfer__id,
+.form-edit-transfer__price {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.form-edit-transfer__price {
+  color: $secondary;
+}
+
+.form-edit-transfer__editable-buttons {
+  display: none;
+}
+
+.form-edit-transfer_state_edit {
+  .form-edit-transfer__buttons {
+    display: none
+  }
+  .form-edit-transfer__editable-buttons {
+    display: block;
+  }
+}

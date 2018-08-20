@@ -126,7 +126,7 @@
                        data-toggle="dropdown"
                        aria-haspopup="true"
                        aria-expanded="false">
-                        <div class="page-header__user-avatar mr-2">
+                        <div class="page-header__user-avatar mr-1">
                             <!-- Block: user-avatar -->
 <figure class="user-avatar icon__cabinet-user"
         style="_background-image: url(url-to-user-avatar);">
@@ -385,10 +385,423 @@
 <!-- /Common: registration-modal -->
 
 <!-- Page: page-trips -->
-<link rel="stylesheet" href="assets/pages/cabinet/page-trips.css">
-<script src="assets/pages/cabinet/page-trips.js" defer></script>
+<link rel="stylesheet" href="assets/pages/site/page-trips.css">
+<script src="assets/pages/site/page-trips.js" defer></script>
 
 <main class="page-trips">
+    <div class="container py-4">
+        <h1 class="page-trips__title text-center mb-4">Ваши бронирования</h1>
+        <div class="row">
+            <div class="col-xl-3 d-none d-xl-block">
+                <aside class="page-trips__aside">
+                    <!-- Block: cabinet-navigation -->
+<nav class="cabinet-navigation nav flex-column nav-pills">
+    <a class="nav-link active"
+       href="realties.html">
+        <i class="icon icon__pencil icon_style_light mr-2"></i>
+        Мои объявления
+        <span class="badge badge-dark">99</span>
+    </a>
+    <a class="nav-link"
+       href="bookings.html">
+        <i class="icon icon__book icon_style_primary mr-2"></i>
+        Бронирования
+        <span class="badge badge-dark">99</span>
+    </a>
+    <a class="nav-link"
+       href="trips.html">
+        <i class="icon icon__suitcase icon_style_primary mr-2"></i>
+        Мои поездки <span class="badge badge-dark">99</span>
+    </a>
+    <a class="nav-link"
+       href="profile.html">
+        <i class="icon icon__profile icon_style_primary mr-2"></i>
+        Профиль
+    </a>
+    <a class="nav-link"
+       href="transfers.html">
+        <i class="icon icon__car icon_style_primary mr-2"></i>Трансферы
+        <span class="badge badge-dark">99</span>
+    </a>
+    <a class="nav-link"
+       href="balance.html">
+        <i class="icon icon__bank icon_style_primary mr-2"></i>
+        Баланс
+    </a>
+    <a class="nav-link"
+       href="partnership.html">
+        <i class="icon icon__megaphone icon_style_primary mr-2"></i>
+        Партнерская программа
+    </a>
+    <a class="nav-link"
+       href="reviews.html">
+        <i class="icon icon__review  icon_style_primary mr-2"></i>
+        Отзывы
+        <span class="badge badge-dark">5</span>
+    </a>
+    <a class="nav-link"
+       href="referral-bookings.html">
+        <i class="icon icon__group icon_style_primary mr-2"></i>
+        Бронирования рефералов
+    </a>
+</nav>
+<!-- /Block: cabinet-navigation -->
+                </aside>
+            </div>
+            <div class="col-xl-9">
+                <ul class="list-unstyled">
+                    <li class="page-booking__booking-item mb-4">
+                        <!-- Block: booking-item -->
+<section class="booking-item card bg-light">
+    <header class="card-header">
+        <ul class="row">
+            <li class="booking-item__id font-weight-normal col-6 col-md-auto">№3744</li>
+            <li class="booking-item__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€1205</li>
+            <li class="booking-item__title col-md-auto mt-3 mt-md-0">Квартира с фронтальным видом на море в Несебре</li>
+        </ul>
+    </header>
+    <div class="row align-items-center">
+        <div class="col-lg-4">
+            <!-- Block: offer-item-carousel -->
+<div class="offer-item-carousel">
+    <button class="offer-item-carousel__arrow offer-item-carousel__arrow_slide_next slick-next slick-arrow"
+            aria-label="Next"
+            type="button"></button>
+    <button class="offer-item-carousel__arrow offer-item-carousel__arrow_slide_prev slick-prev slick-arrow"
+            aria-label="Prev"
+            type="button"></button>
+    <nav class="offer-item-carousel__images-list"
+         style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
+         data-slick-carousel>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-1.jpg"
+            class="offer-item-carousel__image"></a>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-2.jpg"
+            class="offer-item-carousel__image"></a>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-3.jpg"
+            class="offer-item-carousel__image"></a>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-4.jpg"
+            class="offer-item-carousel__image"></a>
+    </nav>
+</div>
+<!-- /Block: offer-item-carousel -->
+        </div>
+        <div class="col-lg">
+            <div class="card-body py-md-1">
+                <ul class="row mb-3">
+                    <li class="col-md mb-3 mb-lg-0">
+                        <div class="form-group mb-0">
+                            <label>Заезд:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="icon icon__calendar"></i>
+                                    </div>
+                                </div>
+                                <input type="text"
+                                       value="2017-09-06"
+                                       disabled
+                                       class="form-control">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md mb-3 mb-lg-0">
+                        <div class="form-group mb-0">
+                            <label>Выезд:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="icon icon__calendar"></i>
+                                    </div>
+                                </div>
+                                <input type="text"
+                                       value="2017-09-06"
+                                       disabled
+                                       class="form-control">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md mb-3 mb-lg-0">
+                        <div class="form-group mb-0">
+                            <label>Итого:</label>
+                            <div class="input-group">
+                                <input type="text"
+                                       value="11 ночей"
+                                       disabled
+                                       class="form-control">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <figure class="booking-item__communication text-center text-sm-left">
+                    <div class="booking-item__user-avatar mr-sm-3">
+                        <!-- Block: user-avatar -->
+<figure class="user-avatar icon__cabinet-user"
+        style="_background-image: url(url-to-user-avatar);">
+</figure>
+<!-- /Block: user-avatar -->
+                    </div>
+                    <figcaption class="booking-item__communication-body">
+                        <h3 class="booking-item__user-full-name lead mb-3 mb-sm-2">Дмитрий</h3>
+                        <div class="alert alert-info mb-0"><i class="icon icon__email mr-2"></i>Новых сообщений нет</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <footer class="card-footer text-center">
+        <div class="row align-items-center">
+            <div class="col-md">
+                <div class="text-danger text-md-left mb-3 mb-md-0">Гость не оплатил счет в течение 48 часов</div>
+            </div>
+            <div class="col-md text-md-right">
+                <button class="btn btn-dark"
+                        data-toggle="modal"
+                        data-target=".transfer-details-modal">В архив</button>
+                <button class="btn btn-link"
+                        data-toggle="modal"
+                        data-target=".transfer-details-modal">Подробнее</button>
+            </div>
+        </div>
+    </footer>
+</section>
+<!-- /Block: booking-item -->
+                    </li>
+                    <li class="page-booking__booking-item mb-4">
+                        <!-- Block: booking-item -->
+<section class="booking-item card bg-light">
+    <header class="card-header">
+        <ul class="row">
+            <li class="booking-item__id font-weight-normal col-6 col-md-auto">№3744</li>
+            <li class="booking-item__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€1205</li>
+            <li class="booking-item__title col-md-auto mt-3 mt-md-0">Квартира с фронтальным видом на море в Несебре</li>
+        </ul>
+    </header>
+    <div class="row align-items-center">
+        <div class="col-lg-4">
+            <!-- Block: offer-item-carousel -->
+<div class="offer-item-carousel">
+    <button class="offer-item-carousel__arrow offer-item-carousel__arrow_slide_next slick-next slick-arrow"
+            aria-label="Next"
+            type="button"></button>
+    <button class="offer-item-carousel__arrow offer-item-carousel__arrow_slide_prev slick-prev slick-arrow"
+            aria-label="Prev"
+            type="button"></button>
+    <nav class="offer-item-carousel__images-list"
+         style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
+         data-slick-carousel>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-1.jpg"
+            class="offer-item-carousel__image"></a>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-2.jpg"
+            class="offer-item-carousel__image"></a>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-3.jpg"
+            class="offer-item-carousel__image"></a>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-4.jpg"
+            class="offer-item-carousel__image"></a>
+    </nav>
+</div>
+<!-- /Block: offer-item-carousel -->
+        </div>
+        <div class="col-lg">
+            <div class="card-body py-md-1">
+                <ul class="row mb-3">
+                    <li class="col-md mb-3 mb-lg-0">
+                        <div class="form-group mb-0">
+                            <label>Заезд:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="icon icon__calendar"></i>
+                                    </div>
+                                </div>
+                                <input type="text"
+                                       value="2017-09-06"
+                                       disabled
+                                       class="form-control">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md mb-3 mb-lg-0">
+                        <div class="form-group mb-0">
+                            <label>Выезд:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="icon icon__calendar"></i>
+                                    </div>
+                                </div>
+                                <input type="text"
+                                       value="2017-09-06"
+                                       disabled
+                                       class="form-control">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md mb-3 mb-lg-0">
+                        <div class="form-group mb-0">
+                            <label>Итого:</label>
+                            <div class="input-group">
+                                <input type="text"
+                                       value="11 ночей"
+                                       disabled
+                                       class="form-control">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <figure class="booking-item__communication text-center text-sm-left">
+                    <div class="booking-item__user-avatar mr-sm-3">
+                        <!-- Block: user-avatar -->
+<figure class="user-avatar icon__cabinet-user"
+        style="_background-image: url(url-to-user-avatar);">
+</figure>
+<!-- /Block: user-avatar -->
+                    </div>
+                    <figcaption class="booking-item__communication-body">
+                        <h3 class="booking-item__user-full-name lead mb-3 mb-sm-2">Дмитрий</h3>
+                        <div class="alert alert-info mb-0"><i class="icon icon__email mr-2"></i>Новых сообщений нет</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <footer class="card-footer text-center">
+        <div class="row align-items-center">
+            <div class="col-md">
+                <div class="text-danger text-md-left mb-3 mb-md-0">Гость не оплатил счет в течение 48 часов</div>
+            </div>
+            <div class="col-md text-md-right">
+                <button class="btn btn-dark"
+                        data-toggle="modal"
+                        data-target=".transfer-details-modal">В архив</button>
+                <button class="btn btn-link"
+                        data-toggle="modal"
+                        data-target=".transfer-details-modal">Подробнее</button>
+            </div>
+        </div>
+    </footer>
+</section>
+<!-- /Block: booking-item -->
+                    </li>
+                    <li class="page-booking__booking-item mb-4">
+                        <!-- Block: booking-item -->
+<section class="booking-item card bg-light">
+    <header class="card-header">
+        <ul class="row">
+            <li class="booking-item__id font-weight-normal col-6 col-md-auto">№3744</li>
+            <li class="booking-item__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€1205</li>
+            <li class="booking-item__title col-md-auto mt-3 mt-md-0">Квартира с фронтальным видом на море в Несебре</li>
+        </ul>
+    </header>
+    <div class="row align-items-center">
+        <div class="col-lg-4">
+            <!-- Block: offer-item-carousel -->
+<div class="offer-item-carousel">
+    <button class="offer-item-carousel__arrow offer-item-carousel__arrow_slide_next slick-next slick-arrow"
+            aria-label="Next"
+            type="button"></button>
+    <button class="offer-item-carousel__arrow offer-item-carousel__arrow_slide_prev slick-prev slick-arrow"
+            aria-label="Prev"
+            type="button"></button>
+    <nav class="offer-item-carousel__images-list"
+         style="background-image: url(content/images/offers/previews/offer-item__preview-1.jpg);"
+         data-slick-carousel>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-1.jpg"
+            class="offer-item-carousel__image"></a>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-2.jpg"
+            class="offer-item-carousel__image"></a>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-3.jpg"
+            class="offer-item-carousel__image"></a>
+        <a  data-lazy="content/images/offers/previews/offer-item__preview-4.jpg"
+            class="offer-item-carousel__image"></a>
+    </nav>
+</div>
+<!-- /Block: offer-item-carousel -->
+        </div>
+        <div class="col-lg">
+            <div class="card-body py-md-1">
+                <ul class="row mb-3">
+                    <li class="col-md mb-3 mb-lg-0">
+                        <div class="form-group mb-0">
+                            <label>Заезд:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="icon icon__calendar"></i>
+                                    </div>
+                                </div>
+                                <input type="text"
+                                       value="2017-09-06"
+                                       disabled
+                                       class="form-control">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md mb-3 mb-lg-0">
+                        <div class="form-group mb-0">
+                            <label>Выезд:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="icon icon__calendar"></i>
+                                    </div>
+                                </div>
+                                <input type="text"
+                                       value="2017-09-06"
+                                       disabled
+                                       class="form-control">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md mb-3 mb-lg-0">
+                        <div class="form-group mb-0">
+                            <label>Итого:</label>
+                            <div class="input-group">
+                                <input type="text"
+                                       value="11 ночей"
+                                       disabled
+                                       class="form-control">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <figure class="booking-item__communication text-center text-sm-left">
+                    <div class="booking-item__user-avatar mr-sm-3">
+                        <!-- Block: user-avatar -->
+<figure class="user-avatar icon__cabinet-user"
+        style="_background-image: url(url-to-user-avatar);">
+</figure>
+<!-- /Block: user-avatar -->
+                    </div>
+                    <figcaption class="booking-item__communication-body">
+                        <h3 class="booking-item__user-full-name lead mb-3 mb-sm-2">Дмитрий</h3>
+                        <div class="alert alert-info mb-0"><i class="icon icon__email mr-2"></i>Новых сообщений нет</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <footer class="card-footer text-center">
+        <div class="row align-items-center">
+            <div class="col-md">
+                <div class="text-danger text-md-left mb-3 mb-md-0">Гость не оплатил счет в течение 48 часов</div>
+            </div>
+            <div class="col-md text-md-right">
+                <button class="btn btn-dark"
+                        data-toggle="modal"
+                        data-target=".transfer-details-modal">В архив</button>
+                <button class="btn btn-link"
+                        data-toggle="modal"
+                        data-target=".transfer-details-modal">Подробнее</button>
+            </div>
+        </div>
+    </footer>
+</section>
+<!-- /Block: booking-item -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </main>
 <!-- /Page: page-trips -->
 

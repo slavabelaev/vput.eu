@@ -78,7 +78,7 @@
             <div class="col-md">
                 <div class="text-danger text-md-left mb-3 mb-md-0">Гость не оплатил счет в течение 48 часов</div>
             </div>
-            <div class="col-md text-md-righow-it-works__modalht">
+            <div class="col-md text-md-right">
                 <button class="btn btn-dark">В архив</button>
                 <a href="booking.html"
                    class="btn btn-link">Подробнее</a>

@@ -13,7 +13,7 @@
     </div>
     <div class="col-auto">
         <button type="submit"
-                class="btn btn-primary w-100"><%= lang.subscribe %></button>
+                class="btn btn-primary"><%= lang.subscribe %></button>
     </div>
 </form>
 <!-- /Form: form-subscribe -->

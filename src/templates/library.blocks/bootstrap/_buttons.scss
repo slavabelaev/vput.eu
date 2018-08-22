@@ -9,6 +9,9 @@
   font-weight: $btn-font-weight;
   text-align: center;
   white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   vertical-align: middle;
   user-select: none;
   border: $btn-border-width solid transparent;
@@ -144,13 +147,5 @@ input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
-  }
-}
-
-@media screen and (max-device-width: 320px) {
-  .btn {
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }

@@ -1,17 +1,17 @@
 <div class="row">
     <div class="col-lg-7">
 
-        <ol class="form-renting__accordion">
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+        <ol class="accordion">
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
-                        data-target=".form-renting__accordion-basic-information"
+                        data-target=".accordion-basic-information"
                         aria-expanded="false">1. Основная информация</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-basic-information collapse"
-                         data-parent=".form-renting__accordion">
+                    <div class="accordion__item-collapse accordion-basic-information collapse"
+                         data-parent=".accordion">
                         <form action="#"
-                              class="form-renting__accordion-item-content">
+                              class="accordion__item-content">
 
                             <fieldset class="form-renting__fieldset">
                                 <ul class="form-renting__form-group-list row">
@@ -218,15 +218,15 @@
                     </div>
                 </section>
             </li>
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
-                        data-target=".form-renting__accordion-prices"
+                        data-target=".accordion-prices"
                         aria-expanded="false">2. Цены</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-prices collapse"
-                         data-parent=".form-renting__accordion">
-                        <form action="#" class="form-renting__accordion-item-content">
+                    <div class="accordion__item-collapse accordion-prices collapse"
+                         data-parent=".accordion">
+                        <form action="#" class="accordion__item-content">
                             <figure class="alert alert-warning" role="alert">
                                 Цена включает <strong>9-12%</strong> за услуги V.P.U.T.
                                 <a href="commission.html" target="_blank">Почему мы берем комиссию?</a>
@@ -558,17 +558,17 @@
                     </div>
                 </section>
             </li>
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
                         data-target=".form-renting__accordion-item_number_3"
                         aria-expanded="false"
                         aria-controls="collapseThree">3. Спальные места</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_3 collapse"
+                    <div class="accordion__item-collapse form-renting__accordion-item_number_3 collapse"
                          aria-labelledby="headingThree"
-                         data-parent=".form-renting__accordion">
-                        <form action="#" class="form-renting__accordion-item-content">
+                         data-parent=".accordion">
+                        <form action="#" class="accordion__item-content">
                             <ul class="form-renting__form-group-list row">
                                 <li class="form-renting__form-group-list-item col">
                                     <div class="form-group">
@@ -726,17 +726,17 @@
                     </div>
                 </section>
             </li>
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
                         data-target=".form-renting__accordion-item_number_4"
                         aria-expanded="false"
                         aria-controls="collapseThree">4. Информация о жилье</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_4 collapse"
+                    <div class="accordion__item-collapse form-renting__accordion-item_number_4 collapse"
                          aria-labelledby="headingThree"
-                         data-parent=".form-renting__accordion">
-                        <form action="#" class="form-renting__accordion-item-content">
+                         data-parent=".accordion">
+                        <form action="#" class="accordion__item-content">
                             <fieldset class="form-renting__fieldset">
                                 <legend class="form-renting__legend">Правила заселения и выселения</legend>
                                 <ul class="form-renting__form-group-list row">
@@ -933,15 +933,15 @@
                     </div>
                 </section>
             </li>
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
                         data-target=".form-renting__accordion-item_number_5"
                         aria-expanded="false">5. Правила дома</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_5 collapse"
-                         data-parent=".form-renting__accordion">
-                        <form action="#" class="form-renting__accordion-item-content">
+                    <div class="accordion__item-collapse form-renting__accordion-item_number_5 collapse"
+                         data-parent=".accordion">
+                        <form action="#" class="accordion__item-content">
                             <fieldset class="form-renting__fieldset">
                                 <ul class="form-renting__form-group-list row">
                                     <li class="form-renting__form-group-list-item col">
@@ -1030,17 +1030,17 @@
                     </div>
                 </section>
             </li>
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
                         data-target=".form-renting__accordion-item_number_6"
                         aria-expanded="false"
                         aria-controls="collapseThree">6. Описание</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_6 collapse"
+                    <div class="accordion__item-collapse form-renting__accordion-item_number_6 collapse"
                          aria-labelledby="headingThree"
-                         data-parent=".form-renting__accordion">
-                        <form class="form-renting__accordion-item-content">
+                         data-parent=".accordion">
+                        <form class="accordion__item-content">
                             <fieldset class="form-renting__fieldset">
                                 <div class="form-group">
                                     <div class="input-group">
@@ -1535,15 +1535,15 @@
                     </div>
                 </section>
             </li>
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
                         data-target=".form-renting__accordion-item_number_7"
                         aria-expanded="false">7. Удобства</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_7 collapse"
-                         data-parent=".form-renting__accordion">
-                        <form action="#" class="form-renting__accordion-item-content">
+                    <div class="accordion__item-collapse form-renting__accordion-item_number_7 collapse"
+                         data-parent=".accordion">
+                        <form action="#" class="accordion__item-content">
                             <fieldset class="form-renting__fieldset">
                                 <ul class="form-renting__form-group-list row">
                                     <li class="form-renting__form-group-list-item col-md-6">
@@ -2048,17 +2048,17 @@
                     </div>
                 </section>
             </li>
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
                         data-target=".form-renting__accordion-item_number_8"
                         aria-expanded="false"
                         aria-controls="collapseThree">8. Адрес</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_8 collapse"
+                    <div class="accordion__item-collapse form-renting__accordion-item_number_8 collapse"
                          aria-labelledby="headingThree"
-                         data-parent=".form-renting__accordion">
-                        <form action="#" class="form-renting__accordion-item-content">
+                         data-parent=".accordion">
+                        <form action="#" class="accordion__item-content">
                             <fieldset class="form-renting__fieldset">
                                 <ul class="form-renting__form-group-list row">
                                     <li class="form-renting__form-group-list-item col-md-4">
@@ -2111,15 +2111,15 @@
                     </div>
                 </section>
             </li>
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
                         data-target=".form-renting__accordion-item_number_9"
                         aria-expanded="false">9. Фотографии</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_9 collapse"
-                         data-parent=".form-renting__accordion">
-                        <div class="form-renting__accordion-item-content">
+                    <div class="accordion__item-collapse form-renting__accordion-item_number_9 collapse"
+                         data-parent=".accordion">
+                        <div class="accordion__item-content">
                             <fieldset class="form-renting__fieldset">
                                 <input type="file"
                                        class="filepond"
@@ -2132,17 +2132,17 @@
                     </div>
                 </section>
             </li>
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
                         data-target=".form-renting__accordion-item_number_10"
                         aria-expanded="false"
                         aria-controls="collapseThree">10. Календарь</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_10 collapse"
+                    <div class="accordion__item-collapse form-renting__accordion-item_number_10 collapse"
                          aria-labelledby="headingThree"
-                         data-parent=".form-renting__accordion">
-                        <div class="form-renting__accordion-item-content">
+                         data-parent=".accordion">
+                        <div class="accordion__item-content">
                             <fieldset class="form-renting__fieldset">
                                 <legend class="form-renting__legend">Когда ваше жилье будет свободно?</legend>
                                 <ul class="form-renting__form-group-list row">
@@ -2200,17 +2200,17 @@
                     </div>
                 </section>
             </li>
-            <li class="form-renting__accordion-item">
-                <section class="form-renting__accordion-section">
-                    <h3 class="form-renting__accordion-section-title collapsed"
+            <li class="accordion__item">
+                <section class="accordion-section">
+                    <h3 class="accordion__item-title collapsed"
                         data-toggle="collapse"
                         data-target=".form-renting__accordion-item_number_11"
                         aria-expanded="false"
                         aria-controls="collapseThree">11. Информация о себе</h3>
-                    <div class="form-renting__accordion-item-collapse form-renting__accordion-item_number_11 collapse"
+                    <div class="accordion__item-collapse form-renting__accordion-item_number_11 collapse"
                          aria-labelledby="headingThree"
-                         data-parent=".form-renting__accordion">
-                        <div class="form-renting__accordion-item-content">
+                         data-parent=".accordion">
+                        <div class="accordion__item-content">
                             <figure class="alert alert-warning">
                                 <div class="lead">ВЫ ДОЛЖНЫ ЗАПОЛНИТЬ ВАШ ПРОФИЛЬ ДЛЯ АКТИВАЦИИ ОБЪЕКТА</div>
                                 <div>Подтвержденные данные профиля вызывают доверие у ваших гостей!</div>

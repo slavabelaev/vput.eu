@@ -1,7 +1,7 @@
 <!-- Form: form-change-password -->
 <form action="/cabinet/ajaxEditPassword/"
       method="post"
-      class="form-change-password card bg-light">
+      class="form-change-password card bg-gray-50">
     <h3 class="form-change-password__header card-header border-bottom-0 dropdown-toggle"
         data-toggle="collapse"
         data-target=".form-change-password__content">Смена пароля</h3>

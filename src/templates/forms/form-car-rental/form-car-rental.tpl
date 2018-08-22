@@ -1,7 +1,7 @@
 <% var lang = JSON.parse(include('form-car-rental_lang_ru.json')); %>
 
 <!-- Form: form-car-rental -->
-<form class="form-car-rental card bg-light"
+<form class="form-car-rental card bg-gray-50"
       method="post"
       action="/feedback/rentCarSend/">
     <legend class="card-header text-center"><%= lang.title %></legend>

@@ -1,5 +1,5 @@
 <!-- Form: form-service-settings -->
-<form class="form-service-settings card bg-light">
+<form class="form-service-settings card bg-gray-50">
     <h3 class="card-header">Настройки сервиса</h3>
     <div class="card-body">
         <div class="form-group">

@@ -177,7 +177,7 @@
      tabindex="-1"
      role="dialog"
      aria-hidden="true">
-    <div class="modal-dialog modal-sm"
+    <div class="modal-dialog modal-dialog-centered modal-sm"
          role="document">
         <div class="password-recovery-modal__content modal-content">
             <div class="modal-header justify-content-center">
@@ -231,7 +231,7 @@
      tabindex="-1"
      role="dialog"
      aria-hidden="true">
-    <div class="modal-dialog modal-sm"
+    <div class="modal-dialog modal-dialog-centered modal-sm"
          role="document">
         <div class="authorization-modal__content modal-content">
             <a href="#"
@@ -318,7 +318,7 @@
      tabindex="-1"
      role="dialog"
      aria-hidden="true">
-    <div class="modal-dialog modal-sm"
+    <div class="modal-dialog modal-dialog-centered modal-sm"
          role="document">
         <div class="registration-modal__content modal-content">
             <a href="#"
@@ -396,8 +396,104 @@
             <h1 class="page-cabinet__title mb-0">Партнёрская программа</h1>
         </div>
     </header>
-    <div class="container">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-xl-3 d-none d-xl-block">
+                <aside class="page-bookings__aside">
+                    <!-- Block: cabinet-navigation -->
+<nav class="cabinet-navigation nav flex-column nav-pills">
+    <a class="nav-link active"
+       href="realties.html">
+        <i class="icon icon__poster icon_style_light mr-2"></i>
+        Мои объявления
+    </a>
+    <a class="nav-link"
+       href="bookings.html">
+        <i class="icon icon__book icon_style_primary mr-2"></i>
+        Бронирования
+        <span class="badge badge-dark">99</span>
+    </a>
+    <a class="nav-link"
+       href="trips.html">
+        <i class="icon icon__suitcase icon_style_primary mr-2"></i>
+        Мои поездки <span class="badge badge-dark">99</span>
+    </a>
+    <a class="nav-link"
+       href="profile.html">
+        <i class="icon icon__profile icon_style_primary mr-2"></i>
+        Профиль
+    </a>
+    <a class="nav-link"
+       href="transfers.html">
+        <i class="icon icon__car icon_style_primary mr-2"></i>Трансферы
+    </a>
+    <a class="nav-link"
+       href="balance.html">
+        <i class="icon icon__credit-card icon_style_primary mr-2"></i>
+        Баланс
+    </a>
+    <a class="nav-link"
+       href="partnership.html">
+        <i class="icon icon__megaphone icon_style_primary mr-2"></i>
+        Партнерская программа
+    </a>
+    <a class="nav-link"
+       href="reviews.html">
+        <i class="icon icon__review  icon_style_primary mr-2"></i>
+        Отзывы
+        <span class="badge badge-dark">99</span>
+    </a>
+    <a class="nav-link"
+       href="referral-bookings.html">
+        <i class="icon icon__group icon_style_primary mr-2"></i>
+        Бронирования рефералов
+    </a>
+</nav>
+<!-- /Block: cabinet-navigation -->
+                </aside>
+            </div>
+            <div class="col-xl-9">
+                <div class="card mb-4">
+                    <header class="card-header">Ваша партнёрская ссылка</header>
+                    <div class="card-body bg-gray-50">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group mb-0">
+                                    <input type="text"
+                                           readonly
+                                           value="https://vput.ru/?bonus=309"
+                                           class="form-control form-control-lg">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-info btn-lg">Копировать в буфер</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Бонусы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Рефераллы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Траффик</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Настройки</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </main>
 <!-- /Page: page-partnership -->

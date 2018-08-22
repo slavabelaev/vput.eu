@@ -1,23 +1,5 @@
 @import "../../library.blocks/bootstrap/bootstrap-reboot";
 
-.form-renting__accordion {
-  list-style: none;
-  padding-left: 0;
-}
-.form-renting__accordion-section-title {
-  font-size: 1.25rem;
-  cursor: pointer;
-  background-color: $gray-200;
-  padding: $card-spacer-y $card-spacer-x;
-  border-radius: $border-radius;
-  margin-bottom: 0;
-}
-.form-renting__accordion-item {
-  margin-bottom: $card-group-margin;
-}
-.form-renting__accordion-item-content {
-  padding: $card-spacer-x $card-spacer-y;
-}
 .form-renting__form-group-list {
   list-style: none;
   padding-left: 0;

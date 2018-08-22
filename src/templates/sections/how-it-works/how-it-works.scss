@@ -46,3 +46,8 @@
     height: 440px;
   }
 }
+@include media-breakpoint-down(md) {
+  .how-it-works__modal {
+    background-color: rgba($modal-backdrop-bg, .5);
+  }
+}

@@ -1,5 +1,5 @@
 <!-- Form: form-change-profile-picture -->
-<form class="form-change-profile-picture card bg-light">
+<form class="form-change-profile-picture card bg-gray-50">
     <div class="card-body text-center">
         <i class="form-change-profile-picture__picture icon icon__cabinet-user"></i>
     </div>

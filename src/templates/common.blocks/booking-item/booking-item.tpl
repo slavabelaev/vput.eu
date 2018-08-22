@@ -1,5 +1,5 @@
 <!-- Block: booking-item -->
-<section class="booking-item card bg-light">
+<section class="booking-item card bg-gray-50">
     <header class="card-header">
         <ul class="row">
             <li class="booking-item__id font-weight-normal col-6 col-md-auto">№3744</li>
@@ -78,13 +78,10 @@
             <div class="col-md">
                 <div class="text-danger text-md-left mb-3 mb-md-0">Гость не оплатил счет в течение 48 часов</div>
             </div>
-            <div class="col-md text-md-right">
-                <button class="btn btn-dark"
-                        data-toggle="modal"
-                        data-target=".transfer-details-modal">В архив</button>
-                <button class="btn btn-link"
-                        data-toggle="modal"
-                        data-target=".transfer-details-modal">Подробнее</button>
+            <div class="col-md text-md-righow-it-works__modalht">
+                <button class="btn btn-dark">В архив</button>
+                <a href="booking.html"
+                   class="btn btn-link">Подробнее</a>
             </div>
         </div>
     </footer>

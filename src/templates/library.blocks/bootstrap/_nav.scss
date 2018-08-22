@@ -78,6 +78,25 @@
   }
 }
 
+.accordion {
+  list-style: none;
+  padding-left: 0;
+}
+.accordion__item-title {
+  font-size: $lead-font-size;
+  cursor: pointer;
+  background-color: $gray-200;
+  padding: $card-spacer-y $card-spacer-x;
+  border-radius: $border-radius;
+  margin-bottom: 0;
+}
+.accordion__item {
+  margin-bottom: $card-group-margin;
+}
+.accordion__item-content {
+  padding: $card-spacer-x $card-spacer-y;
+}
+
 
 //
 // Pills

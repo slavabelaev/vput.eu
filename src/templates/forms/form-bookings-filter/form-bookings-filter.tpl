@@ -1,6 +1,6 @@
 <!-- Form: form-bookings-filter -->
 <form action=""
-      class="form-bookings-filter card bg-light px-3 pt-3 mb-0">
+      class="form-bookings-filter card bg-gray-50 px-3 pt-3 mb-0">
     <ul class="row">
         <li class="col-lg">
             <legend>Фильтры:</legend>

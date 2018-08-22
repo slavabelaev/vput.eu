@@ -1,5 +1,14 @@
 @import "../library.blocks/bootstrap/bootstrap-reboot";
 
+::selection {
+  background: $primary;
+  color: $white;
+}
+::-moz-selection {
+  background: $primary;
+  color: $white;
+}
+
 .page-preloader {
   position: fixed;
 }

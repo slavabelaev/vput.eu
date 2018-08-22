@@ -1,6 +1,6 @@
 <!-- Block: form-edit-transfer -->
 <form action="#"
-      class="form-edit-transfer card bg-light">
+      class="form-edit-transfer card bg-gray-50">
     <header class="card-header">
         <ul class="row">
             <li class="form-edit-transfer__id col-6 col-md-auto">№12</li>

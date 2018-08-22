@@ -1,16 +1,21 @@
 <% //var lang = JSON.parse(include('page-profile_lang_ru.json')); %>
 
 <%- include('../../../common.blocks/meta-header/meta-header.tpl'); %>
-<%- include('../../../common.blocks/page-header/page-header.tpl'); %>
+<div class="navbar-dark-md">
+    <%- include('../../../common.blocks/page-header/page-header.tpl'); %>
+</div>
 
 <!-- Page: page-profile -->
 <link rel="stylesheet" href="assets/pages/cabinet/page-profile.css">
 <script src="assets/pages/cabinet/page-profile.js" defer></script>
 
 <main class="page-profile">
+    <header class="page-cabinet__header py-4">
+        <div class="container">
+            <h1 class="page-cabinet__title mb-0">Ваш профиль</h1>
+        </div>
+    </header>
     <div class="container py-4">
-        <h1 class="page-realties__title text-center mb-4">Ваш профиль</h1>
-
         <div class="alert alert-info lead mb-4">
             <p class="mb-0">Анализ статистики показывает: <strong>объекты, у которых есть отзывы, получают в 2-5 раз больше бронирований</strong>. Вы можете получить ваши первые отзывы от своих друзей прямо сейчас.</p>
             <div class="text-center"><a href="reviews.html" class="nav-link">Узнайте как это сделать</a></div>

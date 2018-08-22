@@ -1,7 +1,9 @@
 <% //var lang = JSON.parse(include('page-balance_lang_ru.json')); %>
 
 <%- include('../../../common.blocks/meta-header/meta-header.tpl'); %>
-<%- include('../../../common.blocks/page-header/page-header.tpl'); %>
+<div class="navbar-dark-md">
+    <%- include('../../../common.blocks/page-header/page-header.tpl'); %>
+</div>
 
 <!-- DataTable — https://datatables.net/examples/styling/bootstrap4 -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
@@ -12,9 +14,12 @@
 <script src="assets/pages/cabinet/page-balance.js" defer></script>
 
 <main class="page-balance">
+    <header class="page-cabinet__header py-4">
+        <div class="container">
+            <h1 class="page-cabinet__title mb-0">Ваш баланс</h1>
+        </div>
+    </header>
     <div class="container py-4">
-        <h1 class="page-balance__title text-center mb-4">Ваш баланс</h1>
-
         <div class="alert alert-info lead">Текущая сумма: <b class="text-secondary">€0</b></div>
         <form class="card bg-light mb-4">
             <header class="card-header">Фильтр активных бонусов</header>

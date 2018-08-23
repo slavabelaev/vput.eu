@@ -14,7 +14,7 @@
         <div class="page-404__header-container">
             <h1 class="page-404__title"><%= lang.title %></h1>
             <div class="page-404__description"><%= lang.description %></div>
-            <a href="/search/"
+            <a href="search.html"
                class="page-404__link btn btn-primary btn-lg"><%= lang.button_text %></a>
         </div>
     </header>

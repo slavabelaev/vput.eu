@@ -12,11 +12,11 @@
     <div class="bg-light d-none d-sm-block">
         <div class="container mw-1024px">
             <nav class="nav nav-pills nav-fill nav-pills_orientation_horizontal">
-                <a class="nav-item nav-link" href="/cleaning-ru.html">Cleaning services</a>
-                <a class="nav-item nav-link" href="/escort-ru.html">Guests escort</a>
+                <a class="nav-item nav-link" href="cleaning-ru.html">Cleaning services</a>
+                <a class="nav-item nav-link" href="escort-ru.html">Guests escort</a>
                 <a class="nav-item nav-link active" href="#">Transfer</a>
-                <a class="nav-item nav-link" href="/car-rental.html">Car rental</a>
-                <a class="nav-item nav-link" href="/management-ru.html">Property management</a>
+                <a class="nav-item nav-link" href="car-rental.html">Car rental</a>
+                <a class="nav-item nav-link" href="management-ru.html">Property management</a>
             </nav>
         </div>
     </div>
@@ -395,7 +395,7 @@
                         <li class="list-inline-item">Ravda,</li>
                         <li class="list-inline-item">Aheloy</li>
                     </ul>
-                    <p class="lead mb-0">For all questions, please contact <a target="_blank" href="/contacts/">our support</a></p>
+                    <p class="lead mb-0">For all questions, please contact <a target="_blank" href="contacts.html">our support</a></p>
                 </figcaption>
             </figure>
         </section>

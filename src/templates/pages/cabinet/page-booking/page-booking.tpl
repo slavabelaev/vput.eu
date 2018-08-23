@@ -6,8 +6,8 @@
 </div>
 
 <!-- Page: page-booking -->
-<link rel="stylesheet" href="assets/pages/site/page-booking.css">
-<script src="assets/pages/site/page-booking.js" defer></script>
+<link rel="stylesheet" href="assets/pages/cabinet/page-booking.css">
+<script src="assets/pages/cabinet/page-booking.js" defer></script>
 
 <main class="page-booking">
     <header class="page-cabinet__header py-4">
@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-7">
 
-                <div class="alert alert-info">
+                <div class="alert alert-warning">
                     <h3 class="lead">Ваше жильё желают забронировать с <span class="text-primary">03-08-2016</span> по <span class="text-primary">08-08-2016</span></h3>
                     <ol class="mb-0">
                         <li>Проверьте доступность дат.</li>
@@ -27,16 +27,42 @@
                     </ol>
                 </div>
 
-                <ul class="accordion page-booking__accordion">
+                <!-- form-booking-item__modal-confirm-reservation-info -->
+                <div class="form-booking-item__modal-confirm-reservation-info modal fade"
+                     tabindex="-1"
+                     role="dialog"
+                     aria-hidden="true">
+                    <div class="modal-dialog"
+                         role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <ul class="mb-0 pl-4">
+                                    <li>Гостю придет уведомление с предложением совершить предоплату на подтвержденных вами условиях. Если его все устроит, он оплатит счет.</li>
+                                    <li>До заселения предоплата будет находиться у компании V.P.U.T.</li>
+                                    <li>Через 24 часа после заселения гостя вы сможете заказать вывод денег, которые уже будут зачислены на ваш баланс в кабинете.</li>
+                                    <li>Остаток будет оплачен вам гостем по приезду на месте.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button"
+                                        class="btn btn-success"
+                                        data-dismiss="modal">Понятно</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /form-booking-item__modal-confirm-reservation-info -->
+
+                <ul class="accordion form-booking-item__accordion">
                     <li class="accordion-item">
                         <form action=""
                               class="accordion-section">
                             <legend class="accordion-header collapsed"
                                 data-toggle="collapse"
-                                data-target=".page-booking__confirm-reservation-and-invoice"
+                                data-target=".form-booking-item__confirm-reservation-and-invoice"
                                 aria-expanded="false">Подтвердить бронирование и выставить счет</legend>
-                            <div class="accordion-item-collapse page-booking__confirm-reservation-and-invoice collapse"
-                                 data-parent=".page-booking__accordion">
+                            <div class="accordion-item-collapse form-booking-item__confirm-reservation-and-invoice collapse"
+                                 data-parent=".form-booking-item__accordion">
                                 <div class="accordion-content">
                                     <table class="table table-bordered">
                                         <thead class="bg-white font-weight-bold">
@@ -66,26 +92,16 @@
                                         </tr>
                                         </tfoot>
                                     </table>
-                                    <div class="text-center">
+                                    <div class="text-center mb-3">
                                         <button type="submit"
-                                                class="btn btn-primary btn-lg mb-4">Подтвердить бронирование и выставить счет</button>
+                                                class="btn btn-primary btn-lg">Подтвердить бронирование и выставить счет</button>
                                     </div>
-                                    <section>
-                                        <header class="text-center">
-                                            <h4>Вы можете заработать - <span class="text-secondary">€320</span></h4>
-                                            <a href="#"
-                                               data-toggle="collapse"
-                                               data-target=".page-booking__what-happens-when-i-click-confirm-reservation-and-invoice"
-                                               class="lead nav-link_style_dashed collapsed">Что произойдет, когда я нажму «Подтвердить бронирование и выставить счет»?</a>
-                                        </header>
-                                        <div class="page-booking__what-happens-when-i-click-confirm-reservation-and-invoice collapse">
-                                            <ul class="pt-3 pl-4">
-                                                <li>Гостю придет уведомление с предложением совершить предоплату на подтвержденных вами условиях. Если его все устроит, он оплатит счет.</li>
-                                                <li>До заселения предоплата будет находиться у компании V.P.U.T.</li>
-                                                <li>Через 24 часа после заселения гостя вы сможете заказать вывод денег, которые уже будут зачислены на ваш баланс в кабинете.</li>
-                                                <li>Остаток будет оплачен вам гостем по приезду на месте.</li>
-                                            </ul>
-                                        </div>
+                                    <section class="text-center">
+                                        <h4>Вы можете заработать - <span class="text-secondary">€320</span></h4>
+                                        <a href="#"
+                                           data-toggle="modal"
+                                           data-target=".form-booking-item__modal-confirm-reservation-info"
+                                           class="lead nav-link_style_dashed collapsed">Что произойдет, когда я нажму «Подтвердить бронирование и выставить счет»?</a>
                                     </section>
                                 </div>
                             </div>
@@ -95,48 +111,271 @@
                         <section class="accordion-section">
                             <h3 class="accordion-header collapsed"
                                 data-toggle="collapse"
-                                data-target=".page-booking__change-prepayment-amount"
+                                data-target=".form-booking-item__change-prepayment-amount"
                                 aria-expanded="false">Изменить сумму предоплаты</h3>
-                            <div class="accordion-item-collapse page-booking__change-prepayment-amount collapse"
-                                 data-parent=".page-booking__accordion">
+                            <div class="accordion-item-collapse form-booking-item__change-prepayment-amount collapse"
+                                 data-parent=".form-booking-item__accordion">
                                 <div class="accordion-content">
-                                    1111
+                                    <table class="table table-bordered">
+                                        <thead class="bg-white font-weight-bold">
+                                        <tr>
+                                            <td>Предоплата</td>
+                                            <td>
+                                                <select name="prepayVariantKey"
+                                                        class="custom-select"
+                                                        data-commission="36">
+                                                    <option value="15"
+                                                            data-prepay="36"
+                                                            data-postpay="360">Только услуги VPUT = €36</option>
+                                                    <option value="25"
+                                                            data-prepay="99"
+                                                            data-postpay="297">25% = €99</option>
+                                                    <option value="35"
+                                                            data-prepay="139"
+                                                            data-postpay="257">35% = €139</option>
+                                                    <option value="45"
+                                                            data-prepay="179"
+                                                            data-postpay="217">45% = €179</option>
+                                                    <option value="50"
+                                                            selected
+                                                            data-prepay="198"
+                                                            data-postpay="198">50% = €198</option>
+                                                    <option value="60"
+                                                            data-prepay="238"
+                                                            data-postpay="158">60% = €238</option>
+                                                    <option value="70"
+                                                            data-prepay="278"
+                                                            data-postpay="118">70% = €278</option>
+                                                    <option value="80"
+                                                            data-prepay="317"
+                                                            data-postpay="79">80% = €317</option>
+                                                    <option value="90"
+                                                            data-prepay="357"
+                                                            data-postpay="39">90% = €357</option>
+                                                    <option value="100"
+                                                            data-prepay="396"
+                                                            data-postpay="0">100% = €396</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="bg-light">
+                                        <tr>
+                                            <td>Вам</td>
+                                            <td>€74</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Услуги V.P.U.T.</td>
+                                            <td>€12</td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot class="bg-white lead">
+                                        <tr>
+                                            <td>Будет вам оплачено на месте</td>
+                                            <td>€86</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Итого</td>
+                                            <td class="text-secondary">€172</td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <div class="text-center mb-3">
+                                        <button type="submit"
+                                                class="btn btn-primary btn-lg">Изменить сумму предоплаты и выставить счет</button>
+                                    </div>
+                                    <section class="text-center">
+                                        <h4 class="mb-3">Вы можете заработать - <span class="text-secondary">€320</span></h4>
+                                        <div class="alert alert-warning text-left">
+                                            <ul class="list-unstyled">
+                                                <li class="mb-3">Не рекомендуем увеличивать размер предоплаты, обычно гости плохо реагируют на такие изменения.</li>
+                                                <li>Выбирайте минимально подходящую предоплату. Это выгодно вам, так как за вывод средств с V.P.U.T. по безналичному расчету взимается банковская комиссия расчитанная согласно <a href="withdraw.html" target="_blank">следующим правилам</a>.</li>
+                                            </ul>
+                                        </div>
+                                        <a href="#"
+                                           data-toggle="modal"
+                                           data-target=".form-booking-item__modal-confirm-reservation-info"
+                                           class="lead nav-link_style_dashed collapsed">Что произойдет, когда я нажму «Изменить сумму предоплаты и выставить счет»?</a>
+                                    </section>
                                 </div>
                             </div>
                         </section>
                     </li>
                     <li class="accordion-item">
                         <section class="accordion-section">
-                            <h3 class="accordion-header collapsed"
+                            <h3 class="accordion-header text-success collapsed"
                                 data-toggle="collapse"
-                                data-target=".page-booking__set-discount-or-additional-payment"
+                                data-target=".form-booking-item__set-discount-or-surcharge"
                                 aria-expanded="false">Установить скидку/доплату</h3>
-                            <div class="accordion-item-collapse page-booking__set-discount-or-additional-payment collapse"
-                                 data-parent=".page-booking__accordion">
+                            <div class="accordion-item-collapse form-booking-item__set-discount-or-surcharge collapse"
+                                 data-parent=".form-booking-item__accordion">
                                 <div class="accordion-content">
-                                    2222
+
+                                    <div class="text-center mb-3">
+                                        <div class="btn-group btn-group-toggle"
+                                             data-toggle="buttons">
+                                            <label class="btn btn-outline-success collapsed"
+                                                   data-toggle="collapse"
+                                                   data-target=".form-booking-item__discount-collapse">
+                                                <input type="radio"
+                                                       name="pricetype"
+                                                       value="discount"
+                                                       autocomplete="off"> Установить скидку
+                                            </label>
+                                            <label class="btn btn-outline-success collapsed"
+                                                   data-toggle="collapse"
+                                                   data-target=".form-booking-item__surcharge-collapse">
+                                                <input type="radio"
+                                                       name="pricetype"
+                                                       value="surcharge"
+                                                       autocomplete="off"> Установить доплату
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-booking-item__discount-collapse collapse mw-320px mx-auto"
+                                         data-parent=".form-booking-item__set-discount-or-surcharge">
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text text-secondary"
+                                                      data-toggle="tooltip"
+                                                      title="Текущая цена">€396</span>
+                                                <span class="input-group-text">-</span>
+                                            </div>
+                                            <input type="number"
+                                                   class="form-control"
+                                                   placeholder="Скидка">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">=</span>
+                                                <span class="input-group-text text-secondary"
+                                                      data-toggle="tooltip"
+                                                      title="Итоговая цена">€396</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit"
+                                                    class="btn btn-lg btn-primary">Подтвердить</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-booking-item__surcharge-collapse collapse mw-320px mx-auto"
+                                         data-parent=".form-booking-item__set-discount-or-surcharge">
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text text-secondary"
+                                                      data-toggle="tooltip"
+                                                      title="Текущая цена">€396</span>
+                                                <span class="input-group-text">+</span>
+                                            </div>
+                                            <input type="number"
+                                                   class="form-control"
+                                                   placeholder="Доплата">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">=</span>
+                                                <span class="input-group-text text-secondary"
+                                                      data-toggle="tooltip"
+                                                      title="Итоговая цена">€396</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit"
+                                                    class="btn btn-lg btn-primary">Подтвердить</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-warning mt-3 mb-0">После оплаты вы не сможете изменить цену.</div>
                                 </div>
                             </div>
                         </section>
                     </li>
                     <li class="accordion-item">
                         <section class="accordion-section">
-                            <h3 class="accordion-header collapsed"
+                            <h3 class="accordion-header text-danger collapsed"
                                 data-toggle="collapse"
-                                data-target=".page-booking__refuse"
+                                data-target=".form-booking-item__refuse"
                                 aria-expanded="false">Отказать</h3>
-                            <div class="accordion-item-collapse page-booking__refuse collapse"
-                                 data-parent=".page-booking__accordion">
+                            <div class="accordion-item-collapse form-booking-item__refuse collapse"
+                                 data-parent=".form-booking-item__accordion">
                                 <div class="accordion-content">
-                                    3333
+
+                                    <div class="text-center mb-3">
+                                        <div class="btn-group btn-group-toggle"
+                                             data-toggle="buttons">
+                                            <label class="btn btn-outline-danger collapsed"
+                                                   data-toggle="collapse"
+                                                   data-target=".form-booking-item__refuse-collapse">
+                                                <input type="radio"
+                                                       name="pricetype"
+                                                       value="discount"
+                                                       autocomplete="off"> Отказать в бронировании
+                                            </label>
+                                            <label class="btn btn-outline-danger collapsed"
+                                                   data-toggle="collapse"
+                                                   data-target=".form-booking-item__refuse-and-check-dates-collapse">
+                                                <input type="radio"
+                                                       name="pricetype"
+                                                       value="surcharge"
+                                                       autocomplete="off"> Отказать и отметить занятым период
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-booking-item__refuse-collapse collapse text-center"
+                                         data-parent=".form-booking-item__refuse">
+                                        <button type="submit"
+                                                class="btn btn-lg btn-primary">Подтвердить</button>
+                                    </div>
+
+                                    <div class="form-booking-item__refuse-and-check-dates-collapse collapse"
+                                         data-parent=".form-booking-item__refuse">
+                                        <ul class="row">
+                                            <li class="col">
+                                                <div class="form-group">
+                                                    <label class="form-renting__form-group-label">Начало периoда</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <i class="icon icon__calendar"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input type="date" name="data[calendar][beginning_of_the_period]" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col">
+                                                <div class="form-group">
+                                                    <label class="form-renting__form-group-label">Конец периoда</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <i class="icon icon__calendar"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input type="date" name="data[calendar][end_of_period]" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-auto">
+                                                <div class="form-group">
+                                                    <label>&nbsp;</label>
+                                                    <div class="input-group">
+                                                        <button class="btn btn-primary">Подтвердить</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="alert alert-info">В бронировании будет отказано, а в календаре "Название календаря" выбранные даты будут отмечены как занятые. Эти даты будут недоступны для других гостей нашего сервиса.</div>
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
                     </li>
                 </ul>
 
-                <div class="alert alert-warning">Напоминаем, что согласно правилам пользования сервисом V.P.U.T. в целях безопасности самостоятельный обмен контактными данными запрещен!</div>
-                <div class="alert alert-danger">Попытки получить предоплату от клиента вне сервиса и передача прямых контактов до оформления сделки может привести к блокировке аккаунта.</div>
+                <div class="alert alert-warning lead">Напоминаем, что согласно правилам пользования сервисом V.P.U.T. в целях безопасности самостоятельный обмен контактными данными запрещен!</div>
+                <div class="alert alert-danger lead">Попытки получить предоплату от клиента вне сервиса и передача прямых контактов до оформления сделки может привести к блокировке аккаунта.</div>
             </div>
             <div class="col-lg-4 col-md-5">
                 <aside class="page-booking__aside">

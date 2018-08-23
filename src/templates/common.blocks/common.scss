@@ -51,6 +51,10 @@ ul {
   box-shadow: rgba(0,0,0,.5) 0 60px 60px inset;
 }
 
+[data-toggle=tooltip] {
+  cursor: help;
+}
+
 @include media-breakpoint-up(md) {
   .page-article__article-header {
     margin-top: -67px;

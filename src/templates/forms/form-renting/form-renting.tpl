@@ -547,7 +547,7 @@
                                     Выбирайте минимально подходящую предоплату. Это выгодно вам, так как за вывод
                                     средств с V.P.U.T. по безналичному расчету взимается банковская комиссия
                                     расчитанная согласно
-                                    <a href="/withdraw/" target="_blank">следующим правилам</a>.
+                                    <a href="withdraw.html" target="_blank">следующим правилам</a>.
                                 </figure>
                             </div>
 
@@ -922,7 +922,7 @@
                             <figure class="alert alert-info">
                                 В случае отмены бронирования этого предложения любые вопросы, связанные с
                                 финансовой компенсацией, будут разрешаться согласно <a
-                                        href="/booking-cancelation-rules-ru.html" target="_blank">выбранному варианту
+                                        href="booking-cancelation-rules-ru.html" target="_blank">выбранному варианту
                                     правил отмены бронирования</a>.
                             </figure>
 
@@ -2226,7 +2226,7 @@
         </ol>
 
         <div class="text-center">
-            <div class="form-renting__text-of-agreement mb-4">Размещая объявление на нашем сайте, вы соглашаетесь с <a href="/booking-cancelation-rules-ru.html" target="_blank">правилами отмены бронирования</a>, а также подтверждаете, что принимаете условия <a href="/owner-agreement-ru.html" target="_blank">пользовательского соглашения с Арендодателем</a></div>
+            <div class="form-renting__text-of-agreement mb-4">Размещая объявление на нашем сайте, вы соглашаетесь с <a href="booking-cancelation-rules-ru.html" target="_blank">правилами отмены бронирования</a>, а также подтверждаете, что принимаете условия <a href="owner-agreement-ru.html" target="_blank">пользовательского соглашения с Арендодателем</a></div>
             <a href="#" class="btn btn-primary btn-lg">Разместить объявление</a>
         </div>
     </div>

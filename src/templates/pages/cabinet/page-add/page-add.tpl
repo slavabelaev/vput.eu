@@ -7,8 +7,8 @@
 
 <!-- Page: page-add -->
 <link rel="stylesheet"
-      href="assets/pages/site/page-add.css">
-<script src="assets/pages/site/page-add.js" defer></script>
+      href="assets/pages/cabinet/page-add.css">
+<script src="assets/pages/cabinet/page-add.js" defer></script>
 
 <main class="page-add">
     <header class="page-add__header d-flex align-items-center text-center py-5">
@@ -18,10 +18,13 @@
         </div>
     </header>
     <div class="container py-5">
-        <div class="page-add__form-renting">
-            <%- include('../../../forms/form-renting/form-renting.tpl'); %>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="page-add__form-renting">
+                    <%- include('../../../forms/form-renting/form-renting.tpl'); %>
+                </div>
+            </div>
         </div>
-
         <div class="row pt-5 mt-5">
             <div class="col-md-10 offset-md-1">
                 <div class="page-add__ask-for-help">

@@ -1,16 +1,19 @@
 <!-- Block: form-edit-transfer -->
 <form action="#"
       class="form-edit-transfer card bg-gray-50">
-    <header class="card-header">
+    <header class="form-edit-transfer__header card-header">
         <ul class="row">
-            <li class="form-edit-transfer__id col-6 col-md-auto">№12</li>
-            <li class="form-edit-transfer__price col-6 col-md-auto ml-sm-auto order-md-1 text-right">€29</li>
-            <li class="form-edit-transfer__title col-md-auto mt-3 mt-md-0">Солнечный берег → Аэропорт "Бургас"</li>
+            <li class="form-edit-transfer__id col-auto">№12</li>
+            <li class="form-edit-transfer__title col">
+                <span class="form-edit-transfer__from">Солнечный берег</span>
+                <span class="form-edit-transfer__to">Аэропорт "Бургас"</span>
+            </li>
+            <li class="form-edit-transfer__price col-auto ml-auto text-right">€29</li>
         </ul>
     </header>
-    <div class="card-body pb-2">
+    <fieldset class="form-edit-transfer__body card-body pb-2">
         <ul class="row">
-            <li class="col-md-6 col-lg">
+            <li class="form-edit-transfer__col col">
                 <div class="form-group">
                     <label>Надпись на табличке</label>
                     <input type="text"
@@ -21,7 +24,7 @@
                            class="form-control">
                 </div>
             </li>
-            <li class="col-md-6 col-lg">
+            <li class="form-edit-transfer__col col">
                 <div class="form-group">
                     <label>Дата и время встречи</label>
                     <div class="input-group">
@@ -39,7 +42,7 @@
                     </div>
                 </div>
             </li>
-            <li class="col-md-6 col-lg">
+            <li class="form-edit-transfer__col col">
                 <div class="form-group">
                     <label>Количество пасажиров</label>
                     <select name="NumberOfGuests"
@@ -59,7 +62,7 @@
                     </select>
                 </div>
             </li>
-            <li class="col-md-6 col-lg">
+            <li class="form-edit-transfer__col col">
                 <div class="form-group">
                     <label>Машина</label>
                     <select name="car"
@@ -69,7 +72,7 @@
                     </select>
                 </div>
             </li>
-            <li class="col-12">
+            <li class="form-edit-transfer__col col-12">
                 <div class="form-edit-transfer__note-collapse collapse">
                     <div class="form-group">
                         <label>Примечание</label>
@@ -81,24 +84,26 @@
                 </div>
             </li>
         </ul>
-    </div>
-    <footer class="card-footer">
+    </fieldset>
+    <footer class="form-edit-transfer__footer card-footer">
         <div class="row align-items-center">
-            <div class="col-sm">
-                <div class="text-success text-center text-sm-left mb-3 mb-sm-0">Зарегистрирован</div>
+            <div class="form-edit-transfer__footer-col col">
+                <div class="form-edit-transfer__status text-success">Зарегистрирован</div>
             </div>
-            <div class="col-sm text-center text-sm-right">
-                <div class="form-edit-transfer__editable-buttons">
-                    <button type="submit"
-                            class="form-edit-transfer__button-save btn btn-primary">Сохранить</button>
-                    <a href="#"
-                       class="form-edit-transfer__button-cancel btn btn-danger">Отмена</a>
-                </div>
+            <div class="form-edit-transfer__footer-col col">
                 <div class="form-edit-transfer__buttons">
-                    <a href="#"
-                       class="form-edit-transfer__button-edit btn btn-outline-primary btn-filled">Изменить</a>
-                    <a href="#"
-                       class="form-edit-transfer__button-details btn btn-outline-info btn-filled collapsed">Подробнее</a>
+                    <div class="form-edit-transfer__buttons-editable">
+                        <button type="submit"
+                                class="form-edit-transfer__button-save btn btn-primary">Сохранить</button>
+                        <a href="#"
+                           class="form-edit-transfer__button-cancel btn btn-danger">Отмена</a>
+                    </div>
+                    <div class="form-edit-transfer__buttons-default">
+                        <a href="#"
+                           class="form-edit-transfer__button-edit btn btn-outline-primary btn-filled">Изменить</a>
+                        <a href="#"
+                           class="form-edit-transfer__button-details btn btn-outline-info btn-filled collapsed">Подробнее</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -156,6 +156,10 @@
                                 <td>Доп. гости</td>
                                 <td>€0</td>
                             </tr>
+                            <tr class="text-success">
+                                <td>Понедельная 10%-ная скидка</td>
+                                <td>-€51</td>
+                            </tr>
                             <tr>
                                 <td>Финальная уборка</td>
                                 <td>€60</td>
@@ -244,6 +248,10 @@
                         </tr>
                         </tbody>
                     </table>
+
+                    <div class="page-booking__form-edit-transfer form-edit-transfer_orientation_vertical">
+                        <%- include('../../../forms/form-edit-transfer/form-edit-transfer.tpl'); %>
+                    </div>
                 </aside>
             </div>
         </div>

@@ -15,13 +15,13 @@
             <h1 class="page-cabinet__title mb-0">Ваш профиль</h1>
         </div>
     </header>
-    <div class="container py-4">
+    <div class="container mw-1024px py-4">
         <div class="alert alert-info lead mb-4">
             <p class="mb-0">Анализ статистики показывает: <strong>объекты, у которых есть отзывы, получают в 2-5 раз больше бронирований</strong>. Вы можете получить ваши первые отзывы от своих друзей прямо сейчас.</p>
             <div class="text-center"><a href="reviews.html" class="nav-link">Узнайте как это сделать</a></div>
         </div>
         <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="page-profile__form-change-profile-picture mb-4">
                     <%- include('../../../forms/form-change-profile-picture/form-change-profile-picture.tpl'); %>
                 </div>
@@ -32,7 +32,7 @@
                     <%- include('../../../forms/form-change-password/form-change-password.tpl'); %>
                 </div>
             </div>
-            <div class="col-xl-9 col-lg-8 col-md-6">
+            <div class="col-lg-8 col-md-6">
                 <div class="page-profile__form-change-personal-data mb-4">
                     <%- include('../../../forms/form-change-personal-data/form-change-personal-data.tpl'); %>
                 </div>

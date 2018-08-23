@@ -14,6 +14,9 @@
   min-height: 600px;
   min-height: 100vh;
 }
-.mw-1024px {
-  max-width: 1024px;
+
+@include media-breakpoint-up(lg) {
+  .mw-1024px {
+    max-width: 1024px;
+  }
 }

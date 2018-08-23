@@ -1,7 +1,7 @@
 <!-- Form: form-change-personal-data -->
 <div class="form-change-personal-data card bg-light">
     <h3 class="card-header">Ваши личные данные</h3>
-    <figure class="card-body alert-success d-lg-flex align-items-center text-center text-md-left">
+    <figure class="card-body alert-success d-lg-flex align-items-center text-center text-md-left mb-0">
         <img src="templates/forms/form-change-personal-data/form-change-personal-data__profile.svg"
              alt=""
              class="mb-3 mb-lg-0 mr-lg-3">
@@ -26,8 +26,8 @@
     </figure>
     <form class="form-change-personal-data__content">
         <div class="card-body">
-            <div class="form-row">
-                <div class="col-xl-5 col-lg-6">
+            <div class="row">
+                <div class="col-lg-6">
                     <div class="form-group">
                         <label for="form-change-personal-data__name">Имя</label>
                         <input type="text"
@@ -46,7 +46,7 @@
                                id="form-change-personal-data__second-name"
                                placeholder="">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-lg-0">
                         <label for="form-change-personal-data__about">О себе</label>
                         <textarea name="aboutMe"
                                   id="form-change-personal-data__about"
@@ -54,7 +54,7 @@
                                   class="form-control"></textarea>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-6 offset-xl-1">
+                <div class="col-lg-6">
                     <div class="form-group">
                         <label for="form-change-personal-data__phone">Мобильный телефон</label>
                         <input type="tel"

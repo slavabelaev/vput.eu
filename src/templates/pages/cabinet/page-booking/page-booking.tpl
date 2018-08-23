@@ -15,9 +15,9 @@
             <h1 class="page-cabinet__title mb-0">Бронирование № 2588</h1>
         </div>
     </header>
-    <div class="container py-4">
+    <div class="container mw-1024px py-4">
         <div class="row">
-            <div class="col-xl-9 col-lg-8 col-md-7">
+            <div class="col-lg-8 col-md-7">
 
                 <div class="alert alert-info">
                     <h3 class="lead">Ваше жильё желают забронировать с <span class="text-primary">03-08-2016</span> по <span class="text-primary">08-08-2016</span></h3>
@@ -27,49 +27,45 @@
                     </ol>
                 </div>
 
-                <ul class="accordion">
-                    <li class="accordion__item">
+                <ul class="accordion page-booking__accordion">
+                    <li class="accordion-item">
                         <form action=""
                               class="accordion-section">
-                            <legend class="accordion__item-title collapsed"
+                            <legend class="accordion-header collapsed"
                                 data-toggle="collapse"
-                                data-target=".accordion-basic-information"
+                                data-target=".page-booking__confirm-reservation-and-invoice"
                                 aria-expanded="false">Подтвердить бронирование и выставить счет</legend>
-                            <div class="accordion__item-collapse accordion-basic-information collapse"
-                                 data-parent=".accordion">
-                                <div class="accordion__item-content">
-                                    <div class="row">
-                                        <div class="col-xl-6 offset-xl-3">
-                                            <table class="table table-bordered">
-                                                <thead class="bg-white font-weight-bold">
-                                                <tr>
-                                                    <td>Предоплата</td>
-                                                    <td>€86</td>
-                                                </tr>
-                                                </thead>
-                                                <tbody class="bg-light">
-                                                <tr>
-                                                    <td>Вам</td>
-                                                    <td>€74</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Услуги V.P.U.T.</td>
-                                                    <td>€12</td>
-                                                </tr>
-                                                </tbody>
-                                                <tfoot class="bg-white lead">
-                                                <tr>
-                                                    <td>Будет вам оплачено на месте</td>
-                                                    <td>€86</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Итого</td>
-                                                    <td>€172</td>
-                                                </tr>
-                                                </tfoot>
-                                            </table>
-                                        </div>
-                                    </div>
+                            <div class="accordion-item-collapse page-booking__confirm-reservation-and-invoice collapse"
+                                 data-parent=".page-booking__accordion">
+                                <div class="accordion-content">
+                                    <table class="table table-bordered">
+                                        <thead class="bg-white font-weight-bold">
+                                        <tr>
+                                            <td>Предоплата</td>
+                                            <td>€86</td>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="bg-light">
+                                        <tr>
+                                            <td>Вам</td>
+                                            <td>€74</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Услуги V.P.U.T.</td>
+                                            <td>€12</td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot class="bg-white lead">
+                                        <tr>
+                                            <td>Будет вам оплачено на месте</td>
+                                            <td>€86</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Итого</td>
+                                            <td class="text-secondary">€172</td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
                                     <div class="text-center">
                                         <button type="submit"
                                                 class="btn btn-primary btn-lg mb-4">Подтвердить бронирование и выставить счет</button>
@@ -79,11 +75,11 @@
                                             <h4>Вы можете заработать - <span class="text-secondary">€320</span></h4>
                                             <a href="#"
                                                data-toggle="collapse"
-                                               data-target=".page-booking__confirm-reservation-and-invoice"
+                                               data-target=".page-booking__what-happens-when-i-click-confirm-reservation-and-invoice"
                                                class="lead nav-link_style_dashed collapsed">Что произойдет, когда я нажму «Подтвердить бронирование и выставить счет»?</a>
                                         </header>
-                                        <div class="page-booking__confirm-reservation-and-invoice collapse">
-                                            <ul class="pt-3">
+                                        <div class="page-booking__what-happens-when-i-click-confirm-reservation-and-invoice collapse">
+                                            <ul class="pt-3 pl-3">
                                                 <li>Гостю придет уведомление с предложением совершить предоплату на подтвержденных вами условиях. Если его все устроит, он оплатит счет.</li>
                                                 <li>До заселения предоплата будет находиться у компании V.P.U.T.</li>
                                                 <li>Через 24 часа после заселения гостя вы сможете заказать вывод денег, которые уже будут зачислены на ваш баланс в кабинете.</li>
@@ -95,39 +91,45 @@
                             </div>
                         </form>
                     </li>
-                    <li class="accordion__item">
+                    <li class="accordion-item">
                         <section class="accordion-section">
-                            <h3 class="accordion__item-title collapsed"
+                            <h3 class="accordion-header collapsed"
                                 data-toggle="collapse"
-                                data-target=".accordion-basic-information"
+                                data-target=".page-booking__change-prepayment-amount"
                                 aria-expanded="false">Изменить сумму предоплаты</h3>
-                            <div class="accordion__item-collapse accordion-basic-information collapse"
-                                 data-parent=".accordion">
-                                111
+                            <div class="accordion-item-collapse page-booking__change-prepayment-amount collapse"
+                                 data-parent=".page-booking__accordion">
+                                <div class="accordion-content">
+                                    1111
+                                </div>
                             </div>
                         </section>
                     </li>
-                    <li class="accordion__item">
+                    <li class="accordion-item">
                         <section class="accordion-section">
-                            <h3 class="accordion__item-title collapsed"
+                            <h3 class="accordion-header collapsed"
                                 data-toggle="collapse"
-                                data-target=".accordion-basic-information"
+                                data-target=".page-booking__set-discount-or-additional-payment"
                                 aria-expanded="false">Установить скидку/доплату</h3>
-                            <div class="accordion__item-collapse accordion-basic-information collapse"
-                                 data-parent=".accordion">
-                                111
+                            <div class="accordion-item-collapse page-booking__set-discount-or-additional-payment collapse"
+                                 data-parent=".page-booking__accordion">
+                                <div class="accordion-content">
+                                    2222
+                                </div>
                             </div>
                         </section>
                     </li>
-                    <li class="accordion__item">
+                    <li class="accordion-item">
                         <section class="accordion-section">
-                            <h3 class="accordion__item-title collapsed"
+                            <h3 class="accordion-header collapsed"
                                 data-toggle="collapse"
-                                data-target=".accordion-basic-information"
+                                data-target=".page-booking__refuse"
                                 aria-expanded="false">Отказать</h3>
-                            <div class="accordion__item-collapse accordion-basic-information collapse"
-                                 data-parent=".accordion">
-                                111
+                            <div class="accordion-item-collapse page-booking__refuse collapse"
+                                 data-parent=".page-booking__accordion">
+                                <div class="accordion-content">
+                                    3333
+                                </div>
                             </div>
                         </section>
                     </li>
@@ -136,7 +138,7 @@
                 <div class="alert alert-info">Напоминаем, что согласно правилам пользования сервисом V.P.U.T. в целях безопасности самостоятельный обмен контактными данными запрещен!</div>
                 <div class="alert alert-danger">Попытки получить предоплату от клиента вне сервиса и передача прямых контактов до оформления сделки может привести к блокировке аккаунта.</div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-5">
+            <div class="col-lg-4 col-md-5">
                 <aside class="page-booking__aside">
                     <table class="table table-bordered">
                         <thead class="bg-white font-weight-bold">
@@ -178,7 +180,7 @@
                         <tfoot class="bg-white lead">
                             <tr>
                                 <td>Итого</td>
-                                <td>€172</td>
+                                <td class="text-secondary">€172</td>
                             </tr>
                         </tfoot>
                     </table>
@@ -201,15 +203,15 @@
                         <tfoot class="bg-white lead">
                             <tr>
                                 <td>Итого</td>
-                                <td>€172</td>
+                                <td class="text-secondary">€172</td>
                             </tr>
                         </tfoot>
                     </table>
 
                     <div class="page-booking__offer-item-carousel">
                         <%- include('../../../common.blocks/offer-item-carousel/offer-item-carousel.tpl'); %>
-                        <table class="table table-bordered">
-                            <tbody class="bg-light">
+                        <table class="table table-bordered table-sm">
+                            <tbody>
                             <tr>
                                 <td>Едет гостей:</td>
                                 <td>1</td>
@@ -226,8 +228,8 @@
                         </table>
                     </div>
 
-                    <table class="table table-bordered">
-                        <tbody class="bg-light">
+                    <table class="table table-bordered table-sm">
+                        <tbody>
                         <tr>
                             <td>Гарантийный депозит:</td>
                             <td>€0</td>

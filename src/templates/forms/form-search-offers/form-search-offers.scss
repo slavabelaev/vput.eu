@@ -26,10 +26,11 @@
 .form-search-offers__id-col {
   min-width: 120px;
 }
-.form-search-offers__guests-col,
-.form-search-offers__startDate-col,
-.form-search-offers__endDate-col {
+.form-search-offers__guests-col {
   min-width: 150px;
+}
+.form-search-offers__dateRange-col {
+  min-width: 270px;
 }
 .form-search-offers__slider {
   margin: auto;

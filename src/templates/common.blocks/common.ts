@@ -11,6 +11,11 @@ jQuery(document).ready(function($) {
         preferredCountries: ['bg', 'ru'],
         separateDialCode: true
     });
+    $('input[daterangepicker]').daterangepicker({
+        locale: {
+            format: 'DD.MM.YYYY'
+        }
+    });
 
     setTimeout(function() {
         $('.page-preloader').fadeOut(700);

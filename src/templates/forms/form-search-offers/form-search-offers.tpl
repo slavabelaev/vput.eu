@@ -1,4 +1,4 @@
-<% eval(include('../../../../develop/common.js')) %>
+<% eval(include('../../../../.dev/common.js')) %>
 <% var lang = JSON.parse(include('form-search-offers_lang_ru.json')); %>
 
 <!-- Form: form-search-offers -->
@@ -18,12 +18,14 @@
                        data-toggle="collapse"
                        data-target=".form-search-offers__cities-tabs">
             </li>
-            <li class="form-search-offers__startDate-col form-group col">
+            <li class="form-search-offers__dateRange-col form-group col">
                 <input name="filters[startDate]"
-                       class="custom-select custom-select-lg"
-                       placeholder="<%= lang.start_date %>">
+                       daterangepicker
+                       autocomplete="off"
+                       placeholder="<%= lang.start_date %>"
+                       class="custom-select custom-select-lg">
             </li>
-            <li class="form-search-offers__endDate-col form-group col">
+            <li class="form-group col d-none">
                 <input name="filters[endDate]"
                        class="custom-select custom-select-lg"
                        placeholder="<%= lang.end_date %>">

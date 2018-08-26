@@ -51,13 +51,13 @@
                     <a class="nav-link"
                        href="#"
                        data-toggle="modal"
-                       data-target=".authorization-modal"><%= lang.sign_in %></a>
+                       data-target=".modal-authorization"><%= lang.sign_in %></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"
                        href="#"
                        data-toggle="modal"
-                       data-target=".registration-modal"><%= lang.sign_up %></a>
+                       data-target=".modal-registration"><%= lang.sign_up %></a>
                 </li>
             </ul>
             <!-- /Hide if user authorized -->
@@ -109,6 +109,6 @@
 </header>
 <!-- /Common: page-header -->
 
-<%- include('../password-recovery-modal/password-recovery-modal.tpl'); %>
-<%- include('../authorization-modal/authorization-modal.tpl'); %>
-<%- include('../registration-modal/registration-modal.tpl'); %>
+<%- include('../../modals/modal-password-recovery/modal-password-recovery.tpl'); %>
+<%- include('../../modals/modal-authorization/modal-authorization.tpl'); %>
+<%- include('../../modals/modal-registration/modal-registration.tpl'); %>

@@ -106,13 +106,13 @@
                     <a class="nav-link"
                        href="#"
                        data-toggle="modal"
-                       data-target=".authorization-modal">Вход</a>
+                       data-target=".modal-authorization">Вход</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link"
                        href="#"
                        data-toggle="modal"
-                       data-target=".registration-modal">Регистрация</a>
+                       data-target=".modal-registration">Регистрация</a>
                 </li>
             </ul>
             <!-- /Hide if user authorized -->
@@ -170,14 +170,14 @@
 
 
 
-<!-- Common: password-recovery-modal -->
-<div class="password-recovery-modal modal fade"
+<!-- Common: modal-password-recovery -->
+<div class="modal-password-recovery modal fade"
      tabindex="-1"
      role="dialog"
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm"
          role="document">
-        <div class="password-recovery-modal__content modal-content">
+        <div class="modal-password-recovery__content modal-content">
             <div class="modal-header justify-content-center">
                 <h2 class="modal-title">Забыли пароль?</h2>
                 <a href="#"
@@ -186,7 +186,7 @@
             </div>
             <div class="modal-body">
                 <div class="mb-4">Пожалуйста, введите e-mail, который вы использовали при регистрации. На указанный e-mail будет отправлен код с дальнейшими инструкциями.</div>
-                <div class="password-recovery-modal__form-recovery">
+                <div class="modal-password-recovery__form-recovery">
                     
 
 <!-- Form: form-recovery -->
@@ -206,39 +206,39 @@
 <!-- /Form: form-recovery -->
                 </div>
             </div>
-            <div class="password-recovery-modal__footer modal-footer">
+            <div class="modal-password-recovery__footer modal-footer">
                 <a href="#"
-                   class="password-recovery-modal__footer-link nav-link"
+                   class="modal-password-recovery__footer-link nav-link"
                    data-toggle="modal"
-                   data-target=".registration-modal"
+                   data-target=".modal-registration"
                    data-dismiss="modal">Регистрация</a>
                 <a href="#"
-                   class="password-recovery-modal__footer-link nav-link"
+                   class="modal-password-recovery__footer-link nav-link"
                    data-toggle="modal"
-                   data-target=".authorization-modal"
+                   data-target=".modal-authorization"
                    data-dismiss="modal">Вход</a>
             </div>
         </div>
     </div>
 </div>
-<!-- /Common: password-recovery-modal -->
+<!-- /Common: modal-password-recovery -->
 
 
-<!-- Common: authorization-modal -->
-<div class="authorization-modal modal fade"
+<!-- Common: modal-authorization -->
+<div class="modal-authorization modal fade"
      tabindex="-1"
      role="dialog"
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm"
          role="document">
-        <div class="authorization-modal__content modal-content">
+        <div class="modal-authorization__content modal-content">
             <a href="#"
                data-dismiss="modal"
                class="close"
                aria-label="Закрыть">
                 <i class="icon icon__close icon_style_light"></i>
             </a>
-            <div class="authorization-modal__body modal-body">
+            <div class="modal-authorization__body modal-body">
                 
 
 <!-- Form: form-authorization -->
@@ -246,8 +246,8 @@
       method="post"
       class="form-authorization">
     <h2 class="form-authorization__title">Вход</h2>
-    <fieldset class="authorization-modal__fieldset">
-        <legend class="authorization-modal__legend">через</legend>
+    <fieldset class="modal-authorization__fieldset">
+        <legend class="modal-authorization__legend">через</legend>
         <!-- Common: social-authorization -->
         <ul class="social-authorization">
             <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
@@ -256,8 +256,8 @@
         </ul>
         <!-- /Common: social-authorization -->
     </fieldset>
-    <fieldset class="authorization-modal__fieldset">
-        <legend class="authorization-modal__legend mb-3">или</legend>
+    <fieldset class="modal-authorization__fieldset">
+        <legend class="modal-authorization__legend mb-3">или</legend>
         <div class="form-group">
             <input type="email"
                    name="login"
@@ -288,7 +288,7 @@
                 <a href="#"
                    class="nav-link"
                    data-toggle="modal"
-                   data-target=".password-recovery-modal"
+                   data-target=".modal-password-recovery"
                    data-dismiss="modal">Забыл пароль</a>
             </div>
         </div>
@@ -298,27 +298,27 @@
 </form>
 <!-- /Form: form-authorization -->
             </div>
-            <div class="authorization-modal__footer modal-footer">
+            <div class="modal-authorization__footer modal-footer">
                 <a href="#"
-                   class="authorization-modal__register-link"
+                   class="modal-authorization__register-link"
                    data-toggle="modal"
                    data-dismiss="modal"
-                   data-target=".registration-modal">Регистрация</a>
+                   data-target=".modal-registration">Регистрация</a>
             </div>
         </div>
     </div>
 </div>
-<!-- /Common: authorization-modal -->
+<!-- /Common: modal-authorization -->
 
 
-<!-- Common: registration-modal -->
-<div class="registration-modal modal fade"
+<!-- Common: modal-registration -->
+<div class="modal-registration modal fade"
      tabindex="-1"
      role="dialog"
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm"
          role="document">
-        <div class="registration-modal__content modal-content">
+        <div class="modal-registration__content modal-content">
             <a href="#"
                data-dismiss="modal"
                class="close"><i class="icon icon__close icon_style_light"></i></a>
@@ -330,8 +330,8 @@
       method="post"
       class="form-registration">
     <h2 class="form-registration__title">Новый аккаунт</h2>
-    <fieldset class="registration-modal__fieldset">
-        <legend class="registration-modal__legend">через</legend>
+    <fieldset class="modal-registration__fieldset">
+        <legend class="modal-registration__legend">через</legend>
         <!-- Common: social-authorization -->
         <ul class="social-authorization">
             <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
@@ -340,8 +340,8 @@
         </ul>
         <!-- /Common: social-authorization -->
     </fieldset>
-    <fieldset class="registration-modal__fieldset">
-        <legend class="registration-modal__legend mb-3">или</legend>
+    <fieldset class="modal-registration__fieldset">
+        <legend class="modal-registration__legend mb-3">или</legend>
         <div class="form-group">
             <input type="email"
                    name="login"
@@ -372,16 +372,16 @@
 </form>
 <!-- Form: form-registration -->
             </div>
-            <div class="registration-modal__footer modal-footer">
-                <a href="#" class="registration-modal__authorization-link"
+            <div class="modal-registration__footer modal-footer">
+                <a href="#" class="modal-registration__authorization-link"
                    data-toggle="modal"
                    data-dismiss="modal"
-                   data-target=".authorization-modal">Войти</a>
+                   data-target=".modal-authorization">Войти</a>
             </div>
         </div>
     </div>
 </div>
-<!-- /Common: registration-modal -->
+<!-- /Common: modal-registration -->
 </div>
 
 <!-- Page: page-management -->

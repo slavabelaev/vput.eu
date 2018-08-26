@@ -5,8 +5,8 @@
       method="post"
       class="form-authorization">
     <h2 class="form-authorization__title"><%= lang.title %></h2>
-    <fieldset class="authorization-modal__fieldset">
-        <legend class="authorization-modal__legend"><%= lang.sign_in_with %></legend>
+    <fieldset class="modal-authorization__fieldset">
+        <legend class="modal-authorization__legend"><%= lang.sign_in_with %></legend>
         <!-- Common: social-authorization -->
         <ul class="social-authorization">
             <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
@@ -15,8 +15,8 @@
         </ul>
         <!-- /Common: social-authorization -->
     </fieldset>
-    <fieldset class="authorization-modal__fieldset">
-        <legend class="authorization-modal__legend mb-3"><%= lang.or %></legend>
+    <fieldset class="modal-authorization__fieldset">
+        <legend class="modal-authorization__legend mb-3"><%= lang.or %></legend>
         <div class="form-group">
             <input type="email"
                    name="login"
@@ -47,7 +47,7 @@
                 <a href="#"
                    class="nav-link"
                    data-toggle="modal"
-                   data-target=".password-recovery-modal"
+                   data-target=".modal-password-recovery"
                    data-dismiss="modal"><%= lang.forgot_password %></a>
             </div>
         </div>

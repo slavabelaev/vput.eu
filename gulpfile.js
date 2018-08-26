@@ -83,8 +83,10 @@ const config = {
             bundleCSS: [
                 'node_modules/slick-carousel/slick/slick.css',
                 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
+                // Date Range Picker
+                'node_modules/daterangepicker/daterangepicker.css',
                 'node_modules/nouislider/distribute/nouislider.min.css',
-                'node_modules/filepond/dist/filepond.min.css'
+                'node_modules/filepond/dist/filepond.min.css',
             ],
             site: [paths.src + '/**/pages/site/**/*.scss'],
             cabinet: [paths.src + '/**/pages/cabinet/**/*.scss'],
@@ -119,6 +121,9 @@ const config = {
                 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
                 // Image Gallery
                 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+                // Date Range Picker
+                'node_modules/moment/min/moment.min.js',
+                'node_modules/daterangepicker/daterangepicker.js',
                 // Vue
                 'node_modules/vue/dist/vue.min.js',
                 // Price Slider
@@ -368,6 +373,7 @@ gulp.task('scripts:build', [
     'scripts:buildBundleTS',
     'scripts:buildBundleJS'
 ]);
+gulp.task('scripts', ['scripts:build']);
 
 gulp.task('images:build', function() {
     return gulp.src(config.images.buildFiles)
@@ -399,6 +405,12 @@ gulp.task('build', [
     'images:build',
     'fonts:build',
 ]);
+
+gulp.task('languages', ['languages:build']);
+gulp.task('templates', ['templates:build']);
+gulp.task('styles', ['styles:build']);
+gulp.task('images', ['images:build']);
+gulp.task('fonts', ['fonts:build']);
 
 gulp.task('watch', function() {
     watch(config.languages.watchFiles, function() {

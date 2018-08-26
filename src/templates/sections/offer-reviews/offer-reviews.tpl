@@ -1,4 +1,4 @@
-<% eval(include('../../../../develop/common.js')) %>
+<% eval(include('../../../../.dev/common.js')) %>
 <% var lang = JSON.parse(include('offer-reviews_lang_ru.json')); %>
 
 <!-- Section: offer-reviews -->

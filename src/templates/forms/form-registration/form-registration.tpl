@@ -5,8 +5,8 @@
       method="post"
       class="form-registration">
     <h2 class="form-registration__title"><%= lang.title %></h2>
-    <fieldset class="registration-modal__fieldset">
-        <legend class="registration-modal__legend"><%= lang.sign_up_with %></legend>
+    <fieldset class="modal-registration__fieldset">
+        <legend class="modal-registration__legend"><%= lang.sign_up_with %></legend>
         <!-- Common: social-authorization -->
         <ul class="social-authorization">
             <li class="social-authorization__item"><a href="#" class="icon icon__facebook icon_size_48"></a></li>
@@ -15,8 +15,8 @@
         </ul>
         <!-- /Common: social-authorization -->
     </fieldset>
-    <fieldset class="registration-modal__fieldset">
-        <legend class="registration-modal__legend mb-3"><%= lang.or %></legend>
+    <fieldset class="modal-registration__fieldset">
+        <legend class="modal-registration__legend mb-3"><%= lang.or %></legend>
         <div class="form-group">
             <input type="email"
                    name="login"

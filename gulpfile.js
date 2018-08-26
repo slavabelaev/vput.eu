@@ -214,6 +214,21 @@ gulp.task('templates:buildArticlesTemplates', function () {
         .pipe(gulp.dest(paths.templates.articles))
         .pipe(browserSync.reload({ stream: true }));
 });
+gulp.task('templates:all', function () {
+    return gulp.src([paths.src + '/**/*.tpl'])
+        .pipe(plumber())
+        .pipe(ejs({
+            bundlePath: {
+                styles: paths.styles.bundle.replace(paths.dest + '/', '') + '/' + config.styles.bundleFileName,
+                scripts: paths.scripts.bundle.replace(paths.dest + '/', '') + '/' + config.scripts.bundleFileName
+            },
+        }))
+        .pipe(rename(function(path) {
+            path.extname = '.html';
+        }))
+        .pipe(gulp.dest(paths.dest))
+        .pipe(browserSync.reload({ stream: true }));
+});
 gulp.task('templates:build', [
     'templates:buildSiteTemplates',
     'templates:buildCabinetTemplates',

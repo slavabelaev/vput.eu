@@ -1,0 +1,17 @@
+{
+  "from": "Від",
+  "description": "Ціна вказана за квартиру цілком",
+  "check_in": "Заїзд",
+  "check_out": "Виїзд",
+  "guests": "Гостей",
+  "nights": "ніч",
+  "to_pay": "До оплати:",
+  "contact_host": "Написати власнику",
+  "book": "Оплатити бронювання",
+  "booking_is_not_possible": "Бронювання неможливо",
+  "these_days_are_unavailable": "Ці дні недоступні!",
+  "persons": "людей",
+  "informer_message": "планують зупинитись тут",
+  "in_this_season": "в цьому сезоні",
+  "in_chosen_period": "в обраний період"
+}

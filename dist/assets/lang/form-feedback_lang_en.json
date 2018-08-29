@@ -1,0 +1,12 @@
+{
+  "full_name": "Your full name",
+  "phone": "Phone",
+  "email": "E-mail",
+  "message": "Your Message",
+  "is_juridic": "I am a juridical person",
+  "requisits": "Requisites",
+  "card": "Card",
+  "send": "Send",
+  "success_message": "Thank you. We have received your feedback; we will consider it as soon as possible.",
+  "error_message": "Sorry. Something seems to have gone wrong. Please contact our support team."
+}

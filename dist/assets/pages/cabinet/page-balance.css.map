@@ -1,0 +1,1 @@
+{"version":3,"sources":["templates/pages/cabinet/page-balance/page-balance.scss"],"names":[],"mappings":"AAAA,kC,CAEI,e,CACA,gB,CAGJ,e,CACE,e,CACA,kB","file":"page-balance.css","sourcesContent":[".dataTables_wrapper {\r\n  .custom-select {\r\n    margin-left: 6px;\r\n    margin-right: 6px;\r\n  }\r\n}\r\ntable.dataTable {\r\n  margin-top: 1rem;\r\n  margin-bottom: 1rem;\r\n}"]}

@@ -1,0 +1,24 @@
+{
+  "contacts": "Contacts",
+  "language": "Eng",
+  "languages": [
+    { "name": "Russian", "code": "ru" },
+    { "name": "Ukrainian", "code": "ua" }
+  ],
+  "sign_in": "Sign in",
+  "sign_up": "Sign up",
+  "cabinet_title": "Account",
+  "cabinet": {
+    "realties": "My Rentals",
+    "bookings": "Bookings",
+    "trips": "My Trips",
+    "profile": "Profile",
+    "transfers": "Transfers",
+    "balance": "Balance",
+    "partnership": "Affiliate Programme",
+    "reviews": "Reviews",
+    "referral_bookings": "Referral bookings",
+    "logout": "Sign out"
+  },
+  "to_rent": "Become a Host"
+}

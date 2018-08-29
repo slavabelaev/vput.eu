@@ -1,0 +1,23 @@
+{
+  "title": "ЗАКАЗАТЬ АРЕНДУ АВТОМОБИЛЯ",
+  "rented_car": "Арендуемый автомобиль",
+  "select": "Выбрать",
+  "cars": [
+    { "value": "OPEL MERIVA 1.4 BENZIN", "name": "OPEL MERIVA - 1.4 БЕНЗИН" },
+    { "value": "RENAULT MEGANE COUPE-CABRIOLET PETROL 1.6", "name": "RENAULT MEGANE COUPE CABRIOLET - 1.6 БЕНЗИН" },
+    { "value": "PEUGEOT 307 1.6 PETROL", "name": "PEUGEOT 307 - 1.6 БЕНЗИН" },
+    { "value": "FORD FOCUS C-MAX 1.6 DIESEL", "name": "FORD FOCUS C-MAX - 1.6 ДИЗЕЛЬ" },
+    { "value": "VW PASSAT 1.9 DIESEL", "name": "VW PASSAT - 1.9 ДИЗЕЛЬ" },
+    { "value": "RENAULT MEGANE SCENIC 1.6 DISEL", "name": "RENAULT MEGANE SCENIC - 1.6 ДИЗЕЛЬ" }
+  ],
+  "start_date_of_lease": "Дата начала аренды",
+  "end_date_of_lease": "Дата конца аренды",
+  "first_name": "Имя",
+  "second_name": "Фамилия",
+  "email": "E-mail",
+  "phone": "Телефон",
+  "checkout": "Оформить заказ",
+  "has_questions": "Есть вопросы? Звоните:",
+  "success_message": "Спасибо! Заявка была успешно отправлена.",
+  "error_message": "Простите! Похоже что-то пошло не так. Пожалуйста, обратитесь в нашу службу поддержки."
+}

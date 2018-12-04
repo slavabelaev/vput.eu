@@ -1,7 +1,77 @@
 {
   "name": "vput.eu",
   "version": "1.0.0",
-  "description": "Mockup for vput.eu",
+  "description": "Landing for «Webdelo Studio»",
+  "homepage": "https://belaevslava.github.io/webdelo.org/",
+  "previews": {
+    "directory": "previews",
+    "images": [
+      {
+        "path": "home.png",
+        "title": "Home"
+      },
+      {
+        "path": "search.png",
+        "title": "Search"
+      },
+      {
+        "path": "search_filter.png",
+        "title": "Search Filter"
+      },
+      {
+        "path": "offer.png",
+        "title": "Offer"
+      },
+      {
+        "path": "complex.png",
+        "title": "Complex"
+      },
+      {
+        "path": "cabinet_realties.png",
+        "title": "Cabinet Realties"
+      },
+      {
+        "path": "cabinet_transfers.png",
+        "title": "Cabinet Transfers"
+      },
+      {
+        "path": "cabinet_bookings.png",
+        "title": "Cabinet Bookings"
+      },
+      {
+        "path": "cabinet_profile.png",
+        "title": "Cabinet Profile"
+      },
+      {
+        "path": "cabinet_balance.png",
+        "title": "Cabinet Balance"
+      },
+      {
+        "path": "cabinet_partnerships.png",
+        "title": "Cabinet Partnerships"
+      },
+      {
+        "path": "to_rent.png",
+        "title": "Add to Rent"
+      },
+      {
+        "path": "about.png",
+        "title": "About"
+      },
+      {
+        "path": "withdraw.png",
+        "title": "Withdraw"
+      },
+      {
+        "path": "trust.png",
+        "title": "Trust"
+      },
+      {
+        "path": "contacts.png",
+        "title": "Contacts"
+      }
+    ]
+  },
   "main": "index.js",
   "scripts": {
     "serve": "gulp serve",
